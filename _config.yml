@@ -1,3 +1,10 @@
+baseurl: /preview
+
+# Default permalink used for posts.
+permalink: /blog/:year/:month/:day/:title/
+
+css-date: 201906102058
+
 repository: xpack/xpack.github.io-source
 
 output: web
@@ -95,15 +102,18 @@ defaults:
       layout: "post"
       comments: true
       search: true
-      sidebar: top_sidebar
+      sidebar: news_sidebar
       topnav: topnav
 
 # these are defaults used for the frontmatter for these file types
 
+# Used in links.html to find all links.
 sidebars:
 - home_sidebar
+- news_sidebar
 - top_sidebar
 - xpm_sidebar
+- xpbuild_sidebar
 - other
 
 description: "Tools to manage, configure and build complex, package based, multi-target, C/C++ projects."

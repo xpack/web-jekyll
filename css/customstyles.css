@@ -296,6 +296,8 @@ li.dropdownActive a {
 
 footer {
     font-size: smaller;
+    margin-top: 10px !important; 
+    margin-bottom: 10px !important;
 }
 
 /* FAQ page */
@@ -822,6 +824,7 @@ span.soft {
 }
 
 .githubEditButton {
+    margin-top: 40px !important;
     margin-bottom:7px;
 }
 

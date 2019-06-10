@@ -12,12 +12,32 @@ entries:
 
   - title: Core Tools
     output: web
-    url: /core_tools.html
+    folderitems:
+
+    - title: xpm
+      url: /core/xpm/
+      output: web
+
+    - title: xpbuild
+      url: /core/xpbuild/
+      output: web
 
   - title: Dev Tools
     output: web
-    url: /dev_tools.html
+    folderitems:
+
+    - title: arm-none-eabi-gcc
+      external_url: https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack
+      output: web
+
+    - title: openocd
+      external_url: https://github.com/xpack-dev-tools/openocd-xpack
+      output: web
 
   - title: License
     output: web
-    url: /license.html
+    folderitems:
+
+    - title: MIT
+      output: web
+      external_url: https://opensource.org/licenses/MIT

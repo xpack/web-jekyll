@@ -11,6 +11,3 @@ entries:
     - title: News
       url: /news.html
       output: web
-    - title: xpm
-      url: /core_xpm_home.html
-      output: web
