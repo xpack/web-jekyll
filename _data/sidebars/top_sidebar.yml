@@ -1,0 +1,23 @@
+# This is the top sidebar TOC. 
+# The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: sidebar
+  folders:
+
+  - title: Overview
+    output: web
+    url: /index.html
+    type: homepage
+
+  - title: Core Tools
+    output: web
+    url: /core_tools.html
+
+  - title: Dev Tools
+    output: web
+    url: /dev_tools.html
+
+  - title: License
+    output: web
+    url: /license.html
