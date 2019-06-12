@@ -5,6 +5,7 @@ keywords: packages, code sharing, reusing, libraries, applications, c/c++, embed
 sidebar: top_sidebar
 toc: false
 github_editme: true
+summary: Tools to manage, configure and build complex, package based, multi-target projects.
 ---
 
 ## Mission statement
@@ -12,7 +13,8 @@ github_editme: true
 Provide a set of tools to manage, configure and build complex, package based, 
 multi-target (multi-architecture, multi-board, multi-toolchain) projects, 
 intended to **enhance code sharing** and **reusing** during the life
-cycle of libraries and applications, with an emphasis on C/C++ and embedded.
+cycle of libraries and applications, with an emphasis on C/C++ and 
+bare-metal embedded.
 
 ## xPacks overview
 
@@ -21,49 +23,88 @@ much the same as the highly successful
 [npm modules](https://docs.npmjs.com/getting-started/what-is-npm) 
 in the [Node.js](https://nodejs.org/en/) JavaScript ecosystem.
 
-By multi-version it is understood not only that packages can have 
-multiple versions, but they can be installed in parallel, each
+By **multi-version** it is understood not only that packages can have 
+multiple versions, but they **can be installed in parallel**, each
 project having its own set of dependencies.
+
+Except the package manager, most of the tools are generic and do not 
+mandate the use of xPack packages, and can be used in traditional 
+environments (although some of them may benefit when used in an xPack
+environment).
+
+Although the focus is on **C/C++**, most of the tools are generic and
+can be used with other programming languages as well.
 
 Based on the installed content, there are currently two 
 types of xPacks: **source** and **binary**:
 
-- **source** xPacks are packages that install source files, 
-generally libraries added to the project.
-- **binary**  xPacks are packages that install binary files, 
+- **source xPacks** are packages that install source files, 
+generally libraries used by the project.
+- **binary xPacks** are packages that install binary files, 
 generally tools used during the build process, like toolchains,
 builders, etc.
 
-The entire xPack project is split amongst several groups, all
-stored as separated GitHub _organizations_.
+The entire xPack project is split amongst several groups,
+published as separated GitHub _organizations_.
 
 ## xPack Core Tools
 
 The core xPack tools are:
 
 - `xpm` - the **xPack Package Manager**
-- `xpbuild` - the **xPack Basic Project Builder**
-- `xpmake` - the **xPack Build Generator** (in design phase)
-- `xpninja` - the **xPack Build Runner** (in design phase)
-- `xpcdl` - the **xPack Build Configurator** (in design phase)
+- `@xpack/xpbuild` - the **xPack Basic Project Builder**
+- `@xpack/xpmake` - the **xPack Build Generator** (in design phase)
+- `@xpack/xpninja` - the **xPack Build Runner** (in design phase)
+- `@xpack/xpcdl` - the **xPack Build Configurator** (in design phase)
+- `@xpack/xpliquid` - the **xPack Liquid Template Engine** (in design phase)
+- `@xpack/xpjson` - the **xPack JSON Manager** (in design phase)
 
 ## xPack based Development Tools
 
 The main binary tools packed as xPacks are:
 
-- `arm-none-eabi-gcc` - the xPack ARM Embedded GCC toolchain
-- `openocd` - the xPack OpenOCD 
-- `qemu-system-gnuarmeclipse` - the xPack GNU ARM Eclipse QEMU
-- `riscv-none-embed-gcc` - the xPack RISC-V Embedded GCC toolchain
+- `@xpack-dev-tools/arm-none-eabi-gcc` - the **xPack ARM Embedded GCC** toolchain
+- `@xpack-dev-tools/openocd` - the **xPack OpenOCD**
+- `@xpack-dev-tools/qemu-system-gnuarmeclipse` - the **xPack GNU ARM Eclipse QEMU**
+- `@xpack-dev-tools/riscv-none-embed-gcc` - the **xPack RISC-V Embedded GCC** toolchain
 
-Planned to be added:
+Planned:
 
-- `gdb` - the **xPack GNU GDB**
-- `binutils` - the **xPack GNU binutils**
-- `gcc` - the **xPack GNU GCC**
-- `cmake` - the **xPack CMake**
-- `ninja` - the **xPack Ninja Build**
+- `@xpack-dev-tools/gdb` - the **xPack GNU GDB**
+- `@xpack-dev-tools/binutils` - the **xPack GNU binutils**
+- `@xpack-dev-tools/gcc` - the **xPack GNU GCC**
+- `@xpack-dev-tools/coreutils` - the **xPack GNU coreutils**
+- `@xpack-dev-tools/make` - the **xPack make**
+- `@xpack-dev-tools/cmake` - the **xPack CMake**
+- `@xpack-dev-tools/ninja` - the **xPack Ninja Build**
 
+## Source xPacks
+
+### µOS++
+
+Packages part of the µOS++ framework:
+
+- `@micro-os-plus/startup` - µOS++ Startup
+- `@micro-os-plus/semihosting` - µOS++ Semihosting
+- `@micro-os-plus/diag-trace` - µOS++ Tracing
+- `@micro-os-plus/c-libs` - µOS++ C library
+- `@micro-os-plus/cpp-libs` - µOS++ C++ library
+  
+### 3rd Party
+
+Packages with 3rd party content (mind the **plural** in the scope name):
+
+- `@xpacks/freertos` - FreeRTOS
+- `@xpacks/chan-fatfs` - Chan-FatFS
+
+## xPack Build Box (XBB)
+
+Scripts to create the development environments used to build the
+archives used by the binary xPacks.
+
+- **CentOS 6** Docker images, used to build the GNU/Linux and Windows 
+  distributions
+- **macOS 10.10** tools, used to build the macOS Intel distributions
 
 ## License
 
