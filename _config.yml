@@ -3,7 +3,7 @@ baseurl: /preview
 # Default permalink used for posts.
 permalink: /blog/:year/:month/:day/:title/
 
-css-date: 201906102058
+css-date: 201906121544
 
 repository: xpack/xpack.github.io-source
 

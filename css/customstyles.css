@@ -92,7 +92,7 @@ margin-top: -40px
 }
 
 .post-content ol li, .post-content ul li {
-    margin: 10px 0px;
+    margin: 2px 0px;
 }
 
 .pageSummary {
@@ -241,7 +241,7 @@ ul#results-container a:hover {
 }
 
 div#toc ul li {
-    margin: 8px 0px 8px 22px;
+    margin: 2px 0px 2px 22px;
     font-size: 90%;
     list-style: square;
 }
