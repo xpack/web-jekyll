@@ -35,7 +35,7 @@ entries:
       output: web
 
     - title: openocd
-      url: /dev-tools/openocd/
+      url: /openocd/
       output: web
 
   - title: Support

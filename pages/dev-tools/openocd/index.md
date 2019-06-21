@@ -1,7 +1,7 @@
 ---
 layout: page
 title: The xPack OpenOCD
-permalink: /dev-tools/openocd/
+permalink: /openocd/
 sidebar: openocd_sidebar
 
 summary: "A binary distribution of OpenOCD."
@@ -12,7 +12,7 @@ github_editme: true
 disqus: true
 
 date: 2015-09-04 17:02:00 +0300
-last_updated: 2019-06-21 23:21:00 +0300
+last_updated: 2019-06-21 23:40:00 +0300
 
 ---
 
@@ -20,11 +20,11 @@ last_updated: 2019-06-21 23:21:00 +0300
 
 If you already know the general facts about OpenOCD, you can directly skip to:
 
-* [Install]({{ site.baseurl }}/dev-tools/openocd/install/)
-* [Support]({{ site.baseurl }}/dev-tools/openocd/support/)
+* [Install]({{ site.baseurl }}/openocd/install/)
+* [Support]({{ site.baseurl }}/openocd/support/)
 * [How to build?](https://github.com/xpack-dev-tools/openocd-xpack/blob/xpack/README-BUILD.md)
 * [How to publish?](https://github.com/xpack-dev-tools/openocd-xpack/blob/xpack/README-PUBLISH.md)
-* [Releases]({{ site.baseurl }}/dev-tools/openocd/releases/)
+* [Releases]({{ site.baseurl }}/openocd/releases/)
 
 ## Overview
 
@@ -75,7 +75,7 @@ distribution.
 
 The details of installing the **xPack OpenOCD** on various platforms are 
 presented in the separate 
-[Install]({{ site.baseurl }}/dev-tools/openocd/install/) page.
+[Install]({{ site.baseurl }}/openocd/install/) page.
 
 ## Documentation
 
@@ -86,7 +86,7 @@ The original OpenOCD documentation is available in the installed folders:
 ## Support
 
 For the various support options, please read the separate 
-[Support]({{ site.baseurl }}/dev-tools/openocd/support/) page.
+[Support]({{ site.baseurl }}/openocd/support/) page.
 
 ## Change log
 
@@ -102,5 +102,5 @@ all available from the [scripts](https://github.com/xpack-dev-tools/openocd-xpa
 
 ## Releases
 
-See [Releases]({{ site.baseurl }}/dev-tools/openocd/releases/).
+See [Releases]({{ site.baseurl }}/openocd/releases/).
 

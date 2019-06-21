@@ -1,7 +1,7 @@
 ---
 layout: page
 title: How to install the OpenOCD binaries?
-permalink: /dev-tools/openocd/install/
+permalink: /openocd/install/
 sidebar: openocd_sidebar
 
 summary: "The recommended method is via xpm."
@@ -10,7 +10,7 @@ github_editme: true
 disqus: true
 
 date: 2015-09-09 19:43:00 +0300
-last_updated: 2019-06-21 23:21:00 +0300
+last_updated: 2019-06-21 23:40:00 +0300
 
 ---
 

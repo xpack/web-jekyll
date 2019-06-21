@@ -1,7 +1,7 @@
 ---
 layout: page
 title: The xPack OpenOCD releases
-permalink: /dev-tools/openocd/releases/
+permalink: /openocd/releases/
 sidebar: openocd_sidebar
 
 author: Liviu Ionescu

@@ -11,16 +11,16 @@ entries:
     output: web
     folderitems:
     - title: Overview
-      url: /dev-tools/openocd/
+      url: /openocd/
       output: web
     - title: Install
-      url: /dev-tools/openocd/install/
+      url: /openocd/install/
       output: web
     - title: Support
-      url: /dev-tools/openocd/support/
+      url: /openocd/support/
       output: web
     - title: Releases
-      url: /dev-tools/openocd/releases/
+      url: /openocd/releases/
       output: web
   - title: Home
     output: web
