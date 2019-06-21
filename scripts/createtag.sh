@@ -17,23 +17,26 @@ else
   exit 1
 fi
 
-if [ -d "${TAGDIR}" ]; then
+if [ -d "${TAGDIR}" ]
+then
 
   echo "Creating tag(s) for ${tags}"
 
-  for tag in ${tags}; do
+  for tag in ${tags}
+  do
     echo "Title for $tag:"
     read title
   # Cannot indent here string.
-cat <<EOF >"${TAGDIR}/tag_${tag}.md"
+cat <<EOF >"${TAGDIR}/${tag}.md"
 ---
+layout: page
 title: "${title}"
+permalink: /tags/${tag}/
+sidebar: news_sidebar
+
 tagName: ${tag}
 search: exclude
-permalink: tag_${tag}.html
-sidebar: mydoc_sidebar
-hide_sidebar: true
-folder: tags
+
 ---
 
 {% include taglogic.html %}
