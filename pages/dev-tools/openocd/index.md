@@ -4,9 +4,10 @@ title: The xPack OpenOCD
 permalink: /dev-tools/openocd/
 sidebar: openocd_sidebar
 
+summary: "A binary distribution of OpenOCD."
 keywords: openocd
 toc: true
-last_updated: 2019-06-18 12:00:00 +0300
+last_updated: 2019-06-21 23:11:00 +0300
 
 ---
 
@@ -16,13 +17,38 @@ If you already know the general facts about OpenOCD, you can directly skip to:
 
 * [Install]({{ site.baseurl }}/dev-tools/openocd/install/)
 * [Support]({{ site.baseurl }}/dev-tools/openocd/support/)
-* [How to build](https://github.com/xpack-dev-tools/openocd-xpack/blob/xpack/README-BUILD.md)
-* [How to publish](https://github.com/xpack-dev-tools/openocd-xpack/blob/xpack/README-PUBLISH.md)
+* [How to build?](https://github.com/xpack-dev-tools/openocd-xpack/blob/xpack/README-BUILD.md)
+* [How to publish?](https://github.com/xpack-dev-tools/openocd-xpack/blob/xpack/README-PUBLISH.md)
 * [Releases]({{ site.baseurl }}/dev-tools/openocd/releases/)
 
 ## Overview
 
-The **xPack OpenOCD** is a binary distribution of [OpenOCD](http://openocd.org).
+The **xPack OpenOCD** is a multi-platform binary distribution of 
+[OpenOCD](http://openocd.org), the **Open On-Chip Debugger**, 
+an open source project hosted on 
+[SourceForge](https://sourceforge.net/projects/openocd/).
+
+The OpenOCD project maintainers recommend that end-users 
+compile it using the latest version of the source code available from 
+the repository. OpenOCD is a rolling distribution, and currently 
+there are no special stable branches or tags 
+and there are no clear release dates for future versions. 
+
+If for GNU/Linux users compiling projects is common, Windows users do not 
+have an easy way of building OpenCOD from sources, and elaborate build
+environments must be installed, making the whole process impractical.
+
+If you are not interested in building from sources, and appreciate a 
+better integration with the environments like Eclipse, please feel free to use 
+the xPack OpenOCD binaries, and preferably install them in the default 
+locations.
+
+{% include note.html content="OpenOCD is a very complex project, capable 
+of working with many JTAG probes, but support for them must be explicitly 
+included at build time, so be sure that support for your JTAG probe was 
+included in the binaries you plan to use. The xPack OpenOCD includes 
+support for most existing probes, but does not guarantee that all are 
+included." %}
 
 ## Benefits
 
@@ -44,19 +70,30 @@ distribution.
 
 The details of installing the **xPack OpenOCD** on various platforms are 
 presented in the separate 
-[Install]({{ site.baseurl }}/dev-tools/openocd/install) page.
+[Install]({{ site.baseurl }}/dev-tools/openocd/install/) page.
+
+## Documentation
+
+The original OpenOCD documentation is available in the installed folders:
+
+- `share/doc/pdf/openocd.pdf`
+  
+## Support
+
+For the various support options, please read the separate 
+[Support]({{ site.baseurl }}/dev-tools/openocd/support/) page.
 
 ## Change log
 
-The change log is available in the 
-[CHANGELOG](https://github.com/xpack-dev-tools/openocd-xpack/blob/xpack/CHANGELOG.md) file.
+The change log is available in the repository
+[`CHANGELOG.md`](https://github.com/xpack-dev-tools/openocd-xpack/blob/xpack/CHANGELOG.md) file.
 
 ## Build details
 
 For those interested in building the binaries, please read the 
-[How to build](https://github.com/xpack-dev-tools/openocd-xpack/blob/xpack/README-BUILD.md) page. 
+[How to build?](https://github.com/xpack-dev-tools/openocd-xpack/blob/xpack/README-BUILD.md) page. 
 However, the ultimate source for details are the build scripts themselves, 
-all available from the [scripts](https://github.com/xpack-dev-tools/openocd-xpack/tree/xpack/scripts) folder.
+all available from the [scripts](https://github.com/xpack-dev-tools/openocd-xpack/tree/xpack/scripts/) folder.
 
 ## Releases
 

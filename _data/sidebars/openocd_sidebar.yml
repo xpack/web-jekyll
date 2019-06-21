@@ -7,7 +7,7 @@ entries:
   # version: 1.0
   folders:
 
-  - title: Overview
+  - title: Top
     output: web
     folderitems:
     - title: Overview
@@ -16,7 +16,19 @@ entries:
     - title: Install
       url: /dev-tools/openocd/install/
       output: web
+    - title: Support
+      url: /dev-tools/openocd/support/
+      output: web
     - title: Releases
       url: /dev-tools/openocd/releases/
+      output: web
+  - title: Home
+    output: web
+    folderitems:
+    - title: The xPack Project
+      url: /
+      output: web
+    - title: GNU MCU Eclipse
+      external_url: https://gnu-mcu-eclipse.github.io
       output: web
 

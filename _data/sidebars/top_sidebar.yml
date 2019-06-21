@@ -5,10 +5,14 @@ entries:
 - title: sidebar
   folders:
 
-  - title: Overview
+  - title: Top
     output: web
-    url: /index.html
-    type: homepage
+    folderitems:
+
+    - title: Overview
+      output: web
+      url: /
+      type: homepage
 
   - title: Core Tools
     output: web
@@ -45,7 +49,7 @@ entries:
       output: web
       external_url: https://www.tapatalk.com/groups/xpack/
 
-  - title: For Project Contributors
+  - title: Maintainer Info
     output: web
     folderitems:
 

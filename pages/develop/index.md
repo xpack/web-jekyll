@@ -1,21 +1,15 @@
 ---
 layout: page
-title: Developer resources
+title: Maintainer info
 permalink: /develop/
 sidebar: top_sidebar
 
+summary: Resources for project maintainers and developers.
 author: Liviu Ionescu
-
 date: 2016-03-09 12:04:00 +0300
-last_updated: 2019-06-13 12:00:00 +0300
+last_updated: 2019-06-21 23:11:00 +0300
 
 ---
-
-TBD
-
-## Procedures
-
-* [How to release the project web]({{ site.baseurl }}/develop/how-to-release-web/)
 
 ## Developer
 

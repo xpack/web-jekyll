@@ -7,15 +7,15 @@ sidebar: top_sidebar
 toc: false
 github_editme: true
 summary: Tools to manage, configure and build complex, package based, multi-target projects.
-last_updated: 2019-06-20 23:43:00+0300
+last_updated: 2019-06-21 23:11:00 +0300
 ---
 
 ## Mission statement
 
-Provide a set of tools to manage, configure and build complex, package based, 
-multi-target (multi-architecture, multi-board, multi-toolchain) projects, 
-intended to **enhance code sharing** and **reusing** during the life
-cycle of libraries and applications, with an emphasis on C/C++ and 
+Provide a set of cross-platform tools to manage, configure and build complex, 
+modular, multi-target (multi-architecture, multi-board, multi-toolchain)
+projects, intended to **enhance code sharing** and **reusing** during the 
+life cycle of libraries and applications, with an emphasis on C/C++ and 
 bare-metal embedded.
 
 ## xPacks overview
@@ -34,8 +34,8 @@ mandate the use of xPack packages, and can be used in traditional
 environments (although some of them may benefit when used in an xPack
 environment).
 
-Although the focus is on **C/C++**, most of the tools are generic and
-can be used with other programming languages as well.
+Although the focus is on **C/C++**, most of the tools are language agnostic 
+and can be used with other programming languages as well.
 
 Based on the installed content, there are currently two 
 types of xPacks: **source** and **binary**:
@@ -91,7 +91,7 @@ Packages part of the µOS++ framework:
 - `@micro-os-plus/diag-trace` - µOS++ Tracing
 - `@micro-os-plus/c-libs` - µOS++ C library
 - `@micro-os-plus/cpp-libs` - µOS++ C++ library
-  
+
 ### 3rd Party
 
 Packages with 3rd party content (mind the **plural** in the scope name):
