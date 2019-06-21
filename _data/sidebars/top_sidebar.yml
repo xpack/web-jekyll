@@ -31,7 +31,34 @@ entries:
       output: web
 
     - title: openocd
-      external_url: https://github.com/xpack-dev-tools/openocd-xpack
+      url: /dev-tools/openocd/
+      output: web
+
+  - title: Support
+    output: web
+    folderitems:
+
+    - title: Overview
+      url: /support/
+      output: web
+    - title: The xPack Forums
+      output: web
+      external_url: https://www.tapatalk.com/groups/xpack/
+
+  - title: For Project Contributors
+    output: web
+    folderitems:
+
+    - title: Overview
+      url: /develop/
+      output: web
+
+    - title: JavaScript Style Guide
+      url: /develop/js-style-guide/
+      output: web
+
+    - title: Links
+      url: /develop/links/
       output: web
 
   - title: License

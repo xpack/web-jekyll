@@ -30,5 +30,9 @@ topnav_dropdowns:
           external_url: https://github.com/xpack-dev-tools
         - title: 3rd Party xPacks
           external_url: https://github.com/xpacks
+    - title: Forums
+      folderitems:
+        - title: The xPack Forums
+          external_url: https://www.tapatalk.com/groups/xpack/
 
 

@@ -5,8 +5,3 @@ entries:
 - title: sidebar
   folders:
 
-  - title: Overview
-    output: web
-    url: /index.html
-    type: homepage
-
