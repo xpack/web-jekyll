@@ -5,8 +5,12 @@ permalink: /dev-tools/openocd/install/
 sidebar: openocd_sidebar
 
 summary: "The recommended method is via xpm."
+author: Liviu Ionescu
+github_editme: true
+disqus: true
+
 date: 2015-09-09 19:43:00 +0300
-last_updated: 2019-06-21 23:11:00 +0300
+last_updated: 2019-06-21 23:21:00 +0300
 
 ---
 
