@@ -1,7 +1,7 @@
 ---
 layout: page
 title: The xPack Basic Project Builder
-permalink: /core/xpbuild/
+permalink: /xpbuild/
 sidebar: xpbuild_sidebar
 
 toc: false

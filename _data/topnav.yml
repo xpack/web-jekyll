@@ -15,13 +15,13 @@ topnav_dropdowns:
     - title: Documentation
       folderitems:
         - title: xpm
-          url: /core/xpm/
+          url: /xpm/
         - title: xpbuild
-          url: /core/xpbuild/
+          url: /xpbuild/
         - title: xpmake
-          url: /core/xpmake/
+          url: /xpmake/
         - title: xpninja
-          url: /core/xpninja/
+          url: /xpninja/
     - title: GitHub
       folderitems:
         - title: xPack Core Tools

@@ -31,7 +31,7 @@ The only requirement is a recent
 `xpm`, which is a portable 
 [Node.js](https://nodejs.org) command line application. To install it,
 follow the instructions in the 
-[xpm install](https://xpack.github.io/core/xpm/install/) page.
+[xpm install](https://xpack.github.io/xpm/install/) page.
 
 ### Install
 
@@ -49,7 +49,7 @@ your platform).
 
 This location is configurable using the environment variable 
 `XPACKS_REPO_FOLDER`; for more details please check the 
-[xpm folders](https://xpack.github.io/core/xpm/folders/) page.
+[xpm folders](https://xpack.github.io/xpm/folders/) page.
 
 xPacks aware tools, like the **GNU MCU Eclipse plug-ins** automatically 
 identify binaries installed with

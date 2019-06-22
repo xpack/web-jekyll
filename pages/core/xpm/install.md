@@ -1,7 +1,7 @@
 ---
 layout: page
 title: How to install xpm
-permalink: /core/xpm/install/
+permalink: /xpm/install/
 sidebar: xpm_sidebar
 
 keywords: mydoc

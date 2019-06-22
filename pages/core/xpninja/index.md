@@ -1,7 +1,7 @@
 ---
 layout: page
 title: The xPack Build Runner
-permalink: /core/xpninja/
+permalink: /xpninja/
 sidebar: xpninja_sidebar
 
 keywords: make

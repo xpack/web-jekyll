@@ -1,7 +1,7 @@
 ---
 layout: page
 title: The XCDL format
-permalink: /core/xcdl/files/xcdl-json/
+permalink: /xcdl/files/xcdl-json/
 sidebar: xcdl_sidebar
 
 author: Liviu Ionescu

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: xpm folders
-permalink: /core/xpm/folders/
+permalink: /xpm/folders/
 sidebar: xpm_sidebar
 
 author: Liviu Ionescu

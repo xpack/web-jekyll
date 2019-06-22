@@ -1,7 +1,7 @@
 ---
 layout: page
 title: xcdl
-permalink: /core/xcdl/
+permalink: /xcdl/
 sidebar: xcdl_sidebar
 
 author: Liviu Ionescu

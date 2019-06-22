@@ -1,7 +1,7 @@
 ---
 layout: page
 title: The xPack Build Generator
-permalink: /core/xpmake/
+permalink: /xpmake/
 sidebar: xpmake_sidebar
 
 keywords: make

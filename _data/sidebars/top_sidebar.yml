@@ -19,11 +19,11 @@ entries:
     folderitems:
 
     - title: xpm
-      url: /core/xpm/
+      url: /xpm/
       output: web
 
     - title: xpbuild
-      url: /core/xpbuild/
+      url: /xpbuild/
       output: web
 
   - title: Dev Tools
