@@ -1,11 +1,9 @@
 ---
-layout: page
 title: Maintainer info
 permalink: /develop/
-sidebar: top_sidebar
 
 summary: Resources for project maintainers and developers.
-author: Liviu Ionescu
+
 date: 2016-03-09 12:04:00 +0300
 last_updated: 2019-06-21 23:11:00 +0300
 

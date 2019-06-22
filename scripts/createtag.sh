@@ -29,13 +29,10 @@ then
   # Cannot indent here string.
 cat <<EOF >"${TAGDIR}/${tag}.md"
 ---
-layout: page
 title: "${title}"
 permalink: /tags/${tag}/
-sidebar: news_sidebar
 
 tagName: ${tag}
-search: exclude
 
 ---
 

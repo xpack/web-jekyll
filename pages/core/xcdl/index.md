@@ -1,10 +1,6 @@
 ---
-layout: page
 title: xcdl
 permalink: /xcdl/
-sidebar: xcdl_sidebar
-
-author: Liviu Ionescu
 
 date: 2017-10-08 18:38:00 +0300
 last_updated: 2019-06-18 12:00:00 +0300

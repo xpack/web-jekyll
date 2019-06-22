@@ -1,11 +1,7 @@
 ---
-layout: post
 title:  "The xPack project web has a new look!"
-sidebar: news_sidebar
 
-author: Liviu Ionescu
-disqus: true
-github_editme: true
+date: 2019-06-10 12:00:00 +0300
 last_updated: 2019-05-12 12:00:00 +0300
 
 categories: 

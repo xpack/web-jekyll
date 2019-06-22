@@ -1,27 +1,32 @@
-# This is the openocd sidebar TOC. 
+# This is the xpbuild sidebar TOC. 
 # The sidebar code loops through sections here and provides the appropriate formatting.
 
 entries:
 - title: Sidebar
-  product: OpenOCD
+  product: xpbuild
   # version: 1.0
   folders:
 
-  - title: Top
-    output: web
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage.html
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage.html
+      output: pdf
+      type: frontmatter
+
+  - title: Getting Started
+    output: web, pdf
     folderitems:
     - title: Overview
-      url: /openocd/
+      url: /xpbuild/
       output: web
-    - title: Install
-      url: /openocd/install/
-      output: web
-    - title: Support
-      url: /openocd/support/
-      output: web
-    - title: Releases
-      url: /openocd/releases/
-      output: web
+
   - title: Home
     output: web
     folderitems:

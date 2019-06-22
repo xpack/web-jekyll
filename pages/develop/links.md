@@ -1,10 +1,6 @@
 ---
-layout: page
 title: Links
 permalink: /develop/links/
-sidebar: top_sidebar
-
-author: Liviu Ionescu
 
 date: 2016-03-09 12:04:00 +0300
 last_updated: 2019-06-18 12:00:00 +0300

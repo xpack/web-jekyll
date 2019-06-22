@@ -1,12 +1,6 @@
 ---
-layout: page
 title: How to get help for OpenOCD?
 permalink: /openocd/support/
-sidebar: openocd_sidebar
-
-author: Liviu Ionescu
-github_editme: true
-disqus: true
 
 date: 2019-06-21 11:08:00 +0300
 last_updated: 2019-06-21 23:40:00 +0300

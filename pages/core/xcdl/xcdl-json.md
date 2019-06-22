@@ -1,10 +1,6 @@
 ---
-layout: page
 title: The XCDL format
 permalink: /xcdl/files/xcdl-json/
-sidebar: xcdl_sidebar
-
-author: Liviu Ionescu
 
 date: 2017-10-10 19:59:00 +0300
 last_updated: 2019-06-18 12:00:00 +0300

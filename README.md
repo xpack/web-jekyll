@@ -19,6 +19,8 @@ publicly available from [http://xpack.github.io](http://xpack.github.io).
 The web site uses Jekyll and is generated online by 
 [GitHub Pages](https://pages.github.com).
 
+For security reasons, GitHub Pages allows only a curated [list of plugins](https://pages.github.com/versions/).
+
 ## Prerequisites
 
 To be able to run the Jekyll build process, the `ruby` interpreter 
@@ -87,7 +89,7 @@ The build can be performed automatically by Jekyll when started in server mode.
 
 ```console
 $ cd xpack.github.io.git
-$ bundle exec jekyll serve --trace
+$ bundle exec jekyll serve --trace --baseurl "/preview"
 ```
 
 To view the result, point the browser to `http://localhost:4002/preview/`.

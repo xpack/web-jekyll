@@ -1,10 +1,6 @@
 ---
-layout: page
 title: How to get support?
 permalink: /support/
-sidebar: top_sidebar
-
-author: Liviu Ionescu
 
 date: 2015-09-12 13:43:00 +0300
 last_updated: 2019-06-13 12:00:00 +0300

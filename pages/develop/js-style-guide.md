@@ -1,11 +1,9 @@
 ---
-layout: page
 title: JavaScript Style Guide
 permalink: /develop/js-style-guide/
-sidebar: top_sidebar
 
-author: Liviu Ionescu
 summary: For consistency, use the Standard JS validation tools.
+
 date: 2017-10-09 02:47:00 +0300
 last_updated: 2019-05-12 12:00:00 +0300
 

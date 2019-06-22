@@ -3,10 +3,10 @@ baseurl: /preview
 # Default permalink used for posts.
 permalink: /blog/:year/:month/:day/:title/
 
-# Update this after editting the CSS files, to force a cache update.
+# Update this after editing the CSS files, to force a cache update.
 css-date: 201906121821
 
-repository: xpack/xpack.github.io-source
+repository: xpack/xpack.github.io
 
 # This property is useful for conditional filtering of content that is 
 # separate from the PDF.
@@ -29,7 +29,7 @@ copyright_holder: Liviu Ionescu
 # value blank.
 github_editme_path: xpack/xpack.github.io-source/blob/master/
 
-# If you're using disqus for comments, add the shortname here. 
+# If you're using disqus for comments, add the short name here. 
 # If not, leave this value blank.
 disqus_shortname: xpack
 
@@ -99,8 +99,146 @@ defaults:
       layout: "page"
       comments: true
       search: true
-      sidebar: home_sidebar
+      sidebar: home
       topnav: topnav
+      author: Liviu Ionescu
+
+  -
+    scope:
+      path: "pages/news"
+      type: "pages"
+    values:
+      layout: "page"
+      comments: true
+      search: true
+      sidebar: news
+      topnav: topnav
+      author: Liviu Ionescu
+
+  -
+    scope:
+      path: "pages/tags"
+      type: "pages"
+    values:
+      layout: "page"
+      comments: false
+      search: exclude
+      sidebar: news
+      topnav: topnav
+      author: Liviu Ionescu
+
+  -
+    scope:
+      path: "pages/dev-tools/openocd"
+      type: "pages"
+    values:
+      layout: "page"
+      comments: true
+      search: true
+      sidebar: openocd
+      topnav: topnav
+      author: Liviu Ionescu
+      toc: true
+      github_editme: true
+
+  -
+    scope:
+      path: "pages/core/xpm"
+      type: "pages"
+    values:
+      layout: "page"
+      comments: true
+      search: true
+      sidebar: xpm
+      topnav: topnav
+      author: Liviu Ionescu
+      toc: true
+      github_editme: true
+
+  -
+    scope:
+      path: "pages/core/xpbuild"
+      type: "pages"
+    values:
+      layout: "page"
+      comments: true
+      search: true
+      sidebar: xpbuild
+      topnav: topnav
+      author: Liviu Ionescu
+      toc: true
+      github_editme: true
+
+  -
+    scope:
+      path: "pages/core/xpmake"
+      type: "pages"
+    values:
+      layout: "page"
+      comments: true
+      search: true
+      sidebar: xpmake
+      topnav: topnav
+      author: Liviu Ionescu
+      toc: true
+      github_editme: true
+
+  -
+    scope:
+      path: "pages/core/xpninja"
+      type: "pages"
+    values:
+      layout: "page"
+      comments: true
+      search: true
+      sidebar: xpninja
+      topnav: topnav
+      author: Liviu Ionescu
+      toc: true
+      github_editme: true
+
+  # For historical reasons
+  -
+    scope:
+      path: "pages/core/xcdl"
+      type: "pages"
+    values:
+      layout: "page"
+      comments: false
+      search: exclude
+      sidebar: xcdl
+      topnav: topnav
+      author: Liviu Ionescu
+      toc: true
+      github_editme: true
+
+  -
+    scope:
+      path: "pages/core/xmake"
+      type: "pages"
+    values:
+      layout: "page"
+      comments: false
+      search: exclude
+      sidebar: xmake
+      topnav: topnav
+      author: Liviu Ionescu
+      toc: true
+      github_editme: true
+
+  -
+    scope:
+      path: "pages/core/xsvd"
+      type: "pages"
+    values:
+      layout: "page"
+      comments: false
+      search: exclude
+      sidebar: xsvd
+      topnav: topnav
+      author: Liviu Ionescu
+      toc: true
+      github_editme: true
 
   -
     scope:
@@ -120,18 +258,21 @@ defaults:
       layout: "post"
       comments: true
       search: true
-      sidebar: news_sidebar
+      sidebar: news
       topnav: topnav
+      author: Liviu Ionescu
+      toc: false
+      github_editme: true
 
 
 # Used in links.html to find all links.
 sidebars:
-- home_sidebar
-- news_sidebar
-- top_sidebar
-- xpm_sidebar
-- xpbuild_sidebar
-- openocd_sidebar
+- home
+- news
+- openocd
+- xmake
+- xpbuild
+- xpm
 
 # The description is used in the feed.xml file.
 description: "Tools to manage, configure and build complex, package based, multi-target, C/C++ projects."
@@ -141,3 +282,10 @@ description: "Tools to manage, configure and build complex, package based, multi
 # baseurl: /documentation-theme-jekyll
 
 github: [metadata]
+
+plugins:
+  - jekyll-redirect-from
+
+whitelist:
+  - jekyll-redirect-from
+

@@ -1,12 +1,10 @@
 ---
-layout: page
 title: The xPack OpenOCD releases
 permalink: /openocd/releases/
-sidebar: openocd_sidebar
 
-author: Liviu Ionescu
-date: 2015-09-10 09:08:00 +0300
 search: exclude
+
+date: 2015-09-10 09:08:00 +0300
 
 ---
 

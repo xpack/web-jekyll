@@ -1,15 +1,9 @@
 ---
-layout: page
 title: The xPack OpenOCD
 permalink: /openocd/
-sidebar: openocd_sidebar
 
 summary: "A binary distribution of OpenOCD."
-author: Liviu Ionescu
 keywords: openocd
-toc: true
-github_editme: true
-disqus: true
 
 date: 2015-09-04 17:02:00 +0300
 last_updated: 2019-06-21 23:40:00 +0300

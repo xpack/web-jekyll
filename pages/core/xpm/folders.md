@@ -1,10 +1,9 @@
 ---
-layout: page
 title: xpm folders
 permalink: /xpm/folders/
-sidebar: xpm_sidebar
 
-author: Liviu Ionescu
+redirect_from:
+  - /xpm/files/folders/
 
 date: 2017-10-09 14:14:00 +0300
 last_updated: 2019-06-18 12:00:00 +0300

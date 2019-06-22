@@ -1,13 +1,14 @@
 ---
 title: "The xPack Project"
 permalink: /
-keywords: packages, code sharing, reusing, libraries, applications, c/c++, embedded
-sidebar: top_sidebar
 
+keywords: packages, code sharing, reusing, libraries, applications, c/c++, embedded
 toc: false
-github_editme: true
 summary: Tools to manage, configure and build complex, package based, multi-target projects.
+
+date: 2019-06-20 23:11:00 +0300
 last_updated: 2019-06-21 23:11:00 +0300
+
 ---
 
 ## Mission statement

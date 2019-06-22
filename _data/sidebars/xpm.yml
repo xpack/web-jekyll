@@ -1,0 +1,40 @@
+# This is the xpm sidebar TOC. 
+# The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: Sidebar
+  product: xpm
+  # version: 1.0
+  folders:
+
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage.html
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage.html
+      output: pdf
+      type: frontmatter
+
+  - title: Getting Started
+    output: web, pdf
+    folderitems:
+    - title: Overview
+      url: /xpm/
+      output: web
+
+  - title: Home
+    output: web
+    folderitems:
+    - title: The xPack Project
+      url: /
+      output: web
+    - title: GNU MCU Eclipse
+      external_url: https://gnu-mcu-eclipse.github.io
+      output: web
+
+
