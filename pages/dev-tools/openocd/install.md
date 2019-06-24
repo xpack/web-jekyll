@@ -3,6 +3,7 @@ title: How to install the OpenOCD binaries?
 permalink: /openocd/install/
 
 summary: "The recommended method is via xpm."
+toc: false
 
 date: 2015-09-09 19:43:00 +0300
 last_updated: 2019-06-21 23:40:00 +0300
@@ -14,6 +15,7 @@ last_updated: 2019-06-21 23:40:00 +0300
 The **xPack OpenOCD** can be installed automatically, via `xpm` (the
 recommended method), or manually, using the portable archives.
 
+{% capture easy_install %}
 ## Easy install 
 
 The easiest way to install OpenOCD is using the **binary xPack**, available as 
@@ -61,7 +63,9 @@ $ xpm uninstall --global @xpack-dev-tools/openocd
 (Note: not yet implemented. As a temporary workaround, simply remove the 
 `xPacks/@xpack-dev-tools/openocd` folder, or one of the versioned 
 subfolders.)
+{% endcapture %}
 
+{% capture windows %}
 ## Manual install
 
 For all platforms, the **xPack OpenOCD** binaries are released as portable 
@@ -72,8 +76,6 @@ The archives can be downloaded from the GitHub
 
 {% include note.html content="For manual installs, the recommended 
 install location is different from the xPack install folder." %}
-
-### Windows
 
 The Windows versions of **xPack OpenOCD** are packed as ZIP files. 
 Download the latest version named like:
@@ -105,7 +107,7 @@ C:\Users\ilg>C:\Users\ilg\AppData\Roaming\xPacks\OpenOCD\0.10.0-12\bin\openocd.e
 xPack OpenOCD, 64-bit Open On-Chip Debugger 0.10.0+dev-00593-g23ad80df4 (2019-06-19-15:39)
 ```
 
-#### Drivers
+### Drivers
 
 As usual on Windows, mastering drivers is a challenge and OpenOCD is no 
 exceptions, so don't be surprised to encounter many incompatible drivers 
@@ -116,7 +118,7 @@ ruin other USB drivers you might have installed. Our strong recommendation
 is to **NOT** do this, and instead use the manufacturer drivers, when 
 compatible with OpenOCD.
 
-#### ST-LINK/V2
+### ST-LINK/V2
 
 One example of compatible drivers are the ST-LINK/V2 USB drivers, from ST, 
 available as part number 
@@ -141,14 +143,26 @@ reasons, you still use older versions, especially the venerable Windows XP,
 some differences may be observed in the USB subsystem; to stay on the 
 safe side, try to always use original manufacturer drivers." %}
 
-#### Zadig
+### Zadig
 
 For some devices, for example 
 [ARM-USB-OCD](https://www.olimex.com/Products/ARM/JTAG/) from 
 [Olimex](https://www.olimex.com/), after installing the vendor drivers, 
 you must also install Zadig and convert the vendor drivers to WinUSB drivers.
 
-### macOS
+{% endcapture %}
+
+{% capture macos %}
+## Manual install
+
+For all platforms, the **xPack OpenOCD** binaries are released as portable 
+archives that can be installed in any location.
+
+The archives can be downloaded from the GitHub 
+[Releases](https://github.com/xpack-dev-tools/openocd-xpack/releases/) page.
+
+{% include note.html content="For manual installs, the recommended 
+install location is different from the xPack install folder." %}
 
 The macOS version of **xPack OpenOCD** is packed as a TGZ archive. 
 Download the latest version named like:
@@ -177,8 +191,19 @@ To check if OpenOCD starts, use:
 $ ~/opt/xPacks/openocd/0.10.0-12/bin/openocd --version
 xPacks 64-bit Open On-Chip Debugger 0.10.0+dev-00593-g23ad80df4 (2019-06-19-19:02)
 ```
+{% endcapture %}
 
-### GNU/Linux
+{% capture linux %}
+## Manual install
+
+For all platforms, the **xPack OpenOCD** binaries are released as portable 
+archives that can be installed in any location.
+
+The archives can be downloaded from the GitHub 
+[Releases](https://github.com/xpack-dev-tools/openocd-xpack/releases/) page.
+
+{% include note.html content="For manual installs, the recommended 
+install location is different from the xPack install folder." %}
 
 The GNU/Linux versions of **xPack OpenOCD** are packed as TGZ archives. 
 Download the latest version named like:
@@ -214,7 +239,7 @@ $ ~/opt/xPacks/openocd/0.10.0-12/bin/openocd --version
 xPacks 64-bit Open On-Chip Debugger 0.10.0+dev-00593-g23ad80df4 (2019-06-19-19:02)
 ```
 
-#### UDEV
+### UDEV
 
 For the JTAG probes implemented as USB devices (actually most of them), 
 the last installation step on GNU/Linux is to configure the **UDEV** 
@@ -233,7 +258,7 @@ already added to UDEV. The above OpenOCD rules file also defines the
 J-Link ID. Apparently UDEV does not complain; if you encounter 
 problems, just comment out the definition in the OpenOCD file." %}
 
-#### USB access rights
+### USB access rights
 
 On some GNU/Linux distributions, the UDEV definitions are not enough,
 or are not effective, and when trying to access the JTAG probe,
@@ -256,6 +281,28 @@ Then restart and login again.
 
 If you still have problems, check your distribution documentation and
 when you have a functional solution post it on the project forum.
+
+{% endcapture %}
+
+<ul id="profileTabs" class="nav nav-tabs">
+    <li class="active"><a href="#windows" data-toggle="tab">Windows</a></li>
+    <li><a href="#macos" data-toggle="tab">macOS</a></li>
+    <li><a href="#linux" data-toggle="tab">GNU/Linux</a></li>
+</ul>
+<div class="tab-content">
+	<div role="tabpanel" class="tab-pane active" id="windows">
+		{{ easy_install | markdownify }}
+		{{ windows | markdownify }}
+	</div>
+	<div role="tabpanel" class="tab-pane" id="macos">
+		{{ easy_install | markdownify }}
+		{{ macos | markdownify }}
+	</div>
+	<div role="tabpanel" class="tab-pane" id="linux">
+		{{ easy_install | markdownify }}
+		{{ linux | markdownify }}
+	</div>
+</div>
 
 ## Testing
 
