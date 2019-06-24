@@ -1,0 +1,12 @@
+  <div class="panel panel-default">
+      <div class="panel-heading">
+          <h4 class="panel-title">
+              <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#{{ include.id }}">{{ include.question | markdownify | strip | remove: "<p>" | remove: "</p>" }}</a>
+          </h4>
+      </div>
+      <div id="{{ include.id }}" class="panel-collapse collapse noCrossRef">
+          <div class="panel-body">
+              {{ include.answer | markdownify }}
+          </div>
+      </div>
+  </div>
