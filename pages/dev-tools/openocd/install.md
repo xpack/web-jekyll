@@ -15,7 +15,6 @@ last_updated: 2019-06-21 23:40:00 +0300
 The **xPack OpenOCD** can be installed automatically, via `xpm` (the
 recommended method), or manually, using the portable archives.
 
-{% capture easy_install %}
 ## Easy install 
 
 The easiest way to install OpenOCD is using the **binary xPack**, available as 
@@ -63,9 +62,7 @@ $ xpm uninstall --global @xpack-dev-tools/openocd
 (Note: not yet implemented. As a temporary workaround, simply remove the 
 `xPacks/@xpack-dev-tools/openocd` folder, or one of the versioned 
 subfolders.)
-{% endcapture %}
 
-{% capture windows %}
 ## Manual install
 
 For all platforms, the **xPack OpenOCD** binaries are released as portable 
@@ -74,8 +71,9 @@ archives that can be installed in any location.
 The archives can be downloaded from the GitHub 
 [Releases](https://github.com/xpack-dev-tools/openocd-xpack/releases/) page.
 
-{% include note.html content="For manual installs, the recommended 
-install location is different from the xPack install folder." %}
+
+{% capture windows %}
+### Download
 
 The Windows versions of **xPack OpenOCD** are packed as ZIP files. 
 Download the latest version named like:
@@ -86,10 +84,16 @@ Download the latest version named like:
 Select the `-x64` file for 64-bit Windows machines and the `-x32` file 
 for 32-bit Windows machines.
 
+### Unpack
+
 Unpack the archive and copy it into the `%userprofile%\AppData\Roaming\xPacks` 
 (for example `C:\Users\ilg\AppData\Roaming\xPacks`) folder; according 
 to Microsoft, this is the recommended location for installing user specific 
 packages.
+
+{% include note.html content="For manual installs, the recommended 
+install location is slightly different from the `xpm` install folders,
+which use the scope (like `@xpack-dev-tools`) to group different tools." %}
 
 {% include important.html content="Although perfectly possible to 
 install OpenOCD in any folder, it is highly recommended to use this 
@@ -153,21 +157,14 @@ you must also install Zadig and convert the vendor drivers to WinUSB drivers.
 {% endcapture %}
 
 {% capture macos %}
-## Manual install
-
-For all platforms, the **xPack OpenOCD** binaries are released as portable 
-archives that can be installed in any location.
-
-The archives can be downloaded from the GitHub 
-[Releases](https://github.com/xpack-dev-tools/openocd-xpack/releases/) page.
-
-{% include note.html content="For manual installs, the recommended 
-install location is different from the xPack install folder." %}
+### Download
 
 The macOS version of **xPack OpenOCD** is packed as a TGZ archive. 
 Download the latest version named like:
 
 -  `xpack-openocd-0.10.0-12-darwin-x64.tgz`
+
+### Unpack
 
 To install OpenOCD, unpack the archive and copy it to 
 `/${HOME}/opt/xPacks/openocd/`:
@@ -179,6 +176,9 @@ $ cd "${HOME}/opt"
 $ tar xvf ~/Downloads/xpack-openocd-0.10.0-12-darwin-x64.tgz
 $ chmod -R -w xPacks/openocd/0.10.0-12
 ```
+
+{% include note.html content="For manual installs, the recommended 
+install location is different from the `xpm` install folders." %}
 
 {% include important.html content="Although perfectly possible to 
 install OpenOCD in any folder, it is highly recommended to use this 
@@ -194,16 +194,7 @@ xPacks 64-bit Open On-Chip Debugger 0.10.0+dev-00593-g23ad80df4 (2019-06-19-19:0
 {% endcapture %}
 
 {% capture linux %}
-## Manual install
-
-For all platforms, the **xPack OpenOCD** binaries are released as portable 
-archives that can be installed in any location.
-
-The archives can be downloaded from the GitHub 
-[Releases](https://github.com/xpack-dev-tools/openocd-xpack/releases/) page.
-
-{% include note.html content="For manual installs, the recommended 
-install location is different from the xPack install folder." %}
+### Download
 
 The GNU/Linux versions of **xPack OpenOCD** are packed as TGZ archives. 
 Download the latest version named like:
@@ -216,6 +207,8 @@ CentOS, but can be executed on most recent GNU/Linux distributions.
 Select the `-x64` file for 64-bit machines and the `-x32` file for 32-bit 
 machines.
 
+### Unpack
+
 To install OpenOCD, unpack the archive and copy it to 
 `/${HOME}/opt/xPacks/openocd/${version}`:
 
@@ -226,6 +219,10 @@ $ cd "${HOME}/opt"
 $ tar xvf ~/Downloads/xpack-openocd-0.10.0-12-linux-x64.tgz
 $ chmod -R -w xPacks/openocd/0.10.0-12
 ```
+
+{% include note.html content="For manual installs, the recommended 
+install location is slightly different from the `xpm` install folders,
+which use the scope (like `@xpack-dev-tools`) to group different tools." %}
 
 {% include important.html content="Although perfectly possible to 
 install OpenOCD in any folder, it is highly recommended to use this 
@@ -291,15 +288,12 @@ when you have a functional solution post it on the project forum.
 </ul>
 <div class="tab-content">
 	<div role="tabpanel" class="tab-pane active" id="windows">
-		{{ easy_install | markdownify }}
 		{{ windows | markdownify }}
 	</div>
 	<div role="tabpanel" class="tab-pane" id="macos">
-		{{ easy_install | markdownify }}
 		{{ macos | markdownify }}
 	</div>
 	<div role="tabpanel" class="tab-pane" id="linux">
-		{{ easy_install | markdownify }}
 		{{ linux | markdownify }}
 	</div>
 </div>
