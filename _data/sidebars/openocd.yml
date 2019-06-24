@@ -19,10 +19,13 @@ entries:
     - title: Support
       url: /openocd/support/
       output: web
+    - title: FAQ
+      url: /openocd/faq/
+      output: web
     - title: Releases
       url: /openocd/releases/
       output: web
-  - title: Home
+  - title: Back Home
     output: web
     folderitems:
     - title: The xPack Project

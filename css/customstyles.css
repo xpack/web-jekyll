@@ -858,6 +858,11 @@ span.soft {
     background-color: whitesmoke;
 }
 
+div.panel-group {
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
 @media (max-width: 767px) {
     .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
         color: #444;
