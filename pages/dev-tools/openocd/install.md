@@ -281,22 +281,7 @@ when you have a functional solution post it on the project forum.
 
 {% endcapture %}
 
-<ul id="profileTabs" class="nav nav-tabs">
-    <li class="active"><a href="#windows" data-toggle="tab">Windows</a></li>
-    <li><a href="#macos" data-toggle="tab">macOS</a></li>
-    <li><a href="#linux" data-toggle="tab">GNU/Linux</a></li>
-</ul>
-<div class="tab-content">
-	<div role="tabpanel" class="tab-pane active" id="windows">
-		{{ windows | markdownify }}
-	</div>
-	<div role="tabpanel" class="tab-pane" id="macos">
-		{{ macos | markdownify }}
-	</div>
-	<div role="tabpanel" class="tab-pane" id="linux">
-		{{ linux | markdownify }}
-	</div>
-</div>
+{% include platform-tabs.html %}
 
 ## Testing
 
