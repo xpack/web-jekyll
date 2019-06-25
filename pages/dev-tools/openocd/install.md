@@ -115,12 +115,27 @@ xPack OpenOCD, 64-bit Open On-Chip Debugger 0.10.0+dev-00593-g23ad80df4 (2019-06
 
 As usual on Windows, mastering drivers is a challenge and OpenOCD is no 
 exceptions, so don't be surprised to encounter many incompatible drivers 
-for various JTAG probes. The OpenOCD distribution includes some libusb 
-drivers, and recommends to run the `zadig.exe` tool to activate them. 
-Although this manoeuvre will make OpenOCD happy, it will most probably 
-ruin other USB drivers you might have installed. Our strong recommendation 
-is to **NOT** do this, and instead use the manufacturer drivers, when 
-compatible with OpenOCD.
+for various JTAG probes. 
+
+### Zadig
+
+The OpenOCD distribution includes some libusb 
+drivers, and recommends to run the [`zadig.exe`](https://zadig.akeo.ie) tool to activate them. 
+
+For example 
+[ARM-USB-OCD](https://www.olimex.com/Products/ARM/JTAG/) from 
+[Olimex](https://www.olimex.com/), after installing the vendor drivers, 
+asks to install Zadig and convert the vendor drivers to WinUSB drivers.
+
+{% include warning.html content="Although converting the vendor drivers 
+to WinUSB drivers will make OpenOCD happy, please be aware that other 
+tools using the original drivers will no longer work while Zadig is 
+active, and to make them work you need to uninstall the Zadig driver 
+for the device and reinstall the vendor driver (see 
+[Zadig FAQ](https://github.com/pbatard/libwdi/wiki/FAQ#Help_Zadig_replaced_the_driver_for_the_wrong_device_How_do_I_restore_it)).
+Our 
+recommendation is to use Zadig only as a last resort solution, and, when 
+possible, prefer the manufacturer drivers." %}
 
 ### ST-LINK/V2
 
@@ -146,13 +161,6 @@ If, for any
 reasons, you still use older versions, especially the venerable Windows XP, 
 some differences may be observed in the USB subsystem; to stay on the 
 safe side, try to always use original manufacturer drivers." %}
-
-### Zadig
-
-For some devices, for example 
-[ARM-USB-OCD](https://www.olimex.com/Products/ARM/JTAG/) from 
-[Olimex](https://www.olimex.com/), after installing the vendor drivers, 
-you must also install Zadig and convert the vendor drivers to WinUSB drivers.
 
 {% endcapture %}
 
