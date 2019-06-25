@@ -3,29 +3,27 @@ title: How to get support?
 permalink: /support/
 
 date: 2015-09-12 13:43:00 +0300
-last_updated: 2019-06-13 12:00:00 +0300
+last_updated: 2019-06-26 00:09:00 +0300
 
 ---
 
 ## Quicklinks
 
-The best source for support is 
-[The xPack Forums](https://www.tapatalk.com/groups/xpack/); be sure you
-select the right group/discussion.
+- [xPack Forums](https://www.tapatalk.com/groups/xpack/) - the best source 
+  for support ; be sure you select the right group/discussion.
+- [OpenOCD support]({{ site.baseurl }}/openocd/support/)
 
 ## Tools issues
 
 In case you encounter problems while using the xPack tools, please 
 consider the following:
 
-- read the documentation pages
+- read carefully the documentation pages
 - check the release pages for **Known issues**
-  - [xpm releases](https://github.com/xpack/xpm-js/releases/)
-- check the [forums](https://www.tapatalk.com/groups/xpack/) for **FAQ**
+- check the **FAQ** pages
 - check the [forums](https://www.tapatalk.com/groups/xpack/) for 
   discussions on similar subjects
 - check the GitHub Issues trackers for the specific project
-  - [xpm tracker](https://github.com/xpack/xpm-js/issues/)
 
 ### Use the forums
 
