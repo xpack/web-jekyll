@@ -14,6 +14,10 @@ entries:
       url: /
       type: homepage
 
+    - title: Intro
+      output: web
+      url: /intro/
+
     - title: About
       output: web
       url: /about/
