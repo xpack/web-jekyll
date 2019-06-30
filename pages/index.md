@@ -47,14 +47,16 @@ generally libraries used by the project.
 generally tools used during the build process, like toolchains,
 builders, etc.
 
+For more details, read the [xPack 101]({{ site.baseurl }}/intro/) page.
+
 The entire xPack project is split amongst several groups,
-published as separated GitHub _organizations_.
+published as separated GitHub _organisations_.
 
 ## xPack Core Tools
 
 The core xPack tools are:
 
-- `xpm` - the **xPack Package Manager**
+- [`xpm`]({{ site.baseurl }}/xpm/) - the **xPack Package Manager**
 - `@xpack/xpbuild` - the **xPack Basic Project Builder**
 - `@xpack/xpmake` - the **xPack Build Generator** (in design phase)
 - `@xpack/xpninja` - the **xPack Build Runner** (in design phase)
@@ -62,13 +64,16 @@ The core xPack tools are:
 - `@xpack/xpliquid` - the **xPack Liquid Template Engine** (in design phase)
 - `@xpack/xpjson` - the **xPack JSON Manager** (in design phase)
 
+These projects are hosted in the GitHub 
+[`xpack`](https://github.com/xpack) organisation.
+
 ## xPack based Development Tools
 
 The main binary tools packed as xPacks are:
 
 - `@xpack-dev-tools/arm-none-eabi-gcc` - the **xPack ARM Embedded GCC** toolchain
-- `@xpack-dev-tools/openocd` - the **xPack OpenOCD**
-- `@xpack-dev-tools/qemu-system-gnuarmeclipse` - the **xPack GNU ARM Eclipse QEMU**
+- [`@xpack-dev-tools/openocd`]({{ site.baseurl }}/openocd/) - the **xPack OpenOCD**
+- [`@xpack-dev-tools/qemu`]({{ site.baseurl }}/qemu/) - the **xPack GNU ARM Eclipse QEMU**
 - `@xpack-dev-tools/riscv-none-embed-gcc` - the **xPack RISC-V Embedded GCC** toolchain
 
 Planned:
@@ -80,6 +85,9 @@ Planned:
 - `@xpack-dev-tools/make` - the **xPack make**
 - `@xpack-dev-tools/cmake` - the **xPack CMake**
 - `@xpack-dev-tools/ninja` - the **xPack Ninja Build**
+
+These projects are hosted in the GitHub 
+[`xpack-dev-tools`](https://github.com/xpack-dev-tools) organisation.
 
 ## Source xPacks
 
@@ -105,9 +113,14 @@ Packages with 3rd party content (mind the **plural** in the scope name):
 Scripts to create the development environments used to build the
 archives used by the binary xPacks.
 
+The development environments are based on:
+
 - **CentOS 6** Docker images, used to build the GNU/Linux and Windows 
   distributions
 - **macOS 10.10** tools, used to build the macOS Intel distributions
+
+These scripts are hosted in the Github 
+[`xpack/xpack-build-box`](https://github.com/xpack/xpack-build-box) project.
 
 ## License
 
