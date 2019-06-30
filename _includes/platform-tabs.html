@@ -1,16 +1,21 @@
-<ul id="profileTabs" class="nav nav-tabs">
-    <li class="active"><a href="#windows" data-toggle="tab">Windows</a></li>
-    <li><a href="#macos" data-toggle="tab">macOS</a></li>
-    <li><a href="#linux" data-toggle="tab">GNU/Linux</a></li>
+{% if include.index and include.index != "" and include.index != nil %}
+{% assign suffix = include.index %}
+{% else %}
+{% assign suffix = "1" }} %}
+{% endif %}
+<ul id="profileTabs_{{ suffix }}" class="nav nav-tabs">
+    <li class="active"><a href="#windows_{{ suffix }}" data-toggle="tab">Windows</a></li>
+    <li><a href="#macos_{{ suffix }}" data-toggle="tab">macOS</a></li>
+    <li><a href="#linux_{{ suffix }}" data-toggle="tab">GNU/Linux</a></li>
 </ul>
 <div class="tab-content">
-	<div role="tabpanel" class="tab-pane active" id="windows">
+	<div role="tabpanel" class="tab-pane active" id="windows_{{ suffix }}">
 		{{ windows | markdownify }}
 	</div>
-	<div role="tabpanel" class="tab-pane" id="macos">
+	<div role="tabpanel" class="tab-pane" id="macos_{{ suffix }}">
 		{{ macos | markdownify }}
 	</div>
-	<div role="tabpanel" class="tab-pane" id="linux">
+	<div role="tabpanel" class="tab-pane" id="linux_{{ suffix }}">
 		{{ linux | markdownify }}
 	</div>
 </div>
