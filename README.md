@@ -94,6 +94,15 @@ $ bundle exec jekyll serve --trace --baseurl "/preview"
 
 To view the result, point the browser to `http://localhost:4002/preview/`.
 
+To test links:
+
+```console
+$ bundle exec jekyll build
+$ bundle exec htmlproofer --allow-hash-href --url-swap \^/preview/\:/ ./_site
+$ bundle exec htmlproofer --allow-hash-href --url-swap \^/preview/\:/ --url-ignore /github.com/xpack/xpack.github.io/blob/master/ ./_site
+```
+
+
 ## Publish
 
 To publish, commit this Git and the new site will be automatically updated.
