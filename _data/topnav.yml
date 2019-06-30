@@ -34,5 +34,7 @@ topnav_dropdowns:
       folderitems:
         - title: The xPack Forums
           external_url: https://www.tapatalk.com/groups/xpack/
+        - title: The xPack Chatroom
+          external_url: https://gitter.im/xpack/
 
 
