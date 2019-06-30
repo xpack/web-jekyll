@@ -10,19 +10,25 @@ last_updated: 2019-06-18 12:00:00 +0300
 
 ---
 
-## Getting started
+## Overview
 
-TBD
+`xpm` stands for **x**Pack **p**ackage **m**anager and is a Node.js CLI 
+application to manage xPacks.
 
-## How xpm works
+The open source project is hosted on GitHub as 
+[`xpack/xpm-js`](https://github.com/xpack/xpm-js.git).
 
-TBD
+`xpm` is an extension to `npm` and shares the same public repository.
+
+## What are xPacks?
+
+Please read the [xPack 101]({{ site.baseurl }}/intro/) page.
 
 ## xpm CLI commands
 
-- [init]({{ site.baseurl }}/xpm/cli/xpm-init/)
-- [install]({{ site.baseurl }}/xpm/cli/xpm-install/)
-- [run-script]({{ site.baseurl }}/xpm/cli/xpm-run-script/)
+- [init]({{ site.baseurl }}/xpm/cli/init/)
+- [install]({{ site.baseurl }}/xpm/cli/install/)
+- [run-script]({{ site.baseurl }}/xpm/cli/run-script/)
 
 ## Configuring xpm
 

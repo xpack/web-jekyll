@@ -1,5 +1,5 @@
 ---
-permalink: /xpm/cli/xpm-init/
+permalink: /xpm/cli/init/
 title: xpm init
 
 date: 2017-10-09 12:55:00 +0300

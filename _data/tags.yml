@@ -4,4 +4,9 @@
 allowed-tags:
   - news
   - openocd
-  - releases
+  - releases  
+  - emulator
+  - linux
+  - macos
+  - web
+  - windows

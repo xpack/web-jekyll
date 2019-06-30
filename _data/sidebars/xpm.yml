@@ -26,6 +26,31 @@ entries:
     - title: Overview
       url: /xpm/
       output: web
+    - title: Install
+      url: /xpm/install/
+      output: web
+    - title: Support
+      url: /xpm/support/
+      output: web
+    - title: FAQ
+      url: /xpm/faq/
+      output: web
+    - title: Published versions
+      external_url: https://www.npmjs.com/package/xpm?activeTab=versions
+      output: web
+
+  - title: CLI commands
+    output: web, pdf
+    folderitems:
+    - title: init
+      url: /xpm/cli/init/
+      output: web
+    - title: install
+      url: /xpm/cli/install/
+      output: web
+    - title: run-script
+      url: /xpm/cli/run-script/
+      output: web
 
   - title: Home
     output: web
