@@ -5,7 +5,7 @@ title: xPack 101
 summary: A npm module with an extra xpack definition.
 
 date: 2019-06-26 08:57:00 +0300
-last_updated: 2019-06-27 19:02:00 +0300
+last_updated: 2019-06-30 10:30:20 +0300
 
 ---
 

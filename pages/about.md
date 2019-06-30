@@ -5,7 +5,7 @@ title: About
 summary: Perfekt ist nicht gut genug.
 
 date: 2016-03-03 22:45:00 +0300
-last_updated: 2019-06-27 19:16:00 +0300
+last_updated: 2019-06-30 10:30:21 +0300
 
 ---
 

@@ -3,7 +3,7 @@ title: How to get help for xpm?
 permalink: /xpm/support/
 
 date: 2019-06-28 11:04:00 +0300
-last_updated: 2019-06-28 11:04:00 +0300
+last_updated: 2019-06-30 10:30:20 +0300
 
 ---
 

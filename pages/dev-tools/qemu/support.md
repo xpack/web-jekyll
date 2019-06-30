@@ -3,7 +3,7 @@ title: How to get help for QEMU?
 permalink: /qemu/support/
 
 date: 2019-06-21 11:08:00 +0300
-last_updated: 2019-06-27 23:54:00 +0300
+last_updated: 2019-06-30 10:30:22 +0300
 
 ---
 

@@ -5,7 +5,7 @@ permalink: /develop/js-style-guide/
 summary: For consistency, use the Standard JS validation tools.
 
 date: 2017-10-09 02:47:00 +0300
-last_updated: 2019-05-12 12:00:00 +0300
+last_updated: 2019-06-30 10:30:18 +0300
 
 ---
 
