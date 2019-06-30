@@ -37,8 +37,10 @@ select the right group/discussion.
 
 ### Use the chat room
 
-For online discussions between users, you can use the 
+For live discussions between users, you can use the 
 [xPack chatroom](https://gitter.im/xpack/community).
+This may be a great way to share experience, but for support
+the forums are preferred.
 
 ### Use the GitHub Issues trackers only if necessary
 
