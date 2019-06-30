@@ -34,6 +34,9 @@ permalink: /tags/${tag}/
 
 tagName: ${tag}
 
+date: $(date '+%Y-%m-%d %T %z')
+last_updated: $(date '+%Y-%m-%d %T %z')
+
 ---
 
 {% include taglogic.html %}
