@@ -46,6 +46,10 @@ entries:
       url: /openocd/
       output: web
 
+    - title: qemu
+      url: /qemu/
+      output: web
+
   - title: Support
     output: web
     folderitems:
