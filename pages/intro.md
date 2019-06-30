@@ -9,6 +9,23 @@ last_updated: 2019-06-27 19:02:00 +0300
 
 ---
 
+## What are xPacks?
+
+**xPacks** are general purpose multi-version software packages.
+
+By **multi-version** it is understood not only that packages can have 
+multiple versions, but they **can be installed in parallel**, each
+project having its own set of dependencies.
+
+Based on the installed content, there are currently two 
+types of xPacks: **source** and **binary**:
+
+- **source xPacks** are packages that install source files, 
+generally libraries used by the project.
+- **binary xPacks** are packages that install binary files, 
+generally tools used during the build process, like toolchains,
+builders, etc.
+
 ## Where does the name come from?
 
 The name, pronounced _**ɛks-pak**_, can be understood as _Universal Package_, 
@@ -75,14 +92,14 @@ them, please continue to read how binary and source xPacks work.
 
 ## How do binary xPacks work?
 
-Let's assume that the 'awesome project' needs the `arm-none-eabi-gcc` 
+Let's assume that 'my-awesome-project' needs the `arm-none-eabi-gcc` 
 toolchain to build,
 and not any version but a specific one, like `8.2.1`; it also needs the
 xPack Basic Builder, `xpbuild`.
 
 ```json
 {
-  "name": "my-awesome-xpack",
+  "name": "my-awesome-project",
   "version": "1.0.0",
   "devDependencies": {
     "@xpack/xpbuild": "~1.2.3",
@@ -92,19 +109,23 @@ xPack Basic Builder, `xpbuild`.
 }
 ```
 
+{% include note.html content="The `~` used in the version field is
+a npm/semver convention that means either the given version,
+or one with the same major/minor but a higher patch, if available." %}
+
 Running `xpm install` in the project folder will first install the toolchain
-in the central xPack storage (a folder in user's home`), then add a folder
+in the central xPack storage (a folder in user's home), then add a folder
 `xpacks/.bin` and inside it create links (or `.cmd` stubs on Windows) to the
 toolchain executables, like `xpacks/.bin/arm-none-eabi-gcc`.
+
+TODO: show the output of tree on the xpacks folder.
 
 Similarly for the builder, which is a Node.js CLI npm module, after 
 installing the module, `npm` will
 add a folder `node_modules/.bin` where a link to the `xpbuild` executable
 will be created (or a `xpbuild.cmd` stub on Windows).
 
-{% include note.html content="The `~` used in the version field is
-a npm/semver convention that means either the given version,
-or one with the same major/minor but a higher patch, if available." %}
+TODO: show the output of tree on the node_modules folder.
 
 When running actions like `npm run build`, the `PATH` is automatically
 adjusted to `xpacks/.bin:node_modules/.bin:$PATH`, so the exact versions
@@ -144,3 +165,4 @@ like `xpacks/micro-os-plus-diag-trace` (mind the linearised package name);
 now the project can refer to 
 them as to any sub-folder local to the project.
 
+TODO: show the output of tree on the xpacks folder.
