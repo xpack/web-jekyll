@@ -11,7 +11,9 @@ last_updated: 2019-06-26 00:09:00 +0300
 
 - [xPack Forums](https://www.tapatalk.com/groups/xpack/) - the best source 
   for support ; be sure you select the right group/discussion.
+- [xPack Chatroom](https://gitter.im/xpack/) - a place for users to chat
 - [OpenOCD support]({{ site.baseurl }}/openocd/support/)
+- [QEMU support][{{ site.baseurl }}/openocd/support/]
 
 ## Tools issues
 
@@ -32,6 +34,11 @@ cases, if you have custom configurations, and generally if you have
 any experience that you want to share with others, please use the
 [forums](https://www.tapatalk.com/groups/xpack/), and be sure you
 select the right group/discussion.
+
+### Use the chat room
+
+For online discussions between users, you can use the 
+[xPack chatroom](https://gitter.im/xpack/community).
 
 ### Use the GitHub Issues trackers only if necessary
 
