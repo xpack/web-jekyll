@@ -14,11 +14,11 @@ last_updated: 2019-06-21 23:40:00 +0300
 
 If you already know the general facts about OpenOCD, you can directly skip to:
 
-* [Install]({{ site.baseurl }}/openocd/install/)
-* [Support]({{ site.baseurl }}/openocd/support/)
-* [How to build?](https://github.com/xpack-dev-tools/openocd-xpack/blob/xpack/README-BUILD.md)
-* [How to publish?](https://github.com/xpack-dev-tools/openocd-xpack/blob/xpack/README-PUBLISH.md)
-* [Releases]({{ site.baseurl }}/openocd/releases/)
+- [Install]({{ site.baseurl }}/openocd/install/)
+- [Support]({{ site.baseurl }}/openocd/support/)
+- [How to build?](https://github.com/xpack-dev-tools/openocd-xpack/blob/xpack/README-BUILD.md)
+- [How to publish?](https://github.com/xpack-dev-tools/openocd-xpack/blob/xpack/README-PUBLISH.md)
+- [Releases]({{ site.baseurl }}/openocd/releases/)
 
 ## Overview
 
@@ -80,7 +80,7 @@ The original OpenOCD documentation is available in the installed folders:
 ## Support
 
 For the various support options, please read the separate 
-[Support]({{ site.baseurl }}/openocd/support/) page.
+[support]({{ site.baseurl }}/openocd/support/) page.
 
 ## Change log
 
@@ -90,9 +90,12 @@ The change log is available in the repository
 ## Build details
 
 For those interested in building the binaries, please read the 
-[How to build?](https://github.com/xpack-dev-tools/openocd-xpack/blob/xpack/README-BUILD.md) page. 
+[How to build?](https://github.com/xpack-dev-tools/openocd-xpack/blob/xpack/README-BUILD.md)
+page. 
 However, the ultimate source for details are the build scripts themselves, 
-all available from the [scripts](https://github.com/xpack-dev-tools/openocd-xpack/tree/xpack/scripts/) folder.
+all available from the 
+[scripts](https://github.com/xpack-dev-tools/openocd-xpack/tree/xpack/scripts/)
+folder.
 
 ## Releases
 
