@@ -9,7 +9,9 @@ last_updated: 2019-06-21 23:40:00 +0300
 
 ## Quicklinks
 
-The quick answer is to use the [xPack forums](https://www.tapatalk.com/groups/xpack/); please select the correct forum.
+- [xPack Forums](https://www.tapatalk.com/groups/xpack/) - the best source 
+  for support ; be sure you select the right group/discussion.
+- [xPack Chatroom](https://gitter.im/xpack/) - a place for users to chat
 
 ## Check the documentation
 
