@@ -89,7 +89,7 @@ The build can be performed automatically by Jekyll when started in server mode.
 
 ```console
 $ cd xpack.github.io.git
-$ bundle exec jekyll serve --trace --baseurl "/preview"
+$ bundle exec jekyll serve --trace --safe --baseurl "/preview"
 ```
 
 To view the result, point the browser to `http://localhost:4002/preview/`.
