@@ -14,13 +14,13 @@ last_updated: 2019-06-30 10:30:18 +0300
 * Book: _Embedded software development with eCos_, by Anthony J. Massa, published in 2003 at Prentice Hall, available from [Amazon](http://www.amazon.com/Embedded-Software-Development-Anthony-Massa/dp/0130354732)
 * Book: _Software Build Systems: Principles and Experience_, by Peter Smith, published in 2011 at Addison Wesley, available from [Amazon](http://www.amazon.com/Software-Build-Systems-Principles-Experience/dp/0321717287)
 * IEEE Std 830-1998: _IEEE Recommended Practice for Software Requirements Specifications_, published in 1998
-* [CMSIS-Pack](http://www.keil.com/pack/doc/CMSIS/Pack/html/index.html) - ARM mechanism to install software, device support, APIs, and example projects
+* [CMSIS-Pack](http://www.keil.com/pack/doc/CMSIS/Pack/html/) - ARM mechanism to install software, device support, APIs, and example projects
 
 ## Distribution management systems
 
 * [OpenEmbedded](http://www.openembedded.org/wiki/Main_Page) - the build framework for embedded Linux (with more detail in the Yocto documentation)
 * [BitBake User Manual](http://www.yoctoproject.org/docs/)
-* [Gentoo Development Guide](https://devmanual.gentoo.org/index.html)
+* [Gentoo Development Guide](https://devmanual.gentoo.org/)
 * [MacPorts Guide](https://guide.macports.org/)
 * [Arch PKGBUILD](https://wiki.archlinux.org/index.php/PKGBUILD)
 * [NPM](https://www.npmjs.com) - the package manager for JS (special interest for the packet.json format)
