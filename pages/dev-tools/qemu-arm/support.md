@@ -3,7 +3,7 @@ title: How to get help for xPack QEMU ARM?
 permalink: /qemu-arm/support/
 
 date: 2019-06-21 11:08:00 +0300
-last_updated: 2019-06-30 10:30:22 +0300
+last_updated: 2019-07-01 12:25:30 +0300
 
 ---
 

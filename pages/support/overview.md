@@ -3,7 +3,7 @@ title: How to get support?
 permalink: /support/
 
 date: 2015-09-12 13:43:00 +0300
-last_updated: 2019-06-30 10:45:46 +0300
+last_updated: 2019-07-01 12:25:29 +0300
 
 ---
 

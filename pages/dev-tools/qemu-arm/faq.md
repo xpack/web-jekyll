@@ -5,7 +5,7 @@ permalink: /qemu-arm/faq/
 toc: false
 
 date: 2019-06-27 23:55:00 +0300
-last_updated: 2019-06-30 10:30:22 +0300
+last_updated: 2019-07-01 12:25:30 +0300
 
 ---
 
