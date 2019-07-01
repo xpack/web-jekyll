@@ -1,5 +1,5 @@
 ---
-title: How to get help for OpenOCD?
+title: How to get help for xPack OpenOCD?
 permalink: /openocd/support/
 
 date: 2019-06-21 11:08:00 +0300

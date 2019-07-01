@@ -1,5 +1,5 @@
 ---
-title: FAQ
+title: The xPack OpenOCD FAQ
 permalink: /openocd/faq/
 
 toc: false
