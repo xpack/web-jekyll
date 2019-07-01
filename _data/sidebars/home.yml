@@ -13,11 +13,9 @@ entries:
       output: web
       url: /
       type: homepage
-
     - title: Intro
       output: web
       url: /intro/
-
     - title: About
       output: web
       url: /about/
@@ -29,23 +27,32 @@ entries:
     - title: xpm
       url: /xpm/
       output: web
-
     - title: xpbuild
       url: /xpbuild/
       output: web
+    - title: xpninja
+      url: /xpninja/
+      output: web
+    - title: xpmake
+      url: /xpmake/
+      output: web
+    - title: xpcdl
+      url: /xpcdl/
+      output: web
 
-  - title: Dev Tools
+  - title: 3rd Party Tools
     output: web
     folderitems:
 
     - title: arm-none-eabi-gcc
       external_url: https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack
       output: web
-
+    - title: riscv-none-embed-gcc
+      external_url: https://github.com/xpack-dev-tools/riscv-none-embed-gcc-xpack
+      output: web
     - title: openocd
       url: /openocd/
       output: web
-
     - title: qemu
       url: /qemu/
       output: web
@@ -68,11 +75,9 @@ entries:
     - title: Overview
       url: /develop/
       output: web
-
     - title: JavaScript Style Guide
       url: /develop/js-style-guide/
       output: web
-
     - title: Links
       url: /develop/links/
       output: web

@@ -28,7 +28,7 @@ The only requirement is a recent
 `xpm`, which is a portable 
 [Node.js](https://nodejs.org) command line application. To install it,
 follow the instructions from the 
-[xpm install](https://xpack.github.io/xpm/install/) page.
+[xpm install]({{ site.baseurl }}/xpm/install/) page.
 
 ### Install
 

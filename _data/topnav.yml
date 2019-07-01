@@ -18,10 +18,12 @@ topnav_dropdowns:
           url: /xpm/
         - title: xpbuild
           url: /xpbuild/
-        - title: xpmake
-          url: /xpmake/
         - title: xpninja
           url: /xpninja/
+        - title: xpmake
+          url: /xpmake/
+        - title: xpcdl
+          url: /xpcdl/
     - title: GitHub
       folderitems:
         - title: xPack Core Tools

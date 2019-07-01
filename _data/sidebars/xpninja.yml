@@ -23,7 +23,7 @@ entries:
   - title: Getting Started
     output: web, pdf
     folderitems:
-    - title: Overview
+    - title: Preview
       url: /xpninja/
       output: web
 
