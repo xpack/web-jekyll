@@ -212,6 +212,20 @@ defaults:
       toc: true
       github_editme: true
 
+  -
+    scope:
+      path: "pages/core/xpcdl"
+      type: "pages"
+    values:
+      layout: "page"
+      comments: true
+      search: true
+      sidebar: xpcdl
+      topnav: topnav
+      author: Liviu Ionescu
+      toc: true
+      github_editme: true
+
   # For historical reasons
   -
     scope:
