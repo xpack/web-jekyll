@@ -53,8 +53,8 @@ entries:
     - title: openocd
       url: /openocd/
       output: web
-    - title: qemu
-      url: /qemu/
+    - title: qemu-arm
+      url: /qemu-arm/
       output: web
 
   - title: Support

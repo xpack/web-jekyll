@@ -1,6 +1,6 @@
 ---
-title: FAQ
-permalink: /qemu/faq/
+title: The xPack QEMU ARM FAQ
+permalink: /qemu-arm/faq/
 
 toc: false
 
@@ -9,7 +9,7 @@ last_updated: 2019-06-30 10:30:22 +0300
 
 ---
 
-### The xPack OpenOCD Frequently Asked Questions
+### The xPack QEMU ARM Frequently Asked Questions
 
 {% capture question_1 %}
 Question 1?

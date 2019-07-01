@@ -1,6 +1,6 @@
 ---
-title: How to install the QEMU binaries?
-permalink: /qemu/install/
+title: How to install the xPack QEMU ARM binaries?
+permalink: /qemu-arm/install/
 
 summary: "The recommended method is via xpm."
 toc: false
@@ -12,7 +12,7 @@ last_updated: 2019-06-30 10:30:22 +0300
 
 ## Overview
 
-The **xPack QEMU** can be installed automatically, via `xpm` (the
+The **xPack QEMU ARM** can be installed automatically, via `xpm` (the
 recommended method), or manually, by downloading and unpacking one of the 
 portable archives.
 
@@ -28,7 +28,7 @@ The only requirement is a recent
 `xpm`, which is a portable 
 [Node.js](https://nodejs.org) command line application. To install it,
 follow the instructions from the 
-[xpm install](https://xpack.github.io/xpm/install/) page.
+[xpm install]({{ site.baseurl }}/xpm/install/) page.
 
 ### Install
 
@@ -70,20 +70,20 @@ subfolders.)
 
 ## Manual install
 
-For all platforms, the **xPack QEMU** binaries are released as portable 
+For all platforms, the **xPack QEMU ARM** binaries are released as portable 
 archives that can be installed in any location.
 
 The archives can be downloaded from the GitHub 
-[Releases](https://github.com/xpack-dev-tools/qemu-xpack/releases/) page.
+[Releases](https://github.com/xpack-dev-tools/qemu-arm-xpack/releases/) page.
 
 {% capture windows %}
 ### Download
 
-The Windows versions of **xPack QEMU** are packed as ZIP files. 
+The Windows versions of **xPack QEMU ARM** are packed as ZIP files. 
 Download the latest version named like:
 
-- `xpack-qemu-2.8.0-4-win32-x64.zip`
-- `xpack-qemu-2.8.0-4-win32-x32.zip`
+- `xpack-qemu-arm-2.8.0-4-win32-x64.zip`
+- `xpack-qemu-arm-2.8.0-4-win32-x32.zip`
 
 Select the `-x64` file for 64-bit Windows machines and the `-x32` file 
 for 32-bit Windows machines.
@@ -130,22 +130,22 @@ For usual Cortex-M emulation, there are no special drivers required.
 {% capture macos %}
 ### Download
 
-The macOS version of **xPack QEMU** is packed as a TGZ archive. 
+The macOS version of **xPack QEMU ARM** is packed as a TGZ archive. 
 Download the latest version named like:
 
--  `xpack-qemu-2.8.0-4-darwin-x64.tgz`
+-  `xpack-qemu-arm-2.8.0-4-darwin-x64.tgz`
 
 ### Unpack
 
 To install QEMU, unpack the archive and copy it to 
-`/${HOME}/opt/xPacks/qemu/`:
+`/${HOME}/opt/xPacks/qemu-arm/`:
 
 ```console
 $ mkdir -p ~/opt
 $ cd ~/opt
 
-$ tar xvf ~/Downloads/xpack-qemu-2.8.0-4-darwin-x64.tgz
-$ chmod -R -w xPacks/qemu/2.8.0-4
+$ tar xvf ~/Downloads/xpack-qemu-arm-2.8.0-4-darwin-x64.tgz
+$ chmod -R -w xPacks/qemu-arm/2.8.0-4
 ```
 
 {% include note.html content="For manual installs, the recommended 
@@ -159,8 +159,8 @@ for the executable in this location." %}
 To check if QEMU starts, use:
 
 ```console
-$ ~/opt/xPacks/qemu/2.8.0-4/bin/qemu-system-gnuarmeclipse --version
-xPacks 64-bit QEMU emulator version 2.8.0-4 (v2.8.0-3-20180523-6-gee07085299-dirty)
+$ ~/opt/xPacks/qemu-arm/2.8.0-4/bin/qemu-system-gnuarmeclipse --version
+xPacks 64-bit QEMU ARM emulator version 2.8.0-4 (v2.8.0-3-20180523-6-gee07085299-dirty)
 Copyright (c) 2003-2016 Fabrice Bellard and the QEMU Project developers
 ```
 
@@ -169,11 +169,11 @@ Copyright (c) 2003-2016 Fabrice Bellard and the QEMU Project developers
 {% capture linux %}
 ### Download
 
-The GNU/Linux versions of **xPack QEMU** are packed as TGZ archives. 
+The GNU/Linux versions of **xPack QEMU ARM** are packed as TGZ archives. 
 Download the latest version named like:
 
-- `xpack-qemu-2.8.0-4-linux-x64.tgz`
-- `xpack-qemu-2.8.0-4-linux-x32.tgz`
+- `xpack-qemu-arm-2.8.0-4-linux-x64.tgz`
+- `xpack-qemu-arm-2.8.0-4-linux-x32.tgz`
 
 As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
 CentOS, but can be executed on most recent GNU/Linux distributions. 
@@ -183,14 +183,14 @@ machines.
 ### Unpack
 
 To install QEMU, unpack the archive and copy it to 
-`/${HOME}/opt/xPacks/qemu/${version}`:
+`/${HOME}/opt/xPacks/qemu-arm/${version}`:
 
 ```console
 $ mkdir -p ~/opt
 $ cd ~/opt
 
-$ tar xvf ~/Downloads/xpack-qemu-2.8.0-4-linux-x64.tgz
-$ chmod -R -w xPacks/qemu/2.8.0-4
+$ tar xvf ~/Downloads/xpack-qemu-arm-2.8.0-4-linux-x64.tgz
+$ chmod -R -w xPacks/qemu-arm/2.8.0-4
 ```
 
 {% include note.html content="For manual installs, the recommended 
@@ -206,7 +206,7 @@ for the executable in this location." %}
 To check if QEMU starts and is recent, use:
 
 ```console
-$ ~/opt/xPacks/qemu/2.8.0-4/bin/qemu-system-gnuarmeclipse --version
+$ ~/opt/xPacks/qemu-arm/2.8.0-4/bin/qemu-system-gnuarmeclipse --version
 xPacks 64-bit QEMU emulator version 2.8.0-4 (v2.8.0-3-20180523-6-gee07085299-dirty)
 Copyright (c) 2003-2016 Fabrice Bellard and the QEMU Project developers
 ```

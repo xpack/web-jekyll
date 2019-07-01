@@ -1,6 +1,6 @@
 ---
-title: How to get help for QEMU?
-permalink: /qemu/support/
+title: How to get help for xPack QEMU ARM?
+permalink: /qemu-arm/support/
 
 date: 2019-06-21 11:08:00 +0300
 last_updated: 2019-06-30 10:30:22 +0300
@@ -15,7 +15,7 @@ the correct forum.
 
 ## Check the documentation
 
-The xPack QEMU provides the original documentation in the
+The xPack QEMU ARM provides the original documentation in the
 installed folders:
 
 - `share/doc/pdf/qemu.pdf`
@@ -28,7 +28,7 @@ similar problems.
 ## Check the GitHub Issues
 
 Check the GitHub Issues 
-[tracker](https://github.com/xpack-dev-tools/qemu-xpack/issues/) for 
+[tracker](https://github.com/xpack-dev-tools/qemu-arm-xpack/issues/) for 
 similar problems.
 
 ## Contribute to the forums
@@ -43,6 +43,6 @@ and enter a **New Topic** in the QEMU section.
 
 If you are convinced that you identified a bug related to the binary 
 distribution, not QEMU itself (if you have doubts, use the forum), 
-or you have a pertinent suggestion how to enhance the xPack QEMU 
+or you have a pertinent suggestion how to enhance the xPack QEMU ARM 
 distribution, register a **New Issue** in the the GitHub Issues 
-[tracker](https://github.com/xpack-dev-tools/qemu-xpack/issues/).
+[tracker](https://github.com/xpack-dev-tools/qemu-arm-xpack/issues/).

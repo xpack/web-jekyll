@@ -1,6 +1,6 @@
 ---
-title: The xPack QEMU releases
-permalink: /qemu/releases/
+title: The xPack QEMU ARM releases
+permalink: /qemu-arm/releases/
 
 search: exclude
 comments: false

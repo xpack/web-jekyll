@@ -28,7 +28,7 @@ topnav_dropdowns:
       folderitems:
         - title: xPack Core Tools
           external_url: https://github.com/xpack
-        - title: xPack Dev Tools
+        - title: 3rd Party xPack Tools
           external_url: https://github.com/xpack-dev-tools
         - title: 3rd Party xPacks
           external_url: https://github.com/xpacks

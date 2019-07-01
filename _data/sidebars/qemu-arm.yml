@@ -3,7 +3,7 @@
 
 entries:
 - title: Sidebar
-  product: QEMU
+  product: QEMU ARM
   # version: 1.0
   folders:
 
@@ -11,19 +11,19 @@ entries:
     output: web
     folderitems:
     - title: Overview
-      url: /qemu/
+      url: /qemu-arm/
       output: web
     - title: Install
-      url: /qemu/install/
+      url: /qemu-arm/install/
       output: web
     - title: Support
-      url: /qemu/support/
+      url: /qemu-arm/support/
       output: web
     - title: FAQ
-      url: /qemu/faq/
+      url: /qemu-arm/faq/
       output: web
     - title: Releases
-      url: /qemu/releases/
+      url: /qemu-arm/releases/
       output: web
   - title: Back Home
     output: web
