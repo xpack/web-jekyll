@@ -863,6 +863,16 @@ div.panel-group {
     margin-bottom: 0px;
 }
 
+.sticky {
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -o-sticky;
+    position: -ms-sticky;
+    position: sticky;
+    top: 10px;
+    z-index: 1;
+}
+  
 @media (max-width: 767px) {
     .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
         color: #444;
