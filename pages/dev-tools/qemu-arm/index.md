@@ -3,6 +3,7 @@ title: The xPack QEMU ARM
 permalink: /qemu-arm/
 
 summary: "A binary distribution of QEMU ARM."
+comments: true
 keywords: 
   - qemu
   - arm

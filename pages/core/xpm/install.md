@@ -3,6 +3,7 @@ title: How to install xpm?
 permalink: /xpm/install/
 
 toc: false
+comments: true
 keywords: 
   - xpm
   - npm

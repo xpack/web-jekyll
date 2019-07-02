@@ -3,6 +3,7 @@ title: FAQ
 permalink: /xpm/faq/
 
 toc: false
+comments: true
 
 date: 2019-06-28 11:03:00 +0300
 last_updated: 2019-06-30 10:30:19 +0300

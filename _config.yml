@@ -98,7 +98,7 @@ defaults:
       type: "pages"
     values:
       layout: "page"
-      comments: true
+      comments: false
       search: true
       sidebar: home
       topnav: topnav
@@ -110,7 +110,7 @@ defaults:
       type: "pages"
     values:
       layout: "page"
-      comments: true
+      comments: false
       search: true
       sidebar: news
       topnav: topnav
@@ -134,7 +134,7 @@ defaults:
       type: "pages"
     values:
       layout: "page"
-      comments: true
+      comments: false
       search: true
       sidebar: openocd
       topnav: topnav
@@ -148,7 +148,7 @@ defaults:
       type: "pages"
     values:
       layout: "page"
-      comments: true
+      comments: false
       search: true
       sidebar: qemu-arm
       topnav: topnav
@@ -162,7 +162,7 @@ defaults:
       type: "pages"
     values:
       layout: "page"
-      comments: true
+      comments: false
       search: true
       sidebar: xpm
       topnav: topnav
@@ -176,7 +176,7 @@ defaults:
       type: "pages"
     values:
       layout: "page"
-      comments: true
+      comments: false
       search: true
       sidebar: xpbuild
       topnav: topnav
@@ -190,7 +190,7 @@ defaults:
       type: "pages"
     values:
       layout: "page"
-      comments: true
+      comments: false
       search: true
       sidebar: xpmake
       topnav: topnav
@@ -204,7 +204,7 @@ defaults:
       type: "pages"
     values:
       layout: "page"
-      comments: true
+      comments: false
       search: true
       sidebar: xpninja
       topnav: topnav
@@ -218,7 +218,7 @@ defaults:
       type: "pages"
     values:
       layout: "page"
-      comments: true
+      comments: false
       search: true
       sidebar: xpcdl
       topnav: topnav
@@ -275,7 +275,7 @@ defaults:
       type: "tooltips"
     values:
       layout: "page"
-      comments: true
+      comments: false
       search: true
       tooltip: true
 

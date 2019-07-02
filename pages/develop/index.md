@@ -3,6 +3,7 @@ title: Maintainer info
 permalink: /develop/
 
 summary: Resources for project maintainers and developers.
+comments: true
 
 date: 2016-03-09 12:04:00 +0300
 last_updated: 2019-06-30 10:30:18 +0300

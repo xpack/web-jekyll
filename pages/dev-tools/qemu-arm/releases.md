@@ -3,8 +3,8 @@ title: The xPack QEMU ARM releases
 permalink: /qemu-arm/releases/
 
 search: exclude
-comments: false
 toc: false
+comments: false
 github_editme: false
 
 date: 2015-09-10 09:08:00 +0300

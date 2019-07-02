@@ -4,6 +4,7 @@ permalink: /openocd/install/
 
 summary: "The recommended method is via xpm."
 toc: false
+comments: true
 
 date: 2015-09-09 19:43:00 +0300
 last_updated: 2019-07-01 12:25:30 +0300
