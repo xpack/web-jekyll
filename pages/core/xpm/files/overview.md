@@ -7,4 +7,4 @@ last_updated: 2019-06-30 10:30:20 +0300
 
 ---
 
-TBD
+- [package.json]({{ site.baseurl }}/xpm/files/package.json/)

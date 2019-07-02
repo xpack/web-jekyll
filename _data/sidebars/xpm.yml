@@ -42,13 +42,16 @@ entries:
   - title: CLI commands
     output: web, pdf
     folderitems:
-    - title: init
+    - title: xpm
+      url: /xpm/cli/
+      output: web
+    - title: xpm init
       url: /xpm/cli/init/
       output: web
-    - title: install
+    - title: xpm install
       url: /xpm/cli/install/
       output: web
-    - title: run-script
+    - title: xpm run-script
       url: /xpm/cli/run-script/
       output: web
 

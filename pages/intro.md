@@ -77,9 +77,60 @@ least the following definitions:
 }
 ```
 
-The npm `package.json` has a few more fields, please read 
+{% include note.html content="The npm `package.json` has a few more 
+fields, please read 
 [Creating a package.json file](https://docs.npmjs.com/creating-a-package-json-file)
-for details.
+for details." %}
+
+A more automated method is to use `xpm init`:
+
+```console
+$ mkdir xyz
+$ cd xyz
+$ xpm init
+xPack manager - create an xPack, empty or from a template
+Creating project 'xyz'...
+File 'package.json' generated.
+File 'LICENSE' generated.
+
+'xpm init' completed in 542 ms.
+$ ls -l
+total 16
+-rw-r--r--  1 ilg  staff  1070 Jul  1 23:33 LICENSE
+-rw-r--r--  1 ilg  staff   645 Jul  1 23:33 package.json
+$ cat package.json 
+{
+  "name": "xyz",
+  "version": "1.0.0",
+  "description": "An xPack with <your-description-here>",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/<user-id>/xyz.git"
+  },
+  "bugs": {
+    "url": "https://github.com/<user-id>/xyz/issues"
+  },
+  "homepage": "https://github.com/<user-id>/xyz",
+  "keywords": [
+    "xpack"
+  ],
+  "author": {
+    "name": "<author-name>",
+    "email": "<author-email>",
+    "url": "<author-url>"
+  },
+  "license": "MIT",
+  "config": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "xpack": {}
+}
+$ 
+```
 
 ## Why would I convert my project to an xPack?
 
@@ -136,6 +187,13 @@ existing tools with the same names that might be present in the `PATH`.
 (Note: the package referred above are not yet available with 
 these names, do not try to use them yet.)
 
+## Are binary xPacks huge?
+
+Not at all; on the contrary, binary xPacks are very small, just a 
+`package.json` file, since they include only the URLs where the binaries
+are actually stored (for example links to GitHub Releases), not the
+binaries themselves.
+
 ## How do source xPacks work?
 
 Even simpler. Let's assume that the 'awesome project' also needs the
@@ -167,3 +225,113 @@ now the project can refer to
 them as to any sub-folder local to the project.
 
 TODO: show the output of tree on the xpacks folder.
+
+## Example
+
+A real example is an embedded project that lists as dependencies 
+two source xPacks, one node module and three binary xPacks:
+
+```js
+{
+  "name": "h1b",
+  "version": "1.0.0",
+  "description": "An xPack with a blinky application running on HiFive1",
+  "...": "...",
+  "dependencies": {
+    "@micro-os-plus/diag-trace": "~1.0.6",
+    "@sifive/hifive1-board": "~1.0.3"
+  },
+  "devDependencies": {
+    "xmake": "~0.3.9",
+    "@gnu-mcu-eclipse/riscv-none-gcc": "~7.2.0-2.1",
+    "@gnu-mcu-eclipse/openocd": "~0.10.0-7.1",
+    "@gnu-mcu-eclipse/windows-build-tools": "~2.10.1"
+  },
+  "xpack": {
+  }
+}
+```
+
+The two source xPacks actually pull in six source xPacks, and the binary
+xPacks contribute a lot of links to `xpacks/.bin`: 
+
+```console
+$ cd /tmp/hifive1-blinky-cpp
+$ xpm install
+xPack manager - install package(s)
+
+Installing dependencies for 'hifive1-blinky-cpp'...
+Folder 'micro-os-plus-diag-trace' linked to '@micro-os-plus/diag-trace/1.0.6'.
+Folder 'sifive-hifive1-board' linked to '@sifive/hifive1-board/1.0.3'.
+Folder 'sifive-devices' linked to '@sifive/devices/1.0.2'.
+Folder 'micro-os-plus-riscv-arch' linked to '@micro-os-plus/riscv-arch/1.0.2'.
+Folder 'micro-os-plus-startup' linked to '@micro-os-plus/startup/1.0.7'.
+Folder 'micro-os-plus-c-libs' linked to '@micro-os-plus/c-libs/1.0.6'.
+Folder 'micro-os-plus-cpp-libs' linked to '@micro-os-plus/cpp-libs/1.0.4'.
+Folder 'xmake' linked to 'xmake/0.3.8'.
+File 'xmake' linked to 'xmake/bin/xmake.js'
+Folder 'gnu-mcu-eclipse-riscv-none-gcc' linked to '@gnu-mcu-eclipse/riscv-none-gcc/7.2.0-2.1'.
+File 'riscv-none-embed-addr2line' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-addr2line'
+File 'riscv-none-embed-ar' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-ar'
+File 'riscv-none-embed-as' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-as'
+File 'riscv-none-embed-c++' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-c++'
+File 'riscv-none-embed-c++filt' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-c++filt'
+File 'riscv-none-embed-cpp' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-cpp'
+File 'riscv-none-embed-elfedit' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-elfedit'
+File 'riscv-none-embed-g++' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-g++'
+File 'riscv-none-embed-gcc' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-gcc'
+File 'riscv-none-embed-gcc-7.2.0' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-gcc-7.2.0'
+File 'riscv-none-embed-gcc-ar' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-gcc-ar'
+File 'riscv-none-embed-gcc-nm' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-gcc-nm'
+File 'riscv-none-embed-gcc-ranlib' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-gcc-ranlib'
+File 'riscv-none-embed-gcov' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-gcov'
+File 'riscv-none-embed-gcov-dump' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-gcov-dump'
+File 'riscv-none-embed-gcov-tool' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-gcov-tool'
+File 'riscv-none-embed-gdb' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-gdb'
+File 'riscv-none-embed-gprof' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-gprof'
+File 'riscv-none-embed-ld' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-ld'
+File 'riscv-none-embed-ld.bfd' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-ld.bfd'
+File 'riscv-none-embed-nm' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-nm'
+File 'riscv-none-embed-objcopy' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-objcopy'
+File 'riscv-none-embed-objdump' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-objdump'
+File 'riscv-none-embed-ranlib' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-ranlib'
+File 'riscv-none-embed-readelf' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-readelf'
+File 'riscv-none-embed-run' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-run'
+File 'riscv-none-embed-size' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-size'
+File 'riscv-none-embed-strings' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-strings'
+File 'riscv-none-embed-strip' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-strip'
+Folder 'gnu-mcu-eclipse-openocd' linked to '@gnu-mcu-eclipse/openocd/0.10.0-7.1'.
+File 'openocd' linked to 'gnu-mcu-eclipse-openocd/.content/bin/openocd'
+Folder 'gnu-mcu-eclipse-windows-build-tools' linked to '@gnu-mcu-eclipse/windows-build-tools/2.10.1'.
+
+'xpm install' completed in 6.086 sec.
+$
+```
+
+## Continuous Integration use cases
+
+The high degree of automation provided by `xpm` is of great help
+for automated test environments.
+
+### Travis
+
+For example, with the proper scripts configured, the Travis configuration
+for an xPack is as simple as this:
+
+```yml
+os:
+  - linux
+
+dist: trusty
+
+language: node_js
+node_js:
+  - "node" 
+
+install:
+  - npm install --global xpm
+
+script:
+  - xpm install
+  - xpm run test
+```
