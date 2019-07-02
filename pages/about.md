@@ -6,7 +6,7 @@ summary: Perfekt ist nicht gut genug.
 comments: true
 
 date: 2016-03-03 22:45:00 +0300
-last_updated: 2019-06-30 10:30:21 +0300
+last_updated: 2019-07-02 23:14:06 +0300
 
 ---
 
