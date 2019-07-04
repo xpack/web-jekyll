@@ -2,6 +2,7 @@
 title: The xPack Package Manager
 permalink: /xpm/
 
+summary: A tool to manage dependencies for generic multi-version source and binary packages, inspired by npm.
 keywords: xPack package manager
 comments: true
 toc: false
@@ -14,14 +15,12 @@ last_updated: 2019-07-02 23:14:05 +0300
 ## Overview
 
 `xpm` stands for **x**Pack **p**ackage **m**anager and is a Node.js CLI 
-application to manage xPacks.
-
-The open source project is hosted on GitHub as 
-[`xpack/xpm-js`](https://github.com/xpack/xpm-js.git).
+application to manage xPacks; it can install both source and binary xPacks.
 
 `xpm` is an extension to `npm` and shares the same public repository.
 
-`xpm` can install both source and binary xPacks.
+The open source project is hosted on GitHub as 
+[`xpack/xpm-js`](https://github.com/xpack/xpm-js.git).
 
 ## What are xPacks?
 

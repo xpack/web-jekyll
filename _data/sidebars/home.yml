@@ -16,6 +16,9 @@ entries:
     - title: Intro
       output: web
       url: /intro/
+    - title: Install prerequisites
+      output: web
+      url: /install/
     - title: About
       output: web
       url: /about/
