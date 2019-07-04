@@ -26,6 +26,28 @@ entries:
     - title: Overview
       url: /xpbuild/
       output: web
+    - title: Install
+      url: /xpbuild/install/
+      output: web
+    - title: Support
+      url: /xpbuild/support/
+      output: web
+    - title: FAQ
+      url: /xpbuild/faq/
+      output: web
+    - title: Published versions
+      external_url: https://www.npmjs.com/package/xpbuild?activeTab=versions
+      output: web
+
+  - title: CLI commands
+    output: web, pdf
+    folderitems:
+    - title: xpbuild
+      url: /xpbuild/cli/
+      output: web
+    - title: xpbuild init
+      url: /xpbuild/cli/init/
+      output: web
 
   - title: Home
     output: web
