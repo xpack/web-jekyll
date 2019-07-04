@@ -78,7 +78,7 @@ automated scripts, without any post processing.
 
 ### Skip checks (`--no-update-notifier`)
 
-By default, before exiting, `xpbuild` checks, once a day, if there is a 
+By default, before exiting, xpbuild checks, once a day, if there is a 
 new version of the program available.
 
 For environments where this check is not necessary, it can be disabled.

@@ -147,7 +147,7 @@ them, please continue to read how binary and source xPacks work.
 Let's assume that 'my-awesome-project' needs the `arm-none-eabi-gcc` 
 toolchain to build,
 and not any version but a specific one, like `8.2.1`; it also needs the
-xPack Basic Builder, `xpbuild`.
+xPack Basic Builder, xpbuild.
 
 ```json
 {
@@ -173,7 +173,7 @@ toolchain executables, like `xpacks/.bin/arm-none-eabi-gcc`.
 TODO: show the output of tree on the xpacks folder.
 
 Similarly for the builder, which is a Node.js CLI npm module, after 
-installing the module, `npm` will
+installing the module, npm will
 add a folder `node_modules/.bin` where a link to the `xpbuild` executable
 will be created (or a `xpbuild.cmd` stub on Windows).
 
@@ -219,7 +219,7 @@ Running `xpm install` in the project folder will first install the
 `@micro-os-plus/diag-trace` package, possibly with all other dependencies, 
 recursively.
 
-Then `xpm` will add links to all dependent packages in the `xpacks` folder, 
+Then xpm will add links to all dependent packages in the `xpacks` folder, 
 like `xpacks/micro-os-plus-diag-trace` (mind the linearised package name); 
 now the project can refer to 
 them as to any sub-folder local to the project.
@@ -310,7 +310,7 @@ $
 
 ## Continuous Integration use cases
 
-The high degree of automation provided by `xpm` is of great help
+The high degree of automation provided by xpm is of great help
 for automated test environments.
 
 ### Travis

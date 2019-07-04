@@ -41,7 +41,7 @@ As for npm, a package is any of the following:
 7. A `git` url that, when cloned, results in (1).
 
 Even if you never publish your package, you can still get a lot of 
-benefits of using `xpm` to conveniently install dependencies, 
+benefits of using xpm to conveniently install dependencies, 
 and perhaps
 to automate path management for dependent tools.
 
@@ -55,7 +55,7 @@ If the dependencies are xPacks, they are installed in the local `xpacks`
 folder. For binary xPacks, soft links to the executables are created 
 in the `xpacks/.bin` folder (on Windows `.cmd` stubs are created).
 
-To maintain compatibility with `npm`, dependencies 
+To maintain compatibility with npm, dependencies 
 must not necessarily be xPacks, they can also be npm modules, 
 and are installed as usual in `node_modules`.
 
@@ -119,7 +119,7 @@ $
 
 When invoked with arguments, they must refer to packages. The common
 use case is to use names of packages stored on the public repository,
-but since `xpm` uses the same library to manage downloads as `npm`,
+but since xpm uses the same library to manage downloads as npm,
 all formats are accepted:
 
 ```
@@ -195,9 +195,9 @@ Install the package(s) in the global repository (in the user home folder).
 
 ### Force install (`-f|--force`)
 
-Normally if a package is already installed, `xpm` exits with a message.
+Normally if a package is already installed, xpm exits with a message.
 
-Use this option to force `xpm` to reinstall a package.
+Use this option to force xpm to reinstall a package.
 
 ### Dry-run (`-n|--dry-run`)
 

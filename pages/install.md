@@ -282,7 +282,7 @@ The result is a binary like `/usr/bin/node` and a folder like
 
 {% include warning.html content="Your distribution may already have a `node` 
 binary installed; if
-it is not >=8.x, `xpm` will complain and do not start; anyway, we strongly
+it is not >=8.x, xpm will complain and do not start; anyway, we strongly
 recommend to avoid the distribution binary and install at least 
 the LTS package from Node.js." %}
 

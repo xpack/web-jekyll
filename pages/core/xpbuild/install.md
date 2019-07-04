@@ -75,7 +75,7 @@ On **macOS**, by default, global Node packages are installed in
 `/usr/local`, and managing them requires administrative rights,
 but if you followed the instructions in the 
 [Prerequisites]({{ site.baseurl }}/install/) page, you should
-already have configured `npm` to use a location in the home folder.
+already have configured npm to use a location in the home folder.
 
 With the environment properly set, the command to install `xpbuild` is:
 
@@ -83,7 +83,7 @@ With the environment properly set, the command to install `xpbuild` is:
 $ npm install --global xpbuild
 ```
 
-To test if `xpbuild` starts:
+To test if xpbuild starts:
 
 ```console
 $ which xpbuild
@@ -100,7 +100,7 @@ On **GNU/Linux**, by default, global Node packages are installed in
 `/usr/local`, and managing them requires administrative rights,
 but if you followed the instructions in the 
 [Prerequisites]({{ site.baseurl }}/install/) page, you should
-already have configured `npm` to use a location in the home folder.
+already have configured npm to use a location in the home folder.
 
 With the environment properly set, the command to install `xpbuild` is:
 
@@ -123,7 +123,7 @@ $ xpbuild --version
 
 ## Uninstall
 
-To remove `xpbuild`, the command is:
+To remove xpbuild, the command is:
 
 ```console
 $ npm uninstall --global xpbuild
@@ -136,7 +136,7 @@ folder is [How to Prevent Permissions Errors](https://docs.npmjs.com/getting-sta
 
 ## `npx`
 
-If, for any reason, you decide not to install `xpbuild`, you can still 
+If, for any reason, you decide not to install xpbuild, you can still 
 benefit from it by using `npx`, as a trampoline to start `xpbuild`:
 
 ```console

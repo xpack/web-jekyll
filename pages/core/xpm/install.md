@@ -97,15 +97,15 @@ On **macOS**, by default, global Node packages are installed in
 `/usr/local`, and managing them requires administrative rights,
 but if you followed the instructions in the 
 [Prerequisites]({{ site.baseurl }}/install/) page, you should
-already have configured `npm` to use a location in the home folder.
+already have configured npm to use a location in the home folder.
 
-With the environment properly set, the command to install `xpm` is:
+With the environment properly set, the command to install xpm is:
 
 ```console
 $ npm install --global xpm
 ```
 
-To test if `xpm` starts:
+To test if xpm starts:
 
 ```console
 $ which xpm
@@ -122,15 +122,15 @@ On **GNU/Linux**, by default, global Node packages are installed in
 `/usr/local`, and managing them requires administrative rights,
 but if you followed the instructions in the 
 [Prerequisites]({{ site.baseurl }}/install/) page, you should
-already have configured `npm` to use a location in the home folder.
+already have configured npm to use a location in the home folder.
 
-With the environment properly set, the command to install `xpm` is:
+With the environment properly set, the command to install xpm is:
 
 ```console
 $ npm install --global xpm
 ```
 
-To test if `xpm` starts:
+To test if xpm starts:
 
 ```console
 $ which xpm
@@ -145,7 +145,7 @@ $ xpm --version
 
 ## Uninstall
 
-To remove `xpm`, the command is:
+To remove xpm, the command is:
 
 ```console
 $ npm uninstall --global xpm
@@ -153,13 +153,13 @@ $ npm uninstall --global xpm
 
 ## Miscellaneous
 
-The official page explaining how to install `npm` in a custom
+The official page explaining how to install npm in a custom
 folder is [How to Prevent Permissions Errors](https://docs.npmjs.com/getting-started/fixing-npm-permissions#option-two-change-npms-default-directory).
 
 ## `npx`
 
-If, for any reason, you decide not to install `xpm`, you can still 
-benefit from it by using `npx`, as a trampoline to start `xpm`:
+If, for any reason, you decide not to install xpm, you can still 
+benefit from it by using `npx`, as a trampoline to start xpm:
 
 ```console
 $ npx xpm --version
@@ -170,15 +170,15 @@ However, for regular usage, this method is not efficient, since
 `npx` will need to prepare the Node module
 for each run, and this takes some time.
 
-## `npm` folders
+## npm folders
 
-For more details on the folders used by `npm`, see 
+For more details on the folders used by npm, see 
 [npm-folders](https://docs.npmjs.com/files/folders).
 
-## `xpm` folders
+## xpm folders
 
 To avoid security issues and the need to increase the user privilege level,
-`xpm` does not use any system folders, and all activity happens
+xpm does not use any system folders, and all activity happens
 in the user home.
 
 There are two main folders:

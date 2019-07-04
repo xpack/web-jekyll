@@ -13,7 +13,7 @@ last_updated: 2019-07-02 23:14:06 +0300
 
 ## Overview
 
-The **xPack OpenOCD** can be installed automatically, via `xpm` (the
+The **xPack OpenOCD** can be installed automatically, via xpm (the
 recommended method), or manually, by downloading and unpacking one of the 
 portable archives.
 
@@ -26,14 +26,14 @@ from the [`npmjs.com`](https://www.npmjs.com) registry.
 ### Prerequisites
 
 The only requirement is a recent 
-`xpm`, which is a portable 
+xpm, which is a portable 
 [Node.js](https://nodejs.org) command line application. To install it,
 follow the instructions from the 
 [xpm install]({{ site.baseurl }}/xpm/install/) page.
 
 ### Install
 
-With `xpm` available, installing 
+With xpm available, installing 
 the latest version of the package is quite easy:
 
 ```console
@@ -55,7 +55,7 @@ The install location can be configured using the
 
 xPacks aware tools, like the **GNU MCU Eclipse plug-ins** automatically 
 identify binaries installed with
-`xpm` and provide a convenient method to manage paths.
+xpm and provide a convenient method to manage paths.
 
 ### Uninstall
 
@@ -102,7 +102,7 @@ to Microsoft, this is the recommended location for installing user specific
 packages.
 
 {% include note.html content="For manual installs, the recommended 
-install location is slightly different from the `xpm` install folders,
+install location is slightly different from the xpm install folders,
 which use the scope (like `@xpack-dev-tools`) to group different tools,
 and `.content` to store the unpacked archive." %}
 
@@ -197,7 +197,7 @@ $ chmod -R -w xPacks/openocd/0.10.0-12
 ```
 
 {% include note.html content="For manual installs, the recommended 
-install location is different from the `xpm` install folders." %}
+install location is different from the xpm install folders." %}
 
 {% include important.html content="Although perfectly possible to 
 install OpenOCD in any folder, it is highly recommended to use this 
@@ -240,7 +240,7 @@ $ chmod -R -w xPacks/openocd/0.10.0-12
 ```
 
 {% include note.html content="For manual installs, the recommended 
-install location is slightly different from the `xpm` install folders,
+install location is slightly different from the xpm install folders,
 which use the scope (like `@xpack-dev-tools`) to group different tools,
 and `.content` to store the unpacked archive." %}
 

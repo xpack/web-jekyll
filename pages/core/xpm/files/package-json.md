@@ -8,7 +8,7 @@ last_updated: 2019-07-02 23:14:05 +0300
 ---
 
 The [`package.json`](https://docs.npmjs.com/files/package.json) file is 
-basically the same as for `npm`, with some 
+basically the same as for npm, with some 
 extensions.
 
 ## The mandatory `xpack` property

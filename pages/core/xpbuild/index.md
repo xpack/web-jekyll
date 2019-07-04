@@ -21,7 +21,7 @@ The tool is mostly functional, at the moment it is able to build projects
 using either `make` or `ninja`. Due to the uncertainty with the name, 
 promotion was postponed; then it was decided to also include an internal 
 builder,
-using the code of `xpninja`, and to make it public when ready.
+using the code of xpninja, and to make it public when ready.
 
 ## xpbuild CLI commands
 
