@@ -62,7 +62,7 @@ feedback_subject_line: [xPack]
 feedback_email: xpack.project@gmail.com
 
 # If you uncomment the previous line, the Feedback link gets removed.
-# feedback_disable: true
+feedback_disable: true
 
 # If you uncomment the previous line, it changes the Feedback text.
 # feedback_text: "Need help?"
