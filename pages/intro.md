@@ -229,7 +229,7 @@ TODO: show the output of tree on the xpacks folder.
 ## Example
 
 A real example is an embedded project that lists as dependencies 
-two source xPacks, one node module and three binary xPacks:
+two source xPacks, one Node module and three binary xPacks:
 
 ```js
 {

@@ -44,7 +44,7 @@ The general procedure is to download the package suitable for your
 platform and install it as usual.
 The result is a binary program called `node` (that can be used to execute 
 JavaScript code from the terminal), and a link called `npm`, pointing to 
-the `npm-cli.js` script, which is part of the node module that implements 
+the `npm-cli.js` script, which is part of the Node module that implements 
 the npm functionality (on Windows instead of soft links, 
 `.cmd` stubs are used).
 
@@ -187,7 +187,7 @@ It is recommended to update it to the latest version.
 
 ### Default (with administrative rights)
 
-On **macOS**, by default, global node packages are installed in 
+On **macOS**, by default, global Node packages are installed in 
 `/usr/local`, and managing them requires administrative rights.
 
 ```console
@@ -274,7 +274,7 @@ XPACKS_CACHE_FOLDER="${HOME}/.cache/xPacks"
 
 {{ node_install }}
 
-On GNU/Linux, follow the instructions from node.js
+On GNU/Linux, follow the instructions from Node.js
 [download](https://nodejs.org/en/download/).
 
 The result is a binary like `/usr/bin/node` and a folder like
@@ -311,7 +311,7 @@ It is recommended to update it to the latest version.
 
 ### Default (with administrative rights)
 
-On **GNU/Linux**, by default, global node packages are installed in 
+On **GNU/Linux**, by default, global Node packages are installed in 
 `/usr/local`, and managing them requires administrative rights.
 
 ```console

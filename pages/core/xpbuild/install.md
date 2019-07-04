@@ -35,7 +35,7 @@ For details, please read (carefully!) the [Prerequisites]({{ site.baseurl }}/ins
 
 {% capture windows %}
 
-On **Windows**, by default, global node packages are installed in the 
+On **Windows**, by default, global Node packages are installed in the 
 user home folder, in `%APPDATA%\npm` 
 (like `C:\Users\ilg\AppData\Roaming\npm`), and managing packages 
 does not require administrative rights.
@@ -71,7 +71,7 @@ C:\>xpbuild --version
 
 {% capture macos %}
 
-On **macOS**, by default, global node packages are installed in 
+On **macOS**, by default, global Node packages are installed in 
 `/usr/local`, and managing them requires administrative rights,
 but if you followed the instructions in the 
 [Prerequisites]({{ site.baseurl }}/install/) page, you should
@@ -96,7 +96,7 @@ $ xpbuild --version
 
 {% capture linux %}
 
-On **GNU/Linux**, by default, global node packages are installed in 
+On **GNU/Linux**, by default, global Node packages are installed in 
 `/usr/local`, and managing them requires administrative rights,
 but if you followed the instructions in the 
 [Prerequisites]({{ site.baseurl }}/install/) page, you should
@@ -145,7 +145,7 @@ $ npx xpbuild --version
 ```
 
 However, for regular usage, this method is not efficient, since 
-`npx` will need to prepare the node module
+`npx` will need to prepare the Node module
 for each run, and this takes some time.
 
 
