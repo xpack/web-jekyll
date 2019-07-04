@@ -862,16 +862,6 @@ div.panel-group {
     margin-top: 20px;
     margin-bottom: 0px;
 }
-
-.sticky {
-    position: -webkit-sticky;
-    position: -moz-sticky;
-    position: -o-sticky;
-    position: -ms-sticky;
-    position: sticky;
-    top: 10px;
-    z-index: 1;
-}
   
 @media (max-width: 767px) {
     .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
@@ -883,6 +873,20 @@ div.panel-group {
     #mysidebar {
         position: relative;
     }
+}
+
+/* Weird, 991 was too small */
+@media (min-width: 992px) {
+
+    .sticky {
+        position: -webkit-sticky;
+        position: -moz-sticky;
+        position: -o-sticky;
+        position: -ms-sticky;
+        position: sticky;
+        top: 10px;
+        z-index: 1;
+    }    
 }
 
 @media (min-width: 1000px) {
