@@ -5,7 +5,7 @@ permalink: /xpbuild/cli/
 comments: true
 
 date: 2017-10-09 12:50:00 +0300
-last_updated: 2019-07-04 19:09:21 +0300
+last_updated: 2019-07-04 23:24:49 +0300
 
 ---
 
