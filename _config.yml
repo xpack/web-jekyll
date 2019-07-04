@@ -5,7 +5,7 @@ baseurl: /preview
 permalink: /blog/:year/:month/:day/:title/
 
 # Update this after editing the CSS files, to force a cache update.
-css-date: 201907022315
+css-date: 201907041610
 
 repository: xpack/xpack.github.io
 
