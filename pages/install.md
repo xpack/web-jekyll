@@ -78,7 +78,8 @@ page.
 
 Download the **Windows Installer (.msi)** and install it as usual, 
 with administrative rights.
-If you are using a 64-bit machine, download the `node-v*-x64.msi` file.
+
+{% include tip.html content="If you are using a 64-bit machine, download the `node-v*-x64.msi` file." %}
 
 The result is a folder like `C:\Program Files\nodejs`, added to the 
 system path since it includes the `node.exe` binary.
@@ -126,8 +127,13 @@ This is because on **Windows**, by default, global node packages are
 installed in the 
 user home folder, in `%APPDATA%\npm` 
 (like `C:\Users\ilg\AppData\Roaming\npm`); 
-usually this path is not in the default environment,
-and must be added manually: 
+and this path **is not** in the default environment.
+
+```
+C:\>echo %Path%
+```
+
+It must be added manually: 
 
 ```
 C:\>setx Path "%Path%;%APPDATA%\npm"
