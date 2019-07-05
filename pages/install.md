@@ -274,8 +274,13 @@ XPACKS_CACHE_FOLDER="${HOME}/.cache/xPacks"
 
 {{ node_install }}
 
-On GNU/Linux, follow the instructions from Node.js
-[download](https://nodejs.org/en/download/).
+On GNU/Linux, download the **Linux Binaries (x64)** archive from the Node.js
+[download](https://nodejs.org/en/download/) page.
+
+{% include note.html content="Currently only a 64-bit binary is available." %}
+
+To install, follow the instructions from the 
+[Installing Node.js via binary archive on Linux](https://github.com/nodejs/help/wiki/Installation) page.
 
 The result is a binary like `/usr/bin/node` and a folder like
 `/usr/lib/node_modules` where the modules, including `npm`, are installed.
@@ -283,7 +288,7 @@ The result is a binary like `/usr/bin/node` and a folder like
 {% include warning.html content="Your distribution may already have a `node` 
 binary installed; if
 it is not >=8.x, xpm will complain and do not start; anyway, we strongly
-recommend to avoid the distribution binary and install at least 
+recommend, if old, to avoid the distribution binary and install at least 
 the LTS package from Node.js." %}
 
 ```console
