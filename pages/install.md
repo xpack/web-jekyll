@@ -123,7 +123,7 @@ C:\>npm --version
 6.4.1
 ```
 
-This is because on **Windows**, by default, global node packages are 
+This is because on Windows, by default, global node packages are 
 installed in the 
 user home folder, in `%APPDATA%\npm` 
 (like `C:\Users\ilg\AppData\Roaming\npm`); 
@@ -193,7 +193,7 @@ It is recommended to update it to the latest version.
 
 ### Default (with administrative rights)
 
-On **macOS**, by default, global Node packages are installed in 
+On macOS, by default, global Node packages are installed in 
 `/usr/local`, and managing them requires administrative rights.
 
 ```console
@@ -322,7 +322,7 @@ It is recommended to update it to the latest version.
 
 ### Default (with administrative rights)
 
-On **GNU/Linux**, by default, global Node packages are installed in 
+On GNU/Linux, by default, global Node packages are installed in 
 `/usr/local`, and managing them requires administrative rights.
 
 ```console
