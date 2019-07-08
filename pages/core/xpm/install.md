@@ -27,7 +27,8 @@ npm package [`xpm`](https://www.npmjs.com/package/xpm) from the
 A recent [`node`](https://nodejs.org) (>=8.x), since the ECMAScript 6 class 
 syntax is used, and a recent [`npm`](https://docs.npmjs.com/cli/npm).
 
-For details, please read (carefully!) the [Prerequisites]({{ site.baseurl }}/install/) page.
+For details, please read (carefully!) the 
+[prerequisites]({{ site.baseurl }}/install/) page.
 
 ## `xpm` install
 
@@ -58,7 +59,7 @@ C:\>dir "%APPDATA%"\npm\xpm*
 ```
 
 If you followed the instructions in the 
-[Prerequisites]({{ site.baseurl }}/install/) page, you should
+[prerequisites]({{ site.baseurl }}/install/) page, you should
 already have this path configured and the program should start normally:
 
 ```powershell
@@ -96,7 +97,7 @@ If this is not possible, temporarily disable the antivirus program.
 On macOS, by default, global Node packages are installed in 
 `/usr/local`, and managing them requires administrative rights,
 but if you followed the instructions in the 
-[Prerequisites]({{ site.baseurl }}/install/) page, you should
+[prerequisites]({{ site.baseurl }}/install/) page, you should
 already have configured npm to use a location in the home folder.
 
 With the environment properly set, the command to install xpm is:
@@ -121,7 +122,7 @@ $ xpm --version
 On GNU/Linux, by default, global Node packages are installed in 
 `/usr/local`, and managing them requires administrative rights,
 but if you followed the instructions in the 
-[Prerequisites]({{ site.baseurl }}/install/) page, you should
+[prerequisites]({{ site.baseurl }}/install/) page, you should
 already have configured npm to use a location in the home folder.
 
 With the environment properly set, the command to install xpm is:
@@ -138,6 +139,37 @@ $ which xpm
 $ xpm --version
 0.5.0
 ```
+
+### Using an out of date Node
+
+Ignoring the recommendation to use the LTS version of Node and 
+insisting on using the one provided by the distribution usually results in
+errors like this:
+
+```
+$ xpm -v
+/home/ilg/opt/npm/lib/node_modules/xpm/node_modules/@ilg/cli-start-options/lib/cli-application.js:150
+  static async start () {
+               ^^^^^
+SyntaxError: Unexpected identifier
+    at exports.runInThisContext (vm.js:53:16)
+    at Module._compile (module.js:374:25)
+    at Object.Module._extensions..js (module.js:417:10)
+    at Module.load (module.js:344:32)
+    at Function.Module._load (module.js:301:12)
+    at Module.require (module.js:354:17)
+    at require (internal/module.js:12:17)
+    at Object.<anonymous> (/home/ilg/opt/npm/lib/node_modules/xpm/node_modules/@ilg/cli-start-options/index.js:55:24)
+    at Module._compile (module.js:410:26)
+    at Object.Module._extensions..js (module.js:417:10)
+```
+
+This problem is caused by the old Node, unable to understand the 
+`async` keyword.
+
+Follow the instructions in the 
+[prerequisites]({{ site.baseurl }}/install/) page and update your 
+`node` & `npm` programs.
 
 {% endcapture %}
 

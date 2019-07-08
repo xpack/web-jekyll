@@ -10,13 +10,46 @@ last_updated: 2019-07-02 23:14:04 +0300
 
 ---
 
-### The xpm Frequently Asked Questions
+### The `xpm` Frequently Asked Questions
 
 {% capture question_1 %}
-`error: Cannot read property 'path' of null`
+`static async start () ... SyntaxError: Unexpected identifier`
 {% endcapture %}
 
 {% capture answer_1 %}
+This problem occurs usually on GNU/Linux, and is caused by trying to use
+the outdated version of Node available in the distribution, which
+does not understand the `async` keyword.
+
+Errors may look like:
+
+```
+$ xpm -v
+/home/ilg/opt/npm/lib/node_modules/xpm/node_modules/@ilg/cli-start-options/lib/cli-application.js:150
+  static async start () {
+               ^^^^^
+SyntaxError: Unexpected identifier
+    at exports.runInThisContext (vm.js:53:16)
+    at Module._compile (module.js:374:25)
+    at Object.Module._extensions..js (module.js:417:10)
+    at Module.load (module.js:344:32)
+    at Function.Module._load (module.js:301:12)
+    at Module.require (module.js:354:17)
+    at require (internal/module.js:12:17)
+    at Object.<anonymous> (/home/ilg/opt/npm/lib/node_modules/xpm/node_modules/@ilg/cli-start-options/index.js:55:24)
+    at Module._compile (module.js:410:26)
+    at Object.Module._extensions..js (module.js:417:10)
+```
+
+The solution is to install the most recent LTS version of Node, as 
+described in the [prerequisites]({{ site.baseurl }}/install/) page.
+{% endcapture %}
+
+{% capture question_2 %}
+`error: Cannot read property 'path' of null`
+{% endcapture %}
+
+{% capture answer_2 %}
 This problem is specific to Windows and is caused by aggressive antivirus programs.
 
 On Windows, binary xPacks are .zip archives containing .exe files; 
@@ -41,6 +74,8 @@ at least for files in the
 If this is not possible, temporarily disable the antivirus program.
 {% endcapture %}
 
+
 {% include div-panel-group.html %}
 {% include faq-panel.html id="collapse-1" question=question_1 answer=answer_1 %}
+{% include faq-panel.html id="collapse-2" question=question_2 answer=answer_2 %}
 {% include div-end.html %}
