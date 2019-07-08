@@ -17,17 +17,20 @@ last_updated: 2019-07-02 23:14:07 +0300
 
 ## Quicklinks
 
-If you already know the general facts about QEMU, you can directly skip to:
+If you already know the general facts about xPack QEMU ARM, you can 
+directly skip to:
 
 - [Install]({{ site.baseurl }}/qemu-arm/install/)
 - [Support]({{ site.baseurl }}/qemu-arm/support/)
 - [How to build?](https://github.com/xpack-dev-tools/qemu-arm-xpack/blob/xpack/README-BUILD.md)
 - [How to publish?](https://github.com/xpack-dev-tools/qemu-arm-xpack/blob/xpack/README-PUBLISH.md)
+- [Developer info](https://github.com/xpack-dev-tools/qemu-arm-xpack/blob/xpack/README-DEVELOP.md)
 - [Releases]({{ site.baseurl }}/qemu-arm/releases/)
+- [GitHub](https://github.com/xpack-dev-tools/qemu-arm-xpack)
 
 ## Why QEMU?
 
-[QEMU](http://wiki.qemu.org/Main_Page) is the long-standing open-source 
+[QEMU](https://www.qemu.org) is the long-standing open-source 
 multi-platform emulator. It is mature, it provides a good framework 
 for emulation, it implements a GDB server, it provides support for 
 semihosting, and although it does not intend to accurately simulate 
@@ -50,8 +53,8 @@ missing, so it could not be used with the GNU MCU Eclipse plug-ins.
 
 ## Overview
 
-The **xPack QEMU ARM** is a fork of the public open-source 
-[QEMU](http://wiki.qemu.org/Main_Page) project, customised for more 
+**xPack QEMU ARM** is a fork of the public open-source 
+[QEMU](https://www.qemu.org) project, customised for more 
 support of Cortex-M cores, and a better integration with 
 the **GNU ARM QEMU Debugging** plug-in.
 
@@ -93,7 +96,7 @@ The following Cortex-M3 and Cortex-M4 microcontrollers are supported:
 - STM32F429ZI
 - STM32L152RE
 
-Work to support for the following boards is planned, but no release date is set:
+Support for the following boards is planned, but no release date is set:
 
 - EK-TM4C123GXL – TI Tiva C Series TM4C123GXL LaunchPad Evaluation Kit
 - FRDM-K20D50M – Freescale Freedom Development Platform for Kinetis K20 USB MCUs
@@ -175,8 +178,6 @@ All **xPack QEMU ARM** versions are available from the GitHub
 [Releases](https://github.com/gnu-mcu-eclipse/qemu/releases) page. 
 Identify the **Latest release** entry and carefully read the release page.
 
-![The QEMU Download section]({{ site.baseurl }}/assets/images/2015/github-gae-qemu-releases.png)
-
 ## Install
 
 The details of installing the **xPack QEMU ARM** on various platforms are 
@@ -235,5 +236,6 @@ See [Releases]({{ site.baseurl }}/qemu-arm/releases).
 
 ## Other links
 
+- [QEMU wiki](http://wiki.qemu.org/)
 - the original [QEMU Windows build page](http://wiki.qemu.org/Hosts/W32)
 - [Docker images](https://registry.hub.docker.com/u/ilegeul/)
