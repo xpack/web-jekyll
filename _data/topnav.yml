@@ -12,7 +12,7 @@ topnav:
 topnav_dropdowns:
 - title: Topnav dropdowns
   folders:
-    - title: Documentation
+    - title: Projects
       folderitems:
         - title: xpm
           url: /xpm/
