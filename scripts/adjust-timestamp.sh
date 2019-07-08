@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-threshold=60 # 1 minute
+threshold=100 # seconds
 git_file="$1"
 
 author_date=$(git log -1 --format="%ai" "${git_file}")
