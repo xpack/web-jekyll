@@ -238,7 +238,8 @@ To maintain `sitemap.xml` usefulness, while maintaining pages and posts, it
 is necessary to provide an accurate timestamp. 
 
 With `gjtorikian/jekyll-last-modified-at` not available, the only way is
-to manually update this variable for all pages & posts.
+to update these variable for all pages & posts either manually (tedious!)
+or with the `adjust-timestamps.sh` script.
 
 ## Timezone
 
