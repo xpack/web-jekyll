@@ -48,4 +48,4 @@ If you are convinced that you identified a bug in xpbuild
 (if you have doubts, use the forum), 
 or you have a pertinent suggestion how to enhance xpbuild, 
 register a **New Issue** in the the GitHub Issues 
-[tracker](https://github.com/xpack/xpbuild-js/issues/issues/).
+[tracker](https://github.com/xpack/xpbuild-js/issues/).
