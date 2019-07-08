@@ -157,6 +157,8 @@ install QEMU in any folder, it is highly recommended to use this
 path, since by default the GNU MCU Eclipse debug plug-ins search 
 for the executable in this location." %}
 
+TODO: add result of `tree`.
+
 To check if QEMU starts, use:
 
 ```console
@@ -203,6 +205,8 @@ and `.content` to store the unpacked archive." %}
 install QEMU in any folder, it is highly recommended to use this 
 path, since by default the GNU MCU Eclipse debug plug-ins search 
 for the executable in this location." %}
+
+TODO: add result of `tree`.
 
 To check if QEMU starts and is recent, use:
 
