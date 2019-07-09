@@ -12,6 +12,7 @@ last_updated: 2019-07-02 23:14:03 +0300
 
 ## Developer
 
+- [How to create xPack Git repos]({{ site.baseurl }}/develop/git-structure/)
 * [JavaScript style guide]({{ site.baseurl }}/develop/js-style-guide/)
 
 ## Issues
