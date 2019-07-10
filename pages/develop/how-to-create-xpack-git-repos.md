@@ -1,9 +1,9 @@
 ---
 title: How to create an xPack Git repository?
-permalink: /develop/git-structure/
+permalink: /develop/how-to-new-git/
 
 date: 2019-07-09 17:48:00 +0300
-last_updated: 2019-07-10 10:11:41 +0300
+last_updated: 2019-07-10 10:17:45 +0300
 
 ---
 
