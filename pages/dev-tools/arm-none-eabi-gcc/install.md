@@ -215,4 +215,4 @@ arm-none-eabi-gcc (xPack GNU ARM Embedded GCC, 64-bit) 8.2.1 20181213 (release) 
 {% include platform-tabs.html %}
 
 {% include warning.html content="**DO NOT** add the toolchain path to 
-the user or system path!." %}
+the user or system path!" %}

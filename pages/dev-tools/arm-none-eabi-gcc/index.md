@@ -45,11 +45,11 @@ The main advantages of using the **xPack GNU ARM Embedded GCC** are:
 
 - a convenient, uniform and portable install/uninstall/upgrade procedure;
   the same procedure is used for all major 
-  platforms (Windows 64/32-bit, GNU/Linux 64/32-bit, macOS)
-- a better integration with development environments 
-  like **GNU MCU Eclipse**
+  platforms (Windows 64/32-bit, GNU/Linux 64/32-bit, macOS);
 - a convenient integration with Continuous Integration environments, 
-  like Travis.
+  like Travis;
+- a better integration with development environments 
+  like **GNU MCU Eclipse**.
 
 All binaries are self-contained, they include all required libraries,
 and can be installed at any location.
@@ -57,7 +57,7 @@ and can be installed at any location.
 ## Compatibility
 
 The **xPack GNU ARM Embedded GCC** is fully compatible with the 
-original ARM GNU Arm Embedded Toolchain distribution.
+original GNU Arm Embedded Toolchain distribution by ARM.
 
 Occasionally, when bugs are discovered and the yearly ARM release schedule
 would add unacceptably long delays, the **xPack GNU ARM Embedded GCC**
