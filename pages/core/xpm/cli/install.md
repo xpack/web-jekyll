@@ -25,7 +25,7 @@ xpm install [<options> ...]
 
 Aliases:
 - `i`
-  
+
 ## Description
 
 This command installs a package, and all packages that it depends on. 

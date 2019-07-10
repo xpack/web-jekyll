@@ -862,7 +862,7 @@ div.panel-group {
     margin-top: 20px;
     margin-bottom: 0px;
 }
-  
+
 @media (max-width: 767px) {
     .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
         color: #444;
@@ -886,7 +886,7 @@ div.panel-group {
         position: sticky;
         top: 10px;
         z-index: 1;
-    }    
+    }
 }
 
 @media (min-width: 1000px) {

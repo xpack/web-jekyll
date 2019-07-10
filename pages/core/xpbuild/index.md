@@ -27,7 +27,7 @@ using the code of xpninja, and to make it public when ready.
 
 - [`xpbuild`]({{ site.baseurl }}/xpbuild/cli/)
 - [`xpbuild init`]({{ site.baseurl }}/xpbuild/cli/init/)
-  
+
 ## Configuring xpbuild
 
 - [`xpbuild.json`]({{ site.baseurl }}/xpbuild/files/xpbuild-json/)

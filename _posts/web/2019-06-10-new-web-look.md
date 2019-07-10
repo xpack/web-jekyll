@@ -7,11 +7,11 @@ last_updated: 2019-06-30 10:30:22 +0300
 categories: 
   - jekyll 
   - update
-  
+
 tags:
   - news
   - web
-  
+
 ---
 
 After several re-branding iterations, the xPack project, available from 
@@ -45,4 +45,4 @@ Switching fom the external builder to GitHub required some changes:
 - the `kramdown` markdown parser does not have the `autolink` option, so
   links must be explicit
 
-  
+

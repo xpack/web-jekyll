@@ -122,7 +122,7 @@ const arr3 = [...arr1, ...arr2]
 ```
 
 * Enumerate object properties
-  
+
 ```js
 class Base {
   constructor (args) {
