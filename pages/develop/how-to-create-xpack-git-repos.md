@@ -3,7 +3,7 @@ title: How to create an xPack Git repository?
 permalink: /develop/git-structure/
 
 date: 2019-07-09 17:48:00 +0300
-last_updated: 2019-06-30 10:30:18 +0300
+last_updated: 2019-07-10 10:11:41 +0300
 
 ---
 
@@ -19,7 +19,9 @@ if any.
 The first thought is that xPacks, as a new technology, 
 will be used for new projects,
 with original content, so, in principle, these projects can be created
-to have any structure. The reality is that there are a lot of existing 
+to have any structure. 
+
+The reality is that there are a lot of existing 
 software projects, each using its specific structure, and migrating them to
 xPacks may add some maintenance burden to keep them in sync with the
 originals.
@@ -54,7 +56,7 @@ The following steps apply to GitHub. Adjust them for other Git hosting sites.
 
 The editor of choice is Visual Studio Code (VSC), but you can use
 any editor you like; just be sure that on Windows it does not mess the
-line terminations.
+line terminators.
 
 ### Create the GitHub project
 
