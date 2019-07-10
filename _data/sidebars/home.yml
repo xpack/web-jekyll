@@ -71,7 +71,7 @@ entries:
       output: web
       external_url: https://www.tapatalk.com/groups/xpack/
 
-  - title: Maintainer Info
+  - title: Developer Info
     output: web
     folderitems:
 
@@ -83,6 +83,14 @@ entries:
       output: web
     - title: Links
       url: /develop/links/
+      output: web
+
+  - title: Maintainer Info
+    output: web
+    folderitems:
+
+    - title: Overview
+      url: /maintain/
       output: web
 
   - title: License
