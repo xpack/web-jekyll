@@ -1,5 +1,5 @@
 ---
-title: The xPack GNU ARM Embedded GCC FAQ
+title: The xPack GNU ARM Embedded GCC Frequently Asked Questions
 permalink: /arm-none-eabi-gcc/faq/
 
 toc: false
@@ -10,14 +10,14 @@ last_updated: 2019-07-10 19:38:02 +0300
 
 ---
 
-### The xPack GNU ARM Embedded GCC Frequently Asked Questions
+<br/>
 
 {% capture question_1 %}
-Question 1?
+Warum?
 {% endcapture %}
 
 {% capture answer_1 %}
-Answer 1.
+Darum!
 {% endcapture %}
 
 {% include div-panel-group.html %}

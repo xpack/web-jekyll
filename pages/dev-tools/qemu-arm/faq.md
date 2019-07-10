@@ -1,5 +1,5 @@
 ---
-title: The xPack QEMU ARM FAQ
+title: The xPack QEMU ARM Frequently Asked Questions
 permalink: /qemu-arm/faq/
 
 toc: false
@@ -10,14 +10,14 @@ last_updated: 2019-07-02 23:14:07 +0300
 
 ---
 
-### The xPack QEMU ARM Frequently Asked Questions
+<br/>
 
 {% capture question_1 %}
-Question 1?
+Warum?
 {% endcapture %}
 
 {% capture answer_1 %}
-Answer 1.
+Darum!
 {% endcapture %}
 
 {% include div-panel-group.html %}

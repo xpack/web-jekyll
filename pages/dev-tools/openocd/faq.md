@@ -1,5 +1,5 @@
 ---
-title: The xPack OpenOCD FAQ
+title: The xPack OpenOCD Frequently Asked Questions
 permalink: /openocd/faq/
 
 toc: false
@@ -10,7 +10,7 @@ last_updated: 2019-07-02 23:14:06 +0300
 
 ---
 
-### The xPack OpenOCD Frequently Asked Questions
+<br/>
 
 {% capture question_1 %}
 My JTAG probe XXX is not supported, can you add it?
