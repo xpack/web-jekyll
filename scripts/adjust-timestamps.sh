@@ -5,6 +5,7 @@ then
   :
 else
   echo "Commit changes first."
+  exit 1
 fi
 
 echo "Enumerting files..."
