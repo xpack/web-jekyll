@@ -16,28 +16,26 @@ if any.
 
 ## Projects with 3rd party content
 
-Although the first thought is that xPacks, as a new technology, 
+The first thought is that xPacks, as a new technology, 
 will be used for new projects,
 with original content, so, in principle, these projects can be created
-to use any structure, the reality is that there are a lot of existing 
+to have any structure. The reality is that there are a lot of existing 
 software projects, each using its specific structure, and migrating them to
-xPacks may add some maintenance burden.
+xPacks may add some maintenance burden to keep them in sync with the
+originals.
 
 ## The `xpack` branch and three-way merging
 
-One way to reduce the maintenance burden is to use:
-
-- Git, preferably GitHub
-- the [three-way merge](https://en.wikipedia.org/wiki/Merge_(version_control)#Three-way_merge) 
-  feature of Git 
-- a separate branch to accommodate the xPack specific changes.
+One way to reduce the maintenance burden is to use the 
+[three-way merge](https://en.wikipedia.org/wiki/Merge_(version_control)#Three-way_merge) 
+feature of Git and a separate branch to accommodate the xPack specific changes.
 
 This method does not require any changes to the original project, which can
-maintain its original structure, with its original branches, regardless
+keep its original structure, with its original branches, regardless
 their names.
 
-The only requirement is to split a new branch (preferably named `xpack`) 
-and to keep the changes on it; the main branch can
+The only requirement is to create a new branch (preferably named `xpack`) 
+and to keep the changes on it; thus the main branch (probably `master`) can
 easily track the upstream repository, while the xPack specific changes
 continue to be developed using the `xpack` branch; from time to time the
 main branch can be merged into the `xpack` branch and things kept in sync.
@@ -52,10 +50,11 @@ the `master` branch.
 do not enforce the use of the `xpack` named branch, this is only
 a recommendation." %}
 
-The following steps apply to GitHub. Adjust them for other sites.
+The following steps apply to GitHub. Adjust them for other Git hosting sites.
 
 The editor of choice is Visual Studio Code (VSC), but you can use
-any editor you like. 
+any editor you like; just be sure that on Windows it does not mess the
+line terminations.
 
 ### Create the GitHub project
 
@@ -130,7 +129,6 @@ With VSC, Sourcetree or Git:
 
 - stage the `.gitignore` file
 - commit with the following message: **.gitignore: add xpm specifics**
-- click the **Commit** button
 
 ### Check/edit the `LICENSE` file
 
@@ -154,8 +152,7 @@ Permission is hereby granted, free of charge, to any person obtaining a copy
 With VSC, Sourcetree or Git:
 
 - stage the `LICENSE` file
-- commit with the following message:  **LICENSE: update copyright owner**
-- click the **Commit** button
+- commit with the following message: **LICENSE: update copyright owner**
 
 ### Edit the master `README.md` file
 
@@ -176,7 +173,6 @@ With VSC, Sourcetree or Git:
 
 - stage the `README.md` file
 - commit with the following message: **README: 'no master' notice**
-- click the **Commit** button
 
 ### Create the `xpack` branch 
 
@@ -269,7 +265,7 @@ Open `package.json` with Visual Studio Code:
   identifier (like MIT); if the license is not a standard one, provide 
   the text in a `LICENSE` file and update the JSON to read:
   ```json
-{ "license" : "SEE LICENSE IN <filename>" }
+{ "license": "SEE LICENSE IN <filename>" }
 ```
 - if the package is inspired by other existing code, enter the author 
   as the first contributor, for example:
@@ -292,7 +288,6 @@ With VSC, Sourcetree or Git:
 - stage the `package.json`
 - commit with the following message: **package.json: v1.0.0** or 
   **package.json: v0.0.1**
-- click the **Commit** button
 
 ### Edit the `README.md` file with actual content
 
@@ -314,7 +309,6 @@ With Sourcetree or Git:
 
 - stage the `README.md` file
 - commit with the following message: **README: preliminary content**
-- click the **Commit** button
 
 ### Publish the initial version to GitHub
 
@@ -332,7 +326,6 @@ With Sourcetree or Git:
 
 - stage the new files
 - commit with the following message: **add initial content**
-- click the **Commit** button
 
 ### Publish the branch
 
