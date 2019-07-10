@@ -74,8 +74,8 @@ subfolders.)
 For all platforms, the **xPack QEMU ARM** binaries are released as portable 
 archives that can be installed in any location.
 
-The archives can be downloaded from the GitHub 
-[Releases](https://github.com/xpack-dev-tools/qemu-arm-xpack/releases/) page.
+The archives can be downloaded from the
+[GitHub Releases](https://github.com/xpack-dev-tools/qemu-arm-xpack/releases/) page.
 
 {% capture windows %}
 ### Download
@@ -118,7 +118,7 @@ To check if QEMU starts, use the following command:
 
 ```
 C:\Users\ilg>C:\Users\ilg\AppData\Roaming\xPacks\QEMU\2.8.0-4\bin\qemu-system-gnuarmeclipse.exe" --version
-xPack 64-bit QEMU emulator version 2.8.0-4 (v2.8.0-3-20180523-6-gee07085299-dirty)
+xPack 64-bit QEMU emulator version 2.8.0-4 (v2.8.0-4-20180523-6-gee07085299-dirty)
 Copyright (c) 2003-2016 Fabrice Bellard and the QEMU Project developers
 ```
 
@@ -163,7 +163,7 @@ To check if QEMU starts, use:
 
 ```console
 $ ~/opt/xPacks/qemu-arm/2.8.0-4/bin/qemu-system-gnuarmeclipse --version
-xPacks 64-bit QEMU ARM emulator version 2.8.0-4 (v2.8.0-3-20180523-6-gee07085299-dirty)
+xPacks 64-bit QEMU ARM emulator version 2.8.0-4 (v2.8.0-4-20180523-6-gee07085299-dirty)
 Copyright (c) 2003-2016 Fabrice Bellard and the QEMU Project developers
 ```
 
@@ -212,7 +212,7 @@ To check if QEMU starts and is recent, use:
 
 ```console
 $ ~/opt/xPacks/qemu-arm/2.8.0-4/bin/qemu-system-gnuarmeclipse --version
-xPacks 64-bit QEMU emulator version 2.8.0-4 (v2.8.0-3-20180523-6-gee07085299-dirty)
+xPacks 64-bit QEMU emulator version 2.8.0-4 (v2.8.0-4-20180523-6-gee07085299-dirty)
 Copyright (c) 2003-2016 Fabrice Bellard and the QEMU Project developers
 ```
 

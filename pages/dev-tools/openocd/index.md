@@ -13,13 +13,20 @@ last_updated: 2019-07-02 23:14:07 +0300
 
 ## Quicklinks
 
-If you already know the general facts about OpenOCD, you can directly skip to:
+If you already know the general facts about xPack GNU ARM Embedded GCC, you can 
+directly skip to the desired pages.
+
+User pages:
 
 - [Install]({{ site.baseurl }}/openocd/install/)
 - [Support]({{ site.baseurl }}/openocd/support/)
+- [Releases]({{ site.baseurl }}/openocd/releases/)
+
+Developer & maintainer pages:
+
+- [GitHub](https://github.com/xpack-dev-tools/openocd-xpack)
 - [How to build?](https://github.com/xpack-dev-tools/openocd-xpack/blob/xpack/README-BUILD.md)
 - [How to publish?](https://github.com/xpack-dev-tools/openocd-xpack/blob/xpack/README-PUBLISH.md)
-- [Releases]({{ site.baseurl }}/openocd/releases/)
 
 ## Overview
 
@@ -54,7 +61,9 @@ included." %}
 
 The main advantages of using the **xPack OpenOCD** are:
 
-- a convenient install/uninstall/upgrade procedure 
+- a convenient, uniform and portable install/uninstall/upgrade procedure;
+  the same procedure is used for all major 
+  platforms (Windows 64/32-bit, GNU/Linux 64/32-bit, macOS)
 - a better integration with development environments 
   like **GNU MCU Eclipse**.
 
@@ -77,15 +86,15 @@ presented in the separate
 The original OpenOCD documentation is available in the installed folders:
 
 - `share/doc/pdf/openocd.pdf`
-  
+
 ## Support
 
 For the various support options, please read the separate 
-[support]({{ site.baseurl }}/openocd/support/) page.
+[Support]({{ site.baseurl }}/openocd/support/) page.
 
 ## Change log
 
-The change log is available in the repository
+The release and change log is available in the repository
 [`CHANGELOG.md`](https://github.com/xpack-dev-tools/openocd-xpack/blob/xpack/CHANGELOG.md) file.
 
 ## Build details
@@ -95,10 +104,10 @@ For those interested in building the binaries, please read the
 page. 
 However, the ultimate source for details are the build scripts themselves, 
 all available from the 
-[scripts](https://github.com/xpack-dev-tools/openocd-xpack/tree/xpack/scripts/)
+[`openocd-xpack.git/scripts`](https://github.com/xpack-dev-tools/openocd-xpack/tree/xpack/scripts/)
 folder.
 
 ## Releases
 
-See [Releases]({{ site.baseurl }}/openocd/releases/).
+See the [Releases]({{ site.baseurl }}/openocd/releases/) page.
 
