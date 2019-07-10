@@ -8,36 +8,39 @@ last_updated: 2019-06-30 10:30:18 +0300
 ---
 
 The technical definition of an xPack is _a folder which includes a 
-`package.json` file with some minimal content_; it does not require
-any special structure for the version-control system where the 
-xPack is stored, if any.
+package.json file with some minimal content_ 
+([full definition]({{ site.baseurl }}/intro/)); 
+it does not require
+any special structure for the folders or for the version-control system, 
+if any.
 
 ## Projects with 3rd party content
 
-Although the first thought is that xPacks will be used for new projects,
+Although the first thought is that xPacks, as a new technology, 
+will be used for new projects,
 with original content, so, in principle, these projects can be created
-to use any structure, the truth is that there is a lot of existing 
-software, each using its specific structure, and migrating them to
-an xPack may add some maintenance burden.
+to use any structure, the reality is that there are a lot of existing 
+software projects, each using its specific structure, and migrating them to
+xPacks may add some maintenance burden.
 
-## The `xpack` branch and three-way merge
+## The `xpack` branch and three-way merging
 
 One way to reduce the maintenance burden is to use:
 
 - Git, preferably GitHub
 - the [three-way merge](https://en.wikipedia.org/wiki/Merge_(version_control)#Three-way_merge) 
   feature of Git 
-- and a separate branch where the xPack specific changes are kept.
+- a separate branch to accommodate the xPack specific changes.
 
-This method does not require any changes to the original project, it can
+This method does not require any changes to the original project, which can
 maintain its original structure, with its original branches, regardless
-how they are named.
+their names.
 
-The only requirement is to branch the main branch and to keep the changes
-on this branch (preferably named `xpack`); in time the main branch can
-easily follow the upstream repository, while the xPack specific changes
-continue to be developed on the `xpack` branch; from time to time the
-main branch is merged into the `xpack` branch and things kept in sync.
+The only requirement is to split a new branch (preferably named `xpack`) 
+and to keep the changes on it; the main branch can
+easily track the upstream repository, while the xPack specific changes
+continue to be developed using the `xpack` branch; from time to time the
+main branch can be merged into the `xpack` branch and things kept in sync.
 
 ## Creating xPacks with original content
 
@@ -57,7 +60,7 @@ any editor you like.
 ### Create the GitHub project
 
 {% include tip.html content="To easily identify the project as
-an xPack, it is recommended to suffix the project name with `-xpack`." %}
+an xPack, it is recommended to suffix the project name with '-xpack'." %}
 
 With a browser, at GitHub, select your account or one of your 
   organisations (like 
@@ -93,7 +96,7 @@ $ cd xpacks
 $ git clone https://github.com/<user>/<project>.git <project>.git
 ```
 
-### Edit the .gitignore file
+### Edit the `.gitignore` file
 
 With Visual Studio Code:
 
@@ -123,13 +126,13 @@ test-*/
 build/
 ```
 
-With Sourcetree or Git:
+With VSC, Sourcetree or Git:
 
 - stage the `.gitignore` file
-- commit with the following message: **.gitignore: add npm & Eclipse specifics**
+- commit with the following message: **.gitignore: add xpm specifics**
 - click the **Commit** button
 
-### Check/edit the LICENSE file
+### Check/edit the `LICENSE` file
 
 The automatically generated `LICENSE` file already includes the 
 user name as the copyright owner. When the project is owned by 
@@ -137,29 +140,29 @@ an organisation, the name refers to the organisation. Probably
 this is not exactly what you need, and you might prefer to have 
 your name in the copyright notice.
 
-Check and possibly adjust to match your LICENSE requirements.
+Check and possibly adjust to match your `LICENSE` requirements.
 
 ```
 MIT License
 
-Copyright (c) 2018 Liviu Ionescu
+Copyright (c) 2019 Liviu Ionescu
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 ...
 ```
 
-With Sourcetree or Git:
+With VSC, Sourcetree or Git:
 
 - stage the `LICENSE` file
 - commit with the following message:  **LICENSE: update copyright owner**
 - click the **Commit** button
 
-### Edit the master README.md file
+### Edit the master `README.md` file
 
-Although for original xPacks there are no constraints on how to 
+As mentioned in the introduction, 
+although for original xPacks there are no constraints on how to 
 organise the branches, for consistency with xPacks that use 3rd 
-party content, it is recommended to also use an `xpack` branch 
-for the entire content.
+party content, it is recommended to use an `xpack` branch.
 
 In this case, to warn users about this configuration, edit 
 the `README.md` file and replace its entire content with:
@@ -169,7 +172,7 @@ This project does not use the `master` branch, please
 switch to the `xpack` branch to get the project files.
 ```
 
-With Sourcetree or Git:
+With VSC, Sourcetree or Git:
 
 - stage the `README.md` file
 - commit with the following message: **README: 'no master' notice**
@@ -192,9 +195,8 @@ With Sourcetree or Git:
 - select the `master` and `xpack` local branches
 - click the **OK** button
 
-With the GitHub web interface:
-
-(as shortcut, in Sourcetree, click the **View Remote** button)
+With the GitHub web interface (as shortcut, in Sourcetree, click 
+the **View Remote** button):
 
 - select the **Settings** tab
 - select the **Branches** grouping
@@ -202,12 +204,11 @@ With the GitHub web interface:
 - click the **Update** button
 - click the **I understand, update the default branch** confirmation window
  
-
-### Create the npm/xpm package.json
+### Create the npm/xpm `package.json`
 
 Use `xpm init` and later edit the `package.json`. 
 
-```console
+```
 $ cd <project>.git
 $ xpm init
 $ cat package.json 
@@ -286,14 +287,14 @@ Open `package.json` with Visual Studio Code:
 
 ### Commit the initial package file
 
-With Sourcetree or Git:
+With VSC, Sourcetree or Git:
 
 - stage the `package.json`
 - commit with the following message: **package.json: v1.0.0** or 
   **package.json: v0.0.1**
 - click the **Commit** button
 
-### Edit the README.md file with actual content
+### Edit the `README.md` file with actual content
 
 With the editor of your choice:
 
@@ -346,7 +347,7 @@ $ npm publish --access public
 
 ### Bump version
 
-In general, depending on the 'disruption' degree, chose one of the following:
+In general, depending on the _disruption_ degree, chose one of the following:
 
 ```console
 $ cd <project>.git
