@@ -30,9 +30,9 @@ discussions on similar problems.
 
 ## Check the GitHub Issues
 
-Check the GitHub Issues 
-[tracker](https://github.com/xpack/xpm-js/issues/) for 
-similar problems.
+Check the
+[GitHub Issues](https://github.com/xpack/xpm-js/issues/) 
+tracker for similar problems.
 
 ## Contribute to the forums
 
@@ -47,5 +47,5 @@ and enter a **New Topic** in the **xpm** section.
 If you are convinced that you identified a bug in xpm 
 (if you have doubts, use the forum), 
 or you have a pertinent suggestion how to enhance xpm, 
-register a **New Issue** in the the GitHub Issues 
-[tracker](https://github.com/xpack/xpm-js/issues/issues/).
+register a **New Issue** in the the
+[GitHub Issues](https://github.com/xpack/xpm-js/issues/issues/) tracker.

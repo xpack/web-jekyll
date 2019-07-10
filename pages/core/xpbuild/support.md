@@ -30,9 +30,9 @@ discussions on similar problems.
 
 ## Check the GitHub Issues
 
-Check the GitHub Issues 
-[tracker](https://github.com/xpack/xpbuild-js/issues/) for 
-similar problems.
+Check the
+[GitHub Issues](https://github.com/xpack/xpbuild-js/issues/) 
+tracker for similar problems.
 
 ## Contribute to the forums
 
@@ -47,5 +47,5 @@ and enter a **New Topic** in the **xpbuild** section.
 If you are convinced that you identified a bug in xpbuild 
 (if you have doubts, use the forum), 
 or you have a pertinent suggestion how to enhance xpbuild, 
-register a **New Issue** in the the GitHub Issues 
-[tracker](https://github.com/xpack/xpbuild-js/issues/).
+register a **New Issue** in the the 
+[GitHub Issues](https://github.com/xpack/xpbuild-js/issues/) tracker.

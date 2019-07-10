@@ -29,9 +29,9 @@ similar problems.
 
 ## Check the GitHub Issues
 
-Check the GitHub Issues 
-[tracker](https://github.com/xpack-dev-tools/qemu-arm-xpack/issues/) for 
-similar problems.
+Check the
+[GitHub Issues](https://github.com/xpack-dev-tools/qemu-arm-xpack/issues/) 
+tracker for similar problems.
 
 ## Contribute to the forums
 
@@ -46,5 +46,6 @@ and enter a **New Topic** in the QEMU section.
 If you are convinced that you identified a bug related to the binary 
 distribution, not QEMU itself (if you have doubts, use the forum), 
 or you have a pertinent suggestion how to enhance the xPack QEMU ARM 
-distribution, register a **New Issue** in the the GitHub Issues 
-[tracker](https://github.com/xpack-dev-tools/qemu-arm-xpack/issues/).
+distribution, register a **New Issue** in the the
+[GitHub Issues](https://github.com/xpack-dev-tools/qemu-arm-xpack/issues/)
+tracker.
