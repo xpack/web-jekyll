@@ -3,7 +3,7 @@ title: How to create a new xPack Git repository?
 permalink: /develop/how-to-new-git/
 
 date: 2019-07-09 17:48:00 +0300
-last_updated: 2019-07-10 10:17:45 +0300
+last_updated: 2019-07-10 10:22:16 +0300
 
 ---
 
