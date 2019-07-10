@@ -158,6 +158,20 @@ defaults:
 
   -
     scope:
+      path: "pages/dev-tools/arm-none-eabi-gcc"
+      type: "pages"
+    values:
+      layout: "page"
+      comments: false
+      search: true
+      sidebar: arm-none-eabi-gcc
+      topnav: topnav
+      author: Liviu Ionescu
+      toc: true
+      github_editme: true
+
+  -
+    scope:
       path: "pages/core/xpm"
       type: "pages"
     values:

@@ -1,0 +1,37 @@
+# This is the arm-none-eabi-gcc sidebar TOC. 
+# The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: Sidebar
+  product: GNU ARM Embedded GCC
+  # version: 1.0
+  folders:
+
+  - title: Getting Started
+    output: web
+    folderitems:
+    - title: Overview
+      url: /arm-none-eabi-gcc/
+      output: web
+    - title: Install
+      url: /arm-none-eabi-gcc/install/
+      output: web
+    - title: Support
+      url: /arm-none-eabi-gcc/support/
+      output: web
+    - title: FAQ
+      url: /arm-none-eabi-gcc/faq/
+      output: web
+    - title: Releases
+      url: /arm-none-eabi-gcc/releases/
+      output: web
+  - title: Back Home
+    output: web
+    folderitems:
+    - title: The xPack Project
+      url: /
+      output: web
+    - title: GNU MCU Eclipse
+      external_url: https://gnu-mcu-eclipse.github.io
+      output: web
+

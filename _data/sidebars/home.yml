@@ -48,7 +48,7 @@ entries:
     folderitems:
 
     - title: arm-none-eabi-gcc
-      external_url: https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack
+      url: /arm-none-eabi-gcc/
       output: web
     - title: riscv-none-embed-gcc
       external_url: https://github.com/xpack-dev-tools/riscv-none-embed-gcc-xpack
@@ -104,7 +104,7 @@ entries:
   - title: Home
     output: web
     folderitems:
-    
+
     - title: The xPack Project
       url: /
       output: web
