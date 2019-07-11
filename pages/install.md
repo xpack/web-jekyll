@@ -9,6 +9,7 @@ keywords:
   - xpack
   - install
 
+node_version: v10.16.0
 
 date: 2017-10-09 14:14:00 +0300
 last_updated: 2019-07-05 20:30:42 +0300
@@ -29,7 +30,7 @@ syntax is used.
 
 ```console
 $ node --version
-v10.16.0
+{{ page.node_version }}
 ```
 
 If this is your first encounter with `npm`, you need to install the 
@@ -68,8 +69,8 @@ For details, see the
 page.
 {% endcapture %}
 
-{% capture npm_install %}
-## `npm` install
+{% capture npm_update %}
+## `npm` update
 {% endcapture %}
 
 {% capture windows %}
@@ -88,12 +89,12 @@ system path since it includes the `node.exe` binary.
 C:\>where node.exe
 C:\Program Files\nodejs\node.exe
 C:\>node --version
-v10.16.0
+{{ page.node_version }}
 ```
 
 {{ version_manager }}
 
-{{ npm_install }}
+{{ npm_update }}
 
 A version of `npm`, usually a bit older, comes packed with `node`.
 
@@ -172,13 +173,12 @@ are installed.
 $ which node
 /usr/local/bin/node
 $ node --version
-v10.16.0
-$
+{{ page.node_version }}
 ```
 
 {{ version_manager }}
 
-{{ npm_install }}
+{{ npm_update }}
 
 A version of `npm`, usually a bit older, comes packed with `node`.
 
@@ -226,7 +226,6 @@ $ npm install --global npm
 /Users/ilg/Library/npm/bin/npm -> /Users/ilg/Library/npm/lib/node_modules/npm/bin/npm-cli.js
 + npm@6.10.0
 added 14 packages from 10 contributors, removed 5 packages and updated 17 packages in 10.446s
-$ 
 ```
 
 To check if the environment is set correctly :
@@ -236,7 +235,6 @@ $ which npm
 /Users/ilg/Library/npm/bin/npm
 $ npm --version
 6.10.0
-$
 ```
 
 ### Hidden folder
@@ -280,42 +278,63 @@ XPACKS_CACHE_FOLDER="${HOME}/.cache/xPacks"
 
 {{ node_install }}
 
-On GNU/Linux, download the **Linux Binaries (x64)** archive from the Node.js
-[download](https://nodejs.org/en/download/) page.
+{% include warning.html content="Your distribution may already have a `node` 
+binary installed; check it (via `node --version`) and if it is older than LTS,
+remove the distribution binary and install 
+the LTS package from Node.js." %}
+
+For example, on Ubuntu 18 LTS, both Node and npm are very old and must be
+removed:
+
+```console
+$ node --version
+v8.10.0
+$ npm --version
+3.5.2
+$ sudo apt remove --yes nodejs npm
+```
+
+Download the **Linux Binaries (x64)** archive from the Node.js
+[download](https://nodejs.org/en/download/) page; 
+the result is a file like `node-{{ page.node_version }}-linux-x64.tar.xz`.
 
 {% include note.html content="Currently only a 64-bit binary is available." %}
 
-To install, follow the instructions from the 
-[Installing Node.js via binary archive on Linux](https://github.com/nodejs/help/wiki/Installation) page.
+Extract the content of the archive in `/usr/local/lib/nodejs` and add soft 
+links to the executables:
 
-The result is a binary like `/usr/bin/node` and a folder like
-`/usr/lib/node_modules` where the modules, including `npm`, are installed.
+```console
+$ sudo mkdir -p /usr/local/lib/nodejs
+$ sudo tar -xJvf ~/Downloads/node-{{ page.node_version }}-linux-x64.tar.xz -C /usr/local/lib/nodejs
+$ sudo ln -s /usr/local/lib/nodejs/node-{{ page.node_version }}-linux-x64/bin/node /usr/local/bin/node
+$ sudo ln -s /usr/local/lib/nodejs/node-{{ page.node_version }}-linux-x64/bin/bin/npm /usr/local/bin/npm
+$ sudo ln -s /usr/local/lib/nodejs/node-{{ page.node_version }}-linux-x64/bin/npx /usr/local/bin/npx
+```
 
-{% include warning.html content="Your distribution may already have a `node` 
-binary installed; if
-it is not >=8.x, xpm will complain and do not start; anyway, we strongly
-recommend, if old, to avoid the distribution binary and install at least 
-the LTS package from Node.js." %}
+{% include note.html content="This location requires the `usr/local/bin` to be
+in `PATH`. If it is not, you must add `export PATH=\"/usr/local/bin:${PATH}\"` 
+in `.profile`." %}
+
+After this, the new Node should be available:
 
 ```console
 $ which node
 /usr/local/bin/node
 $ node --version
-v10.16.0
-$
+{{ page.node_version }}
 ```
 
 {{ version_manager }}
 
-{{ npm_install }}
+{{ npm_update }}
 
 A version of `npm`, usually a bit older, comes packed with `node`.
 
 ```console
 $ which npm
 /usr/local/bin/npm
-npm --version
-6.9.0
+$ npm --version
+6.7.0
 ```
 
 It is recommended to update it to the latest version.
@@ -343,6 +362,12 @@ $ echo 'export PATH="${HOME}/opt/npm/bin:${PATH}"' >> ~/.profile
 $ source ~/.profile
 ```
 
+Now it is possible to install Node without `sudo`:
+
+```console
+$ npm install --global npm
+```
+
 To check if the environment is set correctly :
 
 ```console
@@ -350,11 +375,10 @@ $ which npm
 /Users/ilg/Library/npm/bin/npm
 $ npm --version
 6.10.0
-$
 ```
 
-(These commands were tested with `bash`, for other shells they may need 
-small adjustments.)
+{% include note.html content="These commands were tested with `bash` on 
+Ubuntu 18 LTS; for other shells they may need small adjustments." %}
 
 {% endcapture %}
 
