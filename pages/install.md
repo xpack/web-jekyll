@@ -36,7 +36,7 @@ $ node --version
 If this is your first encounter with `npm`, you need to install the 
 [Node.js](https://nodejs.org) JavaScript run-time. The process is 
 straightforward and does not pollute the system locations significantly; 
-there are two `node` versions, **LTS** (**Long Term Service**) and 
+there are two Node versions, **LTS** (**Long Term Service**) and 
 **Current**; generally it is safer to use LTS, especially on Windows.
 
 ![The Node Download page]({{ site.baseurl }}/assets/images/2019/nodejs-org.png)
@@ -49,11 +49,11 @@ the `npm-cli.js` script, which is part of the Node module that implements
 the npm functionality (on Windows instead of soft links, 
 `.cmd` stubs are used).
 
-{% include tip.html content="The usual method is to install `node` with 
+{% include tip.html content="The usual method is to install Node with 
 administrative rights;
 it is also possible to install it in a custom location, using the
-archive distributions. Regardless where it is installed, `node` must 
-be in the system path." %}
+archive distributions. Regardless where it is installed, the `node` 
+executable must be in the system path." %}
 
 {% capture node_install %}
 ## `node` install
@@ -307,7 +307,7 @@ links to the executables:
 $ sudo mkdir -p /usr/local/lib/nodejs
 $ sudo tar -xJvf ~/Downloads/node-{{ page.node_version }}-linux-x64.tar.xz -C /usr/local/lib/nodejs
 $ sudo ln -s /usr/local/lib/nodejs/node-{{ page.node_version }}-linux-x64/bin/node /usr/local/bin/node
-$ sudo ln -s /usr/local/lib/nodejs/node-{{ page.node_version }}-linux-x64/bin/bin/npm /usr/local/bin/npm
+$ sudo ln -s /usr/local/lib/nodejs/node-{{ page.node_version }}-linux-x64/bin/npm /usr/local/bin/npm
 $ sudo ln -s /usr/local/lib/nodejs/node-{{ page.node_version }}-linux-x64/bin/npx /usr/local/bin/npx
 ```
 
