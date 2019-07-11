@@ -311,7 +311,7 @@ $ sudo ln -s /usr/local/lib/nodejs/node-{{ page.node_version }}-linux-x64/bin/bi
 $ sudo ln -s /usr/local/lib/nodejs/node-{{ page.node_version }}-linux-x64/bin/npx /usr/local/bin/npx
 ```
 
-{% include note.html content="This location requires the `usr/local/bin` to be
+{% include note.html content="This location requires the `/usr/local/bin` to be
 in `PATH`. If it is not, you must add `export PATH=\"/usr/local/bin:${PATH}\"` 
 in `.profile`." %}
 
@@ -362,7 +362,7 @@ $ echo 'export PATH="${HOME}/opt/npm/bin:${PATH}"' >> ~/.profile
 $ source ~/.profile
 ```
 
-Now it is possible to install Node without `sudo`:
+Now it is possible to install npm without `sudo`:
 
 ```console
 $ npm install --global npm
