@@ -10,6 +10,7 @@ keywords:
   - install
 
 node_version: v10.16.0
+npm_version: 6.10.1
 
 date: 2017-10-09 14:14:00 +0300
 last_updated: 2019-07-11 17:27:33 +0300
@@ -108,10 +109,10 @@ C:\>npm --version
 It is recommended to update it to the latest version:
 
 ```powershell
-C:\>npm install --global npm
+C:\>npm install --global npm@latest
 C:\Users\ilg\AppData\Roaming\npm\npm -> C:\Users\ilg\AppData\Roaming\npm\node_modules\npm\bin\npm-cli.js
 C:\Users\ilg\AppData\Roaming\npm\npx -> C:\Users\ilg\AppData\Roaming\npm\node_modules\npm\bin\npx-cli.js
-+ npm@6.10.0
++ npm@{{ page.npm_version }}
 added 435 packages from 816 contributors in 72.64s
 ```
 
@@ -144,7 +145,7 @@ After this, the new version of the program should be visible:
 
 ```
 C:\>npm --version
-6.10.0
+{{ page.npm_version }}
 ```
 
 ### Git
@@ -221,10 +222,10 @@ $ source ~/.profile
 With the environment properly set, the command to re-install `npm` is:
 
 ```
-$ npm install --global npm
+$ npm install --global npm@latest
 /Users/ilg/Library/npm/bin/npx -> /Users/ilg/Library/npm/lib/node_modules/npm/bin/npx-cli.js
 /Users/ilg/Library/npm/bin/npm -> /Users/ilg/Library/npm/lib/node_modules/npm/bin/npm-cli.js
-+ npm@6.10.0
++ npm@{{ page.npm_version }}
 added 14 packages from 10 contributors, removed 5 packages and updated 17 packages in 10.446s
 ```
 
@@ -234,7 +235,7 @@ To check if the environment is set correctly :
 $ which npm
 /Users/ilg/Library/npm/bin/npm
 $ npm --version
-6.10.0
+{{ page.npm_version }}
 ```
 
 ### Hidden folder
@@ -283,14 +284,18 @@ binary installed; check it (via `node --version`) and if it is older than LTS,
 remove the distribution binary and install 
 the LTS package from Node.js." %}
 
-For example, on Ubuntu 18 LTS, both Node and npm are very old and must be
-removed:
+For example, on Ubuntu 18 LTS, both Node and npm are very old:
 
 ```console
 $ node --version
 v8.10.0
 $ npm --version
 3.5.2
+```
+
+and, to avoid problems, it is probably better to remove them:
+
+```console
 $ sudo apt remove --yes nodejs npm
 ```
 
@@ -300,12 +305,16 @@ the result is a file like `node-{{ page.node_version }}-linux-x64.tar.xz`.
 
 {% include note.html content="Currently only a 64-bit binary is available." %}
 
-Extract the content of the archive in `/usr/local/lib/nodejs` and add soft 
-links to the executables:
+Extract the content of the archive in `/usr/local/lib/nodejs`:
 
 ```console
 $ sudo mkdir -p /usr/local/lib/nodejs
 $ sudo tar -xJvf ~/Downloads/node-{{ page.node_version }}-linux-x64.tar.xz -C /usr/local/lib/nodejs
+```
+
+and, for easy access, create soft links to the executables in `/usr/local/bin`:
+
+```console
 $ sudo ln -s /usr/local/lib/nodejs/node-{{ page.node_version }}-linux-x64/bin/node /usr/local/bin/node
 $ sudo ln -s /usr/local/lib/nodejs/node-{{ page.node_version }}-linux-x64/bin/npm /usr/local/bin/npm
 $ sudo ln -s /usr/local/lib/nodejs/node-{{ page.node_version }}-linux-x64/bin/npx /usr/local/bin/npx
@@ -365,16 +374,20 @@ $ source ~/.profile
 Now it is possible to install npm without `sudo`:
 
 ```console
-$ npm install --global npm
+$ npm install --global npm@latest
+/home/ilg/opt/npm/bin/npm -> /home/ilg/opt/npm/lib/node_modules/npm/bin/npm-cli.js
+/home/ilg/opt/npm/bin/npx -> /home/ilg/opt/npm/lib/node_modules/npm/bin/npx-cli.js
++ npm@{{ page.npm_version }}
+added 21 packages from 15 contributors, removed 14 packages and updated 37 packages in 12.609s
 ```
 
 To check if the environment is set correctly :
 
 ```console
 $ which npm
-/Users/ilg/Library/npm/bin/npm
+/home/ilg/opt/npm/bin/npm
 $ npm --version
-6.10.0
+{{ page.npm_version }}
 ```
 
 {% include note.html content="These commands were tested with `bash` on 
