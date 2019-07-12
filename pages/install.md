@@ -399,5 +399,5 @@ Ubuntu 18 LTS; for other shells they may need small adjustments." %}
 
 ## Miscellaneous
 
-The official page explaining how to install `npm` in a custom
-folder is [How to Prevent Permissions Errors](https://docs.npmjs.com/getting-started/fixing-npm-permissions#option-two-change-npms-default-directory).
+The official page explaining how to install `npm` in a custom folder is 
+[Resolving EACCES permissions errors when installing packages globally](https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally).
