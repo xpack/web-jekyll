@@ -46,10 +46,10 @@ main branch can be merged into the `xpack` branch and things kept in sync.
 
 For consistency reasons, it is recommended for the new xPacks, even if
 they do not include 3rd party content, to use the `xpack` branch instead 
-the `master` branch.
+of the `master` branch.
 
 {% include note.html content="The xPack tools do not require and
-do not enforce the use of the `xpack` named branch, this is only
+do not enforce the use of a branch named `xpack`, this is only
 a recommendation." %}
 
 The following steps apply to GitHub. Adjust them for other Git hosting sites.
