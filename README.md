@@ -268,3 +268,16 @@ images as 1024 x 768, which is generally ok for regular (non-HiRes) screens.
 - [GitHub Pages](https://pages.github.com).
 - [list of plugins](https://pages.github.com/versions/)
 
+## Quick copy/paste
+
+```
+bundle exec jekyll serve --trace --safe --baseurl "/preview"`
+
+bundle exec jekyll build
+
+bundle exec htmlproofer --allow-hash-href --url-swap \^/preview/\:/ ./_site
+
+bundle exec htmlproofer --allow-hash-href --url-swap \^/preview/\:/ --url-ignore /github.com/xpack/xpack.github.io/blob/master/ ./_site
+
+bash scripts/adjust-timestamps.sh
+```
