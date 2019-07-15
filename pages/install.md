@@ -215,7 +215,26 @@ The commands to configure the custom location are:
 ```console
 $ mkdir -p ~/Library/npm
 $ npm config set prefix ~/Library/npm
-$ echo 'export PATH="${HOME}/Library/npm/bin:${PATH}"' >> ~/.profile
+```
+
+The new location must also be added in front of the existing PATH, and,
+by all means, in front of `/usr/local/bin`, otherwise the shell will pick
+the previous version. 
+
+For this edit `~/.profile`, and add something like:
+
+```
+export PATH="${HOME}/Library/npm/bin:${PATH}"
+```
+
+{% include tip.html content="This is also a good moment to check the
+content of the PATH variable and do a cleanup if necessary." %}
+
+When ready, preferably start a new shell; alternately instruct the shell
+to parse the `.profile` definitions, but be warned that doing this repeatedly 
+may lead to a confusing PATH.
+
+```console
 $ source ~/.profile
 ```
 
@@ -258,14 +277,26 @@ an alternate solution is to use `~/opt`, as on GNU/Linux.
 ```console
 $ mkdir -p ~/opt/npm
 $ npm config set prefix ~/opt/npm
-$ echo 'export PATH="${HOME}/opt/npm/bin:${PATH}"' >> ~/.profile
+```
+
+Edit `~/.profile` and update the path to include the new location:
+
+```
+export PATH="${HOME}/opt/npm/bin:${PATH}"
+```
+
+{% include important.html content="Double check the `PATH` settings 
+and be sure to remove the previous location." %}
+
+Preferably start a new shell; alternately instruct the shell
+to parse the `.profile` definitions.
+
+```console
 $ source ~/.profile
 ```
 
-(Be sure to remove the previous location from `.profile`.)
-
 If you do this, you should also set the environment variables which
-define the location where xPacks are installed, which also defaults to
+define the location where xPacks are installed, which also default to
 `~/Library` (add the following to `~/.profile`):
 
 ```
@@ -320,9 +351,14 @@ $ sudo ln -s /usr/local/lib/nodejs/node-{{ page.node_version }}-linux-x64/bin/np
 $ sudo ln -s /usr/local/lib/nodejs/node-{{ page.node_version }}-linux-x64/bin/npx /usr/local/bin/npx
 ```
 
-{% include note.html content="This location requires the `/usr/local/bin` to be
-in `PATH`. If it is not, you must add `export PATH=\"/usr/local/bin:${PATH}\"` 
-in `.profile`." %}
+This location requires the `/usr/local/bin` to be
+in the search `PATH`. If it is not, you must edit `.profile` and 
+add something like:
+
+```
+export PATH="/usr/local/bin:${PATH}"
+```
+
 
 After this, the new Node should be available:
 
@@ -367,7 +403,26 @@ The commands to configure the custom location are:
 ```console
 $ mkdir -p ~/opt/npm
 $ npm config set prefix ~/opt/npm
-$ echo 'export PATH="${HOME}/opt/npm/bin:${PATH}"' >> ~/.profile
+```
+
+The new location must also be added in front of the existing PATH, and,
+by all means, in front of `/usr/local/bin`, otherwise the shell will pick
+the previous version. 
+
+For this edit `~/.profile`, and add something like:
+
+```
+export PATH="${HOME}/opt/npm/bin:${PATH}"
+```
+
+{% include tip.html content="This is also a good moment to check the
+content of the PATH variable and do a cleanup if necessary." %}
+
+When ready, preferably start a new shell; alternately instruct the shell
+to parse the `.profile` definitions, but be warned that doing this repeatedly 
+may lead to a confusing PATH.
+
+```console
 $ source ~/.profile
 ```
 
