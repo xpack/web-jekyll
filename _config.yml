@@ -1,11 +1,11 @@
 url: https://xpack.github.io
-baseurl: /preview
+# baseurl: /preview
 
 # Default permalink used for posts.
 permalink: /blog/:year/:month/:day/:title/
 
 # Update this after editing the CSS files, to force a cache update.
-css-date: 201907041610
+css-date: 201907181733
 
 repository: xpack/xpack.github.io
 
