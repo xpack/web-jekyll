@@ -1,7 +1,7 @@
 ---
 title:  "The xPack project web has a new look!"
 
-date: 2019-06-10 12:00:00 +0300
+date: 2019-07-18 17:36:00 +0300
 last_updated: 2019-07-10 19:38:02 +0300
 
 categories: 
