@@ -37,7 +37,7 @@ With xpm available, installing
 the latest version of the package is quite easy:
 
 ```console
-$ xpm install --global @xpack-dev-tools/openocd
+$ xpm install --global @xpack-dev-tools/openocd@latest
 ```
 
 This command will always install the latest available version, 
@@ -314,7 +314,7 @@ macOS, to test a connection via ST/LINK v2 to the STM32F4DISCOVERY board,
 you can use the sample below:
 
 ```console
-$ ~/opt/gnu-mcu-eclipse/openocd/0.11.0-12/bin/openocd -f board/stm32f4discovery.cfg
+$ ~/opt/xPacks/openocd/0.11.0-12/bin/openocd -f board/stm32f4discovery.cfg
 xPack OpenOCD, 64-bitOpen On-Chip Debugger 0.10.0+dev-00593-g23ad80df4 (2019-06-19-19:02)
 Licensed under GNU GPL v2
 For bug reports, read

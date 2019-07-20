@@ -50,10 +50,10 @@ better integration with the environments like Eclipse, please feel free to use
 the xPack OpenOCD binaries, and preferably install them in the default 
 locations.
 
-{% include note.html content="OpenOCD is a very complex project, capable 
-of working with many JTAG probes, but support for them must be explicitly 
-included at build time, so be sure that support for your JTAG probe was 
-included in the binaries you plan to use. The xPack OpenOCD includes 
+{% include note.html content="OpenOCD is a very complex project, able 
+to work with many JTAG probes, but support for them must be enabled 
+at build time, so be sure that support for your JTAG probe was 
+enabled in the binaries you plan to use. The xPack OpenOCD includes 
 support for most existing probes, but does not guarantee that all are 
 included." %}
 
