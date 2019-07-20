@@ -2,7 +2,7 @@
 title:  xPack OpenOCD v0.10.0-13 released
 
 version: 0.10.0-13
-download_url: https://github.com/xpack-dev-tools/openocd/releases/tag/v0.10.0-13/
+download_url: https://github.com/xpack-dev-tools/openocd-xpack/releases/tag/v0.10.0-13/
 
 date:   2019-07-17 19:57:00 +0300
 last_updated: 2019-07-20 10:30:22 +0300
@@ -50,11 +50,14 @@ $ xpm install --global @xpack-dev-tools/openocd@{{ page.version }}.1
 
 ## Changes
 
+There are no functional changes.
+
 Compared to the upstream, the following changes were applied:
 
 - a configure option was added to configure branding (`--enable-branding`)
-- the src/openocd.c file was edited to display the branding string
-- the contrib/60-openocd.rules file was simplified to avoid protection related issues.
+- the `src/openocd.c` file was edited to display the branding string
+- the `contrib/60-openocd.rules` file was simplified to avoid protection 
+  related issues.
 
 ## Known problems
 
@@ -86,7 +89,7 @@ xpack-openocd-0.10.0-13-win32-x64.zip
 * GitHub [xpack-dev-tools/openocd-xpack](https://github.com/xpack-dev-tools/openocd-xpack/)
   * this release [![Github All Releases](https://img.shields.io/github/downloads/xpack-dev-tools/openocd-xpack/v{{ page.version }}/total.svg)](https://github.com/xpack-dev-tools/openocd-xpack/releases/v{{ page.version }}/)
   * all releases [![Github All Releases](https://img.shields.io/github/downloads/xpack-dev-tools/openocd-xpack/total.svg)](https://github.com/xpack-dev-tools/openocd-xpack/releases/)
-  * GNU MCU Eclipse releases [![Github All Releases](https://img.shields.io/github/downloads/gnu-mcu-eclipse/openocd/total.svg)](https://github.com/gnu-mcu-eclipse/openocd/releases/)
+  * GNU MCU Eclipse all releases [![Github All Releases](https://img.shields.io/github/downloads/gnu-mcu-eclipse/openocd/total.svg)](https://github.com/gnu-mcu-eclipse/openocd/releases/)
 * xPack [@xpack-dev-tools/openocd-xpack](https://github.com/xpack-dev-tools/openocd-xpack-xpack/)
   * all releases [![npm](https://img.shields.io/npm/dt/@xpack-dev-tools/openocd-xpack.svg)](https://www.npmjs.com/package/@xpack-dev-tools/openocd-xpack/)
 * [individual file counters](https://www.somsubhra.com/github-release-stats/?username=xpack-dev-tools&repository=openocd-xpack) (grouped per release)
