@@ -37,7 +37,7 @@ With xpm available, installing
 the latest version of the package is quite easy:
 
 ```console
-$ xpm install --global @xpack-dev-tools/qemu
+$ xpm install --global @xpack-dev-tools/qemu-arm@latest
 ```
 
 This command will always install the latest available version, 
@@ -62,7 +62,7 @@ xpm and provide a convenient method to manage paths.
 To remove the installed xPack, the command is similar:
 
 ```console
-$ xpm uninstall --global @xpack-dev-tools/qemu
+$ xpm uninstall --global @xpack-dev-tools/qemu-arm
 ```
 
 (Note: not yet implemented. As a temporary workaround, simply remove the 
