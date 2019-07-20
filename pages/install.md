@@ -135,11 +135,20 @@ and this path **is not** in the default environment.
 C:\>echo %Path%
 ```
 
-It must be added manually: 
+It must be added manually in front of the current path: 
 
 ```
-C:\>setx Path "%Path%;%APPDATA%\npm"
+C:\>set Path=%APPDATA%\npm;%Path%
 ```
+
+To make this setting persistent, also issue the foolloing:
+
+```
+C:\>setx Path "%APPDATA%\npm;%Path%"
+```
+
+{% include note.html content="Please note the syntax differences, no equal 
+sign and double quotes, specific to `setx` but harmful to `set`." %}
 
 After this, the new version of the program should be visible:
 
@@ -221,26 +230,21 @@ The new location must also be added in front of the existing PATH, and,
 by all means, in front of `/usr/local/bin`, otherwise the shell will pick
 the previous version. 
 
-For this edit `~/.profile`, and add something like:
+Issue the following commands:
 
+```console
+$ PATH="${HOME}/Library/npm/bin:${PATH}"
+$ export PATH
 ```
-export PATH="${HOME}/Library/npm/bin:${PATH}"
-```
+
+To make them persistent, edit `~/.profile`, and add them to the end.
 
 {% include tip.html content="This is also a good moment to check the
 content of the PATH variable and do a cleanup if necessary." %}
 
-When ready, preferably start a new shell; alternately instruct the shell
-to parse the `.profile` definitions, but be warned that doing this repeatedly 
-may lead to a confusing PATH.
-
-```console
-$ source ~/.profile
-```
-
 With the environment properly set, the command to re-install `npm` is:
 
-```
+```console
 $ npm install --global npm@latest
 /Users/ilg/Library/npm/bin/npx -> /Users/ilg/Library/npm/lib/node_modules/npm/bin/npx-cli.js
 /Users/ilg/Library/npm/bin/npm -> /Users/ilg/Library/npm/lib/node_modules/npm/bin/npm-cli.js
@@ -279,30 +283,28 @@ $ mkdir -p ~/opt/npm
 $ npm config set prefix ~/opt/npm
 ```
 
-Edit `~/.profile` and update the path to include the new location:
+Issue the following commands:
 
+```console
+$ PATH="${HOME}/opt/npm/bin:${PATH}"
+$ export PATH
 ```
-export PATH="${HOME}/opt/npm/bin:${PATH}"
-```
+
+To make them persistent, edit `~/.profile`, and add them to the end.
 
 {% include important.html content="Double check the `PATH` settings 
 and be sure to remove the previous location." %}
 
-Preferably start a new shell; alternately instruct the shell
-to parse the `.profile` definitions.
+If you install npm packages in `opt`, you would probably also want to 
+install xpm packages in `opt` too. For this, set the environment variables 
+which define the location where xPacks are installed:
 
 ```console
-$ source ~/.profile
+$ export XPACKS_REPO_FOLDER="${HOME}/opt/xPacks"
+$ export XPACKS_CACHE_FOLDER="${HOME}/.cache/xPacks"
 ```
 
-If you do this, you should also set the environment variables which
-define the location where xPacks are installed, which also default to
-`~/Library` (add the following to `~/.profile`):
-
-```
-XPACKS_REPO_FOLDER="${HOME}/opt/xPacks"
-XPACKS_CACHE_FOLDER="${HOME}/.cache/xPacks"
-```
+To make them persistent, edit `~/.profile`, and add them to the end.
 
 {% endcapture %}
 
@@ -352,13 +354,14 @@ $ sudo ln -s /usr/local/lib/nodejs/node-{{ page.node_version }}-linux-x64/bin/np
 ```
 
 This location requires the `/usr/local/bin` to be
-in the search `PATH`. If it is not, you must edit `.profile` and 
-add something like:
+in the search `PATH`. If it is not, add it in front of the existing path:
 
-```
-export PATH="/usr/local/bin:${PATH}"
+```console
+$ PATH="/usr/local/bin:${PATH}"
+$ export PATH
 ```
 
+To make them persistent, edit `~/.profile`, and add them to the end.
 
 After this, the new Node should be available:
 
@@ -409,22 +412,15 @@ The new location must also be added in front of the existing PATH, and,
 by all means, in front of `/usr/local/bin`, otherwise the shell will pick
 the previous version. 
 
-For this edit `~/.profile`, and add something like:
+```console
+$ PATH="${HOME}/opt/npm/bin:${PATH}"
+$ export PATH
+```
 
-```
-export PATH="${HOME}/opt/npm/bin:${PATH}"
-```
+To make them persistent, edit `~/.profile`, and add them to the end.
 
 {% include tip.html content="This is also a good moment to check the
 content of the PATH variable and do a cleanup if necessary." %}
-
-When ready, preferably start a new shell; alternately instruct the shell
-to parse the `.profile` definitions, but be warned that doing this repeatedly 
-may lead to a confusing PATH.
-
-```console
-$ source ~/.profile
-```
 
 Now it is possible to install npm without `sudo`:
 
