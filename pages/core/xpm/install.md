@@ -40,7 +40,10 @@ user home folder, in `%APPDATA%\npm`
 does not require administrative rights.
 
 ```
-C:\>npm install --global xpm
+C:\>npm install --global xpm@latest
+C:\Users\ilg\AppData\Roaming\npm\xpm -> C:\Users\ilg\AppData\Roaming\npm\node_modules\xpm\bin\xpm.js
++ xpm@0.5.0
+added 260 packages from 147 contributors in 36.304s
 ```
 
 The result is a pair of files in the `%APPDATA%\npm` folder:
@@ -50,7 +53,7 @@ C:\>dir "%APPDATA%"\npm\xpm*
  Volume in drive C has no label.
  Volume Serial Number is 28CE-1C06
 
- Directory of C:\Users\Liviu Ionescu\AppData\Roaming\npm
+ Directory of C:\Users\ilg\AppData\Roaming\npm
 
 18/04/2018  10:40               319 xpm
 18/04/2018  10:40               196 xpm.cmd
@@ -103,7 +106,7 @@ already have configured npm to use a location in the home folder.
 With the environment properly set, the command to install xpm is:
 
 ```console
-$ npm install --global xpm
+$ npm install --global xpm@latest
 ```
 
 To test if xpm starts:
@@ -128,7 +131,7 @@ already have configured npm to use a location in the home folder.
 With the environment properly set, the command to install xpm is:
 
 ```console
-$ npm install --global xpm
+$ npm install --global xpm@latest
 ```
 
 To test if xpm starts:
