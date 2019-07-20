@@ -41,7 +41,7 @@ user home folder, in `%APPDATA%\npm`
 does not require administrative rights.
 
 ```
-C:\>npm install --global xpbuild
+C:\>npm install --global xpbuild@latest
 ```
 
 The result is a pair of files in the `%APPDATA%\npm` folder:
@@ -80,7 +80,7 @@ already have configured npm to use a location in the home folder.
 With the environment properly set, the command to install `xpbuild` is:
 
 ```console
-$ npm install --global xpbuild
+$ npm install --global xpbuild@latest
 ```
 
 To test if xpbuild starts:
@@ -105,7 +105,7 @@ already have configured npm to use a location in the home folder.
 With the environment properly set, the command to install `xpbuild` is:
 
 ```console
-$ npm install --global xpbuild
+$ npm install --global xpbuild@latest
 ```
 
 To test if `xpbuild` starts:
