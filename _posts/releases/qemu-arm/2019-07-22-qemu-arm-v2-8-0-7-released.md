@@ -30,7 +30,7 @@ The full details of installing the **xPack QEMU ARM** on various platforms
 are presented in the separate 
 [Install]({{ site.baseurl }}/qemu-arm/install/) page.
 
-## Easy install 
+### Easy install 
 
 The easiest way to install QEMU ARM is with 
 [`xpm`]({{ site.baseurl }}/xpm/)

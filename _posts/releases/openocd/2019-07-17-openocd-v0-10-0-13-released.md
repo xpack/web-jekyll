@@ -28,7 +28,7 @@ The full details of installing the **xPack OpenOCD** on various platforms
 are presented in the separate 
 [Install]({{ site.baseurl }}/openocd/install/) page.
 
-## Easy install 
+### Easy install 
 
 The easiest way to install OpenOCD is with 
 [`xpm`]({{ site.baseurl }}/xpm/)
