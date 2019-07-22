@@ -2,7 +2,7 @@
 title:  xPack QEMU ARM v2.8.0-7 released
 
 version: 2.8.0-7
-download_url: https://github.com/gnu-mcu-eclipse/qemu/releases/tag/v2.8.0-7/
+download_url: https://github.com/xpack-dev-tools/qemu-arm/releases/tag/v2.8.0-7/
 
 date:   2019-07-22 20:38:00 +0300
 last_updated: 2019-07-22 22:14:05 +0300
@@ -53,10 +53,10 @@ $ xpm install --global @xpack-dev-tools/qemu-arm@{{ page.version }}.1
 ## Bug fixes
 
 - [[#70](https://github.com/gnu-mcu-eclipse/qemu/issues/70)] due to a bug 
-  in the Windows specific part, in certain conditions starting QEMU in
+  in the Windows specific part, in certain conditions, starting QEMU in
   non-graphic mode affected the GDB server functionality; thanks to a 
-  contribution by GitHub user @zaq32 
-  ([#71](https://github.com/gnu-mcu-eclipse/qemu/pull/71) the bug was fixed.
+  contribution by GitHub user `@zaq32` 
+  [[#71](https://github.com/gnu-mcu-eclipse/qemu/pull/71)] the bug was fixed.
   
 ## Known problems
 
