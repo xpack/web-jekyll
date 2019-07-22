@@ -63,6 +63,10 @@ Compared to the upstream, the following changes were applied:
 
 - none
 
+## Binaries
+
+Binaries for **Windows**, **macOS** and **GNU/Linux** are provided.
+
 ## Checksums
 
 The SHA-256 hashes for the files are:
