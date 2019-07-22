@@ -5,7 +5,7 @@ version: 2.8.0-7
 download_url: https://github.com/gnu-mcu-eclipse/qemu/releases/tag/v2.8.0-7/
 
 date:   2019-07-22 20:38:00 +0300
-last_updated: 2019-07-10 19:38:02 +0300
+last_updated: 2019-07-22 22:14:05 +0300
 
 categories:
   - releases
