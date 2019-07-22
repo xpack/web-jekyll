@@ -5,7 +5,7 @@ version: 0.10.0-13
 download_url: https://github.com/xpack-dev-tools/openocd-xpack/releases/tag/v0.10.0-13/
 
 date:   2019-07-17 19:57:00 +0300
-last_updated: 2019-07-22 22:14:05 +0300
+last_updated: 2019-07-22 22:40:25 +0300
 
 categories:
   - releases
