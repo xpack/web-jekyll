@@ -2,7 +2,7 @@
 title:  xPack QEMU ARM v2.8.0-7 released
 
 version: 2.8.0-7
-download_url: https://github.com/xpack-dev-tools/qemu-arm/releases/tag/v2.8.0-7/
+download_url: https://github.com/xpack-dev-tools/qemu-arm-xpack/releases/tag/v2.8.0-7/
 
 date:   2019-07-22 20:38:00 +0300
 last_updated: 2019-07-22 22:40:25 +0300
