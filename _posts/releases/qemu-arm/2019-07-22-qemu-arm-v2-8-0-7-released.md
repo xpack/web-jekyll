@@ -98,4 +98,6 @@ xpack-qemu-arm-2.8.0-7-win32-x64.zip
 - xnpmjs.com [@xpack-dev-tools/qemu-arm](https://www.npmjs.com/package/@xpack-dev-tools/qemu-arm)
   - all releases [![npm](https://img.shields.io/npm/dt/@xpack-dev-tools/qemu-arm.svg)](https://www.npmjs.com/package/@xpack-dev-tools/qemu-arm/)
 
-Credit to [Shields IO](https://shields.io) and [Somsubhra/github-release-stats](https://github.com/Somsubhra/github-release-stats).
+Credit to [Shields IO](https://shields.io) for the badges and to 
+[Somsubhra/github-release-stats](https://github.com/Somsubhra/github-release-stats) 
+for the individual file counters.
