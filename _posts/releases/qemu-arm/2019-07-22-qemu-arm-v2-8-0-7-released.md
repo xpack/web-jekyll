@@ -2,6 +2,7 @@
 title:  xPack QEMU ARM v2.8.0-7 released
 
 version: 2.8.0-7
+npm_subversion: 1
 download_url: https://github.com/xpack-dev-tools/qemu-arm-xpack/releases/tag/v2.8.0-7/
 
 date:   2019-07-22 20:38:00 +0300
@@ -47,7 +48,7 @@ $ xpm install --global @xpack-dev-tools/qemu-arm@latest
 To install this specific version, use:
 
 ```console
-$ xpm install --global @xpack-dev-tools/qemu-arm@{{ page.version }}.1
+$ xpm install --global @xpack-dev-tools/qemu-arm@{{ page.version }}.{{ page.npm_subversion }}
 ```
 
 ## Bug fixes

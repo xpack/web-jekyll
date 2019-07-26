@@ -2,6 +2,7 @@
 title:  xPack OpenOCD v0.10.0-13 released
 
 version: 0.10.0-13
+npm_subversion: 1
 download_url: https://github.com/xpack-dev-tools/openocd-xpack/releases/tag/v0.10.0-13/
 
 date:   2019-07-17 19:57:00 +0300
@@ -45,7 +46,7 @@ $ xpm install --global @xpack-dev-tools/openocd@latest
 To install this specific version, use:
 
 ```console
-$ xpm install --global @xpack-dev-tools/openocd@{{ page.version }}.1
+$ xpm install --global @xpack-dev-tools/openocd@{{ page.version }}.{{ page.npm_subversion }}
 ```
 
 ## Changes
