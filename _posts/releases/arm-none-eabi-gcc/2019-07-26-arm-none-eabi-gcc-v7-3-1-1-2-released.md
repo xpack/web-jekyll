@@ -2,7 +2,7 @@
 title:  xPack GNU ARM Embedded GCC v7.3.1-1.2 released
 
 version: 7.3.1-1.2
-npm_subversion: 1
+npm_subversion: 2
 download_url: https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases/v7.3.1-1.2/
 
 date:   2018-07-24 12:09:00 +0300
