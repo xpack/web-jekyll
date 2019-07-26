@@ -6,7 +6,7 @@ npm_subversion: 1
 download_url: https://github.com/xpack-dev-tools/openocd-xpack/releases/tag/v0.10.0-13/
 
 date:   2019-07-17 19:57:00 +0300
-last_updated: 2019-07-26 18:48:06 +0300
+last_updated: 2019-07-26 20:26:14 +0300
 
 categories:
   - releases
