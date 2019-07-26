@@ -336,7 +336,10 @@ Download the **Linux Binaries (x64)** archive from the Node.js
 [download](https://nodejs.org/en/download/) page; 
 the result is a file like `node-{{ page.node_version }}-linux-x64.tar.xz`.
 
-{% include note.html content="Currently only a 64-bit binary is available." %}
+{% include note.html content="Currently the official Node distribution includes
+only a 64-bit GNU/Linux binary. 32-bit binaries may be downloaded from the 
+[Node.js Unofficial Builds Project](https://unofficial-builds.nodejs.org).
+However they were not tested and are not guaranteed to work." %}
 
 Extract the content of the archive in `/usr/local/lib/nodejs`:
 
