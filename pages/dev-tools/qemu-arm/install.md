@@ -57,6 +57,10 @@ xPacks aware tools, like the **GNU MCU Eclipse plug-ins** automatically
 identify binaries installed with
 xpm and provide a convenient method to manage paths.
 
+{% include important.html content="Due to the name change, automatic 
+path discovery in **GNU MCU Eclipse plug-ins** will not be available
+initially and will be added in the next plug-ins release." %}
+
 ### Uninstall
 
 To remove the installed xPack, the command is similar:
