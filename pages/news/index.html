@@ -22,8 +22,12 @@ last_updated: 2019-07-31 03:32:48 +0300
         </span>
         <p>{% if post.summary %} {{ post.summary | markdownify | strip_html | strip_newlines | truncate: 160 }} ... {% else %} {{ post.content | truncatewords: 50 | strip_html }} {% endif %}</p>
     {% endfor %}
-        <p><a href="{{ site.baseurl }}/feed.xml" class="btn btn-primary navbar-btn cursorNorm" role="button">RSS Subscribe{{tag}}</a></p>
-        <hr />
-        <p>See more posts from the <a href="{{ site.baseurl }}/news/archive/">News Archive</a>. </p>
+        <h2>More</h2>
+        <p>More posts are available from the <a href="{{ site.baseurl }}/news/archive/">News Archive</a>. It is also possible to browse the
+        news by <a href="{{ site.baseurl }}/tags/">Tags</a>.</p>
+        <h2>Notifications</h2>
+        <p>To stay up-to-date with new releases, the recommended way is to follow <a href="https://twitter.com/xpack_project">@xpack_project</a> on Twitter.</p>
+        <p>Alternatively you can subscribe to this site RSS feed <a href="https://xpack.github.io/feed.xml">https://xpack.github.io/feed.xml</a>.</p>
+        <p><a href="https://xpack.github.io/feed.xml" class="btn btn-primary navbar-btn cursorNorm" role="button">RSS Subscribe{{tag}}</a></p>
     </div>
 </div>

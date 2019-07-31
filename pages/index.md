@@ -71,7 +71,7 @@ These projects are hosted in the GitHub
 
 The main binary tools packed as xPacks are:
 
-- `@xpack-dev-tools/arm-none-eabi-gcc` - the **xPack ARM Embedded GCC** toolchain
+- [`@xpack-dev-tools/arm-none-eabi-gcc`]({{ site.baseurl }}/arm-none-eabi-gcc/) - the **xPack ARM Embedded GCC** toolchain
 - [`@xpack-dev-tools/openocd`]({{ site.baseurl }}/openocd/) - the **xPack OpenOCD**
 - [`@xpack-dev-tools/qemu`]({{ site.baseurl }}/qemu-arm/) - the **xPack QEMU ARM Cortex-M**
 - [`@xpack-dev-tools/riscv-none-embed-gcc`]({{ site.baseurl }}/riscv-none-embed-gcc/) - the **xPack RISC-V Embedded GCC** toolchain
@@ -87,7 +87,8 @@ Planned:
 - `@xpack-dev-tools/ninja` - the **xPack Ninja Build**
 
 These projects are hosted in the GitHub 
-[`xpack-dev-tools`](https://github.com/xpack-dev-tools) organisation.
+[`xpack-dev-tools`](https://github.com/xpack-dev-tools) group 
+(_organization_ in GitHub parlance).
 
 ## Source xPacks
 
@@ -121,6 +122,16 @@ The development environments are based on:
 
 These scripts are hosted in the Github 
 [`xpack/xpack-build-box`](https://github.com/xpack/xpack-build-box) project.
+
+## Notifications
+
+To stay up-to-date with new binary tools releases, the recommended way is 
+to follow [@xpack_project](https://twitter.com/xpack_project) on Twitter.
+
+Alternatively you can subscribe to this site RSS feed [https://xpack.github.io/feed.xml](https://xpack.github.io/feed.xml).
+
+To stay current with changes to individual projects, enable **watching** 
+in the GitHub web interface for each project of interest.
 
 ## License
 

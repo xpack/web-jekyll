@@ -112,7 +112,7 @@ defaults:
       layout: "page"
       comments: false
       search: true
-      sidebar: news
+      sidebar: home
       topnav: topnav
       author: Liviu Ionescu
 
@@ -124,7 +124,7 @@ defaults:
       layout: "page"
       comments: false
       search: exclude
-      sidebar: news
+      sidebar: home
       topnav: topnav
       author: Liviu Ionescu
 
@@ -315,7 +315,7 @@ defaults:
       layout: "post"
       comments: true
       search: true
-      sidebar: news
+      sidebar: home
       topnav: topnav
       author: Liviu Ionescu
       toc: false

@@ -3,5 +3,29 @@
 
 entries:
 - title: sidebar
+  # product: News
   folders:
+
+  - title: News
+    output: web
+    folderitems:
+    - title: Latest News
+      url: /news/
+      output: web
+    - title: Archive
+      url: /news/archive/
+      output: web
+    - title: Tags
+      url: /tags/
+      output: web
+
+  - title: Back Home
+    output: web
+    folderitems:
+    - title: The xPack Project
+      url: /
+      output: web
+    - title: GNU MCU Eclipse
+      external_url: https://gnu-mcu-eclipse.github.io
+      output: web
 
