@@ -89,8 +89,8 @@ The archives can be downloaded from the
 The Windows versions of **xPack GNU ARM Embedded GCC** are packed as ZIP files. 
 Download the latest version named like:
 
-- `xpack-arm-none-eabi-gcc-8.2.1-1.8-win32-x64.zip`
-- `xpack-arm-none-eabi-gcc-8.2.1-1.8-win32-x32.zip`
+- `xpack-arm-none-eabi-gcc-8.3.1-1.1-win32-x64.zip`
+- `xpack-arm-none-eabi-gcc-8.3.1-1.1-win32-x32.zip`
 
 Select the `-x64` file for 64-bit Windows machines and the `-x32` file 
 for 32-bit Windows machines.
@@ -119,8 +119,8 @@ for the executable in this location." %}
 To check if GCC starts, use the following command:
 
 ```
-C:\Users\ilg>C:\Users\ilg\AppData\Roaming\xPacks\GNU ARM Embedded GCC\8.2.1-1.8\bin\arm-none-eabi-gcc.exe" --version
-arm-none-eabi-gcc (xPack GNU ARM Embedded GCC, 64-bit) 8.2.1 20181213 (release) [gcc-8-branch revision 267074]
+C:\Users\ilg>C:\Users\ilg\AppData\Roaming\xPacks\GNU ARM Embedded GCC\8.3.1-1.1\bin\arm-none-eabi-gcc.exe" --version
+arm-none-eabi-gcc (xPack GNU ARM Embedded GCC, 64-bit) 8.3.1 20190703 (release) [gcc-8-branch revision 273027]
 ```
 
 {% include tip.html content="Since Windows does not provide the GNU make
@@ -134,19 +134,19 @@ binaries, it is recommended to also install the **Windows Build Tools**." %}
 The macOS version of **xPack GNU ARM Embedded GCC** is packed as a TGZ archive. 
 Download the latest version named like:
 
--  `xpack-arm-none-eabi-gcc-8.2.1-1.8-darwin-x64.tgz`
+-  `xpack-arm-none-eabi-gcc-8.3.1-1.1-darwin-x64.tgz`
 
 ### Unpack
 
 To install GNU ARM Embedded GCC, unpack the archive and copy it to 
-`/${HOME}/opt/xPacks/arm-none-eabi-gcc/`:
+`/${HOME}/opt/xPacks/arm-none-eabi-gcc/<version>`:
 
 ```console
 $ mkdir -p ~/opt
 $ cd ~/opt
 
-$ tar xvf ~/Downloads/xpack-arm-none-eabi-gcc-8.2.1-1.8-darwin-x64.tgz
-$ chmod -R -w xPacks/arm-none-eabi-gcc/8.2.1-1.8
+$ tar xvf ~/Downloads/xpack-arm-none-eabi-gcc-8.3.1-1.1-darwin-x64.tgz
+$ chmod -R -w xPacks/arm-none-eabi-gcc/8.3.1-1.1
 ```
 
 {% include note.html content="For manual installs, the recommended 
@@ -236,8 +236,8 @@ $ tree -L 2 /Users/ilg/Library/xPacks/arm-none-eabi-gcc/8.3.1-1.1
 To check if GCC starts, use:
 
 ```console
-$ ~/opt/xPacks/arm-none-eabi-gcc/8.2.1-1.8/bin/arm-none-eabi-gcc --version
-arm-none-eabi-gcc (xPack GNU ARM Embedded GCC, 64-bit) 8.2.1 20181213 (release) [gcc-8-branch revision 267074]
+$ ~/opt/xPacks/arm-none-eabi-gcc/8.3.1-1.1/bin/arm-none-eabi-gcc --version
+arm-none-eabi-gcc (xPack GNU ARM Embedded GCC, 64-bit) 8.3.1 20190703 (release) [gcc-8-branch revision 273027]
 ```
 
 {% endcapture %}
@@ -248,8 +248,8 @@ arm-none-eabi-gcc (xPack GNU ARM Embedded GCC, 64-bit) 8.2.1 20181213 (release) 
 The GNU/Linux versions of **xPack GNU ARM Embedded GCC** are packed as 
 TGZ archives. Download the latest version named like:
 
-- `xpack-arm-none-eabi-gcc-8.2.1-1.8-linux-x64.tgz`
-- `xpack-arm-none-eabi-gcc-8.2.1-1.8-linux-x32.tgz`
+- `xpack-arm-none-eabi-gcc-8.3.1-1.1-linux-x64.tgz`
+- `xpack-arm-none-eabi-gcc-8.3.1-1.1-linux-x32.tgz`
 
 As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
 CentOS, but can be executed on most recent GNU/Linux distributions. 
@@ -259,14 +259,14 @@ machines.
 ### Unpack
 
 To install GNU ARM Embedded GCC, unpack the archive and copy it to 
-`/${HOME}/opt/xPacks/arm-none-eabi-gcc/${version}`:
+`/${HOME}/opt/xPacks/arm-none-eabi-gcc/<version>`:
 
 ```console
 $ mkdir -p ~/opt
 $ cd ~/opt
 
-$ tar xvf ~/Downloads/xpack-arm-none-eabi-gcc-8.2.1-1.8-linux-x64.tgz
-$ chmod -R -w xPacks/arm-none-eabi-gcc/8.2.1-1.8
+$ tar xvf ~/Downloads/xpack-arm-none-eabi-gcc-8.3.1-1.1-linux-x64.tgz
+$ chmod -R -w xPacks/arm-none-eabi-gcc/8.3.1-1.1
 ```
 
 {% include note.html content="For manual installs, the recommended 
@@ -374,8 +374,8 @@ $ tree -L 2 /home/ilg/opt/xPacks/arm-none-eabi-gcc/8.3.1-1.1
 To check if GCC starts and is recent, use:
 
 ```console
-$ ~/opt/xPacks/arm-none-eabi-gcc/8.2.1-1.8/bin/arm-none-eabi-gcc --version
-arm-none-eabi-gcc (xPack GNU ARM Embedded GCC, 64-bit) 8.2.1 20181213 (release) [gcc-8-branch revision 267074]
+$ ~/opt/xPacks/arm-none-eabi-gcc/8.3.1-1.1/bin/arm-none-eabi-gcc --version
+arm-none-eabi-gcc (xPack GNU ARM Embedded GCC, 64-bit) 8.3.1 20190703 (release) [gcc-8-branch revision 273027]
 ```
 
 {% endcapture %}

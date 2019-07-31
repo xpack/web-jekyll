@@ -139,7 +139,7 @@ Download the latest version named like:
 ### Unpack
 
 To install GNU RISC-V Embedded GCC, unpack the archive and copy it to 
-`/${HOME}/opt/xPacks/riscv-none-embed-gcc/`:
+`/${HOME}/opt/xPacks/riscv-none-embed-gcc/<version>`:
 
 ```console
 $ mkdir -p ~/opt
@@ -256,7 +256,7 @@ machines.
 ### Unpack
 
 To install GNU RISC-V Embedded GCC, unpack the archive and copy it to 
-`/${HOME}/opt/xPacks/riscv-none-embed-gcc/${version}`:
+`/${HOME}/opt/xPacks/riscv-none-embed-gcc/<version>`:
 
 ```console
 $ mkdir -p ~/opt
