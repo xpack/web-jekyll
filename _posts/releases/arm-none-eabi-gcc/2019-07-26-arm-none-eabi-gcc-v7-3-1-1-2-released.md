@@ -57,6 +57,31 @@ This release follows the official
 **7-2018-q2-update** release from June 27, 2018 and it is based on the 
 `gcc-arm-none-eabi-7-2018-q2-update-src.tar.bz2` source invariant.
 
+The supported libraries are:
+
+```console
+$ arm-none-eabi-gcc -print-multi-lib
+.;
+thumb;@mthumb
+hard;@mfloat-abi=hard
+thumb/v6-m;@mthumb@march=armv6s-m
+thumb/v7-m;@mthumb@march=armv7-m
+thumb/v7e-m;@mthumb@march=armv7e-m
+thumb/v7-ar;@mthumb@march=armv7
+thumb/v8-m.base;@mthumb@march=armv8-m.base
+thumb/v8-m.main;@mthumb@march=armv8-m.main
+thumb/v7e-m/fpv4-sp/softfp;@mthumb@march=armv7e-m@mfpu=fpv4-sp-d16@mfloat-abi=softfp
+thumb/v7e-m/fpv4-sp/hard;@mthumb@march=armv7e-m@mfpu=fpv4-sp-d16@mfloat-abi=hard
+thumb/v7e-m/fpv5/softfp;@mthumb@march=armv7e-m@mfpu=fpv5-d16@mfloat-abi=softfp
+thumb/v7e-m/fpv5/hard;@mthumb@march=armv7e-m@mfpu=fpv5-d16@mfloat-abi=hard
+thumb/v7-ar/fpv3/softfp;@mthumb@march=armv7@mfpu=vfpv3-d16@mfloat-abi=softfp
+thumb/v7-ar/fpv3/hard;@mthumb@march=armv7@mfpu=vfpv3-d16@mfloat-abi=hard
+thumb/v8-m.main/fpv5-sp/softfp;@mthumb@march=armv8-m.main@mfpu=fpv5-sp-d16@mfloat-abi=softfp
+thumb/v8-m.main/fpv5-sp/hard;@mthumb@march=armv8-m.main@mfpu=fpv5-sp-d16@mfloat-abi=hard
+thumb/v8-m.main/fpv5/softfp;@mthumb@march=armv8-m.main@mfpu=fpv5-d16@mfloat-abi=softfp
+thumb/v8-m.main/fpv5/hard;@mthumb@march=armv8-m.main@mfpu=fpv5-d16@mfloat-abi=hard
+```
+
 ## Changes
 
 There should be no functional changes.

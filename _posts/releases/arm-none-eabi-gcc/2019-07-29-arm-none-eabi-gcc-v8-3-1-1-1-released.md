@@ -57,6 +57,32 @@ This release follows the official
 **8-2019-q3-update** release from July 10, 2019 and it is based on the 
 `gcc-arm-none-eabi-8-2019-q3-update-src.tar.bz2` source invariant.
 
+The supported libraries are:
+
+```console
+$ arm-none-eabi-gcc -print-multi-lib
+.;
+arm/v5te/softfp;@marm@march=armv5te+fp@mfloat-abi=softfp
+arm/v5te/hard;@marm@march=armv5te+fp@mfloat-abi=hard
+thumb/nofp;@mthumb@mfloat-abi=soft
+thumb/v7/nofp;@mthumb@march=armv7@mfloat-abi=soft
+thumb/v7+fp/softfp;@mthumb@march=armv7+fp@mfloat-abi=softfp
+thumb/v7+fp/hard;@mthumb@march=armv7+fp@mfloat-abi=hard
+thumb/v6-m/nofp;@mthumb@march=armv6s-m@mfloat-abi=soft
+thumb/v7-m/nofp;@mthumb@march=armv7-m@mfloat-abi=soft
+thumb/v7e-m/nofp;@mthumb@march=armv7e-m@mfloat-abi=soft
+thumb/v7e-m+fp/softfp;@mthumb@march=armv7e-m+fp@mfloat-abi=softfp
+thumb/v7e-m+fp/hard;@mthumb@march=armv7e-m+fp@mfloat-abi=hard
+thumb/v7e-m+dp/softfp;@mthumb@march=armv7e-m+fp.dp@mfloat-abi=softfp
+thumb/v7e-m+dp/hard;@mthumb@march=armv7e-m+fp.dp@mfloat-abi=hard
+thumb/v8-m.base/nofp;@mthumb@march=armv8-m.base@mfloat-abi=soft
+thumb/v8-m.main/nofp;@mthumb@march=armv8-m.main@mfloat-abi=soft
+thumb/v8-m.main+fp/softfp;@mthumb@march=armv8-m.main+fp@mfloat-abi=softfp
+thumb/v8-m.main+fp/hard;@mthumb@march=armv8-m.main+fp@mfloat-abi=hard
+thumb/v8-m.main+dp/softfp;@mthumb@march=armv8-m.main+fp.dp@mfloat-abi=softfp
+thumb/v8-m.main+dp/hard;@mthumb@march=armv8-m.main+fp.dp@mfloat-abi=hard
+```
+
 ## Changes
 
 There should be no functional changes.
