@@ -281,5 +281,7 @@ bundle exec htmlproofer --allow-hash-href --url-swap \^/preview/\:/ ./_site
 
 bundle exec htmlproofer --allow-hash-href --url-swap \^/preview/\:/ --url-ignore /github.com/xpack/xpack.github.io/blob/master/ ./_site
 
+bundle exec htmlproofer --allow-hash-href ./_site
+
 bash scripts/adjust-timestamps.sh
 ```
