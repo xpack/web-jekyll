@@ -12,3 +12,4 @@ allowed-tags:
   - windows
   - arm-none-eabi-gcc
   - riscv-none-embed-gcc
+  - qemu
