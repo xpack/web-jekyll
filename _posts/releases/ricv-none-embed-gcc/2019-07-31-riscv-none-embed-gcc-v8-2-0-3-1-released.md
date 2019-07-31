@@ -138,8 +138,9 @@ time to provide empty implementations for the POSIX system calls.
 The libraries are compiled with `-O2 -mcmodel=medany`. The nano version is
 compiled with `-Os -mcmodel=medany`.
 
-> Important: It is mandatory for the applications to be compiled with 
-`-mcmodel=medany`, otherwise the link will fail.
+{% include important.html content="It is mandatory for the applications to 
+be compiled with 
+`-mcmodel=medany`, otherwise the link will fail." %}
 
 ## Known problems
 
