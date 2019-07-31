@@ -114,7 +114,7 @@ not yet available on Windows ([24469](https://sourceware.org/bugzilla/show_bug.c
 
 - none
 
-## Binaries
+## Supported platforms
 
 Binaries for **Windows**, **macOS** and **GNU/Linux** are provided.
 

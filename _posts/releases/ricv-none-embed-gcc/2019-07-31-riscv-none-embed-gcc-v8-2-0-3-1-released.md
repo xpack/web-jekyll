@@ -99,7 +99,7 @@ toolchain are also supported, with the following improvements:
 
 - none
 
-## Binaries
+## Supported platforms
 
 Binaries for **Windows**, **macOS** and **GNU/Linux** are provided.
 

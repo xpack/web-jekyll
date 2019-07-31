@@ -66,7 +66,7 @@ Compared to the upstream, the following changes were applied:
 
 - none
 
-## Binaries
+## Supported platforms
 
 Binaries for **Windows**, **macOS** and **GNU/Linux** are provided.
 

@@ -65,7 +65,7 @@ $ xpm install --global @xpack-dev-tools/qemu-arm@{{ page.version }}.{{ page.npm_
 
 - Ctrl-C does not interrupt the execution if the `--nographic` option is used.
 
-## Binaries
+## Supported platforms
 
 Binaries for **Windows**, **macOS** and **GNU/Linux** are provided.
 

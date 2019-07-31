@@ -113,7 +113,7 @@ The issue was reported to ARM as bug [1838049](https://bugs.launchpad.net/gcc-ar
   [#317](https://github.com/gnu-mcu-eclipse/eclipse-plugins/issues/317), and
   was fixed in GNU MCU Eclipse plug-ins v4.4.2 (2018-08-27).
 
-## Binaries
+## Supported platforms
 
 Binaries for **Windows**, **macOS** and **GNU/Linux** are provided.
 
