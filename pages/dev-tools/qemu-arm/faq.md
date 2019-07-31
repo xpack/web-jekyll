@@ -17,7 +17,7 @@ Warum?
 {% endcapture %}
 
 {% capture answer_1 %}
-Darum!
+Darum! ;-) (to be added)
 {% endcapture %}
 
 {% include div-panel-group.html %}
