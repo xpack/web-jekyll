@@ -67,6 +67,19 @@ $ xpm install --global @xpack-dev-tools/qemu-arm@{{ page.version }}.{{ page.npm_
 
 Binaries for **Windows**, **macOS** and **GNU/Linux** are provided.
 
+The binaries were built using 
+[xPack Build Box (XBB)](https://github.com/xpack/xpack-build-box), a set 
+of build environments based on slightly older distributions, that should be 
+compatible with most recent systems.
+
+- GNU/Linux: all binaries were built with GCC 7.4, running in a CentOS 6 
+  Docker container
+- Windows: all binaries were built with mingw-w64 GCC 7.4, running in a 
+  CentOS 6 Docker container 
+- macOS: most binaries were built with GCC 7.4, running in a separate  
+  folder on macOS 10.10.5; GDB cannot be compiled with GCC, so Apple 
+  clang was used.
+
 ## Tests
 
 The binaries were testes on Windows 10 Pro 32/64-bit, Ubuntu 18 LTS 64-bit,
