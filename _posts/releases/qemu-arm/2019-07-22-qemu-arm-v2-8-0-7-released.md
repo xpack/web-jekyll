@@ -9,7 +9,7 @@ npm_subversion: 1
 download_url: https://github.com/xpack-dev-tools/qemu-arm-xpack/releases/tag/v2.8.0-7/
 
 date:   2019-07-22 20:38:00 +0300
-last_updated: 2019-07-26 20:26:14 +0300
+last_updated: 2019-07-31 03:32:50 +0300
 
 categories:
   - releases
