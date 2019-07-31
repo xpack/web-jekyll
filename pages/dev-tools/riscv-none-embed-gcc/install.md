@@ -157,7 +157,78 @@ install GNU RISC-V Embedded GCC in any folder, it is highly recommended
 to use this path, since by default the GNU MCU Eclipse debug plug-ins search 
 for the executable in this location." %}
 
-TODO: add result of `tree`.
+The result is a structure like:
+
+```console
+$ tree -L 2 /Users/ilg/opt/xPacks/riscv-none-embed-gcc/8.2.1-3.1 
+/Users/ilg/opt/xPacks/riscv-none-embed-gcc/8.2.1-3.1 
+├── README.md
+├── bin
+│   ├── libexpat.1.6.7.dylib
+│   ├── libexpat.1.dylib -> libexpat.1.6.7.dylib
+│   ├── libgcc_s.1.dylib
+│   ├── libgmp.10.dylib
+│   ├── libiconv.2.dylib
+│   ├── liblzma.5.dylib
+│   ├── libmpfr.4.dylib
+│   ├── libz.1.2.8.dylib
+│   ├── libz.1.dylib -> libz.1.2.8.dylib
+│   ├── riscv-none-embed-addr2line
+│   ├── riscv-none-embed-ar
+│   ├── riscv-none-embed-as
+│   ├── riscv-none-embed-c++
+│   ├── riscv-none-embed-c++filt
+│   ├── riscv-none-embed-cpp
+│   ├── riscv-none-embed-elfedit
+│   ├── riscv-none-embed-g++
+│   ├── riscv-none-embed-gcc
+│   ├── riscv-none-embed-gcc-8.2.0
+│   ├── riscv-none-embed-gcc-ar
+│   ├── riscv-none-embed-gcc-nm
+│   ├── riscv-none-embed-gcc-ranlib
+│   ├── riscv-none-embed-gcov
+│   ├── riscv-none-embed-gcov-dump
+│   ├── riscv-none-embed-gcov-tool
+│   ├── riscv-none-embed-gdb
+│   ├── riscv-none-embed-gdb-add-index
+│   ├── riscv-none-embed-gdb-add-index-py
+│   ├── riscv-none-embed-gdb-py
+│   ├── riscv-none-embed-gprof
+│   ├── riscv-none-embed-ld
+│   ├── riscv-none-embed-ld.bfd
+│   ├── riscv-none-embed-nm
+│   ├── riscv-none-embed-objcopy
+│   ├── riscv-none-embed-objdump
+│   ├── riscv-none-embed-ranlib
+│   ├── riscv-none-embed-readelf
+│   ├── riscv-none-embed-size
+│   ├── riscv-none-embed-strings
+│   └── riscv-none-embed-strip
+├── distro-info
+│   ├── CHANGELOG.md
+│   ├── licenses
+│   ├── patches
+│   └── scripts
+├── include
+│   └── gdb
+├── lib
+│   ├── bfd-plugins
+│   ├── gcc
+│   ├── libcc1.0.so
+│   └── libcc1.so -> libcc1.0.so
+├── libexec
+│   └── gcc
+├── riscv-none-embed
+│   ├── bin
+│   ├── include
+│   ├── lib
+│   └── share
+└── share
+    ├── doc
+    └── gcc-riscv-none-embed
+
+20 directories, 44 files
+```
 
 To check if GCC starts, use:
 
@@ -205,7 +276,89 @@ install GNU RISC-V Embedded GCC in any folder, it is highly recommended
 to use this path, since by default the GNU MCU Eclipse debug plug-ins search 
 for the executable in this location." %}
 
-TODO: add result of `tree`.
+The result is a structure like:
+
+```console
+$ tree -L 2 /home/ilg/opt/xPacks/riscv-none-embed-gcc/8.2.1-3.1/
+/home/ilg/opt/xPacks/riscv-none-embed-gcc/8.2.1-3.1/
+├── bin
+│   ├── libexpat.so.1 -> libexpat.so.1.6.7
+│   ├── libexpat.so.1.6.7
+│   ├── libfl.so.2 -> libfl.so.2.0.0
+│   ├── libfl.so.2.0.0
+│   ├── libgmp.so.10 -> libgmp.so.10.3.2
+│   ├── libgmp.so.10.3.2
+│   ├── libiconv.so.2 -> libiconv.so.2.6.0
+│   ├── libiconv.so.2.6.0
+│   ├── liblzma.so.5 -> liblzma.so.5.2.3
+│   ├── liblzma.so.5.2.3
+│   ├── libmpfr.so.4 -> libmpfr.so.4.1.6
+│   ├── libmpfr.so.4.1.6
+│   ├── libpython2.7.so.1.0
+│   ├── libz.so.1 -> libz.so.1.2.8
+│   ├── libz.so.1.2.8
+│   ├── riscv-none-embed-addr2line
+│   ├── riscv-none-embed-ar
+│   ├── riscv-none-embed-as
+│   ├── riscv-none-embed-c++
+│   ├── riscv-none-embed-c++filt
+│   ├── riscv-none-embed-cpp
+│   ├── riscv-none-embed-elfedit
+│   ├── riscv-none-embed-g++
+│   ├── riscv-none-embed-gcc
+│   ├── riscv-none-embed-gcc-8.2.0
+│   ├── riscv-none-embed-gcc-ar
+│   ├── riscv-none-embed-gcc-nm
+│   ├── riscv-none-embed-gcc-ranlib
+│   ├── riscv-none-embed-gcov
+│   ├── riscv-none-embed-gcov-dump
+│   ├── riscv-none-embed-gcov-tool
+│   ├── riscv-none-embed-gdb
+│   ├── riscv-none-embed-gdb-add-index
+│   ├── riscv-none-embed-gdb-add-index-py
+│   ├── riscv-none-embed-gdb-py
+│   ├── riscv-none-embed-gprof
+│   ├── riscv-none-embed-ld
+│   ├── riscv-none-embed-ld.bfd
+│   ├── riscv-none-embed-nm
+│   ├── riscv-none-embed-objcopy
+│   ├── riscv-none-embed-objdump
+│   ├── riscv-none-embed-ranlib
+│   ├── riscv-none-embed-readelf
+│   ├── riscv-none-embed-size
+│   ├── riscv-none-embed-strings
+│   └── riscv-none-embed-strip
+├── distro-info
+│   ├── CHANGELOG.md
+│   ├── licenses
+│   ├── patches
+│   └── scripts
+├── include
+│   └── gdb
+├── lib
+│   ├── bfd-plugins
+│   └── gcc
+├── lib64
+│   ├── libcc1.so -> libcc1.so.0.0.0
+│   ├── libcc1.so.0 -> libcc1.so.0.0.0
+│   ├── libcc1.so.0.0.0
+│   ├── libgcc_s.so.1
+│   ├── libstdc++.so.6 -> libstdc++.so.6.0.24
+│   └── libstdc++.so.6.0.24
+├── libexec
+│   └── gcc
+├── README.md
+├── riscv-none-embed
+│   ├── bin
+│   ├── include
+│   ├── lib
+│   └── share
+└── share
+    ├── doc
+    └── gcc-riscv-none-embed
+
+21 directories, 54 files
+```
 
 To check if GCC starts and is recent, use:
 

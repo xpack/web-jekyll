@@ -157,7 +157,81 @@ install GNU ARM Embedded GCC in any folder, it is highly recommended
 to use this path, since by default the GNU MCU Eclipse debug plug-ins search 
 for the executable in this location." %}
 
-TODO: add result of `tree`.
+The result is a structure like:
+
+```console
+$ tree -L 2 /Users/ilg/Library/xPacks/arm-none-eabi-gcc/8.3.1-1.1 
+/Users/ilg/Library/xPacks/arm-none-eabi-gcc/8.3.1-1.1
+├── README.md
+├── arm-none-eabi
+│   ├── bin
+│   ├── include
+│   ├── lib
+│   └── share
+├── bin
+│   ├── arm-none-eabi-addr2line
+│   ├── arm-none-eabi-ar
+│   ├── arm-none-eabi-as
+│   ├── arm-none-eabi-c++
+│   ├── arm-none-eabi-c++filt
+│   ├── arm-none-eabi-cpp
+│   ├── arm-none-eabi-elfedit
+│   ├── arm-none-eabi-g++
+│   ├── arm-none-eabi-gcc
+│   ├── arm-none-eabi-gcc-8.3.1
+│   ├── arm-none-eabi-gcc-ar
+│   ├── arm-none-eabi-gcc-nm
+│   ├── arm-none-eabi-gcc-ranlib
+│   ├── arm-none-eabi-gcov
+│   ├── arm-none-eabi-gcov-dump
+│   ├── arm-none-eabi-gcov-tool
+│   ├── arm-none-eabi-gdb
+│   ├── arm-none-eabi-gdb-add-index
+│   ├── arm-none-eabi-gdb-add-index-py
+│   ├── arm-none-eabi-gdb-add-index-py3
+│   ├── arm-none-eabi-gdb-py
+│   ├── arm-none-eabi-gdb-py3
+│   ├── arm-none-eabi-gprof
+│   ├── arm-none-eabi-ld
+│   ├── arm-none-eabi-ld.bfd
+│   ├── arm-none-eabi-nm
+│   ├── arm-none-eabi-objcopy
+│   ├── arm-none-eabi-objdump
+│   ├── arm-none-eabi-ranlib
+│   ├── arm-none-eabi-readelf
+│   ├── arm-none-eabi-size
+│   ├── arm-none-eabi-strings
+│   ├── arm-none-eabi-strip
+│   ├── libexpat.1.dylib
+│   ├── libgcc_s.1.dylib
+│   ├── libgmp.10.dylib
+│   ├── libiconv.2.dylib
+│   ├── liblzma.5.dylib
+│   ├── libmpfr.4.dylib
+│   ├── libz.1.2.8.dylib
+│   └── libz.1.dylib -> libz.1.2.8.dylib
+├── distro-info
+│   ├── CHANGELOG.md
+│   ├── arm-readme.txt
+│   ├── arm-release.txt
+│   ├── licenses
+│   ├── patches
+│   └── scripts
+├── include
+│   └── gdb
+├── lib
+│   ├── bfd-plugins
+│   ├── gcc
+│   ├── libcc1.0.so
+│   └── libcc1.so -> libcc1.0.so
+├── libexec
+│   └── gcc
+└── share
+    ├── doc
+    └── gcc-arm-none-eabi
+
+20 directories, 47 files
+```
 
 To check if GCC starts, use:
 
@@ -205,7 +279,97 @@ install GNU ARM Embedded GCC in any folder, it is highly recommended
 to use this path, since by default the GNU MCU Eclipse debug plug-ins search 
 for the executable in this location." %}
 
-TODO: add result of `tree`.
+The result is a structure like:
+
+```console
+$ tree -L 2 /home/ilg/opt/xPacks/arm-none-eabi-gcc/8.3.1-1.1
+/home/ilg/opt/xPacks/arm-none-eabi-gcc/8.3.1-1.1
+├── arm-none-eabi
+│   ├── bin
+│   ├── include
+│   ├── lib
+│   └── share
+├── bin
+│   ├── arm-none-eabi-addr2line
+│   ├── arm-none-eabi-ar
+│   ├── arm-none-eabi-as
+│   ├── arm-none-eabi-c++
+│   ├── arm-none-eabi-c++filt
+│   ├── arm-none-eabi-cpp
+│   ├── arm-none-eabi-elfedit
+│   ├── arm-none-eabi-g++
+│   ├── arm-none-eabi-gcc
+│   ├── arm-none-eabi-gcc-8.3.1
+│   ├── arm-none-eabi-gcc-ar
+│   ├── arm-none-eabi-gcc-nm
+│   ├── arm-none-eabi-gcc-ranlib
+│   ├── arm-none-eabi-gcov
+│   ├── arm-none-eabi-gcov-dump
+│   ├── arm-none-eabi-gcov-tool
+│   ├── arm-none-eabi-gdb
+│   ├── arm-none-eabi-gdb-add-index
+│   ├── arm-none-eabi-gdb-add-index-py
+│   ├── arm-none-eabi-gdb-add-index-py3
+│   ├── arm-none-eabi-gdb-py
+│   ├── arm-none-eabi-gdb-py3
+│   ├── arm-none-eabi-gprof
+│   ├── arm-none-eabi-ld
+│   ├── arm-none-eabi-ld.bfd
+│   ├── arm-none-eabi-nm
+│   ├── arm-none-eabi-objcopy
+│   ├── arm-none-eabi-objdump
+│   ├── arm-none-eabi-ranlib
+│   ├── arm-none-eabi-readelf
+│   ├── arm-none-eabi-size
+│   ├── arm-none-eabi-strings
+│   ├── arm-none-eabi-strip
+│   ├── libcrypt-2.12.so
+│   ├── libcrypt.so.1 -> libcrypt-2.12.so
+│   ├── libexpat.so.1 -> libexpat.so.1.6.0
+│   ├── libexpat.so.1.6.0
+│   ├── libfl.so.2 -> libfl.so.2.0.0
+│   ├── libfl.so.2.0.0
+│   ├── libfreebl3.so
+│   ├── libgmp.so.10 -> libgmp.so.10.3.0
+│   ├── libgmp.so.10.3.0
+│   ├── libiconv.so.2 -> libiconv.so.2.5.1
+│   ├── libiconv.so.2.5.1
+│   ├── liblzma.so.5 -> liblzma.so.5.2.3
+│   ├── liblzma.so.5.2.3
+│   ├── libmpfr.so.4 -> libmpfr.so.4.1.4
+│   ├── libmpfr.so.4.1.4
+│   ├── libpython2.7.so.1.0
+│   ├── libpython3.7m.so.1.0
+│   ├── libz.so.1 -> libz.so.1.2.8
+│   └── libz.so.1.2.8
+├── distro-info
+│   ├── arm-readme.txt
+│   ├── arm-release.txt
+│   ├── CHANGELOG.md
+│   ├── licenses
+│   ├── patches
+│   └── scripts
+├── include
+│   └── gdb
+├── lib
+│   ├── bfd-plugins
+│   └── gcc
+├── lib64
+│   ├── libcc1.so -> libcc1.so.0.0.0
+│   ├── libcc1.so.0 -> libcc1.so.0.0.0
+│   ├── libcc1.so.0.0.0
+│   ├── libgcc_s.so.1
+│   ├── libstdc++.so.6 -> libstdc++.so.6.0.24
+│   └── libstdc++.so.6.0.24
+├── libexec
+│   └── gcc
+├── README.md
+└── share
+    ├── doc
+    └── gcc-arm-none-eabi
+
+21 directories, 62 files
+```
 
 To check if GCC starts and is recent, use:
 

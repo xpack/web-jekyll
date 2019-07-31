@@ -161,13 +161,42 @@ install QEMU in any folder, it is highly recommended to use this
 path, since by default the GNU MCU Eclipse debug plug-ins search 
 for the executable in this location." %}
 
-TODO: add result of `tree`.
+The result is a structure like:
+
+```console
+$ tree -L 2 /Users/ilg/Library/xPacks/qemu-arm/2.8.0-7 
+/Users/ilg/Library/xPacks/qemu-arm/2.8.0-7
+├── README.md
+├── bin
+│   ├── libSDL2-2.0.0.dylib
+│   ├── libSDL2_image-2.0.0.dylib
+│   ├── libgcc_s.1.dylib
+│   ├── libglib-2.0.0.dylib
+│   ├── libgthread-2.0.0.dylib
+│   ├── libiconv.2.dylib
+│   ├── libintl.8.dylib
+│   ├── libpixman-1.0.dylib
+│   ├── libstdc++.6.dylib
+│   ├── libz.1.2.11.dylib
+│   ├── libz.1.dylib -> libz.1.2.11.dylib
+│   └── qemu-system-gnuarmeclipse
+├── distro-info
+│   ├── CHANGELOG.md
+│   ├── licenses
+│   ├── patches
+│   └── scripts
+└── share
+    ├── doc
+    └── qemu
+
+8 directories, 14 files
+```
 
 To check if QEMU starts, use:
 
 ```console
-$ ~/opt/xPacks/qemu-arm/2.8.0-4/bin/qemu-system-gnuarmeclipse --version
-xPacks 64-bit QEMU ARM emulator version 2.8.0-4 (v2.8.0-4-20180523-6-gee07085299-dirty)
+$ ~/opt/xPacks/qemu-arm/2.8.0-7/bin/qemu-system-gnuarmeclipse --version
+xPack 64-bit QEMU emulator version 2.8.0-7 (v2.8.0-4-20190211-47-g109b69f49a-dirty)
 Copyright (c) 2003-2016 Fabrice Bellard and the QEMU Project developers
 ```
 
@@ -210,7 +239,44 @@ install QEMU in any folder, it is highly recommended to use this
 path, since by default the GNU MCU Eclipse debug plug-ins search 
 for the executable in this location." %}
 
-TODO: add result of `tree`.
+The result is a structure like:
+
+```console
+$ tree -L 2 '/home/ilg/opt/xPacks/qemu-arm/2.8.0-7' 
+/home/ilg/opt/xPacks/qemu-arm/2.8.0-7
+├── bin
+│   ├── libglib-2.0.so.0 -> libglib-2.0.so.0.5600.4
+│   ├── libglib-2.0.so.0.5600.4
+│   ├── libgthread-2.0.so.0 -> libgthread-2.0.so.0.5600.4
+│   ├── libgthread-2.0.so.0.5600.4
+│   ├── libiconv.so.2 -> libiconv.so.2.6.0
+│   ├── libiconv.so.2.6.0
+│   ├── libjpeg.so.9 -> libjpeg.so.9.2.0
+│   ├── libjpeg.so.9.2.0
+│   ├── libpixman-1.so.0 -> libpixman-1.so.0.38.0
+│   ├── libpixman-1.so.0.38.0
+│   ├── libpng16.so.16 -> libpng16.so.16.36.0
+│   ├── libpng16.so.16.36.0
+│   ├── libSDL2-2.0.so.0 -> libSDL2-2.0.so.0.9.0
+│   ├── libSDL2-2.0.so.0.9.0
+│   ├── libSDL2_image-2.0.so.0 -> libSDL2_image-2.0.so.0.2.2
+│   ├── libSDL2_image-2.0.so.0.2.2
+│   ├── libz.so.1 -> libz.so.1.2.11
+│   ├── libz.so.1.2.11
+│   └── qemu-system-gnuarmeclipse
+├── distro-info
+│   ├── CHANGELOG.md
+│   ├── licenses
+│   ├── patches
+│   └── scripts
+├── libexec
+├── README.md
+└── share
+    ├── doc
+    └── qemu
+
+9 directories, 21 files
+```
 
 To check if QEMU starts and is recent, use:
 

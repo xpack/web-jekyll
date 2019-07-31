@@ -209,6 +209,50 @@ install OpenOCD in any folder, it is highly recommended to use this
 path, since by default the GNU MCU Eclipse debug plug-ins search 
 for the executable in this location." %}
 
+The result is a structure like:
+
+```console
+$ tree -L 2 /Users/ilg/Library/xPacks/openocd/0.10.0-13 
+/Users/ilg/Library/xPacks/openocd/0.10.0-13
+├── OpenULINK
+│   └── ulink_firmware.hex
+├── README.md
+├── bin
+│   ├── libftdi1.2.4.0.dylib
+│   ├── libftdi1.2.dylib -> libftdi1.2.4.0.dylib
+│   ├── libgcc_s.1.dylib
+│   ├── libhidapi.0.dylib
+│   ├── libusb-0.1.4.dylib
+│   ├── libusb-1.0.0.dylib
+│   └── openocd
+├── contrib
+│   ├── 60-openocd.rules
+│   └── libdcc
+├── distro-info
+│   ├── CHANGELOG.md
+│   ├── licenses
+│   ├── patches
+│   └── scripts
+├── scripts
+│   ├── bitsbytes.tcl
+│   ├── board
+│   ├── chip
+│   ├── cpld
+│   ├── cpu
+│   ├── fpga
+│   ├── interface
+│   ├── mem_helper.tcl
+│   ├── memory.tcl
+│   ├── mmr_helpers.tcl
+│   ├── target
+│   ├── test
+│   └── tools
+└── share
+    └── doc
+
+20 directories, 15 files
+```
+
 To check if OpenOCD starts, use:
 
 ```console
@@ -253,6 +297,54 @@ and `.content` to store the unpacked archive." %}
 install OpenOCD in any folder, it is highly recommended to use this 
 path, since by default the GNU MCU Eclipse debug plug-ins search 
 for the executable in this location." %}
+
+```console
+$ tree -L 2 '/home/ilg/opt/xPacks/openocd/0.10.0-13' 
+/home/ilg/opt/xPacks/openocd/0.10.0-13
+├── bin
+│   ├── libftdi1.so.2 -> libftdi1.so.2.4.0
+│   ├── libftdi1.so.2.4.0
+│   ├── libhidapi-hidraw.so.0 -> libhidapi-hidraw.so.0.0.0
+│   ├── libhidapi-hidraw.so.0.0.0
+│   ├── libiconv.so.2 -> libiconv.so.2.6.0
+│   ├── libiconv.so.2.6.0
+│   ├── libudev.so
+│   ├── libudev.so.0 -> libudev.so
+│   ├── libusb-0.1.so.4 -> libusb-0.1.so.4.4.4
+│   ├── libusb-0.1.so.4.4.4
+│   ├── libusb-1.0.so.0 -> libusb-1.0.so.0.1.0
+│   ├── libusb-1.0.so.0.1.0
+│   └── openocd
+├── contrib
+│   ├── 60-openocd.rules
+│   └── libdcc
+├── distro-info
+│   ├── CHANGELOG.md
+│   ├── licenses
+│   ├── patches
+│   └── scripts
+├── OpenULINK
+│   └── ulink_firmware.hex
+├── README.md
+├── scripts
+│   ├── bitsbytes.tcl
+│   ├── board
+│   ├── chip
+│   ├── cpld
+│   ├── cpu
+│   ├── fpga
+│   ├── interface
+│   ├── mem_helper.tcl
+│   ├── memory.tcl
+│   ├── mmr_helpers.tcl
+│   ├── target
+│   ├── test
+│   └── tools
+└── share
+    └── doc
+
+20 directories, 21 files
+```
 
 To check if OpenOCD starts and is recent, use:
 
