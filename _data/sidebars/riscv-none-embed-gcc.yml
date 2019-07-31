@@ -1,0 +1,37 @@
+# This is the riscv-none-embed-gcc sidebar TOC. 
+# The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: Sidebar
+  product: GNU RISC-V Embedded GCC
+  # version: 1.0
+  folders:
+
+  - title: Getting Started
+    output: web
+    folderitems:
+    - title: Overview
+      url: /riscv-none-embed-gcc/
+      output: web
+    - title: Install
+      url: /riscv-none-embed-gcc/install/
+      output: web
+    - title: Support
+      url: /riscv-none-embed-gcc/support/
+      output: web
+    - title: FAQ
+      url: /riscv-none-embed-gcc/faq/
+      output: web
+    - title: Releases
+      url: /riscv-none-embed-gcc/releases/
+      output: web
+  - title: Back Home
+    output: web
+    folderitems:
+    - title: The xPack Project
+      url: /
+      output: web
+    - title: GNU MCU Eclipse
+      external_url: https://gnu-mcu-eclipse.github.io
+      output: web
+

@@ -51,7 +51,7 @@ entries:
       url: /arm-none-eabi-gcc/
       output: web
     - title: riscv-none-embed-gcc
-      external_url: https://github.com/xpack-dev-tools/riscv-none-embed-gcc-xpack
+      url: /riscv-none-embed-gcc/
       output: web
     - title: openocd
       url: /openocd/

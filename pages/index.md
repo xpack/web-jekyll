@@ -74,7 +74,7 @@ The main binary tools packed as xPacks are:
 - `@xpack-dev-tools/arm-none-eabi-gcc` - the **xPack ARM Embedded GCC** toolchain
 - [`@xpack-dev-tools/openocd`]({{ site.baseurl }}/openocd/) - the **xPack OpenOCD**
 - [`@xpack-dev-tools/qemu`]({{ site.baseurl }}/qemu-arm/) - the **xPack QEMU ARM Cortex-M**
-- `@xpack-dev-tools/riscv-none-embed-gcc` - the **xPack RISC-V Embedded GCC** toolchain
+- [`@xpack-dev-tools/riscv-none-embed-gcc`]({{ site.baseurl }}/riscv-none-embed-gcc/) - the **xPack RISC-V Embedded GCC** toolchain
 
 Planned:
 
