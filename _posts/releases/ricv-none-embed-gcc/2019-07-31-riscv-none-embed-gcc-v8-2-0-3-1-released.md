@@ -17,7 +17,7 @@ categories:
   - riscv
   - riscv-none-embed-gcc
 
-categories:
+tags:
   - releases
   - riscv-none-embed-gcc
 
