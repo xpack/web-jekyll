@@ -145,7 +145,7 @@ compatible with most recent systems.
 
 The SHA-256 hashes for the files are:
 
-```console
+```
 b852c2f8aa48a0d5ea6d7c5afea8ee825c1df7f7cf7492825519223b0bb7a9f2 
 xpack-arm-none-eabi-gcc-7.3.1-1.2-darwin-x64.tgz
 

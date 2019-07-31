@@ -71,7 +71,7 @@ Binaries for **Windows**, **macOS** and **GNU/Linux** are provided.
 
 The SHA-256 hashes for the files are:
 
-```console
+```
 feae25ec1944044ce2c2feb6fb0d76e67e9d93e811b5091cf4d3ffdf5a320d37 
 xpack-qemu-arm-2.8.0-7-darwin-x64.tgz
 
