@@ -18,7 +18,7 @@ categories:
   - cortex-m
 
 tags:
-  - emulator
+  - releases
   - qemu
 
 ---
