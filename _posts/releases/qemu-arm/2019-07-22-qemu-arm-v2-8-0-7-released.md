@@ -23,7 +23,9 @@ tags:
 
 ---
 
-[Binary files »]({{ page.download_url }})
+## Download
+
+The binary files are available from the [GitHub Release]({{ page.download_url }}).
 
 ## Install
 
