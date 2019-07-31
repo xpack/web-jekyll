@@ -273,6 +273,8 @@ images as 1024 x 768, which is generally ok for regular (non-HiRes) screens.
 ```
 bundle exec jekyll serve --trace --safe --baseurl "/preview"`
 
+bundle exec jekyll serve --trace --safe
+
 bundle exec jekyll build
 
 bundle exec htmlproofer --allow-hash-href --url-swap \^/preview/\:/ ./_site
