@@ -111,19 +111,6 @@ The issue was reported to ARM as bug [1838049](https://bugs.launchpad.net/gcc-ar
   [#317](https://github.com/gnu-mcu-eclipse/eclipse-plugins/issues/317), and
   was fixed in GNU MCU Eclipse plug-ins v4.4.2 (2018-08-27).
 
-## Tests
-
-The binaries were testes on Windows 10 Pro 32/64-bit, Ubuntu 18 LTS 64-bit,
-Xubuntu 18 LTS 32-bit and macOS 10.13.
-
-The tests consist in building and debugging some 
-[simple Eclipse projects](https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/tree/xpack/tests/eclipse)
-available in the project.
-
-Since the source code used for GCC is identical to the one used by ARM, the
-long and complex tests performed by ARM to validate their release were not
-executed again.
-
 ## Binaries
 
 Binaries for **Windows**, **macOS** and **GNU/Linux** are provided.
@@ -140,6 +127,19 @@ compatible with most recent systems.
 - macOS: most binaries were built with GCC 7.4, running in a separate  
   folder on macOS 10.10.5; GDB cannot be compiled with GCC, so Apple 
   clang was used.
+
+## Tests
+
+The binaries were testes on Windows 10 Pro 32/64-bit, Ubuntu 18 LTS 64-bit,
+Xubuntu 18 LTS 32-bit and macOS 10.13.
+
+The tests consist in building and debugging some 
+[simple Eclipse projects](https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/tree/xpack/tests/eclipse)
+available in the project.
+
+Since the source code used for GCC is identical to the one used by ARM, the
+long and complex tests performed by ARM to validate their release were not
+executed again.
 
 ## Checksums
 
