@@ -59,6 +59,13 @@ This release follows the official
 **8-2019-q3-update** release from July 10, 2019 and it is based on the 
 `gcc-arm-none-eabi-8-2019-q3-update-src.tar.bz2` source invariant.
 
+For more details see the original ARM release text files:
+
+- `distro-info/arm-readme.txt`
+- `distro-info/arm-release.txt`
+
+## Supported libraries
+
 The supported libraries are:
 
 ```console
@@ -113,6 +120,10 @@ not yet available on Windows ([24469](https://sourceware.org/bugzilla/show_bug.c
 ## Known problems
 
 - none
+
+## Documentation
+
+The original PDF documentation is available in the `share/doc` folder.
 
 ## Supported platforms
 

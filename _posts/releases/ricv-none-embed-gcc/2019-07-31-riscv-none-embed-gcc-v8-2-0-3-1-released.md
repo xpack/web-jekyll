@@ -59,8 +59,33 @@ Starting with v8.2.0-2, this distribution closely follows the official
 [SiFive](https://www.sifive.com) 
 [Freedom Tools](https://github.com/sifive/freedom-tools) distribution.
 
-This release is similar to the SiFive 2019-05 release, including support for 
-SiFive specific CLIC interrupts and a larger multilib set.
+This release is based on the 
+[v2019.05.0](https://github.com/sifive/freedom-tools/releases/tag/v2019.05.0) 
+release, and includes the SiFive extensions (like CLIC interrupts and a 
+larger multilib set).
+
+The following commits (from [sifive/freedom-tools](https://github.com/sifive/freedom-tools/tree/master/src)) were used:
+
+- the [sifive/riscv-gcc](https://github.com/sifive/riscv-gcc) project, 
+branch `sifive-gcc-8.2.0`, commit
+[242abcaff6](https://github.com/sifive/riscv-gcc/tree/242abcaff697d0a1ea12dccc975465e1bfeb8331)
+from from 5 April 2019
+- the [sifive/riscv-binutils-gdb](https://github.com/sifive/riscv-binutils-gdb) 
+project, branch `sifive-binutils-2.32`, commit 
+[164267155c](https://github.com/sifive/riscv-binutils-gdb/tree/164267155c96f91472a539ca78ac919993bc5b4e)
+from 28 February 2019
+- the [sifive/riscv-newlib](https://github.com/sifive/riscv-newlib) project,
+commit [42c2e3fb9f](https://github.com/sifive/riscv-newlib/tree/42c2e3fb9f557d59b76d1a64bb6fb32707ff4530)
+from 17 November 2018
+
+GDB was upstreamed and does not require SiFive specific patches, 
+so the current build uses 
+`git://sourceware.org/git/binutils-gdb.git`, the `9b40759` commit from 
+28 Feb 2019.
+
+## Supported libraries
+
+The supported libraries are:
 
 ```console
 $ riscv-none-embed-gcc -print-multi-lib
@@ -88,16 +113,41 @@ rv64imafdc/lp64d;@march=rv64imafdc@mabi=lp64d
 
 ## Improvements
 
-All architectures, ABIs and libraries supported by the `riscv64-unknown-elf` 
-toolchain are also supported, with the following improvements:
+Compared to the original SiFive version, the **same architecture and API** 
+options are supported, and there are minimal functional changes 
 
-* the mandatory reference to `libgloss` in the linker configuration was removed
-* the `march=rv32imaf/mabi=ilp32f` library was added to the list of multilibs
-* the standard documentation, in PDF and HTML, is included 
+- `libgloss` was removed from the list of libraries always linked to the 
+  application, since it issues `ECALL`
+  instructions that fail in bare metal environments
+- `march=rv32imaf/mabi=ilp32f` was added to the list of multilibs
+- the standard documentation, in PDF and HTML, is included 
+
+## newlib-nano
+
+Support for **newlib-nano** is available using the 
+`--specs=nano.specs` option. For better results, this option must be 
+added to both compile and link time.
+
+## nosys.specs
+
+If no syscalls are needed, `--specs=nosys.specs` can be used at link 
+time to provide empty implementations for the POSIX system calls.
+
+## Compile options
+
+The libraries are compiled with `-O2 -mcmodel=medany`. The nano version is
+compiled with `-Os -mcmodel=medany`.
+
+> Important: It is mandatory for the applications to be compiled with 
+`-mcmodel=medany`, otherwise the link will fail.
 
 ## Known problems
 
 - none
+
+## Documentation
+
+The original PDF documentation is available in the `share/doc` folder.
 
 ## Supported platforms
 

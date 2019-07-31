@@ -59,6 +59,13 @@ This release follows the official
 **7-2018-q2-update** release from June 27, 2018 and it is based on the 
 `gcc-arm-none-eabi-7-2018-q2-update-src.tar.bz2` source invariant.
 
+For more details see the original ARM release text files:
+
+- `distro-info/arm-readme.txt`
+- `distro-info/arm-release.txt`
+  
+## Supported libraries
+
 The supported libraries are:
 
 ```console
@@ -112,6 +119,10 @@ The issue was reported to ARM as bug [1838049](https://bugs.launchpad.net/gcc-ar
   `system/src/newlib/_syscalls.c`. The problem was in the project template
   [#317](https://github.com/gnu-mcu-eclipse/eclipse-plugins/issues/317), and
   was fixed in GNU MCU Eclipse plug-ins v4.4.2 (2018-08-27).
+
+## Documentation
+
+The original PDF documentation is available in the `share/doc` folder.
 
 ## Supported platforms
 

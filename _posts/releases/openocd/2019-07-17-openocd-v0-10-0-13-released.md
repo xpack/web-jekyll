@@ -51,6 +51,17 @@ To install this specific version, use:
 $ xpm install --global @xpack-dev-tools/openocd@{{ page.version }}.{{ page.npm_subversion }}
 ```
 
+## Compliance
+
+The xPack OpenOCD generally follows the official 
+[OpenOCD](http://openocd.org) releases.
+
+The current version is based on:
+
+- OpenOCD version 0.10.0, the development commit 
+[263deb380](https://github.com/xpack-dev-tools/openocd/commit/263deb3802a515ba8155b6c59146f0f539de4e43) 
+from 7 July 2019
+
 ## Changes
 
 There are no functional changes.
@@ -65,6 +76,10 @@ Compared to the upstream, the following changes were applied:
 ## Known problems
 
 - none
+
+## Documentation
+
+The original documentation is available in the `share/doc` folder.
 
 ## Supported platforms
 
