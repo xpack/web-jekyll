@@ -20,7 +20,7 @@ last_updated: 2019-06-30 10:30:21 +0300
             <a href="{{ site.baseurl }}/tags/{{ tag }}/">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}
         {% endfor %}
         </span>
-        <p>{% if page.summary %} {{ page.summary | strip_html | strip_newlines | truncate: 160 }} {% else %} {{ post.content | truncatewords: 50 | strip_html }} {% endif %}</p>
+        <p>{% if post.summary %} {{ post.summary | markdownify | strip_html | strip_newlines | truncate: 160 }} ... {% else %} {{ post.content | truncatewords: 50 | strip_html }} {% endif %}</p>
     {% endfor %}
         <p><a href="{{ site.baseurl }}/feed.xml" class="btn btn-primary navbar-btn cursorNorm" role="button">RSS Subscribe{{tag}}</a></p>
         <hr />
