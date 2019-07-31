@@ -10,3 +10,5 @@ allowed-tags:
   - macos
   - web
   - windows
+  - arm-none-eabi-gcc
+  - riscv-none-embed-gcc
