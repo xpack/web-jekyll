@@ -1,6 +1,9 @@
 ---
 title:  xPack OpenOCD v0.10.0-13 released
 
+summary: "Version 0.10.0-13 is a maintenance release; it updates to 
+the latest upstream master."
+
 version: 0.10.0-13
 npm_subversion: 1
 download_url: https://github.com/xpack-dev-tools/openocd-xpack/releases/tag/v0.10.0-13/
@@ -17,9 +20,6 @@ tags:
   - openocd
 
 ---
-
-Version {{ page.version }} is a maintenance release; it updates to the 
-latest upstream master. 
 
 [Binary files »]({{ page.download_url }})
 

@@ -1,6 +1,9 @@
 ---
 title:  xPack GNU ARM Embedded GCC v8.3.1-1.1 released
 
+summary: "Version 8.3.1-1.1 is a new release of **xPack GNU ARM Embedded GCC**, 
+following ARM release from July 10, 2019 (version **8-2019-q3-update**)."
+
 version: 8.3.1-1.1
 npm_subversion: 1
 download_url: https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases/v8.3.1-1.1/
@@ -18,9 +21,6 @@ tags:
   - arm-none-eabi-gcc
 
 ---
-
-Version {{ page.version }} is a new release of **xPack GNU ARM Embedded GCC**, 
-following ARM release from July 10, 2019 (version **8-2019-q3-update**).
 
 [Binary files »]({{ page.download_url }})
 
