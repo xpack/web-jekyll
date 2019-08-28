@@ -9,7 +9,7 @@ keywords:
   - xpack
   - install
 
-node_version: v10.16.3
+node_version: v10.16.0
 npm_version: 6.11.2
 
 date: 2017-10-09 14:14:00 +0300
