@@ -9,8 +9,8 @@ keywords:
   - xpack
   - install
 
-node_version: v10.16.0
-npm_version: 6.10.1
+node_version: v10.16.3
+npm_version: 6.11.2
 
 date: 2017-10-09 14:14:00 +0300
 last_updated: 2019-07-26 18:48:02 +0300
@@ -78,7 +78,8 @@ page.
 
 {{ node_install }}
 
-Download the **Windows Installer (.msi)** and install it as usual, 
+Download the **Windows Installer (.msi)** from the Node.js
+[download](https://nodejs.org/en/download/) page and install it as usual, 
 with administrative rights.
 
 {% include tip.html content="If you are using a 64-bit machine, download the `node-v*-x64.msi` file." %}
@@ -172,7 +173,8 @@ or in the Git shell terminal.
 
 {{ node_install }}
 
-Download the **macOS Installer (.pkg)** and install it as usual,
+Download the **macOS Installer (.pkg)** from the Node.js
+[download](https://nodejs.org/en/download/) page and install it as usual,
 with administrative rights.
 
 The result is a binary like `/usr/local/bin/node` and a folder like
@@ -199,7 +201,8 @@ npm --version
 6.9.0
 ```
 
-It is recommended to update it to the latest version.
+It is recommended to update it to the latest version, preferably without
+administrative rights, as described below.
 
 ### Default (with administrative rights)
 
@@ -255,6 +258,7 @@ added 14 packages from 10 contributors, removed 5 packages and updated 17 packag
 To check if the environment is set correctly :
 
 ```console
+$ hash -r
 $ which npm
 /Users/ilg/Library/npm/bin/npm
 $ npm --version
@@ -388,7 +392,8 @@ $ npm --version
 6.7.0
 ```
 
-It is recommended to update it to the latest version.
+It is recommended to update it to the latest version, preferably without
+administrative rights, as described below.
 
 ### Default (with administrative rights)
 
@@ -438,6 +443,7 @@ added 21 packages from 15 contributors, removed 14 packages and updated 37 packa
 To check if the environment is set correctly :
 
 ```console
+$ hash -r
 $ which npm
 /home/ilg/opt/npm/bin/npm
 $ npm --version
