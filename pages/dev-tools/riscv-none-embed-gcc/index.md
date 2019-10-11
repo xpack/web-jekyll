@@ -11,7 +11,7 @@ keywords:
   - embedded
 
 date: 2019-07-10 17:53:00 +0300
-last_updated: 2019-07-31 19:13:45 +0300
+last_updated: 2019-10-11 15:52:59 +0300
 
 ---
 

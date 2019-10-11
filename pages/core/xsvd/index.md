@@ -3,7 +3,7 @@ title: xsvd
 permalink: /xsvd/
 
 date: 2017-10-11 14:25:00 +0300
-last_updated: 2019-06-30 10:30:19 +0300
+last_updated: 2019-10-11 15:52:57 +0300
 
 ---
 
