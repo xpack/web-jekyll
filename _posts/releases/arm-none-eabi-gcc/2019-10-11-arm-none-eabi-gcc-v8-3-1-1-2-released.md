@@ -120,7 +120,7 @@ The issue was reported to Arm as bug [1838049](https://bugs.launchpad.net/gcc-ar
 
 ### Python 3
 
-Partial support for Python 3 was added to GDB for GNU/Linux and macOS; 
+Partial support for Python 3 was added to GDB for GNU/Linux and macOS;
 not yet available on Windows ([24469](https://sourceware.org/bugzilla/show_bug.cgi?id=24469)).
 
 ## Known problems
@@ -136,16 +136,16 @@ The original PDF documentation is available in the `share/doc` folder.
 Binaries for **Windows**, **macOS** and **GNU/Linux** are provided.
 
 The binaries were built using
-[xPack Build Box (XBB)](https://github.com/xpack/xpack-build-box), a set 
-of build environments based on slightly older distributions, that should be 
+[xPack Build Box (XBB)](https://github.com/xpack/xpack-build-box), a set
+of build environments based on slightly older distributions, that should be
 compatible with most recent systems.
 
-- GNU/Linux: all binaries were built with GCC 7.4, running in a CentOS 6 
+- GNU/Linux: all binaries were built with GCC 7.4, running in a CentOS 6
   Docker container
-- Windows: all binaries were built with mingw-w64 GCC 7.4, running in a 
-  CentOS 6 Docker container 
-- macOS: most binaries were built with GCC 7.4, running in a separate  
-  folder on macOS 10.10.5; GDB cannot be compiled with GCC, so Apple 
+- Windows: all binaries were built with mingw-w64 GCC 7.4, running in a
+  CentOS 6 Docker container
+- macOS: most binaries were built with GCC 7.4, running in a separate
+  folder on macOS 10.10.5; GDB cannot be compiled with GCC, so Apple
   clang was used.
 
 ## Tests
@@ -153,7 +153,7 @@ compatible with most recent systems.
 The binaries were testes on Windows 10 Pro 32/64-bit, Ubuntu 18 LTS 64-bit,
 Xubuntu 18 LTS 32-bit and macOS 10.13.
 
-The tests consist in building and debugging some 
+The tests consist in building and debugging some
 [simple Eclipse projects](https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/tree/xpack/tests/eclipse)
 available in the project.
 
@@ -193,5 +193,5 @@ xpack-arm-none-eabi-gcc-8.3.1-1.2-win32-x64.zip
   - all releases [![npm](https://img.shields.io/npm/dt/@xpack-dev-tools/arm-none-eabi-gcc.svg)](https://www.npmjs.com/package/@xpack-dev-tools/arm-none-eabi-gcc/)
 
 Credit to [Shields IO](https://shields.io) for the badges and to
-[Somsubhra/github-release-stats](https://github.com/Somsubhra/github-release-stats) 
+[Somsubhra/github-release-stats](https://github.com/Somsubhra/github-release-stats)
 for the individual file counters.

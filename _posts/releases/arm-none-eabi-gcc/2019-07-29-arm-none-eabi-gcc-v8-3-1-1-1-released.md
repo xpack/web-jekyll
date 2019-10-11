@@ -1,8 +1,7 @@
 ---
 title:  xPack GNU Arm Embedded GCC v8.3.1-1.1 released
 
-summary: "Version 8.3.1-1.1 is a new release of **xPack GNU Arm Embedded GCC**, 
-following Arm release from July 10, 2019 (version **8-2019-q3-update**)."
+summary: "Version 8.3.1-1.1 is a new release of **xPack GNU Arm Embedded GCC**, following Arm release from July 10, 2019 (version **8-2019-q3-update**)."
 
 version: 8.3.1-1.1
 npm_subversion: 1
@@ -28,15 +27,15 @@ The binary files are available from [GitHub Releases]({{ page.download_url }}).
 
 ## Install
 
-The full details of installing the **xPack GNU Arm Embedded GCC** on 
-various platforms are presented in the separate 
+The full details of installing the **xPack GNU Arm Embedded GCC** on
+various platforms are presented in the separate
 [Install]({{ site.baseurl }}/arm-none-eabi-gcc/install/) page.
 
-### Easy install 
+### Easy install
 
-The easiest way to install GNU Arm Embedded GCC is with 
+The easiest way to install GNU Arm Embedded GCC is with
 [`xpm`]({{ site.baseurl }}/xpm/)
-by using the **binary xPack**, available as 
+by using the **binary xPack**, available as
 [`@xpack-dev-tools/arm-none-eabi-gcc`](https://www.npmjs.com/package/@xpack-dev-tools/arm-none-eabi-gcc)
 from the [`npmjs.com`](https://www.npmjs.com) registry.
 
@@ -54,9 +53,9 @@ $ xpm install --global @xpack-dev-tools/arm-none-eabi-gcc@{{ page.version }}.{{ 
 
 ## Compliance
 
-This release follows the official 
-[GNU Arm Embedded Toolchain](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm) 
-**8-2019-q3-update** release from July 10, 2019 and it is based on the 
+This release follows the official
+[GNU Arm Embedded Toolchain](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm)
+**8-2019-q3-update** release from July 10, 2019 and it is based on the
 `gcc-arm-none-eabi-8-2019-q3-update-src.tar.bz2` source invariant.
 
 For more details see the original Arm release text files:
@@ -101,7 +100,7 @@ There should be no functional changes.
 To improve LTO support, the `lib/bdf-plugins` folder was added, with
 a link to the `liblto_plugin.so` library (a file copy on Windows).
 
-This allows the use of traditional program names, like `arm-none-eabi-ar` 
+This allows the use of traditional program names, like `arm-none-eabi-ar`
 instead of the new `arm-none-eabi-gcc-ar`, without getting errors like:
 
 ```
@@ -114,7 +113,7 @@ The issue was reported to Arm as bug [1838049](https://bugs.launchpad.net/gcc-ar
 
 ### Python 3
 
-Partial support for Python 3 was added to GDB for GNU/Linux and macOS; 
+Partial support for Python 3 was added to GDB for GNU/Linux and macOS;
 not yet available on Windows ([24469](https://sourceware.org/bugzilla/show_bug.cgi?id=24469)).
 
 ## Known problems
@@ -131,17 +130,17 @@ The original PDF documentation is available in the `share/doc` folder.
 
 Binaries for **Windows**, **macOS** and **GNU/Linux** are provided.
 
-The binaries were built using 
-[xPack Build Box (XBB)](https://github.com/xpack/xpack-build-box), a set 
-of build environments based on slightly older distributions, that should be 
+The binaries were built using
+[xPack Build Box (XBB)](https://github.com/xpack/xpack-build-box), a set
+of build environments based on slightly older distributions, that should be
 compatible with most recent systems.
 
-- GNU/Linux: all binaries were built with GCC 7.4, running in a CentOS 6 
+- GNU/Linux: all binaries were built with GCC 7.4, running in a CentOS 6
   Docker container
-- Windows: all binaries were built with mingw-w64 GCC 7.4, running in a 
-  CentOS 6 Docker container 
-- macOS: most binaries were built with GCC 7.4, running in a separate  
-  folder on macOS 10.10.5; GDB cannot be compiled with GCC, so Apple 
+- Windows: all binaries were built with mingw-w64 GCC 7.4, running in a
+  CentOS 6 Docker container
+- macOS: most binaries were built with GCC 7.4, running in a separate
+  folder on macOS 10.10.5; GDB cannot be compiled with GCC, so Apple
   clang was used.
 
 ## Tests
@@ -149,7 +148,7 @@ compatible with most recent systems.
 The binaries were testes on Windows 10 Pro 32/64-bit, Ubuntu 18 LTS 64-bit,
 Xubuntu 18 LTS 32-bit and macOS 10.13.
 
-The tests consist in building and debugging some 
+The tests consist in building and debugging some
 [simple Eclipse projects](https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/tree/xpack/tests/eclipse)
 available in the project.
 
@@ -162,19 +161,19 @@ executed again.
 The SHA-256 hashes for the files are:
 
 ```
-61cdc9d05d6a666b2df45ad2dcd5aa5d7eccf1ffb865420c35704a1917812eb2 
+61cdc9d05d6a666b2df45ad2dcd5aa5d7eccf1ffb865420c35704a1917812eb2
 xpack-arm-none-eabi-gcc-8.3.1-1.1-darwin-x64.tgz
 
-266f5ebde79ce4d5a91232af22707dad076fdcf35031042b498fae1ae09989d7 
+266f5ebde79ce4d5a91232af22707dad076fdcf35031042b498fae1ae09989d7
 xpack-arm-none-eabi-gcc-8.3.1-1.1-linux-x32.tgz
 
-2e49bdb076ed96cdde2b8320d9496875eccd7eb83d2af0dc378e02dd17aedec4 
+2e49bdb076ed96cdde2b8320d9496875eccd7eb83d2af0dc378e02dd17aedec4
 xpack-arm-none-eabi-gcc-8.3.1-1.1-linux-x64.tgz
 
-3854e4683d3977f27573610cf6badd0f0433ddc37ed0d922757cf1ff708be405 
+3854e4683d3977f27573610cf6badd0f0433ddc37ed0d922757cf1ff708be405
 xpack-arm-none-eabi-gcc-8.3.1-1.1-win32-x32.zip
 
-39e1e553edcae83856882b8587a7f8b6d5c9f8fc11f10247b0e2af3321481fdb 
+39e1e553edcae83856882b8587a7f8b6d5c9f8fc11f10247b0e2af3321481fdb
 xpack-arm-none-eabi-gcc-8.3.1-1.1-win32-x64.zip
 ```
 
@@ -188,6 +187,6 @@ xpack-arm-none-eabi-gcc-8.3.1-1.1-win32-x64.zip
 - xnpmjs.com [@xpack-dev-tools/arm-none-eabi-gcc](https://www.npmjs.com/package/@xpack-dev-tools/arm-none-eabi-gcc)
   - all releases [![npm](https://img.shields.io/npm/dt/@xpack-dev-tools/arm-none-eabi-gcc.svg)](https://www.npmjs.com/package/@xpack-dev-tools/arm-none-eabi-gcc/)
 
-Credit to [Shields IO](https://shields.io) for the badges and to 
-[Somsubhra/github-release-stats](https://github.com/Somsubhra/github-release-stats) 
+Credit to [Shields IO](https://shields.io) for the badges and to
+[Somsubhra/github-release-stats](https://github.com/Somsubhra/github-release-stats)
 for the individual file counters.
