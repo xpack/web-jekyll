@@ -105,7 +105,7 @@ This allows the use of traditional program names, like `arm-none-eabi-ar`
 instead of the new `arm-none-eabi-gcc-ar`, without getting errors like:
 
 ```
-arm-none-eabi-ar -r  "libarm-static-lib.a"  ./lib.o   
+arm-none-eabi-ar -r  "libarm-static-lib.a"  ./lib.o
 arm-none-eabi-ar: creating libarm-static-lib.a
 arm-none-eabi-ar: ./lib.o: plugin needed to handle lto object <---
 ```
@@ -119,7 +119,9 @@ not yet available on Windows ([24469](https://sourceware.org/bugzilla/show_bug.c
 
 ## Known problems
 
-- none
+- [[#1]](https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/issues/1)
+  Due to an omission in the build scripts, the content of the `libgcov`
+  library is mostly empty; the problem was fixed starting with v8.3.1-1.2.
 
 ## Documentation
 
