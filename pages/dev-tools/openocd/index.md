@@ -13,7 +13,7 @@ last_updated: 2019-07-22 22:14:04 +0300
 
 ## Quicklinks
 
-If you already know the general facts about xPack GNU ARM Embedded GCC, you can 
+If you already know the general facts about xPack GNU Arm Embedded GCC, you can 
 directly skip to the desired pages.
 
 User pages:

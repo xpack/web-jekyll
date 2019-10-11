@@ -1,5 +1,5 @@
 ---
-title: The xPack GNU ARM Embedded GCC Frequently Asked Questions
+title: The xPack GNU Arm Embedded GCC Frequently Asked Questions
 permalink: /arm-none-eabi-gcc/faq/
 
 toc: false

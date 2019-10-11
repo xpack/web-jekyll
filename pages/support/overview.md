@@ -15,7 +15,7 @@ last_updated: 2019-07-02 23:14:06 +0300
   for support ; be sure you select the right group/discussion.
 - [xPack Chatroom](https://gitter.im/xpack/) - a place for users to chat
 - [OpenOCD support]({{ site.baseurl }}/openocd/support/)
-- [QEMU ARM support]({{ site.baseurl }}/qemu-arm/support/)
+- [QEMU Arm support]({{ site.baseurl }}/qemu-arm/support/)
 
 ## Tools issues
 

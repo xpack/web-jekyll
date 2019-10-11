@@ -1,5 +1,5 @@
 ---
-title: The xPack QEMU ARM Frequently Asked Questions
+title: The xPack QEMU Arm Frequently Asked Questions
 permalink: /qemu-arm/faq/
 
 toc: false

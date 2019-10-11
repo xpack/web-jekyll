@@ -71,9 +71,9 @@ These projects are hosted in the GitHub
 
 The main binary tools packed as xPacks are:
 
-- [`@xpack-dev-tools/arm-none-eabi-gcc`]({{ site.baseurl }}/arm-none-eabi-gcc/) - the **xPack ARM Embedded GCC** toolchain
+- [`@xpack-dev-tools/arm-none-eabi-gcc`]({{ site.baseurl }}/arm-none-eabi-gcc/) - the **xPack Arm Embedded GCC** toolchain
 - [`@xpack-dev-tools/openocd`]({{ site.baseurl }}/openocd/) - the **xPack OpenOCD**
-- [`@xpack-dev-tools/qemu`]({{ site.baseurl }}/qemu-arm/) - the **xPack QEMU ARM Cortex-M**
+- [`@xpack-dev-tools/qemu-arm`]({{ site.baseurl }}/qemu-arm/) - the **xPack QEMU Arm Cortex-M**
 - [`@xpack-dev-tools/riscv-none-embed-gcc`]({{ site.baseurl }}/riscv-none-embed-gcc/) - the **xPack RISC-V Embedded GCC** toolchain
 
 Planned:

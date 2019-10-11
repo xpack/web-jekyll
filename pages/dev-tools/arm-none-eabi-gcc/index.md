@@ -1,8 +1,8 @@
 ---
-title: The xPack GNU ARM Embedded GCC
+title: The xPack GNU Arm Embedded GCC
 permalink: /arm-none-eabi-gcc/
 
-summary: "A binary distribution of GNU ARM Embedded GCC."
+summary: "A binary distribution of GNU Arm Embedded GCC."
 comments: true
 keywords: 
   - arm-none-eabi-gcc
@@ -17,7 +17,7 @@ last_updated: 2019-07-10 20:23:46 +0300
 
 ## Quicklinks
 
-If you already know the general facts about xPack GNU ARM Embedded GCC, you can 
+If you already know the general facts about xPack GNU Arm Embedded GCC, you can 
 directly skip to the desired pages.
 
 User pages:
@@ -34,14 +34,14 @@ Developer & maintainer pages:
 
 ## Overview
 
-The **xPack GNU ARM Embedded GCC** 
+The **xPack GNU Arm Embedded GCC** 
 is an alternate binary distribution that complements the official 
 [GNU Arm Embedded Toolchain](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm) 
-maintained by ARM.
+maintained by Arm.
 
 ## Benefits
 
-The main advantages of using the **xPack GNU ARM Embedded GCC** are:
+The main advantages of using the **xPack GNU Arm Embedded GCC** are:
 
 - a convenient, uniform and portable install/uninstall/upgrade procedure;
   the same procedure is used for all major 
@@ -56,22 +56,22 @@ and can be installed at any location.
 
 ## Compatibility
 
-The **xPack GNU ARM Embedded GCC** is fully compatible with the 
-original GNU Arm Embedded Toolchain distribution by ARM.
+The **xPack GNU Arm Embedded GCC** is fully compatible with the 
+original GNU Arm Embedded Toolchain distribution by Arm.
 
-Occasionally, when bugs are discovered and the yearly ARM release schedule
-would add unacceptably long delays, the **xPack GNU ARM Embedded GCC**
-moves ahead of ARM and uses more recent tools versions that fix the bugs.
+Occasionally, when bugs are discovered and the yearly Arm release schedule
+would add unacceptably long delays, the **xPack GNU Arm Embedded GCC**
+moves ahead of Arm and uses more recent tools versions that fix the bugs.
 
 ## Install
 
-The details of installing the **xPack GNU ARM Embedded GCC** on various 
+The details of installing the **xPack GNU Arm Embedded GCC** on various 
 platforms are presented in the separate 
 [Install]({{ site.baseurl }}/arm-none-eabi-gcc/install/) page.
 
 ## Documentation
 
-The **xPack GNU ARM Embedded GCC** distribution includes the 
+The **xPack GNU Arm Embedded GCC** distribution includes the 
 standard GCC documentation, in info, man and pdf format; 
 it is located in the `share/doc` folder, for example the pdf files are:
 

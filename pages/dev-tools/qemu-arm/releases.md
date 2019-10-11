@@ -1,5 +1,5 @@
 ---
-title: The xPack QEMU ARM releases
+title: The xPack QEMU Arm releases
 permalink: /qemu-arm/releases/
 
 search: exclude

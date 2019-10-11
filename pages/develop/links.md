@@ -16,7 +16,7 @@ last_updated: 2019-07-02 23:14:03 +0300
 * Book: _Embedded software development with eCos_, by Anthony J. Massa, published in 2003 at Prentice Hall, available from [Amazon](http://www.amazon.com/Embedded-Software-Development-Anthony-Massa/dp/0130354732)
 * Book: _Software Build Systems: Principles and Experience_, by Peter Smith, published in 2011 at Addison Wesley, available from [Amazon](http://www.amazon.com/Software-Build-Systems-Principles-Experience/dp/0321717287)
 * IEEE Std 830-1998: _IEEE Recommended Practice for Software Requirements Specifications_, published in 1998
-* [CMSIS-Pack](http://www.keil.com/pack/doc/CMSIS/Pack/html/) - ARM mechanism to install software, device support, APIs, and example projects
+* [CMSIS-Pack](http://www.keil.com/pack/doc/CMSIS/Pack/html/) - Arm mechanism to install software, device support, APIs, and example projects
 
 ## Distribution management systems
 

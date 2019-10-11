@@ -165,13 +165,13 @@ the `-mabi` argument to GCC. For example:
 
 * `-march=rv32imafdc -mabi=ilp32d`: Hardware floating-point instructions can 
 be generated and floating-point arguments are passed in registers. This 
-is like the `-mfloat-abi=hard` option to ARM's GCC. 
+is like the `-mfloat-abi=hard` option to Arm's GCC. 
 * `-march=rv32imac -mabi=ilp32`: No floating-point instructions can be 
 generated and no floating-point arguments are passed in registers. This 
-is like the `-mfloat-abi=soft` argument to ARM's GCC. 
+is like the `-mfloat-abi=soft` argument to Arm's GCC. 
 * `-march=rv32imafdc -mabi=ilp32`: Hardware floating-point instructions can 
 be generated, but no floating-point arguments will be passed in 
-registers. This is like the `-mfloat-abi=softfp` argument to ARM's GCC, 
+registers. This is like the `-mfloat-abi=softfp` argument to Arm's GCC, 
 and is usually used when interfacing with soft-float binaries on a 
 hard-float system. 
 * `-march=rv32imac -mabi=ilp32d`: Illegal, as the ABI requires floating-point 

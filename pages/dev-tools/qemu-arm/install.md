@@ -1,5 +1,5 @@
 ---
-title: How to install the xPack QEMU ARM binaries?
+title: How to install the xPack QEMU Arm binaries?
 permalink: /qemu-arm/install/
 
 summary: "The recommended method is via xpm."
@@ -13,7 +13,7 @@ last_updated: 2019-07-31 19:13:44 +0300
 
 ## Overview
 
-The **xPack QEMU ARM** can be installed automatically, via xpm (the
+The **xPack QEMU Arm** can be installed automatically, via xpm (the
 recommended method), or manually, by downloading and unpacking one of the 
 portable archives.
 
@@ -75,7 +75,7 @@ subfolders.)
 
 ## Manual install
 
-For all platforms, the **xPack QEMU ARM** binaries are released as portable 
+For all platforms, the **xPack QEMU Arm** binaries are released as portable 
 archives that can be installed in any location.
 
 The archives can be downloaded from the
@@ -84,7 +84,7 @@ The archives can be downloaded from the
 {% capture windows %}
 ### Download
 
-The Windows versions of **xPack QEMU ARM** are packed as ZIP files. 
+The Windows versions of **xPack QEMU Arm** are packed as ZIP files. 
 Download the latest version named like:
 
 - `xpack-qemu-arm-2.8.0-7-win32-x64.zip`
@@ -131,7 +131,7 @@ For usual Cortex-M emulation, there are no special drivers required.
 {% capture macos %}
 ### Download
 
-The macOS version of **xPack QEMU ARM** is packed as a TGZ archive. 
+The macOS version of **xPack QEMU Arm** is packed as a TGZ archive. 
 Download the latest version named like:
 
 -  `xpack-qemu-arm-2.8.0-7-darwin-x64.tgz`
@@ -201,7 +201,7 @@ Copyright (c) 2003-2016 Fabrice Bellard and the QEMU Project developers
 {% capture linux %}
 ### Download
 
-The GNU/Linux versions of **xPack QEMU ARM** are packed as TGZ archives. 
+The GNU/Linux versions of **xPack QEMU Arm** are packed as TGZ archives. 
 Download the latest version named like:
 
 - `xpack-qemu-arm-2.8.0-7-linux-x64.tgz`

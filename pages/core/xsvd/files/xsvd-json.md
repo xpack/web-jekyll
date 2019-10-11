@@ -9,7 +9,7 @@ last_updated: 2019-06-30 10:30:19 +0300
 
 ## Overview
 
-**XSVD** is a rework of the ARM [CMSIS SVD](http://www.keil.com/cmsis/svd), but cleaned, extended and rewritten in JSON instead of XML.
+**XSVD** is a rework of the Arm [CMSIS SVD](http://www.keil.com/cmsis/svd), but cleaned, extended and rewritten in JSON instead of XML.
 
 ## File conventions
 
@@ -634,7 +634,7 @@ First formal specifications defined. Used to define the SiFive devices (like the
 
 #### v0.1.0 (2016-12-14)
 
-Initial version, a direct correspondence to the ARM SVD format. Firstly implemented by the xcdl program used by GNU ARM Eclipse QEMU.
+Initial version, a direct correspondence to the Arm SVD format. Firstly implemented by the xcdl program used by GNU Arm Eclipse QEMU.
 
 ## TODO
 

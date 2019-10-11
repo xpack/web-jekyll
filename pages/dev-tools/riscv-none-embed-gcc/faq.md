@@ -47,7 +47,7 @@ to embedded use case.
 {% endcapture %}
 
 {% capture question_3 %}
-Why `riscv-none-embed-gcc` and not `riscv-none-eabi-gcc`, as ARM uses?
+Why `riscv-none-embed-gcc` and not `riscv-none-eabi-gcc`, as Arm uses?
 {% endcapture %}
 
 {% capture answer_3 %}

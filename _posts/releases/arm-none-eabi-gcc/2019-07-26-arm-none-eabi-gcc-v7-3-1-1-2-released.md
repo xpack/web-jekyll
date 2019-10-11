@@ -1,7 +1,7 @@
 ---
-title:  xPack GNU ARM Embedded GCC v7.3.1-1.2 released
+title:  xPack GNU Arm Embedded GCC v7.3.1-1.2 released
 
-summary: "Version 7.3.1-1.2 is a repack of the GNU MCU Eclipse ARM Embedded GCC
+summary: "Version 7.3.1-1.2 is a repack of the GNU MCU Eclipse Arm Embedded GCC
 v7.3.1-1.1 using the new build scripts."
 
 version: 7.3.1-1.2
@@ -28,13 +28,13 @@ The binary files are available from [GitHub Releases]({{ page.download_url }}).
 
 ## Install
 
-The full details of installing the **xPack GNU ARM Embedded GCC** on various platforms
+The full details of installing the **xPack GNU Arm Embedded GCC** on various platforms
 are presented in the separate 
 [Install]({{ site.baseurl }}/arm-none-eabi-gcc/install/) page.
 
 ### Easy install 
 
-The easiest way to install GNU ARM Embedded GCC is with 
+The easiest way to install GNU Arm Embedded GCC is with 
 [`xpm`]({{ site.baseurl }}/xpm/)
 by using the **binary xPack**, available as 
 [`@xpack-dev-tools/arm-none-eabi-gcc`](https://www.npmjs.com/package/@xpack-dev-tools/arm-none-eabi-gcc)
@@ -59,7 +59,7 @@ This release follows the official
 **7-2018-q2-update** release from June 27, 2018 and it is based on the 
 `gcc-arm-none-eabi-7-2018-q2-update-src.tar.bz2` source invariant.
 
-For more details see the original ARM release text files:
+For more details see the original Arm release text files:
 
 - `distro-info/arm-readme.txt`
 - `distro-info/arm-release.txt`
@@ -109,7 +109,7 @@ arm-none-eabi-ar: creating libarm-static-lib.a
 arm-none-eabi-ar: ./lib.o: plugin needed to handle lto object <---
 ```
 
-The issue was reported to ARM as bug [1838049](https://bugs.launchpad.net/gcc-arm-embedded/+bug/1838049).
+The issue was reported to Arm as bug [1838049](https://bugs.launchpad.net/gcc-arm-embedded/+bug/1838049).
 
 ## Known problems
 
@@ -150,8 +150,8 @@ The tests consist in building and debugging some
 [simple Eclipse projects](https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/tree/xpack/tests/eclipse)
 available in the project.
 
-Since the source code used for GCC is identical to the one used by ARM, the
-long and complex tests performed by ARM to validate their release were not
+Since the source code used for GCC is identical to the one used by Arm, the
+long and complex tests performed by Arm to validate their release were not
 executed again.
 
 ## Checksums

@@ -1,5 +1,5 @@
 ---
-title: The xPack GNU ARM Embedded GCC releases
+title: The xPack GNU Arm Embedded GCC releases
 permalink: /arm-none-eabi-gcc/releases/
 
 search: exclude

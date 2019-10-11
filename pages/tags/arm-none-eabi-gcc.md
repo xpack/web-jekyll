@@ -1,5 +1,5 @@
 ---
-title: "ARM Embedded GCC"
+title: "Arm Embedded GCC"
 permalink: /tags/arm-none-eabi-gcc/
 
 tagName: arm-none-eabi-gcc
