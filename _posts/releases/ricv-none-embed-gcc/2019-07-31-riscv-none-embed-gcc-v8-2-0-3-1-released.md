@@ -29,13 +29,13 @@ The binary files are available from [GitHub Releases]({{ page.download_url }}).
 
 ## Install
 
-The full details of installing the **xPack GNU ARM Embedded GCC** on 
+The full details of installing the **xPack GNU RISC-V Embedded GCC** on 
 various platforms are presented in the separate 
 [Install]({{ site.baseurl }}/riscv-none-embed-gcc/install/) page.
 
 ### Easy install 
 
-The easiest way to install GNU ARM Embedded GCC is with 
+The easiest way to install GNU RISC-V Embedded GCC is with 
 [`xpm`]({{ site.baseurl }}/xpm/)
 by using the **binary xPack**, available as 
 [`@xpack-dev-tools/riscv-none-embed-gcc`](https://www.npmjs.com/package/@xpack-dev-tools/riscv-none-embed-gcc)
