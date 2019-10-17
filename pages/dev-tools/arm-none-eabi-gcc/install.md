@@ -119,7 +119,7 @@ for the executable in this location." %}
 To check if GCC starts, use the following command:
 
 ```
-C:\Users\ilg>C:\Users\ilg\AppData\Roaming\xPacks\GNU Arm Embedded GCC\8.3.1-1.1\bin\arm-none-eabi-gcc.exe" --version
+C:\Users\ilg>C:\Users\ilg\AppData\Roaming\xPacks\GNU ARM Embedded GCC\8.3.1-1.1\bin\arm-none-eabi-gcc.exe" --version
 arm-none-eabi-gcc (xPack GNU Arm Embedded GCC, 64-bit) 8.3.1 20190703 (release) [gcc-8-branch revision 273027]
 ```
 
