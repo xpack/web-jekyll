@@ -9,7 +9,7 @@ keywords:
   - xpack
   - install
 
-node_version: v10.16.0
+node_version: 10.16.0
 npm_version: 6.11.2
 
 date: 2017-10-09 14:14:00 +0300
@@ -31,7 +31,7 @@ syntax is used.
 
 ```console
 $ node --version
-{{ page.node_version }}
+v{{ page.node_version }}
 ```
 
 If this is your first encounter with `npm`, you need to install the
@@ -91,7 +91,7 @@ system path since it includes the `node.exe` binary.
 C:\>where node.exe
 C:\Program Files\nodejs\node.exe
 C:\>node --version
-{{ page.node_version }}
+v{{ page.node_version }}
 ```
 
 {{ version_manager }}
@@ -185,7 +185,7 @@ are installed.
 $ which node
 /usr/local/bin/node
 $ node --version
-{{ page.node_version }}
+v{{ page.node_version }}
 ```
 
 {{ version_manager }}
@@ -346,13 +346,13 @@ check the Node.js
 
 ```console
 $ curl --fail -L https://github.com/xpack/support/raw/master/scripts/reinstall-linux-node.sh -o ~/Downloads/reinstall-linux-node.sh
-$ sudo bash ~/Downloads/reinstall-linux-node.sh {{ page.node_version }}
+$ bash ~/Downloads/reinstall-linux-node.sh {{ page.node_version }}
 ```
 
 If you prefer the manual approach,
 download the **Linux Binaries (x64)** archive from the Node.js
 [download](https://nodejs.org/en/download/) page;
-the result is a file like `node-{{ page.node_version }}-linux-x64.tar.xz`.
+the result is a file like `node-v{{ page.node_version }}-linux-x64.tar.xz`.
 
 {% include note.html content="Currently the official Node distribution includes
 only a 64-bit GNU/Linux binary. 32-bit binaries may be downloaded from the
@@ -363,15 +363,15 @@ Extract the content of the archive in `/usr/local/lib/nodejs`:
 
 ```console
 $ sudo mkdir -p /usr/local/lib/nodejs
-$ sudo tar -xJvf ~/Downloads/node-{{ page.node_version }}-linux-x64.tar.xz -C /usr/local/lib/nodejs
+$ sudo tar -xJvf ~/Downloads/node-v{{ page.node_version }}-linux-x64.tar.xz -C /usr/local/lib/nodejs
 ```
 
 and, for easy access, create soft links to the executables in `/usr/local/bin`:
 
 ```console
-$ sudo ln -s /usr/local/lib/nodejs/node-{{ page.node_version }}-linux-x64/bin/node /usr/local/bin/node
-$ sudo ln -s /usr/local/lib/nodejs/node-{{ page.node_version }}-linux-x64/bin/npm /usr/local/bin/npm
-$ sudo ln -s /usr/local/lib/nodejs/node-{{ page.node_version }}-linux-x64/bin/npx /usr/local/bin/npx
+$ sudo ln -s /usr/local/lib/nodejs/node-v{{ page.node_version }}-linux-x64/bin/node /usr/local/bin/node
+$ sudo ln -s /usr/local/lib/nodejs/node-v{{ page.node_version }}-linux-x64/bin/npm /usr/local/bin/npm
+$ sudo ln -s /usr/local/lib/nodejs/node-v{{ page.node_version }}-linux-x64/bin/npx /usr/local/bin/npx
 ```
 
 This location requires the `/usr/local/bin` to be
@@ -390,7 +390,7 @@ After this, the new Node should be available:
 $ which node
 /usr/local/bin/node
 $ node --version
-{{ page.node_version }}
+v{{ page.node_version }}
 ```
 
 {{ version_manager }}
