@@ -4,7 +4,7 @@ permalink: /install/
 
 toc: false
 comments: true
-keywords: 
+keywords:
   - npm
   - xpack
   - install
@@ -19,14 +19,14 @@ last_updated: 2019-08-28 21:24:40 +0300
 
 ## Overview
 
-All Core Tools are [Node.js](https://nodejs.org) CLI application 
-available from the 
+All Core Tools are [Node.js](https://nodejs.org) CLI application
+available from the
 [npmjs.com](https://www.npmjs.com) public repository and are installed
 via `npm` which uses `node`.
 
 ## Prerequisites
 
-A recent [Node.js](https://nodejs.org) (>=8.x), since the ECMAScript 6 class 
+A recent [Node.js](https://nodejs.org) (>=8.x), since the ECMAScript 6 class
 syntax is used.
 
 ```console
@@ -34,26 +34,26 @@ $ node --version
 {{ page.node_version }}
 ```
 
-If this is your first encounter with `npm`, you need to install the 
-[Node.js](https://nodejs.org) JavaScript run-time. The process is 
-straightforward and does not pollute the system locations significantly; 
-there are two Node versions, **LTS** (**Long Term Service**) and 
+If this is your first encounter with `npm`, you need to install the
+[Node.js](https://nodejs.org) JavaScript run-time. The process is
+straightforward and does not pollute the system locations significantly;
+there are two Node versions, **LTS** (**Long Term Service**) and
 **Current**; generally it is safer to use LTS, especially on Windows.
 
 ![The Node Download page]({{ site.baseurl }}/assets/images/2019/nodejs-org.png)
 
-The general procedure is to download the package suitable for your 
+The general procedure is to download the package suitable for your
 platform and install it as usual.
-The result is a binary program called `node` (that can be used to execute 
-JavaScript code from the terminal), and a link called `npm`, pointing to 
-the `npm-cli.js` script, which is part of the Node module that implements 
-the npm functionality (on Windows instead of soft links, 
+The result is a binary program called `node` (that can be used to execute
+JavaScript code from the terminal), and a link called `npm`, pointing to
+the `npm-cli.js` script, which is part of the Node module that implements
+the npm functionality (on Windows instead of soft links,
 `.cmd` stubs are used).
 
-{% include tip.html content="The usual method is to install Node with 
+{% include tip.html content="The usual method is to install Node with
 administrative rights;
 it is also possible to install it in a custom location, using the
-archive distributions. Regardless where it is installed, the `node` 
+archive distributions. Regardless where it is installed, the `node`
 executable must be in the system path." %}
 
 {% capture node_install %}
@@ -64,8 +64,8 @@ executable must be in the system path." %}
 ### Version manager
 
 For advanced users, it is recommended to use a version manager,
-which allows to install multiple versions of Node.js in parallel. 
-For details, see the 
+which allows to install multiple versions of Node.js in parallel.
+For details, see the
 [Using a Version Manager to install Node.js and npm](https://docs.npmjs.com/getting-started/installing-node#using-a-version-manager-to-install-nodejs-and-npm)
 page.
 {% endcapture %}
@@ -79,12 +79,12 @@ page.
 {{ node_install }}
 
 Download the **Windows Installer (.msi)** from the Node.js
-[download](https://nodejs.org/en/download/) page and install it as usual, 
+[download](https://nodejs.org/en/download/) page and install it as usual,
 with administrative rights.
 
 {% include tip.html content="If you are using a 64-bit machine, download the `node-v*-x64.msi` file." %}
 
-The result is a folder like `C:\Program Files\nodejs`, added to the 
+The result is a folder like `C:\Program Files\nodejs`, added to the
 system path since it includes the `node.exe` binary.
 
 ```powershell
@@ -126,17 +126,17 @@ C:\>npm --version
 6.4.1
 ```
 
-This is because on Windows, by default, global node packages are 
-installed in the 
-user home folder, in `%APPDATA%\npm` 
-(like `C:\Users\ilg\AppData\Roaming\npm`); 
+This is because on Windows, by default, global node packages are
+installed in the
+user home folder, in `%APPDATA%\npm`
+(like `C:\Users\ilg\AppData\Roaming\npm`);
 and this path **is not** in the default environment.
 
 ```
 C:\>echo %Path%
 ```
 
-It must be added manually in front of the current path: 
+It must be added manually in front of the current path:
 
 ```
 C:\>set Path=%APPDATA%\npm;%Path%
@@ -148,7 +148,7 @@ To make this setting persistent, also issue the foolloing:
 C:\>setx Path "%APPDATA%\npm;%Path%"
 ```
 
-{% include note.html content="Please note the syntax differences, no equal 
+{% include note.html content="Please note the syntax differences, no equal
 sign and double quotes, specific to `setx` but harmful to `set`." %}
 
 After this, the new version of the program should be visible:
@@ -160,11 +160,11 @@ C:\>npm --version
 
 ### Git
 
-Although not mandatory for using the xPack tools alone, on Windows 
-it is recommended to 
+Although not mandatory for using the xPack tools alone, on Windows
+it is recommended to
 also install the [Git for Windows](https://git-scm.com/download/win) package.
 
-The xPack Core Tools can run either in the Windows `cmd.exe` terminal, 
+The xPack Core Tools can run either in the Windows `cmd.exe` terminal,
 or in the Git shell terminal.
 
 {% endcapture %}
@@ -178,7 +178,7 @@ Download the **macOS Installer (.pkg)** from the Node.js
 with administrative rights.
 
 The result is a binary like `/usr/local/bin/node` and a folder like
-`/usr/local/lib/node_modules` where the modules, including `npm`, 
+`/usr/local/lib/node_modules` where the modules, including `npm`,
 are installed.
 
 ```console
@@ -206,7 +206,7 @@ administrative rights, as described below.
 
 ### Default (with administrative rights)
 
-On macOS, by default, global Node packages are installed in 
+On macOS, by default, global Node packages are installed in
 `/usr/local`, and managing them requires administrative rights.
 
 ```console
@@ -218,7 +218,7 @@ $ sudo npm install --global npm   <-- DO NOT DO THAT
 To avoid some nasty errors while installing packages,
 **the recommended install location** is `${HOME}/Library/npm`.
 
-{% include note.html content="On macOS, by default, `~/Library` is 
+{% include note.html content="On macOS, by default, `~/Library` is
 hidden and does not show in folder selections. See below how to
 make it visible again, or select an alternate location." %}
 
@@ -231,7 +231,7 @@ $ npm config set prefix ~/Library/npm
 
 The new location must also be added in front of the existing PATH, and,
 by all means, in front of `/usr/local/bin`, otherwise the shell will pick
-the previous version. 
+the previous version.
 
 Issue the following commands:
 
@@ -240,7 +240,7 @@ $ PATH="${HOME}/Library/npm/bin:${PATH}"
 $ export PATH
 ```
 
-To make them persistent, edit `~/.profile`, and add them to the end.
+To make them persistent, edit `~/.bash_profile`, and add them to the end.
 
 {% include tip.html content="This is also a good moment to check the
 content of the PATH variable and do a cleanup if necessary." %}
@@ -267,7 +267,7 @@ $ npm --version
 
 ### Hidden folder
 
-On macOS, by default, `~/Library` is hidden and does not show in 
+On macOS, by default, `~/Library` is hidden and does not show in
 folder selections.
 
 To make it visible, use:
@@ -279,7 +279,7 @@ $ xattr -d com.apple.FinderInfo ~/Library
 
 ### Alternate location
 
-If, for any reasons, you are reluctant to un-hide this folder, 
+If, for any reasons, you are reluctant to un-hide this folder,
 an alternate solution is to use `~/opt`, as on GNU/Linux.
 
 ```console
@@ -294,13 +294,13 @@ $ PATH="${HOME}/opt/npm/bin:${PATH}"
 $ export PATH
 ```
 
-To make them persistent, edit `~/.profile`, and add them to the end.
+To make them persistent, edit `~/.bash_profile`, and add them to the end.
 
-{% include important.html content="Double check the `PATH` settings 
+{% include important.html content="Double check the `PATH` settings
 and be sure to remove the previous location." %}
 
-If you install npm packages in `opt`, you would probably also want to 
-install xpm packages in `opt` too. For this, set the environment variables 
+If you install npm packages in `opt`, you would probably also want to
+install xpm packages in `opt` too. For this, set the environment variables
 which define the location where xPacks are installed:
 
 ```console
@@ -308,7 +308,7 @@ $ export XPACKS_REPO_FOLDER="${HOME}/opt/xPacks"
 $ export XPACKS_CACHE_FOLDER="${HOME}/.cache/xPacks"
 ```
 
-To make them persistent, edit `~/.profile`, and add them to the end.
+To make them persistent, edit `~/.bash_profile`, and add them to the end.
 
 {% endcapture %}
 
@@ -316,9 +316,9 @@ To make them persistent, edit `~/.profile`, and add them to the end.
 
 {{ node_install }}
 
-{% include warning.html content="Your distribution may already have a `node` 
+{% include warning.html content="Your distribution may already have a `node`
 binary installed; check it (via `node --version`) and if it is older than LTS,
-remove the distribution binary and install 
+remove the distribution binary and install
 the LTS package from Node.js." %}
 
 For example, on Ubuntu 18 LTS, both Node and npm are very old:
@@ -336,12 +336,26 @@ and, to avoid problems, it is probably better to remove them:
 $ sudo apt remove --yes nodejs npm
 ```
 
-Download the **Linux Binaries (x64)** archive from the Node.js
-[download](https://nodejs.org/en/download/) page; 
+Since there are several steps, as a shortcut, a small script is available
+on [GitHub](https://github.com/xpack/support/raw/master/scripts/reinstall-linux-node.sh).
+Either download and run it with sudo, or copy/paste commands from it.
+
+The script requires an argument, a string with the desired version;
+check the Node.js
+[download](https://nodejs.org/en/download/) page for available versions.
+
+```console
+$ curl --fail -L https://github.com/xpack/support/raw/master/scripts/reinstall-linux-node.sh -o ~/Downloads/reinstall-linux-node.sh
+$ sudo bash ~/Downloads/reinstall-linux-node.sh {{ page.node_version }}
+```
+
+If you prefer the manual approach,
+download the **Linux Binaries (x64)** archive from the Node.js
+[download](https://nodejs.org/en/download/) page;
 the result is a file like `node-{{ page.node_version }}-linux-x64.tar.xz`.
 
 {% include note.html content="Currently the official Node distribution includes
-only a 64-bit GNU/Linux binary. 32-bit binaries may be downloaded from the 
+only a 64-bit GNU/Linux binary. 32-bit binaries may be downloaded from the
 [Node.js Unofficial Builds Project](https://unofficial-builds.nodejs.org).
 However they were not tested and are not guaranteed to work." %}
 
@@ -397,7 +411,7 @@ administrative rights, as described below.
 
 ### Default (with administrative rights)
 
-On GNU/Linux, by default, global Node packages are installed in 
+On GNU/Linux, by default, global Node packages are installed in
 `/usr/local`, and managing them requires administrative rights.
 
 ```console
@@ -418,7 +432,7 @@ $ npm config set prefix ~/opt/npm
 
 The new location must also be added in front of the existing PATH, and,
 by all means, in front of `/usr/local/bin`, otherwise the shell will pick
-the previous version. 
+the previous version.
 
 ```console
 $ PATH="${HOME}/opt/npm/bin:${PATH}"
@@ -430,7 +444,7 @@ To make them persistent, edit `~/.profile`, and add them to the end.
 {% include tip.html content="This is also a good moment to check the
 content of the PATH variable and do a cleanup if necessary." %}
 
-Now it is possible to install npm without `sudo`:
+Now it is possible to install npm **without** `sudo`:
 
 ```console
 $ npm install --global npm@latest
@@ -450,8 +464,9 @@ $ npm --version
 {{ page.npm_version }}
 ```
 
-{% include note.html content="These commands were tested with `bash` on 
-Ubuntu 18 LTS; for other shells they may need small adjustments." %}
+{% include note.html content="These commands were tested with `bash` on
+Ubuntu 18 LTS and Manjaro 18; for other shells they may need small
+adjustments." %}
 
 {% endcapture %}
 
@@ -459,5 +474,5 @@ Ubuntu 18 LTS; for other shells they may need small adjustments." %}
 
 ## Miscellaneous
 
-The official page explaining how to install `npm` in a custom folder is 
+The official page explaining how to install `npm` in a custom folder is
 [Resolving EACCES permissions errors when installing packages globally](https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally).
