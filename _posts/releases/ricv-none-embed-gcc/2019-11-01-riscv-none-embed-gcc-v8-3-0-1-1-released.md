@@ -124,6 +124,17 @@ rv64imafc/lp64f;@march=rv64imafc@mabi=lp64f
 rv64imafdc/lp64d;@march=rv64imafdc@mabi=lp64d
 ```
 
+## Bug fixes
+ß
+- [[#3]](https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/issues/3)
+Due to an omission in the build scripts, the content of the `libgcov`
+library was mostly empty; the script was fixed and now the library has the
+expected content.
+- [[#4]](https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/issues/4)
+Due to a bug in the build scripts, the Windows binaries included two
+copies of the `docs` folder, one in root and one in the `share` folder;
+the script was fixed and now there is only one copy in `share/docs`.
+
 ## Improvements
 
 Compared to the original SiFive version, the **same architecture and API**
