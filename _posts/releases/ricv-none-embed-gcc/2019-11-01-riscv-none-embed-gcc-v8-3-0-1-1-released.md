@@ -1,15 +1,15 @@
 ---
 layout: post
-title:  xPack GNU RISC-V Embedded GCC v8.2.0-3.1 released
+title:  xPack GNU RISC-V Embedded GCC v8.3.0-1.1 released
 
-summary: "Version 8.2.0-3.1 is a new release of the **xPack GNU RISC-V
-Embedded GCC**, following SiFive release from May 2019."
+summary: "Version 8.3.0-1.1 is a new release of the **xPack GNU RISC-V 
+Embedded GCC**, following SiFive release from August 2019."
 
-version: 8.2.0-3.1
+version: 8.3.0-1.1
 npm_subversion: 1
-download_url: https://github.com/xpack-dev-tools/riscv-none-embed-gcc-xpack/releases/tag/v8.2.0-3.1/
+download_url: https://github.com/xpack-dev-tools/riscv-none-embed-gcc-xpack/releases/tag/v8.3.0-1.1/
 
-date:   2019-07-31 03:19:00 +0300
+date:   2019-11-01 21:17:00 +0300
 last_updated: 2019-10-11 15:52:59 +0300
 
 categories:
@@ -29,7 +29,7 @@ The binary files are available from [GitHub Releases]({{ page.download_url }}).
 
 ## Install
 
-The full details of installing the **xPack GNU RISC-V Embedded GCC** on
+The full details of installing the **xPack GNU RISC-V Embedded GCC** on 
 various platforms are presented in the separate
 [Install]({{ site.baseurl }}/riscv-none-embed-gcc/install/) page.
 
@@ -60,26 +60,26 @@ Starting with v8.2.0-2, this distribution closely follows the official
 [Freedom Tools](https://github.com/sifive/freedom-tools) distribution.
 
 This release is based on the
-[v2019.05.0](https://github.com/sifive/freedom-tools/releases/tag/v2019.05.0)
-release, and includes the SiFive extensions (like CLIC interrupts and a
-larger multilib set).
+[v2019.08.0](https://github.com/sifive/freedom-tools/releases/tag/v2019.08.0)
+release, and includes the SiFive extensions (like CLIC interrupts and a an
+even larger multilib set).
 
 The following commits (from [sifive/freedom-tools](https://github.com/sifive/freedom-tools/tree/master/src)) were used:
 
-- the [sifive/riscv-gcc](https://github.com/sifive/riscv-gcc) project,
-branch `sifive-gcc-8.2.0`, commit
-[242abcaff6](https://github.com/sifive/riscv-gcc/tree/242abcaff697d0a1ea12dccc975465e1bfeb8331)
-from from 5 April 2019
 - the [sifive/riscv-binutils-gdb](https://github.com/sifive/riscv-binutils-gdb)
 project, branch `sifive-binutils-2.32`, commit
-[164267155c](https://github.com/sifive/riscv-binutils-gdb/tree/164267155c96f91472a539ca78ac919993bc5b4e)
-from 28 February 2019
-- the [sifive/riscv-newlib](https://github.com/sifive/riscv-newlib) project,
-commit [42c2e3fb9f](https://github.com/sifive/riscv-newlib/tree/42c2e3fb9f557d59b76d1a64bb6fb32707ff4530)
-from 17 November 2018
+[03d23d5](https://github.com/sifive/riscv-binutils-gdb/tree/03d23d58701bdd425c613b0be2d458bcde46912b)
+from 2 September 2019
+- the [sifive/riscv-gcc](https://github.com/sifive/riscv-gcc) project,
+branch `sifive-gcc-8.3.0`, commit
+[e195042](https://github.com/sifive/riscv-gcc/tree/e195042babe2dc30d9fabb88d336d8c8679b3702)
+from from 7 Aug 2019
+- the [sifive/riscv-newlib](https://github.com/sifive/riscv-newlib) project, the `master` branch,
+commit [0d24a86](https://github.com/sifive/riscv-newlib/tree/0d24a86822a5ee73d6a6aa69e2a0118aa1e35204)
+from 9 July 2019
 
 GDB was upstreamed and does not require SiFive specific patches,
-so the current build uses
+so the current build uses 
 `git://sourceware.org/git/binutils-gdb.git`, the `9b40759` commit from
 28 Feb 2019.
 
@@ -91,20 +91,33 @@ The supported libraries are:
 $ riscv-none-embed-gcc -print-multi-lib
 .;
 rv32e/ilp32e;@march=rv32e@mabi=ilp32e
+rv32ea/ilp32e;@march=rv32ea@mabi=ilp32e
 rv32em/ilp32e;@march=rv32em@mabi=ilp32e
 rv32eac/ilp32e;@march=rv32eac@mabi=ilp32e
 rv32emac/ilp32e;@march=rv32emac@mabi=ilp32e
 rv32i/ilp32;@march=rv32i@mabi=ilp32
+rv32ia/ilp32;@march=rv32ia@mabi=ilp32
 rv32im/ilp32;@march=rv32im@mabi=ilp32
-rv32imf/ilp32f;@march=rv32imf@mabi=ilp32f
+rv32if/ilp32f;@march=rv32if@mabi=ilp32f
+rv32ifd/ilp32d;@march=rv32ifd@mabi=ilp32d
+rv32iaf/ilp32f;@march=rv32iaf@mabi=ilp32f
+rv32iafd/ilp32d;@march=rv32iafd@mabi=ilp32d
 rv32imaf/ilp32f;@march=rv32imaf@mabi=ilp32f
+rv32imf/ilp32f;@march=rv32imf@mabi=ilp32f
+rv32imfd/ilp32d;@march=rv32imfd@mabi=ilp32d
 rv32iac/ilp32;@march=rv32iac@mabi=ilp32
 rv32imac/ilp32;@march=rv32imac@mabi=ilp32
 rv32imafc/ilp32f;@march=rv32imafc@mabi=ilp32f
 rv32imafdc/ilp32d;@march=rv32imafdc@mabi=ilp32d
 rv64i/lp64;@march=rv64i@mabi=lp64
+rv64ia/lp64;@march=rv64ia@mabi=lp64
 rv64im/lp64;@march=rv64im@mabi=lp64
+rv64if/lp64f;@march=rv64if@mabi=lp64f
+rv64ifd/lp64d;@march=rv64ifd@mabi=lp64d
+rv64iaf/lp64f;@march=rv64iaf@mabi=lp64f
+rv64iafd/lp64d;@march=rv64iafd@mabi=lp64d
 rv64imf/lp64f;@march=rv64imf@mabi=lp64f
+rv64imaf/lp64f;@march=rv64imaf@mabi=lp64f
 rv64iac/lp64;@march=rv64iac@mabi=lp64
 rv64imac/lp64;@march=rv64imac@mabi=lp64
 rv64imafc/lp64f;@march=rv64imafc@mabi=lp64f
@@ -121,6 +134,7 @@ options are supported, and there are minimal functional changes
   instructions that fail in bare metal environments
 - `march=rv32imaf/mabi=ilp32f` was added to the list of multilibs
 - the standard documentation, in PDF and HTML, is included
+- experimental support for Pyhton in GDB was added
 
 ## newlib-nano
 
@@ -138,14 +152,37 @@ time to provide empty implementations for the POSIX system calls.
 The libraries are compiled with `-O2 -mcmodel=medany`. The nano version is
 compiled with `-Os -mcmodel=medany`.
 
-{% include important.html content="It is mandatory for the applications to
+{% include important.html content="It is mandatory for the applications to 
 be compiled with
 `-mcmodel=medany`, otherwise the link will fail." %}
 
 ## Known problems
 
-- support for Python scripting is experimental and `riscv-none-embed-gdb-py`
-does not start properly onsome systems.
+- the `riscv-none-embed-gdb-py` fails to start on Ubuntu (and possibly
+other Debian) systems, it fails with a message like:
+```
+$ PYTHONHOME=/usr PYTHONPATH=/usr/lib/python2.7 riscv-none-embed-gdb-py --version
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site.py", line 554, in <module>
+    main()
+  File "/usr/lib/python2.7/site.py", line 536, in main
+    known_paths = addusersitepackages(known_paths)
+  File "/usr/lib/python2.7/site.py", line 272, in addusersitepackages
+    user_site = getusersitepackages()
+  File "/usr/lib/python2.7/site.py", line 247, in getusersitepackages
+    user_base = getuserbase() # this will also set USER_BASE
+  File "/usr/lib/python2.7/site.py", line 237, in getuserbase
+    USER_BASE = get_config_var('userbase')
+  File "/usr/lib/python2.7/sysconfig.py", line 587, in get_config_var
+    return get_config_vars().get(name)
+  File "/usr/lib/python2.7/sysconfig.py", line 533, in get_config_vars
+    _init_posix(_CONFIG_VARS)
+  File "/usr/lib/python2.7/sysconfig.py", line 417, in _init_posix
+    from _sysconfigdata import build_time_vars
+  File "/usr/lib/python2.7/_sysconfigdata.py", line 6, in <module>
+    from _sysconfigdata_nd import *
+ImportError: No module named _sysconfigdata_nd
+```
 
 ## Documentation
 
@@ -155,7 +192,7 @@ The original PDF documentation is available in the `share/doc` folder.
 
 Binaries for **Windows**, **macOS** and **GNU/Linux** are provided.
 
-The binaries were built using
+The binaries were built using 
 [xPack Build Box (XBB)](https://github.com/xpack/xpack-build-box), a set
 of build environments based on slightly older distributions, that should be
 compatible with most recent systems.
@@ -164,14 +201,14 @@ compatible with most recent systems.
   Docker container
 - Windows: all binaries were built with mingw-w64 GCC 7.4, running in a
   CentOS 6 Docker container
-- macOS: most binaries were built with GCC 7.4, running in a separate
+- macOS: most binaries were built with GCC 7.4, running in a separate  
   folder on macOS 10.10.5; GDB cannot be compiled with GCC, so Apple
   clang was used.
 
 ## Tests
 
 The binaries were testes on Windows 10 Pro 32/64-bit, Ubuntu 18 LTS 64-bit,
-Xubuntu 18 LTS 32-bit and macOS 10.13.
+Xubuntu 18 LTS 32-bit and macOS 10.14.
 
 The tests consist in building and debugging some
 [simple Eclipse projects](https://github.com/xpack-dev-tools/riscv-none-embed-gcc-xpack/tree/xpack/tests/eclipse)
@@ -186,20 +223,20 @@ executed again.
 The SHA-256 hashes for the files are:
 
 ```
-48ece50b7272a8e49e56e37f54f9962f93dce4ca44f1bb4c8113fab0230fbdf1
-xpack-riscv-none-embed-gcc-8.2.0-3.1-darwin-x64.tgz
+532f719c11f7311a0103eac6ddd7dd012716a2c3030dd1ee7e64374b1af41d34
+xpack-riscv-none-embed-gcc-8.3.0-1.1-darwin-x64.tgz
 
-2e856ee33ef544a2405183366cdf299da2cca697e8cc57627dfaad8ab4460a99
-xpack-riscv-none-embed-gcc-8.2.0-3.1-linux-x32.tgz
+c40d8e74a3f87839131287ecd68be2e691c84af0b75d684c1e47ab60687ff987
+xpack-riscv-none-embed-gcc-8.3.0-1.1-linux-x32.tgz
 
-3d40fab50ebad8424ff85748f25d2eaee50f86a5d5222abd7a45a2e490f1e4f5
-xpack-riscv-none-embed-gcc-8.2.0-3.1-linux-x64.tgz
+7b95d397a2bd319892f5c930757f7b3bc47acac633dafcf055b0901172513c00
+xpack-riscv-none-embed-gcc-8.3.0-1.1-linux-x64.tgz
 
-78bcd52f7b404133de3b2f9568e7101c1de747f98db3a7b0d6251b75a1754867
-xpack-riscv-none-embed-gcc-8.2.0-3.1-win32-x32.zip
+5d608a0438c5f5c4a2c8b6d4eb13499a60a17618da04fb20972eb0f4965ed4bd
+xpack-riscv-none-embed-gcc-8.3.0-1.1-win32-x32.zip
 
-98b60720607f1400081806d60d70796b30399f8b426e2c790a4abb0bffb9e5ec
-xpack-riscv-none-embed-gcc-8.2.0-3.1-win32-x64.zip
+10443f00627473f08c44fd00c8011b17c67953d1eb4f1609fb00e5653165d5d3
+xpack-riscv-none-embed-gcc-8.3.0-1.1-win32-x64.zip
 ```
 
 ## Download analytics
@@ -212,6 +249,6 @@ xpack-riscv-none-embed-gcc-8.2.0-3.1-win32-x64.zip
 - npmjs.com [@xpack-dev-tools/riscv-none-embed-gcc](https://www.npmjs.com/package/@xpack-dev-tools/riscv-none-embed-gcc)
   - all releases [![npm](https://img.shields.io/npm/dt/@xpack-dev-tools/riscv-none-embed-gcc.svg)](https://www.npmjs.com/package/@xpack-dev-tools/riscv-none-embed-gcc/)
 
-Credit to [Shields IO](https://shields.io) for the badges and to
-[Somsubhra/github-release-stats](https://github.com/Somsubhra/github-release-stats)
+Credit to [Shields IO](https://shields.io) for the badges and to 
+[Somsubhra/github-release-stats](https://github.com/Somsubhra/github-release-stats) 
 for the individual file counters.
