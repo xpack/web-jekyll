@@ -1,13 +1,13 @@
 ---
-title:  xPack GNU Arm Embedded GCC v8.3.1-1.2 released
+title:  xPack GNU Arm Embedded GCC v8.3.1-1.3 released
 
-summary: "Version 8.3.1-1.2 is  a maintenance release of xPack GNU Arm Embedded GCC to fix the **libgcov** build bug."
+summary: "Version 8.3.1-1.3 is  a maintenance release of xPack GNU Arm Embedded GCC to fix the **libgcov** build bug."
 
-version: 8.3.1-1.2
+version: 8.3.1-1.3
 npm_subversion: 1
-download_url: https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases/v8.3.1-1.2/
+download_url: https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases/v8.3.1-1.3/
 
-date:   2019-10-11 15:31:00 +0300
+date:   2019-11-02 17:34:00 +0200
 last_updated: 2019-11-01 21:46:57 +0200
 
 categories:
@@ -91,6 +91,19 @@ thumb/v8-m.main+dp/softfp;@mthumb@march=armv8-m.main+fp.dp@mfloat-abi=softfp
 thumb/v8-m.main+dp/hard;@mthumb@march=armv8-m.main+fp.dp@mfloat-abi=hard
 ```
 
+## Bug fixes
+
+- [[#4]](https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/issues/4)
+Due to a bug in the build scripts, the Windows `gdb-py` had a hard-wired
+dependency to Python 2.7.13 and failed to start on other versions; fixed;
+- [[#3]](https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/issues/3)
+Due to a bug in the build scripts, the macOS `gdb-py` had a wrong
+dependency and failed to start; fixed;
+- [[#2]](https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/issues/2)
+Due to a bug in the build scripts, the Windows binaries included two
+copies of the `docs` folder, one in root and one in the `share` folder;
+the script was fixed and now there is only one copy in `share/docs`.
+
 ## Changes
 
 There should be no functional changes.
@@ -126,7 +139,32 @@ and macOS; not yet available on Windows
 
 ## Known problems
 
-- none
+- [[#5]](https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/issues/5)
+the `arm-none-eabi-gdb-py` fails to start on Ubuntu (and possibly
+other Debian) systems, it fails with a message like:
+```console
+$ PYTHONHOME=/usr PYTHONPATH=/usr/lib/python2.7 riscv-none-embed-gdb-py --version
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site.py", line 554, in <module>
+    main()
+  File "/usr/lib/python2.7/site.py", line 536, in main
+    known_paths = addusersitepackages(known_paths)
+  File "/usr/lib/python2.7/site.py", line 272, in addusersitepackages
+    user_site = getusersitepackages()
+  File "/usr/lib/python2.7/site.py", line 247, in getusersitepackages
+    user_base = getuserbase() # this will also set USER_BASE
+  File "/usr/lib/python2.7/site.py", line 237, in getuserbase
+    USER_BASE = get_config_var('userbase')
+  File "/usr/lib/python2.7/sysconfig.py", line 587, in get_config_var
+    return get_config_vars().get(name)
+  File "/usr/lib/python2.7/sysconfig.py", line 533, in get_config_vars
+    _init_posix(_CONFIG_VARS)
+  File "/usr/lib/python2.7/sysconfig.py", line 417, in _init_posix
+    from _sysconfigdata import build_time_vars
+  File "/usr/lib/python2.7/_sysconfigdata.py", line 6, in <module>
+    from _sysconfigdata_nd import *
+ImportError: No module named _sysconfigdata_nd
+```
 
 ## Documentation
 
@@ -167,20 +205,20 @@ executed again.
 The SHA-256 hashes for the files are:
 
 ```
-f0192ac5ec9bb5ac0c2e8590c110b0265e81ee92f8912961827cccc693827d13
-xpack-arm-none-eabi-gcc-8.3.1-1.2-darwin-x64.tgz
+f418c6d30ba7ad8cc5f8599a46b369dadf53e708574bf496e015780dd65f614d
+xpack-arm-none-eabi-gcc-8.3.1-1.3-darwin-x64.tgz
 
-d49ed1e2eb40c0ec73c7ea3f38216da0445d420bdfd25fef2bffaed3fe75d845
-xpack-arm-none-eabi-gcc-8.3.1-1.2-linux-x32.tgz
+cf033653934df5b5cf26f8d23415e6593120a4a2bb23f9227f190e5648b668b3
+xpack-arm-none-eabi-gcc-8.3.1-1.3-linux-x32.tgz
 
-a5e76ad1b89a1cf0ef5be5be5e8de862452f388e041d59dede237c5b27a15c5b
-xpack-arm-none-eabi-gcc-8.3.1-1.2-linux-x64.tgz
+b50cdb1cf8146aa441db68dd41fb6eb052ea2992fe94bcab54d27930e63b2af7
+xpack-arm-none-eabi-gcc-8.3.1-1.3-linux-x64.tgz
 
-d6eab345b254b331036856416da1591f4f8bd633a2718b72d93324468240aadf
-xpack-arm-none-eabi-gcc-8.3.1-1.2-win32-x32.zip
+28caa9584ffb53a946551ac60b6fe1c35a2b356b2f9deb823448f2a94443ee3e
+xpack-arm-none-eabi-gcc-8.3.1-1.3-win32-x32.zip
 
-5d89caf249c7f048b6549bf1a6f88d2736aacfa5e23eaa16a03fd32ab87ffbdf
-xpack-arm-none-eabi-gcc-8.3.1-1.2-win32-x64.zip
+fbc999128bfbf0daac36fbbc8d099db9688cb2aee89632b290ad8053d6997f97
+xpack-arm-none-eabi-gcc-8.3.1-1.3-win32-x64.zip
 ```
 
 ## Download analytics

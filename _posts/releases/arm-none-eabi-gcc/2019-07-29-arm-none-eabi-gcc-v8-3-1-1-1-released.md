@@ -113,8 +113,9 @@ The issue was reported to Arm as bug [1838049](https://bugs.launchpad.net/gcc-ar
 
 ### Python 3
 
-Partial support for Python 3 was added to GDB for GNU/Linux and macOS;
-not yet available on Windows ([24469](https://sourceware.org/bugzilla/show_bug.cgi?id=24469)).
+Partial experimental support for Python 3 was added to GDB for GNU/Linux
+and macOS; not yet available on Windows
+([24469](https://sourceware.org/bugzilla/show_bug.cgi?id=24469)).
 
 ## Known problems
 
