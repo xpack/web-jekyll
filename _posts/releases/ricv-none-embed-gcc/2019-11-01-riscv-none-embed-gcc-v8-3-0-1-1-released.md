@@ -10,7 +10,7 @@ npm_subversion: 1
 download_url: https://github.com/xpack-dev-tools/riscv-none-embed-gcc-xpack/releases/tag/v8.3.0-1.1/
 
 date:   2019-11-01 21:17:00 +0300
-last_updated: 2019-11-01 21:46:57 +0200
+last_updated: 2019-11-02 17:59:29 +0200
 
 categories:
   - releases
