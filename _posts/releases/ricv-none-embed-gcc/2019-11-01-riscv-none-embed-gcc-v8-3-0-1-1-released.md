@@ -125,12 +125,12 @@ rv64imafdc/lp64d;@march=rv64imafdc@mabi=lp64d
 ```
 
 ## Bug fixes
-ß
-- [[#3]](https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/issues/3)
+
+- [[#3]](https://github.com/xpack-dev-tools/riscv-none-embed-gcc-xpack/issues/3)
 Due to an omission in the build scripts, the content of the `libgcov`
 library was mostly empty; the script was fixed and now the library has the
 expected content.
-- [[#4]](https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/issues/4)
+- [[#4]](https://github.com/xpack-dev-tools/riscv-none-embed-gcc-xpack/issues/4)
 Due to a bug in the build scripts, the Windows binaries included two
 copies of the `docs` folder, one in root and one in the `share` folder;
 the script was fixed and now there is only one copy in `share/docs`.
@@ -171,7 +171,7 @@ be compiled with
 
 - the `riscv-none-embed-gdb-py` fails to start on Ubuntu (and possibly
 other Debian) systems, it fails with a message like:
-```
+```console
 $ PYTHONHOME=/usr PYTHONPATH=/usr/lib/python2.7 riscv-none-embed-gdb-py --version
 Traceback (most recent call last):
   File "/usr/lib/python2.7/site.py", line 554, in <module>
