@@ -169,7 +169,8 @@ be compiled with
 
 ## Known problems
 
-- the `riscv-none-embed-gdb-py` fails to start on Ubuntu (and possibly
+- [[#5]](https://github.com/xpack-dev-tools/riscv-none-embed-gcc-xpack/issues/5)
+the `riscv-none-embed-gdb-py` fails to start on Ubuntu (and possibly
 other Debian) systems, it fails with a message like:
 ```console
 $ PYTHONHOME=/usr PYTHONPATH=/usr/lib/python2.7 riscv-none-embed-gdb-py --version
@@ -194,6 +195,7 @@ Traceback (most recent call last):
     from _sysconfigdata_nd import *
 ImportError: No module named _sysconfigdata_nd
 ```
+Any help to diagnose this problem will be highly appreciated.
 
 ## Documentation
 
