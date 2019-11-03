@@ -103,17 +103,14 @@ dependency and failed to start; fixed;
 Due to a bug in the build scripts, the Windows binaries included two
 copies of the `docs` folder, one in root and one in the `share` folder;
 the script was fixed and now there is only one copy in `share/docs`.
+- [[#1]](https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/issues/1)
+Due to an omission in the build scripts, the content of the `libgcov`
+library was mostly empty; the script was fixed and now the library has the
+expected content.
 
 ## Changes
 
 There should be no functional changes.
-
-### `libgcov`
-
-[[#1]](https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/issues/1)
-Due to an omission in the build scripts, the content of the `libgcov`
-library was mostly empty; the script was fixed and now the library has the
-expected content.
 
 ### `lib/bdf-plugins`
 
