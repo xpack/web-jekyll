@@ -9,7 +9,7 @@ keywords:
   - xpack
   - install
 
-node_version: 10.16.0
+node_version: 12.13.0
 npm_version: 6.11.2
 
 date: 2017-10-09 14:14:00 +0300
@@ -56,18 +56,23 @@ it is also possible to install it in a custom location, using the
 archive distributions. Regardless where it is installed, the `node`
 executable must be in the system path." %}
 
-{% capture node_install %}
-## `node` install
-{% endcapture %}
-
 {% capture version_manager %}
-### Version manager
+## `nvm` install (node version manager)
 
-For advanced users, it is recommended to use a version manager,
-which allows to install multiple versions of Node.js in parallel.
+For a greater flexibility, it is recommended to use a version manager,
+which not only simplifies the intall procedure, but also allows to
+install multiple versions of Node.js in parallel.
 For details, see the
 [Using a Version Manager to install Node.js and npm](https://docs.npmjs.com/getting-started/installing-node#using-a-version-manager-to-install-nodejs-and-npm)
 page.
+{% endcapture %}
+
+{% capture manual_install %}
+## Manual install
+{% endcapture %}
+
+{% capture node_install %}
+### `node` install
 {% endcapture %}
 
 {% capture npm_update %}
@@ -75,6 +80,8 @@ page.
 {% endcapture %}
 
 {% capture windows %}
+
+{{ manual_install }}
 
 {{ node_install }}
 
@@ -93,8 +100,6 @@ C:\Program Files\nodejs\node.exe
 C:\>node --version
 v{{ page.node_version }}
 ```
-
-{{ version_manager }}
 
 {{ npm_update }}
 
@@ -158,7 +163,7 @@ C:\>npm --version
 {{ page.npm_version }}
 ```
 
-### Git
+## Git
 
 Although not mandatory for using the xPack tools alone, on Windows
 it is recommended to
@@ -171,298 +176,258 @@ or in the Git shell terminal.
 
 {% capture macos %}
 
-{{ node_install }}
-
-Download the **macOS Installer (.pkg)** from the Node.js
-[download](https://nodejs.org/en/download/) page and install it as usual,
-with administrative rights.
-
-The result is a binary like `/usr/local/bin/node` and a folder like
-`/usr/local/lib/node_modules` where the modules, including `npm`,
-are installed.
-
-```console
-$ which node
-/usr/local/bin/node
-$ node --version
-v{{ page.node_version }}
-```
-
 {{ version_manager }}
 
-{{ npm_update }}
-
-A version of `npm`, usually a bit older, comes packed with `node`.
+In short, [nvm](https://github.com/nvm-sh/nvm) changes the install
+location to `~/.nvm` and allows to install multiple instances of node
+in the `~/.nvm/versions/node` folder.
 
 ```console
+$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+```
+
+If you have a previous version of npm installed with a local prefix,
+remove it:
+
+```console
+$ sudo rm -rf /usr/local/lib/node-modules /usr/local/bin/node /usr/local/bin/npm /usr/local/bin/npm
+$ rm -rf ~/Library/npm ~/opt/npm
+$ npm config delete prefix
+```
+
+Also remove `${HOME}/Library/npm/bin` or `${HOME}/opt/npm/bin` from the PATH.
+
+To install the latest node, source `.bash_profile` or open a new terminal
+(to make use of the new environment variables) and issue the following:
+
+```console
+$ source ~/.bash_profile
+
+$ nvm install --lts node
+Downloading and installing node v{{ page.node_version }}...
+Downloading https://nodejs.org/dist/v12.13.0/node-v12.13.0-darwin-x64.tar.gz...
+######################################################################## 100.0%
+Computing checksum with shasum -a 256
+Checksums matched!
+Creating default alias: default -> lts/* (-> v12.13.0)
+
+$ nvm ls
+->     v12.13.0
+         system
+default -> lts/* (-> v12.13.0)
+node -> stable (-> v12.13.0) (default)
+stable -> 12.13 (-> v12.13.0) (default)
+iojs -> N/A (default)
+unstable -> N/A (default)
+lts/* -> lts/erbium (-> v12.13.0)
+lts/argon -> v4.9.1 (-> N/A)
+lts/boron -> v6.17.1 (-> N/A)
+lts/carbon -> v8.16.2 (-> N/A)
+lts/dubnium -> v10.17.0 (-> N/A)
+lts/erbium -> v12.13.0
+
+$ nvm use node
+Now using node v12.13.0 (npm v6.12.1)
+
+$ node --version
+v12.13.0
+
+$ nvm install-latest-npm
+Attempting to upgrade to the latest working version of npm...
+* Installing latest `npm`; if this does not work on your node version, please report a bug!
+/Users/ilg/.nvm/versions/node/v12.13.0/bin/npm -> /Users/ilg/.nvm/versions/node/v12.13.0/lib/node_modules/npm/bin/npm-cli.js
+/Users/ilg/.nvm/versions/node/v12.13.0/bin/npx -> /Users/ilg/.nvm/versions/node/v12.13.0/lib/node_modules/npm/bin/npx-cli.js
++ npm@6.13.0
+added 2 packages from 2 contributors, removed 2 packages and updated 15 packages in 3.293s
+* npm upgraded to: v6.13.0
+
 $ which npm
-/usr/local/bin/npm
-npm --version
-6.9.0
+/Users/ilg/.nvm/versions/node/v12.13.0/bin/npm
 ```
 
-It is recommended to update it to the latest version, preferably without
-administrative rights, as described below.
+{% include note.html content="Please note that this will install the latest
+**LTS** version; to install the very latest **Current** version, remove
+the `--lts` option." %}
 
-### Default (with administrative rights)
-
-On macOS, by default, global Node packages are installed in
-`/usr/local`, and managing them requires administrative rights.
+To explicitly install a previous version and to switch to it:
 
 ```console
-$ sudo npm install --global npm   <-- DO NOT DO THAT
-```
+$ nvm install 10
+Downloading and installing node v10.17.0...
+Downloading https://nodejs.org/dist/v10.17.0/node-v10.17.0-darwin-x64.tar.gz...
+######################################################################## 100.0%
+Computing checksum with shasum -a 256
+Checksums matched!
+Now using node v10.17.0 (npm v6.11.3)
 
-### Recommended (without administrative rights)
+$ nvm ls
+nvm ls
+->     v10.17.0
+       v12.13.0
+         system
+default -> lts/* (-> v12.13.0)
+node -> stable (-> v12.13.0) (default)
+stable -> 12.13 (-> v12.13.0) (default)
+iojs -> N/A (default)
+unstable -> N/A (default)
+lts/* -> lts/erbium (-> v12.13.0)
+lts/argon -> v4.9.1 (-> N/A)
+lts/boron -> v6.17.1 (-> N/A)
+lts/carbon -> v8.16.2 (-> N/A)
+lts/dubnium -> v10.17.0
+lts/erbium -> v12.13.0
 
-To avoid some nasty errors while installing packages,
-**the recommended install location** is `${HOME}/Library/npm`.
+$ nvm use 10
+Now using node v10.17.0 (npm v6.11.3)
 
-{% include note.html content="On macOS, by default, `~/Library` is
-hidden and does not show in folder selections. See below how to
-make it visible again, or select an alternate location." %}
+$ node --version
+v10.17.0
 
-The commands to configure the custom location are:
+$ nvm install-latest-npm
+Attempting to upgrade to the latest working version of npm...
+* Installing latest `npm`; if this does not work on your node version, please report a bug!
+/Users/ilg/.nvm/versions/node/v10.17.0/bin/npm -> /Users/ilg/.nvm/versions/node/v10.17.0/lib/node_modules/npm/bin/npm-cli.js
+/Users/ilg/.nvm/versions/node/v10.17.0/bin/npx -> /Users/ilg/.nvm/versions/node/v10.17.0/lib/node_modules/npm/bin/npx-cli.js
++ npm@6.13.0
+added 3 packages from 2 contributors, removed 3 packages and updated 20 packages in 3.081s
+* npm upgraded to: v6.13.0
 
-```console
-$ mkdir -p ~/Library/npm
-$ npm config set prefix ~/Library/npm
-```
-
-The new location must also be added in front of the existing PATH, and,
-by all means, in front of `/usr/local/bin`, otherwise the shell will pick
-the previous version.
-
-Issue the following commands:
-
-```console
-$ PATH="${HOME}/Library/npm/bin:${PATH}"
-$ export PATH
-```
-
-To make them persistent, edit `~/.bash_profile`, and add them to the end.
-
-{% include tip.html content="This is also a good moment to check the
-content of the PATH variable and do a cleanup if necessary." %}
-
-With the environment properly set, the command to re-install `npm` is:
-
-```console
-$ npm install --global npm@latest
-/Users/ilg/Library/npm/bin/npx -> /Users/ilg/Library/npm/lib/node_modules/npm/bin/npx-cli.js
-/Users/ilg/Library/npm/bin/npm -> /Users/ilg/Library/npm/lib/node_modules/npm/bin/npm-cli.js
-+ npm@{{ page.npm_version }}
-added 14 packages from 10 contributors, removed 5 packages and updated 17 packages in 10.446s
-```
-
-To check if the environment is set correctly :
-
-```console
-$ hash -r
 $ which npm
-/Users/ilg/Library/npm/bin/npm
-$ npm --version
-{{ page.npm_version }}
+/Users/ilg/.nvm/versions/node/v10.17.0/bin/npm
 ```
 
-### Hidden folder
-
-On macOS, by default, `~/Library` is hidden and does not show in
-folder selections.
-
-To make it visible, use:
-
-```console
-$ /usr/bin/chflags nohidden ~/Library
-$ xattr -d com.apple.FinderInfo ~/Library
-```
-
-### Alternate location
-
-If, for any reasons, you are reluctant to un-hide this folder,
-an alternate solution is to use `~/opt`, as on GNU/Linux.
-
-```console
-$ mkdir -p ~/opt/npm
-$ npm config set prefix ~/opt/npm
-```
-
-Issue the following commands:
-
-```console
-$ PATH="${HOME}/opt/npm/bin:${PATH}"
-$ export PATH
-```
-
-To make them persistent, edit `~/.bash_profile`, and add them to the end.
-
-{% include important.html content="Double check the `PATH` settings
-and be sure to remove the previous location." %}
-
-If you install npm packages in `opt`, you would probably also want to
-install xpm packages in `opt` too. For this, set the environment variables
-which define the location where xPacks are installed:
-
-```console
-$ export XPACKS_REPO_FOLDER="${HOME}/opt/xPacks"
-$ export XPACKS_CACHE_FOLDER="${HOME}/.cache/xPacks"
-```
-
-To make them persistent, edit `~/.bash_profile`, and add them to the end.
+At any time, to switch between any of the installed versions,
+use `nvm use <version>`.
 
 {% endcapture %}
 
 {% capture linux %}
 
-{{ node_install }}
-
-{% include warning.html content="Your distribution may already have a `node`
-binary installed; check it (via `node --version`) and if it is older than LTS,
-remove the distribution binary and install
-the LTS package from Node.js." %}
-
-For example, on Ubuntu 18 LTS, both Node and npm are very old:
-
-```console
-$ node --version
-v8.10.0
-$ npm --version
-3.5.2
-```
-
-and, to avoid problems, it is probably better to remove them:
-
-```console
-$ sudo apt remove --yes nodejs npm
-```
-
-Since there are several steps, as a shortcut, a small script is available
-on [GitHub](https://github.com/xpack/support/raw/master/scripts/reinstall-linux-node.sh).
-Either download and run it with sudo, or copy/paste commands from it.
-
-The script requires an argument, a string with the desired version;
-check the Node.js
-[download](https://nodejs.org/en/download/) page for available versions.
-
-```console
-$ curl --fail -L https://github.com/xpack/support/raw/master/scripts/reinstall-linux-node.sh -o ~/Downloads/reinstall-linux-node.sh
-$ bash ~/Downloads/reinstall-linux-node.sh {{ page.node_version }}
-```
-
-If you prefer the manual approach,
-download the **Linux Binaries (x64)** archive from the Node.js
-[download](https://nodejs.org/en/download/) page;
-the result is a file like `node-v{{ page.node_version }}-linux-x64.tar.xz`.
-
-{% include note.html content="Currently the official Node distribution includes
-only a 64-bit GNU/Linux binary. 32-bit binaries may be downloaded from the
-[Node.js Unofficial Builds Project](https://unofficial-builds.nodejs.org).
-However they were not tested and are not guaranteed to work." %}
-
-Extract the content of the archive in `/usr/local/lib/nodejs`:
-
-```console
-$ sudo mkdir -p /usr/local/lib/nodejs
-$ sudo tar -xJvf ~/Downloads/node-v{{ page.node_version }}-linux-x64.tar.xz -C /usr/local/lib/nodejs
-```
-
-and, for easy access, create soft links to the executables in `/usr/local/bin`:
-
-```console
-$ sudo ln -s /usr/local/lib/nodejs/node-v{{ page.node_version }}-linux-x64/bin/node /usr/local/bin/node
-$ sudo ln -s /usr/local/lib/nodejs/node-v{{ page.node_version }}-linux-x64/bin/npm /usr/local/bin/npm
-$ sudo ln -s /usr/local/lib/nodejs/node-v{{ page.node_version }}-linux-x64/bin/npx /usr/local/bin/npx
-```
-
-This location requires the `/usr/local/bin` to be
-in the search `PATH`. If it is not, add it in front of the existing path:
-
-```console
-$ PATH="/usr/local/bin:${PATH}"
-$ export PATH
-```
-
-To make them persistent, edit `~/.profile`, and add them to the end.
-
-After this, the new Node should be available:
-
-```console
-$ which node
-/usr/local/bin/node
-$ node --version
-v{{ page.node_version }}
-```
-
 {{ version_manager }}
 
-{{ npm_update }}
+In short, [nvm](https://github.com/nvm-sh/nvm) changes the install
+location to `C:\Users\<user>\AppData\Roaming\npm` and allows to install 
+multiple instances of node
+in the `~/.nvm/versions/node` folder.
 
-A version of `npm`, usually a bit older, comes packed with `node`.
+Download the 
+https://github.com/coreybutler/nvm-windows/releases
 
 ```console
+$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+```
+
+If you have a previous version of npm installed with a local prefix,
+remove it:
+
+```console
+$ sudo rm -rf /usr/local/lib/nodejs
+$ rm -rf ~/opt/npm
+$ npm config delete prefix
+```
+
+Also remove `${HOME}/opt/npm/bin` from the PATH.
+
+To install the latest node, source `.bashrc` or open a new terminal
+(to make use of the new environment variables) and issue the following:
+
+```console
+$ source ~/.bashrc
+
+$ npm config delete prefix
+$ nvm install --lts node
+Downloading and installing node v12.13.0...
+Downloading https://nodejs.org/dist/v12.13.0/node-v12.13.0-linux-x64.tar.xz...
+####################################################################################################################### 100.0%
+Computing checksum with sha256sum
+Checksums matched!
+Creating default alias: default -> lts/* (-> v12.13.0)
+
+$ nvm ls
+->     v12.13.0
+         system
+default -> lts/* (-> v12.13.0)
+node -> stable (-> v12.13.0) (default)
+stable -> 12.13 (-> v12.13.0) (default)
+iojs -> N/A (default)
+unstable -> N/A (default)
+lts/* -> lts/erbium (-> v12.13.0)
+lts/argon -> v4.9.1 (-> N/A)
+lts/boron -> v6.17.1 (-> N/A)
+lts/carbon -> v8.16.2 (-> N/A)
+lts/dubnium -> v10.17.0 (-> N/A)
+lts/erbium -> v12.13.0
+
+$ nvm use node
+Now using node v12.13.0 (npm v6.12.0)
+
+$ node --version
+v12.13.0
+
+$ nvm install-latest-npm
+Attempting to upgrade to the latest working version of npm...
+* Installing latest `npm`; if this does not work on your node version, please report a bug!
+/home/ilg/.nvm/versions/node/v12.13.0/bin/npm -> /home/ilg/.nvm/versions/node/v12.13.0/lib/node_modules/npm/bin/npm-cli.js
+/home/ilg/.nvm/versions/node/v12.13.0/bin/npx -> /home/ilg/.nvm/versions/node/v12.13.0/lib/node_modules/npm/bin/npx-cli.js
++ npm@6.13.0
+added 2 packages from 2 contributors, removed 2 packages and updated 15 packages in 8.68s
+* npm upgraded to: v6.13.0
+
 $ which npm
-/usr/local/bin/npm
-$ npm --version
-6.7.0
+/home/ilg/.nvm/versions/node/v12.13.0/bin/npm
 ```
 
-It is recommended to update it to the latest version, preferably without
-administrative rights, as described below.
+{% include note.html content="Please note that this will install the latest
+**LTS** version; to install the very latest **Current** version, remove
+the `--lts` option." %}
 
-### Default (with administrative rights)
-
-On GNU/Linux, by default, global Node packages are installed in
-`/usr/local`, and managing them requires administrative rights.
+To explicitly install a previous version and to switch to it:
 
 ```console
-$ sudo npm install --global npm   <-- DO NOT DO THAT
-```
+$ nvm install 10
+Downloading https://nodejs.org/dist/v10.17.0/node-v10.17.0-linux-x64.tar.xz...
+####################################################################################################################### 100.0%
+Computing checksum with sha256sum
+Checksums matched!
+Now using node v10.17.0 (npm v6.11.3)
 
-### Recommended (without administrative rights)
+$ nvm ls
+->     v10.17.0
+       v12.13.0
+         system
+default -> lts/* (-> v12.13.0)
+node -> stable (-> v12.13.0) (default)
+stable -> 12.13 (-> v12.13.0) (default)
+iojs -> N/A (default)
+unstable -> N/A (default)
+lts/* -> lts/erbium (-> v12.13.0)
+lts/argon -> v4.9.1 (-> N/A)
+lts/boron -> v6.17.1 (-> N/A)
+lts/carbon -> v8.16.2 (-> N/A)
+lts/dubnium -> v10.17.0
+lts/erbium -> v12.13.0
 
-To avoid some nasty errors while installing packages,
-**the recommended install location** is `${HOME}/opt/npm`.
+$ nvm use 10
+Now using node v10.17.0 (npm v6.11.3)
 
-The commands to configure the custom location are:
+$ node --version
+v10.17.0
 
-```console
-$ mkdir -p ~/opt/npm
-$ npm config set prefix ~/opt/npm
-```
+$ nvm install-latest-npm
+Attempting to upgrade to the latest working version of npm...
+* Installing latest `npm`; if this does not work on your node version, please report a bug!
+/Users/ilg/.nvm/versions/node/v10.17.0/bin/npm -> /Users/ilg/.nvm/versions/node/v10.17.0/lib/node_modules/npm/bin/npm-cli.js
+/Users/ilg/.nvm/versions/node/v10.17.0/bin/npx -> /Users/ilg/.nvm/versions/node/v10.17.0/lib/node_modules/npm/bin/npx-cli.js
++ npm@6.13.0
+added 3 packages from 2 contributors, removed 3 packages and updated 20 packages in 3.081s
+* npm upgraded to: v6.13.0
 
-The new location must also be added in front of the existing PATH, and,
-by all means, in front of `/usr/local/bin`, otherwise the shell will pick
-the previous version.
-
-```console
-$ PATH="${HOME}/opt/npm/bin:${PATH}"
-$ export PATH
-```
-
-To make them persistent, edit `~/.profile`, and add them to the end.
-
-{% include tip.html content="This is also a good moment to check the
-content of the PATH variable and do a cleanup if necessary." %}
-
-Now it is possible to install npm **without** `sudo`:
-
-```console
-$ npm install --global npm@latest
-/home/ilg/opt/npm/bin/npm -> /home/ilg/opt/npm/lib/node_modules/npm/bin/npm-cli.js
-/home/ilg/opt/npm/bin/npx -> /home/ilg/opt/npm/lib/node_modules/npm/bin/npx-cli.js
-+ npm@{{ page.npm_version }}
-added 21 packages from 15 contributors, removed 14 packages and updated 37 packages in 12.609s
-```
-
-To check if the environment is set correctly :
-
-```console
-$ hash -r
 $ which npm
-/home/ilg/opt/npm/bin/npm
-$ npm --version
-{{ page.npm_version }}
+/Users/ilg/.nvm/versions/node/v10.17.0/bin/npm
 ```
+
+At any time, to switch between any of the installed versions,
+use `nvm use <version>`.
 
 {% include note.html content="These commands were tested with `bash` on
 Ubuntu 18 LTS and Manjaro 18; for other shells they may need small
