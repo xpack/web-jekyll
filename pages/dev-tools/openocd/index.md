@@ -13,7 +13,7 @@ last_updated: 2019-10-11 15:52:59 +0300
 
 ## Quicklinks
 
-If you already know the general facts about xPack GNU Arm Embedded GCC, you can 
+If you already know the general facts about xPack GNU Arm Embedded GCC, you can
 directly skip to the desired pages.
 
 User pages:
@@ -30,31 +30,31 @@ Developer & maintainer pages:
 
 ## Overview
 
-The **xPack OpenOCD** is a multi-platform binary distribution of 
-[OpenOCD](http://openocd.org), the **Open On-Chip Debugger**, 
+The **xPack OpenOCD** is a multi-platform binary distribution of
+[OpenOCD](http://openocd.org), the **Open On-Chip Debugger**,
 an open source project hosted on 
 [SourceForge](https://sourceforge.net/projects/openocd/).
 
-The OpenOCD project maintainers recommend that end-users 
-compile it using the latest version of the source code available from 
-the repository. OpenOCD is a rolling distribution, and currently 
-there are no special stable branches or tags 
-and there are no clear release dates for future versions. 
+The OpenOCD project maintainers recommend that end-users
+compile it using the latest version of the source code available from
+the repository. OpenOCD is a rolling distribution, and currently
+there are no special stable branches or tags
+and there are no clear release dates for future versions.
 
-If for GNU/Linux users compiling projects is common, Windows users do not 
+If for GNU/Linux users compiling projects is common, Windows users do not
 have an easy way of building OpenCOD from sources, and elaborate build
 environments must be installed, making the whole process impractical.
 
-If you are not interested in building from sources, and appreciate a 
-better integration with the environments like Eclipse, please feel free to use 
-the xPack OpenOCD binaries, and preferably install them in the default 
+If you are not interested in building from sources, and appreciate a
+better integration with the environments like Eclipse, please feel free to use
+the xPack OpenOCD binaries, and preferably install them in the default
 locations.
 
-{% include note.html content="OpenOCD is a very complex project, able 
-to work with many JTAG probes, but support for them must be enabled 
-at build time, so be sure that support for your JTAG probe was 
-enabled in the binaries you plan to use. The xPack OpenOCD includes 
-support for most existing probes, but does not guarantee that all are 
+{% include note.html content="OpenOCD is a very complex project, able
+to work with many JTAG probes, but support for them must be enabled
+at build time, so be sure that support for your JTAG probe was
+enabled in the binaries you plan to use. The xPack OpenOCD includes
+support for most existing probes, but does not guarantee that all are
 included." %}
 
 ## Benefits
@@ -62,9 +62,9 @@ included." %}
 The main advantages of using the **xPack OpenOCD** are:
 
 - a convenient, uniform and portable install/uninstall/upgrade procedure;
-  the same procedure is used for all major 
+  the same procedure is used for all major
   platforms (Windows 64/32-bit, GNU/Linux 64/32-bit, macOS);
-- a better integration with development environments 
+- a better integration with development environments
   like **GNU MCU Eclipse**.
 
 All binaries are self-contained, they include all required libraries,
@@ -72,13 +72,13 @@ and can be installed at any location.
 
 ## Compatibility
 
-The **xPack OpenOCD** is fully compatible with the original **OpenOCD** 
+The **xPack OpenOCD** is fully compatible with the original **OpenOCD**
 distribution.
 
 ## Install
 
-The details of installing the **xPack OpenOCD** on various platforms are 
-presented in the separate 
+The details of installing the **xPack OpenOCD** on various platforms are
+presented in the separate
 [Install]({{ site.baseurl }}/openocd/install/) page.
 
 ## Documentation
@@ -89,7 +89,7 @@ The original OpenOCD documentation is available in the installed folders:
 
 ## Support
 
-For the various support options, please read the separate 
+For the various support options, please read the separate
 [Support]({{ site.baseurl }}/openocd/support/) page.
 
 ## Change log
@@ -99,10 +99,10 @@ The release and change log is available in the repository
 
 ## Build details
 
-For those interested in building the binaries, please read the 
+For those interested in building the binaries, please read the
 [How to build?](https://github.com/xpack-dev-tools/openocd-xpack/blob/xpack/README-BUILD.md)
-page. 
-However, the ultimate source for details are the build scripts themselves, 
+page.
+However, the ultimate source for details are the build scripts themselves,
 all available from the 
 [`openocd-xpack.git/scripts`](https://github.com/xpack-dev-tools/openocd-xpack/tree/xpack/scripts/)
 folder.

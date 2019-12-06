@@ -9,7 +9,7 @@ last_updated: 2019-06-30 10:30:19 +0300
 
 ## Overview
 
-**XCDL** is the component & configuration framework. The name unveils [eCos CDL](http://ecos.sourceware.org/ecos/docs-3.0/cdl-guide/reference.html) (Component Definition Language) as the initial source of inspiration. 
+**XCDL** is the component & configuration framework. The name unveils [eCos CDL](http://ecos.sourceware.org/ecos/docs-3.0/cdl-guide/reference.html) (Component Definition Language) as the initial source of inspiration.
 
 In a later iteration, XCDL was extended to include definitions from [CMSIS PDSC](https://www.keil.com/pack/doc/CMSIS/Pack/html/packFormat.html).
 

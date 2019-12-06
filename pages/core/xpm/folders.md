@@ -27,7 +27,7 @@ Global (home) install:
 
 System install (not implemented):
 
-* `/opt/xPacks` with 
+* `/opt/xPacks` with
 * links in `/usr/local/bin` (normally in `PATH`)
 
 ## GNU/Linux
@@ -39,7 +39,7 @@ Global (home) install:
 
 System install (not implemented):
 
-* `/opt/xPacks` 
+* `/opt/xPacks`
 * links in `/usr/local/bin` (normally in `PATH`)
 
 ## Windows
@@ -60,15 +60,15 @@ Individual packages are stored as separate folders:
 
 * `[@<scope>/]<name>/<version>`
 
-The `xpm link` inside a local package produces a symbolic link from 
+The `xpm link` inside a local package produces a symbolic link from
 the local package folder to something like:
 
 * `[@<scope>/]<name>/link`
 
 ## The cache folder
 
-The cache folder is used to store downloaded archives, to avoid 
+The cache folder is used to store downloaded archives, to avoid
 downloading them again if referred in other packages.
 
-Further downloads performed by the xPacks should also cache files 
+Further downloads performed by the xPacks should also cache files
 here (like toolchain binaries).

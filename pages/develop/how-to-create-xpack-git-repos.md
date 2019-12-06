@@ -7,36 +7,36 @@ last_updated: 2019-07-15 11:35:11 +0300
 
 ---
 
-The technical definition of an xPack is _a folder which includes a 
-package.json file with some minimal content_ 
-([full definition]({{ site.baseurl }}/intro/)); 
+The technical definition of an xPack is _a folder which includes a
+package.json file with some minimal content_
+([full definition]({{ site.baseurl }}/intro/));
 it does not require
-any special structure for the folders or for the version-control system, 
+any special structure for the folders or for the version-control system,
 if any.
 
 ## Projects with 3rd party content
 
-The first thought is that xPacks, as a new technology, 
+The first thought is that xPacks, as a new technology,
 will be used for new projects,
 with original content, so, in principle, these projects can be created
-to have any structure. 
+to have any structure.
 
-The reality is that there are a lot of existing 
+The reality is that there are a lot of existing
 software projects, each using its specific structure, and migrating them to
 xPacks may add some maintenance burden to keep them in sync with the
 originals.
 
 ## The `xpack` branch and three-way merging
 
-One way to reduce the maintenance burden is to use the 
-[three-way merge](https://en.wikipedia.org/wiki/Merge_(version_control)#Three-way_merge) 
+One way to reduce the maintenance burden is to use the
+[three-way merge](https://en.wikipedia.org/wiki/Merge_(version_control)#Three-way_merge)
 feature of Git and a separate branch to accommodate the xPack specific changes.
 
 This method does not require any changes to the original project, which can
 keep its original structure, with its original branches, regardless
 their names.
 
-The only requirement is to create a new branch (preferably named `xpack`) 
+The only requirement is to create a new branch (preferably named `xpack`)
 and to keep the changes on it; thus the main branch (probably `master`) can
 easily track the upstream repository, while the xPack specific changes
 continue to be developed using the `xpack` branch; from time to time the
@@ -45,7 +45,7 @@ main branch can be merged into the `xpack` branch and things kept in sync.
 ## Creating xPacks with original content
 
 For consistency reasons, it is recommended for the new xPacks, even if
-they do not include 3rd party content, to use the `xpack` branch instead 
+they do not include 3rd party content, to use the `xpack` branch instead
 of the `master` branch.
 
 {% include note.html content="The xPack tools do not require and
@@ -63,20 +63,20 @@ line terminators.
 {% include tip.html content="To easily identify the project as
 an xPack, it is recommended to suffix the project name with '-xpack'." %}
 
-With a browser, at GitHub, select your account or one of your 
-  organisations (like 
-  [µOS++](https://github.com/micro-os-plus), 
-  [GNU MCU Eclipse](https://github.com/gnu-mcu-eclipse) or 
+With a browser, at GitHub, select your account or one of your
+  organisations (like
+  [µOS++](https://github.com/micro-os-plus),
+  [GNU MCU Eclipse](https://github.com/gnu-mcu-eclipse) or
   [xPacks](https://github.com/xpacks))
 
 - click the green **New** button to create a new repository
-  - enter **Repository name**; use all lowercase and hyphens to 
+  - enter **Repository name**; use all lowercase and hyphens to
     separate words (not underscores!); preferably suffix the name with `-xpack`
   - enter **Description** (like _An xPack with ..._)
   - select **Public**
   - enable **Initialize this repository with a README**
-  - select **Add .gitignore: Node** 
-  - select **Add a license: MIT License**; this is the license of 
+  - select **Add .gitignore: Node**
+  - select **Add a license: MIT License**; this is the license of
     choice for xPacks, but any other license of your choice is also ok
   - click the **Create Repository** button
 - select the **Settings** tab
@@ -86,10 +86,10 @@ With a browser, at GitHub, select your account or one of your
 
 - select the GitHub project
 - select the **Code** tab
-- click the **Clone or download** button; this will open a 
+- click the **Clone or download** button; this will open a
   small **Clone to HTTPS** window
-- click the **Copy** icon, or explicitly copy the URL 
-- in a terminal window, in a place of our choice, create a folder 
+- click the **Copy** icon, or explicitly copy the URL
+- in a terminal window, in a place of our choice, create a folder
   to store all xPacks (for example it can be named `xpacks`):
   ```console
 $ mkdir -p xpacks
@@ -134,10 +134,10 @@ With VSC, Sourcetree or Git:
 
 ### Check/edit the `LICENSE` file
 
-The automatically generated `LICENSE` file already includes the 
-user name as the copyright owner. When the project is owned by 
-an organisation, the name refers to the organisation. Probably 
-this is not exactly what you need, and you might prefer to have 
+The automatically generated `LICENSE` file already includes the
+user name as the copyright owner. When the project is owned by
+an organisation, the name refers to the organisation. Probably
+this is not exactly what you need, and you might prefer to have
 your name in the copyright notice.
 
 Check and possibly adjust to match your `LICENSE` requirements.
@@ -158,12 +158,12 @@ With VSC, Sourcetree or Git:
 
 ### Edit the master `README.md` file
 
-As mentioned in the introduction, 
-although for original xPacks there are no constraints on how to 
-organise the branches, for consistency with xPacks that use 3rd 
+As mentioned in the introduction,
+although for original xPacks there are no constraints on how to
+organise the branches, for consistency with xPacks that use 3rd
 party content, it is recommended to use an `xpack` branch.
 
-In this case, to warn users about this configuration, edit 
+In this case, to warn users about this configuration, edit
 the `README.md` file and replace its entire content with:
 
 ```
@@ -176,12 +176,12 @@ With VSC, Sourcetree or Git:
 - stage the `README.md` file
 - commit with the following message: **README: 'no master' notice**
 
-### Create the `xpack` branch 
+### Create the `xpack` branch
 
 With Sourcetree or Git:
 
 - select the `master` branch
-- click the **Branch** button 
+- click the **Branch** button
 - in the **Name Branch** field, enter `xpack`
 - click the **Create Branch** button
 
@@ -193,7 +193,7 @@ With Sourcetree or Git:
 - select the `master` and `xpack` local branches
 - click the **OK** button
 
-With the GitHub web interface (as shortcut, in Sourcetree, click 
+With the GitHub web interface (as shortcut, in Sourcetree, click
 the **View Remote** button):
 
 - select the **Settings** tab
@@ -201,15 +201,15 @@ the **View Remote** button):
 - change the **Default branch** to `xpack`
 - click the **Update** button
 - click the **I understand, update the default branch** confirmation window
- 
+
 ### Create the npm/xpm `package.json`
 
-Use `xpm init` and later edit the `package.json`. 
+Use `xpm init` and later edit the `package.json`.
 
 ```
 $ cd <project>.git
 $ xpm init
-$ cat package.json 
+$ cat package.json
 {
   "name": "xxx",
   "version": "1.0.0",
@@ -240,16 +240,16 @@ $ cat package.json
   "devDependencies": {},
   "xpack": {}
 }
-$ 
+$
 ```
 
 Open `package.json` with Visual Studio Code:
 
-- as **name** enter the scope (your npm account name or one of 
-  your npm organisations) and the project name, without `-xpack.git` 
+- as **name** enter the scope (your npm account name or one of
+  your npm organisations) and the project name, without `-xpack.git`
   (like `@micro-os-plus/diag-trace`)
-- as **version**, enter 0.0.1 if the project is in early development, 
-  or accept 1.0.0 for the first stable release; generally use the 
+- as **version**, enter 0.0.1 if the project is in early development,
+  or accept 1.0.0 for the first stable release; generally use the
   [semver](http://semver.org) conventions
 - as **description**, use the same string as the GitHub project description
 - as **url** and **homepage**, use the actual project Git URL
@@ -263,13 +263,13 @@ Open `package.json` with Visual Studio Code:
   }
 }
 ```
-- as **license**, enter the [SPDX](https://spdx.org/licenses/) license 
-  identifier (like MIT); if the license is not a standard one, provide 
+- as **license**, enter the [SPDX](https://spdx.org/licenses/) license
+  identifier (like MIT); if the license is not a standard one, provide
   the text in a `LICENSE` file and update the JSON to read:
   ```json
 { "license": "SEE LICENSE IN <filename>" }
 ```
-- if the package is inspired by other existing code, enter the author 
+- if the package is inspired by other existing code, enter the author
   as the first contributor, for example:
   ```json
 {
@@ -288,7 +288,7 @@ Open `package.json` with Visual Studio Code:
 With VSC, Sourcetree or Git:
 
 - stage the `package.json`
-- commit with the following message: **package.json: v1.0.0** or 
+- commit with the following message: **package.json: v1.0.0** or
   **package.json: v0.0.1**
 
 ### Edit the `README.md` file with actual content
@@ -298,12 +298,12 @@ With the editor of your choice:
 - **do not start with H1**, since it is not shown by the npmjs server; H2 is ok,
   or start with a badge and then H2
 - after the main title, copy the project description
-- explain how to install the xPack 
+- explain how to install the xPack
   (like `xpm install --global @scope/name`)
-- in the License section, use something like 
+- in the License section, use something like
   ```
-The original content is released under the 
-[MIT License](https://opensource.org/licenses/MIT), with all rights 
+The original content is released under the
+[MIT License](https://opensource.org/licenses/MIT), with all rights
 reserved to [Liviu Ionescu](https://github.com/ilg-ul).
 ```
 

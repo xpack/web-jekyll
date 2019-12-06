@@ -188,19 +188,19 @@ executed again.
 The SHA-256 hashes for the files are:
 
 ```
-6ff68117083624273c56244cf4242989a65069b376a9727ec4a230be824340f3  
+6ff68117083624273c56244cf4242989a65069b376a9727ec4a230be824340f3 
 xpack-arm-none-eabi-gcc-9.2.1-1.1-darwin-x64.tar.gz
 
-e9f4b5f3ebe7e4391e2423e4106493d7cfcdee9eee4a1f0766f1c23662093a49  
+e9f4b5f3ebe7e4391e2423e4106493d7cfcdee9eee4a1f0766f1c23662093a49 
 xpack-arm-none-eabi-gcc-9.2.1-1.1-linux-x32.tar.gz
 
-bbde117b97f229dfe63721c0323c3da6839e83cf302c8f4ff25e0f36ecf7a428  
+bbde117b97f229dfe63721c0323c3da6839e83cf302c8f4ff25e0f36ecf7a428 
 xpack-arm-none-eabi-gcc-9.2.1-1.1-linux-x64.tar.gz
 
-d13aaff4caae6e5f1b871d50accc1759c4f5750574dbd4d6f6e3017c33f39dc6  
+d13aaff4caae6e5f1b871d50accc1759c4f5750574dbd4d6f6e3017c33f39dc6 
 xpack-arm-none-eabi-gcc-9.2.1-1.1-win32-x32.zip
 
-923bf50198cb155361a95fcac8804d12acd64e963a89f352c69fe24bf54ff0ef  
+923bf50198cb155361a95fcac8804d12acd64e963a89f352c69fe24bf54ff0ef 
 xpack-arm-none-eabi-gcc-9.2.1-1.1-win32-x64.zip
 ```
 

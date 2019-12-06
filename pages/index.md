@@ -13,37 +13,37 @@ last_updated: 2019-10-11 15:52:58 +0300
 
 ## Mission statement
 
-Provide a set of cross-platform tools to manage, configure and build complex, 
+Provide a set of cross-platform tools to manage, configure and build complex,
 modular, multi-target (multi-architecture, multi-board, multi-toolchain)
-projects, intended to **enhance code sharing** and **reusing** during the 
-life cycle of libraries and applications, with an emphasis on C/C++ and 
+projects, intended to **enhance code sharing** and **reusing** during the
+life cycle of libraries and applications, with an emphasis on C/C++ and
 bare-metal embedded.
 
 ## xPacks overview
 
-**xPacks** are general purpose multi-version software packages, 
-much the same as the highly successful 
-[npm modules](https://docs.npmjs.com/getting-started/what-is-npm) 
+**xPacks** are general purpose multi-version software packages,
+much the same as the highly successful
+[npm modules](https://docs.npmjs.com/getting-started/what-is-npm)
 in the [Node.js](https://nodejs.org/en/) JavaScript ecosystem.
 
-By **multi-version** it is understood not only that packages can have 
+By **multi-version** it is understood not only that packages can have
 multiple versions, but they **can be installed in parallel**, each
 project having its own set of dependencies.
 
-Except the package manager, most of the tools are generic and do not 
-mandate the use of xPack packages, and can be used in traditional 
+Except the package manager, most of the tools are generic and do not
+mandate the use of xPack packages, and can be used in traditional
 environments (although some of them may benefit when used in an xPack
 environment).
 
-Although the focus is on **C/C++**, most of the tools are language agnostic 
+Although the focus is on **C/C++**, most of the tools are language agnostic
 and can be used with other programming languages as well.
 
-Based on the installed content, there are currently two 
+Based on the installed content, there are currently two
 types of xPacks: **source** and **binary**:
 
-- **source xPacks** are packages that install source files, 
+- **source xPacks** are packages that install source files,
 generally libraries used by the project.
-- **binary xPacks** are packages that install binary files, 
+- **binary xPacks** are packages that install binary files,
 generally tools used during the build process, like toolchains,
 builders, etc.
 
@@ -64,7 +64,7 @@ The core xPack tools are:
 - `@xpack/xpliquid` - the **xPack Liquid Template Engine** (in design phase)
 - `@xpack/xpjson` - the **xPack JSON Manager** (in design phase)
 
-These projects are hosted in the GitHub 
+These projects are hosted in the GitHub
 [`xpack`](https://github.com/xpack) organisation.
 
 ## xPack based Development Tools
@@ -86,8 +86,8 @@ Planned:
 - `@xpack-dev-tools/cmake` - the **xPack CMake**
 - `@xpack-dev-tools/ninja` - the **xPack Ninja Build**
 
-These projects are hosted in the GitHub 
-[`xpack-dev-tools`](https://github.com/xpack-dev-tools) group 
+These projects are hosted in the GitHub
+[`xpack-dev-tools`](https://github.com/xpack-dev-tools) group
 (_organization_ in GitHub parlance).
 
 ## Source xPacks
@@ -116,25 +116,25 @@ archives used by the binary xPacks.
 
 The development environments are based on:
 
-- **CentOS 6** Docker images, used to build the GNU/Linux and Windows 
+- **CentOS 6** Docker images, used to build the GNU/Linux and Windows
   distributions
 - **macOS 10.10** tools, used to build the macOS Intel distributions
 
-These scripts are hosted in the Github 
+These scripts are hosted in the Github
 [`xpack/xpack-build-box`](https://github.com/xpack/xpack-build-box) project.
 
 ## Notifications
 
-To stay up-to-date with new binary tools releases, the recommended way is 
+To stay up-to-date with new binary tools releases, the recommended way is
 to follow [@xpack_project](https://twitter.com/xpack_project) on Twitter.
 
 Alternatively you can subscribe to this site RSS feed [https://xpack.github.io/feed.xml](https://xpack.github.io/feed.xml).
 
-To stay current with changes to individual projects, enable **watching** 
+To stay current with changes to individual projects, enable **watching**
 in the GitHub web interface for each project of interest.
 
 ## License
 
-Unless otherwise mentioned, all **xPack** tools with original content 
-are provided **free of charge** under the terms of the 
+Unless otherwise mentioned, all **xPack** tools with original content
+are provided **free of charge** under the terms of the
 [MIT License](https://opensource.org/licenses/MIT).

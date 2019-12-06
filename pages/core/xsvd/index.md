@@ -7,7 +7,7 @@ last_updated: 2019-10-11 15:52:57 +0300
 
 ---
 
-## Overview 
+## Overview
 
 The **XSVD** format is inspired from Arm [CMSIS SVD](http://www.keil.com/cmsis/svd), which is based on XML and was influenced by [IP-XACT](https://en.wikipedia.org/wiki/IP-XACT).
 

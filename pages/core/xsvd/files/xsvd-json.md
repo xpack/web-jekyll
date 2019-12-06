@@ -1,5 +1,5 @@
 ---
-title: The XSVD format 
+title: The XSVD format
 permalink: /xsvd/files/xsvd-json/
 
 date: 2017-10-10 20:00:00 +0300
@@ -65,7 +65,7 @@ An object is considered an array if it has the `arraySize` property.
 
 Only register and cluster objects can be grouped in arrays.
 
-When used to generate device peripheral headers, register arrays generate C arrays of integers and cluster arrays generate C arrays os structures. 
+When used to generate device peripheral headers, register arrays generate C arrays of integers and cluster arrays generate C arrays os structures.
 
 When used to display the peripheral registers in a debugger, the recommended way to preset arrays is as a group with the object name suffixed by `[]`, and below it all array elements, with the names suffixed by the index, like `[0]`, `[1]`, etc.
 
@@ -73,7 +73,7 @@ When used to display the peripheral registers in a debugger, the recommended way
 
 Repetitions are a shortcuts to define sequences of similar objects; instead of defining a long list of similar objects, only a generic one is defined, plus a rule how each individual one is named.
 
-An object is considered a repetition if it has the `repeatGenerator` property (and it is not an array, so the `repeatGenerator` property is ignored for arrays). 
+An object is considered a repetition if it has the `repeatGenerator` property (and it is not an array, so the `repeatGenerator` property is ignored for arrays).
 
 By default, the strings defined by the `repeatGenerator` are added at the end of the name; if more elaborate names must be generated, the `%s` must be used in the desired position in the object name.
 
@@ -229,7 +229,7 @@ Register addresses are specified relative to the base address of a peripheral.
 
 Multiple similar peripherals sharing a common name can be defined as repetitions using the `repeatGenerator` property; for example instead of defining `GPIOA`, `GPIOB`, `GPIOC`, use `GPIO%s` (or simply `GPIO`, since `%s` at the end is default) and define separate generators like `A,B,C`.
 
-The `repeatIncrement` property specifies the address offset between two peripherals. 
+The `repeatIncrement` property specifies the address offset between two peripherals.
 
 To create copies of a peripheral using different names, use the `derivedFrom` property.
 
@@ -251,7 +251,7 @@ To create copies of a peripheral using different names, use the `derivedFrom` pr
 | `resetMask` | string | The register bits that have a defined reset value. |
 | `resetValue` | string | Default value for all peripheral registers at RESET. |
 | `repeatIncrement` | string | The address increment, in bytes, between two neighbouring peripherals in a repetition or an array. |
-| `repeatGenerator` | string | A generator of strings that substitute the placeholder `%s` within the `displayName`. 
+| `repeatGenerator` | string | A generator of strings that substitute the placeholder `%s` within the `displayName`.
 | `groupName` | string | Define a name under which the Peripheral Registers Viewer is showing this peripheral. |
 | `headerStructName` | string | Specify the base name of C structures. The header file generator uses the peripheral `displayName` as the base name for the C structure type. If `headerStructName` is specified, then this string is used instead of the peripheral name; useful when multiple peripherals get derived and a generic type name should be used. |
 | `clusters` | collection | A map of cluster objects. The keys are internal IDs used to refer to the clusters; externally use the cluster name. |
@@ -281,9 +281,9 @@ A cluster describes a sequence of neighbouring registers within a peripheral. A 
 
 Nested clusters express hierarchical structures of registers. It is targeted at the generation of device header files to create a C-data structure within the peripheral structure instead of a flat list of registers. It is also possible to specify an array of a clusters using the `arraySize` property.
 
-Multiple identical clusters can be grouped in arrays. The size of the array is specified by the `arraySize` property. 
+Multiple identical clusters can be grouped in arrays. The size of the array is specified by the `arraySize` property.
 
-Multiple similar clusters sharing a common name can be defined as repetitions using the `repeatGenerator` property. 
+Multiple similar clusters sharing a common name can be defined as repetitions using the `repeatGenerator` property.
 
 The `repeatIncrement` property specifies the offset in bytes between two clusters. If not specified, the cluster size is used.
 
@@ -303,7 +303,7 @@ The `repeatIncrement` property specifies the offset in bytes between two cluster
 | `resetMask` | string | The register bits that have a defined reset value. |
 | `resetValue` | string | Default value for the register at RESET. |
 | `repeatIncrement` | string | The address increment, in bytes, between two neighbouring clusters in a repetition or an array. |
-| `repeatGenerator` | string | A generator of strings that substitute the placeholder `%s` within the `displayName`. 
+| `repeatGenerator` | string | A generator of strings that substitute the placeholder `%s` within the `displayName`.
 | `arraySize` | string | The size of the array of clusters. |
 | `clusters` | collection | A map of cluster objects. The keys are internal IDs used to refer to the clusters; externally use the cluster name. |
 | `registers` | collection | A map of register objects. The keys are internal IDs used to refer to the registers; externally use the `displayName`. |
@@ -343,9 +343,9 @@ The description of registers is the most important part of this file format. If 
 
 A register can represent a single value or can be subdivided into individual bit-fields of specific functionality and semantics. From a schema perspective, the property `fields` is optional, however, from a specification perspective, `fields` are mandatory when they are described in the device documentation.
 
-Multiple identical registers can be grouped in arrays. The size of the array is specified by the `arraySize` property. 
+Multiple identical registers can be grouped in arrays. The size of the array is specified by the `arraySize` property.
 
-Multiple similar registers sharing a common name can be defined as repetitions using the `repeatGenerator` property. 
+Multiple similar registers sharing a common name can be defined as repetitions using the `repeatGenerator` property.
 
 The `repeatIncrement` property specifies the offset in bytes between two registers. If not specified, the register width is used.
 
@@ -364,7 +364,7 @@ The `repeatIncrement` property specifies the offset in bytes between two registe
 | `access` | string | Default access rights for the register. Values: `["r","w","rw"]`. |
 | `resetMask` | string | The register bits that have a defined reset value. |
 | `resetValue` | string | Default value for the register at RESET. |
-| `repeatGenerator` | string | A generator of strings that substitute the placeholder `%s` within the `displayName`. 
+| `repeatGenerator` | string | A generator of strings that substitute the placeholder `%s` within the `displayName`.
 | `arraySize` | string | The size of the array of registers. |
 | `fields` | collection | A map of field objects. The keys are internal IDs used to refer to the fields; externally use the `displayName`. |
 
@@ -397,7 +397,7 @@ The `repeatIncrement` property specifies the offset in bytes between two registe
 A bit-field has a name that is unique within the register. The position and size within the register can be described as
 the lsb and the bit-width of the field.
 
-Multiple similar fields sharing a common name can be defined as repetitions using the `repeatGenerator` property. 
+Multiple similar fields sharing a common name can be defined as repetitions using the `repeatGenerator` property.
 
 The `repeatIncrement` property specifies the offset in bits between two bit-fields. If not specified, the bit-field width is used.
 
@@ -425,7 +425,7 @@ Note: Array of fields are currently not implemented.
 | `resetMask` | string | The field bits that have a defined reset value. |
 | `resetValue` | string | Default value for the field at RESET. |
 | `repeatIncrement` | string | The offset increment, in bits, between two neighbouring fields in a repetition. |
-| `repeatGenerator` | string | A generator of strings that substitute the placeholder `%s` within the `displayName`. 
+| `repeatGenerator` | string | A generator of strings that substitute the placeholder `%s` within the `displayName`.
 | `enumerations` | collection | A map of enumeration objects. The key is the enumeration name. In the current version, only the first object is used, all the other are ignored. |
 
 Example

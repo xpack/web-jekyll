@@ -12,7 +12,7 @@ last_updated: 2019-07-04 19:09:21 +0300
 ## Synopsis
 
 ```
-xpbuild init [options...] 
+xpbuild init [options...]
 ```
 
 ## Description

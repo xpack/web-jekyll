@@ -18,7 +18,7 @@ xpbuild [<command>] [<options> ...] [<args>...]
 ## Description
 
 
-The program accepts an optional command name, 
+The program accepts an optional command name,
 options (that start with a dash) and possibly one or more
 arguments, like names, files, etc.
 
@@ -48,23 +48,23 @@ This can be changed, from not displaying any messages at all (`--silent`)
 to displaying lots of debugging trace messages (`--trace`).
 
 ```
-  --loglevel <level>     Set log level (silent|warn|info|verbose|debug|trace) 
-  -s|--silent            Disable all messages (--loglevel silent) 
-  -q|--quiet             Mostly quiet, warnings and errors (--loglevel warn) 
-  --informative          Informative (--loglevel info) 
-  -v|--verbose           Verbose (--loglevel verbose) 
-  -d|--debug             Debug messages (--loglevel debug) 
-  -dd|--trace            Trace messages (--loglevel trace, -d -d) 
+  --loglevel <level>     Set log level (silent|warn|info|verbose|debug|trace)
+  -s|--silent            Disable all messages (--loglevel silent)
+  -q|--quiet             Mostly quiet, warnings and errors (--loglevel warn)
+  --informative          Informative (--loglevel info)
+  -v|--verbose           Verbose (--loglevel verbose)
+  -d|--debug             Debug messages (--loglevel debug)
+  -dd|--trace            Trace messages (--loglevel trace, -d -d)
 ```
 
 ### Current folder (`-C`)
 
-By default the program is executed in the context of the current shell 
+By default the program is executed in the context of the current shell
 folder, but it can be changed to any folder using `-C <folder>`.
 
 ### Program version (`--version`)
 
-As for most command line tools, it is possible to ask for the current 
+As for most command line tools, it is possible to ask for the current
 version, with `--version`:
 
 ```console
@@ -73,12 +73,12 @@ $ xpbuild --version
 ```
 
 The result is written to the standard output stream, and consists of the
-semver string, without any `v` prefix, so it can be directly used in 
+semver string, without any `v` prefix, so it can be directly used in
 automated scripts, without any post processing.
 
 ### Skip checks (`--no-update-notifier`)
 
-By default, before exiting, xpbuild checks, once a day, if there is a 
+By default, before exiting, xpbuild checks, once a day, if there is a
 new version of the program available.
 
 For environments where this check is not necessary, it can be disabled.

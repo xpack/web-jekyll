@@ -37,15 +37,15 @@ in `package.json`.
 }
 ```
 
-Options passed after the double dash separator are not processed 
+Options passed after the double dash separator are not processed
 but appended _as is_ at the end of the command string.
 
-Before creating new processes to run the comman, `xpm run` prepends 
-`xpacks/.bin:node_modules/.bin` to the environment `PATH`. 
+Before creating new processes to run the comman, `xpm run` prepends
+`xpacks/.bin:node_modules/.bin` to the environment `PATH`.
 
-{% include important.html content="This has the effect that all 
-binaries provided by locally-installed 
-dependencies will take precedence to any other similar binaries 
+{% include important.html content="This has the effect that all
+binaries provided by locally-installed
+dependencies will take precedence to any other similar binaries
 present in the PATH." %}
 
 ## Options
@@ -62,19 +62,19 @@ where:
   <script args>...      Extra arguments for the script (optional, multiple)
 
 Common options:
-  --loglevel <level>    Set log level (silent|warn|info|verbose|debug|trace) 
-  -s|--silent           Disable all messages (--loglevel silent) 
-  -q|--quiet            Mostly quiet, warnings and errors (--loglevel warn) 
-  --informative         Informative (--loglevel info) 
-  -v|--verbose          Verbose (--loglevel verbose) 
-  -d|--debug            Debug messages (--loglevel debug) 
-  -dd|--trace           Trace messages (--loglevel trace, -d -d) 
-  --no-update-notifier  Skip check for a more recent version 
-  -C <folder>           Set current folder 
+  --loglevel <level>    Set log level (silent|warn|info|verbose|debug|trace)
+  -s|--silent           Disable all messages (--loglevel silent)
+  -q|--quiet            Mostly quiet, warnings and errors (--loglevel warn)
+  --informative         Informative (--loglevel info)
+  -v|--verbose          Verbose (--loglevel verbose)
+  -d|--debug            Debug messages (--loglevel debug)
+  -dd|--trace           Trace messages (--loglevel trace, -d -d)
+  --no-update-notifier  Skip check for a more recent version
+  -C <folder>           Set current folder
 
-xpm -h|--help           Quick help 
-xpm --version           Show version 
-xpm -i|--interactive    Enter interactive mode 
+xpm -h|--help           Quick help
+xpm --version           Show version
+xpm -i|--interactive    Enter interactive mode
 
 npm xpm@0.5.0 '/Users/ilg/Library/npm/lib/node_modules/xpm'
 Home page: <https://github.com/xpack/xpm-js>

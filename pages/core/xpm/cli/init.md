@@ -18,7 +18,7 @@ xpm init [options...] [--template <xpack>] [--name <string>]
 
 ## Description
 
-Initialise the current folder as an xPack, by creating a skeleton 
+Initialise the current folder as an xPack, by creating a skeleton
 `package.json` file. This file needs further editing to update most
 of the objects.
 
@@ -45,19 +45,19 @@ Init options:
   -p|--property <string>  Substitution variables (optional, multiple)
 
 Common options:
-  --loglevel <level>      Set log level (silent|warn|info|verbose|debug|trace) 
-  -s|--silent             Disable all messages (--loglevel silent) 
-  -q|--quiet              Mostly quiet, warnings and errors (--loglevel warn) 
-  --informative           Informative (--loglevel info) 
-  -v|--verbose            Verbose (--loglevel verbose) 
-  -d|--debug              Debug messages (--loglevel debug) 
-  -dd|--trace             Trace messages (--loglevel trace, -d -d) 
-  --no-update-notifier    Skip check for a more recent version 
-  -C <folder>             Set current folder 
+  --loglevel <level>      Set log level (silent|warn|info|verbose|debug|trace)
+  -s|--silent             Disable all messages (--loglevel silent)
+  -q|--quiet              Mostly quiet, warnings and errors (--loglevel warn)
+  --informative           Informative (--loglevel info)
+  -v|--verbose            Verbose (--loglevel verbose)
+  -d|--debug              Debug messages (--loglevel debug)
+  -dd|--trace             Trace messages (--loglevel trace, -d -d)
+  --no-update-notifier    Skip check for a more recent version
+  -C <folder>             Set current folder
 
-xpm -h|--help             Quick help 
-xpm --version             Show version 
-xpm -i|--interactive      Enter interactive mode 
+xpm -h|--help             Quick help
+xpm --version             Show version
+xpm -i|--interactive      Enter interactive mode
 
 npm xpm@0.5.0 '/Users/ilg/Library/npm/lib/node_modules/xpm'
 Home page: <https://github.com/xpack/xpm-js>
@@ -70,25 +70,25 @@ $
 Create the xPack using a template. The template itself is an xPack
 with a specific code that implements a template API.
 
-Example: Create a project in an interractive session by answering 
+Example: Create a project in an interractive session by answering
 lots of questions:
 
 ```console
-$ xpm init --template @sifive/templates 
+$ xpm init --template @sifive/templates
 xPack manager - create an xPack, empty or from a template
 
 Processing @sifive/templates@1.0.4...
 
-Programming language? (c, cpp, ?) [cpp]: 
-Board? (hifive1, e31arty, e51arty, ?) [hifive1]: 
-Content? (empty, blinky, ?) [blinky]: 
-Use system calls? (none, retarget, semihosting, ?) [retarget]: 
-Trace output? (none, uart0ftdi, stdout, debug, ?) [uart0ftdi]: 
-Check some warnings? (true, false, ?) [true]: 
-Check most warnings? (true, false, ?) [false]: 
-Enable -Werror? (true, false, ?) [false]: 
-Use -Og on debug? (true, false, ?) [false]: 
-Use newlib nano? (true, false, ?) [true]: 
+Programming language? (c, cpp, ?) [cpp]:
+Board? (hifive1, e31arty, e51arty, ?) [hifive1]:
+Content? (empty, blinky, ?) [blinky]:
+Use system calls? (none, retarget, semihosting, ?) [retarget]:
+Trace output? (none, uart0ftdi, stdout, debug, ?) [uart0ftdi]:
+Check some warnings? (true, false, ?) [true]:
+Check most warnings? (true, false, ?) [false]:
+Enable -Werror? (true, false, ?) [false]:
+Use -Og on debug? (true, false, ?) [false]:
+Use newlib nano? (true, false, ?) [true]:
 
 Creating the C++ project 'hifive1-blinky-cpp'...
 File 'LICENSE' generated.
@@ -110,22 +110,22 @@ File 'src/newlib-syscalls.c' copied.
 File 'src/sysclock.cpp' copied.
 
 'xpm init' completed in 77 ms.
-$ 
+$
 ```
 
 ### Name (`--name <string>`)
 
-Define a name for the new xPack. If missing, the xPack name is 
+Define a name for the new xPack. If missing, the xPack name is
 derived from the current folder name.
 
 ### Properties (`-p|--property <string>`)
 
-Pass pairs of `name=value` properties to the template engine. Multiple 
+Pass pairs of `name=value` properties to the template engine. Multiple
 properties can be defined.
 
 The names, values and behaviours are all specific to each template engine.
 
-Example: the same template as before, if it receives a mandatory 
+Example: the same template as before, if it receives a mandatory
 `boardName` property,
 can create the new xPack without further questions, by using defaults:
 

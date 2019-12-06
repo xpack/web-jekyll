@@ -17,11 +17,11 @@ xpm <command> [<subcommand>...] [<options> ...] [<args>...]
 
 ## Description
 
-`xpm` is the package manager for xPacks. It puts xPacks in place so 
+`xpm` is the package manager for xPacks. It puts xPacks in place so
 that builds can find them, and manages dependencies.
 
 {% include note.html content="`xpm` is an extension of
-[npm](https://docs.npmjs.com/cli/npm.html) and 
+[npm](https://docs.npmjs.com/cli/npm.html) and
 uses the same public registry at https://registry.npmjs.org." %}
 
 The program accepts a command name, possibly one or more subcommand
@@ -47,20 +47,20 @@ where <command> is one of:
   build, init, install, run-script
 
 Common options:
-  --loglevel <level>     Set log level (silent|warn|info|verbose|debug|trace) 
-  -s|--silent            Disable all messages (--loglevel silent) 
-  -q|--quiet             Mostly quiet, warnings and errors (--loglevel warn) 
-  --informative          Informative (--loglevel info) 
-  -v|--verbose           Verbose (--loglevel verbose) 
-  -d|--debug             Debug messages (--loglevel debug) 
-  -dd|--trace            Trace messages (--loglevel trace, -d -d) 
-  --no-update-notifier   Skip check for a more recent version 
-  -C <folder>            Set current folder 
+  --loglevel <level>     Set log level (silent|warn|info|verbose|debug|trace)
+  -s|--silent            Disable all messages (--loglevel silent)
+  -q|--quiet             Mostly quiet, warnings and errors (--loglevel warn)
+  --informative          Informative (--loglevel info)
+  -v|--verbose           Verbose (--loglevel verbose)
+  -d|--debug             Debug messages (--loglevel debug)
+  -dd|--trace            Trace messages (--loglevel trace, -d -d)
+  --no-update-notifier   Skip check for a more recent version
+  -C <folder>            Set current folder
 
-xpm -h|--help            Quick help 
-xpm <command> -h|--help  Quick help on command 
-xpm --version            Show version 
-xpm -i|--interactive     Enter interactive mode 
+xpm -h|--help            Quick help
+xpm <command> -h|--help  Quick help on command
+xpm --version            Show version
+xpm -i|--interactive     Enter interactive mode
 
 npm xpm@0.5.0 '/Users/ilg/Library/npm/lib/node_modules/xpm'
 Home page: <https://github.com/xpack/xpm-js>
@@ -79,23 +79,23 @@ This can be changed, from not displaying any messages at all (`--silent`)
 to displaying lots of debugging trace messages (`--trace`).
 
 ```
-  --loglevel <level>     Set log level (silent|warn|info|verbose|debug|trace) 
-  -s|--silent            Disable all messages (--loglevel silent) 
-  -q|--quiet             Mostly quiet, warnings and errors (--loglevel warn) 
-  --informative          Informative (--loglevel info) 
-  -v|--verbose           Verbose (--loglevel verbose) 
-  -d|--debug             Debug messages (--loglevel debug) 
-  -dd|--trace            Trace messages (--loglevel trace, -d -d) 
+  --loglevel <level>     Set log level (silent|warn|info|verbose|debug|trace)
+  -s|--silent            Disable all messages (--loglevel silent)
+  -q|--quiet             Mostly quiet, warnings and errors (--loglevel warn)
+  --informative          Informative (--loglevel info)
+  -v|--verbose           Verbose (--loglevel verbose)
+  -d|--debug             Debug messages (--loglevel debug)
+  -dd|--trace            Trace messages (--loglevel trace, -d -d)
 ```
 
 ### Current folder (`-C`)
 
-By default the program is executed in the context of the current shell 
+By default the program is executed in the context of the current shell
 folder, but it can be changed to any folder using `-C <folder>`.
 
 ### Program version (`--version`)
 
-As for most command line tools, it is possible to ask for the current 
+As for most command line tools, it is possible to ask for the current
 version, with `--version`:
 
 ```console
@@ -104,12 +104,12 @@ $ xpm --version
 ```
 
 The result is written to the standard output stream, and consists of the
-semver string, without any `v` prefix, so it can be directly used in 
+semver string, without any `v` prefix, so it can be directly used in
 automated scripts, without any post processing.
 
 ### Skip checks (`--no-update-notifier`)
 
-By default, before exiting, `xpm` checks, once a day, if there is a 
+By default, before exiting, `xpm` checks, once a day, if there is a
 new version of the program available.
 
 For environments where this check is not necessary, it can be disabled.
@@ -125,7 +125,7 @@ commands as needed.
 $ xpm -i
 xpm> version
 0.5.0
-xpm> 
+xpm>
 ...
 ```
 

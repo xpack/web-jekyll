@@ -41,7 +41,7 @@ SyntaxError: Unexpected identifier
     at Object.Module._extensions..js (module.js:417:10)
 ```
 
-The solution is to install the most recent LTS version of Node, as 
+The solution is to install the most recent LTS version of Node, as
 described in the [prerequisites]({{ site.baseurl }}/install/) page.
 {% endcapture %}
 
@@ -52,9 +52,9 @@ described in the [prerequisites]({{ site.baseurl }}/install/) page.
 {% capture answer_2 %}
 This problem is specific to Windows and is caused by aggressive antivirus programs.
 
-On Windows, binary xPacks are .zip archives containing .exe files; 
-some aggressive antivirus programs may quarantine those files, or 
-even modify the content of the archives, affecting the checksum and 
+On Windows, binary xPacks are .zip archives containing .exe files;
+some aggressive antivirus programs may quarantine those files, or
+even modify the content of the archives, affecting the checksum and
 thus preventing the packages to be installed.
 
 Errors may look like:
@@ -67,8 +67,8 @@ Extracting 'gnu-mcu-eclipse-qemu-2.8.0-4-20190211-0633-win64.zip'...
 error: Cannot read property 'path' of null
 ```
 
-The solution is to configure the antivirus program to be less aggressive, 
-at least for files in the 
+The solution is to configure the antivirus program to be less aggressive,
+at least for files in the
 `AppData\Roaming\xPacks` and `AppData\Local\Caches\xPacks` folders.
 
 If this is not possible, temporarily disable the antivirus program.

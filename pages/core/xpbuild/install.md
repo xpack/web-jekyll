@@ -4,7 +4,7 @@ permalink: /xpbuild/install/
 
 toc: false
 comments: true
-keywords: 
+keywords:
   - xpbuild
   - xpack
   - install
@@ -20,13 +20,13 @@ yet available." %}
 
 ## Overview
 
-`xpbuild` is a [Node.js](https://nodejs.org) CLI application available as the 
-npm package [`xpbuild`](https://www.npmjs.com/package/@xpack/xpbuild) from the 
+`xpbuild` is a [Node.js](https://nodejs.org) CLI application available as the
+npm package [`xpbuild`](https://www.npmjs.com/package/@xpack/xpbuild) from the
 [`npmjs.com`](https://www.npmjs.com) public repository.
 
 ## Prerequisites
 
-A recent [`node`](https://nodejs.org) (>=8.x), since the ECMAScript 6 class 
+A recent [`node`](https://nodejs.org) (>=8.x), since the ECMAScript 6 class
 syntax is used, and a recent [`npm`](https://docs.npmjs.com/cli/npm).
 
 For details, please read (carefully!) the [Prerequisites]({{ site.baseurl }}/install/) page.
@@ -35,9 +35,9 @@ For details, please read (carefully!) the [Prerequisites]({{ site.baseurl }}/ins
 
 {% capture windows %}
 
-On Windows, by default, global Node packages are installed in the 
-user home folder, in `%APPDATA%\npm` 
-(like `C:\Users\ilg\AppData\Roaming\npm`), and managing packages 
+On Windows, by default, global Node packages are installed in the
+user home folder, in `%APPDATA%\npm`
+(like `C:\Users\ilg\AppData\Roaming\npm`), and managing packages
 does not require administrative rights.
 
 ```
@@ -59,7 +59,7 @@ C:\>dir "%APPDATA%"\npm\xpbuild*
                0 Dir(s)  51,207,155,712 bytes free
 ```
 
-If you followed the instructions in the 
+If you followed the instructions in the
 [Prerequisites]({{ site.baseurl }}/install/) page, you should
 already have this path configured and the program should start normally:
 
@@ -71,9 +71,9 @@ C:\>xpbuild --version
 
 {% capture macos %}
 
-On macOS, by default, global Node packages are installed in 
+On macOS, by default, global Node packages are installed in
 `/usr/local`, and managing them requires administrative rights,
-but if you followed the instructions in the 
+but if you followed the instructions in the
 [Prerequisites]({{ site.baseurl }}/install/) page, you should
 already have configured npm to use a location in the home folder.
 
@@ -96,9 +96,9 @@ $ xpbuild --version
 
 {% capture linux %}
 
-On GNU/Linux, by default, global Node packages are installed in 
+On GNU/Linux, by default, global Node packages are installed in
 `/usr/local`, and managing them requires administrative rights,
-but if you followed the instructions in the 
+but if you followed the instructions in the
 [Prerequisites]({{ site.baseurl }}/install/) page, you should
 already have configured npm to use a location in the home folder.
 
@@ -136,7 +136,7 @@ folder is [How to Prevent Permissions Errors](https://docs.npmjs.com/getting-sta
 
 ## `npx`
 
-If, for any reason, you decide not to install xpbuild, you can still 
+If, for any reason, you decide not to install xpbuild, you can still
 benefit from it by using `npx`, as a trampoline to start `xpbuild`:
 
 ```console
@@ -144,7 +144,7 @@ $ npx xpbuild --version
 0.4.3
 ```
 
-However, for regular usage, this method is not efficient, since 
+However, for regular usage, this method is not efficient, since
 `npx` will need to prepare the Node module
 for each run, and this takes some time.
 

@@ -11,6 +11,6 @@ last_updated: 2019-07-04 19:09:22 +0300
 
 ---
 
-{% include warning.html content="This tool is in design phase. More 
+{% include warning.html content="This tool is in design phase. More
 information will be published when available." %}
 

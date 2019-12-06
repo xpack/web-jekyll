@@ -14,12 +14,12 @@ last_updated: 2019-07-10 19:37:57 +0300
 
 This tool is still work in progress and is not yet public.
 
-It was initially called `xmake`, but the name collided with the 
+It was initially called `xmake`, but the name collided with the
 _Lua xmake_, and it was re-branded.
 
-The tool is mostly functional, at the moment it is able to build projects 
-using either `make` or `ninja`. Due to the uncertainty with the name, 
-promotion was postponed; then it was decided to also include an internal 
+The tool is mostly functional, at the moment it is able to build projects
+using either `make` or `ninja`. Due to the uncertainty with the name,
+promotion was postponed; then it was decided to also include an internal
 builder,
 using the code of xpninja, and to make it public when ready.
 

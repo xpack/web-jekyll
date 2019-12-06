@@ -14,42 +14,42 @@ last_updated: 2019-07-04 23:24:50 +0300
 
 **xPacks** are general purpose multi-version software packages.
 
-By **multi-version** it is understood not only that packages can have 
+By **multi-version** it is understood not only that packages can have
 multiple versions, but they **can be installed in parallel**, each
 project having its own set of dependencies.
 
-Based on the installed content, there are currently two 
+Based on the installed content, there are currently two
 types of xPacks: **source** and **binary**:
 
-- **source xPacks** are packages that install source files, 
+- **source xPacks** are packages that install source files,
 generally libraries used by the project.
-- **binary xPacks** are packages that install binary files, 
+- **binary xPacks** are packages that install binary files,
 generally tools used during the build process, like toolchains,
 builders, etc.
 
 ## Where does the name come from?
 
-The name, pronounced _**ɛks-pak**_, can be understood as _Universal Package_, 
-or _Any Type Package_, and tries to suggest that, when compared with 
-npm packages (which are basically about JavaScript), xPacks are more 
-general, and not linked to a specific programming language. 
+The name, pronounced _**ɛks-pak**_, can be understood as _Universal Package_,
+or _Any Type Package_, and tries to suggest that, when compared with
+npm packages (which are basically about JavaScript), xPacks are more
+general, and not linked to a specific programming language.
 
-Initially the _x_ came from _eXtended_, so _eXtended Packages_ can 
+Initially the _x_ came from _eXtended_, so _eXtended Packages_ can
 be another choice.
 
 ## What exactly is an xPack?
 
 The full definition is:
 
-{% include callout.html content="An xPack is a folder which includes a 
+{% include callout.html content="An xPack is a folder which includes a
 `package.json` file, defining at least
-the package `name`, the package `version`, and an `xpack` object, 
+the package `name`, the package `version`, and an `xpack` object,
 even empty." type="primary" %}
 
-Given the direct inheritance from npm packages, a canonical 
+Given the direct inheritance from npm packages, a canonical
 definition might be:
 
-{% include callout.html content="An xPack is a npm package with 
+{% include callout.html content="An xPack is a npm package with
 an additional `xpack` object defined in `package.json`." type="primary" %}
 
 ### Package formats
@@ -77,8 +77,8 @@ least the following definitions:
 }
 ```
 
-{% include note.html content="The npm `package.json` has a few more 
-fields, please read 
+{% include note.html content="The npm `package.json` has a few more
+fields, please read
 [Creating a package.json file](https://docs.npmjs.com/creating-a-package-json-file)
 for details." %}
 
@@ -98,7 +98,7 @@ $ ls -l
 total 16
 -rw-r--r--  1 ilg  staff  1070 Jul  1 23:33 LICENSE
 -rw-r--r--  1 ilg  staff   645 Jul  1 23:33 package.json
-$ cat package.json 
+$ cat package.json
 {
   "name": "xyz",
   "version": "1.0.0",
@@ -129,7 +129,7 @@ $ cat package.json
   "devDependencies": {},
   "xpack": {}
 }
-$ 
+$
 ```
 
 ## Why would I convert my project to an xPack?
@@ -139,12 +139,12 @@ The two main reasons are:
 - to automate dependencies management
 - to automate path management for dependent tools
 
-These are both simple and complicated things. To better understand 
+These are both simple and complicated things. To better understand
 them, please continue to read how binary and source xPacks work.
 
 ## How do binary xPacks work?
 
-Let's assume that 'my-awesome-project' needs the `arm-none-eabi-gcc` 
+Let's assume that 'my-awesome-project' needs the `arm-none-eabi-gcc`
 toolchain to build,
 and not any version but a specific one, like `8.2.1`; it also needs the
 xPack Basic Builder, xpbuild.
@@ -172,7 +172,7 @@ toolchain executables, like `xpacks/.bin/arm-none-eabi-gcc`.
 
 TODO: show the output of tree on the xpacks folder.
 
-Similarly for the builder, which is a Node.js CLI npm module, after 
+Similarly for the builder, which is a Node.js CLI npm module, after
 installing the module, npm will
 add a folder `node_modules/.bin` where a link to the `xpbuild` executable
 will be created (or a `xpbuild.cmd` stub on Windows).
@@ -184,12 +184,12 @@ adjusted to `xpacks/.bin:node_modules/.bin:$PATH`, so the exact versions
 of the tools required in the dependencies list will be preferred over any
 existing tools with the same names that might be present in the `PATH`.
 
-(Note: the package referred above are not yet available with 
+(Note: the package referred above are not yet available with
 these names, do not try to use them yet.)
 
 ## Are binary xPacks huge?
 
-Not at all; on the contrary, binary xPacks are very small, just a 
+Not at all; on the contrary, binary xPacks are very small, just a
 `package.json` file, since they include only the URLs where the binaries
 are actually stored (for example links to GitHub Releases), not the
 binaries themselves.
@@ -216,19 +216,19 @@ Even simpler. Let's assume that the 'awesome project' also needs the
 ```
 
 Running `xpm install` in the project folder will first install the
-`@micro-os-plus/diag-trace` package, possibly with all other dependencies, 
+`@micro-os-plus/diag-trace` package, possibly with all other dependencies,
 recursively.
 
-Then xpm will add links to all dependent packages in the `xpacks` folder, 
-like `xpacks/micro-os-plus-diag-trace` (mind the linearised package name); 
-now the project can refer to 
+Then xpm will add links to all dependent packages in the `xpacks` folder,
+like `xpacks/micro-os-plus-diag-trace` (mind the linearised package name);
+now the project can refer to
 them as to any sub-folder local to the project.
 
 TODO: show the output of tree on the xpacks folder.
 
 ## Example
 
-A real example is an embedded project that lists as dependencies 
+A real example is an embedded project that lists as dependencies
 two source xPacks, one Node module and three binary xPacks:
 
 ```js
@@ -253,7 +253,7 @@ two source xPacks, one Node module and three binary xPacks:
 ```
 
 The two source xPacks actually pull in six source xPacks, and the binary
-xPacks contribute a lot of links to `xpacks/.bin`: 
+xPacks contribute a lot of links to `xpacks/.bin`:
 
 ```console
 $ cd /tmp/hifive1-blinky-cpp
@@ -326,7 +326,7 @@ dist: trusty
 
 language: node_js
 node_js:
-  - "node" 
+  - "node"
 
 install:
   - npm install --global xpm

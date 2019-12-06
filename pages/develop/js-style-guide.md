@@ -10,15 +10,15 @@ last_updated: 2019-07-10 19:37:57 +0300
 
 ---
 
-After many years dealing with style guides for various languages, the conclusion is that the style itself is less important than applying it consistently. 
+After many years dealing with style guides for various languages, the conclusion is that the style itself is less important than applying it consistently.
 
 So, for the xPack JavaScript source files to be consistent, the first requirement is to pass the [Standard JS](https://standardjs.com) validation tools.
 
 After this, the main recommendations are:
 
 - use the **ECMAScript 6** specifications (ES 6),
-- if the module does something reasonably complex, the module public functions **must be asynchronous**, 
-- asynchronous functions must **use promises** (and definitely **avoid callbacks**), 
+- if the module does something reasonably complex, the module public functions **must be asynchronous**,
+- asynchronous functions must **use promises** (and definitely **avoid callbacks**),
 - **reentrancy** should be seriously considered (avoid module-global variables).
 
 <div style="clear: both;"></div>
@@ -31,7 +31,7 @@ This is Rule no. 1, that overrides all other rules. Definitely **avoid using old
 
 ### Use classes as much as possible
 
-Even if the new syntax is mostly syntactic sugar, and internally things 
+Even if the new syntax is mostly syntactic sugar, and internally things
 behave as strangely as they did in the first JavaScript versions,
 still **use the new class syntax** at large; it is much cleaner and
 improves readability.
@@ -54,7 +54,7 @@ Modules are singletons; using module variables is like using static
 variables in a multi-threaded environment; they may provide a way
 of sharing common data between multiple instances of objects created
 inside the same module, but if not handled correctly this may have
-unexpected results. 
+unexpected results.
 
 The general recommendation is to **make the modules reentrant**.
 In practical terms, **do not use module-global variables** at all;
@@ -103,7 +103,7 @@ break backward compatibility.
 
 ### Use the spread operator
 
-Th spread operator expands an iterable into its member objects. It also works 
+Th spread operator expands an iterable into its member objects. It also works
 with arrays and objects
 
 * Create array copies
@@ -176,7 +176,7 @@ for (let value of iterable) {
 // 31
 ```
 
-If the last value of the variable is needed outside the loop, define the 
+If the last value of the variable is needed outside the loop, define the
 variable before the loop:
 
 ```js
@@ -233,7 +233,7 @@ isObject (x) {
 }
 ```
 
-Please note that `null` is also an object, and everything created with 
+Please note that `null` is also an object, and everything created with
 `new` is also an object, including:
 
 - `new Boolean(true)`
@@ -247,8 +247,8 @@ Please note that `null` is also an object, and everything created with
 Although maps can be conveniently implemented with regular objects,
 the specs do not guarantee the insert order to be preserved.
 
-If the order is important, or if the object need to store other 
-properties too, use a `Map`. 
+If the order is important, or if the object need to store other
+properties too, use a `Map`.
 
 ### Make node exports/imports look like ES6 exports/imports
 
@@ -337,7 +337,7 @@ references are cleared (set to undefined).
 
 Alternatively use `copyFrom(from)` and possibly `appendFrom(from)`.
 
-Use a `clear()` method to clear the object content (it might be 
+Use a `clear()` method to clear the object content (it might be
 useful during tests).
 
 ### Use a separate location for private variables
@@ -348,7 +348,7 @@ No need to end the name of the variables with `_`.
 
 ### Use a separate location for cached variables
 
-If the object uses local cached objects, group them below a `cache_` object. 
+If the object uses local cached objects, group them below a `cache_` object.
 Initialise it to an empty object in the constructor an in the `clear()` method.
 
 No need to end the name of the variables with `_`.
@@ -367,7 +367,7 @@ class Base {
 
 ### Self
 
-When a reference to the static methods or variables is needed, to make 
+When a reference to the static methods or variables is needed, to make
 things explicit, prefer to define a `Self` variable.
 
 From within regular methods, use:
@@ -581,7 +581,7 @@ But for the modern ES 6 promise usage, exceptions are fine.
 
 Modules are a way of preventing multiple JavaScript units to pollute the global namespace.
 
-Objects defined at root level in a module are not global, but belong to the module; the usual name for this is _module-global_. 
+Objects defined at root level in a module are not global, but belong to the module; the usual name for this is _module-global_.
 
 ### Caching
 
@@ -591,7 +591,7 @@ From this point of view, modules behave like [singletons](https://en.wikipedia.o
 
 Leaving status at the module level can be either a blessing or a curse, depending on the environment used to run the module. In server environments, using module-global variables is like using static variables in a multi-threaded environment, if not handled correctly it may have unexpected results.
 
-### Exports 
+### Exports
 
 To make some functions and objects visible outside the module, you can add them as properties to the special `modules.exports` object:
 
@@ -642,7 +642,7 @@ __dirname = '/x/y/z'
 
 In each module, the `module` variable is a reference to the object representing the current module. `module` isn't actually a global but rather local to each module.
 
-The `module.exports` object is created by the Module system. Sometimes this is not acceptable; many want their module to be an object of their own. To do this, assign the desired export object to `module.exports`. 
+The `module.exports` object is created by the Module system. Sometimes this is not acceptable; many want their module to be an object of their own. To do this, assign the desired export object to `module.exports`.
 
 For convenience, `module.exports` is also accessible via the `exports` module-global. Note that assigning a value to `exports` will simply rebind the local exports variable, which is probably not what you want to do; if the relationship between `exports` and `module.exports` seems like magic to you, ignore `exports` and only use `module.exports`.
 

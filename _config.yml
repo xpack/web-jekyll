@@ -9,14 +9,14 @@ css-date: 201907181733
 
 repository: xpack/xpack.github.io
 
-# This property is useful for conditional filtering of content that is 
+# This property is useful for conditional filtering of content that is
 # separate from the PDF.
 output: web
 
 # This appears on the top navigation bar next to the home button.
 topnav_title: The xPack Project
 
-# This appears in the html browser tab for the site title (seen mostly 
+# This appears in the html browser tab for the site title (seen mostly
 # by search engines, not users).
 site_title: The xPack Project
 
@@ -25,12 +25,12 @@ company_name: xPack Project
 # This appears in the copyright notice in the footer.
 copyright_holder: Liviu Ionescu
 
-# If you're using Github, provide the basepath to the branch you've 
-# created for reviews, following the sample here. if not, leave this 
+# If you're using Github, provide the basepath to the branch you've
+# created for reviews, following the sample here. if not, leave this
 # value blank.
 github_editme_path: xpack/xpack.github.io/blob/master/
 
-# If you're using disqus for comments, add the short name here. 
+# If you're using disqus for comments, add the short name here.
 # If not, leave this value blank.
 disqus_shortname: xpack
 
@@ -41,7 +41,7 @@ google_analytics: UA-16767008-13
 host: localhost
 
 # The port where the preview is rendered. You can leave this as is
-# unless you have other Jekyll builds using this same port that 
+# unless you have other Jekyll builds using this same port that
 # might cause conflicts. in that case, use another port such as 4006.
 port: 4002
 
@@ -67,14 +67,14 @@ feedback_disable: true
 # If you uncomment the previous line, it changes the Feedback text.
 # feedback_text: "Need help?"
 
-# If you uncomment the previous line, it changes where the feedback 
+# If you uncomment the previous line, it changes where the feedback
 # link points to.
 # feedback_link: "http://helpy.io/"
 
 # Library used for syntax highlighting.
 highlighter: rouge
 
-# filter used to process markdown. note that kramdown differs from 
+# filter used to process markdown. note that kramdown differs from
 # github-flavored markdown in some subtle ways.
 markdown: kramdown
 kramdown:
@@ -83,8 +83,8 @@ kramdown:
  hard_wrap: false
  syntax_highlighter: rouge
 
-# Collections are declared here. this renders the content in _tooltips 
-# and processes it, but doesn't output it as actual files in the output 
+# Collections are declared here. this renders the content in _tooltips
+# and processes it, but doesn't output it as actual files in the output
 # unless you change output to true.
 collections:
   tooltips:

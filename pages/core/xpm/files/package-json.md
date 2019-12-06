@@ -7,8 +7,8 @@ last_updated: 2019-07-04 23:24:50 +0300
 
 ---
 
-The [`package.json`](https://docs.npmjs.com/files/package.json) file is 
-basically the same as for npm, with some 
+The [`package.json`](https://docs.npmjs.com/files/package.json) file is
+basically the same as for npm, with some
 extensions.
 
 ## The mandatory `xpack` property
@@ -24,7 +24,7 @@ property, even empty:
 }
 ```
 
-Although not mandatory, it is also recommended to add an `xpack` keyword, 
+Although not mandatory, it is also recommended to add an `xpack` keyword,
 to help find the xPacks in the public repository.
 
 ```json
@@ -95,11 +95,11 @@ The supported platforms are:
 - `win32-x86` - Windows 32-bit
 - `win32-x64` - Windows 64-bit
 
-{% include note.html content="The names are exactly the Node.js 
+{% include note.html content="The names are exactly the Node.js
 `process.platform` and `process.arch`." %}
 
-The files are downloaded from `<baseUrl>/<fileName>`. The common 
-use case is to have all files in the same folder, and in this case it is 
+The files are downloaded from `<baseUrl>/<fileName>`. The common
+use case is to have all files in the same folder, and in this case it is
 enough to define `baseUrl` once, but it is also possible to define it
 for each platform, allowing to download files from different folders/servers.
 
@@ -109,8 +109,8 @@ to the package root folder.
 To shorten the paths, a number of the initial levels are skipped (`skip`).
 
 After the archive is unpacked, links are created in `xpacks/.bin` to each
-binary. These links are defined in the `bin` section. 
-On Windows, where soft links to files are problematic, `.cmd` 
+binary. These links are defined in the `bin` section.
+On Windows, where soft links to files are problematic, `.cmd`
 stubs are created.
 
 {% include important.html content="To accommodate for the `.cmd` stubs,

@@ -28,7 +28,7 @@ Aliases:
 
 ## Description
 
-This command installs a package, and all packages that it depends on. 
+This command installs a package, and all packages that it depends on.
 
 As for npm, a package is any of the following:
 
@@ -40,23 +40,23 @@ As for npm, a package is any of the following:
 6. A `<name>` that has a `latest` tag satisfying (5).
 7. A `git` url that, when cloned, results in (1).
 
-Even if you never publish your package, you can still get a lot of 
-benefits of using xpm to conveniently install dependencies, 
+Even if you never publish your package, you can still get a lot of
+benefits of using xpm to conveniently install dependencies,
 and perhaps
 to automate path management for dependent tools.
 
 ### Install dependencies
 
-When invoked without arguments in a package folder, `xpm` installs 
+When invoked without arguments in a package folder, `xpm` installs
 the dependencies listed in the `dependencies` and `devDependencies`
 field in `package.json`.
 
-If the dependencies are xPacks, they are installed in the local `xpacks` 
-folder. For binary xPacks, soft links to the executables are created 
+If the dependencies are xPacks, they are installed in the local `xpacks`
+folder. For binary xPacks, soft links to the executables are created
 in the `xpacks/.bin` folder (on Windows `.cmd` stubs are created).
 
-To maintain compatibility with npm, dependencies 
-must not necessarily be xPacks, they can also be npm modules, 
+To maintain compatibility with npm, dependencies
+must not necessarily be xPacks, they can also be npm modules,
 and are installed as usual in `node_modules`.
 
 Example:
@@ -115,7 +115,7 @@ $
 ```
 
 
-### Install packages 
+### Install packages
 
 When invoked with arguments, they must refer to packages. The common
 use case is to use names of packages stored on the public repository,
@@ -148,7 +148,7 @@ Extracting 'gnu-mcu-eclipse-arm-none-eabi-gcc-8.2.1-1.7-20190524-0603-macos.tgz'
 3248 files extracted.
 
 'xpm install' completed in 9.958 sec.
-$ 
+$
 ```
 
 ## Options
@@ -169,19 +169,19 @@ Install options:
   -n|--dry-run          Pretend to install the package (not impl) (optional)
 
 Common options:
-  --loglevel <level>    Set log level (silent|warn|info|verbose|debug|trace) 
-  -s|--silent           Disable all messages (--loglevel silent) 
-  -q|--quiet            Mostly quiet, warnings and errors (--loglevel warn) 
-  --informative         Informative (--loglevel info) 
-  -v|--verbose          Verbose (--loglevel verbose) 
-  -d|--debug            Debug messages (--loglevel debug) 
-  -dd|--trace           Trace messages (--loglevel trace, -d -d) 
-  --no-update-notifier  Skip check for a more recent version 
-  -C <folder>           Set current folder 
+  --loglevel <level>    Set log level (silent|warn|info|verbose|debug|trace)
+  -s|--silent           Disable all messages (--loglevel silent)
+  -q|--quiet            Mostly quiet, warnings and errors (--loglevel warn)
+  --informative         Informative (--loglevel info)
+  -v|--verbose          Verbose (--loglevel verbose)
+  -d|--debug            Debug messages (--loglevel debug)
+  -dd|--trace           Trace messages (--loglevel trace, -d -d)
+  --no-update-notifier  Skip check for a more recent version
+  -C <folder>           Set current folder
 
-xpm -h|--help           Quick help 
-xpm --version           Show version 
-xpm -i|--interactive    Enter interactive mode 
+xpm -h|--help           Quick help
+xpm --version           Show version
+xpm -i|--interactive    Enter interactive mode
 
 npm xpm@0.5.0 '/Users/ilg/Library/npm/lib/node_modules/xpm'
 Home page: <https://github.com/xpack/xpm-js>

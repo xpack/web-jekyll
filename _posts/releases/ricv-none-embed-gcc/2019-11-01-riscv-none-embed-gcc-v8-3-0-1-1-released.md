@@ -2,7 +2,7 @@
 layout: post
 title:  xPack GNU RISC-V Embedded GCC v8.3.0-1.1 released
 
-summary: "Version 8.3.0-1.1 is a new release of the **xPack GNU RISC-V 
+summary: "Version 8.3.0-1.1 is a new release of the **xPack GNU RISC-V
 Embedded GCC**, following SiFive release from August 2019."
 
 version: 8.3.0-1.1
@@ -29,7 +29,7 @@ The binary files are available from [GitHub Releases]({{ page.download_url }}).
 
 ## Install
 
-The full details of installing the **xPack GNU RISC-V Embedded GCC** on 
+The full details of installing the **xPack GNU RISC-V Embedded GCC** on
 various platforms are presented in the separate
 [Install]({{ site.baseurl }}/riscv-none-embed-gcc/install/) page.
 
@@ -79,7 +79,7 @@ commit [0d24a86](https://github.com/sifive/riscv-newlib/tree/0d24a86822a5ee73d6a
 from 9 July 2019
 
 GDB was upstreamed and does not require SiFive specific patches,
-so the current build uses 
+so the current build uses
 `git://sourceware.org/git/binutils-gdb.git`, the `9b40759` commit from
 28 Feb 2019.
 
@@ -163,7 +163,7 @@ time to provide empty implementations for the POSIX system calls.
 The libraries are compiled with `-O2 -mcmodel=medany`. The nano version is
 compiled with `-Os -mcmodel=medany`.
 
-{% include important.html content="It is mandatory for the applications to 
+{% include important.html content="It is mandatory for the applications to
 be compiled with
 `-mcmodel=medany`, otherwise the link will fail." %}
 
@@ -205,7 +205,7 @@ The original PDF documentation is available in the `share/doc` folder.
 
 Binaries for **Windows**, **macOS** and **GNU/Linux** are provided.
 
-The binaries were built using 
+The binaries were built using
 [xPack Build Box (XBB)](https://github.com/xpack/xpack-build-box), a set
 of build environments based on slightly older distributions, that should be
 compatible with most recent systems.
@@ -214,7 +214,7 @@ compatible with most recent systems.
   Docker container
 - Windows: all binaries were built with mingw-w64 GCC 7.4, running in a
   CentOS 6 Docker container
-- macOS: most binaries were built with GCC 7.4, running in a separate  
+- macOS: most binaries were built with GCC 7.4, running in a separate 
   folder on macOS 10.10.5; GDB cannot be compiled with GCC, so Apple
   clang was used.
 
@@ -262,6 +262,6 @@ xpack-riscv-none-embed-gcc-8.3.0-1.1-win32-x64.zip
 - npmjs.com [@xpack-dev-tools/riscv-none-embed-gcc](https://www.npmjs.com/package/@xpack-dev-tools/riscv-none-embed-gcc)
   - all releases [![npm](https://img.shields.io/npm/dt/@xpack-dev-tools/riscv-none-embed-gcc.svg)](https://www.npmjs.com/package/@xpack-dev-tools/riscv-none-embed-gcc/)
 
-Credit to [Shields IO](https://shields.io) for the badges and to 
-[Somsubhra/github-release-stats](https://github.com/Somsubhra/github-release-stats) 
+Credit to [Shields IO](https://shields.io) for the badges and to
+[Somsubhra/github-release-stats](https://github.com/Somsubhra/github-release-stats)
 for the individual file counters.

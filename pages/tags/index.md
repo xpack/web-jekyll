@@ -15,5 +15,5 @@ Available tags:
 
 {% for tag in site.tags %}
 - [{{ tag | first }}]({{ site.baseurl }}/tags/{{ tag | first }}/)
-{% endfor %} 
+{% endfor %}
 
