@@ -22,7 +22,7 @@ last_updated: 2019-12-06 16:16:45 +0200
 All Core Tools are [Node.js](https://nodejs.org) CLI application
 available from the
 [npmjs.com](https://www.npmjs.com) public repository and are installed
-via `npm` which uses `node`.
+via **npm** which uses Node.
 
 ## Prerequisites
 
@@ -34,7 +34,7 @@ $ node --version
 v{{ page.node_version }}
 ```
 
-If this is your first encounter with `npm`, you need to install the
+If this is your first encounter with **npm**, you need to install the
 [Node.js](https://nodejs.org) JavaScript run-time. The process is
 straightforward and does not pollute the system locations significantly;
 there are two Node versions, **LTS** (**Long Term Service**) and
@@ -44,17 +44,19 @@ there are two Node versions, **LTS** (**Long Term Service**) and
 
 The general procedure is to download the package suitable for your
 platform and install it as usual.
-The result is a binary program called `node` (that can be used to execute
-JavaScript code from the terminal), and a link called `npm`, pointing to
+The result is a binary program named `node` (that can be used to execute
+JavaScript code from the terminal), and a link named `npm`, pointing to
 the `npm-cli.js` script, which is part of the Node module that implements
 the npm functionality (on Windows instead of soft links,
 `.cmd` stubs are used).
 
 {% include tip.html content="The usual method is to install Node with
 administrative rights;
-it is also possible to install it in a custom location, using the
-archive distributions. Regardless where it is installed, the `node`
-executable must be in the system path." %}
+however, the prefered method is to install it
+in a custom location in the home folder, using a version
+manager or by directly unpacking the archive distributions.
+Regardless how and where it is installed, the `node`
+executable must be in the curent path." %}
 
 {% capture version_manager %}
 ## `nvm` install (node version manager)
@@ -103,7 +105,7 @@ v{{ page.node_version }}
 
 {{ npm_update }}
 
-A version of `npm`, usually a bit older, comes packed with `node`.
+A version of **npm**, usually a bit older, comes packed with Node.
 
 ```powershell
 C:\>where npm.cmd
@@ -303,14 +305,19 @@ use `nvm use <version>`.
 
 {% capture linux %}
 
+{% include note.html content="The official Node.js distribution no
+longer provides 32-bit images. The version manager is still able
+to install node, by compiling it from sources, but the process takes
+quite a while." %}
+
 {{ version_manager }}
 
 In short, [nvm](https://github.com/nvm-sh/nvm) changes the install
-location to `C:\Users\<user>\AppData\Roaming\npm` and allows to install 
+location to `C:\Users\<user>\AppData\Roaming\npm` and allows to install
 multiple instances of node
 in the `~/.nvm/versions/node` folder.
 
-Download the 
+Download the
 https://github.com/coreybutler/nvm-windows/releases
 
 ```console
@@ -437,7 +444,16 @@ adjustments." %}
 
 {% include platform-tabs.html %}
 
+## Install xpm
+
+The next step is to install the
+[xPack Package Manager]({{ site.baseurl }}/xpm/install/).
+
 ## Miscellaneous
 
-The official page explaining how to install `npm` in a custom folder is
+The official page explaining how to install **npm** in a custom folder is
 [Resolving EACCES permissions errors when installing packages globally](https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally).
+
+For less common platforms, it is also posible to install from unofficial
+builds, or to build it from sources; for more details see the
+[downloads](https://nodejs.org/en/download/) page.

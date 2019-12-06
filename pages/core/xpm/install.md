@@ -4,7 +4,7 @@ permalink: /xpm/install/
 
 toc: false
 comments: true
-keywords: 
+keywords:
   - xpm
   - npm
   - xpack
@@ -18,25 +18,25 @@ last_updated: 2019-07-22 22:14:01 +0300
 
 ## Overview
 
-`xpm` is a [Node.js](https://nodejs.org) CLI application available as the 
-npm package [`xpm`](https://www.npmjs.com/package/xpm) from the 
+**xpm** is a [Node.js](https://nodejs.org) CLI application available as the
+npm package [xpm](https://www.npmjs.com/package/xpm) from the
 [`npmjs.com`](https://www.npmjs.com) public repository.
 
 ## Prerequisites
 
-A recent [`node`](https://nodejs.org) (>=8.x), since the ECMAScript 6 class 
-syntax is used, and a recent [`npm`](https://docs.npmjs.com/cli/npm).
+A recent [Node.js](https://nodejs.org) (>=8.x), since the ECMAScript 6 class
+syntax is used, and a recent [npm](https://docs.npmjs.com/cli/npm).
 
-For details, please read (carefully!) the 
+For details, please read (carefully!) the
 [prerequisites]({{ site.baseurl }}/install/) page.
 
 ## `xpm` install
 
 {% capture windows %}
 
-On Windows, by default, global Node packages are installed in the 
-user home folder, in `%APPDATA%\npm` 
-(like `C:\Users\ilg\AppData\Roaming\npm`), and managing packages 
+On Windows, by default, global Node.js packages are installed in the
+user home folder, in `%APPDATA%\npm`
+(like `C:\Users\ilg\AppData\Roaming\npm`), and managing packages
 does not require administrative rights.
 
 ```
@@ -61,7 +61,7 @@ C:\>dir "%APPDATA%"\npm\xpm*
                0 Dir(s)  51,207,155,712 bytes free
 ```
 
-If you followed the instructions in the 
+If you followed the instructions in the
 [prerequisites]({{ site.baseurl }}/install/) page, you should
 already have this path configured and the program should start normally:
 
@@ -72,9 +72,9 @@ C:\>xpm --version
 
 ### Aggressive antivirus programs & xpm
 
-On Windows, binary xPacks are .zip archives containing .exe files; 
-some aggressive antivirus programs may quarantine those files, or 
-even modify the content of the archives, affecting the checksum and 
+On Windows, binary xPacks are `.zip` archives containing `.exe` files;
+some aggressive antivirus programs may quarantine those files, or
+even modify the content of the archives, affecting the checksum and
 thus preventing the packages to be installed.
 
 Errors may look like:
@@ -88,7 +88,7 @@ error: Cannot read property 'path' of null
 ```
 
 The solution is to configure the antivirus program to be less aggressive,
-at least for files in the 
+at least for files in the
 `AppData\Roaming\xPacks` and `AppData\Local\Caches\xPacks` folders.
 
 If this is not possible, temporarily disable the antivirus program.
@@ -97,9 +97,9 @@ If this is not possible, temporarily disable the antivirus program.
 
 {% capture macos %}
 
-On macOS, by default, global Node packages are installed in 
+On macOS, by default, global Node.js packages are installed in
 `/usr/local`, and managing them requires administrative rights,
-but if you followed the instructions in the 
+but if you followed the instructions in the
 [prerequisites]({{ site.baseurl }}/install/) page, you should
 already have configured npm to use a location in the home folder.
 
@@ -122,9 +122,9 @@ $ xpm --version
 
 {% capture linux %}
 
-On GNU/Linux, by default, global Node packages are installed in 
+On GNU/Linux, by default, global Node.js packages are installed in
 `/usr/local`, and managing them requires administrative rights,
-but if you followed the instructions in the 
+but if you followed the instructions in the
 [prerequisites]({{ site.baseurl }}/install/) page, you should
 already have configured npm to use a location in the home folder.
 
@@ -143,9 +143,9 @@ $ xpm --version
 0.5.0
 ```
 
-### Using an out of date Node
+### Using an out of date Node.js
 
-Ignoring the recommendation to use the LTS version of Node and 
+Ignoring the recommendation to use the LTS version of Node.js and
 insisting on using the one provided by the distribution usually results in
 errors like this:
 
@@ -167,11 +167,11 @@ SyntaxError: Unexpected identifier
     at Object.Module._extensions..js (module.js:417:10)
 ```
 
-This problem is caused by the old Node, unable to understand the 
+This problem is caused by the old Node.js, unable to understand the
 `async` keyword.
 
-Follow the instructions in the 
-[prerequisites]({{ site.baseurl }}/install/) page and update your 
+Follow the instructions in the
+[prerequisites]({{ site.baseurl }}/install/) page and update your
 `node` & `npm` programs.
 
 {% endcapture %}
@@ -193,21 +193,21 @@ folder is [How to Prevent Permissions Errors](https://docs.npmjs.com/getting-sta
 
 ## `npx`
 
-If, for any reason, you decide not to install xpm, you can still 
-benefit from it by using `npx`, as a trampoline to start xpm:
+If, for any reason, you decide not to install xpm, you can still
+benefit from it by using the `npx` comand, as a trampoline to start xpm:
 
 ```console
 $ npx xpm --version
 0.4.3
 ```
 
-However, for regular usage, this method is not efficient, since 
-`npx` will need to prepare the Node module
+However, for regular usage, this method is not efficient, since
+npx will need to prepare the Node.js module
 for each run, and this takes some time.
 
 ## npm folders
 
-For more details on the folders used by npm, see 
+For more details on the folders used by npm, see
 [npm-folders](https://docs.npmjs.com/files/folders).
 
 ## xpm folders
@@ -217,6 +217,7 @@ xpm does not use any system folders, and all activity happens
 in the user home.
 
 There are two main folders:
+
 - a cache folder, where all downloaded files are stored
 - a central repository folder, where the xPacks are expanded
 
@@ -236,19 +237,19 @@ where <command> is one of:
   build, init, install, run-script
 
 Common options:
-  --loglevel <level>     Set log level (silent|warn|info|verbose|debug|trace) 
-  -s|--silent            Disable all messages (--loglevel silent) 
-  -q|--quiet             Mostly quiet, warnings and errors (--loglevel warn) 
-  --informative          Informative (--loglevel info) 
-  -v|--verbose           Verbose (--loglevel verbose) 
-  -d|--debug             Debug messages (--loglevel debug) 
-  -dd|--trace            Trace messages (--loglevel trace, -d -d) 
-  -C <folder>            Set current folder 
+  --loglevel <level>     Set log level (silent|warn|info|verbose|debug|trace)
+  -s|--silent            Disable all messages (--loglevel silent)
+  -q|--quiet             Mostly quiet, warnings and errors (--loglevel warn)
+  --informative          Informative (--loglevel info)
+  -v|--verbose           Verbose (--loglevel verbose)
+  -d|--debug             Debug messages (--loglevel debug)
+  -dd|--trace            Trace messages (--loglevel trace, -d -d)
+  -C <folder>            Set current folder
 
-xpm -h|--help            Quick help 
-xpm <command> -h|--help  Quick help on command 
-xpm --version            Show version 
-xpm -i|--interactive     Enter interactive mode 
+xpm -h|--help            Quick help
+xpm <command> -h|--help  Quick help on command
+xpm --version            Show version
+xpm -i|--interactive     Enter interactive mode
 
 npm xpm@0.2.10 '/Users/ilg/My Files/MacBookPro Projects/xPack/npm-modules/xpm-js.git'
 Home page: <https://github.com/xpack/xpm-js>
