@@ -7,7 +7,7 @@ comments: true
 keywords: openocd
 
 date: 2015-09-04 17:02:00 +0300
-last_updated: 2019-10-11 15:52:59 +0300
+last_updated: 2019-12-06 22:15:37 +0200
 
 ---
 

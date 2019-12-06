@@ -5,7 +5,7 @@ permalink: /support/
 comments: true
 
 date: 2015-09-12 13:43:00 +0300
-last_updated: 2019-10-11 15:52:58 +0300
+last_updated: 2019-12-06 22:15:37 +0200
 
 ---
 
