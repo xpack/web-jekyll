@@ -13,7 +13,7 @@ last_updated: 2019-12-07 01:40:42 +0200
 ## Oh, no, not another package format!
 
 This is probably the first thought many people might have when hearing about
-xPacks. There are enough package formats and package manager,
+xPacks. There are enough package formats and package managers,
 why would we need another one?
 
 Well, first, **xPacks** do not introduce a new package format, but use
@@ -27,7 +27,7 @@ so things are not that scary as they seemed initially.
 ## I'm perfectly happy with my development environment, why would I bother with xPacks?
 
 The current development environments are indeed great, and rolling
-distributions like Arch and Homebrew do a tremendous job in keeping the
+distributions like _Arch_ and _Homebrew_ do a tremendous job in keeping the
 system up-to-date, but not rarely the latest and greatest available versions
 break older applications and various complex processes, like build
 scripts, that depend on older versions.
@@ -45,12 +45,12 @@ which tools/components are present, which versions, and with
 this input try to parametrise the process (for example a project build),
 to accomodate for all these differences.
 
-This approach started with GNU configure, and today use even more complex
-solutions, like cMake or meson scripts.
+This approach started with GNU _configure_, and today use even more complex
+solutions, like _cMake_ or _meson_ scripts.
 
 Well, instead of permanently wondering how to make use of the new versions,
 and making the auto-configure scripts more and more complex with every day,
-why not allow the application to ask for the exact versions that are know
+why not allow the application to ask for the exact versions that are known
 to be compatible, and let an automated tool handle the dependencies?
 
 **xPacks** can do just this, bring in the project exactly the
@@ -238,7 +238,7 @@ existing tools with the same names that might be present in the `PATH`.
 (Note: the package referred above are not yet available with
 these names, do not try to use them yet.)
 
-## Are binary xPacks huge?
+### Binary xPacks are probably huge, aren't they?
 
 Not at all; on the contrary, binary xPacks are very small, just a
 `package.json` file, since they include only the URLs where the binaries
