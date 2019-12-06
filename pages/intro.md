@@ -18,6 +18,9 @@ By **multi-version** it is understood not only that packages can have
 multiple versions, but they **can be installed in parallel**, each
 project having its own set of dependencies.
 
+**xPacks** do not introduce a new package format, but use
+exactly the same format as npm, and can be stored in the same repositories.
+
 Based on the installed content, there are currently two
 types of xPacks: **source** and **binary**:
 
@@ -45,6 +48,11 @@ The full definition is:
 `package.json` file, defining at least
 the package `name`, the package `version`, and an `xpack` object,
 even empty." type="primary" %}
+
+{% include note.html content="The name and version are mandatory
+only when publishing the package or
+installing it as a dependency. However it is recommended to
+define them in all packages." %}
 
 Given the direct inheritance from npm packages, a canonical
 definition might be:
@@ -154,16 +162,16 @@ xPack Basic Builder, xpbuild.
   "name": "my-awesome-project",
   "version": "1.0.0",
   "devDependencies": {
-    "@xpack/xpbuild": "~1.2.3",
-    "@xpack-dev-tools/arm-none-eabi-gcc": "~8.2.1"
+    "@xpack/xpbuild": "^1.2.3",
+    "@xpack-dev-tools/arm-none-eabi-gcc": "^8.2.1"
   },
   "xpack": {}
 }
 ```
 
-{% include note.html content="The `~` used in the version field is
-a npm/semver convention that means either the given version,
-or one with the same major/minor but a higher patch, if available." %}
+{% include note.html content="The `^` used in the version field is
+a npm/semver convention that means _compatible_, in other words the
+highest version that does not change the major number, if available." %}
 
 Running `xpm install` in the project folder will first install the toolchain
 in the central xPack storage (a folder in user's home), then add a folder
@@ -205,11 +213,11 @@ Even simpler. Let's assume that the 'awesome project' also needs the
   "name": "my-awesome-xpack",
   "version": "1.0.0",
   "dependencies": {
-      "@micro-os-plus/diag-trace": "~1.0.6"
+      "@micro-os-plus/diag-trace": "^1.0.6"
   },
   "devDependencies": {
-    "@xpack/xpbuild": "~1.2.3",
-    "@xpack-dev-tools/arm-none-eabi-gcc": "~8.2.1"
+    "@xpack/xpbuild": "^1.2.3",
+    "@xpack-dev-tools/arm-none-eabi-gcc": "^8.2.1"
   },
   "xpack": {}
 }
@@ -238,14 +246,14 @@ two source xPacks, one Node module and three binary xPacks:
   "description": "An xPack with a blinky application running on HiFive1",
   "...": "...",
   "dependencies": {
-    "@micro-os-plus/diag-trace": "~1.0.6",
-    "@sifive/hifive1-board": "~1.0.3"
+    "@micro-os-plus/diag-trace": "^1.0.6",
+    "@sifive/hifive1-board": "^1.0.3"
   },
   "devDependencies": {
-    "xmake": "~0.3.9",
-    "@gnu-mcu-eclipse/riscv-none-gcc": "~7.2.0-2.1",
-    "@gnu-mcu-eclipse/openocd": "~0.10.0-7.1",
-    "@gnu-mcu-eclipse/windows-build-tools": "~2.10.1"
+    "xmake": "^0.3.9",
+    "@gnu-mcu-eclipse/riscv-none-gcc": "^7.2.0-2.1",
+    "@gnu-mcu-eclipse/openocd": "^0.10.0-7.1",
+    "@gnu-mcu-eclipse/windows-build-tools": "^2.10.1"
   },
   "xpack": {
   }
