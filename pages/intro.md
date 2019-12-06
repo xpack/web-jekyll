@@ -10,16 +10,59 @@ last_updated: 2019-12-06 22:15:36 +0200
 
 ---
 
-## What are xPacks?
+## Oh, no, not another package format!
 
-**xPacks** are general purpose multi-version software packages.
+This is probably the first thought many people might have when hearing about
+xPacks. There are enough package formats and package manager,
+why would we need another one?
+
+Well, first, **xPacks** do not introduce a new package format, but use
+exactly the same format as npm, and xPacks can be stored in the same
+repositories.
+
+And **xpm**, the package manager, builds on top of **npm**, the very popular
+JavaScript package manager, extending it with new generic features,
+so things are not that scary as they seemed initially.
+
+## I'm perfectly happy with my development environment, why would I bother with xPacks?
+
+The current development environments are indeed great, and rolling
+distributions like Arch and Homebrew do a tremendous job in keeping the
+system up-to-date, but not rarely the latest and greatest available versions
+break older applications and various complex processes, like build
+scripts, that depend on older versions.
+
+**xPacks** are intended to solve exactly this problem, by providing
+the simple and uniform solution of
+installing different versions of the same package in different
+folders, and managing dependencies.
+
+## Why bothering to manage versions when auto-configure can sort out the differences?
+
+The traditional way of dealing with different versions and variations between
+systems is to add a complex auto-configure mechanism that is able to detect
+which tools/components are present, which versions, and with
+this input try to parametrise the process (for example a project build),
+to accomodate for all these differences.
+
+This approach started with GNU configure, and today use even more complex
+solutions, like cMake or meson scripts.
+
+Well, instead of permanently wondering how to make use of the new versions,
+and making the auto-configure scripts more and more complex with every day,
+why not allow the application to ask for the exact versions that are know
+to be compatible, and let an automated tool handle the dependencies?
+
+**xPacks** can do just this, bring in the project exactly the
+versions needed, thus making the auto-configure step superfluos.
+
+## But what are xPacks?
+
+In brief, **xPacks** are general purpose multi-version software packages.
 
 By **multi-version** it is understood not only that packages can have
-multiple versions, but they **can be installed in parallel**, each
-project having its own set of dependencies.
-
-**xPacks** do not introduce a new package format, but use
-exactly the same format as npm, and can be stored in the same repositories.
+multiple versions, but they **can be installed in parallel**, allowing each
+project to have its own set of dependencies.
 
 Based on the installed content, there are currently two
 types of xPacks: **source** and **binary**:
@@ -32,10 +75,10 @@ builders, etc.
 
 ## Where does the name come from?
 
-The name, pronounced _**ɛks-pak**_, can be understood as _Universal Package_,
-or _Any Type Package_, and tries to suggest that, when compared with
+**xPack**, pronounced _**ɛks-pak**_, can be understood as _Universal Package_,
+or _Any Type Package_, and tries to suggest that, when compared to
 npm packages (which are basically about JavaScript), xPacks are more
-general, and not linked to a specific programming language.
+general, and not linked/limited to a specific programming language.
 
 Initially the _x_ came from _eXtended_, so _eXtended Packages_ can
 be another choice.
