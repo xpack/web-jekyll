@@ -57,9 +57,10 @@ xPacks aware tools, like the **GNU MCU Eclipse plug-ins** automatically
 identify binaries installed with
 xpm and provide a convenient method to manage paths.
 
-{% include important.html content="Due to the name change, automatic
-path discovery in **GNU MCU Eclipse plug-ins** will not be available
-initially and will be added in the next plug-ins release." %}
+{% include important.html content="Automatic
+path discovery for the packages from the new `@xpack-dev-tools` scope was
+added to **GNU MCU Eclipse plug-ins** with v4.6.1-201909231407; update
+older versions or configure the path manually." %}
 
 ### Uninstall
 
