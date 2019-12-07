@@ -14,26 +14,26 @@ last_updated: 2019-12-07 01:51:09 +0200
 
 This is probably the first thought many people might have when hearing about
 xPacks. There are enough package formats and package managers,
-why would we need another one?
+why would we need yet another one?
 
 Well, first, **xPacks** do not introduce a new package format, but use
-exactly the same format as npm, and xPacks can be stored in the same
-repositories.
+exactly the same format as **npm**, and xPacks can be stored in the same
+repositories, public or private.
 
 And **xpm**, the package manager, builds on top of **npm**, the very popular
-JavaScript package manager, extending it with new generic features,
+JavaScript package manager, extending it with new language neutral features,
 so things are not that scary as they seemed initially.
 
 ## I'm perfectly happy with my development environment, why would I bother with xPacks?
 
 The current development environments are indeed great, and rolling
 distributions like _Arch_ and _Homebrew_ do a tremendous job in keeping the
-system up-to-date, but not rarely the latest and greatest available versions
+systems up-to-date, but not rarely the latest and greatest available versions
 break older applications and various complex processes, like build
 scripts, that depend on older versions.
 
 **xPacks** are intended to solve exactly this problem, by providing
-the simple and uniform solution of
+a simple and uniform solution of
 installing different versions of the same package in different
 folders, and managing dependencies.
 
@@ -42,7 +42,7 @@ folders, and managing dependencies.
 The traditional way of dealing with different versions and variations between
 systems is to add a complex auto-configure mechanism that is able to detect
 which tools/components are present, which versions, and with
-this input try to parametrise the process (for example a project build),
+this input do its best to parametrise the process (for example a project build),
 to accomodate for all these differences.
 
 This approach started with GNU _configure_, and today use even more complex
@@ -69,9 +69,10 @@ types of xPacks: **source** and **binary**:
 
 - **source xPacks** are packages that install source files,
 generally libraries used by the project.
-- **binary xPacks** are packages that install binary files,
+- **binary xPacks** are packages that install standlone binary files,
 generally tools used during the build process, like toolchains,
-builders, etc.
+builders, etc; standalone means they are selfcontained and do not
+depend on other shared libraries or tools.
 
 ## Where does the name come from?
 
