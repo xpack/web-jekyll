@@ -85,13 +85,14 @@ The archives can be downloaded from the
 [GitHub Releases](https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases/) page.
 
 {% capture windows %}
+
 ### Download
 
 The Windows versions of **xPack GNU Arm Embedded GCC** are packed as ZIP files.
 Download the latest version named like:
 
-- `xpack-arm-none-eabi-gcc-8.3.1-1.1-win32-x64.zip`
-- `xpack-arm-none-eabi-gcc-8.3.1-1.1-win32-x32.zip`
+- `xpack-arm-none-eabi-gcc-9.2.1-1.1-win32-x64.zip`
+- `xpack-arm-none-eabi-gcc-9.2.1-1.1-win32-x32.zip`
 
 Select the `-x64` file for 64-bit Windows machines and the `-x32` file
 for 32-bit Windows machines.
@@ -102,10 +103,13 @@ The `win32` part is confusing, but we have to leave with it." %}
 
 ### Unpack
 
-Unpack the archive and copy it into the `%userprofile%\AppData\Roaming\xPacks`
-(for example `C:\Users\ilg\AppData\Roaming\xPacks`) folder; according
+Unpack the archive and copy the versioned folder into the `%userprofile%\AppData\Roaming\xPacks\arm-none-eabi-gcc`
+(for example `C:\Users\ilg\AppData\Roaming\xPacks\arm-none-eabi-gcc`) folder;
+according
 to Microsoft, this is the recommended location for installing user specific
 packages.
+
+You may shorten the last folder name and keep only the version.
 
 {% include note.html content="For manual installs, the recommended
 install location is slightly different from the xpm install folders,
@@ -114,14 +118,14 @@ and `.content` to store the unpacked archive." %}
 
 {% include important.html content="Although perfectly possible to
 install GNU Arm Embedded GCC in any folder, it is highly recommended
-to use this path, since by default the GNU MCU Eclipse debug plug-ins search
-for the executable in this location." %}
+to use this path, since by default the GNU MCU Eclipse plug-ins search
+for the executables in this location." %}
 
 To check if GCC starts, use the following command:
 
 ```
-C:\Users\ilg>C:\Users\ilg\AppData\Roaming\xPacks\GNU ARM Embedded GCC\8.3.1-1.1\bin\arm-none-eabi-gcc.exe" --version
-arm-none-eabi-gcc (xPack GNU Arm Embedded GCC, 64-bit) 8.3.1 20190703 (release) [gcc-8-branch revision 273027]
+C:\Users\ilg>C:\Users\ilg\AppData\Roaming\xPacks\arm-none-eabi-gcc\xpack-arm-none-eabi-gcc-9.2.1-1.1\bin\arm-none-eabi-gcc.exe" --version
+arm-none-eabi-gcc (xPack GNU Arm Embedded GCC, 64-bit) 9.2.1 20191025 (release) [ARM/arm-9-branch revision 277599]
 ```
 
 {% include tip.html content="Since Windows does not provide the GNU make
@@ -130,39 +134,43 @@ binaries, it is recommended to also install the **Windows Build Tools**." %}
 {% endcapture %}
 
 {% capture macos %}
+
 ### Download
 
-The macOS version of **xPack GNU Arm Embedded GCC** is packed as a TGZ archive.
+The macOS version of **xPack GNU Arm Embedded GCC** is packed as a
+`.tar.gz` archive.
 Download the latest version named like:
 
--  `xpack-arm-none-eabi-gcc-8.3.1-1.1-darwin-x64.tgz`
+- `xpack-arm-none-eabi-gcc-9.2.1-1.1-darwin-x64.tar.gz`
 
 ### Unpack
 
 To install GNU Arm Embedded GCC, unpack the archive and copy it to
-`/${HOME}/opt/xPacks/arm-none-eabi-gcc/<version>`:
+`/${HOME}/opt/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-<version>`:
 
 ```console
-$ mkdir -p ~/opt
-$ cd ~/opt
+$ mkdir -p ~/opt/xPacks/arm-none-eabi-gcc
+$ cd ~/opt/xPacks/arm-none-eabi-gcc
 
-$ tar xvf ~/Downloads/xpack-arm-none-eabi-gcc-8.3.1-1.1-darwin-x64.tgz
-$ chmod -R -w xPacks/arm-none-eabi-gcc/8.3.1-1.1
+$ tar xvf ~/Downloads/xpack-arm-none-eabi-gcc-9.2.1-1.1-darwin-x64.tar.gz
+$ chmod -R -w xpack-arm-none-eabi-gcc-9.2.1-1.1
 ```
+
+You may shorten the last folder name and keep only the version.
 
 {% include note.html content="For manual installs, the recommended
 install location is different from the xpm install folders." %}
 
 {% include important.html content="Although perfectly possible to
 install GNU Arm Embedded GCC in any folder, it is highly recommended
-to use this path, since by default the GNU MCU Eclipse debug plug-ins search
-for the executable in this location." %}
+to use this path, since by default the GNU MCU Eclipse plug-ins search
+for the executables in this location." %}
 
 The result is a structure like:
 
 ```console
-$ tree -L 2 /Users/ilg/Library/xPacks/arm-none-eabi-gcc/8.3.1-1.1
-/Users/ilg/Library/xPacks/arm-none-eabi-gcc/8.3.1-1.1
+$ tree -L 2 /Users/ilg/Library/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-9.2.1-1.1
+/Users/ilg/Library/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-9.2.1-1.1
 ├── README.md
 ├── arm-none-eabi
 │   ├── bin
@@ -179,7 +187,7 @@ $ tree -L 2 /Users/ilg/Library/xPacks/arm-none-eabi-gcc/8.3.1-1.1
 │   ├── arm-none-eabi-elfedit
 │   ├── arm-none-eabi-g++
 │   ├── arm-none-eabi-gcc
-│   ├── arm-none-eabi-gcc-8.3.1
+│   ├── arm-none-eabi-gcc-9.2.1
 │   ├── arm-none-eabi-gcc-ar
 │   ├── arm-none-eabi-gcc-nm
 │   ├── arm-none-eabi-gcc-ranlib
@@ -237,20 +245,21 @@ $ tree -L 2 /Users/ilg/Library/xPacks/arm-none-eabi-gcc/8.3.1-1.1
 To check if GCC starts, use:
 
 ```console
-$ ~/opt/xPacks/arm-none-eabi-gcc/8.3.1-1.1/bin/arm-none-eabi-gcc --version
-arm-none-eabi-gcc (xPack GNU Arm Embedded GCC, 64-bit) 8.3.1 20190703 (release) [gcc-8-branch revision 273027]
+$ ~/opt/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-9.2.1-1.1/bin/arm-none-eabi-gcc --version
+arm-none-eabi-gcc (xPack GNU Arm Embedded GCC, 64-bit) 9.2.1 20191025 (release) [ARM/arm-9-branch revision 277599]
 ```
 
 {% endcapture %}
 
 {% capture linux %}
+
 ### Download
 
 The GNU/Linux versions of **xPack GNU Arm Embedded GCC** are packed as
-TGZ archives. Download the latest version named like:
+`.tar.gz` archives. Download the latest version named like:
 
-- `xpack-arm-none-eabi-gcc-8.3.1-1.1-linux-x64.tgz`
-- `xpack-arm-none-eabi-gcc-8.3.1-1.1-linux-x32.tgz`
+- `xpack-arm-none-eabi-gcc-9.2.1-1.1-linux-x64.tar.gz`
+- `xpack-arm-none-eabi-gcc-9.2.1-1.1-linux-x32.tar.gz`
 
 As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
 CentOS, but can be executed on most recent GNU/Linux distributions.
@@ -260,15 +269,17 @@ machines.
 ### Unpack
 
 To install GNU Arm Embedded GCC, unpack the archive and copy it to
-`/${HOME}/opt/xPacks/arm-none-eabi-gcc/<version>`:
+`/${HOME}/opt/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-<version>`:
 
 ```console
-$ mkdir -p ~/opt
-$ cd ~/opt
+$ mkdir -p ~/opt/xPacks/arm-none-eabi-gcc
+$ cd ~/opt/xPacks/arm-none-eabi-gcc
 
-$ tar xvf ~/Downloads/xpack-arm-none-eabi-gcc-8.3.1-1.1-linux-x64.tgz
-$ chmod -R -w xPacks/arm-none-eabi-gcc/8.3.1-1.1
+$ tar xvf ~/Downloads/xpack-arm-none-eabi-gcc-9.2.1-1.1-linux-x64.tar.gz
+$ chmod -R -w xpack-arm-none-eabi-gcc-9.2.1-1.1
 ```
+
+You may shorten the last folder name and keep only the version.
 
 {% include note.html content="For manual installs, the recommended
 install location is slightly different from the xpm install folders,
@@ -277,14 +288,14 @@ and `.content` to store the unpacked archive." %}
 
 {% include important.html content="Although perfectly possible to
 install GNU Arm Embedded GCC in any folder, it is highly recommended
-to use this path, since by default the GNU MCU Eclipse debug plug-ins search
-for the executable in this location." %}
+to use this path, since by default the GNU MCU Eclipse plug-ins search
+for the executables in this location." %}
 
 The result is a structure like:
 
 ```console
-$ tree -L 2 /home/ilg/opt/xPacks/arm-none-eabi-gcc/8.3.1-1.1
-/home/ilg/opt/xPacks/arm-none-eabi-gcc/8.3.1-1.1
+$ tree -L 2 /home/ilg/opt/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-9.2.1-1.1
+/home/ilg/opt/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-9.2.1-1.1
 ├── arm-none-eabi
 │   ├── bin
 │   ├── include
@@ -300,7 +311,7 @@ $ tree -L 2 /home/ilg/opt/xPacks/arm-none-eabi-gcc/8.3.1-1.1
 │   ├── arm-none-eabi-elfedit
 │   ├── arm-none-eabi-g++
 │   ├── arm-none-eabi-gcc
-│   ├── arm-none-eabi-gcc-8.3.1
+│   ├── arm-none-eabi-gcc-9.2.1
 │   ├── arm-none-eabi-gcc-ar
 │   ├── arm-none-eabi-gcc-nm
 │   ├── arm-none-eabi-gcc-ranlib
@@ -375,8 +386,8 @@ $ tree -L 2 /home/ilg/opt/xPacks/arm-none-eabi-gcc/8.3.1-1.1
 To check if GCC starts and is recent, use:
 
 ```console
-$ ~/opt/xPacks/arm-none-eabi-gcc/8.3.1-1.1/bin/arm-none-eabi-gcc --version
-arm-none-eabi-gcc (xPack GNU Arm Embedded GCC, 64-bit) 8.3.1 20190703 (release) [gcc-8-branch revision 273027]
+$ ~/opt/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-9.2.1-1.1/bin/arm-none-eabi-gcc --version
+arm-none-eabi-gcc (xPack GNU Arm Embedded GCC, 64-bit) 9.2.1 20191025 (release) [ARM/arm-9-branch revision 277599]
 ```
 
 {% endcapture %}
