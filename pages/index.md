@@ -13,7 +13,8 @@ last_updated: 2019-12-06 22:15:37 +0200
 
 ## Mission statement
 
-Provide a set of cross-platform tools to manage, configure and build complex,
+Based on a simple multi-version manager, provide a set of cross-platform tools
+to manage, configure and build complex,
 modular, multi-target (multi-architecture, multi-board, multi-toolchain)
 projects, intended to **enhance code sharing** and **reusing** during the
 life cycle of libraries and applications, with an emphasis on C/C++ and
@@ -28,10 +29,10 @@ hell? If so, xPacks may help you._
 
 **xPacks** are general purpose multi-version software packages,
 much the same as the highly successful
-[npm modules](https://docs.npmjs.com/getting-started/what-is-npm)
+[npm packages](https://docs.npmjs.com/getting-started/what-is-npm)
 in the [Node.js](https://nodejs.org/en/) JavaScript ecosystem.
 Actually **xPacks** do not introduce a new package format, but use
-exactly the same format as npm, and can be stored in the same repositories.
+exactly the same format as **npm**, and can be stored in the same repositories.
 
 By **multi-version** it is understood not only that packages can have
 multiple versions, but they **can be installed in parallel**, each
@@ -51,7 +52,7 @@ types of xPacks: **source** and **binary**:
 
 - **source xPacks** are packages that install source files,
 generally libraries used by the project.
-- **binary xPacks** are packages that install binary files,
+- **binary xPacks** are packages that install binary/executable files,
 generally tools used during the build process, like toolchains,
 builders, etc.
 
