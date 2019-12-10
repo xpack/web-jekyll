@@ -63,6 +63,15 @@ path discovery for the packages from the new `@xpack-dev-tools` scope was
 added to **GNU MCU Eclipse plug-ins** with v4.6.1-201909231407; update
 older versions or configure the path manually." %}
 
+### Update
+
+For the moment, to update the package, try to install the latest release again,
+as shown before. If there is a new release, it will be installed,
+otherwise a message will warn that the package is already installed.
+
+Future versions of xpm will implement the `outdted` and `update` command,
+as npm does.
+
 ### Uninstall
 
 To remove the installed xPack, the command is similar:
