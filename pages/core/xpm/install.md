@@ -227,7 +227,7 @@ For more details see [xpm folders]({{ site.baseurl }}/xpm/folders/).
 
 The default location used to install the global packages repository is
 in `~/Library`, a folder that, due to an unfortunate Apple decision,
-is hidden for rebular browsing in Finder.
+is hidden for regular browsing in Finder.
 
 To make it back visible, use:
 
