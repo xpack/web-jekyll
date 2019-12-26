@@ -61,9 +61,11 @@ executable must be in the curent path." %}
 {% capture version_manager %}
 ## `nvm` install (node version manager)
 
-For a greater flexibility, it is recommended to use a version manager,
-which not only simplifies the intall procedure, but also allows to
-install multiple versions of Node.js in parallel.
+Node.js can be installed manually, but for a greater flexibility, on POSIX
+platforms
+it is possible to automate this process by using nvm,
+which not only simplifies the install procedure, but also allows advanced
+users to install multiple versions of Node.js in parallel.
 For details, see the
 [Using a Version Manager to install Node.js and npm](https://docs.npmjs.com/getting-started/installing-node#using-a-version-manager-to-install-nodejs-and-npm)
 page.
@@ -184,10 +186,6 @@ In short, [nvm](https://github.com/nvm-sh/nvm) changes the install
 location to `~/.nvm` and allows to install multiple instances of node
 in the `~/.nvm/versions/node` folder.
 
-```console
-$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
-```
-
 If you have a previous version of npm installed with a local prefix,
 remove it:
 
@@ -199,12 +197,24 @@ $ npm config delete prefix
 
 Also remove `${HOME}/Library/npm/bin` or `${HOME}/opt/npm/bin` from the PATH.
 
-To install the latest node, source `.bash_profile` or open a new terminal
-(to make use of the new environment variables) and issue the following:
+When everything is clean, run the install script:
 
 ```console
-$ source ~/.bash_profile
+$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+```
 
+This will install the version manager in `~/.nvm`, and add a few lines to
+the shell profile, for example to `.bash_profile` on older versions.
+
+{% include warning.html content="Please note that macOS Catalina no
+longer uses bash, and the current npm install script does not
+support zsh yet, so the two lines must be manually added to `.zprofile." %}
+
+To install the latest node, after updating the shell profile, open a new
+terminal (to make use of the new environment variables) and issue the
+following:
+
+```console
 $ nvm install --lts node
 Downloading and installing node v{{ page.node_version }}...
 Downloading https://nodejs.org/dist/v12.13.0/node-v12.13.0-darwin-x64.tar.gz...
@@ -317,13 +327,6 @@ location to `C:\Users\<user>\AppData\Roaming\npm` and allows to install
 multiple instances of node
 in the `~/.nvm/versions/node` folder.
 
-Download the
-https://github.com/coreybutler/nvm-windows/releases
-
-```console
-$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
-```
-
 If you have a previous version of npm installed with a local prefix,
 remove it:
 
@@ -335,13 +338,21 @@ $ npm config delete prefix
 
 Also remove `${HOME}/opt/npm/bin` from the PATH.
 
-To install the latest node, source `.bashrc` or open a new terminal
-(to make use of the new environment variables) and issue the following:
+When everything is clean, run the install script:
 
 ```console
-$ source ~/.bashrc
+$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+```
 
-$ npm config delete prefix
+This will install the version manager in `~/.nvm`, and add a few lines to
+the shell profile, for example to `.bash_profile` on most
+distributions.
+
+To install the latest node, after updating the shell profile, open a new
+terminal (to make use of the new environment variables) and issue the
+following:
+
+```console
 $ nvm install --lts node
 Downloading and installing node v12.13.0...
 Downloading https://nodejs.org/dist/v12.13.0/node-v12.13.0-linux-x64.tar.xz...
