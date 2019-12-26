@@ -223,6 +223,24 @@ There are two main folders:
 
 For more details see [xpm folders]({{ site.baseurl }}/xpm/folders/).
 
+### macOS specifics
+
+The default location used to install the global packages repository is
+in `~/Library`, a folder that, due to an unfortunate Apple decision,
+is hidden for rebular browsing in Finder.
+
+To make it back visible, use:
+
+```console
+$ /usr/bin/chflags nohidden ~/Library
+$ xattr -d com.apple.FinderInfo ~/Library
+```
+
+Another anoying behaviour, of Eclipse this time, is that the Eclipse
+file browser does not
+show folders starting with `.` (dot), which is a real pity since
+the binary packages are extracted in a folder named `.content`.
+
 ## User info
 
 To get an initial glimpse on the program, ask for help:
