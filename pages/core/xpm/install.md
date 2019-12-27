@@ -236,10 +236,26 @@ $ /usr/bin/chflags nohidden ~/Library
 $ xattr -d com.apple.FinderInfo ~/Library
 ```
 
-Another anoying behaviour, of Eclipse this time, is that the Eclipse
-file browser does not
-show folders starting with `.` (dot), which is a real pity since
-the binary packages are extracted in a folder named `.content`.
+A more general solution is to make all hidden files:
+
+```console
+$ defaults write com.apple.Finder AppleShowAllFiles true
+$ killall Finder
+```
+
+Another anoying behaviour of the file browser is to hide names starting
+with `.` (dot), which is a real pity since the binary packages are
+extracted in a folder named `.content`.
+
+Fortunately there is a workaround for this too:
+
+```
+cmd+shift+'.'
+```
+
+This keyboard shortcut works like a toggle, using it once makes files
+starting with dot visible,
+using it again reverts to hiding them.
 
 ## User info
 

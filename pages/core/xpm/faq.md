@@ -74,8 +74,44 @@ at least for files in the
 If this is not possible, temporarily disable the antivirus program.
 {% endcapture %}
 
+{% capture question_3 %}
+Cannot find the `Library` folder (on macOS)
+{% endcapture %}
+
+{% capture answer_3 %}
+Yes, due to an unfortunate Apple decision,
+this folder is hidden for regular browsing in Finder.
+
+To make it back visible, use:
+
+```console
+$ /usr/bin/chflags nohidden ~/Library
+$ xattr -d com.apple.FinderInfo ~/Library
+```
+{% endcapture %}
+
+{% capture question_4 %}
+Cannot find the `.content` folder (on macOS)
+{% endcapture %}
+
+{% capture answer_4 %}
+Yes, due to an unfortunate Apple decision,
+all folders starting with a dot are hidden for regular browsing in Finder.
+
+Fortunately there is a workaround for this:
+
+```
+cmd+shift+'.'
+```
+
+This keyboard shortcut works like a toggle, using it once makes files
+starting with dot visible,
+using it again reverts to hiding them.
+{% endcapture %}
 
 {% include div-panel-group.html %}
 {% include faq-panel.html id="collapse-1" question=question_1 answer=answer_1 %}
 {% include faq-panel.html id="collapse-2" question=question_2 answer=answer_2 %}
+{% include faq-panel.html id="collapse-3" question=question_3 answer=answer_3 %}
+{% include faq-panel.html id="collapse-4" question=question_4 answer=answer_4 %}
 {% include div-end.html %}
