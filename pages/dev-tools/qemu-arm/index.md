@@ -23,6 +23,7 @@ directly skip to the desired pages.
 User pages:
 
 - [Install]({{ site.baseurl }}/qemu-arm/install/)
+- [Command line options]({{ site.baseurl }}/qemu-arm/options/)
 - [Support]({{ site.baseurl }}/qemu-arm/support/)
 - [Releases]({{ site.baseurl }}/qemu-arm/releases/)
 
