@@ -3,7 +3,7 @@ title: Prerequisites for building xPack binaries
 permalink: /xbb/prerequisites/
 
 date: 2017-07-06 20:55:00 +0300
-last_updated: 2019-12-06 22:15:38 +0200
+last_updated: 2020-01-21 17:58:51 +0200
 
 ---
 
