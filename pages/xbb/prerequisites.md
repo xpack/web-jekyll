@@ -21,7 +21,6 @@ using [mingw-w64](http://mingw-w64.org).
 The main trick that makes the multi-platform build possible is
 [Docker](https://www.docker.com).
 
-
 ### GNU/Linux
 
 Any GNU/Linux distribution that is able to run Docker should be ok; it
@@ -32,6 +31,7 @@ The procedure was tested on:
 
 - Ubuntu 16.04 LTS, running as a virtual machine in Parallels Desktop on macOS 10.12.
 - Ubuntu 17.10, running as a virtual machine in VirtualBox on macOS 10.13.
+- Ubuntu 18.04 Server, running on an Intel NUC NUC8i7BEH with 32GB of RAM.
 
 The build scripts do most of the actual work in the Docker container, and,
 apart from Docker, the host machine has no other special requirements.
@@ -41,7 +41,7 @@ apart from Docker, the host machine has no other special requirements.
 For any GNU/Linux distribution, follow the
 [specific instructions](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/#install-using-the-repository).
 
-The steps to install Docker on an Ubuntu system are basically:
+For example, the steps to install Docker on a modern 64-bit Ubuntu system are basically:
 
 ```console
 $ sudo apt-get update
@@ -50,11 +50,24 @@ $ sudo apt-get install apt-transport-https ca-certificates  curl software-proper
 
 $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
-$ sudo add-apt-repository  "deb [arch=amd64] https://download.docker.com/linux/ubuntu  $(lsb_release -cs)  stable"
+$ version_name=$(lsb_release -cs)
+$ sudo add-apt-repository  "deb [arch=amd64] https://download.docker.com/linux/ubuntu  ${version_name} stable"
 
 $ sudo apt-get update
 $ sudo apt-get -y install docker-ce
 ```
+
+{% include warning.html content="Please note that the above lines get the
+current version name via `lsb_release` and assumes that a folder with that
+name is available at https://download.docker.com/linux/ubuntu/dists/.
+This is true for most versions, except the very latest one, which might not
+yet be made available by the Docker team. In this case set the
+`version_name` manually to the previous version.
+You can also do this by
+manually editting the `/etc/apt/sources.list` file.
+At the time
+of writing this, the version for Ubuntu 19.10 **eoan** is not available
+and you must use **disco**." %}
 
 To check if the install is functional, run the _Hello World_ image,
 for the moment as `sudo`:
@@ -89,7 +102,7 @@ distributions, the last line may differ, for example for Arch Linux use:
 $ systemctl restart docker
 ```
 
-To make these changes effective, logout and login.
+To make these changes effective, preferably **reboot** the machine.
 
 To check if the configuration change is functional, run the same
 _Hello World_ image without sudo:
