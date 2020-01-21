@@ -147,3 +147,23 @@ in the GitHub web interface for each project of interest.
 Unless otherwise mentioned, all **xPack** tools with original content
 are provided **free of charge** under the terms of the
 [MIT License](https://opensource.org/licenses/MIT).
+
+## Let us know if you enjoyed using this project!
+
+If you enjoyed using this project, please let us know; here are some advices:
+
+- the best way to praise us would be to **donate**; if you want to speed
+up development and help future versions include more and more great
+features, please consider donating; any contribution, small or
+generous, will be highly appreciated;
+- star the projects you liked on GitHub ([xPack](https://github.com/xpack)
+or [xPack Dev Tools](https://github.com/xpack-dev-tools/));
+- follow the project on [Twitter](https://twitter.com/xpack_project),
+to get notifications on new releases.
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="NXKFN7DJH8DJ6">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="Pay Pal" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
