@@ -200,10 +200,11 @@ versions**.
 
 To compile Python 2 use the following commands:
 
-```console
+```bash
 python2_version="2.7.17"
 mkdir -p "${HOME}/Downloads"
-curl -L --fail -o "${HOME}/Downloads/Python-${python2_version}.tgz" https://www.python.org/ftp/python/${python2_version}/Python-${python2_version}.tgz
+curl -L --fail -o "${HOME}/Downloads/Python-${python2_version}.tgz" \
+https://www.python.org/ftp/python/${python2_version}/Python-${python2_version}.tgz
 
 rm -rf "${HOME}/Work/Python-${python2_version}"
 mkdir -p "${HOME}/Work"
@@ -226,10 +227,11 @@ $ which python2.7
 
 To compile Python 3 use the following commands:
 
-```console
+```bash
 python3_version="3.7.6"
 mkdir -p "${HOME}/Downloads"
-curl -L --fail -o "${HOME}/Downloads/Python-${python3_version}.tgz" https://www.python.org/ftp/python/${python3_version}/Python-${python3_version}.tgz
+curl -L --fail -o "${HOME}/Downloads/Python-${python3_version}.tgz" \
+https://www.python.org/ftp/python/${python3_version}/Python-${python3_version}.tgz
 
 rm -rf "${HOME}/Work/Python-${python3_version}"
 mkdir -p "${HOME}/Work"
