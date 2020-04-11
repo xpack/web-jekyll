@@ -65,14 +65,15 @@ an xPack, it is recommended to suffix the project name with '-xpack'." %}
 
 With a browser, at GitHub, select your account or one of your
   organisations (like
+  [xPacks](https://github.com/xpacks),
+  [xPacks Dev Tools](https://github.com/xpack-dev-tools),
   [µOS++](https://github.com/micro-os-plus),
-  [GNU MCU Eclipse](https://github.com/gnu-mcu-eclipse) or
-  [xPacks](https://github.com/xpacks))
+  [GNU MCU Eclipse](https://github.com/gnu-mcu-eclipse)).
 
 - click the green **New** button to create a new repository
   - enter **Repository name**; use all lowercase and hyphens to
     separate words (not underscores!); preferably suffix the name with `-xpack`
-  - enter **Description** (like _An xPack with ..._)
+  - enter **Description** (like _An xPack with ..._ or _A binary xPack with ..._; no ending dot)
   - select **Public**
   - enable **Initialize this repository with a README**
   - select **Add .gitignore: Node**
@@ -114,6 +115,7 @@ Thumbs.db
 .DS_Store
 
 # end
+
 ```
 
 - for Eclipse C/C++ projects you can include:
@@ -169,6 +171,7 @@ the `README.md` file and replace its entire content with:
 ```
 This project does not use the `master` branch, please
 switch to the `xpack` branch to get the project files.
+
 ```
 
 With VSC, Sourcetree or Git:
@@ -178,8 +181,14 @@ With VSC, Sourcetree or Git:
 
 ### Create the `xpack` branch
 
-With Sourcetree or Git:
+With VSC, Sourcetree or Git.
 
+- VSC menu **View** → **Command Palette...** 
+  - **Git: Create branch**
+
+(or with GitLens)
+
+Sourcetree:
 - select the `master` branch
 - click the **Branch** button
 - in the **Name Branch** field, enter `xpack`
@@ -187,8 +196,9 @@ With Sourcetree or Git:
 
 ### Publish both branches
 
-With Sourcetree or Git:
+With VSC, Sourcetree or Git.
 
+(Sourcetree)
 - click the **Push** button
 - select the `master` and `xpack` local branches
 - click the **OK** button
@@ -204,19 +214,21 @@ the **View Remote** button):
 
 ### Create the npm/xpm `package.json`
 
+Select the `xpack` branch.
+
 Use `xpm init` and later edit the `package.json`.
 
-```
+```console
 $ cd <project>.git
 $ xpm init
 $ cat package.json
 {
   "name": "xxx",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "An xPack with <your-description-here>",
   "main": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -247,11 +259,12 @@ Open `package.json` with Visual Studio Code:
 
 - as **name** enter the scope (your npm account name or one of
   your npm organisations) and the project name, without `-xpack.git`
-  (like `@micro-os-plus/diag-trace`)
-- as **version**, enter 0.0.1 if the project is in early development,
+  (like `@micro-os-plus/diag-trace`, `@xpack-dev-tools/ninja-build`)
+- as **version**, enter `0.0.1` if the project is in early development,
   or accept 1.0.0 for the first stable release; generally use the
   [semver](http://semver.org) conventions
 - as **description**, use the same string as the GitHub project description
+- in **scripts**, check and possibly remove a trailing comma,
 - as **url** and **homepage**, use the actual project Git URL
 - as **author**, enter full data, like
   ```json
@@ -259,12 +272,12 @@ Open `package.json` with Visual Studio Code:
   "author": {
     "name": "Liviu Ionescu",
     "email": "ilg@livius.net",
-    "url": "http://liviusdotnet.wordpress.com"
+    "url": "https://github.com/ilg-ul"
   }
 }
 ```
 - as **license**, enter the [SPDX](https://spdx.org/licenses/) license
-  identifier (like MIT); if the license is not a standard one, provide
+  identifier (like `MIT`); if the license is not a standard one, provide
   the text in a `LICENSE` file and update the JSON to read:
   ```json
 { "license": "SEE LICENSE IN <filename>" }
@@ -288,15 +301,14 @@ Open `package.json` with Visual Studio Code:
 With VSC, Sourcetree or Git:
 
 - stage the `package.json`
-- commit with the following message: **package.json: v1.0.0** or
-  **package.json: v0.0.1**
+- commit with the following message: **package.json: v0.0.1**
 
 ### Edit the `README.md` file with actual content
 
 With the editor of your choice:
 
-- **do not start with H1**, since it is not shown by the npmjs server; H2 is ok,
-  or start with a badge and then H2
+- start with some badges
+- as headers, you can start with H1, the npmjs server now shows it
 - after the main title, copy the project description
 - explain how to install the xPack
   (like `xpm install --global @scope/name`)
