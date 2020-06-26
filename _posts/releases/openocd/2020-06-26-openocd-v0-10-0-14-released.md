@@ -6,7 +6,7 @@ the latest upstream master and adds support for running on Arm
 platforms, like Raspberry Pi."
 
 version: 0.10.0-14
-npm_subversion: 1
+npm_subversion: 2
 download_url: https://github.com/xpack-dev-tools/openocd-xpack/releases/tag/v0.10.0-14/
 
 date:   2020-06-24 13:05:00 +0300
