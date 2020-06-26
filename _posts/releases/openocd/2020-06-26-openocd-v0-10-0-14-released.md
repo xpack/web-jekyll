@@ -106,8 +106,8 @@ The first set of tests were performed automatically on Travis, by running
 a simple script to check if the binaries start on a wide range of
 platforms and distributions:
 
-- https://travis-ci.org/github/xpack-dev-tools/openocd-xpack/builds/702320342
-- https://travis-ci.org/github/xpack-dev-tools/openocd-xpack/builds/702325083
+- [stable](https://travis-ci.org/github/xpack-dev-tools/openocd-xpack/builds/702320342)
+- [latest](https://travis-ci.org/github/xpack-dev-tools/openocd-xpack/builds/702325083)
 
 ## Tests
 
