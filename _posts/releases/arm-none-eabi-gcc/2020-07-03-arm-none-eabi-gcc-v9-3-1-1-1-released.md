@@ -1,7 +1,7 @@
 ---
 title:  xPack GNU Arm Embedded GCC v9.3.1-1.1 released
 
-summary: "Version 9.3.1-1.1 is a new release of **xPack GNU Arm Embedded GCC**, following Arm release from {{ page.arm_date }} (version **9-2020-q2-update**)."
+summary: "Version 9.3.1-1.1 is a new release of **xPack GNU Arm Embedded GCC**, following Arm release from June 01, 2020 (version **9-2020-q2-update**)."
 
 arm_version: 9-2020-q2-update
 arm_date: June 01, 2020
@@ -135,20 +135,20 @@ Note: TUI is not available on Windows.
 
 ## Known problems
 
-- GDB with Python were built with version 2.7/3.7, and require
-exactly those versions in order to run properly.
+- the GDB binaries with Python support were built with version 2.7/3.7,
+ and require exactly those versions in order to run properly.
 
 ## Shared libraries
 
 On all platforms the packages are standalone, and expect only the standard
-C/C++ runtime to be present on the host.
+runtime to be present on the host.
 
 All dependencies that are build as shared libraries are copied locally in the
 same folder as the executable.
 
-### `rpath`
+### `runpath`
 
-On GNU/Linux the binaries are adjusted to use a relative run path:
+On GNU/Linux the binaries are adjusted to use a relative path:
 
 ```console
 $ readelf -d library.so | grep runpath
@@ -198,8 +198,8 @@ compatible with most recent systems.
 ## Travis tests
 
 The first set of tests were performed automatically on Travis, by running
-a simple script to check if the binaries start on a wide range of
-platforms and distributions:
+a simple script to check if the binaries start and compile several simple
+programs on a wide range of platforms and distributions:
 
 - [Test xPack Arm Embed GCC on stable platforms](https://travis-ci.org/github/xpack-dev-tools/arm-none-eabi-gcc-xpack/builds/704528867)
 - [Test xPack Arm Embed GCC on latest platforms](https://travis-ci.org/github/xpack-dev-tools/arm-none-eabi-gcc-xpack/builds/704562965)
