@@ -22,6 +22,15 @@ tags:
 
 ---
 
+This is the multi-platform **xPack** version of **OpenOCD** (formerly part
+of the GNU MCU Eclipse project).
+
+There are separate binaries that run on **Windows**, **macOS** and
+**GNU/Linux**, 32/64-bit.
+
+Starting with this version, support for 32/64-bit **Arm GNU/Linux** platforms,
+like **Raspberry Pi**, was added.
+
 ## Download
 
 The binary files are available from [GitHub Releases]({{ page.download_url }}).
@@ -109,6 +118,15 @@ compatible with most recent systems.
   Ubuntu 12 Docker container
 - macOS: all binaries were built with GCC 9.3, running in a separate
   folder on macOS 10.10.5.
+
+## Build
+
+The scripts used to build this distribution are in:
+
+- `distro-info/scripts`
+
+For the prerequisites and more details on the build procedure, please see the
+[How to build](https://github.com/xpack-dev-tools/openocd-xpack/blob/xpack/README-BUILD.md) page.
 
 ## Travis tests
 

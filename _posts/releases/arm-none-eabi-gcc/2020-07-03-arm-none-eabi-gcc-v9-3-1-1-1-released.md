@@ -25,7 +25,7 @@ tags:
 
 ---
 
-This is the **xPack** version of the
+This is the multi-platform **xPack** version of the
 [GNU Arm Embedded Toolchain](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm).
 
 There are separate binaries that run on **Windows**, **macOS** and
@@ -175,15 +175,6 @@ in the environment, it might interfere with the xPack binaries.
 Similarly, on macOS, the dynamic libraries are adjusted with `otool` to use a
 relative path.
 
-## Build
-
-The scripts used to build this distribution are in:
-
-- `distro-info/scripts`
-
-For the prerequisites and more details on the build procedure, please see the
-[How to build?](https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/blob/xpack/README-BUILD.md) page.
-
 ## Documentation
 
 The original PDF documentation is available in the `share/doc` folder.
@@ -205,6 +196,15 @@ compatible with most recent systems.
   Ubuntu 12 Docker container
 - macOS: all binaries were built with GCC 9.3, running in a separate
   folder on macOS 10.10.5.
+
+## Build
+
+The scripts used to build this distribution are in:
+
+- `distro-info/scripts`
+
+For the prerequisites and more details on the build procedure, please see the
+[How to build?](https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/blob/xpack/README-BUILD.md) page.
 
 ## Travis tests
 
