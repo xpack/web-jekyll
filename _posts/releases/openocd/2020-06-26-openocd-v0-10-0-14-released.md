@@ -66,6 +66,13 @@ The current version is based on:
 [e5be992df](https://github.com/xpack-dev-tools/openocd/commit/e5be992df1a893e2e865419a02a564d5f9ccd9dd)
 from June 23, 2020
 
+To get a list of changes since the previous release, use `git log` in the
+`xpack-dev-tools/openocd` project
+
+```
+git log --pretty='%cd * %h %s' --date=short 'v0.10.0-13'..'v0.10.0-14'
+```
+
 ## Changes
 
 There are no functional changes.
