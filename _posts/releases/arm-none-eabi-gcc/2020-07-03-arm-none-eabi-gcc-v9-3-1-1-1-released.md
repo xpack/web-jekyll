@@ -108,7 +108,7 @@ thumb/v8-m.main+dp/hard;@mthumb@march=armv8-m.main+fp.dp@mfloat-abi=hard
 
 ## Bug fixes
 
-- none,
+- none
 
 ## Changes
 
