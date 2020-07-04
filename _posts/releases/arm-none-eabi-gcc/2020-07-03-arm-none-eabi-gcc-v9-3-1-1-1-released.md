@@ -76,9 +76,6 @@ For more details see the original Arm release text files:
 - `distro-info/arm-readme.txt`
 - `distro-info/arm-release.txt`
 
-Note: compared to the Arm distribution, the Aarch64 binaries are not yet
-available.
-
 ## Supported libraries
 
 The supported libraries are:
