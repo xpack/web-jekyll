@@ -116,7 +116,7 @@ install Windows Build Tools in any folder, it is highly recommended to use this
 path, since by default the GNU MCU Eclipse debug plug-ins search
 for the executable in this location." %}
 
-To check if make starts, use the following command:
+To check if `make` starts, use the following command:
 
 ```
 C:\Users\ilg>C:\Users\ilg\AppData\Roaming\xPacks\xpack-windows-build-tools-2.12.2\bin\make --version
@@ -132,18 +132,15 @@ There is NO WARRANTY, to the extent permitted by law.
 
 {% capture macos %}
 
-Not available on macOS.
+Not required on macOS, use the system tools.
 
 {% endcapture %}
 
 {% capture linux %}
 
-Not available on GNU/Linux.
+Not required on GNU/Linux, use the system tools.
 
 {% endcapture %}
 
 {% include platform-tabs.html %}
 
-## Testing
-
-TBD

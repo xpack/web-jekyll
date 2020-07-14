@@ -19,7 +19,7 @@ last_updated: 2020-07-14 16:41:38 +0300
 
 The GNU Make manual is available from:
 
-- https://www.gnu.org/software/make/manual/
+- [https://www.gnu.org/software/make/manual/](https://www.gnu.org/software/make/manual/)
 
 ## Use the Windows Build Tools support channels
 
