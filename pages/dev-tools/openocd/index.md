@@ -13,7 +13,7 @@ last_updated: 2019-12-06 22:15:37 +0200
 
 ## Quicklinks
 
-If you already know the general facts about xPack GNU Arm Embedded GCC, you can
+If you already know the general facts about xPack OpenOCD, you can
 directly skip to the desired pages.
 
 User pages:
