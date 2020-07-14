@@ -59,6 +59,9 @@ entries:
     - title: qemu-arm
       url: /qemu-arm/
       output: web
+    - title: windows-build-tools
+      url: /windows-build-tools/
+      output: web
 
   - title: News
     output: web

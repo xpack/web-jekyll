@@ -186,6 +186,20 @@ defaults:
 
   -
     scope:
+      path: "pages/dev-tools/windows-build-tools"
+      type: "pages"
+    values:
+      layout: "page"
+      comments: false
+      search: true
+      sidebar: windows-build-tools
+      topnav: topnav
+      author: Liviu Ionescu
+      toc: true
+      github_editme: true
+
+  -
+    scope:
       path: "pages/core/xpm"
       type: "pages"
     values:
