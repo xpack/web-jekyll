@@ -17,7 +17,7 @@ last_updated: 2019-12-27 21:50:36 +0200
 
 ## Quicklinks
 
-If you already know the general facts about xPack GNU Arm Embedded GCC, you can
+If you already know the general facts about xPack QEMU Arm, you can
 directly skip to the desired pages.
 
 User pages:
