@@ -1,5 +1,5 @@
 ---
-title: How to install the xPack tools?
+title: How to install the xPack tools
 permalink: /install/
 
 toc: false

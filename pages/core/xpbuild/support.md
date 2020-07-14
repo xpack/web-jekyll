@@ -1,5 +1,5 @@
 ---
-title: How to get help for xpbuild?
+title: How to get help for xpbuild
 permalink: /xpbuild/support/
 
 comments: true

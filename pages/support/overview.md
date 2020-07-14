@@ -1,5 +1,5 @@
 ---
-title: How to get support?
+title: How to get support
 permalink: /support/
 
 comments: true

@@ -30,8 +30,8 @@ User pages:
 Developer & maintainer pages:
 
 - [GitHub](https://github.com/xpack-dev-tools/qemu-arm-xpack)
-- [How to build?](https://github.com/xpack-dev-tools/qemu-arm-xpack/blob/xpack/README-BUILD.md)
-- [How to publish?](https://github.com/xpack-dev-tools/qemu-arm-xpack/blob/xpack/README-PUBLISH.md)
+- [How to build](https://github.com/xpack-dev-tools/qemu-arm-xpack/blob/xpack/README-BUILD.md)
+- [How to publish](https://github.com/xpack-dev-tools/qemu-arm-xpack/blob/xpack/README-PUBLISH.md)
 - [Developer info](https://github.com/xpack-dev-tools/qemu-arm-xpack/blob/xpack/README-DEVELOP.md)
 
 ## Why QEMU?
@@ -232,7 +232,7 @@ The release and change log is available in the repository
 
 For those interested on the procedure used to build these packages,
 please read the
-[How to build?](https://github.com/xpack-dev-tools/qemu-arm-xpack/blob/xpack/README-BUILD.md)
+[How to build](https://github.com/xpack-dev-tools/qemu-arm-xpack/blob/xpack/README-BUILD.md)
 page.
 However, the ultimate source for details are the build scripts
 themselves, all available from the 

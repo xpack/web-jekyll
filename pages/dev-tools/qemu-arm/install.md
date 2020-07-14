@@ -1,5 +1,5 @@
 ---
-title: How to install the xPack QEMU Arm binaries?
+title: How to install the xPack QEMU Arm binaries
 permalink: /qemu-arm/install/
 
 summary: "The recommended method is via xpm."

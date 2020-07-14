@@ -1,5 +1,5 @@
 ---
-title: How to install xpm?
+title: How to install xpm
 permalink: /xpm/install/
 
 toc: false

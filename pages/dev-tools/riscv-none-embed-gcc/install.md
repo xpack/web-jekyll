@@ -1,5 +1,5 @@
 ---
-title: How to install the xPack GNU RISC-V Embedded GCC binaries?
+title: How to install the xPack GNU RISC-V Embedded GCC binaries
 permalink: /riscv-none-embed-gcc/install/
 
 summary: "The recommended method is via xpm."

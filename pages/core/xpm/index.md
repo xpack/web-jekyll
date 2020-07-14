@@ -30,8 +30,8 @@ User pages:
 Developer & maintainer pages:
 
 - [GitHub](https://github.com/xpack/xpm-js)
-- How to build? (TBD)
-- How to publish? (TBD)
+- How to build (TBD)
+- How to publish (TBD)
 
 ## Overview
 

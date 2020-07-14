@@ -1,5 +1,5 @@
 ---
-title: How to install xpbuild?
+title: How to install xpbuild
 permalink: /xpbuild/install/
 
 toc: false

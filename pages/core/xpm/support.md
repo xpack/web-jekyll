@@ -1,5 +1,5 @@
 ---
-title: How to get help for xpm?
+title: How to get help for xpm
 permalink: /xpm/support/
 
 comments: true

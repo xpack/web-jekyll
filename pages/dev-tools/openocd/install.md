@@ -1,5 +1,5 @@
 ---
-title: How to install the xPack OpenOCD binaries?
+title: How to install the xPack OpenOCD binaries
 permalink: /openocd/install/
 
 summary: "The recommended method is via xpm."
@@ -83,7 +83,6 @@ The archives can be downloaded from the
 [GitHub Releases](https://github.com/xpack-dev-tools/openocd-xpack/releases/)
 page.
 
-
 {% capture windows %}
 ### Download
 
@@ -139,7 +138,7 @@ for various JTAG probes.
 The OpenOCD distribution includes some libusb
 drivers, and recommends to run the [`zadig.exe`](https://zadig.akeo.ie) tool to activate them.
 
-For example 
+For example
 [ARM-USB-OCD](https://www.olimex.com/Products/ARM/JTAG/) from
 [Olimex](https://www.olimex.com/), after installing the vendor drivers,
 asks to install Zadig and convert the vendor drivers to WinUSB drivers.

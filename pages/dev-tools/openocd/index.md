@@ -25,8 +25,8 @@ User pages:
 Developer & maintainer pages:
 
 - [GitHub](https://github.com/xpack-dev-tools/openocd-xpack)
-- [How to build?](https://github.com/xpack-dev-tools/openocd-xpack/blob/xpack/README-BUILD.md)
-- [How to publish?](https://github.com/xpack-dev-tools/openocd-xpack/blob/xpack/README-PUBLISH.md)
+- [How to build](https://github.com/xpack-dev-tools/openocd-xpack/blob/xpack/README-BUILD.md)
+- [How to publish](https://github.com/xpack-dev-tools/openocd-xpack/blob/xpack/README-PUBLISH.md)
 
 ## Overview
 
@@ -100,7 +100,7 @@ The release and change log is available in the repository
 ## Build details
 
 For those interested in building the binaries, please read the
-[How to build?](https://github.com/xpack-dev-tools/openocd-xpack/blob/xpack/README-BUILD.md)
+[How to build](https://github.com/xpack-dev-tools/openocd-xpack/blob/xpack/README-BUILD.md)
 page.
 However, the ultimate source for details are the build scripts themselves,
 all available from the 

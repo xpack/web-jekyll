@@ -1,5 +1,5 @@
 ---
-title: How to get help for xPack QEMU Arm?
+title: How to get help for xPack QEMU Arm
 permalink: /qemu-arm/support/
 
 comments: true

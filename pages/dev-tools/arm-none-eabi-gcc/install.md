@@ -1,5 +1,5 @@
 ---
-title: How to install the xPack GNU Arm Embedded GCC binaries?
+title: How to install the xPack GNU Arm Embedded GCC binaries
 permalink: /arm-none-eabi-gcc/install/
 
 summary: "The recommended method is via xpm."
