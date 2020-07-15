@@ -38,26 +38,26 @@ Developer & maintainer pages:
 `xpm` stands for **x**Pack **p**ackage **m**anager and is a Node.js CLI
 application to manage xPacks; it can install both source and binary xPacks.
 
-xpm is an extension to npm and shares the same public repository.
+**xpm** is an extension to **npm** and shares the same public repository.
 
 The open source project is hosted on GitHub as
 [`xpack/xpm-js`](https://github.com/xpack/xpm-js.git).
 
 ## xPacks overview
 
-xPacks are general purpose multi-version software packages, much the same
-as the highly successful npm modules in the Node.js JavaScript ecosystem.
+xPacks are general purpose multi-version software packages, built on top
+of the highly successful npm packages in the Node.js JavaScript ecosystem.
 
 Please read the [xPacks Overview]({{ site.baseurl }}/) and
 [xPack 101]({{ site.baseurl }}/intro/) pages.
 
 ## Purpose
 
-The main purpose of the xpm tool is to install xPacks, including all
+The main purpose of the `xpm` CLI tool is to install xPacks, including all
 dependent xPacks, and to easily update them when new versions are released.
 
-For developers, xpm provides a very convenient way of publishing the
-software packages, using the same central repository as npm.
+For developers, **xpm** provides a very convenient way of publishing the
+software packages, using the same central repository as **npm**.
 
 ## xpm CLI commands
 
@@ -84,4 +84,5 @@ The design is heavily influenced by the npm application,
 
 ## Note
 
-The xpm tool is currently experimental and should not be used in production environments.
+The xpm tool is currently experimental and should not be used in
+sensitive production environments.
