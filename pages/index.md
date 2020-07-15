@@ -126,7 +126,9 @@ archives used by the binary xPacks.
 
 The development environments are based on:
 
-- **CentOS 6** Docker images, used to build the GNU/Linux and Windows
+- **Ubuntu 12** Docker images, used to build the Intel GNU/Linux and Windows
+  distributions
+- **Ubuntu 16** Docker images, used to build the Arm GNU/Linux
   distributions
 - **macOS 10.10** tools, used to build the macOS Intel distributions
 
