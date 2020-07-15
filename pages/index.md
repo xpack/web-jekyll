@@ -13,6 +13,8 @@ last_updated: 2020-07-15 10:12:51 +0300
 
 ## Mission statement
 
+In short: help developers manage dependencies.
+
 Based on a simple multi-version manager (built on top of **npm**),
 the xPack project aims to provide a set of cross-platform tools
 to manage, configure and build complex,
