@@ -13,11 +13,12 @@ last_updated: 2020-01-21 17:58:50 +0200
 
 ## Mission statement
 
-Based on a simple multi-version manager, provide a set of cross-platform tools
+Based on a simple multi-version manager (built on top of **npm**),
+the xPack project aims to provide a set of cross-platform tools
 to manage, configure and build complex,
 modular, multi-target (multi-architecture, multi-board, multi-toolchain)
-projects, intended to **enhance code sharing** and **reusing** during the
-life cycle of libraries and applications, with an emphasis on C/C++ and
+projects, intended to enhance **code sharing** and **reusing** during the
+life cycle of libraries and applications, with an emphasis on **C/C++** and
 bare-metal embedded.
 
 ## xPacks overview
