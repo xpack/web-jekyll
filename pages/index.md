@@ -143,7 +143,8 @@ These scripts are hosted in the Github
 To stay up-to-date with new binary tools releases, the recommended way is
 to follow [@xpack_project](https://twitter.com/xpack_project) on Twitter.
 
-Alternatively you can subscribe to this site RSS feed [https://xpack.github.io/feed.xml](https://xpack.github.io/feed.xml).
+Alternatively you can subscribe to this site RSS feed
+[https://xpack.github.io/feed.xml](https://xpack.github.io/feed.xml).
 
 To stay current with changes to individual projects, enable **watching**
 in the GitHub web interface for each project of interest.
