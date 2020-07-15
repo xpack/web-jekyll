@@ -157,7 +157,7 @@ $ cat package.json
   "description": "An xPack with <your-description-here>",
   "main": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -283,7 +283,7 @@ TODO: show the output of tree on the xpacks folder.
 A real example is an embedded project that lists as dependencies
 two source xPacks, one Node module and three binary xPacks:
 
-```js
+```json
 {
   "name": "h1b",
   "version": "1.0.0",
