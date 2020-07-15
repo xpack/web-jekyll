@@ -6,7 +6,7 @@ summary: A npm module with an extra xpack property.
 comments: true
 
 date: 2019-06-26 08:57:00 +0300
-last_updated: 2019-12-07 23:06:33 +0200
+last_updated: 2020-07-15 10:12:50 +0300
 
 ---
 
