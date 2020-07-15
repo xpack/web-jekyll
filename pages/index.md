@@ -86,15 +86,18 @@ The main binary tools packed as xPacks are:
 - [`@xpack-dev-tools/qemu-arm`]({{ site.baseurl }}/qemu-arm/) - the **xPack QEMU Arm Cortex-M**
 - [`@xpack-dev-tools/riscv-none-embed-gcc`]({{ site.baseurl }}/riscv-none-embed-gcc/) - the **xPack RISC-V Embedded GCC** toolchain
 
+Under development:
+
+- `@xpack-dev-tools/gcc` - the **xPack GNU GCC**
+- `@xpack-dev-tools/cmake` - the **xPack CMake**
+- `@xpack-dev-tools/ninja` - the **xPack Ninja Build**
+
 Planned:
 
 - `@xpack-dev-tools/gdb` - the **xPack GNU GDB**
 - `@xpack-dev-tools/binutils` - the **xPack GNU binutils**
-- `@xpack-dev-tools/gcc` - the **xPack GNU GCC**
 - `@xpack-dev-tools/coreutils` - the **xPack GNU coreutils**
 - `@xpack-dev-tools/make` - the **xPack make**
-- `@xpack-dev-tools/cmake` - the **xPack CMake**
-- `@xpack-dev-tools/ninja` - the **xPack Ninja Build**
 
 These projects are hosted in the GitHub
 [`xpack-dev-tools`](https://github.com/xpack-dev-tools) group
