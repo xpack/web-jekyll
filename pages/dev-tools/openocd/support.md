@@ -12,7 +12,7 @@ last_updated: 2019-12-06 22:15:37 +0200
 ## Quicklinks
 
 - [xPack Forums](https://www.tapatalk.com/groups/xpack/) - the best source
-  for support ; be sure you select the right group/discussion.
+  for support; be sure you select the right group/discussion.
 - [xPack Chatroom](https://gitter.im/xpack/) - a place for users to chat
 
 ## Check the documentation

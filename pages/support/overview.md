@@ -12,7 +12,7 @@ last_updated: 2020-07-14 16:41:37 +0300
 ## Quicklinks
 
 - [xPack Forums](https://www.tapatalk.com/groups/xpack/) - the best source
-  for support ; be sure you select the right group/discussion.
+  for support; be sure you select the right group/discussion.
 - [xPack Chatroom](https://gitter.im/xpack/) - a place for users to chat
 - [OpenOCD support]({{ site.baseurl }}/openocd/support/)
 - [QEMU Arm support]({{ site.baseurl }}/qemu-arm/support/)
