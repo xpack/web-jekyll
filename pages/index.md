@@ -33,18 +33,19 @@ upgrading the system? In other words, were you hit by the dependencies
 hell? If so, xPacks may help you._
 
 **xPacks** are general purpose multi-version software packages,
-much the same as the highly successful
+built on top of the highly successful
 [npm packages](https://docs.npmjs.com/getting-started/what-is-npm)
 in the [Node.js](https://nodejs.org/en/) JavaScript ecosystem.
-Actually **xPacks** do not introduce a new package format, but use
-exactly the same format as **npm**, and can be stored in the same repositories.
+**xPacks** do not introduce a new package format, but use
+exactly the same format as **npm packages**, and can be
+stored in the same repositories.
 
 By **multi-version** it is understood not only that packages can have
 multiple versions, but they **can be installed in parallel**, each
 project having its own set of dependencies, thus upgrading the system
 no longer impacts the project.
 
-Except the package manager, most of the tools are generic and do not
+Except the package manager, most of the othr tools are generic and do not
 mandate the use of xPack packages, and can be used in traditional
 environments (although some of them may benefit when used in an xPack
 environment).
@@ -56,7 +57,7 @@ Based on the installed content, there are currently two
 types of xPacks: **source** and **binary**:
 
 - **source xPacks** are packages that install source files,
-generally libraries used by the project.
+generally libraries used by the project
 - **binary xPacks** are packages that install binary/executable files,
 generally tools used during the build process, like toolchains,
 builders, etc.
