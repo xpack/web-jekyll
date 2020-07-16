@@ -5,7 +5,7 @@ permalink: /windows-build-tools/support/
 comments: true
 
 date: 2020-07-14 16:26:00 +0300
-last_updated: 2020-07-14 16:57:23 +0300
+last_updated: 2020-07-16 11:45:13 +0300
 
 ---
 

@@ -5,7 +5,7 @@ permalink: /openocd/support/
 comments: true
 
 date: 2019-06-21 11:08:00 +0300
-last_updated: 2019-12-06 22:15:37 +0200
+last_updated: 2020-07-16 11:45:12 +0300
 
 ---
 
