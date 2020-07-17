@@ -101,10 +101,11 @@ The `win32` part is confusing, but we have to leave with it." %}
 
 ### Unpack
 
-Unpack the archive and copy it into the `%userprofile%\AppData\Roaming\xPacks`
-(for example `C:\Users\ilg\AppData\Roaming\xPacks`) folder; according
-to Microsoft, this is the recommended location for installing user specific
-packages.
+Unpack the archive and copy it into the
+`%userprofile%\AppData\Roaming\xPacks\windows-build-tools`
+(for example `C:\Users\ilg\AppData\Roaming\xPacks\windows-build-tools`) folder;
+according to Microsoft, `AppData\Roaming` is the recommended location for
+installing user specific packages.
 
 {% include note.html content="For manual installs, the recommended
 install location is slightly different from the xpm install folders,
@@ -119,7 +120,7 @@ for the executable in this location." %}
 To check if `make` starts, use the following command:
 
 ```
-C:\Users\ilg>C:\Users\ilg\AppData\Roaming\xPacks\xpack-windows-build-tools-2.12.2\bin\make --version
+C:\Users\ilg>C:\Users\ilg\AppData\Roaming\xPacks\windows-build-tools\xpack-windows-build-tools-2.12.2\bin\make --version
 GNU Make 4.1
 Built for i686-w64-mingw32
 Copyright (C) 1988-2014 Free Software Foundation, Inc.
