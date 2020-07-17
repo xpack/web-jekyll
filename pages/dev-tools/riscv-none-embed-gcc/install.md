@@ -102,10 +102,11 @@ The `win32` part is confusing, but we have to leave with it." %}
 
 ### Unpack
 
-Unpack the archive and copy it into the `%userprofile%\AppData\Roaming\xPacks`
-(for example `C:\Users\ilg\AppData\Roaming\xPacks`) folder; according
-to Microsoft, this is the recommended location for installing user specific
-packages.
+Unpack the archive and copy it into the
+`%userprofile%\AppData\Roaming\xPacks\riscv-none-embed-gcc`
+(for example `C:\Users\ilg\AppData\Roaming\xPacks\riscv-none-embed-gcc`) folder;
+according to Microsoft, `AppData\Roaming` is the recommended location for
+installing user specific packages.
 
 {% include note.html content="For manual installs, the recommended
 install location is slightly different from the xpm install folders,
@@ -120,7 +121,7 @@ for the executable in this location." %}
 To check if GCC starts, use the following command:
 
 ```
-C:\Users\ilg>C:\Users\ilg\AppData\Roaming\xPacks\GNU RISC-V Embedded GCC\8.2.1-3.1\bin\riscv-none-embed-gcc.exe" --version
+C:\Users\ilg>C:\Users\ilg\AppData\Roaming\xPacks\xpack-riscv-none-embed-gcc-8.2.1-3.1\bin\riscv-none-embed-gcc.exe" --version
 riscv-none-embed-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) 8.2.0
 ```
 
@@ -135,7 +136,7 @@ binaries, it is recommended to also install the **Windows Build Tools**." %}
 The macOS version of **xPack GNU RISC-V Embedded GCC** is packed as a TGZ archive.
 Download the latest version named like:
 
--  `xpack-riscv-none-embed-gcc-8.2.1-3.1-darwin-x64.tgz`
+- `xpack-riscv-none-embed-gcc-8.2.1-3.1-darwin-x64.tgz`
 
 ### Unpack
 

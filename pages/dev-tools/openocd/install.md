@@ -101,10 +101,11 @@ The `win32` part is confusing, but we have to leave with it." %}
 
 ### Unpack
 
-Unpack the archive and copy it into the `%userprofile%\AppData\Roaming\xPacks`
-(for example `C:\Users\ilg\AppData\Roaming\xPacks`) folder; according
-to Microsoft, this is the recommended location for installing user specific
-packages.
+Unpack the archive and copy it into the 
+`%userprofile%\AppData\Roaming\xPacks\openocd`
+(for example `C:\Users\ilg\AppData\Roaming\xPacks\openocd`) folder;
+according to Microsoft, `AppData\Roaming` is the recommended location for
+installing user specific packages.
 
 {% include note.html content="For manual installs, the recommended
 install location is slightly different from the xpm install folders,
@@ -123,7 +124,7 @@ The result is a structure like:
 To check if OpenOCD starts, use the following command:
 
 ```
-C:\Users\ilg>C:\Users\ilg\AppData\Roaming\xPacks\OpenOCD\0.10.0-13\bin\openocd.exe --version
+C:\Users\ilg>C:\Users\ilg\AppData\Roaming\xPacks\openocd\xpack-openocd-0.10.0-13\bin\openocd.exe --version
 xPack OpenOCD, 64-bit Open On-Chip Debugger 0.10.0+dev (2019-07-17-15:21)
 ```
 

@@ -114,9 +114,8 @@ The `win32` part is confusing, but we have to leave with it." %}
 
 Unpack the archive and copy the versioned folder into the `%userprofile%\AppData\Roaming\xPacks\arm-none-eabi-gcc`
 (for example `C:\Users\ilg\AppData\Roaming\xPacks\arm-none-eabi-gcc`) folder;
-according
-to Microsoft, this is the recommended location for installing user specific
-packages.
+according to Microsoft, `AppData\Roaming` is the recommended location for
+installing user specific packages.
 
 You may shorten the last folder name and keep only the version.
 

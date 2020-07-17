@@ -100,10 +100,11 @@ The `win32` part is confusing, but we have to leave with it." %}
 
 ### Unpack
 
-Unpack the archive and copy it into the `%userprofile%\AppData\Roaming\xPacks`
-(for example `C:\Users\ilg\AppData\Roaming\xPacks`) folder; according
-to Microsoft, this is the recommended location for installing user specific
-packages.
+Unpack the archive and copy it into the
+`%userprofile%\AppData\Roaming\xPacks\qemu-arm`
+(for example `C:\Users\ilg\AppData\Roaming\xPacks\qemu-arm`) folder;
+according to Microsoft, `AppData\Roaming` is the recommended location for
+installing user specific packages.
 
 {% include note.html content="For manual installs, the recommended
 install location is slightly different from the xpm install folders,
@@ -118,7 +119,7 @@ for the executable in this location." %}
 To check if QEMU starts, use the following command:
 
 ```
-C:\Users\ilg>C:\Users\ilg\AppData\Roaming\xPacks\QEMU\2.8.0-7\bin\qemu-system-gnuarmeclipse.exe" --version
+C:\Users\ilg>C:\Users\ilg\AppData\Roaming\xPacks\qemu-arm\xpack-qemu-arm-2.8.0-7\bin\qemu-system-gnuarmeclipse.exe" --version
 xPack 64-bit QEMU emulator version 2.8.0-7 (v2.8.0-7-20180523-6-gee07085299-dirty)
 Copyright (c) 2003-2016 Fabrice Bellard and the QEMU Project developers
 ```
