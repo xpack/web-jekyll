@@ -133,9 +133,9 @@ TODO: check if this definition is limited to a user.
 
 Links:
 
-- https://www.launchd.info
-- https://support.apple.com/en-in/guide/terminal/apdc6c1077b-5d5d-4d35-9c19-60f2397b2369/mac
-- https://support.shotgunsoftware.com/hc/en-us/articles/219042108
+- [www.launchd.info](https://www.launchd.info)
+- [support.apple.com](https://support.apple.com/en-in/guide/terminal/apdc6c1077b-5d5d-4d35-9c19-60f2397b2369/mac)
+- [support.shotgunsoftware.com](https://support.shotgunsoftware.com/hc/en-us/articles/219042108)
 
 {% endcapture %}
 
