@@ -145,3 +145,6 @@ TODO: find out how this can be done on Linux.
 {% endcapture %}
 
 {% include platform-tabs.html %}
+
+{% include tip.html content="To avoid the additional complexity, it is
+recommended to use the default locations." %}
