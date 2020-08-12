@@ -54,6 +54,12 @@ The install location can be configured using the
 
 {% include tip.html content=include_1 %}
 
+{% include tip.html content="The archive content is unpacked in a folder
+named `.content`. On some platforms
+this might be hidden for normal browsing, and require
+separate options (like `ls -A`) or, in file browsers, to enable
+settings like **Show Hidden Files**." %}
+
 xPacks aware tools, like the **GNU MCU Eclipse plug-ins** automatically
 identify binaries installed with
 xpm and provide a convenient method to manage paths.
