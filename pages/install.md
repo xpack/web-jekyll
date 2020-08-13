@@ -27,7 +27,7 @@ via **npm** which uses Node.
 ## Prerequisites
 
 A recent [Node.js](https://nodejs.org) (>=**10.x**), since the ECMAScript 6 class
-syntax is used, and some dependencies may also require new feature.
+syntax is used, and some dependencies may also require new features.
 
 ```console
 $ node --version
