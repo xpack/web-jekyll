@@ -24,8 +24,9 @@ npm package [xpm](https://www.npmjs.com/package/xpm) from the
 
 ## Prerequisites
 
-A recent [Node.js](https://nodejs.org) (>=8.x), since the ECMAScript 6 class
-syntax is used, and a recent [npm](https://docs.npmjs.com/cli/npm).
+- a recent [Node.js](https://nodejs.org) (>=**10.x**), since the ECMAScript 6 
+class syntax is used and some dependencies also requie new features
+- a recent [npm](https://docs.npmjs.com/cli/npm).
 
 For details, please read (carefully!) the
 [prerequisites]({{ site.baseurl }}/install/) page.
@@ -123,7 +124,7 @@ $ xpm --version
 {% capture linux %}
 
 {% include note.html content="Support for Arm platforms was
-added in the 0.6.2 release xpm." %}
+added in the 0.6.2 release of xpm." %}
 
 On GNU/Linux, by default, global Node.js packages are installed in
 `/usr/local`, and managing them requires administrative rights,
