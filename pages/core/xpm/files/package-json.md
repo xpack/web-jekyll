@@ -89,10 +89,14 @@ These information are stored in the `xpack` property of `package.json`.
 
 The supported platforms are:
 
-- `linux-x86` - GNU/Linux 32-bit
-- `linux-x64` - GNU/Linux 64-bit
+- `linux-arm` - Arm GNU/Linux 32-bit (since 0.6.0)
+- `linux-arm64` - Arm GNU/Linux 64-bit (since 0.6.0)
+- `linux-x86` (deprecated)
+- `linux-x32` - Intel GNU/Linux 32-bit (since 0.6.0)
+- `linux-x64` - Intel GNU/Linux 64-bit
 - `darwin-x64` - macOS 64-bit
-- `win32-x86` - Windows 32-bit
+- `win32-x86` (deprecated)
+- `win32-x86` - Windows 32-bit (since 0.6.0)
 - `win32-x64` - Windows 64-bit
 
 {% include note.html content="The names are exactly the Node.js
