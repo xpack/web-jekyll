@@ -122,11 +122,8 @@ $ xpm --version
 
 {% capture linux %}
 
-{% include warning.html content="The current xpm fully supports
-only Intel platforms. Attempts to install Arm binary packages
-will fail (actually will install the Intel packages).
-Support for Arm platforms will be
-added in the next release of xpm." %}
+{% include note.html content="Support for Arm platforms was
+added in the 0.6.2 release xpm." %}
 
 On GNU/Linux, by default, global Node.js packages are installed in
 `/usr/local`, and managing them requires administrative rights,
