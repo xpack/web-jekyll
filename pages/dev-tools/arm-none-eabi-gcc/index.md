@@ -49,7 +49,7 @@ The main advantages of using the **xPack GNU Arm Embedded GCC** are:
 - a convenient integration with Continuous Integration environments,
   like Travis;
 - a better integration with development environments
-  like **GNU MCU Eclipse**.
+  like **Eclipse Embedded CDT**.
 
 All binaries are self-contained, they include all required libraries,
 and can be installed at any location.

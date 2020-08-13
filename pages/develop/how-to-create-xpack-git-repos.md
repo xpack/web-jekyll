@@ -67,8 +67,7 @@ With a browser, at GitHub, select your account or one of your
   organisations (like
   [xPacks](https://github.com/xpacks),
   [xPacks Dev Tools](https://github.com/xpack-dev-tools),
-  [µOS++](https://github.com/micro-os-plus),
-  [GNU MCU Eclipse](https://github.com/gnu-mcu-eclipse)).
+  [µOS++](https://github.com/micro-os-plus)).
 
 - click the green **New** button to create a new repository
   - enter **Repository name**; use all lowercase and hyphens to

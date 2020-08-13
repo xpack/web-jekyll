@@ -59,7 +59,7 @@ this might be hidden for normal browsing, and require
 separate options (like `ls -A`) or, in file browsers, to enable
 settings like **Show Hidden Files**." %}
 
-xPacks aware tools, like the **GNU MCU Eclipse plug-ins** automatically
+xPacks aware tools, like the **Eclipse Embedded CDT plug-ins** automatically
 identify binaries installed with
 xpm and provide a convenient method to manage paths.
 
@@ -120,7 +120,7 @@ and `.content` to store the unpacked archive." %}
 
 {% include important.html content="Although perfectly possible to
 install OpenOCD in any folder, it is highly recommended to use this
-path, since by default the GNU MCU Eclipse debug plug-ins search
+path, since by default the Eclipse Embedded CDT debug plug-ins search
 for the executable in this location." %}
 
 The result is a structure like:
@@ -213,7 +213,7 @@ install location is different from the xpm install folders." %}
 
 {% include important.html content="Although perfectly possible to
 install OpenOCD in any folder, it is highly recommended to use this
-path, since by default the GNU MCU Eclipse debug plug-ins search
+path, since by default the Eclipse Embedded CDT debug plug-ins search
 for the executable in this location." %}
 
 The result is a structure like:
@@ -302,7 +302,7 @@ and `.content` to store the unpacked archive." %}
 
 {% include important.html content="Although perfectly possible to
 install OpenOCD in any folder, it is highly recommended to use this
-path, since by default the GNU MCU Eclipse debug plug-ins search
+path, since by default the Eclipse Embedded CDT debug plug-ins search
 for the executable in this location." %}
 
 ```console

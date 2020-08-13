@@ -65,7 +65,7 @@ The main advantages of using the **xPack OpenOCD** are:
   the same procedure is used for all major
   platforms (Windows 64/32-bit, GNU/Linux 64/32-bit, macOS);
 - a better integration with development environments
-  like **GNU MCU Eclipse**.
+  like **Eclipse Embedded CDT**.
 
 All binaries are self-contained, they include all required libraries,
 and can be installed at any location.
