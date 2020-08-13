@@ -211,7 +211,7 @@ xPack Basic Builder, xpbuild.
   "version": "1.0.0",
   "devDependencies": {
     "@xpack/xpbuild": "^1.2.3",
-    "@xpack-dev-tools/arm-none-eabi-gcc": "^8.2.1"
+    "@xpack-dev-tools/arm-none-eabi-gcc": "9.3.1-1.1"
   },
   "xpack": {}
 }
@@ -220,6 +220,10 @@ xPack Basic Builder, xpbuild.
 {% include note.html content="The `^` used in the version field is
 a npm/semver convention that means _compatible_, in other words the
 highest version that does not change the major number, if available." %}
+
+{% include note.html content="The lack of `^` means _exact_ version.
+Use this syntax for binary xPacks which have longer version number,
+and do not abide by the semver requirements." %}
 
 Running `xpm install` in the project folder will first install the toolchain
 in the central xPack storage (a folder in user's home), then add a folder
@@ -240,8 +244,8 @@ adjusted to `xpacks/.bin:node_modules/.bin:$PATH`, so the exact versions
 of the tools required in the dependencies list will be preferred over any
 existing tools with the same names that might be present in the `PATH`.
 
-(Note: the package referred above are not yet available with
-these names, do not try to use them yet.)
+(Note: the `@xpack/xpbuild` package referred above is not yet available with
+this name, do not try to use it yet.)
 
 ### Binary xPacks are probably huge, aren't they?
 
@@ -265,7 +269,7 @@ Even simpler. Let's assume that the 'awesome project' also needs the
   },
   "devDependencies": {
     "@xpack/xpbuild": "^1.2.3",
-    "@xpack-dev-tools/arm-none-eabi-gcc": "^8.2.1"
+    "@xpack-dev-tools/arm-none-eabi-gcc": "9.3.1-1.1"
   },
   "xpack": {}
 }
