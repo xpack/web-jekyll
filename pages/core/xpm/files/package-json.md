@@ -112,8 +112,9 @@ to the package root folder (usually `./.content`).
 
 To shorten the paths, a number of the initial levels are skipped (`skip`).
 
-After the archive is unpacked, links are created in `xpacks/.bin` to each
-binary. These links are defined in the `bin` section.
+When installing packages as dependencies of an xPack,
+after the archive is unpacked, links to each binaries defined
+in the `bin` section are created in the `xpacks/.bin` folder.
 On Windows, where soft links to files are problematic, `.cmd`
 stubs are created.
 
