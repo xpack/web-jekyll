@@ -104,6 +104,10 @@ definition might be:
 {% include callout.html content="An xPack is a npm package with
 an additional `xpack` object defined in `package.json`." type="primary" %}
 
+{% include callout.html content="A binary xPack is an xPack with
+two additional `xpack.binaries` and `xpack.bin` objects defined in
+`package.json`." type="primary" %}
+
 ### Package formats
 
 As for npm, a package is any of the following:
