@@ -108,7 +108,7 @@ enough to define `baseUrl` once, but it is also possible to define it
 for each platform, allowing to download files from different folders/servers.
 
 The archives are unpacked in the `destination` folder, defined as relative
-to the package root folder.
+to the package root folder (usually `./.content`).
 
 To shorten the paths, a number of the initial levels are skipped (`skip`).
 
