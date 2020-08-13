@@ -222,8 +222,8 @@ a npm/semver convention that means _compatible_, in other words the
 highest version that does not change the major number, if available." %}
 
 {% include note.html content="The lack of `^` means _exact_ version.
-Use this syntax for binary xPacks which have longer version number,
-and do not abide by the semver requirements." %}
+Use this syntax for binary xPacks with longer version numbers,
+which generally do not abide by the semver requirements." %}
 
 Running `xpm install` in the project folder will first install the toolchain
 in the central xPack storage (a folder in user's home), then add a folder
