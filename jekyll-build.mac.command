@@ -13,6 +13,7 @@ bundle exec jekyll build --destination "${site}"
 export NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 
 # Validate images and links (internal & external).
+# https://github.com/gjtorikian/html-proofer
 bundle exec htmlproofer \
   --allow_hash_href \
   --url_ignore="/www.eclipse.org/embed-cdt/,/github.com/gnu-mcu-eclipse/,/github.com/eclipse-embed-cdt/,/github.com/xpack/" \
