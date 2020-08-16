@@ -9,7 +9,7 @@ npm_subversion: 1
 download_url: https://github.com/xpack-dev-tools/windows-build-tools-xpack/releases/tag/v2.12.2/
 
 date:   2020-07-14 12:01:00 +0300
-last_updated: 2020-07-14 17:38:13 +0300
+last_updated: 2020-08-16 12:17:40 +0300
 
 categories:
   - releases

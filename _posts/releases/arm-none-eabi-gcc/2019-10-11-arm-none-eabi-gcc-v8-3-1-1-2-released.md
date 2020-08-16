@@ -8,7 +8,7 @@ npm_subversion: 1
 download_url: https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases/v8.3.1-1.2/
 
 date:   2019-10-11 15:31:00 +0300
-last_updated: 2019-11-02 17:59:29 +0200
+last_updated: 2020-08-16 12:17:39 +0300
 
 categories:
   - releases

@@ -3,7 +3,7 @@ title: The xpbuild.json files
 permalink: /xpbuild/files/xpbuild-json/
 
 date: 2017-10-09 16:46:00 +0300
-last_updated: 2019-12-06 22:15:35 +0200
+last_updated: 2020-08-16 12:17:32 +0300
 
 ---
 
