@@ -13,6 +13,7 @@ The `xpbuild.json` file defines the metadata required by the
 xpbuild build process.
 
 This file is used in two contexts:
+
 - when located in the project root, or in a test folder, this file
 defines how to build the artefact (executable or library); it must
 have a mandatory `name` field.

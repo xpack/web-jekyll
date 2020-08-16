@@ -50,7 +50,7 @@ For an exhaustive list, see [Wikipedia](https://en.wikipedia.org/wiki/List_of_bu
 
 For an exhaustive list see [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_continuous_integration_software).
 
-* [Hudson](http://hudson-ci.org/) (the original Sun project, donated by Oracle to the Eclipse Foundation)
+* [Hudson](https://www.eclipse.org/hudson/) (the original Sun project, donated by Oracle to the Eclipse Foundation)
 * [Jenkins](http://jenkins-ci.org/) (the more active fork, backed by the project creator)
 * [Travis](https://travis-ci.org) (the GitHub prefered solution, very good integration)
 

@@ -12,12 +12,14 @@ last_updated: 2019-11-01 21:46:57 +0200
 
 categories:
   - releases
-  - arm
   - arm-none-eabi-gcc
 
 tags:
   - releases
+  - arm
   - arm-none-eabi-gcc
+  - gcc
+  - binaries
 
 ---
 

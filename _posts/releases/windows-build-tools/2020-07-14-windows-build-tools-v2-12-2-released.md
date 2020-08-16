@@ -18,6 +18,11 @@ categories:
 tags:
   - releases
   - windows-build-tools
+  - build
+  - make
+  - rm
+  - mkdir
+  - busybox
 
 ---
 

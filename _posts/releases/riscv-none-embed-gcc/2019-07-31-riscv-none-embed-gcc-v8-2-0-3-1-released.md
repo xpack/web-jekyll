@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  xPack GNU RISC-V Embedded GCC v8.2.0-3.1 released
 
 summary: "Version 8.2.0-3.1 is a new release of the **xPack GNU RISC-V
@@ -14,11 +13,11 @@ last_updated: 2020-07-04 13:23:05 +0300
 
 categories:
   - releases
-  - riscv
   - riscv-none-embed-gcc
 
 tags:
   - releases
+  - riscv
   - riscv-none-embed-gcc
 
 ---

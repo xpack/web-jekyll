@@ -13,12 +13,13 @@ last_updated: 2020-07-04 13:23:05 +0300
 categories:
   - releases
   - qemu
-  - arm
-  - cortex-m
 
 tags:
   - releases
   - qemu
+  - emulator
+  - arm
+  - cortex-m
 
 ---
 

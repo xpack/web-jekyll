@@ -35,8 +35,8 @@ entries:
     - title: FAQ
       url: /xpbuild/faq/
       output: web
-    - title: Published versions
-      external_url: https://www.npmjs.com/package/xpbuild?activeTab=versions
+    - title: Published versions (TODO)
+      external_url: https://www.npmjs.com/settings/ilg/packages
       output: web
 
   - title: CLI commands

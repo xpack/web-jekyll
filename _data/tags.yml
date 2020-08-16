@@ -13,3 +13,36 @@ allowed-tags:
   - arm-none-eabi-gcc
   - riscv-none-embed-gcc
   - qemu
+  - windows-build-tools
+  - systick
+  - stm
+  - sigsetjmp
+  - semihosting
+  - rpath
+  - rm
+  - riscv
+  - nucleo
+  - mkdir
+  - makedir
+  - make
+  - lto
+  - led
+  - graphic
+  - gpio
+  - gdb
+  - gcc
+  - emulator
+  - eclipse
+  - dhcsr
+  - cortex-m
+  - button
+  - busybox
+  - build
+  - bkpt
+  - binaries
+  - arm
+  - 64-bit
+  - 411re
+  - windows-build-tools
+  - basepri
+  - setup
