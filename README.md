@@ -277,11 +277,13 @@ bundle exec jekyll serve --trace --safe
 
 bundle exec jekyll build
 
-bundle exec htmlproofer --allow-hash-href --url-swap \^/preview/\:/ ./_site
+bundle exec htmlproofer --allow-hash-href --url-swap \^/preview/\:/ ./_site_local
 
-bundle exec htmlproofer --allow-hash-href --url-swap \^/preview/\:/ --url-ignore /github.com/xpack/xpack.github.io/blob/master/ ./_site
+bundle exec htmlproofer --allow-hash-href --url-swap \^/preview/\:/ --url-ignore /github.com/xpack/xpack.github.io/blob/master/ ./_site_local
 
-bundle exec htmlproofer --allow-hash-href ./_site
+bundle exec htmlproofer --allow-hash-href ./_site_local
+
+bundle exec htmlproofer --allow-hash-href --http_status_ignore=429 ./_site_local
 
 bash scripts/adjust-timestamps.sh
 ```
