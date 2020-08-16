@@ -24,8 +24,9 @@ then
 
   for tag in ${tags}
   do
-    echo "Title for $tag:"
-    read title
+    # echo "Title for $tag:"
+    # read title
+    title=${tag}
   # Cannot indent here string.
 cat <<EOF >"${TAGDIR}/${tag}.md"
 ---
