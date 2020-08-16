@@ -1,4 +1,5 @@
 _site/
+_site_local/
 .sass-cache/
 .jekyll-metadata
 _pdf
