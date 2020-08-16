@@ -4,6 +4,7 @@ title:  GNU MCU Eclipse RISC-V Embedded GCC v7.2.0-4-20180606 released
 download_url: https://github.com/gnu-mcu-eclipse/riscv-none-gcc/releases/tag/v7.2.0-4-20180606/
 
 date:   2018-06-07 01:11:00 +0300
+last_updated: 2020-08-16 12:17:39 +0300
 
 categories:
   - releases
