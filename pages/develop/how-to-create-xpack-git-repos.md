@@ -356,10 +356,21 @@ to `master`.
 
 ### Publish the initial version to the npmjs public registry
 
-```console
-$ cd <project>.git
-$ npm publish --access public
-```
+- check the latest commits `npm run git-log`
+- update `CHANGELOG.md`; commit with a message like
+  _CHANGELOG: prepare npm v1.10.0-1.1_
+- `npm version v1.10.0-1.1`; the first 4 numbers are the same as the
+  GitHub release; the fifth number is the npm specific version
+- `npm pack` and check the content of the archive, which should list
+only the `package.json`, the `README.md`, `LICENSE` and `CHANGELOG.md`
+- push all changes to GitHub
+- `npm publish --access public --tag next`
+
+When the release is considered stable, promote it as `latest`. For example:
+
+- `npm dist-tag ls @xpack-dev-tools/ninja-build`
+- `npm dist-tag add @xpack-dev-tools/ninja-build@1.10.0-1.1 latest`
+- `npm dist-tag ls @xpack-dev-tools/ninja-build`
 
 ### Bump version
 
