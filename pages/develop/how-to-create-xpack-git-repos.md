@@ -344,6 +344,16 @@ With Sourcetree or Git:
 
 - with Sourcetree or Git, click **Push** and select `xpack`
 
+### Create the `xpack-develop` branch
+
+With Sourcetree or Git:
+
+- select the `xpack` branch
+- create the `xpack-develop` branch
+
+Generally work in the `xpack-develop` branch and only when ready merge it
+to `master`.
+
 ### Publish the initial version to the npmjs public registry
 
 ```console
