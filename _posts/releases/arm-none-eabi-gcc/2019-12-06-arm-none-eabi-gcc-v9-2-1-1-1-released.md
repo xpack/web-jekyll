@@ -151,6 +151,9 @@ ImportError: No module named _sysconfigdata_nd
 ```
 Any help to diagnose this problem will be highly appreciated.
 
+- C++ exceptions in the non-nano libraries are not caught; fixed in
+ 9.3.1-1.2.
+
 ## Documentation
 
 The original PDF documentation is available in the `share/doc` folder.

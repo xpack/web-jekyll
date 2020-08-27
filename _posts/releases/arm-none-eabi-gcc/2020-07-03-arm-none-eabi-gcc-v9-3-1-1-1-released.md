@@ -146,7 +146,9 @@ Note: TUI is not available on Windows.
 ## Known problems
 
 - the GDB binaries with Python support were built with version 2.7/3.7,
- and require exactly those versions in order to run properly.
+ and require exactly those versions in order to run properly;
+- C++ exceptions in the non-nano libraries are not caught; fixed in
+ 9.3.1-1.2.
 
 ## Shared libraries
 
