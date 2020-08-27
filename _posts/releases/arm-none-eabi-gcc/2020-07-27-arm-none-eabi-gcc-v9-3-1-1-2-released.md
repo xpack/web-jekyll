@@ -33,11 +33,9 @@ tags:
 This is the multi-platform **xPack** version of the
 [GNU Arm Embedded Toolchain](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm).
 
-There are separate binaries that run on **Windows**, **macOS** and
-**GNU/Linux**, 32/64-bit.
-
-Starting with this version, support for 32/64-bit **Arm GNU/Linux** platforms,
-like **Raspberry Pi**, was added.
+There are separate binaries that run on **Windows** 32/64-bit, **macOS**,
+**Intel GNU/Linux** 32/64-bit and **Arm GNU/Linux** 32/64-bit platforms,
+like **Raspberry Pi**.
 
 ## Download
 
@@ -127,7 +125,7 @@ by custom `LD_LIBRARY_PATH`, as when using `DT_RUNPATH`.
 
 There should be no functional changes.
 
-Compared to previous releases, the new archives are created with
+Starting with 9.x, the new archives are created with
 a single folder named `xpack-arm-none-eabi-gcc-9.3.1-1.2` instead of
 the hierarchical `xPacks/arm-none-eabi-gcc/9.3.1-1.2`. This internal
 folder name is used consistently on all platforms. The archive extension

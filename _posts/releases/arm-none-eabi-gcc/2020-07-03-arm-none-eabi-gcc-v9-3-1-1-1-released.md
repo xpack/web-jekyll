@@ -116,7 +116,7 @@ thumb/v8-m.main+dp/hard;@mthumb@march=armv8-m.main+fp.dp@mfloat-abi=hard
 
 There should be no functional changes.
 
-Compared to previous releases, the new archives are created with
+Starting with 9.x, the new archives are created with
 a single folder named `xpack-arm-none-eabi-gcc-9.3.1-1.1` instead of
 the hierarchical `xPacks/arm-none-eabi-gcc/9.3.1-1.1`. This internal
 folder name is used consistently on all platforms. The archive extension
