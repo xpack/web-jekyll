@@ -7,19 +7,27 @@ last_updated: 2020-01-21 17:58:51 +0200
 
 ---
 
-TODO: update it
-
 The latest generation of the build scripts use the
 [xPack Build Box (XBB)](https://github.com/xpack/xpack-build-box), a set
-of Docker containers based on CentOS 6 (separate 32/64-bit containers).
-The more conservative CentOS 6 was preferred to avoid problems when
+of [Docker](https://www.docker.com)
+containers (separate 32/64-bit containers) based on older
+and more conservative distributions, to avoid problems when
 attempting to run the executables on older versions.
 
-The Windows binaries are also generated on the same Docker containers,
-using [mingw-w64](http://mingw-w64.org).
+The XBB v3.2 uses Ubuntu 12 for Intel GNU/Linux and Ubuntu 16 for
+Arm GNU/Linux.
 
-The main trick that makes the multi-platform build possible is
-[Docker](https://www.docker.com).
+v2.x used CentOS 6 for Intel, and CentOS 7 was the favourite when
+considering the update, but Docker CentOS 7 armv7l container does not
+run on 64-bit Docker host, and requires a 32-bit host, which is impractical.
+The problem was reported as 
+[#171](https://github.com/CentOS/sig-cloud-instance-images/issues/171)
+and posted on the CentOS
+[forum](https://forums.centos.org/viewtopic.php?f=48&t=75475), but so far
+there were no solution.
+
+The Windows binaries are generated on the same Docker Intel GNU/Linux
+containers, using [mingw-w64](http://mingw-w64.org).
 
 ### GNU/Linux
 
@@ -30,8 +38,11 @@ perfectly fine. For better results, dedicate 3-4 cores and 8-12 GB of RAM.
 The procedure was tested on:
 
 - Ubuntu 16.04 LTS, running as a virtual machine in Parallels Desktop on macOS 10.12.
-- Ubuntu 17.10, running as a virtual machine in VirtualBox on macOS 10.13.
-- Ubuntu 18.04 Server, running on an Intel NUC NUC8i7BEH with 32GB of RAM.
+- Ubuntu 17.10, running as a virtual machine in VirtualBox on macOS 10.13
+- Ubuntu 18.04 Server, running on an Intel NUC NUC8i7BEH with 32GB of RAM
+- Debian 10 (buster), running on an Intel NUC NUC8i7BEH with 32GB of RAM
+- Debian 9 (stretch), running on a ROCK Pi with 4GB of RAM
+- Raspberry Pi OS 64-bit, running on a Raspberry Pi 4 with 4GB of RAM
 
 The build scripts do most of the actual work in the Docker container, and,
 apart from Docker, the host machine has no other special requirements.
@@ -119,9 +130,11 @@ Hello from Docker!
 For development build, the procedure is executed on the latest macOS
 version (currently 10.13).
 
+{% include note.html content="The procedure failed on macOS 10.15 and
+was postponed to macOS 11.0, when some changes are expected anyway." %}
+
 For production builds it is recommended to use a slightly older version.
-macOS 10.10 is a good compromise, since it still allows to install
-the additional build tools via Homebrew.
+macOS 10.10 is a good compromise.
 
 It is not mandatory to have a physical macOS 10.10 machine, a virtual
 machine is also perfectly fine. Both Parallels and VirtualBox were
@@ -163,31 +176,8 @@ Thread model: posix
 InstalledDir: /Library/Developer/CommandLineTools/usr/bin
 ```
 
-#### Install a custom instance of Homebrew
-
-The build process is quite complex, and requires tools not available
-in the standard Apple macOS distribution. These tools can be installed
-with Homebrew. To keep these tools separate, a custom instance of
-Homebrew is installed in `${HOME}/opt/homebrew/xbb`.
-
-In a separate run, the **[MacTex](http://www.tug.org/mactex/)** tools
-are also installed in `${HOME}/opt/texlive`. Alternatively you can
-install MacTex in `/usr/local` using the official distribution, but
-this will add lots of programs to the system path, and this is a bad
-thing.
-
-The entire process can be automated with two scripts, available from GitHub:
-
-```console
-$ mkdir -p ${HOME}/opt
-$ git clone https://github.com/xpack/xpack-build-box.git \
-    ${HOME}/Downloads/xpack-build-box.git
-$ caffeinate bash ${HOME}/Downloads/xpack-build-box.git/macos/install-homebrew-xbb.sh
-$ caffeinate bash ${HOME}/Downloads/xpack-build-box.git/macos/install-texlive.sh
-```
-
-The scripts run with user credentials, no `sudo` access is required.
-Please be aware that both scripts take quite some time to complete.
+{% include note.html content="In recent macOS versions it is
+recommended to install only the CommandLineTools package." %}
 
 #### Install Docker
 
@@ -206,10 +196,10 @@ For better results, dedicate 3-4 cores and 4-8 GB of RAM to Docker.
 The Docker images are available from
 [Docker Hub](https://hub.docker.com/u/ilegeul/). They were build using
 the Dockerfiles available from
-[XBB (xPack Build Box)](https://github.com/xpack/xpack-build-box/tree/master/centos).
+[XBB (xPack Build Box)](https://github.com/xpack/xpack-build-box/tree/master/).
 
 If not already loaded, Docker will load the images at first usage.
-The images are relatively large, around 3 GB.
+The images are relatively large, around 3-4 GB.
 
 It is possible to separately load the Docker images, using the
 script `preload-images` command of each script.
