@@ -55,6 +55,9 @@ exclude:
   - Dockerfile
   - Gemfile*
   - scripts/
+  - jekyll*.mac.command
+  - jekyll-localhost*.webloc
+  - CONTRIBUTING.md
 
 feedback_subject_line: [xPack]
 
