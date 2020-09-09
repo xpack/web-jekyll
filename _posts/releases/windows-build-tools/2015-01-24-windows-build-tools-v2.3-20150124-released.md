@@ -3,7 +3,7 @@ title:  GNU ARM Eclipse Windows Build Tools v2.3-20150124* released
 
 download_url: https://github.com/gnu-mcu-eclipse/windows-build-tools/releases/tag/v2.3
 
-date:   2015-01-24 12:00:00
+date:   2015-01-24 12:00:00 +0200
 
 categories:
   - releases
