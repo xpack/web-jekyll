@@ -6,6 +6,8 @@
 <title>{% if page.title != site.site_title %}{{ page.title }} | {% endif %}{{ site.site_title }}</title>
 <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/syntax.css">
 
+{% seo %}
+
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
 <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/modern-business.css?{{ site.css-date }}">
