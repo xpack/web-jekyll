@@ -59,7 +59,7 @@ my setup it looks necessary.
 $ cd web-jekyll.git
 $ bundle install
 $ bundle exec jekyll --version
-jekyll 3.8.5
+jekyll 3.9.0
 ```
 
 ## Development
@@ -79,8 +79,8 @@ To test links:
 
 ```console
 $ bundle exec jekyll build
-$ bundle exec htmlproofer --allow-hash-href --url-swap \^/preview/\:/ ./_site
-$ bundle exec htmlproofer --allow-hash-href --url-swap \^/preview/\:/ --url-ignore /github.com/xpack/xpack.github.io/blob/master/ ./_site
+$ bundle exec htmlproofer --allow-hash-href --url-swap \^/web-preview/\:/ ./_site
+$ bundle exec htmlproofer --allow-hash-href --url-swap \^/web-preview/\:/ --url-ignore /github.com/xpack/xpack.github.io/blob/master/ ./_site
 ```
 
 ## Publish
@@ -96,94 +96,61 @@ and be sure the `Gemfile.lock` file is committed:
 ```console
 $ cd web-preview.git
 $ bundle update
-Fetching gem metadata from https://rubygems.org/............
-Fetching gem metadata from https://rubygems.org/..
-Resolving dependencies....
-Using concurrent-ruby 1.1.5
-Using i18n 0.9.5
-Using minitest 5.11.3
-Using thread_safe 0.3.6
-Using tzinfo 1.2.5
-Using activesupport 4.2.11.1
-Using public_suffix 3.1.0
-Using addressable 2.6.0
+Fetching gem metadata from https://rubygems.org/..........
+Fetching gem metadata from https://rubygems.org/.
+Resolving dependencies...
+Fetching public_suffix 4.0.6 (was 3.1.1)
+Installing public_suffix 4.0.6 (was 3.1.1)
+Fetching addressable 2.7.0 (was 2.6.0)
+Installing addressable 2.7.0 (was 2.6.0)
 Using bundler 2.0.1
-Using coffee-script-source 1.11.1
-Using execjs 2.7.0
-Using coffee-script 2.4.1
 Using colorator 1.1.0
-Using ruby-enum 0.7.2
-Using commonmarker 0.17.13
-Using dnsruby 1.61.2
+Fetching concurrent-ruby 1.1.7 (was 1.1.5)
+Installing concurrent-ruby 1.1.7 (was 1.1.5)
 Using eventmachine 1.2.7
 Using http_parser.rb 0.6.0
 Using em-websocket 0.5.1
-Using ffi 1.11.1
+Fetching ffi 1.13.1 (was 1.11.1)
+Installing ffi 1.13.1 (was 1.11.1) with native extensions
 Using ethon 0.12.0
-Using multipart-post 2.1.1
-Using faraday 0.15.4
 Using forwardable-extended 2.6.0
-Using gemoji 3.0.1
-Using sawyer 0.8.2
-Using octokit 4.14.0
-Using typhoeus 1.3.1
-Using github-pages-health-check 1.16.1
-Using rb-fsevent 0.10.3
-Using rb-inotify 0.10.0
+Using mercenary 0.3.6
+Using mini_portile2 2.4.0
+Fetching nokogiri 1.10.10 (was 1.10.4)
+Installing nokogiri 1.10.10 (was 1.10.4) with native extensions
+Fetching nokogumbo 2.0.2
+Installing nokogumbo 2.0.2 with native extensions
+Fetching parallel 1.19.2 (was 1.17.0)
+Installing parallel 1.19.2 (was 1.17.0)
+Using rainbow 3.0.0
+Fetching typhoeus 1.4.0 (was 1.3.1)
+Installing typhoeus 1.4.0 (was 1.3.1)
+Fetching yell 2.2.2 (was 2.2.0)
+Installing yell 2.2.2 (was 2.2.0)
+Fetching html-proofer 3.15.3 (was 3.11.1)
+Installing html-proofer 3.15.3 (was 3.11.1)
+Using i18n 0.9.5
+Using rb-fsevent 0.10.4 (was 0.10.3)
+Using rb-inotify 0.10.1 (was 0.10.0)
 Using sass-listen 4.0.0
 Using sass 3.7.4
 Using jekyll-sass-converter 1.5.2
-Using ruby_dep 1.5.0
-Using listen 3.1.5
+Using listen 3.2.1 (was 3.1.5)
 Using jekyll-watch 2.2.1
-Using kramdown 1.17.0
-Using liquid 4.0.0
-Using mercenary 0.3.6
+Using rexml 3.2.4
+Using kramdown 2.3.0 (was 1.17.0)
+Using liquid 4.0.3 (was 4.0.0)
 Using pathutil 0.16.2
-Using rouge 2.2.1
+Using rouge 3.23.0 (was 2.2.1)
 Using safe_yaml 1.0.5
-Using jekyll 3.8.5
-Using jekyll-avatar 0.6.0
-Using jekyll-coffeescript 1.1.1
-Using jekyll-commonmark 1.3.1
-Using jekyll-commonmark-ghpages 0.1.5
-Using jekyll-default-layout 0.1.4
-Using jekyll-feed 0.11.0
-Using jekyll-gist 1.5.0
-Using jekyll-github-metadata 2.12.1
-Using mini_portile2 2.4.0
-Using nokogiri 1.10.3
-Using html-pipeline 2.11.0
-Using jekyll-mentions 1.4.1
-Using jekyll-optional-front-matter 0.3.0
-Using jekyll-paginate 1.1.0
-Using jekyll-readme-index 0.2.0
-Using jekyll-redirect-from 0.14.0
-Using jekyll-relative-links 0.6.0
-Using rubyzip 1.2.3
-Using jekyll-remote-theme 0.3.1
-Using jekyll-seo-tag 2.5.0
-Using jekyll-sitemap 1.2.0
-Using jekyll-swiss 0.4.0
-Using jekyll-theme-architect 0.1.1
-Using jekyll-theme-cayman 0.1.1
-Using jekyll-theme-dinky 0.1.1
-Using jekyll-theme-hacker 0.1.1
-Using jekyll-theme-leap-day 0.1.1
-Using jekyll-theme-merlot 0.1.1
-Using jekyll-theme-midnight 0.1.1
-Using jekyll-theme-minimal 0.1.1
-Using jekyll-theme-modernist 0.1.1
-Using jekyll-theme-primer 0.5.3
-Using jekyll-theme-slate 0.1.1
-Using jekyll-theme-tactile 0.1.1
-Using jekyll-theme-time-machine 0.1.1
-Using jekyll-titles-from-headings 0.5.1
-Using jemoji 0.10.2
-Using minima 2.5.0
-Using unicode-display_width 1.6.0
-Using terminal-table 1.8.0
-Using github-pages 198
+Using jekyll 3.9.0 (was 3.8.5)
+Using jekyll-feed 0.15.0 (was 0.11.0)
+Using posix-spawn 0.3.15
+Using jekyll-last-modified-at 1.3.0
+Using jekyll-redirect-from 0.16.0 (was 0.14.0)
+Using jekyll-seo-tag 2.6.1 (was 2.5.0)
+Using jekyll-sitemap 1.4.0 (was 1.2.0)
+Using kramdown-parser-gfm 1.1.0
 Bundle updated!
 ```
 
