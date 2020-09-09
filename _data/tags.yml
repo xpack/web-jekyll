@@ -46,3 +46,5 @@ allowed-tags:
   - windows-build-tools
   - basepri
   - setup
+  - c++
+  - exceptions
