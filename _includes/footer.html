@@ -2,7 +2,7 @@
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;{{ site.time | date: "%Y"  }} {{site.copyright_holder}}. All rights reserved. <br />
-{% if page.last_updated %}<span>Page last updated:</span> {{page.last_updated | date: "%b %-d, %Y" }}<br/>{% endif %} Site last generated: {{ site.time | date: "%b %-d, %Y"  }} <br />
+{% if page.last_modified_at %}<span>Page last updated:</span> {{page.last_modified_at | date: "%b %-d, %Y" }}<br/>{% endif %} Site last generated: {{ site.time | date: "%b %-d, %Y"  }} <br />
                 </div>
             </div>
 </footer>
