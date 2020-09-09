@@ -1,0 +1,82 @@
+# To check the status of the CI job:
+# https://travis-ci.com/github/eclipse-embed-cdt/web-jekyll
+
+# Travis CI configuration file to validate and deploy
+# the Eclipse Embedded CDT Jekyll site.
+# https://docs.travis-ci.com/user/getting-started/
+
+# https://docs.travis-ci.com/user/multi-os/
+os:
+  - linux
+
+# https://docs.travis-ci.com/user/trusty-ci-environment/
+# Use the new Debian 18 containers.
+dist: bionic
+sudo: false
+
+# https://docs.travis-ci.com/user/languages/ruby/
+language: ruby
+rvm:
+  - 2.6.3
+
+addons:
+  apt:
+    packages:
+    - libcurl4-openssl-dev
+
+# all commits required for jekyll-last-modified-at
+git:
+  depth: 999999999
+
+env:
+  global:
+    - GITHUB_DEST_REPO="xpack/xpack.github.io"
+    - GITHUB_PREVIEW_REPO="xpack/xpack.github.io/web-preview"
+    - GIT_COMMIT_USER_EMAIL="ilg@livius.net"
+    - GIT_COMMIT_USER_NAME="Travis CI"
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+    # https://docs.travis-ci.com/user/encryption-keys/
+    # The secure token generated with:
+    # travis login --pro
+    # travis encrypt -r xpack/web-jekyll GITHUB_TOKEN=XX...XX
+    - secure: "hZpQo1gmJxlhjXUBHrJkO1BK8EstEXs6v2YPXvBCJnodzCE13XlmJ+aINkFYCZLQwH4qH8XWD6LzbRJWJOj3Tt9tO8gjhLzT2g+brJRoVadFn/l1V8JA1qx7qkxuPsdXGQHygIdDdbgdwrntNjBI2y4+FoF518HogR0dYRK5+eQZcH+wqMaoSA4FlIDBxpnO/r2anlxmz48UXGFrU/7yTEBNZbjGtYtoyDDgepPcgllzDXclex16rZ9JmrhvQxYGai2be64BrzM9jIvQFY1rgL7wgCoMnwMCi1NMEmr6QGpcLd0alI+xyYAPy0ionNHLVRN4H4IV+E0NbfNYKklvLMUX6mXlut11zg8HnV9O5ExhrJxIiPmYsCmm2LRFjx1EpIascHhxCz8Ke8P4ansjFX5N9eh9nCaQkwDEOeAGtm4dHuWAGg0AZjDNMhlBMWiQFndup3i7rcQWP/G8ouysmCWf612ilfPgE1e3qOlv8pI9UTkq+9+zs/YaOMd4/Qtbt18nO0f3iMQEgp7LyunUEE5KNB7eMwayfZCOcVrCgiVvslQ4awrwZ6SOPIXwPT/WZjoy4t5TBqr+zNGOyEGZ9cqVDKzXQAqNZWrhEBpEebKdtmXcp9n6ueKkwWPh8VeqwrKMCoz2eV11ixpZDWaX0lNMZr1Z+Ht962cl5cTFQjU="
+
+notifications:
+  email:
+    on_success: always # default: change
+    on_failure: always # default: always
+   
+cache:
+  bundler: true
+
+# -----------------------------------------------------------------------------
+
+before_install:
+  - bash scripts/travis.linux.sh before_install
+
+before_script:
+  - bash scripts/travis.linux.sh before_script
+
+script:
+  - bash scripts/travis.linux.sh script
+
+# -----------------------------------------------------------------------------
+# Unused.
+
+# after_success:
+#  - bash scripts/travis.linux.sh after_success
+
+# after_failure:
+#  - bash scripts/travis.linux.sh after_failure
+
+# Deploy via script not functional (or not understood).
+# deploy:
+#  provider: script
+#  script: bash scripts/travis.linux.sh deploy
+#  on:
+#    branch: master
+ 
+# after_script:
+#  - bash scripts/travis.linux.sh after_script
+
+# -----------------------------------------------------------------------------
