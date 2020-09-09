@@ -357,8 +357,15 @@ description: "Tools to manage, configure and build complex, package based, multi
 
 github: [metadata]
 
+# https://github.com/gjtorikian/jekyll-last-modified-at
+# {{ page.last_modified_at }}
+
 plugins:
   - jekyll-redirect-from
+  - jekyll-last-modified-at
+
+last-modified-at:
+    date-format: '%d-%b-%y'
 
 whitelist:
   - jekyll-redirect-from
