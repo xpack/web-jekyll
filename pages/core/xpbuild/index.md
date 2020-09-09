@@ -6,7 +6,6 @@ summary: A tool to build day to day projects without having to manually write ma
 toc: false
 
 date: 2019-07-04 17:02:00 +0300
-last_updated: 2019-12-06 22:15:35 +0200
 
 ---
 

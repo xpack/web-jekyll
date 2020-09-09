@@ -2,7 +2,6 @@
 title:  "The xPack project web has a new look!"
 
 date: 2019-07-18 17:36:00 +0300
-last_updated: 2019-12-06 22:15:38 +0200
 
 categories:
   - jekyll

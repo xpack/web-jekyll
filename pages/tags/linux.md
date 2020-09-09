@@ -5,7 +5,6 @@ permalink: /tags/linux/
 tagName: linux
 
 date: 2019-06-30 10:08:00 +0300
-last_updated: 2019-06-30 10:30:21 +0300
 
 ---
 

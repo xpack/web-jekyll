@@ -3,7 +3,6 @@ title: How to release the project web
 permalink: /maintain/how-to-release-web/
 
 date: 2016-07-11 20:50:00 +0300
-last_updated: 2020-07-14 16:41:37 +0300
 
 ---
 

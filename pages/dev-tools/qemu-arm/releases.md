@@ -8,7 +8,6 @@ comments: false
 github_editme: false
 
 date: 2015-09-10 09:08:00 +0300
-last_updated: 2019-10-11 15:52:59 +0300
 
 ---
 

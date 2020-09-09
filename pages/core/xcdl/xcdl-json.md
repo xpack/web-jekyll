@@ -3,7 +3,6 @@ title: The XCDL format
 permalink: /xcdl/files/xcdl-json/
 
 date: 2017-10-10 19:59:00 +0300
-last_updated: 2019-06-30 10:30:19 +0300
 
 ---
 

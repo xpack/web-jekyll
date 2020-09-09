@@ -6,7 +6,6 @@ summary: For consistency, use the Standard JS validation tools.
 comments: true
 
 date: 2017-10-09 02:47:00 +0300
-last_updated: 2019-12-06 22:15:35 +0200
 
 ---
 

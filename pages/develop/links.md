@@ -5,7 +5,6 @@ permalink: /develop/links/
 comments: true
 
 date: 2016-03-09 12:04:00 +0300
-last_updated: 2020-08-16 12:17:32 +0300
 
 ---
 

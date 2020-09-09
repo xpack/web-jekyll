@@ -7,7 +7,6 @@ toc: true
 comments: true
 
 date: 2015-11-10 19:27:00 +0300
-last_updated: 2020-08-13 13:25:41 +0300
 
 ---
 

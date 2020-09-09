@@ -5,7 +5,6 @@ permalink: /xpm/cli/install/
 comments: true
 
 date: 2017-10-09 12:56:00 +0300
-last_updated: 2019-12-06 22:15:36 +0200
 
 ---
 

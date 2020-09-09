@@ -7,7 +7,6 @@ toc: false
 summary: Tools to manage, configure and build complex, package based, multi-target projects.
 
 date: 2019-06-20 23:11:00 +0300
-last_updated: 2020-08-16 12:17:36 +0300
 
 ---
 

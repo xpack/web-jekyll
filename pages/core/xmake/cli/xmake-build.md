@@ -5,7 +5,6 @@ permalink: /xmake/cli/xmake-build/
 summary: DEPRECATED! See xpbuild.
 
 date: 2017-10-09 13:06:00 +0300
-last_updated: 2019-12-06 22:15:35 +0200
 
 ---
 

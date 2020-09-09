@@ -3,7 +3,6 @@ title: The XSVD format
 permalink: /xsvd/files/xsvd-json/
 
 date: 2017-10-10 20:00:00 +0300
-last_updated: 2019-12-06 22:15:35 +0200
 
 ---
 

@@ -3,7 +3,6 @@ title: xcdl
 permalink: /xcdl/
 
 date: 2017-10-08 18:38:00 +0300
-last_updated: 2019-12-06 22:15:35 +0200
 
 ---
 

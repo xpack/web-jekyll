@@ -6,7 +6,6 @@ summary: Resources for the xPack projects maintainers.
 comments: false
 
 date: 2019-07-10 10:00:00 +0300
-last_updated: 2019-12-06 22:15:37 +0200
 
 ---
 

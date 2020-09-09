@@ -3,7 +3,6 @@ title: package.json
 permalink: /xpm/files/package.json/
 
 date: 2019-07-02 00:36:00 +0300
-last_updated: 2020-08-13 13:25:39 +0300
 
 ---
 

@@ -11,7 +11,6 @@ comments: true
 toc: false
 
 date: 2017-10-09 14:14:00 +0300
-last_updated: 2020-07-15 10:12:49 +0300
 
 ---
 
