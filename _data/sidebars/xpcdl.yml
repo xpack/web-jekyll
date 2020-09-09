@@ -27,13 +27,13 @@ entries:
       url: /xpcdl/
       output: web
 
-  - title: Home
+  - title: Back Home
     output: web
     folderitems:
     - title: The xPack Project
       url: /
       output: web
-    - title: GNU MCU Eclipse
-      external_url: https://gnu-mcu-eclipse.github.io
+    - title: Eclipse Embedded CDT
+      external_url: https://eclipse-embedded-cdt.github.io
       output: web
 
