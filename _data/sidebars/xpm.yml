@@ -62,7 +62,7 @@ entries:
       url: /
       output: web
     - title: Eclipse Embedded CDT
-      external_url: https://eclipse-embedded-cdt.github.io
+      external_url: https://eclipse-embed-cdt.github.io
       output: web
 
 
