@@ -31,7 +31,7 @@ git:
 env:
   global:
     - GITHUB_DEST_REPO="xpack/xpack.github.io"
-    - GITHUB_PREVIEW_REPO="xpack/xpack.github.io/web-preview"
+    - GITHUB_PREVIEW_REPO="xpack/web-preview"
     - GIT_COMMIT_USER_EMAIL="ilg@livius.net"
     - GIT_COMMIT_USER_NAME="Travis CI"
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
