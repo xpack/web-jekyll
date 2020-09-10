@@ -48,7 +48,7 @@ added 260 packages from 147 contributors in 36.304s
 
 The result is a pair of files in the `%APPDATA%\npm` folder:
 
-```powershell
+```
 C:\>dir "%APPDATA%"\npm\xpm*
  Volume in drive C has no label.
  Volume Serial Number is 28CE-1C06
@@ -65,7 +65,7 @@ If you followed the instructions in the
 [prerequisites]({{ site.baseurl }}/install/) page, you should
 already have this path configured and the program should start normally:
 
-```powershell
+```
 C:\>xpm --version
 0.5.0
 ```

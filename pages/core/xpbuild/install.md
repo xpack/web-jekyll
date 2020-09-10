@@ -45,7 +45,7 @@ C:\>npm install --global xpbuild@latest
 
 The result is a pair of files in the `%APPDATA%\npm` folder:
 
-```powershell
+```
 C:\>dir "%APPDATA%"\npm\xpbuild*
  Volume in drive C has no label.
  Volume Serial Number is 28CE-1C06
@@ -62,7 +62,7 @@ If you followed the instructions in the
 [Prerequisites]({{ site.baseurl }}/install/) page, you should
 already have this path configured and the program should start normally:
 
-```powershell
+```
 C:\>xpbuild --version
 0.5.0
 ```

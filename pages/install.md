@@ -97,7 +97,7 @@ with administrative rights.
 The result is a folder like `C:\Program Files\nodejs`, added to the
 system path since it includes the `node.exe` binary.
 
-```powershell
+```
 C:\>where node.exe
 C:\Program Files\nodejs\node.exe
 C:\>node --version
@@ -108,7 +108,7 @@ v{{ page.node_version }}
 
 A version of **npm**, usually a bit older, comes packed with Node.
 
-```powershell
+```
 C:\>where npm.cmd
 C:\Program Files\nodejs\npm.cmd
 C:\>npm --version
@@ -117,7 +117,7 @@ C:\>npm --version
 
 It is recommended to update it to the latest version:
 
-```powershell
+```
 C:\>npm install --global npm@latest
 C:\Users\ilg\AppData\Roaming\npm\npm -> C:\Users\ilg\AppData\Roaming\npm\node_modules\npm\bin\npm-cli.js
 C:\Users\ilg\AppData\Roaming\npm\npx -> C:\Users\ilg\AppData\Roaming\npm\node_modules\npm\bin\npx-cli.js
@@ -127,7 +127,7 @@ added 435 packages from 816 contributors in 72.64s
 
 Surprisingly, checking the version usually shows the old version:
 
-```powershell
+```
 C:\>where npm.cmd
 C:\Program Files\nodejs\npm.cmd
 C:\>npm --version
