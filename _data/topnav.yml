@@ -14,16 +14,11 @@ topnav_dropdowns:
   folders:
     - title: Projects
       folderitems:
-        - title: xpm
-          url: /xpm/
-        - title: xpbuild
-          url: /xpbuild/
-        - title: xpninja
-          url: /xpninja/
-        - title: xpmake
-          url: /xpmake/
-        - title: xpcdl
-          url: /xpcdl/
+      - title: Eclipse Embedded CDT
+        external_url: https://eclipse-embed-cdt.github.io
+      - title: µOS++ IIIe
+        external_url: http://micro-os-plus.github.io
+
     - title: GitHub
       folderitems:
         - title: xPack Core Tools
@@ -32,6 +27,11 @@ topnav_dropdowns:
           external_url: https://github.com/xpack-dev-tools
         - title: 3rd Party xPacks
           external_url: https://github.com/xpacks
+        - title: Eclipse Embedded CDT
+          external_url: https://github.com/eclipse-embed-cdt/
+        - title: µOS++ IIIe
+          external_url: https://github.com/micro-os-plus/
+          
     - title: Forums
       folderitems:
         - title: The xPack Forums

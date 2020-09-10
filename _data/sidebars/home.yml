@@ -116,14 +116,3 @@ entries:
     - title: MIT
       output: web
       external_url: https://opensource.org/licenses/MIT
-
-  - title: Back Home
-    output: web
-    folderitems:
-
-    - title: The xPack Project
-      url: /
-      output: web
-    - title: Eclipse Embedded CDT
-      external_url: https://eclipse-embed-cdt.github.io
-      output: web

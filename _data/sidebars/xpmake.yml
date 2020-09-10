@@ -27,14 +27,4 @@ entries:
       url: /xpmake/
       output: web
 
-  - title: Back Home
-    output: web
-    folderitems:
-    - title: The xPack Project
-      url: /
-      output: web
-    - title: Eclipse Embedded CDT
-      external_url: https://eclipse-embed-cdt.github.io
-      output: web
-
 
