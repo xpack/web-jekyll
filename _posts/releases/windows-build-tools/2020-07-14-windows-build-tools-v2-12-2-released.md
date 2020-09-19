@@ -5,7 +5,7 @@ summary: "Version 2.12.2 is a maintenance release; it repacks the same
 tools from the previous release, but built with the new XBB v3.2 tools."
 
 version: 2.12.2
-npm_subversion: 1
+npm_subversion: 2
 download_url: https://github.com/xpack-dev-tools/windows-build-tools-xpack/releases/tag/v2.12.2/
 
 date:   2020-07-14 12:01:00 +0300
