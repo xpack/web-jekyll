@@ -57,7 +57,7 @@ $ xpm install --global @xpack-dev-tools/windows-build-tools@latest
 To install this specific version, use:
 
 ```console
-$ xpm install --global @xpack-dev-tools/windows-build-tools@{{ page.version }}.{{ page.npm_subversion }}
+$ xpm install --global @xpack-dev-tools/windows-build-tools@{{ page.version }}-{{ page.npm_subversion }}
 ```
 
 ## Compliance
