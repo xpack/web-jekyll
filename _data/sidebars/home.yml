@@ -62,6 +62,9 @@ entries:
     - title: windows-build-tools
       url: /windows-build-tools/
       output: web
+    - title: ninja-build
+      url: /ninja-build/
+      output: web
 
   - title: News
     output: web

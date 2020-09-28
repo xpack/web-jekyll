@@ -1,0 +1,28 @@
+# This is the ninja-build sidebar TOC.
+# The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: Sidebar
+  product: Ninja Build
+  # version: 1.0
+  folders:
+
+  - title: Getting Started
+    output: web
+    folderitems:
+    - title: Overview
+      url: /ninja-build/
+      output: web
+    - title: Install
+      url: /ninja-build/install/
+      output: web
+    - title: Support
+      url: /ninja-build/support/
+      output: web
+    - title: FAQ
+      url: /ninja-build/faq/
+      output: web
+    - title: Releases
+      url: /ninja-build/releases/
+      output: web
+
