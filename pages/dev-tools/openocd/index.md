@@ -29,7 +29,7 @@ Developer & maintainer pages:
 
 ## Overview
 
-The **xPack OpenOCD** is a multi-platform binary distribution of
+The **xPack OpenOCD** is a cross-platform binary distribution of
 [OpenOCD](http://openocd.org), the **Open On-Chip Debugger**,
 an open source project hosted on 
 [SourceForge](https://sourceforge.net/projects/openocd/).
@@ -109,4 +109,3 @@ folder.
 ## Releases
 
 See the [Releases]({{ site.baseurl }}/openocd/releases/) page.
-

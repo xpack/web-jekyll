@@ -36,7 +36,7 @@ Developer & maintainer pages:
 ## Why QEMU?
 
 [QEMU](https://www.qemu.org) is the long-standing open-source
-multi-platform emulator. It is mature, it provides a good framework
+cross-platform emulator. It is mature, it provides a good framework
 for emulation, it implements a GDB server, it provides support for
 semihosting, and although it does not intend to accurately simulate
 processor time behaviour, it does keep a quite accurate track of
