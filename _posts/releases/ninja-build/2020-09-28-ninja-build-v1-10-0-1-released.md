@@ -29,7 +29,7 @@ There are separate binaries that run on **Windows** (Intel 32/64-bit),
 **macOS** (Intel 64-bit) and **GNU/Linux** (Intel 32/64-bit, Arm 32/64-bit).
 
 {% include note.html content="The main target for the Arm binaries
-were the **Raspberry Pi** class devices." %}
+are the **Raspberry Pi** class devices." %}
 
 ## Download
 
