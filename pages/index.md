@@ -89,12 +89,14 @@ The main binary tools packed as xPacks are:
 - [`@xpack-dev-tools/openocd`]({{ site.baseurl }}/openocd/) - the **xPack OpenOCD**
 - [`@xpack-dev-tools/qemu-arm`]({{ site.baseurl }}/qemu-arm/) - the **xPack QEMU Arm Cortex-M**
 - [`@xpack-dev-tools/riscv-none-embed-gcc`]({{ site.baseurl }}/riscv-none-embed-gcc/) - the **xPack RISC-V Embedded GCC** toolchain
+- [`@xpack-dev-tools/windows-build-tools`]({{ site.baseurl }}/windows-build-tools/) - the **xPack Windows Build Tools**
+- [`@xpack-dev-tools/ninja-build`]({{ site.baseurl }}/ninja-build/) - the **xPack Ninja Build**
 
 Under development:
 
-- `@xpack-dev-tools/gcc` - the **xPack GNU GCC**
 - `@xpack-dev-tools/cmake` - the **xPack CMake**
-- `@xpack-dev-tools/ninja` - the **xPack Ninja Build**
+- `@xpack-dev-tools/meson-build` - the **xPack Meson Build**
+- `@xpack-dev-tools/gcc` - the **xPack GNU GCC**
 
 Planned:
 
