@@ -108,10 +108,6 @@ install location is slightly different from the xpm install folders,
 which use the scope (like `@xpack-dev-tools`) to group different tools,
 and `.content` to store the unpacked archive." %}
 
-The result is a structure like:
-
-![The Ninja folders structure]({{ site.baseurl }}/assets/images/2019/windows-folders-ninja-build.png)
-
 To check if Ninja starts, use the following command:
 
 ```

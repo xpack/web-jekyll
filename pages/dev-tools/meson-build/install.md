@@ -108,10 +108,6 @@ install location is slightly different from the xpm install folders,
 which use the scope (like `@xpack-dev-tools`) to group different tools,
 and `.content` to store the unpacked archive." %}
 
-The result is a structure like:
-
-![The Meson folders structure]({{ site.baseurl }}/assets/images/2019/windows-folders-meson-build.png)
-
 To check if Meson starts, use the following command:
 
 ```
