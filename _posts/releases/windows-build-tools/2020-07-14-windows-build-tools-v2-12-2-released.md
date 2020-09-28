@@ -25,7 +25,7 @@ tags:
 
 ---
 
-This is the **xPack** version of **Windows Build Tools** (formerly part
+This is the **xPack** distribution of **Windows Build Tools** (formerly part
 of the GNU MCU/ARM Eclipse project).
 
 There are separate binaries that run on **Windows**, 32/64-bit.

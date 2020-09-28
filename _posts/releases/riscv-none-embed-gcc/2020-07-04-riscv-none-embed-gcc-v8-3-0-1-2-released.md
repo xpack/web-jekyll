@@ -22,7 +22,7 @@ tags:
 
 ---
 
-This is the multi-platform **xPack** version of the
+This is the **xPack** distribution of the
 [SiFive RISC-V GCC](https://github.com/sifive/freedom-tools/releases).
 
 There are separate binaries that run on **Windows**, **macOS** and

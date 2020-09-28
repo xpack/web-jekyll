@@ -21,7 +21,7 @@ tags:
 
 ---
 
-This is the multi-platform **xPack** version of **OpenOCD** (formerly part
+This is the **xPack** distribution of **OpenOCD** (formerly part
 of the GNU MCU Eclipse project).
 
 There are separate binaries that run on **Windows**, **macOS** and

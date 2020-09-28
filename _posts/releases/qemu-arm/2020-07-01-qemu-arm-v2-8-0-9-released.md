@@ -22,7 +22,7 @@ tags:
 
 ---
 
-This is the multi-platform **xPack** version of **QEMU** for Arm Cortex-M
+This is the **xPack** distribution of **QEMU** for Arm Cortex-M
 devices  (formerly part of the GNU MCU Eclipse project).
 
 There are separate binaries that run on **Windows**, **macOS** and

@@ -29,7 +29,7 @@ tags:
 
 ---
 
-This is the multi-platform **xPack** version of the
+This is the **xPack** distribution of the
 [GNU Arm Embedded Toolchain](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm).
 
 There are separate binaries that run on **Windows** 32/64-bit, **macOS**,
