@@ -189,10 +189,10 @@ safe side, try to always use original manufacturer drivers." %}
 {% capture macos %}
 ### Download
 
-The macOS version of **xPack OpenOCD** is packed as a TGZ archive.
+The macOS version of **xPack OpenOCD** is packed as a .tar.gz archive.
 Download the latest version named like:
 
--  `xpack-openocd-0.10.0-13-darwin-x64.tgz`
+- `xpack-openocd-0.10.0-13-darwin-x64.tgz`
 
 ### Unpack
 
@@ -270,7 +270,7 @@ xPack OpenOCD, 64-bit Open On-Chip Debugger 0.10.0+dev (2019-07-17-15:21)
 {% capture linux %}
 ### Download
 
-The GNU/Linux versions of **xPack OpenOCD** are packed as TGZ archives.
+The GNU/Linux versions of **xPack OpenOCD** are packed as plain archives.
 Download the latest version named like:
 
 - `xpack-openocd-0.10.0-13-linux-x64.tgz`

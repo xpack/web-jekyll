@@ -143,7 +143,7 @@ binaries, it is recommended to also install the **Windows Build Tools**." %}
 {% capture macos %}
 ### Download
 
-The macOS version of **xPack GNU RISC-V Embedded GCC** is packed as a TGZ archive.
+The macOS version of **xPack GNU RISC-V Embedded GCC** is packed as a .tar.gz archive.
 Download the latest version named like:
 
 - `xpack-riscv-none-embed-gcc-8.2.1-3.1-darwin-x64.tgz`
@@ -255,7 +255,7 @@ riscv-none-embed-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) 8.2.0
 ### Download
 
 The GNU/Linux versions of **xPack GNU RISC-V Embedded GCC** are packed as
-TGZ archives. Download the latest version named like:
+.tar.gz archives. Download the latest version named like:
 
 - `xpack-riscv-none-embed-gcc-8.2.1-3.1-linux-x64.tgz`
 - `xpack-riscv-none-embed-gcc-8.2.1-3.1-linux-x32.tgz`

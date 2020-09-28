@@ -138,10 +138,10 @@ For usual Cortex-M emulation, there are no special drivers required.
 {% capture macos %}
 ### Download
 
-The macOS version of **xPack QEMU Arm** is packed as a TGZ archive.
+The macOS version of **xPack QEMU Arm** is packed as a .tar.gz archive.
 Download the latest version named like:
 
--  `xpack-qemu-arm-2.8.0-7-darwin-x64.tgz`
+- `xpack-qemu-arm-2.8.0-7-darwin-x64.tgz`
 
 ### Unpack
 
@@ -208,7 +208,7 @@ Copyright (c) 2003-2016 Fabrice Bellard and the QEMU Project developers
 {% capture linux %}
 ### Download
 
-The GNU/Linux versions of **xPack QEMU Arm** are packed as TGZ archives.
+The GNU/Linux versions of **xPack QEMU Arm** are packed as plain archives.
 Download the latest version named like:
 
 - `xpack-qemu-arm-2.8.0-7-linux-x64.tgz`
