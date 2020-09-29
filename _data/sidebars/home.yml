@@ -65,6 +65,9 @@ entries:
     - title: ninja-build
       url: /ninja-build/
       output: web
+    - title: cmake
+      url: /cmake/
+      output: web
 
   - title: News
     output: web
