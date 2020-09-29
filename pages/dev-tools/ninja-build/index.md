@@ -3,6 +3,7 @@ title: The xPack Ninja Build
 permalink: /ninja-build/
 
 summary: "A binary distribution of Ninja Build."
+
 comments: true
 keywords: ninja-build
 
