@@ -128,15 +128,15 @@ Download the latest version named like:
 
 ### Unpack
 
-To install Ninja, unpack the archive and copy it to
-`/${HOME}/opt/xPacks/ninja-build/<version>`:
+To install Ninja, unpack the archive and move it to
+`/${HOME}/opt/xPacks/ninja-build/xpack-ninja-build-1.10.1-1`:
 
 ```console
 $ mkdir -p ~/opt
 $ cd ~/opt
 
 $ tar xvf ~/Downloads/xpack-ninja-build-1.10.1-1-darwin-x64.tgz
-$ chmod -R -w xPacks/ninja-build/1.10.1-1
+$ chmod -R -w xPacks/ninja-build/xpack-ninja-build-1.10.1-1
 ```
 
 {% include note.html content="For manual installs, the recommended
@@ -145,10 +145,20 @@ install location is different from the xpm install folders." %}
 The result is a structure like:
 
 ```console
-$ tree -L 2 /Users/ilg/Library/xPacks/ninja-build/1.10.1-1
-/Users/ilg/Library/xPacks/ninja-build/1.10.1-1
+$ tree -L 2 /Users/ilg/Library/xPacks/ninja-build/xpack-ninja-build-1.10.1-1
+/Users/ilg/Library/xPacks/ninja-build/xpack-ninja-build-1.10.1-1/
+├── README.md
+├── bin
+│   ├── libgcc_s.1.dylib
+│   ├── libstdc++.6.dylib
+│   └── ninja
+└── distro-info
+    ├── CHANGELOG.md
+    ├── licenses
+    ├── patches
+    └── scripts
 
-TODO
+5 directories, 5 files
 ```
 
 To check if Ninja starts, use:
@@ -176,15 +186,15 @@ machines.
 
 ### Unpack
 
-To install Ninja, unpack the archive and copy it to
-`/${HOME}/opt/xPacks/ninja-build/<version>`:
+To install Ninja, unpack the archive and move it to
+`/${HOME}/opt/xPacks/ninja-build/xpack-ninja-build-1.10.1-1`:
 
 ```console
 $ mkdir -p ~/opt
 $ cd ~/opt
 
 $ tar xvf ~/Downloads/xpack-ninja-build-1.10.1-1-linux-x64.tgz
-$ chmod -R -w xPacks/ninja-build/1.10.1-1
+$ chmod -R -w xPacks/ninja-build/xpack-ninja-build-1.10.1-1
 ```
 
 {% include note.html content="For manual installs, the recommended
@@ -193,15 +203,24 @@ which use the scope (like `@xpack-dev-tools`) to group different tools,
 and `.content` to store the unpacked archive." %}
 
 ```console
-$ tree -L 2 '/home/ilg/opt/xPacks/ninja-build/1.10.1-1'
+$ tree -L 2 '/home/ilg/opt/xPacks/ninja-build/xpack-ninja-build-1.10.1-1'
+/home/ilg/opt/xPacks/ninja-build/xpack-ninja-build-1.10.1-1/
+├── bin
+│   └── ninja
+├── distro-info
+│   ├── CHANGELOG.md
+│   ├── licenses
+│   ├── patches
+│   └── scripts
+└── README.md
 
-TODO
+5 directories, 3 files
 ```
 
 To check if Ninja starts and is recent, use:
 
 ```console
-$ ~/opt/xPacks/ninja-build/1.10.1-1/bin/ninja --version
+$ ~/opt/xPacks/ninja-build/xpack-ninja-build-1.10.1-1/bin/ninja --version
 1.10.1
 ```
 

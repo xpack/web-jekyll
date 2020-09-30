@@ -129,14 +129,14 @@ Download the latest version named like:
 ### Unpack
 
 To install Meson, unpack the archive and copy it to
-`/${HOME}/opt/xPacks/meson-build/<version>`:
+`/${HOME}/opt/xPacks/meson-build/xpack-meson-build-0.55.3-1`:
 
 ```console
 $ mkdir -p ~/opt
 $ cd ~/opt
 
 $ tar xvf ~/Downloads/xpack-meson-build-0.55.3-1-darwin-x64.tgz
-$ chmod -R -w xPacks/meson-build/0.55.3-1
+$ chmod -R -w xPacks/meson-build/xpack-meson-build-0.55.3-1
 ```
 
 {% include note.html content="For manual installs, the recommended
@@ -145,16 +145,29 @@ install location is different from the xpm install folders." %}
 The result is a structure like:
 
 ```console
-$ tree -L 2 /Users/ilg/Library/xPacks/meson-build/0.55.3-1
-/Users/ilg/Library/xPacks/meson-build/0.55.3-1
+$ tree -L 2 /Users/ilg/Library/xPacks/meson-build/xpack-meson-build-0.55.3-1
+/Users/ilg/Library/xPacks/meson-build/xpack-meson-build-0.55.3-1/
+├── README.md
+├── bin
+│   ├── libcrypt.2.dylib
+│   ├── libgcc_s.1.dylib
+│   ├── libpython3.8.dylib
+│   └── meson
+├── distro-info
+│   ├── CHANGELOG.md
+│   ├── licenses
+│   ├── patches
+│   └── scripts
+└── lib
+    └── python3.8
 
-TODO
+7 directories, 6 files
 ```
 
 To check if Meson starts, use:
 
 ```console
-$ ~/opt/xPacks/meson-build/0.55.3-1/bin/meson --version
+$ ~/opt/xPacks/meson-build/xpack-meson-build-0.55.3-1/bin/meson --version
 0.5.3
 ```
 
@@ -176,15 +189,15 @@ machines.
 
 ### Unpack
 
-To install Meson, unpack the archive and copy it to
-`/${HOME}/opt/xPacks/meson-build/<version>`:
+To install Meson, unpack the archive and move it to
+`/${HOME}/opt/xPacks/meson-build/xpack-meson-build-0.55.3-1`:
 
 ```console
 $ mkdir -p ~/opt
 $ cd ~/opt
 
 $ tar xvf ~/Downloads/xpack-meson-build-0.55.3-1-linux-x64.tgz
-$ chmod -R -w xPacks/meson-build/0.55.3-1
+$ chmod -R -w xPacks/meson-build/xpack-meson-build-0.55.3-1
 ```
 
 {% include note.html content="For manual installs, the recommended
@@ -193,15 +206,26 @@ which use the scope (like `@xpack-dev-tools`) to group different tools,
 and `.content` to store the unpacked archive." %}
 
 ```console
-$ tree -L 2 '/home/ilg/opt/xPacks/meson-build/0.55.3-1'
+$ tree -L 2 '/home/ilg/opt/xPacks/meson-build/xpack-meson-build-0.55.3-1'
+/home/ilg/opt/xPacks/meson-build/xpack-meson-build-0.55.3-1/
+├── bin
+│   └── meson
+├── distro-info
+│   ├── CHANGELOG.md
+│   ├── licenses
+│   ├── patches
+│   └── scripts
+├── lib
+│   └── python3.8
+└── README.md
 
-TODO
+7 directories, 3 files
 ```
 
 To check if Meson starts and is recent, use:
 
 ```console
-$ ~/opt/xPacks/meson-build/0.55.3-1/bin/meson --version
+$ ~/opt/xPacks/meson-build/xpack-meson-build-0.55.3-1/bin/meson --version
 0.55.3
 ```
 

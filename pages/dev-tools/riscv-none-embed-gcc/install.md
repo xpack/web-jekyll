@@ -159,7 +159,7 @@ $ mkdir -p ~/opt
 $ cd ~/opt
 
 $ tar xvf ~/Downloads/xpack-riscv-none-embed-gcc-8.2.1-3.1-darwin-x64.tgz
-$ chmod -R -w xPacks/riscv-none-embed-gcc/8.2.1-3.1
+$ chmod -R -w xPacks/riscv-none-embed-gcc/xpack-riscv-none-embed-gcc-8.2.1-3.1
 ```
 
 {% include note.html content="For manual installs, the recommended
@@ -173,8 +173,8 @@ for the executable in this location." %}
 The result is a structure like:
 
 ```console
-$ tree -L 2 /Users/ilg/opt/xPacks/riscv-none-embed-gcc/8.2.1-3.1
-/Users/ilg/opt/xPacks/riscv-none-embed-gcc/8.2.1-3.1
+$ tree -L 2 /Users/ilg/opt/xPacks/riscv-none-embed-gcc/xpack-riscv-none-embed-gcc-8.2.1-3.1
+/Users/ilg/opt/xPacks/riscv-none-embed-gcc/xpack-riscv-none-embed-gcc-8.2.1-3.1/
 ├── README.md
 ├── bin
 │   ├── libexpat.1.6.7.dylib
@@ -246,7 +246,7 @@ $ tree -L 2 /Users/ilg/opt/xPacks/riscv-none-embed-gcc/8.2.1-3.1
 To check if GCC starts, use:
 
 ```console
-$ ~/opt/xPacks/riscv-none-embed-gcc/8.2.1-3.1/bin/riscv-none-embed-gcc --version
+$ ~/opt/xPacks/riscv-none-embed-gcc/xpack-riscv-none-embed-gcc-8.2.1-3.1/bin/riscv-none-embed-gcc --version
 riscv-none-embed-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) 8.2.0
 ```
 
@@ -268,15 +268,15 @@ machines.
 
 ### Unpack
 
-To install GNU RISC-V Embedded GCC, unpack the archive and copy it to
-`/${HOME}/opt/xPacks/riscv-none-embed-gcc/<version>`:
+To install GNU RISC-V Embedded GCC, unpack the archive and move it to
+`/${HOME}/opt/xPacks/riscv-none-embed-gcc/xpack-riscv-none-embed-gcc-8.2.1-3.1`:
 
 ```console
 $ mkdir -p ~/opt
 $ cd ~/opt
 
 $ tar xvf ~/Downloads/xpack-riscv-none-embed-gcc-8.2.1-3.1-linux-x64.tgz
-$ chmod -R -w xPacks/riscv-none-embed-gcc/8.2.1-3.1
+$ chmod -R -w xPacks/riscv-none-embed-gcc/xpack-riscv-none-embed-gcc-8.2.1-3.1
 ```
 
 {% include note.html content="For manual installs, the recommended
@@ -292,8 +292,8 @@ for the executable in this location." %}
 The result is a structure like:
 
 ```console
-$ tree -L 2 /home/ilg/opt/xPacks/riscv-none-embed-gcc/8.2.1-3.1/
-/home/ilg/opt/xPacks/riscv-none-embed-gcc/8.2.1-3.1/
+$ tree -L 2 /home/ilg/opt/xPacks/riscv-none-embed-gcc/xpack-riscv-none-embed-gcc-8.2.1-3.1/
+/home/ilg/opt/xPacks/riscv-none-embed-gcc/xpack-riscv-none-embed-gcc-8.2.1-3.1/
 ├── bin
 │   ├── libexpat.so.1 -> libexpat.so.1.6.7
 │   ├── libexpat.so.1.6.7
@@ -376,7 +376,7 @@ $ tree -L 2 /home/ilg/opt/xPacks/riscv-none-embed-gcc/8.2.1-3.1/
 To check if GCC starts and is recent, use:
 
 ```console
-$ ~/opt/xPacks/riscv-none-embed-gcc/8.2.1-3.1/bin/riscv-none-embed-gcc --version
+$ ~/opt/xPacks/riscv-none-embed-gcc/xpack-riscv-none-embed-gcc-8.2.1-3.1/bin/riscv-none-embed-gcc --version
 riscv-none-embed-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) 8.2.0
 ```
 

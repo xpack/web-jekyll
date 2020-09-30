@@ -107,7 +107,7 @@ The `win32` part is confusing, but we have to leave with it." %}
 
 ### Unpack
 
-Unpack the archive and copy it into the 
+Unpack the archive and copy it into the
 `%userprofile%\AppData\Roaming\xPacks\openocd`
 (for example `C:\Users\ilg\AppData\Roaming\xPacks\openocd`) folder;
 according to Microsoft, `AppData\Roaming` is the recommended location for
@@ -205,7 +205,7 @@ $ mkdir -p ~/opt
 $ cd ~/opt
 
 $ tar xvf ~/Downloads/xpack-openocd-0.10.0-13-darwin-x64.tgz
-$ chmod -R -w xPacks/openocd/0.10.0-13
+$ chmod -R -w xPacks/openocd/xpack-openocd-0.10.0-13
 ```
 
 {% include note.html content="For manual installs, the recommended
@@ -219,8 +219,8 @@ for the executable in this location." %}
 The result is a structure like:
 
 ```console
-$ tree -L 2 /Users/ilg/Library/xPacks/openocd/0.10.0-13
-/Users/ilg/Library/xPacks/openocd/0.10.0-13
+$ tree -L 2 /Users/ilg/Library/xPacks/openocd/xpack-openocd-0.10.0-13
+/Users/ilg/Library/xPacks/openocd/xpack-openocd-0.10.0-13
 ├── OpenULINK
 │   └── ulink_firmware.hex
 ├── README.md
@@ -263,7 +263,7 @@ $ tree -L 2 /Users/ilg/Library/xPacks/openocd/0.10.0-13
 To check if OpenOCD starts, use:
 
 ```console
-$ ~/opt/xPacks/openocd/0.10.0-13/bin/openocd --version
+$ ~/opt/xPacks/openocd/xpack-openocd-0.10.0-13/bin/openocd --version
 xPack OpenOCD, 64-bit Open On-Chip Debugger 0.10.0+dev (2019-07-17-15:21)
 ```
 {% endcapture %}
@@ -284,15 +284,15 @@ machines.
 
 ### Unpack
 
-To install OpenOCD, unpack the archive and copy it to
-`/${HOME}/opt/xPacks/openocd/<version>`:
+To install OpenOCD, unpack the archive and move it to
+`/${HOME}/opt/xPacks/openocd/xpack-openocd-0.10.0-13`:
 
 ```console
 $ mkdir -p ~/opt
 $ cd ~/opt
 
 $ tar xvf ~/Downloads/xpack-openocd-0.10.0-13-linux-x64.tgz
-$ chmod -R -w xPacks/openocd/0.10.0-13
+$ chmod -R -w xPacks/openocd/xpack-openocd-0.10.0-13
 ```
 
 {% include note.html content="For manual installs, the recommended
@@ -306,8 +306,8 @@ path, since by default the Eclipse Embedded CDT debug plug-ins search
 for the executable in this location." %}
 
 ```console
-$ tree -L 2 '/home/ilg/opt/xPacks/openocd/0.10.0-13'
-/home/ilg/opt/xPacks/openocd/0.10.0-13
+$ tree -L 2 '/home/ilg/opt/xPacks/openocd/xpack-openocd-0.10.0-13'
+/home/ilg/opt/xPacks/openocd/xpack-openocd-0.10.0-13/
 ├── bin
 │   ├── libftdi1.so.2 -> libftdi1.so.2.4.0
 │   ├── libftdi1.so.2.4.0
@@ -356,7 +356,7 @@ $ tree -L 2 '/home/ilg/opt/xPacks/openocd/0.10.0-13'
 To check if OpenOCD starts and is recent, use:
 
 ```console
-$ ~/opt/xPacks/openocd/0.10.0-13/bin/openocd --version
+$ ~/opt/xPacks/openocd/xpack-openocd-0.10.0-13/bin/openocd --version
 xPack OpenOCD, 64-bit Open On-Chip Debugger 0.10.0+dev (2019-07-17-15:21)
 ```
 
@@ -369,7 +369,7 @@ supported IDs; to install it, just copy the file to `/etc/udev/rules.d`
 and eventually notify the daemon:
 
 ```console
-$ sudo cp ~/opt/xPacks/openocd/0.10.0-13/contrib/60-openocd.rules /etc/udev/rules.d/
+$ sudo cp ~/opt/xPacks/openocd/xpack-openocd-0.10.0-13/contrib/60-openocd.rules /etc/udev/rules.d/
 $ sudo udevadm control --reload-rules
 ```
 
@@ -417,7 +417,7 @@ macOS, to test a connection via ST/LINK v2 to the STM32F4DISCOVERY board,
 you can use the sample below:
 
 ```console
-$ ~/opt/xPacks/openocd/0.11.0-13/bin/openocd -f board/stm32f4discovery.cfg
+$ ~/opt/xPacks/openocd/xpack-openocd-0.10.0-13/bin/openocd -f board/stm32f4discovery.cfg
 xPack OpenOCD, 64-bit Open On-Chip Debugger 0.10.0+dev (2019-07-17-15:21)
 Licensed under GNU GPL v2
 For bug reports, read

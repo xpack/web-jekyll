@@ -146,15 +146,15 @@ Download the latest version named like:
 
 ### Unpack
 
-To install QEMU, unpack the archive and copy it to
-`/${HOME}/opt/xPacks/qemu-arm/<version>`:
+To install QEMU, unpack the archive and move it to
+`/${HOME}/opt/xPacks/qemu-arm/xpack-qemu-arm-2.8.0-7`:
 
 ```console
 $ mkdir -p ~/opt
 $ cd ~/opt
 
 $ tar xvf ~/Downloads/xpack-qemu-arm-2.8.0-7-darwin-x64.tgz
-$ chmod -R -w xPacks/qemu-arm/2.8.0-7
+$ chmod -R -w xPacks/qemu-arm/xpack-qemu-arm-2.8.0-7
 ```
 
 {% include note.html content="For manual installs, the recommended
@@ -168,8 +168,8 @@ for the executable in this location." %}
 The result is a structure like:
 
 ```console
-$ tree -L 2 /Users/ilg/Library/xPacks/qemu-arm/2.8.0-7
-/Users/ilg/Library/xPacks/qemu-arm/2.8.0-7
+$ tree -L 2 /Users/ilg/Library/xPacks/qemu-arm/xpack-qemu-arm-2.8.0-7
+/Users/ilg/Library/xPacks/qemu-arm/xpack-qemu-arm-2.8.0-7/
 ├── README.md
 ├── bin
 │   ├── libSDL2-2.0.0.dylib
@@ -199,7 +199,7 @@ $ tree -L 2 /Users/ilg/Library/xPacks/qemu-arm/2.8.0-7
 To check if QEMU starts, use:
 
 ```console
-$ ~/opt/xPacks/qemu-arm/2.8.0-7/bin/qemu-system-gnuarmeclipse --version
+$ ~/opt/xPacks/qemu-arm/xpack-qemu-arm-2.8.0-7/bin/qemu-system-gnuarmeclipse --version
 xPack 64-bit QEMU emulator version 2.8.0-7 (v2.8.0-4-20190211-47-g109b69f49a-dirty)
 Copyright (c) 2003-2016 Fabrice Bellard and the QEMU Project developers
 ```
@@ -222,15 +222,15 @@ machines.
 
 ### Unpack
 
-To install QEMU, unpack the archive and copy it to
-`/${HOME}/opt/xPacks/qemu-arm/<version>`:
+To install QEMU, unpack the archive and move it to
+`/${HOME}/opt/xPacks/qemu-arm/xpack-qemu-arm-2.8.0-7`:
 
 ```console
 $ mkdir -p ~/opt
 $ cd ~/opt
 
 $ tar xvf ~/Downloads/xpack-qemu-arm-2.8.0-7-linux-x64.tgz
-$ chmod -R -w xPacks/qemu-arm/2.8.0-7
+$ chmod -R -w xPacks/qemu-arm/xpack-qemu-arm-2.8.0-7
 ```
 
 {% include note.html content="For manual installs, the recommended
@@ -246,8 +246,8 @@ for the executable in this location." %}
 The result is a structure like:
 
 ```console
-$ tree -L 2 '/home/ilg/opt/xPacks/qemu-arm/2.8.0-7'
-/home/ilg/opt/xPacks/qemu-arm/2.8.0-7
+$ tree -L 2 '/home/ilg/opt/xPacks/qemu-arm/xpack-qemu-arm-2.8.0-7'
+/home/ilg/opt/xPacks/qemu-arm/xpack-qemu-arm-2.8.0-7/
 ├── bin
 │   ├── libglib-2.0.so.0 -> libglib-2.0.so.0.5600.4
 │   ├── libglib-2.0.so.0.5600.4
@@ -285,7 +285,7 @@ $ tree -L 2 '/home/ilg/opt/xPacks/qemu-arm/2.8.0-7'
 To check if QEMU starts and is recent, use:
 
 ```console
-$ ~/opt/xPacks/qemu-arm/2.8.0-7/bin/qemu-system-gnuarmeclipse --version
+$ ~/opt/xPacks/qemu-arm/xpack-qemu-arm-2.8.0-7/bin/qemu-system-gnuarmeclipse --version
 xPack 64-bit QEMU emulator version 2.8.0-7 (v2.8.0-4-20190211-47-g109b69f49a-dirty)
 Copyright (c) 2003-2016 Fabrice Bellard and the QEMU Project developers
 ```

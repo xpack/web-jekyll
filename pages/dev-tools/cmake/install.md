@@ -128,15 +128,15 @@ Download the latest version named like:
 
 ### Unpack
 
-To install CMake, unpack the archive and copy it to
-`/${HOME}/opt/xPacks/cmake/<version>`:
+To install CMake, unpack the archive and move it to
+`/${HOME}/opt/xPacks/cmake/xpack-cmake-3.18.3-1`:
 
 ```console
 $ mkdir -p ~/opt
 $ cd ~/opt
 
 $ tar xvf ~/Downloads/xpack-cmake-3.18.3-1-darwin-x64.tgz
-$ chmod -R -w xPacks/cmake/3.18.3-1
+$ chmod -R -w xPacks/cmake/xpack-cmake-3.18.3-1
 ```
 
 {% include note.html content="For manual installs, the recommended
@@ -145,16 +145,37 @@ install location is different from the xpm install folders." %}
 The result is a structure like:
 
 ```console
-$ tree -L 2 /Users/ilg/Library/xPacks/cmake/3.18.3-1
-/Users/ilg/Library/xPacks/cmake/3.18.3-1
+$ tree -L 2 /Users/ilg/Library/xPacks/cmake/xpack-cmake-3.18.3-1
+/Users/ilg/Library/xPacks/cmake/xpack-cmake-3.18.3-1/
+├── README.md
+├── bin
+│   ├── ccmake
+│   ├── cmake
+│   ├── cpack
+│   ├── ctest
+│   ├── libgcc_s.1.dylib
+│   └── libncurses.6.dylib
+├── distro-info
+│   ├── CHANGELOG.md
+│   ├── licenses
+│   ├── patches
+│   └── scripts
+├── doc
+│   └── cmake-3.18
+└── share
+    ├── aclocal
+    ├── bash-completion
+    ├── cmake-3.18
+    ├── emacs
+    └── vim
 
-TODO
+13 directories, 8 files
 ```
 
 To check if CMake starts, use:
 
 ```console
-$ ~/opt/xPacks/cmake/3.18.3-1/bin/cmake --version
+$ ~/opt/xPacks/cmake/xpack-cmake-3.18.3-1/bin/cmake --version
 cmake version 3.18.3
 ```
 
@@ -176,15 +197,15 @@ machines.
 
 ### Unpack
 
-To install CMake, unpack the archive and copy it to
-`/${HOME}/opt/xPacks/cmake/<version>`:
+To install CMake, unpack the archive and move it to
+`/${HOME}/opt/xPacks/cmake/xpack-cmake-3.18.3-1`:
 
 ```console
 $ mkdir -p ~/opt
 $ cd ~/opt
 
 $ tar xvf ~/Downloads/xpack-cmake-3.18.3-1-linux-x64.tgz
-$ chmod -R -w xPacks/cmake/3.18.3-1
+$ chmod -R -w xPacks/cmake/xpack-cmake-3.18.3-1
 ```
 
 {% include note.html content="For manual installs, the recommended
@@ -193,15 +214,39 @@ which use the scope (like `@xpack-dev-tools`) to group different tools,
 and `.content` to store the unpacked archive." %}
 
 ```console
-$ tree -L 2 '/home/ilg/opt/xPacks/cmake/3.18.3-1'
+$ tree -L 2 '/home/ilg/opt/xPacks/cmake/xpack-cmake-3.18.3-1'
+/home/ilg/opt/xPacks/cmake/xpack-cmake-3.18.3-1/
+├── bin
+│   ├── ccmake
+│   ├── cmake
+│   ├── cpack
+│   ├── ctest
+│   ├── libcrypto.so.1.1
+│   ├── libncurses.so.6 -> libncurses.so.6.2
+│   ├── libncurses.so.6.2
+│   └── libssl.so.1.1
+├── distro-info
+│   ├── CHANGELOG.md
+│   ├── licenses
+│   ├── patches
+│   └── scripts
+├── doc
+│   └── cmake-3.18
+├── README.md
+└── share
+    ├── aclocal
+    ├── bash-completion
+    ├── cmake-3.18
+    ├── emacs
+    └── vim
 
-TODO
+13 directories, 10 files
 ```
 
 To check if CMake starts and is recent, use:
 
 ```console
-$ ~/opt/xPacks/cmake/3.18.3-1/bin/cmake --version
+$ ~/opt/xPacks/cmake/xpack-cmake-3.18.3-1/bin/cmake --version
 cmake version 3.18.3
 ```
 
