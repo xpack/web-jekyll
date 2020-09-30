@@ -229,6 +229,20 @@ defaults:
       toc: true
       github_editme: true
 
+        -
+    scope:
+      path: "pages/dev-tools/meson-build"
+      type: "pages"
+    values:
+      layout: "page"
+      comments: false
+      search: true
+      sidebar: meson-build
+      topnav: topnav
+      author: Liviu Ionescu
+      toc: true
+      github_editme: true
+
   -
     scope:
       path: "pages/core/xpm"

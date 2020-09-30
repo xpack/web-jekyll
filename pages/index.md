@@ -92,10 +92,10 @@ The main binary tools packed as xPacks are:
 - [`@xpack-dev-tools/windows-build-tools`]({{ site.baseurl }}/windows-build-tools/) - the **xPack Windows Build Tools**
 - [`@xpack-dev-tools/ninja-build`]({{ site.baseurl }}/ninja-build/) - the **xPack Ninja Build**
 - [`@xpack-dev-tools/cmake`]({{ site.baseurl }}/cmake/) - the **xPack CMake**
+- [`@xpack-dev-tools/meson-build`]({{ site.baseurl }}/meson-build/) - the **xPack Meson Build**
 
 Under development:
 
-- `@xpack-dev-tools/meson-build` - the **xPack Meson Build**
 - `@xpack-dev-tools/gcc` - the **xPack GNU GCC**
 
 Planned:

@@ -68,6 +68,9 @@ entries:
     - title: cmake
       url: /cmake/
       output: web
+    - title: meson-build
+      url: /meson-build/
+      output: web
 
   - title: News
     output: web

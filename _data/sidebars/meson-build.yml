@@ -1,9 +1,9 @@
-# This is the cmake sidebar TOC.
+# This is the meson-build sidebar TOC.
 # The sidebar code loops through sections here and provides the appropriate formatting.
 
 entries:
 - title: Sidebar
-  product: CMake
+  product: Meson Build
   # version: 1.0
   folders:
 
@@ -11,18 +11,18 @@ entries:
     output: web
     folderitems:
     - title: Overview
-      url: /cmake/
+      url: /meson-build/
       output: web
     - title: Install
-      url: /cmake/install/
+      url: /meson-build/install/
       output: web
     - title: Support
-      url: /cmake/support/
+      url: /meson-build/support/
       output: web
     - title: FAQ
-      url: /cmake/faq/
+      url: /meson-build/faq/
       output: web
     - title: Releases
-      url: /cmake/releases/
+      url: /meson-build/releases/
       output: web
 
