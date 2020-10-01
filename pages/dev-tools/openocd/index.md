@@ -13,7 +13,7 @@ date: 2015-09-04 17:02:00 +0300
 
 ## Quicklinks
 
-If you already know the general facts about xPack OpenOCD, you can
+If you already know the general facts about the xPack OpenOCD, you can
 directly skip to the desired pages.
 
 User pages:
@@ -68,7 +68,7 @@ The main advantages of using the **xPack OpenOCD** are:
   like **Eclipse Embedded CDT**.
 
 All binaries are self-contained, they include all required libraries,
-and can be installed at any location.
+and can be installed in any location.
 
 ## Compatibility
 

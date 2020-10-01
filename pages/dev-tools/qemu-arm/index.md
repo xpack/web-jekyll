@@ -17,7 +17,7 @@ date: 2015-09-07 21:31:00 +0300
 
 ## Quicklinks
 
-If you already know the general facts about xPack QEMU Arm, you can
+If you already know the general facts about the xPack QEMU Arm, you can
 directly skip to the desired pages.
 
 User pages:
@@ -84,7 +84,7 @@ The main benefits of using the **xPack QEMU Arm** are:
   required for this.
 
 All binaries are self-contained, they include all required libraries,
-and can be installed at any location.
+and can be installed in any location.
 
 ## Supported boards and MCUs
 

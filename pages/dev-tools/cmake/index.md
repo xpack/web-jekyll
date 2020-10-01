@@ -13,7 +13,7 @@ date: 2020-09-29 14:05:00 +0300
 
 ## Quicklinks
 
-If you already know the general facts about xPack CMake, you can
+If you already know the general facts about the xPack CMake, you can
 directly skip to the desired pages.
 
 User pages:
@@ -46,7 +46,7 @@ The main advantages of using the **xPack CMake** are:
 - a more convenient integration with CI environment
 
 All binaries are self-contained, they include all required libraries,
-and can be installed at any location.
+and can be installed in any location.
 
 ## Compatibility
 

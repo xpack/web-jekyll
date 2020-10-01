@@ -13,7 +13,7 @@ date: 2020-09-28 17:49:00 +0300
 
 ## Quicklinks
 
-If you already know the general facts about xPack Ninja Build, you can
+If you already know the general facts about the xPack Ninja Build, you can
 directly skip to the desired pages.
 
 User pages:
@@ -46,7 +46,7 @@ The main advantages of using the **xPack Ninja Build** are:
 - a more convenient integration with CI environment
 
 All binaries are self-contained, they include all required libraries,
-and can be installed at any location.
+and can be installed in any location.
 
 ## Compatibility
 

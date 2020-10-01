@@ -17,7 +17,7 @@ date: 2019-07-10 17:53:00 +0300
 
 ## Quicklinks
 
-If you already know the general facts about xPack GNU RISC-V Embedded GCC, you can
+If you already know the general facts about the xPack GNU RISC-V Embedded GCC, you can
 directly skip to the desired pages.
 
 User pages:
@@ -51,7 +51,7 @@ The main advantages of using the **xPack GNU RISC-V Embedded GCC** are:
   like **Eclipse Embedded CDT** (formerly GNU MCU/ARM Eclipse).
 
 All binaries are self-contained, they include all required libraries,
-and can be installed at any location.
+and can be installed in any location.
 
 ## Compatibility
 

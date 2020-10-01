@@ -13,7 +13,7 @@ date: 2020-07-14 16:26:00 +0300
 
 ## Quicklinks
 
-If you already know the general facts about xPack Windows Build Tools, you can
+If you already know the general facts about the xPack Windows Build Tools, you can
 directly skip to the desired pages.
 
 User pages:
@@ -68,7 +68,7 @@ and defaults to using it. If you need to use a different version, update
 the Global Tools Paths (or Workspace Tools Paths) in C/C++ → Build preferences.
 
 All binaries are self-contained, they include all required libraries,
-and can be installed at any location.
+and can be installed in any location.
 
 ## Forward vs. Back-slashes
 

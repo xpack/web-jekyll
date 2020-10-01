@@ -13,7 +13,7 @@ date: 2020-09-27 10:58:00 +0300
 
 ## Quicklinks
 
-If you already know the general facts about xPack Meson Build, you can
+If you already know the general facts about the xPack Meson Build, you can
 directly skip to the desired pages.
 
 User pages:
@@ -36,7 +36,7 @@ an open source project hosted on
 [GitHub](https://github.com/mesonbuild/meson/).
 
 The Meson project is writen in Python. To simplify dependencies management,
-the xPack Meson Build embeds a Python3 distribution.
+the xPack Meson Build embeds a Python3 instance.
 
 ## Benefits
 
