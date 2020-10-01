@@ -49,7 +49,7 @@ The main advantages of using the **xPack Meson Build** are:
 - a more convenient integration with CI environment
 
 All binaries are self-contained, they include all required libraries,
-and can be installed at any location.
+and can be installed in any location.
 
 ## Compatibility
 
@@ -64,9 +64,9 @@ presented in the separate
 
 ## Documentation
 
-The original Meson documentation is available in the installed folders:
+The original Meson documentation is available online:
 
-- https://mesonbuild.com/Manual.html
+- [https://mesonbuild.com/Manual.html](https://mesonbuild.com/Manual.html)
 
 ## Support
 
