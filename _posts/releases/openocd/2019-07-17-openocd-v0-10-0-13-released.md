@@ -84,7 +84,7 @@ The original documentation is available in the `share/doc` folder.
 
 Binaries for **Windows**, **macOS** and **GNU/Linux** are provided.
 
-The binaries were built using
+The binaries were built using the
 [xPack Build Box (XBB)](https://github.com/xpack/xpack-build-box), a set
 of build environments based on slightly older distributions, that should be
 compatible with most recent systems.

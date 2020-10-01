@@ -32,7 +32,7 @@ tags:
 This is the **xPack** distribution of the
 [GNU Arm Embedded Toolchain](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm).
 
-There are separate binaries that run on **Windows** 32/64-bit, **macOS**,
+There are separate binaries for **Windows** 32/64-bit, **macOS**,
 **Intel GNU/Linux** 32/64-bit and **Arm GNU/Linux** 32/64-bit platforms,
 like **Raspberry Pi**.
 
@@ -190,7 +190,7 @@ The original PDF documentation is available in the `share/doc` folder.
 
 Binaries for **Windows**, **macOS** and **GNU/Linux** are provided.
 
-The binaries were built using
+The binaries were built using the
 [xPack Build Box (XBB)](https://github.com/xpack/xpack-build-box), a set
 of build environments based on slightly older distributions, that should be
 compatible with most recent systems.
@@ -215,12 +215,12 @@ For the prerequisites and more details on the build procedure, please see the
 
 ## Travis tests
 
-The first set of tests were performed automatically on Travis, by running
+The first set of tests were performed on Travis, by running
 a simple script to check if the binaries start and compile several simple
 programs on a wide range of platforms and distributions:
 
-- [Test xPack Arm Embed GCC on stable platforms](https://travis-ci.org/github/xpack-dev-tools/arm-none-eabi-gcc-xpack/builds/721612783)
-- [Test xPack Arm Embed GCC on latest platforms](https://travis-ci.org/github/xpack-dev-tools/arm-none-eabi-gcc-xpack/builds/721619581)
+- [test xPack Arm Embed GCC on stable platforms](https://travis-ci.org/github/xpack-dev-tools/arm-none-eabi-gcc-xpack/builds/721612783)
+- [test xPack Arm Embed GCC on latest platforms](https://travis-ci.org/github/xpack-dev-tools/arm-none-eabi-gcc-xpack/builds/721619581)
 
 ## Tests
 

@@ -25,7 +25,7 @@ tags:
 This is the **xPack** distribution of the
 [SiFive RISC-V GCC](https://github.com/sifive/freedom-tools/releases).
 
-There are separate binaries that run on **Windows**, **macOS** and
+There are separate binaries for **Windows**, **macOS** and
 **GNU/Linux**, 32/64-bit.
 
 Starting with this version, support for 32/64-bit **Arm GNU/Linux** platforms,
@@ -226,7 +226,7 @@ The original PDF documentation is available in the `share/doc` folder.
 
 Binaries for **Windows**, **macOS** and **GNU/Linux** are provided.
 
-The binaries were built using
+The binaries were built using the
 [xPack Build Box (XBB)](https://github.com/xpack/xpack-build-box), a set
 of build environments based on slightly older distributions, that should be
 compatible with most recent systems.
@@ -251,12 +251,12 @@ For the prerequisites and more details on the build procedure, please see the
 
 ## Travis tests
 
-The first set of tests were performed automatically on Travis, by running
+The first set of tests were performed on Travis, by running
 a simple script to check if the binaries start and compile several simple
 programs on a wide range of platforms and distributions:
 
-- [Test xPack RISC-V Embed GCC on stable platforms](https://travis-ci.org/github/xpack-dev-tools/riscv-none-embed-gcc-xpack/builds/704863198)
-- [Test xPack RISC-V Embed GCC on latest platforms](https://travis-ci.org/github/xpack-dev-tools/riscv-none-embed-gcc-xpack/builds/704865736)
+- [test xPack RISC-V Embed GCC on stable platforms](https://travis-ci.org/github/xpack-dev-tools/riscv-none-embed-gcc-xpack/builds/704863198)
+- [test xPack RISC-V Embed GCC on latest platforms](https://travis-ci.org/github/xpack-dev-tools/riscv-none-embed-gcc-xpack/builds/704865736)
 
 ## Tests
 

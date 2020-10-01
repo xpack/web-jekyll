@@ -28,7 +28,7 @@ tags:
 This is the **xPack** distribution of **Windows Build Tools** (formerly part
 of the GNU MCU/ARM Eclipse project).
 
-There are separate binaries that run on **Windows**, 32/64-bit.
+There are separate binaries for **Windows**, 32/64-bit.
 
 ## Download
 
@@ -92,7 +92,7 @@ There are no functional changes from original projects..
 
 Only binaries for **Windows** are provided.
 
-The binaries were built using
+The binaries were built using the
 [xPack Build Box (XBB)](https://github.com/xpack/xpack-build-box), a set
 of build environments based on slightly older distributions, that should be
 compatible with most recent systems.
