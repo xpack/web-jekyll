@@ -81,6 +81,32 @@ from Aug 18th, 2020.
 
 - none
 
+## Shared libraries
+
+On all platforms the packages are standalone, and expect only the standard
+runtime to be present on the host.
+
+All dependencies that are build as shared libraries are copied locally in the
+same folder as the executable.
+
+### `DT_RPATH` and `LD_LIBRARY_PATH`
+
+On GNU/Linux the binaries are adjusted to use a relative path:
+
+```console
+$ readelf -d library.so | grep runpath
+ 0x000000000000001d (RPATH)            Library rpath: [$ORIGIN]
+```
+
+In the GNU ld.so search strategy, the `DT_RPATH` has
+the highest priority, higher than `LD_LIBRARY_PATH`, so if this later one
+is set in the environment, it should not interfere with the xPack binaries.
+
+### `@executable_path`
+
+Similarly, on macOS, the dynamic libraries are adjusted with `otool` to use a
+relative path.
+
 ## Documentation
 
 The original documentation is available from:

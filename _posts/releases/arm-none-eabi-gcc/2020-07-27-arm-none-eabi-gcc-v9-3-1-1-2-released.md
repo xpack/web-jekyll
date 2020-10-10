@@ -173,9 +173,13 @@ $ readelf -d library.so | grep rpath
  0x000000000000001d (RPATH)            Library runpath: [$ORIGIN]
 ```
 
-Please note that in the GNU ld.so search strategy, the `DT_RPATH` has
-higher priority than `LD_LIBRARY_PATH`, so if this later one is set
-in the environment, it should not interfere with the xPack binaries.
+In the GNU ld.so search strategy, the `DT_RPATH` has
+the highest priority, higher than `LD_LIBRARY_PATH`, so if this later one
+is set in the environment, it should not interfere with the xPack binaries.
+
+Please note that previous versions, up to mid-2020, used `DT_RUNPATH`, which
+has a priority lower than `LD_LIBRARY_PATH`, and does not tolerate setting
+it in the environment.
 
 ### `@executable_path`
 
@@ -198,7 +202,7 @@ compatible with most recent systems.
 - Intel GNU/Linux: all binaries were built with GCC 9.3, running in an
   Ubuntu 12 Docker container
 - Arm GNU/Linux: all binaries were built with GCC 9.3, running in an
-  Ubuntu 16 Docker container
+  Ubuntu 16 Docker container (added in mid-2020)
 - Windows: all binaries were built with mingw-w64 GCC 9.3, running in an
   Ubuntu 12 Docker container
 - macOS: all binaries were built with GCC 9.3, running in a separate
@@ -265,7 +269,7 @@ xpack-arm-none-eabi-gcc-9.3.1-1.2-win32-x64.zip
 ## Download analytics
 
 - GitHub [xpack-dev-tools/arm-none-eabi-gcc-xpack](https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/)
-  * this release [![Github All Releases](https://img.shields.io/github/downloads/xpack-dev-tools/arm-none-eabi-gcc-xpack/v{{ page.version }}/total.svg)](https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases/v{{ page.version }}/)
+  - this release [![Github All Releases](https://img.shields.io/github/downloads/xpack-dev-tools/arm-none-eabi-gcc-xpack/v{{ page.version }}/total.svg)](https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases/v{{ page.version }}/)
   - all releases [![Github All Releases](https://img.shields.io/github/downloads/xpack-dev-tools/arm-none-eabi-gcc-xpack/total.svg)](https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases/)
   - GNU MCU Eclipse all releases [![Github All Releases](https://img.shields.io/github/downloads/gnu-mcu-eclipse/arm-none-eabi-gcc/total.svg)](https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc/releases/)
   - [individual file counters](https://www.somsubhra.com/github-release-stats/?username=xpack-dev-tools&repository=arm-none-eabi-gcc-xpack) (grouped per release)
