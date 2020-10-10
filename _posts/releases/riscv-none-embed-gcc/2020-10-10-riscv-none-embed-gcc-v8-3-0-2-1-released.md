@@ -1,7 +1,7 @@
 ---
 title:  xPack GNU RISC-V Embedded GCC v8.3.0-2.1 released
 
-summary: "Version 8.3.0-2.1 is a new release of the xPack GNU RISC-V Embedded GCC, following SiFive release 2020.04.0 from August 2020."
+summary: "Version 8.3.0-2.1 is a new release of the **xPack GNU RISC-V Embedded GCC**, following SiFive release 2020.04.0 from August 2020; it also changes to use **DT_RPATH** to make the binaries immune to custom LD_LIBRARY_PATH."
 
 version: 8.3.0-2.1
 npm_subversion: 1
@@ -17,6 +17,9 @@ tags:
   - releases
   - riscv
   - riscv-none-embed-gcc
+  - gcc
+  - binaries
+  - c++
 
 ---
 
@@ -30,7 +33,7 @@ Starting with mid-2020 (v8.3.0-1.2), support for 32/64-bit
 **Arm GNU/Linux** platforms, like **Raspberry Pi**, was added.
 
 Starting with this version, robustness of the standalone binaries was increased
-by setting `rpath` instead of `runpath` (see below).
+by setting `DT_RPATH` instead of `DT_RUNPATH` (see below).
 
 ## Download
 
@@ -189,10 +192,12 @@ the distribution.
 
 ## Known problems
 
-- the GDB binaries with Python support were built with version 3.7,
- and require exactly this version in order to run properly;
-- [MEMORY regions can no longer use LENGTH and ORIGIN (2.32 regression)](https://sourceware.org/bugzilla/show_bug.cgi?id=24289);
-the bug was fixed in binutils 2.33.1
+- the GDB binary with Python support was built with version 3.7,
+  and require exactly this version in order to run properly;
+- binutils introduced a bug affecting recognition of
+  [LENGTH and ORIGIN in MEMORY regions](https://sourceware.org/bugzilla/show_bug.cgi?id=24289);
+  the bug was fixed in binutils 2.33.1, and the fix will be included in
+  a future release.
 
 ## Shared libraries
 
@@ -202,7 +207,7 @@ runtime to be present on the host.
 All dependencies that are build as shared libraries are copied locally in the
 same folder as the executable.
 
-### `rpath` vs `runpath`
+### `DT_RPATH` and `LD_LIBRARY_PATH`
 
 On GNU/Linux the binaries are adjusted to use a relative path:
 
@@ -212,11 +217,11 @@ $ readelf -d library.so | grep runpath
 ```
 
 In the GNU ld.so search strategy, the `DT_RPATH` has
-the highest priority, higher than `LD_LIBRARY_PATH`, so the xPack
-binaries should not be impacted by any environment variables.
+the highest priority, higher than `LD_LIBRARY_PATH`, so if this later one
+is set in the environment, it should not interfere with the xPack binaries.
 
-Please note that previous versions, up to mid-2020, used `runpath`, which
-has a priority lower than `LD_LIBRARY_PATH`, and do not tolerate setting
+Please note that previous versions, up to mid-2020, used `DT_RUNPATH`, which
+has a priority lower than `LD_LIBRARY_PATH`, and does not tolerate setting
 it in the environment.
 
 ### `@executable_path`
@@ -261,8 +266,8 @@ The first set of tests were performed on Travis, by running
 a simple script to check if the binaries start and compile several simple
 programs on a wide range of platforms and distributions:
 
-- [test xPack RISC-V Embed GCC on stable platforms](https://travis-ci.org/github/xpack-dev-tools/riscv-none-embed-gcc-xpack/builds/704863198)
-- [test xPack RISC-V Embed GCC on latest platforms](https://travis-ci.org/github/xpack-dev-tools/riscv-none-embed-gcc-xpack/builds/704865736)
+- [test xPack RISC-V Embed GCC on stable platforms](https://travis-ci.org/github/xpack-dev-tools/riscv-none-embed-gcc-xpack/builds/734643749)
+- [test xPack RISC-V Embed GCC on latest platforms](https://travis-ci.org/github/xpack-dev-tools/riscv-none-embed-gcc-xpack/builds/734646066)
 
 ## Tests
 
@@ -285,7 +290,11 @@ The SHA-256 hashes for the files are:
 3740ef563b845009db5892dc7204a3d4e074b99c3f171009e15db4c2746c7cd8
 xpack-riscv-none-embed-gcc-8.3.0-2.1-darwin-x64.tar.gz
 
-TODO
+e5e053b9eafb514f8969ff6d266a506299969cf4189c2298b1c1afe03cbb71a0
+xpack-riscv-none-embed-gcc-8.3.0-2.1-linux-arm64.tar.gz
+
+cce99bf7be2b36d09199e955643d2146d3c65ee535435a94f80eaaee9669d7de
+xpack-riscv-none-embed-gcc-8.3.0-2.1-linux-arm.tar.gz
 
 c04d4803355ab5874c6b6920d32b56d1569dbddf591a93b6da4ee1dab6a8de95
 xpack-riscv-none-embed-gcc-8.3.0-2.1-linux-x32.tar.gz
