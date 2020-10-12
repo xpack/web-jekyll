@@ -197,7 +197,9 @@ the distribution.
 - binutils introduced a bug affecting recognition of
   [LENGTH and ORIGIN in MEMORY regions](https://sourceware.org/bugzilla/show_bug.cgi?id=24289);
   the bug was fixed in binutils 2.33.1, and the fix will be included in
-  a future release.
+  a future release
+- the ZIP archive is too large for the 32-bit Windows npm module used in xpm,
+  and the install fails.
 
 ## Shared libraries
 
