@@ -112,7 +112,7 @@ compatible with most recent systems.
 - Intel GNU/Linux: all binaries were built with GCC 9.3, running in an
   Ubuntu 12 Docker container
 - Arm GNU/Linux: all binaries were built with GCC 9.3, running in an
-  Ubuntu 16 Docker container
+  Ubuntu 16 Docker container (added in mid-2020)
 - Windows: all binaries were built with mingw-w64 GCC 9.3, running in an
   Ubuntu 12 Docker container
 - macOS: all binaries were built with GCC 9.3, running in a separate
