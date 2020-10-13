@@ -29,11 +29,11 @@ This is the **xPack** distribution of the
 There are separate binaries for **Windows**, **macOS** and
 **GNU/Linux**, 32/64-bit.
 
-Starting with mid-2020 (v8.3.0-1.2), support for 32/64-bit
-**Arm GNU/Linux** platforms, like **Raspberry Pi**, was added.
-
-Starting with this version, robustness of the standalone binaries was increased
-by setting `DT_RPATH` instead of `DT_RUNPATH` (see below).
+Since mid-2020 (v8.3.0-1.2), support for 32/64-bit
+**Arm GNU/Linux** platforms, like **Raspberry Pi**, was added
+and since late-2020 (v8.3.0-2.1), robustness of the standalone
+binaries was increased by setting `DT_RPATH` instead of
+`DT_RUNPATH` (see below).
 
 ## Download
 
