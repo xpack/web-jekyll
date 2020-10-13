@@ -198,6 +198,8 @@ the distribution.
   [LENGTH and ORIGIN in MEMORY regions](https://sourceware.org/bugzilla/show_bug.cgi?id=24289);
   the bug was fixed in binutils 2.33.1, and the fix was included in the
   next **8.3.0-2.2** release;
+- the archive size got too big for the Windows 32-bit node to handle, and
+  `xpm install` fails with _RangeError: Array buffer allocation failed_.
 
 ## Shared libraries
 

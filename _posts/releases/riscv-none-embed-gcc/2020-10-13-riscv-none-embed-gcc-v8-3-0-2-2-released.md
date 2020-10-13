@@ -203,6 +203,8 @@ the distribution.
 
 - the GDB binary with Python support was built with version 3.7,
   and require exactly this version in order to run properly;
+- the archive size got too big for the Windows 32-bit node to handle, and
+  `xpm install` fails with _RangeError: Array buffer allocation failed_.
 
 ## Shared libraries
 
