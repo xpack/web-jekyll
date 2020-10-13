@@ -25,6 +25,9 @@ tags:
 
 This is the **xPack** distribution of the **Ninja** build system.
 
+For details, see
+[The xPack Ninja Build](https://xpack.github.io/ninja-build/) pages.
+
 There are separate binaries for **Windows** (Intel 32/64-bit),
 **macOS** (Intel 64-bit) and **GNU/Linux** (Intel 32/64-bit, Arm 32/64-bit).
 

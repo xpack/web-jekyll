@@ -32,9 +32,11 @@ This is the **xPack** distribution of the
 For details, see
 [The xPack GNU Arm Embedded GCC](https://xpack.github.io/arm-none-eabi-gcc/) pages.
 
-There are separate binaries for **Windows** 32/64-bit, **macOS**,
-**Intel GNU/Linux** 32/64-bit and **Arm GNU/Linux** 32/64-bit platforms,
-like **Raspberry Pi**.
+There are separate binaries for **Windows** (Intel 32/64-bit),
+**macOS** (Intel 64-bit) and **GNU/Linux** (Intel 32/64-bit, Arm 32/64-bit).
+
+{% include note.html content="The main target for the Arm binaries
+are the **Raspberry Pi** class devices." %}
 
 ## Download
 

@@ -26,14 +26,14 @@ tags:
 This is the **xPack** distribution of the
 [SiFive RISC-V GCC](https://github.com/sifive/freedom-tools/releases).
 
-There are separate binaries for **Windows**, **macOS** and
-**GNU/Linux**, 32/64-bit.
+For details, see
+[The xPack GNU RISC-V Embedded GCC](https://xpack.github.io/riscv-none-embed-gcc/) pages.
 
-Since mid-2020 (v8.3.0-1.2), support for 32/64-bit
-**Arm GNU/Linux** platforms, like **Raspberry Pi**, was added
-and since late-2020 (v8.3.0-2.1), robustness of the standalone
-binaries was increased by setting `DT_RPATH` instead of
-`DT_RUNPATH` (see below).
+There are separate binaries for **Windows** (Intel 32/64-bit),
+**macOS** (Intel 64-bit) and **GNU/Linux** (Intel 32/64-bit, Arm 32/64-bit).
+
+{% include note.html content="The main target for the Arm binaries
+are the **Raspberry Pi** class devices." %}
 
 ## Download
 
@@ -95,7 +95,7 @@ from 6 Dec 2019
 - the [sifive/riscv-binutils-gdb](https://github.com/sifive/riscv-binutils-gdb)
 project, branch `gdb-8.3-release-cache-control-patch`, commit
 [ac7ecc4](https://github.com/sifive/riscv-binutils-gdb/tree/62a5c5e36b338bd15c7671332bb49c4ef1e5db15)
-from 3 Feb 2020
+from 3 Feb 2020.
 
 ## Supported libraries
 

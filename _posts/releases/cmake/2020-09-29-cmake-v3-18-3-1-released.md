@@ -20,7 +20,11 @@ tags:
 
 ---
 
-This is the **xPack** distribution of the **CMake** build system.
+This is the **xPack** distribution of the
+[CMake](https://cmake.org) build system.
+
+For details, see
+[The xPack CMake](https://xpack.github.io/cmake/) pages.
 
 There are separate binaries for **Windows** (Intel 32/64-bit),
 **macOS** (Intel 64-bit) and **GNU/Linux** (Intel 32/64-bit, Arm 32/64-bit).

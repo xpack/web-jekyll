@@ -67,14 +67,7 @@ The xPack Windows Build Tools uses programs from other projects.
 The current version is based on:
 
 - GNU make version 4.2.1-1 from the [MSYS2](https://sourceforge.net/projects/msys2/) project
-- [Busybox](https://github.com/rmyorston/busybox-w32), the 65ae5b24c commit from Apr 06, 2019
-
-To get a list of changes since the previous release, use `git log` in the
-`xpack-dev-tools/openocd` project
-
-```
-git log --pretty='%cd * %h %s' --date=short 'v2.12'..'v2.12.2'
-```
+- [Busybox](https://github.com/rmyorston/busybox-w32), the 65ae5b24c commit from Apr 06, 2019.
 
 ## Changes
 
