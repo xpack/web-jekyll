@@ -20,11 +20,9 @@ tags:
 
 ---
 
-This is the **xPack** distribution of **OpenOCD** (formerly part
-of the GNU MCU Eclipse project).
-
-For details, see
-[The xPack OpenOCD](https://xpack.github.io/openocd/) pages.
+[The xPack OpenOCD](https://xpack.github.io/openocd/)
+is the **xPack** distribution of
+[OpenOCD](http://openocd.org).
 
 There are separate binaries for **Windows** (Intel 32/64-bit),
 **macOS** (Intel 64-bit) and **GNU/Linux** (Intel 32/64-bit, Arm 32/64-bit).

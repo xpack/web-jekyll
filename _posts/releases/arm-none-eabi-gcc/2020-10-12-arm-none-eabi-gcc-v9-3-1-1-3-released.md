@@ -26,11 +26,9 @@ tags:
 
 ---
 
-This is the **xPack** distribution of the
+[The xPack GNU Arm Embedded GCC](https://xpack.github.io/arm-none-eabi-gcc/)
+is is the **xPack** distribution of the
 [GNU Arm Embedded Toolchain](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm).
-
-For details, see
-[The xPack GNU Arm Embedded GCC](https://xpack.github.io/arm-none-eabi-gcc/) pages.
 
 There are separate binaries for **Windows** (Intel 32/64-bit),
 **macOS** (Intel 64-bit) and **GNU/Linux** (Intel 32/64-bit, Arm 32/64-bit).

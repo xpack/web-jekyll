@@ -23,11 +23,9 @@ tags:
 
 ---
 
-This is the **xPack** distribution of the
+[The xPack GNU RISC-V Embedded GCC](https://xpack.github.io/riscv-none-embed-gcc/)
+is the **xPack** distribution of the
 [SiFive RISC-V GCC](https://github.com/sifive/freedom-tools/releases).
-
-For details, see
-[The xPack GNU RISC-V Embedded GCC](https://xpack.github.io/riscv-none-embed-gcc/) pages.
 
 There are separate binaries for **Windows** (Intel 32/64-bit),
 **macOS** (Intel 64-bit) and **GNU/Linux** (Intel 32/64-bit, Arm 32/64-bit).
