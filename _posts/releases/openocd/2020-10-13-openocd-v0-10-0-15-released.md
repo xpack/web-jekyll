@@ -2,8 +2,7 @@
 title:  xPack OpenOCD v0.10.0-15 released
 
 summary: "Version 0.10.0-15 is a maintenance release; it updates to
-the latest upstream master and adds support for running on Arm
-platforms, like Raspberry Pi."
+the latest upstream master."
 
 version: 0.10.0-15
 npm_subversion: 3
