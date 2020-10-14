@@ -31,7 +31,7 @@ Developer & maintainer pages:
 
 - [GitHub](https://github.com/xpack-dev-tools/qemu-arm-xpack)
 - [How to build](https://github.com/xpack-dev-tools/qemu-arm-xpack/blob/xpack/README-BUILD.md)
-- [How to publish](https://github.com/xpack-dev-tools/qemu-arm-xpack/blob/xpack/README-PUBLISH.md)
+- [How to release](https://github.com/xpack-dev-tools/qemu-arm-xpack/blob/xpack/README-RELEASE.md)
 - [Developer info](https://github.com/xpack-dev-tools/qemu-arm-xpack/blob/xpack/README-DEVELOP.md)
 
 ## Why QEMU?
