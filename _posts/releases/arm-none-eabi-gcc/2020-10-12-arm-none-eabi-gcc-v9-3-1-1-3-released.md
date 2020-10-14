@@ -1,7 +1,7 @@
 ---
 title:  xPack GNU Arm Embedded GCC v9.3.1-1.3 released
 
-summary: "Version 9.3.1-1.3 is a maintenance release of **xPack GNU Arm Embedded GCC**, created with the updated, more robust, new build scripts."
+summary: "Version 9.3.1-1.3 is a maintenance release of **xPack GNU Arm Embedded GCC**, created with the new, more robust, build scripts."
 
 arm_version: 9-2020-q2-update
 arm_date: June 01, 2020
