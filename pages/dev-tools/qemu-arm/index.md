@@ -173,6 +173,9 @@ second (1000 Hz is OK).
 - the current implementation of NVIC uses some related interrupt
   controller code from larger cores, and is not very accurate.
 
+{% include note.html content="Except the GPIOs, none of the other
+device specific peripherals are supported." %}
+
 ## Documentation
 
 The official QEMU documentation is available in two manuals:
@@ -247,4 +250,3 @@ See the [Releases]({{ site.baseurl }}/qemu-arm/releases) page.
 
 - [QEMU wiki](http://wiki.qemu.org/)
 - the original [QEMU Windows build page](http://wiki.qemu.org/Hosts/W32)
-- [Docker images](https://registry.hub.docker.com/u/ilegeul/)
