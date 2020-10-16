@@ -73,6 +73,14 @@ The current version is based on:
 
 There are no functional changes from original projects..
 
+## Bug fixes
+
+- none
+
+## Enhancements
+
+- none
+
 ## Known problems
 
 - none

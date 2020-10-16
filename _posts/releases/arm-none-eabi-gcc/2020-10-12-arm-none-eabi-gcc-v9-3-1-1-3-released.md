@@ -108,17 +108,9 @@ thumb/v8-m.main+dp/softfp;@mthumb@march=armv8-m.main+fp.dp@mfloat-abi=softfp
 thumb/v8-m.main+dp/hard;@mthumb@march=armv8-m.main+fp.dp@mfloat-abi=hard
 ```
 
-## Bug fixes
-
-- none
-
-## Enhancements
-
-- none
-
 ## Changes
 
-There should be no functional changes.
+Compared to the Arm version, there should be no functional changes.
 
 Starting with 9.x, the new archives are created with
 a single folder named `xpack-arm-none-eabi-gcc-9.3.1-1.3` instead of
@@ -129,7 +121,7 @@ was changed to `.tar.gz`.
 With these changes, the archives can now be used directly in other
 development environments (like Arduino), without having to repack them.
 
-## Python
+### Python
 
 Support for Python scripting was added to GDB. This distribution provides
 a separate binary, `riscv-none-embed-gdb-py3` with
@@ -141,12 +133,20 @@ available from
 
 Support for Python 2 was discontinued.
 
-## Text User Interface (TUI)
+### Text User Interface (TUI)
 
 Support for TUI was added to GDB. The `ncurses` library (v6.2) was added to
 the distribution.
 
 Note: TUI is not available on Windows.
+
+## Bug fixes
+
+- none
+
+## Enhancements
+
+- none
 
 ## Known problems
 

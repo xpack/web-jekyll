@@ -75,9 +75,17 @@ The current version is based on:
 [1.10.1](https://github.com/ninja-build/ninja/releases/tag/v1.10.1)
 from Aug 18th, 2020.
 
-## Changes
+## Bug fixes
 
 - none
+
+## Enhancements
+
+- none
+
+## Changes
+
+Compared to the upstream version, there are no changes.
 
 ## Known problems
 

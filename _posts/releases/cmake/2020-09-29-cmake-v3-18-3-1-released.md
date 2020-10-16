@@ -74,6 +74,14 @@ from Sep 22th, 2020.
 
 ## Changes
 
+Compared to the upstream version, there are no functional changes.
+
+## Bug fixes
+
+- none
+
+## Enhancements
+
 - none
 
 ## Known problems

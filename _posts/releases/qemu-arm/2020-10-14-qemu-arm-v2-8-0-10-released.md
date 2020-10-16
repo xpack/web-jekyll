@@ -118,6 +118,10 @@ available yet.
 - [[#5](https://github.com/xpack-dev-tools/qemu/pull/5)] - the ETM and ITM
 fields get mixed up when parsing the SVD; fixed.
 
+## Enhancements
+
+- none
+
 ## Known problems
 
 - Ctrl-C does not interrupt the execution if the `--nographic` option is used.

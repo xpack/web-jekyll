@@ -85,6 +85,14 @@ Compared to the upstream, the following changes were applied:
 - the `contrib/60-openocd.rules` file was simplified to avoid protection
   related issues.
 
+## Bug fixes
+
+- none
+
+## Enhancements
+
+- none
+
 ## Known problems
 
 - none

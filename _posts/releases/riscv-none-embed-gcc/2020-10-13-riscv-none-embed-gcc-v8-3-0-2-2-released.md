@@ -139,17 +139,9 @@ rv64imafc/lp64f;@march=rv64imafc@mabi=lp64f
 rv64imafdc/lp64d;@march=rv64imafdc@mabi=lp64d
 ```
 
-## Bug fixes
+## Changes
 
-- binutils 2.32 introduced a regression bug
-[24289](https://sourceware.org/bugzilla/show_bug.cgi?id=24289) which
-prevented MEMORY regions to use LENGTH and ORIGIN. The bug was fixed in
-binutils 2.33.1 via commit
-[912ebfa](https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git;h=912ebfa0d748b4a762dbc4311364c38692c7f626). In this release, on top
-of the SiFive sources, this commit was applied via git cherry pick,
-and LENGTH and ORIGIN are now recognised as expected.
-
-## Improvements
+### Improvements
 
 Compared to the original SiFive version, the **same architecture and API**
 options are supported, and there are minimal functional changes
@@ -158,18 +150,18 @@ options are supported, and there are minimal functional changes
   application, since it issues `ECALL`
   instructions that fail in bare metal environments
 
-## newlib-nano
+### newlib-nano
 
 Support for **newlib-nano** is available using the
 `--specs=nano.specs` option. For better results, this option must be
 added to both compile and link time.
 
-## nosys.specs
+### nosys.specs
 
 If no syscalls are needed, `--specs=nosys.specs` can be used at link
 time to provide empty implementations for the POSIX system calls.
 
-## Compile options
+### Compile options
 
 The libraries are compiled with `-O2 -mcmodel=medany`. The nano version is
 compiled with `-Os -mcmodel=medany`.
@@ -178,7 +170,7 @@ compiled with `-Os -mcmodel=medany`.
 be compiled with
 `-mcmodel=medany`, otherwise the link will fail." %}
 
-## Python
+### Python
 
 Support for Python scripting was added to GDB. This distribution provides
 a separate binary, `riscv-none-embed-gdb-py3` with
@@ -190,12 +182,22 @@ available from
 
 Support for Python 2 was discontinued.
 
-## Text User Interface (TUI)
+### Text User Interface (TUI)
 
 Support for TUI was added to GDB. The `ncurses` library (v6.2) was added to
 the distribution.
 
 {% include note.html content="TUI is not available on Windows." %}
+
+## Bug fixes
+
+- binutils 2.32 introduced a regression bug
+[24289](https://sourceware.org/bugzilla/show_bug.cgi?id=24289) which
+prevented MEMORY regions to use LENGTH and ORIGIN. The bug was fixed in
+binutils 2.33.1 via commit
+[912ebfa](https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git;h=912ebfa0d748b4a762dbc4311364c38692c7f626). In this release, on top
+of the SiFive sources, this commit was applied via git cherry pick,
+and LENGTH and ORIGIN are now recognised as expected.
 
 ## Known problems
 
