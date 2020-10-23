@@ -16,6 +16,10 @@ attempting to run the executables on older versions.
 The XBB v3.2 uses Ubuntu 12 for Intel GNU/Linux and Ubuntu 16 for
 Arm GNU/Linux.
 
+{% include note.html content="Building Arm binaries requires
+an Arm machine. A Raspberry Pi 4 8GB equiped with a SanDisk Extreme
+USB 3 SSD are a good solution." %}
+
 v2.x used CentOS 6 for Intel, and CentOS 7 was the favourite when
 considering the update, but Docker CentOS 7 armv7l container does not
 run on 64-bit Docker host, and requires a 32-bit host, which is impractical.
