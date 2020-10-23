@@ -26,9 +26,9 @@ installed folders:
 For issues related to the toolchain functionality (compiler, newlib
 gdb, etc) please report them via their original RISC-V projects:
 
-- [sifive/riscv-gcc](https://github.com/sifive/riscv-gcc/issues)
-- [sifive/riscv-newlib](https://github.com/sifive/riscv-newlib/issues)
-- [sifive/riscv-binutils-gdb](https://github.com/sifive/riscv-binutils-gdb/issues)
+- [sifive/riscv-gcc](https://github.com/sifive/riscv-gcc/issues/)
+- [sifive/riscv-newlib](https://github.com/sifive/riscv-newlib/issues/)
+- [sifive/riscv-binutils-gdb](https://github.com/sifive/riscv-binutils-gdb/issues/)
 
 ## Check the FAQ
 
