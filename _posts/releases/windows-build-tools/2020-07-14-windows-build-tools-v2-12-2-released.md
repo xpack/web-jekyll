@@ -32,7 +32,7 @@ There are separate binaries for **Windows**, 32/64-bit.
 
 ## Download
 
-The binary files are available from [GitHub Releases]({{ page.download_url }}).
+The binary files are available from GitHub [releases]({{ page.download_url }}).
 
 ## Install
 

@@ -32,7 +32,7 @@ are the **Raspberry Pi** class devices." %}
 
 ## Download
 
-The binary files are available from [GitHub Releases]({{ page.download_url }}).
+The binary files are available from GitHub [releases]({{ page.download_url }}).
 
 ## Install
 

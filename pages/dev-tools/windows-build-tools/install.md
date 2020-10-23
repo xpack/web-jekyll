@@ -85,7 +85,7 @@ For all platforms, the **xPack Windows Build Tools** binaries are released as po
 archives that can be installed in any location.
 
 The archives can be downloaded from the
-[GitHub Releases](https://github.com/xpack-dev-tools/windows-build-tools-xpack/releases/)
+GitHub [releases](https://github.com/xpack-dev-tools/windows-build-tools-xpack/releases/)
 page.
 
 {% capture windows %}

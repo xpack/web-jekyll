@@ -77,7 +77,7 @@ For all platforms, the **xPack CMake** binaries are released as portable
 archives that can be installed in any location.
 
 The archives can be downloaded from the
-[GitHub Releases](https://github.com/xpack-dev-tools/cmake-xpack/releases/)
+GitHub [releases](https://github.com/xpack-dev-tools/cmake-xpack/releases/)
 page.
 
 {% capture windows %}

@@ -38,7 +38,7 @@ like **Raspberry Pi**.
 
 ## Download
 
-The binary files are available from [GitHub Releases]({{ page.download_url }}).
+The binary files are available from GitHub [releases]({{ page.download_url }}).
 
 ## Install
 

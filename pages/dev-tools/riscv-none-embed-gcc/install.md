@@ -93,7 +93,7 @@ released as portable
 archives that can be installed in any location.
 
 The archives can be downloaded from the
-[GitHub Releases](https://github.com/xpack-dev-tools/riscv-none-embed-gcc-xpack/releases/) page.
+GitHub [releases](https://github.com/xpack-dev-tools/riscv-none-embed-gcc-xpack/releases/) page.
 
 {% capture windows %}
 ### Download
