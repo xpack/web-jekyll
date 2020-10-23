@@ -48,3 +48,11 @@ allowed-tags:
   - setup
   - c++
   - exceptions
+  - cmake
+  - meson-build
+  - meson
+  - ninja-build
+  - ninja
+  - python
+  - small
+  - speed
