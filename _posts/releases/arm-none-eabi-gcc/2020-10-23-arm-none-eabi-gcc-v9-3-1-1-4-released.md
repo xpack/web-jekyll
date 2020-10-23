@@ -222,8 +222,8 @@ The first set of tests were performed on Travis, by running
 a simple script to check if the binaries start and compile several simple
 programs on a wide range of platforms and distributions:
 
-- [test xPack Arm Embed GCC on stable platforms](https://travis-ci.org/github/xpack-dev-tools/arm-none-eabi-gcc-xpack/builds/738250873)
-- [test xPack Arm Embed GCC on latest platforms](https://travis-ci.org/github/xpack-dev-tools/arm-none-eabi-gcc-xpack/builds/738267983)
+- [test xPack Arm Embed GCC on stable platforms](https://travis-ci.org/github/xpack-dev-tools/arm-none-eabi-gcc-xpack/builds/738390303)
+- [test xPack Arm Embed GCC on latest platforms](https://travis-ci.org/github/xpack-dev-tools/arm-none-eabi-gcc-xpack/builds/738390440)
 
 ## Tests
 
