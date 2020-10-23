@@ -27,7 +27,7 @@ tags:
 ---
 
 [The xPack GNU Arm Embedded GCC](https://xpack.github.io/arm-none-eabi-gcc/)
-is is the **xPack** distribution of the
+is the **xPack** distribution of the
 [GNU Arm Embedded Toolchain](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm).
 
 There are separate binaries for **Windows** (Intel 32/64-bit),
@@ -128,8 +128,8 @@ a separate binary, `riscv-none-embed-gdb-py3` with
 support for **Python 3.7**.
 
 The Python 3 run-time is included, so GDB does not need any version of
-Python to be installed, and is insensitive to the presence of another
-version.
+Python to be installed, and is insensitive to the presence of other
+versions.
 
 Support for Python 2 was discontinued.
 
