@@ -151,8 +151,12 @@ Note: TUI is not available on Windows.
 ## Known problems
 
 - the GDB binary with Python support was built with version 3.7,
-  and require exactly this version in order to run properly;
-- GDB may issue the following warning, _arm-none-eabi-gdb: warning: Couldn't determine a path for the index cache directory._; it is a known problem, caused when trying to create the cache folder (`$HOME/.cache/gdb` or `$HOME/Library/Caches/gdb`);
+  and require exactly this version in order to run properly; fixed in
+  9.3.1-1.4 which includes the Python run-time;
+- GDB may issue the following warning, _arm-none-eabi-gdb: warning:
+  Couldn't determine a path for the index cache directory._;
+  it is a known problem, caused when trying to create the cache
+  folder (`$HOME/.cache/gdb` or `$HOME/Library/Caches/gdb`);
 
 ## Shared libraries
 
