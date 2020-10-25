@@ -44,10 +44,11 @@ multiple versions, but they **can be installed in parallel**, each
 project having its own set of dependencies, thus upgrading the system
 no longer impacts the project.
 
-Except the package manager, most of the othr tools are generic and do not
-mandate the use of xPack packages, and can be used in traditional
-environments (although some of them may benefit when used in an xPack
-environment).
+{% include note.html content="Most of the tools are generic and do not
+mandate the use of a package manager; the binary xPacks are plain archives
+that can be extracted manually; the source xPacks can be linked to
+projects as Git submodules, etc; they all can be used in traditional
+environments too, just that it is much more work to do." %}
 
 Although the focus is on **C/C++**, most of the tools are language agnostic
 and can be used with other programming languages as well.
