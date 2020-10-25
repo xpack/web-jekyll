@@ -65,7 +65,11 @@ builders, etc.
 For more details, read the [xPack 101]({{ site.baseurl }}/intro/) page.
 
 The entire xPack project is split amongst several groups,
-published as separated GitHub _organisations_.
+published as separated GitHub _organisations_
+([xpack](https://github.com/xpack),
+[xpack-dev-tools](https://github.com/xpack-dev-tools),
+[micro-os-plus](https://github.com/micro-os-plus/),
+[xpacks](https://github.com/xpacks)).
 
 ## xPack Core Tools
 
