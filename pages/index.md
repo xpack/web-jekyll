@@ -71,12 +71,15 @@ published as separated GitHub _organisations_.
 The core xPack tools are:
 
 - [`xpm`]({{ site.baseurl }}/xpm/) - the **xPack Package Manager**
-- [`@xpack/xpbuild`]({{ site.baseurl }}/xpbuild/) - the **xPack Basic Project Builder**
-- [`@xpack/xpninja`]({{ site.baseurl }}/xpninja/) - the **xPack Build Runner** (in design phase)
-- [`@xpack/xpmake`]({{ site.baseurl }}/xpmake/) - the **xPack Build Generator** (in design phase)
-- [`@xpack/xpcdl`]({{ site.baseurl }}/xpbuild/) - the **xPack Build Configurator** (in design phase)
-- `@xpack/xpliquid` - the **xPack Liquid Template Engine** (in design phase)
-- `@xpack/xpjson` - the **xPack JSON Manager** (in design phase)
+- [`@xpack/xpbuild`]({{ site.baseurl }}/xpbuild/) - the **xPack Basic Project Builder** (under development)
+
+Planned:
+
+- [`@xpack/xpcdl`]({{ site.baseurl }}/xpbuild/) - the **xPack Build Configurator**
+- `@xpack/xpliquid` - the **xPack Liquid Template Engine**
+- `@xpack/xpjson` - the **xPack JSON Manager**
+- [`@xpack/xpninja`]({{ site.baseurl }}/xpninja/) - the **xPack Build Runner**
+- [`@xpack/xpmake`]({{ site.baseurl }}/xpmake/) - the **xPack Build Generator**
 
 These projects are hosted in the GitHub
 [`xpack`](https://github.com/xpack) organisation.
