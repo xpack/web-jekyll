@@ -121,7 +121,7 @@ and macOS; not yet available on Windows
 the `arm-none-eabi-gdb-py` fails to start on Ubuntu (and possibly
 other Debian) systems, it fails with a message like:
 ```console
-$ PYTHONHOME=/usr PYTHONPATH=/usr/lib/python2.7 riscv-none-embed-gdb-py --version
+$ PYTHONHOME=/usr PYTHONPATH=/usr/lib/python2.7 arm-none-eabi-gdb-py --version
 Traceback (most recent call last):
   File "/usr/lib/python2.7/site.py", line 554, in <module>
     main()
@@ -143,7 +143,17 @@ Traceback (most recent call last):
     from _sysconfigdata_nd import *
 ImportError: No module named _sysconfigdata_nd
 ```
-Any help to diagnose this problem will be highly appreciated.
+
+The problem is caused by gdb-py not being able to locate the Python
+system libraries, split into multiple packages and installed in multiple
+folders.
+
+The workaround is to pass the Python environment to gdb-py:
+
+```bash
+PYTHONPATH="$(python -c 'import os; import sys; print(os.pathsep.join(sys.path))')" \
+PYTHONHOME="$(python -c 'import sys; print(sys.prefix)')"
+```
 
 ## Documentation
 

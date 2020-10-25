@@ -131,9 +131,45 @@ two separate binaries,
 `arm-none-eabi-gdb-py` with Python 2.7 support, and `arm-none-eabi-gdb-py3` with
 support for Python 3.7.
 
-Mode details on the prerequisites of running GDB with Python support are
-available from
-[GDB with Python support](https://xpack.github.io/arm-none-eabi-gcc/python/).
+It is mandatory to have **exactly** those versions installed, otherwise
+GDB will not start properly.
+
+For this it is recommended to install the binaries provided by
+[Python](https://www.python.org/downloads/),
+not those available in the distribution, since they may be incomplete, for
+example those in Ubuntu/Debian, which split the Python system library into
+multiple packages.
+
+On GNU/Linux, the recommended way is to build is from sources, and
+install locally:
+
+```bash
+python3_version="3.7.9"
+mkdir -p "${HOME}/Downloads"
+curl -L --fail -o "${HOME}/Downloads/Python-${python3_version}.tgz" https://www.python.org/ftp/python/${python3_version}/Python-${python3_version}.tgz 
+rm -rf "${HOME}/Work/Python-${python3_version}"
+mkdir -p "${HOME}/Work"
+cd "${HOME}/Work"
+tar xzf "${HOME}/Downloads/Python-${python3_version}.tgz" 
+cd "${HOME}/Work/Python-${python3_version}"
+bash ./configure --prefix="${HOME}/opt"
+make
+make altinstall
+```
+
+To run GDB with this version of Python, use a script to set the proper
+environment, like:
+
+```bash
+mkdir -p "${HOME}/opt/bin"
+cat <<'__EOF__' > "${HOME}/opt/bin/arm-none-eabi-gdb-py3.sh"
+#!/usr/bin/env bash
+PYTHONPATH="$($HOME/opt/bin/python3.7 -c 'import os; import sys; print(os.pathsep.join(sys.path))')" \
+PYTHONHOME="$($HOME/opt/bin/python3.7 -c 'import sys; print(sys.prefix)')" \
+arm-none-eabi-gdb-py3 "$@"
+__EOF__
+chmod +x "${HOME}/opt/bin/arm-none-eabi-gdb-py3.sh"
+```
 
 ## Text User Interface (TUI)
 

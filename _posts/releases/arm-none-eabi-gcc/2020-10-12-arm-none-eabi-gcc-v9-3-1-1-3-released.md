@@ -124,7 +124,7 @@ development environments (like Arduino), without having to repack them.
 ### Python
 
 Support for Python scripting was added to GDB. This distribution provides
-a separate binary, `riscv-none-embed-gdb-py3` with
+a separate binary, `arm-none-eabi-gdb-py3` with
 support for **Python 3.7**.
 
 It is mandatory to have **exactly** this version installed, otherwise

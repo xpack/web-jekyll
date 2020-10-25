@@ -193,7 +193,17 @@ Traceback (most recent call last):
     from _sysconfigdata_nd import *
 ImportError: No module named _sysconfigdata_nd
 ```
-Any help to diagnose this problem will be highly appreciated.
+
+The problem is caused by gdb-py not being able to locate the Python
+system libraries, split into multiple packages and installed in multiple
+folders.
+
+The workaround is to pass the Python environment to gdb-py:
+
+```bash
+PYTHONPATH="$(python -c 'import os; import sys; print(os.pathsep.join(sys.path))')" \
+PYTHONHOME="$(python -c 'import sys; print(sys.prefix)')"
+```
 
 ## Documentation
 
