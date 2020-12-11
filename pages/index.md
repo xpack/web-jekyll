@@ -123,11 +123,11 @@ These projects are hosted in the GitHub
 
 Packages part of the µOS++ framework:
 
-- `@micro-os-plus/startup` - µOS++ Startup
-- `@micro-os-plus/semihosting` - µOS++ Semihosting
-- `@micro-os-plus/diag-trace` - µOS++ Tracing
-- `@micro-os-plus/c-libs` - µOS++ C library
-- `@micro-os-plus/cpp-libs` - µOS++ C++ library
+- [`@micro-os-plus/startup`](https://github.com/micro-os-plus/startup-xpack) - µOS++ Startup
+- [`@micro-os-plus/semihosting`](https://github.com/micro-os-plus/semihosting-xpack) - µOS++ Semihosting
+- [`@micro-os-plus/diag-trace`](https://github.com/micro-os-plus/diag-trace-xpack) - µOS++ Tracing
+- [`@micro-os-plus/libs-c`](https://github.com/micro-os-plus/libs-c-xpack) - µOS++ C library
+- [`@micro-os-plus/libs-cpp`](https://github.com/micro-os-plus/libs-cpp-xpack) - µOS++ C++ library
 
 ### 3rd Party
 
