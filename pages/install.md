@@ -350,8 +350,8 @@ longer provides Intel 32-bit images. The version manager is still able
 to install node, by compiling it from sources, but the process takes
 quite a while." %}
 
-{% include note.html content="Arm binaries are supported, currently
-in both 32/64-bit variants." %}
+{% include note.html content="Arm platforms, like the Raspberry Pi,
+are supported, currently in both 32/64-bit variants." %}
 
 {{ version_manager }}
 
