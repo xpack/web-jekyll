@@ -150,7 +150,7 @@ It must be added manually in front of the current path:
 C:\>set Path=%APPDATA%\npm;%Path%
 ```
 
-To make this setting persistent, also issue the foolloing:
+To make this setting persistent, also issue the following:
 
 ```
 C:\>setx Path "%APPDATA%\npm;%Path%"
