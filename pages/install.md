@@ -82,6 +82,29 @@ page.
 ## `npm` update
 {% endcapture %}
 
+{% capture tl_dr %}
+
+## TL;DR
+
+If you know what you're doing, copy paste the following into a terminal:
+
+```sh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+exit
+```
+
+and in new terminal:
+
+```
+nvm install --lts node
+nvm use node
+node --version
+nvm install-latest-npm
+npm --version
+npm install --global xpm@latest
+```
+
+{% endcapture %}
 {% capture windows %}
 
 {{ manual_install }}
@@ -178,6 +201,8 @@ or in the Git shell terminal.
 {% endcapture %}
 
 {% capture macos %}
+
+{{ tl_dr }}
 
 {{ version_manager }}
 
@@ -313,6 +338,8 @@ use `nvm use <version>`.
 {% endcapture %}
 
 {% capture linux %}
+
+{{ tl_dr }}
 
 {% include note.html content="The official Node.js distribution no
 longer provides Intel 32-bit images. The version manager is still able
