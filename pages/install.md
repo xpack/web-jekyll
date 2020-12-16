@@ -182,6 +182,10 @@ C:\>setx Path "%APPDATA%\npm;%Path%"
 {% include note.html content="Please note the syntax differences, no equal
 sign and double quotes, specific to `setx` but harmful to `set`." %}
 
+{% include note.html content="These commands are valid when using the
+`cmd.exe` terminal; for PowerShell or other terminals, please adjust
+the syntax to match their specifics." %}
+
 After this, the new version of the program should be visible:
 
 ```
