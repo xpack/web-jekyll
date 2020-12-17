@@ -102,7 +102,7 @@ cd "${dest_folder}"
 if [ "${GITHUB_EVENT_NAME}" != "push" ]
 then
   echo "Probably a pull request, skip deploy."
-  return 0;
+  exit 0
 fi
 
 is_dirty=`git status --porcelain`
@@ -127,6 +127,6 @@ echo "Deploy to GitHub pages..."
 echo git push --force --quiet "https://${GITHUB_TOKEN}@github.com/${github_dest_repo}" master
 git push --force --quiet "https://${GITHUB_TOKEN}@github.com/${github_dest_repo}" master > /dev/null 2>&1
 
-return 0
+exit 0
 
 # -----------------------------------------------------------------------------
