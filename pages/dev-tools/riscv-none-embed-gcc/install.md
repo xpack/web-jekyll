@@ -43,7 +43,7 @@ $ xpm install --global @xpack-dev-tools/riscv-none-embed-gcc@latest
 
 This command will always install the latest available version,
 in the central xPacks repository, which is a platform dependent folder
-(check the output of the `xpm` command or the actual folder used on
+(check the output of the `xpm` command for the actual folder used on
 your platform).
 
 The archive content is unpacked in a folder named `.content`. On some platforms
