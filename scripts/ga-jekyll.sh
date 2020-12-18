@@ -94,8 +94,6 @@ then
 fi
 
 # ---------------------------------------------------------------------------
-# The deployment code is present here (and not in after_success),
-# to break the build if not successful.
 
 cd "${dest_folder}"
 
@@ -120,7 +118,7 @@ run_verbose git commit -m "Jekyll CI Deploy of ${commit_message} ${GITHUB_SHA}"
 
 # git status
 
-env | sort
+# env | sort
 echo "Deploy to GitHub pages..."
 
 # Must be quiet and have no output, to not reveal the key.
