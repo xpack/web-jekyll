@@ -7,6 +7,8 @@ summary: "The recommended method is via xpm."
 toc: false
 comments: true
 
+version: 3.19.1
+
 date: 2020-09-29 14:05:00 +0300
 
 ---
@@ -16,6 +18,8 @@ date: 2020-09-29 14:05:00 +0300
 The **xPack CMake** can be installed automatically, via **xpm** (the
 recommended method), or manually, by downloading and unpacking one of the
 portable archives.
+
+{% capture easy_install %}
 
 ## Easy install
 
@@ -86,8 +90,8 @@ page.
 The Windows versions of **xPack CMake** are packed as ZIP files.
 Download the latest version named like:
 
-- `xpack-cmake-3.18.3-1-win32-x64.zip`
-- `xpack-cmake-3.18.3-1-win32-x32.zip`
+- `xpack-cmake-{{ page.version }}-1-win32-x64.zip`
+- `xpack-cmake-{{ page.version }}-1-win32-x32.zip`
 
 Select the `-x64` file for 64-bit Windows machines and the `-x32` file
 for 32-bit Windows machines.
@@ -114,8 +118,8 @@ and `.content` to store the unpacked archive." %}
 To check if the manually installed CMake starts, use something like:
 
 ```
-C:\>%USERPROFILE%\AppData\Roaming\xPacks\cmake\xpack-cmake-3.18.3-1\bin\cmake.exe --version
-cmake version 3.18.3
+C:\>%USERPROFILE%\AppData\Roaming\xPacks\cmake\xpack-cmake-{{ page.version }}-1\bin\cmake.exe --version
+cmake version {{ page.version }}
 ```
 
 {% endcapture %}
@@ -126,19 +130,19 @@ cmake version 3.18.3
 The macOS version of **xPack CMake** is packed as a .tar.gz archive.
 Download the latest version named like:
 
-- `xpack-cmake-3.18.3-1-darwin-x64.tgz`
+- `xpack-cmake-{{ page.version }}-1-darwin-x64.tgz`
 
 ### Unpack
 
 To install CMake, unpack the archive and move it to
-`/${HOME}/opt/xPacks/cmake/xpack-cmake-3.18.3-1`:
+`/${HOME}/opt/xPacks/cmake/xpack-cmake-{{ page.version }}-1`:
 
 ```console
 $ mkdir -p ~/opt
 $ cd ~/opt
 
-$ tar xvf ~/Downloads/xpack-cmake-3.18.3-1-darwin-x64.tgz
-$ chmod -R -w xPacks/cmake/xpack-cmake-3.18.3-1
+$ tar xvf ~/Downloads/xpack-cmake-{{ page.version }}-1-darwin-x64.tgz
+$ chmod -R -w xPacks/cmake/xpack-cmake-{{ page.version }}-1
 ```
 
 {% include note.html content="For manual installs, the recommended
@@ -147,8 +151,8 @@ install location is different from the xpm install folders." %}
 The result is a structure like:
 
 ```console
-$ tree -L 2 /Users/ilg/Library/xPacks/cmake/xpack-cmake-3.18.3-1
-/Users/ilg/Library/xPacks/cmake/xpack-cmake-3.18.3-1/
+$ tree -L 2 /Users/ilg/Library/xPacks/cmake/xpack-cmake-{{ page.version }}-1
+/Users/ilg/Library/xPacks/cmake/xpack-cmake-{{ page.version }}-1/
 ├── README.md
 ├── bin
 │   ├── ccmake
@@ -179,8 +183,8 @@ $ tree -L 2 /Users/ilg/Library/xPacks/cmake/xpack-cmake-3.18.3-1
 To check if the manually installed CMake starts, use something like:
 
 ```console
-$ ~/opt/xPacks/cmake/xpack-cmake-3.18.3-1/bin/cmake --version
-cmake version 3.18.3
+$ ~/opt/xPacks/cmake/xpack-cmake-{{ page.version }}-1/bin/cmake --version
+cmake version {{ page.version }}
 ```
 
 {% endcapture %}
@@ -191,8 +195,8 @@ cmake version 3.18.3
 The GNU/Linux versions of **xPack CMake** are packed as plain archives.
 Download the latest version named like:
 
-- `xpack-cmake-3.18.3-1-linux-x64.tgz`
-- `xpack-cmake-3.18.3-1-linux-x32.tgz`
+- `xpack-cmake-{{ page.version }}-1-linux-x64.tgz`
+- `xpack-cmake-{{ page.version }}-1-linux-x32.tgz`
 
 As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
 CentOS, but can be executed on most recent GNU/Linux distributions.
@@ -202,14 +206,14 @@ machines.
 ### Unpack
 
 To install CMake, unpack the archive and move it to
-`/${HOME}/opt/xPacks/cmake/xpack-cmake-3.18.3-1`:
+`/${HOME}/opt/xPacks/cmake/xpack-cmake-{{ page.version }}-1`:
 
 ```console
 $ mkdir -p ~/opt
 $ cd ~/opt
 
-$ tar xvf ~/Downloads/xpack-cmake-3.18.3-1-linux-x64.tgz
-$ chmod -R -w xPacks/cmake/xpack-cmake-3.18.3-1
+$ tar xvf ~/Downloads/xpack-cmake-{{ page.version }}-1-linux-x64.tgz
+$ chmod -R -w xPacks/cmake/xpack-cmake-{{ page.version }}-1
 ```
 
 {% include note.html content="For manual installs, the recommended
@@ -218,8 +222,8 @@ which use the scope (like `@xpack-dev-tools`) to group different tools,
 and `.content` to store the unpacked archive." %}
 
 ```console
-$ tree -L 2 '/home/ilg/opt/xPacks/cmake/xpack-cmake-3.18.3-1'
-/home/ilg/opt/xPacks/cmake/xpack-cmake-3.18.3-1/
+$ tree -L 2 '/home/ilg/opt/xPacks/cmake/xpack-cmake-{{ page.version }}-1'
+/home/ilg/opt/xPacks/cmake/xpack-cmake-{{ page.version }}-1/
 ├── bin
 │   ├── ccmake
 │   ├── cmake
@@ -252,8 +256,8 @@ $ tree -L 2 '/home/ilg/opt/xPacks/cmake/xpack-cmake-3.18.3-1'
 To check if the manually installed CMake starts, use something like:
 
 ```console
-$ ~/opt/xPacks/cmake/xpack-cmake-3.18.3-1/bin/cmake --version
-cmake version 3.18.3
+$ ~/opt/xPacks/cmake/xpack-cmake-{{ page.version }}-1/bin/cmake --version
+cmake version {{ page.version }}
 ```
 
 {% endcapture %}

@@ -3,8 +3,11 @@ title: How to install the xPack GNU Arm Embedded GCC binaries
 permalink: /arm-none-eabi-gcc/install/
 
 summary: "The recommended method is via xpm."
+
 toc: false
 comments: true
+
+version: 9.2.1
 
 date: 2019-07-10 17:53:00 +0300
 
@@ -105,8 +108,8 @@ GitHub [releases](https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/rel
 The Windows versions of **xPack GNU Arm Embedded GCC** are packed as ZIP files.
 Download the latest version named like:
 
-- `xpack-arm-none-eabi-gcc-9.2.1-1.1-win32-x64.zip`
-- `xpack-arm-none-eabi-gcc-9.2.1-1.1-win32-x32.zip`
+- `xpack-arm-none-eabi-gcc-{{ page.version }}-1.1-win32-x64.zip`
+- `xpack-arm-none-eabi-gcc-{{ page.version }}-1.1-win32-x32.zip`
 
 Select the `-x64` file for 64-bit Windows machines and the `-x32` file
 for 32-bit Windows machines.
@@ -139,8 +142,8 @@ for the executables in this location." %}
 To check if the manually installed GCC starts, use something like:
 
 ```
-C:\>%USERPROFILE%\AppData\Roaming\xPacks\arm-none-eabi-gcc\xpack-arm-none-eabi-gcc-9.2.1-1.1\bin\arm-none-eabi-gcc.exe" --version
-arm-none-eabi-gcc (xPack GNU Arm Embedded GCC, 64-bit) 9.2.1 20191025 (release) [ARM/arm-9-branch revision 277599]
+C:\>%USERPROFILE%\AppData\Roaming\xPacks\arm-none-eabi-gcc\xpack-arm-none-eabi-gcc-{{ page.version }}-1.1\bin\arm-none-eabi-gcc.exe" --version
+arm-none-eabi-gcc (xPack GNU Arm Embedded GCC, 64-bit) {{ page.version }} 20191025 (release) [ARM/arm-9-branch revision 277599]
 ```
 
 {% include tip.html content="Since Windows does not provide the GNU make
@@ -156,7 +159,7 @@ The macOS version of **xPack GNU Arm Embedded GCC** is packed as a
 `.tar.gz` archive.
 Download the latest version named like:
 
-- `xpack-arm-none-eabi-gcc-9.2.1-1.1-darwin-x64.tar.gz`
+- `xpack-arm-none-eabi-gcc-{{ page.version }}-1.1-darwin-x64.tar.gz`
 
 ### Unpack
 
@@ -167,8 +170,8 @@ To install GNU Arm Embedded GCC, unpack the archive and copy it to
 $ mkdir -p ~/opt/xPacks/arm-none-eabi-gcc
 $ cd ~/opt/xPacks/arm-none-eabi-gcc
 
-$ tar xvf ~/Downloads/xpack-arm-none-eabi-gcc-9.2.1-1.1-darwin-x64.tar.gz
-$ chmod -R -w xpack-arm-none-eabi-gcc-9.2.1-1.1
+$ tar xvf ~/Downloads/xpack-arm-none-eabi-gcc-{{ page.version }}-1.1-darwin-x64.tar.gz
+$ chmod -R -w xpack-arm-none-eabi-gcc-{{ page.version }}-1.1
 ```
 
 You may shorten the last folder name and keep only the version.
@@ -184,8 +187,8 @@ for the executables in this location." %}
 The result is a structure like:
 
 ```console
-$ tree -L 2 /Users/ilg/Library/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-9.2.1-1.1
-/Users/ilg/Library/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-9.2.1-1.1
+$ tree -L 2 /Users/ilg/Library/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-{{ page.version }}-1.1
+/Users/ilg/Library/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-{{ page.version }}-1.1
 ├── README.md
 ├── arm-none-eabi
 │   ├── bin
@@ -202,7 +205,7 @@ $ tree -L 2 /Users/ilg/Library/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-
 │   ├── arm-none-eabi-elfedit
 │   ├── arm-none-eabi-g++
 │   ├── arm-none-eabi-gcc
-│   ├── arm-none-eabi-gcc-9.2.1
+│   ├── arm-none-eabi-gcc-{{ page.version }}
 │   ├── arm-none-eabi-gcc-ar
 │   ├── arm-none-eabi-gcc-nm
 │   ├── arm-none-eabi-gcc-ranlib
@@ -262,8 +265,8 @@ $ tree -L 2 /Users/ilg/Library/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-
 To check if the manually installed GCC starts, use something like:
 
 ```console
-$ ~/opt/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-9.2.1-1.1/bin/arm-none-eabi-gcc --version
-arm-none-eabi-gcc (xPack GNU Arm Embedded GCC, 64-bit) 9.2.1 20191025 (release) [ARM/arm-9-branch revision 277599]
+$ ~/opt/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-{{ page.version }}-1.1/bin/arm-none-eabi-gcc --version
+arm-none-eabi-gcc (xPack GNU Arm Embedded GCC, 64-bit) {{ page.version }} 20191025 (release) [ARM/arm-9-branch revision 277599]
 ```
 
 {% endcapture %}
@@ -275,8 +278,8 @@ arm-none-eabi-gcc (xPack GNU Arm Embedded GCC, 64-bit) 9.2.1 20191025 (release) 
 The GNU/Linux versions of **xPack GNU Arm Embedded GCC** are packed as
 `.tar.gz` archives. Download the latest version named like:
 
-- `xpack-arm-none-eabi-gcc-9.2.1-1.1-linux-x64.tar.gz`
-- `xpack-arm-none-eabi-gcc-9.2.1-1.1-linux-x32.tar.gz`
+- `xpack-arm-none-eabi-gcc-{{ page.version }}-1.1-linux-x64.tar.gz`
+- `xpack-arm-none-eabi-gcc-{{ page.version }}-1.1-linux-x32.tar.gz`
 
 As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
 CentOS, but can be executed on most recent GNU/Linux distributions.
@@ -292,8 +295,8 @@ To install GNU Arm Embedded GCC, unpack the archive and copy it to
 $ mkdir -p ~/opt/xPacks/arm-none-eabi-gcc
 $ cd ~/opt/xPacks/arm-none-eabi-gcc
 
-$ tar xvf ~/Downloads/xpack-arm-none-eabi-gcc-9.2.1-1.1-linux-x64.tar.gz
-$ chmod -R -w xpack-arm-none-eabi-gcc-9.2.1-1.1
+$ tar xvf ~/Downloads/xpack-arm-none-eabi-gcc-{{ page.version }}-1.1-linux-x64.tar.gz
+$ chmod -R -w xpack-arm-none-eabi-gcc-{{ page.version }}-1.1
 ```
 
 You may shorten the last folder name and keep only the version.
@@ -311,8 +314,8 @@ for the executables in this location." %}
 The result is a structure like:
 
 ```console
-$ tree -L 2 /home/ilg/opt/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-9.2.1-1.1
-/home/ilg/opt/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-9.2.1-1.1
+$ tree -L 2 /home/ilg/opt/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-{{ page.version }}-1.1
+/home/ilg/opt/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-{{ page.version }}-1.1
 ├── arm-none-eabi
 │   ├── bin
 │   ├── include
@@ -328,7 +331,7 @@ $ tree -L 2 /home/ilg/opt/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-9.2.1
 │   ├── arm-none-eabi-elfedit
 │   ├── arm-none-eabi-g++
 │   ├── arm-none-eabi-gcc
-│   ├── arm-none-eabi-gcc-9.2.1
+│   ├── arm-none-eabi-gcc-{{ page.version }}
 │   ├── arm-none-eabi-gcc-ar
 │   ├── arm-none-eabi-gcc-nm
 │   ├── arm-none-eabi-gcc-ranlib
@@ -405,8 +408,8 @@ $ tree -L 2 /home/ilg/opt/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-9.2.1
 To check if the manually installed GCC starts, use something like:
 
 ```console
-$ ~/opt/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-9.2.1-1.1/bin/arm-none-eabi-gcc --version
-arm-none-eabi-gcc (xPack GNU Arm Embedded GCC, 64-bit) 9.2.1 20191025 (release) [ARM/arm-9-branch revision 277599]
+$ ~/opt/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-{{ page.version }}-1.1/bin/arm-none-eabi-gcc --version
+arm-none-eabi-gcc (xPack GNU Arm Embedded GCC, 64-bit) {{ page.version }} 20191025 (release) [ARM/arm-9-branch revision 277599]
 ```
 
 {% endcapture %}

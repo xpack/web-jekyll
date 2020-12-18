@@ -6,6 +6,8 @@ summary: "The recommended method is via xpm."
 toc: false
 comments: true
 
+version: 2.12.2
+
 date: 2020-07-14 16:26:00 +0300
 
 ---
@@ -94,8 +96,8 @@ page.
 The Windows versions of **xPack Windows Build Tools** are packed as ZIP files.
 Download the latest version named like:
 
-- `xpack-windows-build-tools-2.12.2-win32-x64.zip`
-- `xpack-windows-build-tools-2.12.2-win32-x32.zip`
+- `xpack-windows-build-tools-{{ page.version }}-win32-x64.zip`
+- `xpack-windows-build-tools-{{ page.version }}-win32-x32.zip`
 
 Select the `-x64` file for 64-bit Windows machines and the `-x32` file
 for 32-bit Windows machines.
@@ -127,7 +129,7 @@ for the executable in this location." %}
 To check if the manually installed `make` starts, use something like:
 
 ```
-C:\>%USERPROFILE%\AppData\Roaming\xPacks\windows-build-tools\xpack-windows-build-tools-2.12.2\bin\make --version
+C:\>%USERPROFILE%\AppData\Roaming\xPacks\windows-build-tools\xpack-windows-build-tools-{{ page.version }}\bin\make --version
 GNU Make 4.1
 Built for i686-w64-mingw32
 Copyright (C) 1988-2014 Free Software Foundation, Inc.

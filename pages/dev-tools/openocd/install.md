@@ -7,6 +7,8 @@ summary: "The recommended method is via xpm."
 toc: false
 comments: true
 
+version: 0.10.0
+
 date: 2015-09-09 19:43:00 +0300
 
 ---
@@ -95,8 +97,8 @@ page.
 The Windows versions of **xPack OpenOCD** are packed as ZIP files.
 Download the latest version named like:
 
-- `xpack-openocd-0.10.0-13-win32-x64.zip`
-- `xpack-openocd-0.10.0-13-win32-x32.zip`
+- `xpack-openocd-{{ page.version }}-13-win32-x64.zip`
+- `xpack-openocd-{{ page.version }}-13-win32-x32.zip`
 
 Select the `-x64` file for 64-bit Windows machines and the `-x32` file
 for 32-bit Windows machines.
@@ -132,8 +134,8 @@ The result is a structure like:
 To check if the manually installed OpenOCD starts, use something like:
 
 ```
-C:\>%USERPROFILE%\AppData\Roaming\xPacks\openocd\xpack-openocd-0.10.0-13\bin\openocd.exe --version
-xPack OpenOCD, 64-bit Open On-Chip Debugger 0.10.0+dev (2019-07-17-15:21)
+C:\>%USERPROFILE%\AppData\Roaming\xPacks\openocd\xpack-openocd-{{ page.version }}-13\bin\openocd.exe --version
+xPack OpenOCD, 64-bit Open On-Chip Debugger {{ page.version }}+dev (2019-07-17-15:21)
 ```
 
 ### Drivers
@@ -195,7 +197,7 @@ safe side, try to always use original manufacturer drivers." %}
 The macOS version of **xPack OpenOCD** is packed as a .tar.gz archive.
 Download the latest version named like:
 
-- `xpack-openocd-0.10.0-13-darwin-x64.tgz`
+- `xpack-openocd-{{ page.version }}-13-darwin-x64.tgz`
 
 ### Unpack
 
@@ -206,8 +208,8 @@ To install OpenOCD, unpack the archive and copy it to
 $ mkdir -p ~/opt
 $ cd ~/opt
 
-$ tar xvf ~/Downloads/xpack-openocd-0.10.0-13-darwin-x64.tgz
-$ chmod -R -w xPacks/openocd/xpack-openocd-0.10.0-13
+$ tar xvf ~/Downloads/xpack-openocd-{{ page.version }}-13-darwin-x64.tgz
+$ chmod -R -w xPacks/openocd/xpack-openocd-{{ page.version }}-13
 ```
 
 {% include note.html content="For manual installs, the recommended
@@ -221,8 +223,8 @@ for the executable in this location." %}
 The result is a structure like:
 
 ```console
-$ tree -L 2 /Users/ilg/Library/xPacks/openocd/xpack-openocd-0.10.0-13
-/Users/ilg/Library/xPacks/openocd/xpack-openocd-0.10.0-13
+$ tree -L 2 /Users/ilg/Library/xPacks/openocd/xpack-openocd-{{ page.version }}-13
+/Users/ilg/Library/xPacks/openocd/xpack-openocd-{{ page.version }}-13
 ├── OpenULINK
 │   └── ulink_firmware.hex
 ├── README.md
@@ -267,8 +269,8 @@ $ tree -L 2 /Users/ilg/Library/xPacks/openocd/xpack-openocd-0.10.0-13
 To check if the manually installed OpenOCD starts, use something like:
 
 ```console
-$ ~/opt/xPacks/openocd/xpack-openocd-0.10.0-13/bin/openocd --version
-xPack OpenOCD, 64-bit Open On-Chip Debugger 0.10.0+dev (2019-07-17-15:21)
+$ ~/opt/xPacks/openocd/xpack-openocd-{{ page.version }}-13/bin/openocd --version
+xPack OpenOCD, 64-bit Open On-Chip Debugger {{ page.version }}+dev (2019-07-17-15:21)
 ```
 {% endcapture %}
 
@@ -278,8 +280,8 @@ xPack OpenOCD, 64-bit Open On-Chip Debugger 0.10.0+dev (2019-07-17-15:21)
 The GNU/Linux versions of **xPack OpenOCD** are packed as plain archives.
 Download the latest version named like:
 
-- `xpack-openocd-0.10.0-13-linux-x64.tgz`
-- `xpack-openocd-0.10.0-13-linux-x32.tgz`
+- `xpack-openocd-{{ page.version }}-13-linux-x64.tgz`
+- `xpack-openocd-{{ page.version }}-13-linux-x32.tgz`
 
 As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
 CentOS, but can be executed on most recent GNU/Linux distributions.
@@ -289,14 +291,14 @@ machines.
 ### Unpack
 
 To install OpenOCD, unpack the archive and move it to
-`/${HOME}/opt/xPacks/openocd/xpack-openocd-0.10.0-13`:
+`/${HOME}/opt/xPacks/openocd/xpack-openocd-{{ page.version }}-13`:
 
 ```console
 $ mkdir -p ~/opt
 $ cd ~/opt
 
-$ tar xvf ~/Downloads/xpack-openocd-0.10.0-13-linux-x64.tgz
-$ chmod -R -w xPacks/openocd/xpack-openocd-0.10.0-13
+$ tar xvf ~/Downloads/xpack-openocd-{{ page.version }}-13-linux-x64.tgz
+$ chmod -R -w xPacks/openocd/xpack-openocd-{{ page.version }}-13
 ```
 
 {% include note.html content="For manual installs, the recommended
@@ -310,8 +312,8 @@ path, since by default the Eclipse Embedded CDT debug plug-ins search
 for the executable in this location." %}
 
 ```console
-$ tree -L 2 '/home/ilg/opt/xPacks/openocd/xpack-openocd-0.10.0-13'
-/home/ilg/opt/xPacks/openocd/xpack-openocd-0.10.0-13/
+$ tree -L 2 '/home/ilg/opt/xPacks/openocd/xpack-openocd-{{ page.version }}-13'
+/home/ilg/opt/xPacks/openocd/xpack-openocd-{{ page.version }}-13/
 ├── bin
 │   ├── libftdi1.so.2 -> libftdi1.so.2.4.0
 │   ├── libftdi1.so.2.4.0
@@ -362,8 +364,8 @@ $ tree -L 2 '/home/ilg/opt/xPacks/openocd/xpack-openocd-0.10.0-13'
 To check if the manually installed OpenOCD starts, use something like:
 
 ```console
-$ ~/opt/xPacks/openocd/xpack-openocd-0.10.0-13/bin/openocd --version
-xPack OpenOCD, 64-bit Open On-Chip Debugger 0.10.0+dev (2019-07-17-15:21)
+$ ~/opt/xPacks/openocd/xpack-openocd-{{ page.version }}-13/bin/openocd --version
+xPack OpenOCD, 64-bit Open On-Chip Debugger {{ page.version }}+dev (2019-07-17-15:21)
 ```
 
 ### UDEV
@@ -375,7 +377,7 @@ supported IDs; to install it, just copy the file to `/etc/udev/rules.d`
 and eventually notify the daemon:
 
 ```console
-$ sudo cp ~/opt/xPacks/openocd/xpack-openocd-0.10.0-13/contrib/60-openocd.rules /etc/udev/rules.d/
+$ sudo cp ~/opt/xPacks/openocd/xpack-openocd-{{ page.version }}-13/contrib/60-openocd.rules /etc/udev/rules.d/
 $ sudo udevadm control --reload-rules
 ```
 
@@ -423,8 +425,8 @@ macOS, to test a connection via ST/LINK v2 to the STM32F4DISCOVERY board,
 you can use the sample below:
 
 ```console
-$ ~/opt/xPacks/openocd/xpack-openocd-0.10.0-13/bin/openocd -f board/stm32f4discovery.cfg
-xPack OpenOCD, 64-bit Open On-Chip Debugger 0.10.0+dev (2019-07-17-15:21)
+$ ~/opt/xPacks/openocd/xpack-openocd-{{ page.version }}-13/bin/openocd -f board/stm32f4discovery.cfg
+xPack OpenOCD, 64-bit Open On-Chip Debugger {{ page.version }}+dev (2019-07-17-15:21)
 Licensed under GNU GPL v2
 For bug reports, read
 	http://openocd.org/doc/doxygen/bugs.html
