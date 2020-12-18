@@ -51,6 +51,10 @@ xPacks
 - [@sifive/hifive1-board](https://github.com/micro-os-plus/sifive-hifive1-board-xpack/) [![npm (scoped)](https://img.shields.io/npm/v/@sifive/hifive1-board.svg)](https://www.npmjs.com/package/@sifive/hifive1-board/) [![npm](https://img.shields.io/npm/dw/@sifive/hifive1-board.svg)](https://www.npmjs.com/package/@sifive/hifive1-board/) [![npm](https://img.shields.io/npm/dt/@sifive/hifive1-board.svg)](https://www.npmjs.com/package/@sifive/hifive1-board/)
 - [@sifive/arty-boards](https://github.com/micro-os-plus/sifive-arty-boards-xpack/) [![npm (scoped)](https://img.shields.io/npm/v/@sifive/arty-boards.svg)](https://www.npmjs.com/package/@sifive/arty-boards/) [![npm](https://img.shields.io/npm/dw/@sifive/arty-boards.svg)](https://www.npmjs.com/package/@sifive/arty-boards/) [![npm](https://img.shields.io/npm/dt/@sifive/arty-boards.svg)](https://www.npmjs.com/package/@sifive/arty-boards/)
 
+## Links
+
+- [web preview](https://xpack.github.io/web-preview/)
+
 ## Deprecated pages
 
 - [xcdl]({{ site.baseurl }}/xcdl/)
