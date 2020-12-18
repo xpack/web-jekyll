@@ -13,7 +13,7 @@ date: 2020-09-27 11:09:00 +0300
 
 ## Overview
 
-The **xPack Ninja Build** can be installed automatically, via xpm (the
+The **xPack Ninja Build** can be installed automatically, via **xpm** (the
 recommended method), or manually, by downloading and unpacking one of the
 portable archives.
 

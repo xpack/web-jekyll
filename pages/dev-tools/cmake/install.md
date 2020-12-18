@@ -13,7 +13,7 @@ date: 2020-09-29 14:05:00 +0300
 
 ## Overview
 
-The **xPack CMake** can be installed automatically, via xpm (the
+The **xPack CMake** can be installed automatically, via **xpm** (the
 recommended method), or manually, by downloading and unpacking one of the
 portable archives.
 

@@ -13,7 +13,7 @@ date: 2019-07-10 17:53:00 +0300
 
 ## Overview
 
-The **xPack GNU RISC-V Embedded GCC** can be installed automatically, via xpm (the
+The **xPack GNU RISC-V Embedded GCC** can be installed automatically, via **xpm** (the
 recommended method), or manually, by downloading and unpacking one of the
 portable archives.
 

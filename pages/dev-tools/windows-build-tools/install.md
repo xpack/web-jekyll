@@ -12,7 +12,7 @@ date: 2020-07-14 16:26:00 +0300
 
 ## Overview
 
-The **xPack Windows Build Tools** can be installed automatically, via xpm (the
+The **xPack Windows Build Tools** can be installed automatically, via **xpm** (the
 recommended method), or manually, by downloading and unpacking one of the
 portable archives.
 

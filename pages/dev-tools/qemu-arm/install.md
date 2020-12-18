@@ -13,7 +13,7 @@ date: 2015-09-04 17:03:00 +0300
 
 ## Overview
 
-The **xPack QEMU Arm** can be installed automatically, via xpm (the
+The **xPack QEMU Arm** can be installed automatically, via **xpm** (the
 recommended method), or manually, by downloading and unpacking one of the
 portable archives.
 
