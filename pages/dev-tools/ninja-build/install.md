@@ -109,7 +109,9 @@ install location is slightly different from the xpm install folders,
 which use the scope (like `@xpack-dev-tools`) to group different tools,
 and `.content` to store the unpacked archive." %}
 
-To check if Ninja starts, use the following command:
+### Test
+
+To check if Ninja starts, use something like:
 
 ```
 C:\Users\ilg>C:\Users\ilg\AppData\Roaming\xPacks\ninja-build\xpack-ninja-1.10.1-1\bin\ninja.exe --version
@@ -161,7 +163,9 @@ $ tree -L 2 /Users/ilg/Library/xPacks/ninja-build/xpack-ninja-build-1.10.1-1
 5 directories, 5 files
 ```
 
-To check if Ninja starts, use:
+### Test
+
+To check if Ninja starts, use something like:
 
 ```console
 $ ~/opt/xPacks/ninja-build/1.10.1-1/bin/ninja --version
@@ -217,7 +221,9 @@ $ tree -L 2 '/home/ilg/opt/xPacks/ninja-build/xpack-ninja-build-1.10.1-1'
 5 directories, 3 files
 ```
 
-To check if Ninja starts and is recent, use:
+### Test
+
+To check if Ninja starts, use something like:
 
 ```console
 $ ~/opt/xPacks/ninja-build/xpack-ninja-build-1.10.1-1/bin/ninja --version

@@ -109,7 +109,9 @@ install location is slightly different from the xpm install folders,
 which use the scope (like `@xpack-dev-tools`) to group different tools,
 and `.content` to store the unpacked archive." %}
 
-To check if Meson starts, use the following command:
+### Test
+
+To check if Meson starts, use something like:
 
 ```
 C:\Users\ilg>C:\Users\ilg\AppData\Roaming\xPacks\meson-build\xpack-meson-0.55.3-1\bin\meson.exe --version
@@ -164,7 +166,9 @@ $ tree -L 2 /Users/ilg/Library/xPacks/meson-build/xpack-meson-build-0.55.3-1
 7 directories, 6 files
 ```
 
-To check if Meson starts, use:
+### Test
+
+To check if Meson starts, use something like:
 
 ```console
 $ ~/opt/xPacks/meson-build/xpack-meson-build-0.55.3-1/bin/meson --version
@@ -222,7 +226,9 @@ $ tree -L 2 '/home/ilg/opt/xPacks/meson-build/xpack-meson-build-0.55.3-1'
 7 directories, 3 files
 ```
 
-To check if Meson starts and is recent, use:
+### Test
+
+To check if Meson starts, use something like:
 
 ```console
 $ ~/opt/xPacks/meson-build/xpack-meson-build-0.55.3-1/bin/meson --version

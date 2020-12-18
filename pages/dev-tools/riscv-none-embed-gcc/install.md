@@ -129,7 +129,9 @@ install GNU RISC-V Embedded GCC in any folder, it is highly recommended
 to use this path, since by default the Eclipse Embedded CDT debug plug-ins search
 for the executable in this location." %}
 
-To check if GCC starts, use the following command:
+### Test
+
+To check if GCC starts, use something like:
 
 ```
 C:\Users\ilg>C:\Users\ilg\AppData\Roaming\xPacks\xpack-riscv-none-embed-gcc-8.2.1-3.1\bin\riscv-none-embed-gcc.exe" --version
@@ -243,7 +245,9 @@ $ tree -L 2 /Users/ilg/opt/xPacks/riscv-none-embed-gcc/xpack-riscv-none-embed-gc
 20 directories, 44 files
 ```
 
-To check if GCC starts, use:
+### Test
+
+To check if GCC starts, use something like:
 
 ```console
 $ ~/opt/xPacks/riscv-none-embed-gcc/xpack-riscv-none-embed-gcc-8.2.1-3.1/bin/riscv-none-embed-gcc --version
@@ -373,7 +377,9 @@ $ tree -L 2 /home/ilg/opt/xPacks/riscv-none-embed-gcc/xpack-riscv-none-embed-gcc
 21 directories, 54 files
 ```
 
-To check if GCC starts and is recent, use:
+### Test
+
+To check if GCC starts, use something like:
 
 ```console
 $ ~/opt/xPacks/riscv-none-embed-gcc/xpack-riscv-none-embed-gcc-8.2.1-3.1/bin/riscv-none-embed-gcc --version

@@ -127,7 +127,9 @@ The result is a structure like:
 
 ![The OpenOCD folders structure]({{ site.baseurl }}/assets/images/2019/windows-folders-openocd.png)
 
-To check if OpenOCD starts, use the following command:
+### Test
+
+To check if OpenOCD starts, use something like:
 
 ```
 C:\Users\ilg>C:\Users\ilg\AppData\Roaming\xPacks\openocd\xpack-openocd-0.10.0-13\bin\openocd.exe --version
@@ -260,7 +262,9 @@ $ tree -L 2 /Users/ilg/Library/xPacks/openocd/xpack-openocd-0.10.0-13
 20 directories, 15 files
 ```
 
-To check if OpenOCD starts, use:
+### Test
+
+To check if OpenOCD starts, use something like:
 
 ```console
 $ ~/opt/xPacks/openocd/xpack-openocd-0.10.0-13/bin/openocd --version
@@ -353,7 +357,9 @@ $ tree -L 2 '/home/ilg/opt/xPacks/openocd/xpack-openocd-0.10.0-13'
 20 directories, 21 files
 ```
 
-To check if OpenOCD starts and is recent, use:
+### Test
+
+To check if OpenOCD starts, use something like:
 
 ```console
 $ ~/opt/xPacks/openocd/xpack-openocd-0.10.0-13/bin/openocd --version

@@ -122,7 +122,9 @@ install QEMU in any folder, it is highly recommended to use this
 path, since by default the Eclipse Embedded CDT debug plug-ins search
 for the executable in this location." %}
 
-To check if QEMU starts, use the following command:
+### Test
+
+To check if QEMU starts, use something like:
 
 ```
 C:\Users\ilg>C:\Users\ilg\AppData\Roaming\xPacks\qemu-arm\xpack-qemu-arm-2.8.0-7\bin\qemu-system-gnuarmeclipse.exe" --version
@@ -196,7 +198,9 @@ $ tree -L 2 /Users/ilg/Library/xPacks/qemu-arm/xpack-qemu-arm-2.8.0-7
 8 directories, 14 files
 ```
 
-To check if QEMU starts, use:
+### Test
+
+To check if QEMU starts, use something like:
 
 ```console
 $ ~/opt/xPacks/qemu-arm/xpack-qemu-arm-2.8.0-7/bin/qemu-system-gnuarmeclipse --version
@@ -282,7 +286,9 @@ $ tree -L 2 '/home/ilg/opt/xPacks/qemu-arm/xpack-qemu-arm-2.8.0-7'
 9 directories, 21 files
 ```
 
-To check if QEMU starts and is recent, use:
+### Test
+
+To check if QEMU starts, use something like:
 
 ```console
 $ ~/opt/xPacks/qemu-arm/xpack-qemu-arm-2.8.0-7/bin/qemu-system-gnuarmeclipse --version

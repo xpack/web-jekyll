@@ -122,7 +122,9 @@ install Windows Build Tools in any folder, it is highly recommended to use this
 path, since by default the Eclipse Embedded CDT debug plug-ins search
 for the executable in this location." %}
 
-To check if `make` starts, use the following command:
+### Test
+
+To check if `make` starts, use something like:
 
 ```
 C:\Users\ilg>C:\Users\ilg\AppData\Roaming\xPacks\windows-build-tools\xpack-windows-build-tools-2.12.2\bin\make --version

@@ -109,7 +109,9 @@ install location is slightly different from the xpm install folders,
 which use the scope (like `@xpack-dev-tools`) to group different tools,
 and `.content` to store the unpacked archive." %}
 
-To check if CMake starts, use the following command:
+### Test
+
+To check if CMake starts, use something like:
 
 ```
 C:\Users\ilg>C:\Users\ilg\AppData\Roaming\xPacks\cmake\xpack-cmake-3.18.3-1\bin\cmake.exe --version
@@ -172,7 +174,9 @@ $ tree -L 2 /Users/ilg/Library/xPacks/cmake/xpack-cmake-3.18.3-1
 13 directories, 8 files
 ```
 
-To check if CMake starts, use:
+### Test
+
+To check if CMake starts, use something like:
 
 ```console
 $ ~/opt/xPacks/cmake/xpack-cmake-3.18.3-1/bin/cmake --version
@@ -243,7 +247,9 @@ $ tree -L 2 '/home/ilg/opt/xPacks/cmake/xpack-cmake-3.18.3-1'
 13 directories, 10 files
 ```
 
-To check if CMake starts and is recent, use:
+### Test
+
+To check if CMake starts, use something like:
 
 ```console
 $ ~/opt/xPacks/cmake/xpack-cmake-3.18.3-1/bin/cmake --version

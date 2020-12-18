@@ -134,7 +134,9 @@ install GNU Arm Embedded GCC in any folder, it is highly recommended
 to use this path, since by default the Eclipse Embedded CDT plug-ins search
 for the executables in this location." %}
 
-To check if GCC starts, use the following command:
+### Test
+
+To check if GCC starts, use something like:
 
 ```
 C:\Users\ilg>C:\Users\ilg\AppData\Roaming\xPacks\arm-none-eabi-gcc\xpack-arm-none-eabi-gcc-9.2.1-1.1\bin\arm-none-eabi-gcc.exe" --version
@@ -255,7 +257,9 @@ $ tree -L 2 /Users/ilg/Library/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-
 20 directories, 47 files
 ```
 
-To check if GCC starts, use:
+### Test
+
+To check if GCC starts, use something like:
 
 ```console
 $ ~/opt/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-9.2.1-1.1/bin/arm-none-eabi-gcc --version
@@ -396,7 +400,9 @@ $ tree -L 2 /home/ilg/opt/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-9.2.1
 21 directories, 62 files
 ```
 
-To check if GCC starts and is recent, use:
+### Test
+
+To check if GCC starts, use something like:
 
 ```console
 $ ~/opt/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-9.2.1-1.1/bin/arm-none-eabi-gcc --version
