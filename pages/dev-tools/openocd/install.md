@@ -108,7 +108,7 @@ page.
 To check if the xpm installed OpenOCD starts, use something like:
 
 ```
-C:\>%USERPROFILE%\AppData\Roaming\xPacks\@xpack-dev-tools\openocd\{{ page.version }}-13\.content\bin\openocd.exe --version
+C:\>%USERPROFILE%\AppData\Roaming\xPacks\@xpack-dev-tools\openocd\{{ page.version }}-13.1\.content\bin\openocd.exe --version
 xPack OpenOCD, 64-bit Open On-Chip Debugger {{ page.version }}+dev (2019-07-17-15:21)
 ```
 
@@ -222,7 +222,7 @@ safe side, try to always use original manufacturer drivers." %}
 To check if the xpm installed OpenOCD starts, use something like:
 
 ```console
-$ ~/opt/xPacks/@xpack-dev-tools/openocd/{{ page.version }}-13/.content/bin/openocd --version
+$ ~/opt/xPacks/@xpack-dev-tools/openocd/{{ page.version }}-13.1/.content/bin/openocd --version
 xPack OpenOCD, 64-bit Open On-Chip Debugger {{ page.version }}+dev (2019-07-17-15:21)
 ```
 
@@ -319,7 +319,7 @@ xPack OpenOCD, 64-bit Open On-Chip Debugger {{ page.version }}+dev (2019-07-17-1
 To check if the xpm installed OpenOCD starts, use something like:
 
 ```console
-$ ~/opt/xPacks/@xpack-dev-tools/openocd/{{ page.version }}-13/.content/bin/openocd --version
+$ ~/opt/xPacks/@xpack-dev-tools/openocd/{{ page.version }}-13.1/.content/bin/openocd --version
 xPack OpenOCD, 64-bit Open On-Chip Debugger {{ page.version }}+dev (2019-07-17-15:21)
 ```
 
@@ -485,7 +485,7 @@ macOS, to test a connection via ST/LINK v2 to the STM32F4DISCOVERY board,
 you can use the sample below:
 
 ```console
-$ ~/opt/xPacks/@xpack-dev-tools/openocd/{{ page.version }}-13/.content/bin/openocd -f board/stm32f4discovery.cfg
+$ ~/opt/xPacks/@xpack-dev-tools/openocd/{{ page.version }}-13.1/.content/bin/openocd -f board/stm32f4discovery.cfg
 xPack OpenOCD, 64-bit Open On-Chip Debugger {{ page.version }}+dev (2019-07-17-15:21)
 Licensed under GNU GPL v2
 For bug reports, read

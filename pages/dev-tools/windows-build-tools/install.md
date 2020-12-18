@@ -107,7 +107,7 @@ page.
 To check if the xpm installed `make` starts, use something like:
 
 ```
-C:\>%USERPROFILE%\AppData\Roaming\xPacks\@xpack-dev-tools\windows-build-tools\{{ page.version }}\.content\bin\make --version
+C:\>%USERPROFILE%\AppData\Roaming\xPacks\@xpack-dev-tools\windows-build-tools\{{ page.version }}-1\.content\bin\make --version
 GNU Make 4.1
 Built for i686-w64-mingw32
 ...

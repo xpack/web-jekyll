@@ -114,7 +114,7 @@ GitHub [releases](https://github.com/xpack-dev-tools/riscv-none-embed-gcc-xpack/
 To check if the xpm installed GCC starts, use something like:
 
 ```
-C:\>%USERPROFILE%\AppData\Roaming\xPacks\@xpack-dev-tools\riscv-none-embed-gcc\{{ page.version }}-3.1\.content\bin\riscv-none-embed-gcc.exe" --version
+C:\>%USERPROFILE%\AppData\Roaming\xPacks\@xpack-dev-tools\riscv-none-embed-gcc\{{ page.version }}-3.1.1\.content\bin\riscv-none-embed-gcc.exe" --version
 riscv-none-embed-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) {{ page.version }}
 ```
 
@@ -176,7 +176,7 @@ binaries, it is recommended to also install the **Windows Build Tools**." %}
 To check if the xpm installed GCC starts, use something like:
 
 ```console
-$ ~/opt/xPacks/@xpack-dev-tools/riscv-none-embed-gcc/{{ page.version }}-3.1/.content/bin/riscv-none-embed-gcc --version
+$ ~/opt/xPacks/@xpack-dev-tools/riscv-none-embed-gcc/{{ page.version }}-3.1.1/.content/bin/riscv-none-embed-gcc --version
 riscv-none-embed-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) {{ page.version }}
 ```
 
@@ -303,7 +303,7 @@ riscv-none-embed-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) {{ page.version }}
 To check if the xpm installed GCC starts, use something like:
 
 ```console
-$ ~/opt/xPacks/@xpack-dev-tools/riscv-none-embed-gcc/{{ page.version }}-3.1/.content/bin/riscv-none-embed-gcc --version
+$ ~/opt/xPacks/@xpack-dev-tools/riscv-none-embed-gcc/{{ page.version }}-3.1.1/.content/bin/riscv-none-embed-gcc --version
 riscv-none-embed-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) {{ page.version }}
 ```
 

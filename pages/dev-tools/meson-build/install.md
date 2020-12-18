@@ -99,7 +99,7 @@ page.
 To check if the xpm installed Meson starts, use something like:
 
 ```
-C:\>%USERPROFILE%\AppData\Roaming\xPacks\@xpack-dev-tools\{{ page.version }}-1\.content\bin\meson.exe --version
+C:\>%USERPROFILE%\AppData\Roaming\xPacks\@xpack-dev-tools\{{ page.version }}-1.1\.content\bin\meson.exe --version
 {{ page.version }}
 ```
 
@@ -153,7 +153,7 @@ C:\>%USERPROFILE%\AppData\Roaming\xPacks\meson-build\xpack-meson-{{ page.version
 To check if the xpm installed Meson starts, use something like:
 
 ```console
-$ ~/opt/xPacks/@xpack-dev-tools/meson-build/{{ page.version }}-1/.content/bin/meson --version
+$ ~/opt/xPacks/@xpack-dev-tools/meson-build/{{ page.version }}-1.1/.content/bin/meson --version
 {{ page.version }}
 ```
 
@@ -224,7 +224,7 @@ $ ~/opt/xPacks/meson-build/xpack-meson-build-{{ page.version }}-1/bin/meson --ve
 To check if the xpm installed Meson starts, use something like:
 
 ```console
-$ ~/opt/xPacks/@xpack-dev-tools/meson-build/{{ page.version }}-1/.content/bin/meson --version
+$ ~/opt/xPacks/@xpack-dev-tools/meson-build/{{ page.version }}-1.1/.content/bin/meson --version
 {{ page.version }}
 ```
 

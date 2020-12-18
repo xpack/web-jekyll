@@ -99,7 +99,7 @@ page.
 To check if the xpm installed Ninja starts, use something like:
 
 ```
-C:\>%USERPROFILE%\AppData\Roaming\xPacks\@xpack-dev-tools\ninja-build\{{ page.version }}-1\.content\bin\ninja.exe --version
+C:\>%USERPROFILE%\AppData\Roaming\xPacks\@xpack-dev-tools\ninja-build\{{ page.version }}-1.1\.content\bin\ninja.exe --version
 {{ page.version }}
 ```
 
@@ -153,7 +153,7 @@ C:\>%USERPROFILE%\AppData\Roaming\xPacks\ninja-build\xpack-ninja-{{ page.version
 To check if the xpm installed Ninja starts, use something like:
 
 ```console
-$ ~/opt/xPacks/@xpack-dev-tools/ninja-build/{{ page.version }}-1/.content/bin/ninja --version
+$ ~/opt/xPacks/@xpack-dev-tools/ninja-build/{{ page.version }}-1.1/.content/bin/ninja --version
 {{ page.version }}
 ```
 
@@ -221,7 +221,7 @@ $ ~/opt/xPacks/ninja-build/{{ page.version }}-1/bin/ninja --version
 To check if the xpm installed Ninja starts, use something like:
 
 ```console
-$ ~/opt/xPacks/@xpack-dev-tools/ninja-build/{{ page.version }}-1/.content/bin/ninja --version
+$ ~/opt/xPacks/@xpack-dev-tools/ninja-build/{{ page.version }}-1.1/.content/bin/ninja --version
 {{ page.version }}
 ```
 
