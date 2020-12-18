@@ -65,7 +65,7 @@ xpm and provide a convenient method to manage paths.
 
 {% include important.html content="Automatic
 path discovery for the packages from the new `@xpack-dev-tools` scope was
-added to **GNU MCU Eclipse plug-ins** with v4.6.1-201909231407; update
+added to **GNU MCU Eclipse plug-ins** with v4.6.1 in 2019-09-23; update
 older versions or configure the path manually." %}
 
 ### Update
