@@ -114,7 +114,7 @@ The `win32` part is confusing, but we have to leave with it." %}
 ### Unpack
 
 Unpack the archive and copy it into the
-`%userprofile%\AppData\Roaming\xPacks\riscv-none-embed-gcc`
+`%USERPROFILE%\AppData\Roaming\xPacks\riscv-none-embed-gcc`
 (for example `C:\Users\ilg\AppData\Roaming\xPacks\riscv-none-embed-gcc`) folder;
 according to Microsoft, `AppData\Roaming` is the recommended location for
 installing user specific packages.
@@ -134,7 +134,7 @@ for the executable in this location." %}
 To check if the manually installed GCC starts, use something like:
 
 ```
-C:\Users\ilg>C:\Users\ilg\AppData\Roaming\xPacks\xpack-riscv-none-embed-gcc-8.2.1-3.1\bin\riscv-none-embed-gcc.exe" --version
+C:\>%USERPROFILE%\AppData\Roaming\xPacks\xpack-riscv-none-embed-gcc-8.2.1-3.1\bin\riscv-none-embed-gcc.exe" --version
 riscv-none-embed-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) 8.2.0
 ```
 

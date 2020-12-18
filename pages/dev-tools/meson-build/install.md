@@ -99,7 +99,7 @@ The `win32` part is confusing, but we have to leave with it." %}
 ### Unpack
 
 Unpack the archive and copy it into the
-`%userprofile%\AppData\Roaming\xPacks\meson-build`
+`%USERPROFILE%\AppData\Roaming\xPacks\meson-build`
 (for example `C:\Users\ilg\AppData\Roaming\xPacks\meson-build`) folder;
 according to Microsoft, `AppData\Roaming` is the recommended location for
 installing user specific packages.
@@ -114,7 +114,7 @@ and `.content` to store the unpacked archive." %}
 To check if the manually installed Meson starts, use something like:
 
 ```
-C:\Users\ilg>C:\Users\ilg\AppData\Roaming\xPacks\meson-build\xpack-meson-0.55.3-1\bin\meson.exe --version
+C:\>%USERPROFILE%\AppData\Roaming\xPacks\meson-build\xpack-meson-0.55.3-1\bin\meson.exe --version
 0.55.3
 ```
 

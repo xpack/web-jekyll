@@ -99,7 +99,7 @@ The `win32` part is confusing, but we have to leave with it." %}
 ### Unpack
 
 Unpack the archive and copy it into the
-`%userprofile%\AppData\Roaming\xPacks\cmake`
+`%USERPROFILE%\AppData\Roaming\xPacks\cmake`
 (for example `C:\Users\ilg\AppData\Roaming\xPacks\cmake`) folder;
 according to Microsoft, `AppData\Roaming` is the recommended location for
 installing user specific packages.
@@ -114,7 +114,7 @@ and `.content` to store the unpacked archive." %}
 To check if the manually installed CMake starts, use something like:
 
 ```
-C:\Users\ilg>C:\Users\ilg\AppData\Roaming\xPacks\cmake\xpack-cmake-3.18.3-1\bin\cmake.exe --version
+C:\>%USERPROFILE%\AppData\Roaming\xPacks\cmake\xpack-cmake-3.18.3-1\bin\cmake.exe --version
 cmake version 3.18.3
 ```
 

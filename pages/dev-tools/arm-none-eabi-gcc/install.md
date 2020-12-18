@@ -117,7 +117,7 @@ The `win32` part is confusing, but we have to leave with it." %}
 
 ### Unpack
 
-Unpack the archive and copy the versioned folder into the `%userprofile%\AppData\Roaming\xPacks\arm-none-eabi-gcc`
+Unpack the archive and copy the versioned folder into the `%USERPROFILE%\AppData\Roaming\xPacks\arm-none-eabi-gcc`
 (for example `C:\Users\ilg\AppData\Roaming\xPacks\arm-none-eabi-gcc`) folder;
 according to Microsoft, `AppData\Roaming` is the recommended location for
 installing user specific packages.
@@ -139,7 +139,7 @@ for the executables in this location." %}
 To check if the manually installed GCC starts, use something like:
 
 ```
-C:\Users\ilg>C:\Users\ilg\AppData\Roaming\xPacks\arm-none-eabi-gcc\xpack-arm-none-eabi-gcc-9.2.1-1.1\bin\arm-none-eabi-gcc.exe" --version
+C:\>%USERPROFILE%\AppData\Roaming\xPacks\arm-none-eabi-gcc\xpack-arm-none-eabi-gcc-9.2.1-1.1\bin\arm-none-eabi-gcc.exe" --version
 arm-none-eabi-gcc (xPack GNU Arm Embedded GCC, 64-bit) 9.2.1 20191025 (release) [ARM/arm-9-branch revision 277599]
 ```
 
