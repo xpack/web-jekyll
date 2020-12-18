@@ -124,7 +124,7 @@ for the executable in this location." %}
 
 ### Test
 
-To check if QEMU starts, use something like:
+To check if the manually installed QEMU starts, use something like:
 
 ```
 C:\Users\ilg>C:\Users\ilg\AppData\Roaming\xPacks\qemu-arm\xpack-qemu-arm-2.8.0-7\bin\qemu-system-gnuarmeclipse.exe" --version
@@ -200,7 +200,7 @@ $ tree -L 2 /Users/ilg/Library/xPacks/qemu-arm/xpack-qemu-arm-2.8.0-7
 
 ### Test
 
-To check if QEMU starts, use something like:
+To check if the manually installed QEMU starts, use something like:
 
 ```console
 $ ~/opt/xPacks/qemu-arm/xpack-qemu-arm-2.8.0-7/bin/qemu-system-gnuarmeclipse --version
@@ -288,7 +288,7 @@ $ tree -L 2 '/home/ilg/opt/xPacks/qemu-arm/xpack-qemu-arm-2.8.0-7'
 
 ### Test
 
-To check if QEMU starts, use something like:
+To check if the manually installed QEMU starts, use something like:
 
 ```console
 $ ~/opt/xPacks/qemu-arm/xpack-qemu-arm-2.8.0-7/bin/qemu-system-gnuarmeclipse --version

@@ -111,7 +111,7 @@ and `.content` to store the unpacked archive." %}
 
 ### Test
 
-To check if Ninja starts, use something like:
+To check if the manually installed Ninja starts, use something like:
 
 ```
 C:\Users\ilg>C:\Users\ilg\AppData\Roaming\xPacks\ninja-build\xpack-ninja-1.10.1-1\bin\ninja.exe --version
@@ -165,7 +165,7 @@ $ tree -L 2 /Users/ilg/Library/xPacks/ninja-build/xpack-ninja-build-1.10.1-1
 
 ### Test
 
-To check if Ninja starts, use something like:
+To check if the manually installed Ninja starts, use something like:
 
 ```console
 $ ~/opt/xPacks/ninja-build/1.10.1-1/bin/ninja --version
@@ -223,7 +223,7 @@ $ tree -L 2 '/home/ilg/opt/xPacks/ninja-build/xpack-ninja-build-1.10.1-1'
 
 ### Test
 
-To check if Ninja starts, use something like:
+To check if the manually installed Ninja starts, use something like:
 
 ```console
 $ ~/opt/xPacks/ninja-build/xpack-ninja-build-1.10.1-1/bin/ninja --version

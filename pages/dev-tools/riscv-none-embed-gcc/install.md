@@ -131,7 +131,7 @@ for the executable in this location." %}
 
 ### Test
 
-To check if GCC starts, use something like:
+To check if the manually installed GCC starts, use something like:
 
 ```
 C:\Users\ilg>C:\Users\ilg\AppData\Roaming\xPacks\xpack-riscv-none-embed-gcc-8.2.1-3.1\bin\riscv-none-embed-gcc.exe" --version
@@ -247,7 +247,7 @@ $ tree -L 2 /Users/ilg/opt/xPacks/riscv-none-embed-gcc/xpack-riscv-none-embed-gc
 
 ### Test
 
-To check if GCC starts, use something like:
+To check if the manually installed GCC starts, use something like:
 
 ```console
 $ ~/opt/xPacks/riscv-none-embed-gcc/xpack-riscv-none-embed-gcc-8.2.1-3.1/bin/riscv-none-embed-gcc --version
@@ -379,7 +379,7 @@ $ tree -L 2 /home/ilg/opt/xPacks/riscv-none-embed-gcc/xpack-riscv-none-embed-gcc
 
 ### Test
 
-To check if GCC starts, use something like:
+To check if the manually installed GCC starts, use something like:
 
 ```console
 $ ~/opt/xPacks/riscv-none-embed-gcc/xpack-riscv-none-embed-gcc-8.2.1-3.1/bin/riscv-none-embed-gcc --version

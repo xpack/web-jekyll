@@ -111,7 +111,7 @@ and `.content` to store the unpacked archive." %}
 
 ### Test
 
-To check if CMake starts, use something like:
+To check if the manually installed CMake starts, use something like:
 
 ```
 C:\Users\ilg>C:\Users\ilg\AppData\Roaming\xPacks\cmake\xpack-cmake-3.18.3-1\bin\cmake.exe --version
@@ -176,7 +176,7 @@ $ tree -L 2 /Users/ilg/Library/xPacks/cmake/xpack-cmake-3.18.3-1
 
 ### Test
 
-To check if CMake starts, use something like:
+To check if the manually installed CMake starts, use something like:
 
 ```console
 $ ~/opt/xPacks/cmake/xpack-cmake-3.18.3-1/bin/cmake --version
@@ -249,7 +249,7 @@ $ tree -L 2 '/home/ilg/opt/xPacks/cmake/xpack-cmake-3.18.3-1'
 
 ### Test
 
-To check if CMake starts, use something like:
+To check if the manually installed CMake starts, use something like:
 
 ```console
 $ ~/opt/xPacks/cmake/xpack-cmake-3.18.3-1/bin/cmake --version

@@ -124,7 +124,7 @@ for the executable in this location." %}
 
 ### Test
 
-To check if `make` starts, use something like:
+To check if the manually installed `make` starts, use something like:
 
 ```
 C:\Users\ilg>C:\Users\ilg\AppData\Roaming\xPacks\windows-build-tools\xpack-windows-build-tools-2.12.2\bin\make --version

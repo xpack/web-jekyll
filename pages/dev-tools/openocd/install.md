@@ -129,7 +129,7 @@ The result is a structure like:
 
 ### Test
 
-To check if OpenOCD starts, use something like:
+To check if the manually installed OpenOCD starts, use something like:
 
 ```
 C:\Users\ilg>C:\Users\ilg\AppData\Roaming\xPacks\openocd\xpack-openocd-0.10.0-13\bin\openocd.exe --version
@@ -264,7 +264,7 @@ $ tree -L 2 /Users/ilg/Library/xPacks/openocd/xpack-openocd-0.10.0-13
 
 ### Test
 
-To check if OpenOCD starts, use something like:
+To check if the manually installed OpenOCD starts, use something like:
 
 ```console
 $ ~/opt/xPacks/openocd/xpack-openocd-0.10.0-13/bin/openocd --version
@@ -359,7 +359,7 @@ $ tree -L 2 '/home/ilg/opt/xPacks/openocd/xpack-openocd-0.10.0-13'
 
 ### Test
 
-To check if OpenOCD starts, use something like:
+To check if the manually installed OpenOCD starts, use something like:
 
 ```console
 $ ~/opt/xPacks/openocd/xpack-openocd-0.10.0-13/bin/openocd --version

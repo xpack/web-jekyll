@@ -111,7 +111,7 @@ and `.content` to store the unpacked archive." %}
 
 ### Test
 
-To check if Meson starts, use something like:
+To check if the manually installed Meson starts, use something like:
 
 ```
 C:\Users\ilg>C:\Users\ilg\AppData\Roaming\xPacks\meson-build\xpack-meson-0.55.3-1\bin\meson.exe --version
@@ -168,7 +168,7 @@ $ tree -L 2 /Users/ilg/Library/xPacks/meson-build/xpack-meson-build-0.55.3-1
 
 ### Test
 
-To check if Meson starts, use something like:
+To check if the manually installed Meson starts, use something like:
 
 ```console
 $ ~/opt/xPacks/meson-build/xpack-meson-build-0.55.3-1/bin/meson --version
@@ -228,7 +228,7 @@ $ tree -L 2 '/home/ilg/opt/xPacks/meson-build/xpack-meson-build-0.55.3-1'
 
 ### Test
 
-To check if Meson starts, use something like:
+To check if the manually installed Meson starts, use something like:
 
 ```console
 $ ~/opt/xPacks/meson-build/xpack-meson-build-0.55.3-1/bin/meson --version

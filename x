@@ -6,3 +6,7 @@
 
 {{ easy_install }}
 {{ manual_install }}
+
+@xpack-dev-tools/
+
+.content/

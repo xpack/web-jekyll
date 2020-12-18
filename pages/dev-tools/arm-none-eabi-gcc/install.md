@@ -136,7 +136,7 @@ for the executables in this location." %}
 
 ### Test
 
-To check if GCC starts, use something like:
+To check if the manually installed GCC starts, use something like:
 
 ```
 C:\Users\ilg>C:\Users\ilg\AppData\Roaming\xPacks\arm-none-eabi-gcc\xpack-arm-none-eabi-gcc-9.2.1-1.1\bin\arm-none-eabi-gcc.exe" --version
@@ -259,7 +259,7 @@ $ tree -L 2 /Users/ilg/Library/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-
 
 ### Test
 
-To check if GCC starts, use something like:
+To check if the manually installed GCC starts, use something like:
 
 ```console
 $ ~/opt/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-9.2.1-1.1/bin/arm-none-eabi-gcc --version
@@ -402,7 +402,7 @@ $ tree -L 2 /home/ilg/opt/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-9.2.1
 
 ### Test
 
-To check if GCC starts, use something like:
+To check if the manually installed GCC starts, use something like:
 
 ```console
 $ ~/opt/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-9.2.1-1.1/bin/arm-none-eabi-gcc --version
