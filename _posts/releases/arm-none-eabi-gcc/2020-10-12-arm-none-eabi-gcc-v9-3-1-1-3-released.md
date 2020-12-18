@@ -174,7 +174,7 @@ Support for Python 2 was discontinued.
 Support for TUI was added to GDB. The `ncurses` library (v6.2) was added to
 the distribution.
 
-Note: TUI is not available on Windows.
+{% include note.html content="TUI is not available on Windows." %}
 
 ## Bug fixes
 

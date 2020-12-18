@@ -47,7 +47,9 @@ The new Windows Build Tools can be downloaded from the [GitHub Release]({{ page.
 
 Separate archive files are provided for Windows 32/64-bit systems.
 
-Note: by design, installing the xPack binaries does not require administrative rights, thus only portable archives are provided; Windows setups are no longer supported.
+{% include note.html content="By design, installing the xPack binaries
+does not require administrative rights, thus only portable archives are
+provided; Windows setups are no longer supported." %}
 
 ## Checksums
 

@@ -243,8 +243,9 @@ adjusted to `xpacks/.bin:node_modules/.bin:$PATH`, so the exact versions
 of the tools required in the dependencies list will be preferred over any
 existing tools with the same names that might be present in the `PATH`.
 
-(Note: the `@xpack/xpbuild` package referred above is not yet available with
-this name, do not try to use it yet.)
+{% include note.html content="The `@xpack/xpbuild` package referred above
+is not yet available with
+this name, do not try to use it yet." %}
 
 ### Binary xPacks are probably huge, aren't they?
 

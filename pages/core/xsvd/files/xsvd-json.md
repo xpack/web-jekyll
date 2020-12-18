@@ -45,8 +45,7 @@ Numeric values that may represent values with different units may have the unit 
 * `"hfosc": "13800 kHz"`
 * `"lfosc": "32768 Hz"`
 
-Note: currently not used.
-
+{% include note.html content="Currently not used." %}
 
 ### Reset masks
 
@@ -404,7 +403,7 @@ A field may define an enumeration in order to make the display more intuitive to
 
 The field names `mask`, `position` and `offset` are reserved.
 
-Note: Array of fields are currently not implemented.
+{% include note.html content="Array of fields are currently not implemented." %}
 
 
 | Parent |
@@ -471,7 +470,7 @@ This information generates an enum in the device header file. The debugger may u
 | `headerEnumName` | string | An alternate identifier for the enumeration section when used to generate the device header. The default is the hierarchical enumeration type in the device header file. The user is responsible for the uniqueness across the device. |
 | `values` | collection | A map of enumerated values objects. The map keys are the enumeration numeric values (unsigned integers). |
 
-Note: `derivedFrom` is not yet implemented.
+{% include note.html content="`derivedFrom` is not yet implemented." %}
 
 Example
 

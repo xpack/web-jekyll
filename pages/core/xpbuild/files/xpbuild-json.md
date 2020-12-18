@@ -20,8 +20,9 @@ have a mandatory `name` field.
 details specific to
 the sub-folder, usually compiler options and/or symbols.
 
-Note: some sections may not strictly apply to the `xpbuild.json` file and
-should be moved to a more general document about xpbuild.
+{% include note.html content="Some sections may not strictly apply
+to the `xpbuild.json` file and
+should be moved to a more general document about xpbuild." %}
 
 ## Lower case names
 
