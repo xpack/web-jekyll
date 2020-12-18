@@ -19,6 +19,8 @@ The **xPack Ninja Build** can be installed automatically, via **xpm** (the
 recommended method), or manually, by downloading and unpacking one of the
 portable archives.
 
+{% capture easy_install %}
+
 ## Easy install
 
 The easiest way to install Ninja is by using the **binary xPack**, available as
@@ -73,6 +75,10 @@ $ xpm uninstall --global @xpack-dev-tools/ninja-build
 simply remove the `xPacks/@xpack-dev-tools/ninja-build` folder,
 or one of the versioned subfolders." %}
 
+{% endcapture %}
+
+{% capture manual_install %}
+
 ## Manual install
 
 For all platforms, the **xPack Ninja Build** binaries are released as portable
@@ -82,7 +88,23 @@ The archives can be downloaded from the
 GitHub [releases](https://github.com/xpack-dev-tools/ninja-build-xpack/releases/)
 page.
 
+{% endcapture %}
+
 {% capture windows %}
+
+{{ easy_install }}
+
+### Test
+
+To check if the xpm installed Ninja starts, use something like:
+
+```
+C:\>%USERPROFILE%\AppData\Roaming\xPacks\@xpack-dev-tools\ninja-build\{{ page.version }}-1\.content\bin\ninja.exe --version
+{{ page.version }}
+```
+
+{{ manual_install }}
+
 ### Download
 
 The Windows versions of **xPack Ninja Build** are packed as ZIP files.
@@ -123,6 +145,20 @@ C:\>%USERPROFILE%\AppData\Roaming\xPacks\ninja-build\xpack-ninja-{{ page.version
 {% endcapture %}
 
 {% capture macos %}
+
+{{ easy_install }}
+
+### Test
+
+To check if the xpm installed Ninja starts, use something like:
+
+```console
+$ ~/opt/xPacks/@xpack-dev-tools/ninja-build/{{ page.version }}-1/.content/bin/ninja --version
+{{ page.version }}
+```
+
+{{ manual_install }}
+
 ### Download
 
 The macOS version of **xPack Ninja Build** is packed as a .tar.gz archive.
@@ -177,6 +213,20 @@ $ ~/opt/xPacks/ninja-build/{{ page.version }}-1/bin/ninja --version
 {% endcapture %}
 
 {% capture linux %}
+
+{{ easy_install }}
+
+### Test
+
+To check if the xpm installed Ninja starts, use something like:
+
+```console
+$ ~/opt/xPacks/@xpack-dev-tools/ninja-build/{{ page.version }}-1/.content/bin/ninja --version
+{{ page.version }}
+```
+
+{{ manual_install }}
+
 ### Download
 
 The GNU/Linux versions of **xPack Ninja Build** are packed as plain archives.

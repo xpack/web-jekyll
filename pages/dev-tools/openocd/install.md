@@ -19,6 +19,8 @@ The **xPack OpenOCD** can be installed automatically, via **xpm** (the
 recommended method), or manually, by downloading and unpacking one of the
 portable archives.
 
+{% capture easy_install %}
+
 ## Easy install
 
 The easiest way to install OpenOCD is by using the **binary xPack**, available as
@@ -82,6 +84,10 @@ $ xpm uninstall --global @xpack-dev-tools/openocd
 simply remove the `xPacks/@xpack-dev-tools/openocd` folder,
 or one of the versioned subfolders." %}
 
+{% endcapture %}
+
+{% capture manual_install %}
+
 ## Manual install
 
 For all platforms, the **xPack OpenOCD** binaries are released as portable
@@ -91,7 +97,23 @@ The archives can be downloaded from the
 GitHub [releases](https://github.com/xpack-dev-tools/openocd-xpack/releases/)
 page.
 
+{% endcapture %}
+
 {% capture windows %}
+
+{{ easy_install }}
+
+### Test
+
+To check if the xpm installed OpenOCD starts, use something like:
+
+```
+C:\>%USERPROFILE%\AppData\Roaming\xPacks\@xpack-dev-tools\openocd\{{ page.version }}-13\.content\bin\openocd.exe --version
+xPack OpenOCD, 64-bit Open On-Chip Debugger {{ page.version }}+dev (2019-07-17-15:21)
+```
+
+{{ manual_install }}
+
 ### Download
 
 The Windows versions of **xPack OpenOCD** are packed as ZIP files.
@@ -192,6 +214,20 @@ safe side, try to always use original manufacturer drivers." %}
 {% endcapture %}
 
 {% capture macos %}
+
+{{ easy_install }}
+
+### Test
+
+To check if the xpm installed OpenOCD starts, use something like:
+
+```console
+$ ~/opt/xPacks/@xpack-dev-tools/openocd/{{ page.version }}-13/.content/bin/openocd --version
+xPack OpenOCD, 64-bit Open On-Chip Debugger {{ page.version }}+dev (2019-07-17-15:21)
+```
+
+{{ manual_install }}
+
 ### Download
 
 The macOS version of **xPack OpenOCD** is packed as a .tar.gz archive.
@@ -275,6 +311,20 @@ xPack OpenOCD, 64-bit Open On-Chip Debugger {{ page.version }}+dev (2019-07-17-1
 {% endcapture %}
 
 {% capture linux %}
+
+{{ easy_install }}
+
+### Test
+
+To check if the xpm installed OpenOCD starts, use something like:
+
+```console
+$ ~/opt/xPacks/@xpack-dev-tools/openocd/{{ page.version }}-13/.content/bin/openocd --version
+xPack OpenOCD, 64-bit Open On-Chip Debugger {{ page.version }}+dev (2019-07-17-15:21)
+```
+
+{{ manual_install }}
+
 ### Download
 
 The GNU/Linux versions of **xPack OpenOCD** are packed as plain archives.
@@ -411,13 +461,23 @@ Then restart and login again.
 If you still have problems, check your distribution documentation and
 when you have a functional solution post it on the project forum.
 
+### Test
+
+To check if the manually installed OpenOCD starts, use something like:
+
+```console
+$ ~/opt/xPacks/openocd/xpack-openocd-{{ page.version }}-13/bin/openocd --version
+xPack OpenOCD, 64-bit Open On-Chip Debugger {{ page.version }}+dev (2019-07-17-15:21)
+```
+
 {% endcapture %}
 
 {% include platform-tabs.html %}
 
 ## Testing
 
-To test if OpenOCD is able to connect to a specific board, it is generally
+To test if the xpm installed OpenOCD is able to connect to a specific board,
+it is generally
 necessary to select the interface and the processor. As a shortcut, for
 some well known boards, there are ready made configuration files
 to set both the interface and the processor. For example, on
@@ -425,7 +485,7 @@ macOS, to test a connection via ST/LINK v2 to the STM32F4DISCOVERY board,
 you can use the sample below:
 
 ```console
-$ ~/opt/xPacks/openocd/xpack-openocd-{{ page.version }}-13/bin/openocd -f board/stm32f4discovery.cfg
+$ ~/opt/xPacks/@xpack-dev-tools/openocd/{{ page.version }}-13/.content/bin/openocd -f board/stm32f4discovery.cfg
 xPack OpenOCD, 64-bit Open On-Chip Debugger {{ page.version }}+dev (2019-07-17-15:21)
 Licensed under GNU GPL v2
 For bug reports, read

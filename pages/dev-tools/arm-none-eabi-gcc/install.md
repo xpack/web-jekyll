@@ -19,6 +19,8 @@ The **xPack GNU Arm Embedded GCC** can be installed automatically, via **xpm** (
 recommended method), or manually, by downloading and unpacking one of the
 portable archives.
 
+{% capture easy_install %}
+
 ## Easy install
 
 The easiest way to install GNU Arm Embedded GCC is by using the
@@ -92,6 +94,10 @@ $ xpm uninstall --global @xpack-dev-tools/arm-none-eabi-gcc
 simply remove the `xPacks/@xpack-dev-tools/arm-none-eabi-gcc` folder,
 or one of the versioned subfolders." %}
 
+{% endcapture %}
+
+{% capture manual_install %}
+
 ## Manual install
 
 For all platforms, the **xPack GNU Arm Embedded GCC** binaries are
@@ -100,8 +106,22 @@ archives that can be installed in any location.
 
 The archives can be downloaded from the
 GitHub [releases](https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases/) page.
+{% endcapture %}
 
 {% capture windows %}
+
+{{ easy_install }}
+
+### Test
+
+To check if the xpm installed GCC starts, use something like:
+
+```
+C:\>%USERPROFILE%\AppData\Roaming\xPacks\@xpack-dev-tool\arm-none-eabi-gcc\{{ page.version }}-1.1.1\.content\bin\arm-none-eabi-gcc.exe" --version
+arm-none-eabi-gcc (xPack GNU Arm Embedded GCC, 64-bit) {{ page.version }} 20191025 (release) [ARM/arm-9-branch revision 277599]
+```
+
+{{ manual_install }}
 
 ### Download
 
@@ -120,7 +140,8 @@ The `win32` part is confusing, but we have to leave with it." %}
 
 ### Unpack
 
-Unpack the archive and copy the versioned folder into the `%USERPROFILE%\AppData\Roaming\xPacks\arm-none-eabi-gcc`
+Unpack the archive and copy the versioned folder into the
+`%USERPROFILE%\AppData\Roaming\xPacks\arm-none-eabi-gcc`
 (for example `C:\Users\ilg\AppData\Roaming\xPacks\arm-none-eabi-gcc`) folder;
 according to Microsoft, `AppData\Roaming` is the recommended location for
 installing user specific packages.
@@ -146,12 +167,27 @@ C:\>%USERPROFILE%\AppData\Roaming\xPacks\arm-none-eabi-gcc\xpack-arm-none-eabi-g
 arm-none-eabi-gcc (xPack GNU Arm Embedded GCC, 64-bit) {{ page.version }} 20191025 (release) [ARM/arm-9-branch revision 277599]
 ```
 
+### Windows Build Tools
+
 {% include tip.html content="Since Windows does not provide the GNU make
 binaries, it is recommended to also install the **Windows Build Tools**." %}
 
 {% endcapture %}
 
 {% capture macos %}
+
+{{ easy_install }}
+
+### Test
+
+To check if the xpm installed GCC starts, use something like:
+
+```console
+$ ~/opt/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/{{ page.version }}-1.1.1/.content/bin/arm-none-eabi-gcc --version
+arm-none-eabi-gcc (xPack GNU Arm Embedded GCC, 64-bit) {{ page.version }} 20191025 (release) [ARM/arm-9-branch revision 277599]
+```
+
+{{ manual_install }}
 
 ### Download
 
@@ -272,6 +308,19 @@ arm-none-eabi-gcc (xPack GNU Arm Embedded GCC, 64-bit) {{ page.version }} 201910
 {% endcapture %}
 
 {% capture linux %}
+
+{{ easy_install }}
+
+### Test
+
+To check if the xpm installed GCC starts, use something like:
+
+```console
+$ ~/opt/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/{{ page.version }}-1.1.1/.content/bin/arm-none-eabi-gcc --version
+arm-none-eabi-gcc (xPack GNU Arm Embedded GCC, 64-bit) {{ page.version }} 20191025 (release) [ARM/arm-9-branch revision 277599]
+```
+
+{{ manual_install }}
 
 ### Download
 

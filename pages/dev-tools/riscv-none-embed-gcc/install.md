@@ -19,6 +19,8 @@ The **xPack GNU RISC-V Embedded GCC** can be installed automatically, via **xpm*
 recommended method), or manually, by downloading and unpacking one of the
 portable archives.
 
+{% capture easy_install %}
+
 ## Easy install
 
 The easiest way to install GNU RISC-V Embedded GCC is by using the
@@ -88,6 +90,10 @@ $ xpm uninstall --global @xpack-dev-tools/riscv-none-embed-gcc
 simply remove the `xPacks/@xpack-dev-tools/riscv-none-embed-gcc` folder,
 or one of the versioned subfolders." %}
 
+{% endcapture %}
+
+{% capture manual_install %}
+
 ## Manual install
 
 For all platforms, the **xPack GNU RISC-V Embedded GCC** binaries are
@@ -97,7 +103,23 @@ archives that can be installed in any location.
 The archives can be downloaded from the
 GitHub [releases](https://github.com/xpack-dev-tools/riscv-none-embed-gcc-xpack/releases/) page.
 
+{% endcapture %}
+
 {% capture windows %}
+
+{{ easy_install }}
+
+### Test
+
+To check if the xpm installed GCC starts, use something like:
+
+```
+C:\>%USERPROFILE%\AppData\Roaming\xPacks\@xpack-dev-tools\riscv-none-embed-gcc\{{ page.version }}-3.1\.content\bin\riscv-none-embed-gcc.exe" --version
+riscv-none-embed-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) {{ page.version }}
+```
+
+{{ manual_install }}
+
 ### Download
 
 The Windows versions of **xPack GNU RISC-V Embedded GCC** are packed as ZIP files.
@@ -136,8 +158,8 @@ for the executable in this location." %}
 To check if the manually installed GCC starts, use something like:
 
 ```
-C:\>%USERPROFILE%\AppData\Roaming\xPacks\xpack-riscv-none-embed-gcc-{{ page.version }}-3.1\bin\riscv-none-embed-gcc.exe" --version
-riscv-none-embed-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) 8.2.0
+C:\>%USERPROFILE%\AppData\Roaming\xPacks\riscv-none-embed-gcc\xpack-riscv-none-embed-gcc-{{ page.version }}-3.1\bin\riscv-none-embed-gcc.exe" --version
+riscv-none-embed-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) {{ page.version }}
 ```
 
 {% include tip.html content="Since Windows does not provide the GNU make
@@ -146,6 +168,20 @@ binaries, it is recommended to also install the **Windows Build Tools**." %}
 {% endcapture %}
 
 {% capture macos %}
+
+{{ easy_install }}
+
+### Test
+
+To check if the xpm installed GCC starts, use something like:
+
+```console
+$ ~/opt/xPacks/@xpack-dev-tools/riscv-none-embed-gcc/{{ page.version }}-3.1/.content/bin/riscv-none-embed-gcc --version
+riscv-none-embed-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) {{ page.version }}
+```
+
+{{ manual_install }}
+
 ### Download
 
 The macOS version of **xPack GNU RISC-V Embedded GCC** is packed as a .tar.gz archive.
@@ -199,7 +235,7 @@ $ tree -L 2 /Users/ilg/opt/xPacks/riscv-none-embed-gcc/xpack-riscv-none-embed-gc
 │   ├── riscv-none-embed-elfedit
 │   ├── riscv-none-embed-g++
 │   ├── riscv-none-embed-gcc
-│   ├── riscv-none-embed-gcc-8.2.0
+│   ├── riscv-none-embed-gcc-{{ page.version }}
 │   ├── riscv-none-embed-gcc-ar
 │   ├── riscv-none-embed-gcc-nm
 │   ├── riscv-none-embed-gcc-ranlib
@@ -253,12 +289,26 @@ To check if the manually installed GCC starts, use something like:
 
 ```console
 $ ~/opt/xPacks/riscv-none-embed-gcc/xpack-riscv-none-embed-gcc-{{ page.version }}-3.1/bin/riscv-none-embed-gcc --version
-riscv-none-embed-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) 8.2.0
+riscv-none-embed-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) {{ page.version }}
 ```
 
 {% endcapture %}
 
 {% capture linux %}
+
+{{ easy_install }}
+
+### Test
+
+To check if the xpm installed GCC starts, use something like:
+
+```console
+$ ~/opt/xPacks/@xpack-dev-tools/riscv-none-embed-gcc/{{ page.version }}-3.1/.content/bin/riscv-none-embed-gcc --version
+riscv-none-embed-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) {{ page.version }}
+```
+
+{{ manual_install }}
+
 ### Download
 
 The GNU/Linux versions of **xPack GNU RISC-V Embedded GCC** are packed as
@@ -325,7 +375,7 @@ $ tree -L 2 /home/ilg/opt/xPacks/riscv-none-embed-gcc/xpack-riscv-none-embed-gcc
 │   ├── riscv-none-embed-elfedit
 │   ├── riscv-none-embed-g++
 │   ├── riscv-none-embed-gcc
-│   ├── riscv-none-embed-gcc-8.2.0
+│   ├── riscv-none-embed-gcc-{{ page.version }}
 │   ├── riscv-none-embed-gcc-ar
 │   ├── riscv-none-embed-gcc-nm
 │   ├── riscv-none-embed-gcc-ranlib
@@ -385,7 +435,7 @@ To check if the manually installed GCC starts, use something like:
 
 ```console
 $ ~/opt/xPacks/riscv-none-embed-gcc/xpack-riscv-none-embed-gcc-{{ page.version }}-3.1/bin/riscv-none-embed-gcc --version
-riscv-none-embed-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) 8.2.0
+riscv-none-embed-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) {{ page.version }}
 ```
 
 {% endcapture %}

@@ -18,6 +18,8 @@ The **xPack Windows Build Tools** can be installed automatically, via **xpm** (t
 recommended method), or manually, by downloading and unpacking one of the
 portable archives.
 
+{% capture easy_install %}
+
 ## Easy install
 
 The easiest way to install Windows Build Tools is by using the **binary xPack**, available as
@@ -81,6 +83,10 @@ $ xpm uninstall --global @xpack-dev-tools/windows-build-tools
 simply remove the `xPacks/@xpack-dev-tools/windows-build-tools` folder,
 or one of the versioned subfolders." %}
 
+{% endcapture %}
+
+{% capture manual_install %}
+
 ## Manual install
 
 For all platforms, the **xPack Windows Build Tools** binaries are released as portable
@@ -90,7 +96,25 @@ The archives can be downloaded from the
 GitHub [releases](https://github.com/xpack-dev-tools/windows-build-tools-xpack/releases/)
 page.
 
+{% endcapture %}
+
 {% capture windows %}
+
+{{ easy_install }}
+
+### Test
+
+To check if the xpm installed `make` starts, use something like:
+
+```
+C:\>%USERPROFILE%\AppData\Roaming\xPacks\@xpack-dev-tools\windows-build-tools\{{ page.version }}\.content\bin\make --version
+GNU Make 4.1
+Built for i686-w64-mingw32
+...
+```
+
+{{ manual_install }}
+
 ### Download
 
 The Windows versions of **xPack Windows Build Tools** are packed as ZIP files.
@@ -132,10 +156,7 @@ To check if the manually installed `make` starts, use something like:
 C:\>%USERPROFILE%\AppData\Roaming\xPacks\windows-build-tools\xpack-windows-build-tools-{{ page.version }}\bin\make --version
 GNU Make 4.1
 Built for i686-w64-mingw32
-Copyright (C) 1988-2014 Free Software Foundation, Inc.
-License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
-This is free software: you are free to change and redistribute it.
-There is NO WARRANTY, to the extent permitted by law.
+...
 ```
 
 {% endcapture %}
@@ -153,4 +174,3 @@ Not required on GNU/Linux, use the system tools.
 {% endcapture %}
 
 {% include platform-tabs.html %}
-

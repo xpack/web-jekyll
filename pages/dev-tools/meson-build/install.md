@@ -19,6 +19,8 @@ The **xPack Meson Build** can be installed automatically, via **xpm** (the
 recommended method), or manually, by downloading and unpacking one of the
 portable archives.
 
+{% capture easy_install %}
+
 ## Easy install
 
 The easiest way to install Meson is by using the **binary xPack**, available as
@@ -73,6 +75,10 @@ $ xpm uninstall --global @xpack-dev-tools/meson-build
 simply remove the `xPacks/@xpack-dev-tools/meson-build` folder,
 or one of the versioned subfolders." %}
 
+{% endcapture %}
+
+{% capture manual_install %}
+
 ## Manual install
 
 For all platforms, the **xPack Meson Build** binaries are released as portable
@@ -82,7 +88,23 @@ The archives can be downloaded from the
 GitHub [releases](https://github.com/xpack-dev-tools/meson-build-xpack/releases/)
 page.
 
+{% endcapture %}
+
 {% capture windows %}
+
+{{ easy_install }}
+
+### Test
+
+To check if the xpm installed Meson starts, use something like:
+
+```
+C:\>%USERPROFILE%\AppData\Roaming\xPacks\@xpack-dev-tools\{{ page.version }}-1\.content\bin\meson.exe --version
+{{ page.version }}
+```
+
+{{ manual_install }}
+
 ### Download
 
 The Windows versions of **xPack Meson Build** are packed as ZIP files.
@@ -123,6 +145,20 @@ C:\>%USERPROFILE%\AppData\Roaming\xPacks\meson-build\xpack-meson-{{ page.version
 {% endcapture %}
 
 {% capture macos %}
+
+{{ easy_install }}
+
+### Test
+
+To check if the xpm installed Meson starts, use something like:
+
+```console
+$ ~/opt/xPacks/@xpack-dev-tools/meson-build/{{ page.version }}-1/.content/bin/meson --version
+{{ page.version }}
+```
+
+{{ manual_install }}
+
 ### Download
 
 The macOS version of **xPack Meson Build** is packed as a .tar.gz archive.
@@ -180,6 +216,20 @@ $ ~/opt/xPacks/meson-build/xpack-meson-build-{{ page.version }}-1/bin/meson --ve
 {% endcapture %}
 
 {% capture linux %}
+
+{{ easy_install }}
+
+### Test
+
+To check if the xpm installed Meson starts, use something like:
+
+```console
+$ ~/opt/xPacks/@xpack-dev-tools/meson-build/{{ page.version }}-1/.content/bin/meson --version
+{{ page.version }}
+```
+
+{{ manual_install }}
+
 ### Download
 
 The GNU/Linux versions of **xPack Meson Build** are packed as plain archives.

@@ -75,6 +75,10 @@ $ xpm uninstall --global @xpack-dev-tools/cmake
 simply remove the `xPacks/@xpack-dev-tools/cmake` folder,
 or one of the versioned subfolders." %}
 
+{% endcapture %}
+
+{% capture manual_install %}
+
 ## Manual install
 
 For all platforms, the **xPack CMake** binaries are released as portable
@@ -84,7 +88,25 @@ The archives can be downloaded from the
 GitHub [releases](https://github.com/xpack-dev-tools/cmake-xpack/releases/)
 page.
 
+{% endcapture %}
+
 {% capture windows %}
+
+{{ easy_install }}
+
+### Test
+
+To check if the xpm installed CMake starts, use something like:
+
+```
+C:\>%USERPROFILE%\AppData\Roaming\xPacks\@xpack-dev-tools\cmake\{{ page.version }}-1.1\.content\bin\cmake.exe --version
+cmake version {{ page.version }}
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+```
+
+{{ manual_install }}
+
 ### Download
 
 The Windows versions of **xPack CMake** are packed as ZIP files.
@@ -120,11 +142,29 @@ To check if the manually installed CMake starts, use something like:
 ```
 C:\>%USERPROFILE%\AppData\Roaming\xPacks\cmake\xpack-cmake-{{ page.version }}-1\bin\cmake.exe --version
 cmake version {{ page.version }}
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
 ```
 
 {% endcapture %}
 
 {% capture macos %}
+
+{{ easy_install }}
+
+### Test
+
+To check if the xpm installed CMake starts, use something like:
+
+```console
+$ ~/opt/xPacks/@xpack-dev-tools/cmake/{{ page.version }}-1.1/.content/bin/cmake --version
+cmake version {{ page.version }}
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+```
+
+{{ manual_install }}
+
 ### Download
 
 The macOS version of **xPack CMake** is packed as a .tar.gz archive.
@@ -190,6 +230,22 @@ cmake version {{ page.version }}
 {% endcapture %}
 
 {% capture linux %}
+
+{{ easy_install }}
+
+### Test
+
+To check if the xpm installed CMake starts, use something like:
+
+```console
+$ ~/opt/xPacks/@xpack-dev-tools/cmake/{{ page.version }}-1.1/.content/bin/cmake --version
+cmake version {{ page.version }}
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+```
+
+{{ manual_install }}
+
 ### Download
 
 The GNU/Linux versions of **xPack CMake** are packed as plain archives.
@@ -258,12 +314,10 @@ To check if the manually installed CMake starts, use something like:
 ```console
 $ ~/opt/xPacks/cmake/xpack-cmake-{{ page.version }}-1/bin/cmake --version
 cmake version {{ page.version }}
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
 ```
 
 {% endcapture %}
 
 {% include platform-tabs.html %}
-
-## Testing
-
-TODO
