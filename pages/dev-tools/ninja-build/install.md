@@ -111,9 +111,9 @@ The Windows versions of **xPack Ninja Build** are packed as ZIP files.
 Download the latest version named like:
 
 - `xpack-ninja-build-{{ page.version }}-1-win32-x64.zip`
-- `xpack-ninja-build-{{ page.version }}-1-win32-x32.zip`
+- `xpack-ninja-build-{{ page.version }}-1-win32-ia32.zip`
 
-Select the `-x64` file for 64-bit Windows machines and the `-x32` file
+Select the `-x64` file for 64-bit Windows machines and the `-ia32` file
 for 32-bit Windows machines.
 
 {% include note.html content="In case you wonder where the suffix comes
@@ -233,11 +233,11 @@ The GNU/Linux versions of **xPack Ninja Build** are packed as plain archives.
 Download the latest version named like:
 
 - `xpack-ninja-build-{{ page.version }}-1-linux-x64.tgz`
-- `xpack-ninja-build-{{ page.version }}-1-linux-x32.tgz`
+- `xpack-ninja-build-{{ page.version }}-1-linux-ia32.tgz`
 
 As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
 CentOS, but can be executed on most recent GNU/Linux distributions.
-Select the `-x64` file for 64-bit machines and the `-x32` file for 32-bit
+Select the `-x64` file for 64-bit machines and the `-ia32` file for 32-bit
 machines.
 
 ### Unpack
