@@ -244,13 +244,11 @@ The SHA-256 hashes for the files are:
 061615d3e35d026cfa3ef8999f2bdaef2181b56e61029f58c8e0f1054bba046b
 xpack-arm-none-eabi-gcc-10.2.1-1.1-darwin-x64.tar.gz
 
-
-c75c5f0a2bd44cf5304762977d7057956ba5976be1cad73e7f218a55f6e06495
+88b4f581a14b0dc2ee2313f4342f38996a4c8f3e4d09d9f70a6c4a4b9ea360e7
 xpack-arm-none-eabi-gcc-10.2.1-1.1-linux-arm64.tar.gz
 
-58ec0ec72cff5d512381492c19ebb29472ee9fa77e03b33172f759c3e1aa1d6b
+b726faccb8a3c426012592145d9d49a9b998a950613a4848bf8d899a8929ae34
 xpack-arm-none-eabi-gcc-10.2.1-1.1-linux-arm.tar.gz
-
 
 8adaca8af367a54d1acd2b274cfdc18384b87fbe0ba613322ea3ead20677a132
 xpack-arm-none-eabi-gcc-10.2.1-1.1-linux-ia32.tar.gz
