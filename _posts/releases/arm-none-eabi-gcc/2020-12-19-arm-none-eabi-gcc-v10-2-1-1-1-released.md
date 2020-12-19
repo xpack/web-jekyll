@@ -40,6 +40,10 @@ are the **Raspberry Pi** class devices." %}
 
 The binary files are available from GitHub [releases]({{ page.download_url }}).
 
+{% include note.html content="For consistency with the Node.js naming
+conventions, the names of the Intel 32-bit images are now suffixed with
+`-ia32`." %}
+
 ## Install
 
 The full details of installing the **xPack GNU Arm Embedded GCC** on
