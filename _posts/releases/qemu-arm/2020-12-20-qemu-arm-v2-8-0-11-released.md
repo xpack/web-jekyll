@@ -1,7 +1,7 @@
 ---
 title:  xPack QEMU Arm v2.8.0-11 released
 
-summary: "Version 2.8.0-11 is a maintenance release; it fixes one bug and updates to the new, more robust, build scripts."
+summary: "Version 2.8.0-11 is a maintenance release; it add support for STM32F407VGTx and STM32F429ZITx."
 
 version: 2.8.0-11
 npm_subversion: 1
