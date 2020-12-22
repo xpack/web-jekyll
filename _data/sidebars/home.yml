@@ -72,19 +72,6 @@ entries:
       url: /meson-build/
       output: web
 
-  - title: News
-    output: web
-    folderitems:
-    - title: Latest News
-      url: /news/
-      output: web
-    - title: Archive
-      url: /news/archive/
-      output: web
-    - title: Tags
-      url: /tags/
-      output: web
-
   - title: Support
     output: web
     folderitems:

@@ -5,13 +5,20 @@
 topnav:
 - title: Topnav
   items:
-    - title: News
-      url: /news
 
 #Topnav dropdowns
 topnav_dropdowns:
 - title: Topnav dropdowns
   folders:
+    - title: News
+      folderitems:
+        - title: Latest News
+          url: /news/
+        - title: Archive
+          url: /news/archive/
+        - title: Tags
+          url: /tags/
+
     - title: Projects
       folderitems:
       - title: Eclipse Embedded CDT
