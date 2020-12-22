@@ -13,15 +13,12 @@ entries:
       output: web
       url: /
       type: homepage
-    - title: Intro
+    - title: Intro (xPack 101)
       output: web
       url: /intro/
     - title: Install prerequisites
       output: web
       url: /install/
-    - title: About
-      output: web
-      url: /about/
 
   - title: Core Tools
     output: web
@@ -105,10 +102,13 @@ entries:
       url: /maintain/
       output: web
 
-  - title: License
+  - title: Project
     output: web
     folderitems:
 
-    - title: MIT
+    - title: License (MIT)
       output: web
       external_url: https://opensource.org/licenses/MIT
+    - title: About
+      output: web
+      url: /about/
