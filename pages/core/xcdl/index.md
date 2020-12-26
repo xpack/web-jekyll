@@ -17,9 +17,8 @@ In a later iteration, XCDL was extended to include definitions from [CMSIS PDSC]
 The **XCDL** files are used to
 
 * define the device features
-* define the board features
+* define the platform/board features
 * define the software components and configurations (TBD)
-
 
 File formats
 
