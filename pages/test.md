@@ -20,6 +20,10 @@ Text _italic_ text.
 
 Text `code` text.
 
+Text ~~strikethrough~~ text.
+
+## Lists
+
 A list:
 
 - one
@@ -77,6 +81,7 @@ Right aligned:
 ## Special sections
 
 {% include note.html content="" %}
+
 {% include note.html content="Lorem ipsum dolor sit amet, no quo doming labore doctus, eum commune rationibus at." %}
 
 {% include tip.html content="Lorem ipsum dolor sit amet, no quo doming labore doctus, eum commune rationibus at." %}
