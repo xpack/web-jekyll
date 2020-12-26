@@ -26,4 +26,7 @@ entries:
     - title: Overview
       url: /xcdl/
       output: web
+    - title: Old home page
+      url: /xcdl/outdated/
+      output: web
 
