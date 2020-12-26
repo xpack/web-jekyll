@@ -720,6 +720,7 @@ Other links:
 - [Crockford Code Conventions for the JavaScript Programming Language](http://javascript.crockford.com/code.html)
 - [felixge/node-style-guide](https://github.com/felixge/node-style-guide)
 - [RisingStack/node-style-guide](https://github.com/RisingStack/node-style-guide)
+- [kettanaito/naming-cheatsheet](https://github.com/kettanaito/naming-cheatsheet)
 
 ## Linting Tools
 
