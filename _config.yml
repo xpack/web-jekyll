@@ -5,7 +5,7 @@ url: https://xpack.github.io
 permalink: /blog/:year/:month/:day/:title/
 
 # Update this after editing the CSS files, to force a cache update.
-css-date: 201907181733
+css-date: 202012261617
 
 repository: xpack/xpack.github.io
 
