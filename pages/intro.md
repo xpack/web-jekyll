@@ -36,7 +36,7 @@ a simple and uniform solution of
 installing different versions of the same package in different
 folders, and managing dependencies.
 
-## Why bothering to manage versions when auto-configure can sort out the differences?
+## Why bother to manage versions when auto-configure can sort out the differences?
 
 The traditional way of dealing with different versions and variations between
 systems is to add a complex auto-configure mechanism that is able to detect
@@ -77,7 +77,7 @@ depend on other shared libraries or tools.
 
 **xPack**, pronounced _**ɛks-pak**_, can be understood as _Universal Package_,
 or _Any Type Package_, and tries to suggest that, when compared to
-npm packages (which are basically about JavaScript), xPacks are more
+npm packages (which are basically JavaScript packages), xPacks are more
 general, and not linked/limited to a specific programming language.
 
 Initially the _x_ came from _eXtended_, so _eXtended Packages_ can
@@ -236,9 +236,9 @@ installing the module, npm will
 add a folder `node_modules/.bin` where a link to the `xpbuild` executable
 will be created (or a `xpbuild.cmd` stub on Windows).
 
-TODO: show the output of tree on the node_modules folder.
+TODO: show the output of the `tree` command on the `node_modules` folder.
 
-When running actions like `npm run build`, the `PATH` is automatically
+When running actions like `xpm run build`, the `PATH` is automatically
 adjusted to `xpacks/.bin:node_modules/.bin:$PATH`, so the exact versions
 of the tools required in the dependencies list will be preferred over any
 existing tools with the same names that might be present in the `PATH`.
