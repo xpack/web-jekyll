@@ -8,13 +8,14 @@ date: 2015-10-25 12:00:00 +0200
 
 ## Introduction
 
-The [XCDL project](https://github.com/xcdl) defines and implements a component framework, as a set of metadata and a collection of tools specifically designed to configure and build complex, package based, multi-variant (multi-architecture, multi-board, multi-toolchain) embedded projects. It is inspired by eCos CDL and also incorporates some ARM CMSIS Pack concepts. The primary projects to benefit from XCDL are:
+The [XCDL project](https://xpack.github.io/xcdl/outdated) defines and implements a component framework, as a set of metadata and a collection of tools specifically designed to configure and build complex, package based, multi-variant (multi-architecture, multi-board, multi-toolchain) embedded projects. It is inspired by eCos CDL and also incorporates some ARM CMSIS Pack concepts. The primary projects to benefit from XCDL are:
 
-- [xPacks](https://github.com/xpacks) (as repository for packages/components)
-- [µOS++ IIIe](http://micro-os-plus.livius.net/) (as content for the components)
-- [GNU ARM Eclipse](http://gnuarmeclipse.github.io/)  (as graphical tools to manage the components).
+- [xPacks](https://github.com/xpacks/) (as repository for packages/components)
+- [µOS++ IIIe](http://github.com/micro-os-plus/) (as content for the components)
+- [Eclipse Embedded CDT](https://github.com/eclipse-embed-cdt/)  (as graphical tools to manage the components).
 
-The XCDL project is hosted on [GitHub](https://github.com/xcdl).
+The XCDL project was initially hosted on [GitHub](https://github.com/xcdl/),
+but now it is part of the xPack project.
 
 ## Credits
 
@@ -58,7 +59,7 @@ TBD
 
 ## Developer
 
-- [JavaScript style guide]({{ site.baseurl }}/xcdl/develop/js-style-guide/)
+- [JavaScript style guide]({{ site.baseurl }}/develop/js-style-guide/)
 
 ## License
 
@@ -111,7 +112,7 @@ For an exhaustive list, see [Wikipedia](https://en.wikipedia.org/wiki/List_of_bu
 
 For an exhaustive list see [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_continuous_integration_software).
 
-- [Hudson](http://hudson-ci.org/) (the original Sun project, donated by Oracle to the Eclipse Foundation)
+- [Hudson](https://www.eclipse.org/hudson/) (the original Sun project, donated by Oracle to the Eclipse Foundation)
 - [Jenkins](http://jenkins-ci.org/) (the more active fork, backed by the project creator)
 - [Travis](https://travis-ci.org) (the GitHub prefered solution, very good integration)
 
