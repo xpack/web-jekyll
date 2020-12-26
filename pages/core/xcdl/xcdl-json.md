@@ -10,6 +10,9 @@ date: 2017-10-10 19:59:00 +0300
 
 The **XCDL** format describes metadata used to define various objects, from boards and devices, to software components.
 
+{% include note.html content="Version 0.3.0 is currnetly _work in
+progress_ and will be implemented in Eclipse and other tools when ready." %}
+
 ## File conventions
 
 ### JSON Properties
@@ -28,7 +31,8 @@ To simplify usage, except named children, collections cannot have other properti
 
 ## File names
 
-Specific files have names with a prefix, in singular or plural:
+By definition, XDL files are identified by the suffix `xcdl.json`, and
+can be prefixed by anything, preferably separated by a dash, like:
 
 * `devices-xcdl.json` or `device-xcdl.json`
 * `boards-xcdl.json` or `board-xcdl.json`
@@ -42,14 +46,15 @@ The XCDL file is a hierarchy of objects, with the JSON root on top.
 | Properties | Type | Description |
 |:-----------|:-----|:------------|
 | `schemaVersion` | string | The version is used by the parser to identify different file formats. |
-| `mcus` | object | A parent for all MCU related definitions. |
+| `cpus` | object | A parent for all CPU related definitions. |
+| `mcus` | object | A parent for all MCU related definitions (deprecated since 0.3 in favour of `cpus`). |
 
 Example
 
 ```json
 {
-    "schemaVersion": "0.1.0",
-    "mcus": {
+    "schemaVersion": "0.3.0",
+    "cpus": {
         "families": {
             "fe": {
                 "...": "..."
@@ -59,9 +64,17 @@ Example
 }
 ```
 
-### The _mcu_ object
+### The _cpu_ object (since 0.3)
 
-The MCU is the top-most object, and usually contains one MCU family.
+The CPU is the top-most object, and usually contains one CPU/MCU family.
+
+| Properties | Type | Description |
+|:-----------|:-----|:------------|
+| `families` | collection | A map of family objects. The keys are internal IDs used to refer to the family. |
+
+### The _mcu_ object (deprecated since 0.3)
+
+The MCU is the top-most object, and usually contains one CPU/MCU family.
 
 | Properties | Type | Description |
 |:-----------|:-----|:------------|
@@ -71,7 +84,8 @@ The MCU is the top-most object, and usually contains one MCU family.
 
 | Parent |
 |:-------|
-| The `mcus` property of the root object. |
+| The `cpus` property of the root object. |
+| The `mcus` property of the root object (deprecated since 0.3). |
 
 | Properties | Type | Description |
 |:-----------|:-----|:------------|
@@ -161,12 +175,16 @@ The format version is reflected in the `schemaVersion` property, present in the 
 
 Versions are listed in reverse chronological order.
 
-#### v0.2.0 (2017-12-27)
+### v0.3.0 (2020-12-26)
+
+* for greater generality, use `cpus` instead of `mcus`.
+
+### v0.2.0 (2017-12-27)
 
 * simplify `supplier`, keep only `id` and `displayName`
 * rename `compile` to `compiler`
 * rename `macros` to `defines`
 
-#### v0.1.0 (2017-12-08)
+### v0.1.0 (2017-12-08)
 
 * preliminary version, only some device related fields.
