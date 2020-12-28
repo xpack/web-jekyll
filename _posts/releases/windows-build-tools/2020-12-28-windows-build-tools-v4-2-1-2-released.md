@@ -1,7 +1,7 @@
 ---
 title:  xPack Windows Build Tools v4.2.1-2 released
 
-summary: "Version 4.2.1-2 is maintenance release; it adds the cp.exe binary."
+summary: "Version 4.2.1-2 is maintenance release; it adds the `cp.exe` binary."
 
 version: 4.2.1-2
 npm_subversion: 1
