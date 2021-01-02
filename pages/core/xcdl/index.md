@@ -22,4 +22,4 @@ The **XCDL** files are used to
 
 File formats
 
-* [xcdl.json]({{ site.baseurl }}/xcdl/files/xcdl-json/)
+* [xcdl.json]({{ site.baseurl }}/metadata/devices/)

@@ -1,220 +1,524 @@
 ---
-title: The xpbuild.json files
-permalink: /xpbuild/files/xpbuild-json/
+title: The xPack Build Definitions
+permalink: /metadata/build/
+
+summary: The metadata used by the build tools.
 
 date: 2017-10-09 16:46:00 +0300
 
 ---
-
 ## Overview
 
-The `xpbuild.json` files define the metadata required by the
-xpbuild build process.
+This document describes the metadata required by the build tools; 
+it is stored in `xbuild.json` files.
 
-As for any managed build system, the xpbuild process output is a
-set of command lines to be passed to the builder.
+The formal definition is available in the JSON schema
+[xbuild-0.3.0.json]({{ site.baseurl }}/metadata/xbuild-0.3.0.json).
 
-To construct these command lines, the xpbuild metadata should be able to
-provide the list of source files that enter the build, and all the details
-required to fill in the command lines, which means compiler options,
-symbols and included header files.
+As for any managed build system, the result of the xPack build generator
+process is a set of command lines to be passed to the builder.
+
+To construct these command lines, the metadata files should
+provide:
+
+- a way to construct the list of source files that enter the build
+- a method to select a tool to use to process the source files
+- all the details required to fill in the command lines (compiler options,
+defined symbols, folders with header files, etc).
+
+A typical blinky project would look like:
+
+{% raw %}
+```json
+{
+  "schemaVersion": "0.3.0",
+  "includeMetadata": [
+    "xpacks/toolchains-metadata/toolchains-gcc-xbuild.json"
+  ],
+  "description": "STM32F4DISCOVERY Blinky project",
+  "name": "blinky",
+  "buildConfigurations": {
+    "debug": { 
+      "target": { 
+        "platform": "stm32f4-discovery"
+      },
+      "toolsCollections": [ 
+        "xpack-arm-none-eabi-gcc"
+      ],
+      "language": "c++",
+      "builder": "ninja",
+      "addSourcePaths": [
+        "src"
+      ],
+      "removeSourcePaths": [
+        "src/stm32f4-hal/stm32f4xx_ll_utils.c",
+        "src/stm32f4-hal/stm32f4xx_ll_usb.c"
+      ],
+      "toolsSettings": {
+        "c-compiler": {
+          "addOptions": [
+            "-mcpu=cortex-m4",
+            "-mthumb",
+            "-mfloat-abi=soft",
+            "-g3",
+            "-Wall",
+            "-Wextra",
+            "-O0",
+            "-std=gnu11",
+            "-fmessage-length=0",
+            "-fsigned-char",
+            "-ffunction-sections", 
+            "-fdata-sections",
+            "-DDEBUG",
+            "-DTRACE",
+            "-DUSE_FULL_ASSERT",
+            "-DOS_USE_TRACE_SEMIHOSTING_DEBUG",
+            "-DSTM32F407xx",
+            "-DPLATFORM_STM32F4_DISCOVERY",
+            "-DUSE_HAL_DRIVER",
+            "-DHSE_VALUE=8000000",
+            "-DOS_USE_SEMIHOSTING",
+            "-I{{ project.absolutePath }}/include",
+            "-I{{ project.absolutePath }}/system/include",
+            "-I{{ project.absolutePath }}/system/include/cmsis",
+            "-I{{ project.absolutePath }}system/include/stm32f4-hal"
+          ]
+        },
+        "cpp-compiler": {
+          "addOptions": [
+            "-mcpu=cortex-m4",
+            "-mthumb",
+            "-mfloat-abi=soft",
+            "-g3",
+            "-Wall",
+            "-Wextra",
+            "-O0",
+            "-std=gnu++11", 
+            "-fabi-version=0",
+            "-fno-exceptions", 
+            "-fno-rtti", 
+            "-fno-use-cxa-atexit", 
+            "-fno-threadsafe-statics",
+            "-fmessage-length=0",
+            "-fsigned-char",
+            "-ffunction-sections", 
+            "-fdata-sections",
+            "-DDEBUG",
+            "-DTRACE",
+            "-DUSE_FULL_ASSERT",
+            "-DOS_USE_TRACE_SEMIHOSTING_DEBUG",
+            "-DSTM32F407xx",
+            "-DPLATFORM_STM32F4_DISCOVERY",
+            "-DUSE_HAL_DRIVER",
+            "-DHSE_VALUE=8000000",
+            "-DOS_USE_SEMIHOSTING",
+            "-I{{ project.absolutePath }}/include",
+            "-I{{ project.absolutePath }}/system/include",
+            "-I{{ project.absolutePath }}/system/include/cmsis",
+            "-I{{ project.absolutePath }}system/include/stm32f4-hal"
+          ]
+        },
+        "cpp-linker": {
+          "addOptions": [
+            "-mcpu=cortex-m4",
+            "-mthumb",
+            "-mfloat-abi=soft",
+            "-g3",
+            "-Wall",
+            "-Wextra",
+            "-O0",
+            "-std=gnu11",
+            "-fmessage-length=0",
+            "-fsigned-char",
+            "-ffunction-sections", 
+            "-fdata-sections",
+            "-Wl,--gc-sections",
+            "-T{{ project.absolutePath }}/linker-scripts/mem.ld", 
+            "-T{{ project.absolutePath }}/linker-scripts/sections.ld",
+            "-nostartfiles", 
+            "-Wl,-Map,\"{{ artefact.name }}.map\"",
+            "--specs=nano.specs"
+          ]
+        }
+      }
+    },
+    "release": {
+      "target": { 
+        "platform": "stm32f4-discovery"
+      },
+      "toolsCollections": [ 
+        "xpack-arm-none-eabi-gcc"
+      ],
+      "language": "c++",
+      "builder": "ninja",
+      "addSourcePaths": [
+        "src"
+      ],
+      "removeSourcePaths": [
+        "src/stm32f4-hal/stm32f4xx_ll_utils.c",
+        "src/stm32f4-hal/stm32f4xx_ll_usb.c"
+      ],
+      "toolsSettings": {
+        "c-compiler": {
+          "addOptions": [
+            "-mcpu=cortex-m4",
+            "-mthumb",
+            "-mfloat-abi=soft",
+            "-g3",
+            "-Wall",
+            "-Wextra",
+            "-Os",
+            "-std=gnu11",
+            "-fmessage-length=0",
+            "-fsigned-char",
+            "-ffunction-sections", 
+            "-fdata-sections",
+            "-DNDEBUG",
+            "-DSTM32F407xx",
+            "-DPLATFORM_STM32F4_DISCOVERY",
+            "-DUSE_HAL_DRIVER",
+            "-DHSE_VALUE=8000000",
+            "-DOS_USE_SEMIHOSTING",
+            "-I{{ project.absolutePath }}/include",
+            "-I{{ project.absolutePath }}/system/include",
+            "-I{{ project.absolutePath }}/system/include/cmsis",
+            "-I{{ project.absolutePath }}system/include/stm32f4-hal"
+          ]
+        },
+        "cpp-compiler": {
+          "addOptions": [
+            "-mcpu=cortex-m4",
+            "-mthumb",
+            "-mfloat-abi=soft",
+            "-g3",
+            "-Wall",
+            "-Wextra",
+            "-Os",
+            "-std=gnu++11", 
+            "-fabi-version=0",
+            "-fno-exceptions", 
+            "-fno-rtti", 
+            "-fno-use-cxa-atexit", 
+            "-fno-threadsafe-statics",
+            "-fmessage-length=0",
+            "-fsigned-char",
+            "-ffunction-sections", 
+            "-fdata-sections",
+            "-DNDEBUG",
+            "-DSTM32F407xx",
+            "-DPLATFORM_STM32F4_DISCOVERY",
+            "-DUSE_HAL_DRIVER",
+            "-DHSE_VALUE=8000000",
+            "-DOS_USE_SEMIHOSTING",
+            "-I{{ project.absolutePath }}/include",
+            "-I{{ project.absolutePath }}/system/include",
+            "-I{{ project.absolutePath }}/system/include/cmsis",
+            "-I{{ project.absolutePath }}system/include/stm32f4-hal"
+          ]
+        },
+        "cpp-linker": {
+          "addOptions": [
+            "-mcpu=cortex-m4",
+            "-mthumb",
+            "-mfloat-abi=soft",
+            "-g3",
+            "-Wall",
+            "-Wextra",
+            "-Os",
+            "-std=gnu11",
+            "-fmessage-length=0",
+            "-fsigned-char",
+            "-ffunction-sections", 
+            "-fdata-sections",
+            "-Wl,--gc-sections",
+            "-T{{ project.absolutePath }}/linker-scripts/mem.ld", 
+            "-T{{ project.absolutePath }}/linker-scripts/sections.ld",
+            "-nostartfiles", 
+            "-Wl,-Map,\"{{ artefact.name }}.map\"",
+            "--specs=nano.specs"
+          ]
+        }
+      }
+    }
+  }
+}
+```
+{% endraw %}
+
+As it can be seen, tools and build configurations have many options
+in common, and this is only a simple example.
+
+A more structured and less redundant example would use profiles and look like:
+
+{% raw %}
+```json
+{
+  "schemaVersion": "0.3.0",
+  "includeMetadata": [
+    "xpacks/toolchains-metadata/toolchains-gcc-xbuild.json",
+    "xpacks/toolchains-metadata/profiles-gcc-xbuild.json"
+  ],
+  "name": "blinky",
+  "buildConfigurations": {
+    "debug": { 
+      "target": { 
+        "platform": "stm32f4-discovery"
+      },
+      "toolsCollections": [ 
+        "xpack-arm-none-eabi-gcc"
+      ],
+      "language": "c++",
+      "builder": "ninja",
+      "addProfiles": [
+        "project-common-defs",
+        "gcc-optimize-none",
+        "gcc-gc-sections",
+        "gcc-warnings-all",
+        "gcc-debug",
+        "gcc-trace"
+      ],
+      "toolsSettings": {
+        "(asembler|*-compiler)": {
+          "addDefinedSymbols": [
+            "USE_FULL_ASSERT",
+            "OS_USE_TRACE_SEMIHOSTING_DEBUG"
+          ]
+        },
+      }
+    },
+    "release": {
+      "target": { 
+        "platform": "stm32f4-discovery"
+      },
+      "toolsCollections": [ 
+        "xpack-arm-none-eabi-gcc"
+      ],
+      "language": "c++",
+      "builder": "ninja",
+      "addProfiles": [
+        "project-common-defs",
+        "gcc-optimize-small",
+        "gcc-gc-sections",
+        "gcc-warnings-all",
+        "gcc-release"
+      ]
+    }
+  },
+  "profiles": {
+    "project-common-defs": {
+      "addSourcePaths": [
+        "src"
+      ],
+      "removeSourcePaths": [
+        "src/stm32f4-hal/stm32f4xx_ll_utils.c",
+        "src/stm32f4-hal/stm32f4xx_ll_usb.c"
+      ],
+      "toolsSettings": {
+        "(asembler|*-compiler)": {
+          "addIncludeFolders": [
+            "include"
+          ],
+          "addDefinedSymbols": [
+            "STM32F407xx",
+            "PLATFORM_STM32F4_DISCOVERY",
+            "USE_HAL_DRIVER",
+            "HSE_VALUE=8000000",
+            "OS_USE_SEMIHOSTING"
+          ]
+        },
+        "(asembler|*-compiler|*-linker)": {
+          "addArchitecture": [
+            "-mcpu=cortex-m4",
+            "-mthumb",
+            "-mfloat-abi=soft"
+          ],
+          "addOptimizations": [
+            "-std=gnu11",
+            "-fmessage-length=0",
+            "-fsigned-char",
+            "-fno-move-loop-invariants"
+          ]
+        },
+        "(cpp-compiler|cpp-linker)": {
+          "addOptimizations": [
+            "-std=gnu++11", 
+            "-fabi-version=0",
+            "-fno-exceptions", 
+            "-fno-rtti", 
+            "-fno-use-cxa-atexit", 
+            "-fno-threadsafe-statics"
+          ]
+        },
+        "(*-linker)": {
+          "addLinkerScripts": [
+            "linker-scripts/mem.ld", 
+            "linker-scripts/sections.ld"
+          ],
+          "addMiscellaneous": [
+            "-nostartfiles", 
+            "-Wl,-Map,\"{{ artefact.name }}.map\"",
+            "--specs=nano.specs"
+          ]
+        }
+      }
+    }
+  }
+}
+```
+{% endraw %}
+
+## Generalities
+
+### Definitions
+
+- **artefact**: the result of a build; in the first implementation it
+  can be an executable or a library;
+- **target platform**: the platform that the artefact is supposed to
+  run on; usually a board or a physical machine, but can also be
+  a synthetic platform, like a POSIX process running on a GNU/Linux or
+  macOS system;
+- **build configuration**: a complete group of definitions which
+  result in an artefact; build configuration names, including those
+  used for tests, must be unique;
+  for simple projects usualy there are only two top configurations,
+  `debug`/`release`; for
+  complex projects there can be more, for different targets or,
+  in test cases, even for different toolchains;
+- **toolsCollections**: collections of tools, usually toolchains.
+
+### Contexts
+
+The `*xbuild.json` files can be located in multiple contexts:
+
+- package root folder
+- test root folder
+- sub-folders
+
+When xPack aware tools start, they read in all `*xpack.json` files
+located in the project root folder. If needed, these top files
+can include files from any sub-folders, local to the project or from
+dependencies.
+Multiple occurences of the same definitions trigger warnings and are
+ignored.
+
+Inner files can include other files, at any depth.
 
 Example:
 
 ```json
 {
-  "version": "0.1.0",
-  "name": "blinky",
-  "buildConfigurations": {
-    "debug": { 
-      "targetPlatform": "stm32f4-discovery",
-      "toolchain": "arm-none-eabi-gcc",
-      "profiles": [
-        "commonFolders",
-        "gcc.warnings",
-        "debug",
-        "trace"
-      ],
-      "...": "..."
-    },
-    "release" {
-      "targetPlatform": "stm32f4-discovery",
-      "toolchain": "arm-none-eabi-gcc",
-      "profiles": [
-        "commonFolders",
-        "gcc.warnings",
-        "release"
-      ],
-      "...": "..."
-    }
-  }
-}
-```
-
-TODO: consider the possibility to store the definitions in the `xcdl.json`,
-actually to make xpbuild a subset of xpcdl.
-
-## Generalities
-
-### Terms
-
-- **artefact**: the result of a build; it can be an executable or
-  a library;
-- **target platform**: the platform that the artefact is supposed to
-  run on; usually a board or a physical machine, but can also be
-  a synthetic one, like a POSIX process running on a GNU/Linux or
-  macOS;
-- **build configuration**: a complete group of definitions which
-  result in an artefact;
-  for simple projects they can be only `debug`/`release`; for
-  complex projects there can be more, for different targets or,
-  in test cases, even for different toolchains.
-
-### Contexts
-
-The `xpbuild.json` files can be used in two contexts:
-
-- when located in the project root, or in a test folder, these files
-must provide full details on how to build the artefacts; they must
-have a mandatory `name` property.
-- when located in sub-folders, these files are simpler and define build
-details specific to the sub-folder, usually compiler options and/or symbols;
-the files can be named like `folder-xpbuild.json`, or `.xpbuild.json`.
-
-To include inner files, list them explicitly:
-
-```
-{
   "includeMetadata": [
-    "some-folder/.xpbuild.json"
+    "sub-folder/.xbuild.json"
   ]
 }
 ```
 
-Inner files can include other files, at any depth.
+{% include note.html content="As in other parts of the xPack design,
+explicit includes were prefered to an automatic discovery process." %}
 
-{% include note.html content="Some sections may not strictly apply
-to the `xpbuild.json` file and
-should be moved to a more general document about xpbuild." %}
+### Definitions hierarchies
 
-{% include note.html content="The posibility of automatically searching
-for inner files was considered, and may be added in a future version,
-but foor now an explicit use is prefered." %}
+The main object used to store the settings to be used during
+a build is the **build configuration**.
 
-### Definitions hierarchy
+Most projects have at least two build configurations, very similar
+except minor details; in order to
+avoid redundacy and to maintain consistency, some definitions can be defined
+separately in profiles that can be later applied to multiple build
+configurations (see below).
 
-To allow definitions reuse between multiple build configurations,
-from a logical point of view the definitions can be seen as organised in
-a hierarchy:
+For each build configuration, the build process
+constructs a tree with folder and files nodes,
+which follow the file system hierarchy.
 
-- top
-- target platform
-- toolchain
-- build configuration
+The file nodes are leaves in this tree, while folder nodes may
+have other children.
 
-Each sub-level
-is able to contribute new, more specific definitions,
-to the parent.
+Each new sub-level may contribute additional compiler options to the build,
+such that files located deeper in the hierarchy may be compiled with different
+settings (options, symbols, includes, etc).
 
 ### Add/remove
 
-For each level of the hierarchy, internally the definitions are kept in
-an ordered list. The common behaviour is to
-copy definitions from the parent and add new definitions
-to the end of the list; thus the `addXxxx` properties.
+For each node of the hierarchy, the definitions are kept in
+ordered lists. The common behaviour when creating a new node is to
+copy the definitions from the parent and append the new definitions
+to the end of the list; thus the `addOptions` properties.
 
-If a definition from the parent is definitely not wanted, the child can
-instruct the builder to not copy it, using the `removeXxx` properties.
+If a definition from the parent is not needed, the child can
+instruct the builder to not copy it, by using the `removeOptions` properties.
 
 ### Profiles
 
 For complex projects, with multiple build configurations, it is usual
 to have common definitions that occur in multiple build configurations.
 
-To increase re-usability, it is possible to group definitions by profiles,
+To increase re-usability, it is possible to group definitions by _profiles_,
 and to apply them to build configurations.
 
-The definitions can be grouped by any criteria, but the common use case is
-to define profiles for debug/release build configurations.
+The definitions can be grouped by any criteria; usual examples are
+profiles with compiler options specific to debug/release build
+configurations, or profiles with various compiler optimisations,
+warnings, supported standards, etc.
 
-### Lower case names
-
-All names must be composed from letters, hyphens, or digits.
-When used to create paths, case is not significative and all
-letters are converted to lower case.
-
-### Paths
-
-All paths use the POSIX syntax, with `/` separators.
-
-### Macros
-
-In certain places, strings may contain macros, with a syntax inspired by
-the Liquid templates:
-
-```bash
-{{ expression }}
-```
-
-where _expression_ can be a name or a qualified name, like `test.name`.
-
-### Build tree
-
-Internally, the build tree is constructed of nodes.
-Nodes refer to folders or files;
-the build tree hierarchy follows the file system hierarchy.
-
-Folder nodes may have other folders or file as children.
-
-The build tree is constructed for each build configuration,
-and inherits properties from target/toolchain/profiles.
-
-Each new depth level may contribute additional compiler options to the build,
-and files located deeper in the hierarchy may be compiled with different
-settings (options, symbols, includes, etc).
+Profiles can be stored in separate packages, and reused in multiple
+projects.
 
 ### Project and/or test folders
 
-To identify a folder as an xpbuild project, a full `xpbuild.json` file,
-which includes the `name` field, is expected in the project root.
+To identify a folder as an xPack build project, a full `xbuild.json` file,
+which includes the `build.name` property, is expected in the project root.
 
 Tests are a specific kind of executable projects, and are also identified
-by a full `xpbuild.json` in each test folder.
+by a full `xbuild.json` in each test folder.
 
+## Objects
 
-## Properties
+The `xbuild.json` file is a hierarchy of objects with properties,
+with the JSON root on top.
 
-As usual with JSON files, the definitions are organised as a hierarchy of
-object with properties with values.
+### The root object
 
-The values can be scalar (strings, numbers, boolean), arrays or objects. 
+| Properties | Type | Description |
+|:-----------|:-----|:------------|
+| `schemaVersion` | string | The version in [semver](https://semver.org) format, that identifies the expected structure of the JSON content. |
+| `name` | string | The build name. It is mandatory for projects and for tests. |
+| `builder` | string | The default builder name. |
+| `license` | string | The license used to distribute the file. |
+| `copyright` | string | The copyright owner. |
+| `description` | string | A short sentence describing the content of the file. May be displayed by tools processing the file. |
+| `$comment` | string | A place to keep internal notices. |
+| `includeMetadata` | string[] | An array of path relative to the location of the file. |
+| `buildConfigurations` | collection | A map of build configurations. |
 
-### Version
+#### The **schemaVersion** property
 
-Type: string.
+The `schemaVersion` is used by parsers to dinamically adapt to different
+file format versions; changes in the schema or in the semantics should be
+reflected in a different version.
 
-This semver string identifies the expected structure of the JSON content.
-
-```json
-{
-  "version": "0.1.0"
-}
-```
-
-It is mandatory for all `xpbuild.json` files. A recent version of the
-xpbuild tools should be prepared to parse all older version of the
-`xpbuild.json` files. An old version of the xpbuild tools
-should throw an error when asked to process a newer, possibly
-incompatible version of `xpbuild.json` file.
+The `schemaVersion` property is mandatory for all `*xbuild.json` files.
+A recent version of the
+xPack aware tools should be prepared to parse all older version of the
+`*xbuild.json` files. When asked to process a newer, possibly
+incompatible, version of an `*xbuild.json` file, the tools
+that do not reconise that version should throw an error.
 
 The version is also used to select a JSON schema during validation.
 
-## name
+Example:
 
-Type: string.
+```json
+{
+  "schemaVersion": "0.3.0"
+}
+```
 
-This string defines the build name. It is mandatory for projects and
-for tests.
+#### The **name** property
+
+The build name is used to create other names, like artefact names.
+
+Example:
 
 ```json
 {
@@ -222,96 +526,156 @@ for tests.
 }
 ```
 
-The build name is used to derive other names, like artefact names.
+#### The **builder** property
 
-## artefact
+The `builder` property identifies the default builder used to create the
+artefact.
 
-Type: object.
-
-Alias: `artifact`.
-
-It can be used only in project or test `xpbuild.json` files; using it in folder
+It can be used only in project or test `*xbuild.json` files; using it in folder
 specific metadata files triggers an warning.
+
+Currently only `ninja`, `make` and `internal` are supported, with the
+internal builder not yet available.
+
+The default value is `internal`, which, for now, means that the builder must
+be explicitly defined, or passed on the command line.
+
+Example:
+
+```json
+{
+  "builder": "ninja"
+}
+```
+
+### The _includeMetadata_ array
+
+To facilitate reuse of definitions, it is possible to collect them
+from multiple files.
+
+Included files may include other files, at any depth.
+
+The location of each file is remembered, such that relative paths used
+in each files can be correctly processed.
+
+Contributions to maps/arrays are appended at the end; inner files are
+processed before the current file.
+
+Example:
+
+```json
+{
+  "includeMetadata": [
+    "xpacks/toolchains-metadata/toolchains-gcc-xbuild.json",
+    "xpacks/toolchains-metadata/profiles-gcc-xbuild.json"
+  ]
+}
+```
+
+## The _buildConfiguration_ object
+
+**Build configurations** are objects used to collect all the definitions
+required to generate the builder files required to build the artefact from
+the source file.
+
+The definitions are mainly command line options to be passed to various tools.
+They can be in-lined or copied from multiple _profiles_.
+
+The build processes an array of paths, posibly with exclusions.
+
+Source files in inner folders may be configured with specific options,
+for example with extra `-Wno-xxx` options to disable some warnings.
+
+| Parent |
+|:-------|
+| The root object. |
+
+| Properties | Type | Description |
+|:-----------|:-----|:------------|
+| `target` | object | The target platform/device/etc. |
+| `builder` | string | The default builder name; overrides the top definition. |
+| `language` | string | The programming language (c/c++); overrides the top definition. |
+| `artefact` | object | The name and type of the artefact to be built. |
+| `addSourcePaths` | string[] | Array of paths to source files, or paths to folders with source files, to be added to the build.|
+| `removeSourcePaths` | string[] | Array of paths to be excluded from the build.|
+| `addProfiles` | string[] | Array of profile names to be added before the current definitions.|
+| `toolsSettings` | collection | Map of settings to be added for different tools. |
+| `sourceFoldersSettings` | collection | Map of settings to be added for a specific sub-folder. |
+| `sourceFilesSettings` | collection | Map of settings to be added for a specific file in a sub-folder. |
+
+## The _artefact_ object
+
+Alias: `artifact` (american spelling).
 
 The `artefact` object defines the type and name of the output file.
 
+It can be used only in project or test `*xbuild.json` files; using it in folder
+specific metadata files triggers an warning.
+
+| Parents |
+|:-------|
+| The `buildConfigurations` collection, a property of the root object. |
+
+| Properties | Type | Description |
+|:-----------|:-----|:------------|
+| `type` | string | The artefact type (application or library). |
+| `name` | string | The artefact name. |
+| `outputPrefix` | string | The artefact name prefix. |
+| `outputSuffix` | string | The artefact name suffix. |
+| `extension` | string | The artefact extension. |
+
 The `type` property can be one of:
 
-- `executable` (default)
+- `executable` (default; default extension is `.exe` on Windows)
 - `staticLib` (default extension is `.a`)
 - `sharedLib` (default extension is `.so` for Linux)
 
-The `name` property defaults to the test name. It may include the macros
-`{{ build.name }}` or `{{ test.name }}`. If not present, it defaults to the
-mandatory project or test name.
+If not present, The `name` property defaults to `{{ build.name }}`.
 
-The `artefact` object may be defined at top level, or for a given
-target/profile. Each definition is searched hierarchically, bottom-up;
-if present in the profile, it is used, otherwise the parent definition
-it is used; if none is defined, a default is applied.
+If not present, the default prefix/suffix properties are empty.
 
+The actual name used for the artefact is a concatenation of four fields:
+
+{% raw %}
+```json
+"{{ artefact.outputPrefix }}{{ artefact.name }}{{ artefact.outputSuffix }}{{ artefact.extension }}"
+```
+{% endraw %}
+
+Example:
+
+{% raw %}
 ```json
 {
-  "artefact": {
-    "type": "executable",
-    "name": "${test.name}",
-    "outputPrefix": "",
-    "outputSuffix": "",
-    "extension": ""
+  "buildConfiguration": {
+    "debug": {
+      "artefact": {
+        "type": "executable",
+        "name": "{{ build.name }}",
+        "outputPrefix": "",
+        "outputSuffix": "",
+        "extension": ""
+      },
+      "...": "..."
+    }
   }
 }
 ```
+{% endraw %}
 
-## Builder
+## The _toolsSetting_ object
 
-Type: string.
+TODO
 
-It can be used only in project or test `xpbuild.json` files; using it in folder
-specific metadata files triggers an warning.
+## The _sourceFoldersSetting_ object
 
-This string identifies the default builder used to create the project.
+TODO
 
-```json
-{
-  "builder": "make"
-}
-```
+## The _sourceFilesSetting_ object
 
-Currently only `make` and `ninja` are supported, but an internal builder
-is also planned.
+TODO
 
-## Commands
-
-Type: object.
-
-It can be used only in project or test `xpbuild.json` files; using it in folder
-specific metadata files triggers an warning.
-
-The `commands` object associates external commands to different actions.
-
-```json
-{
-  "commands": {
-    "build": [ "make" ],
-    "run": [ "./${artefact.fullName}" ]
-  }
-}
-```
-
-The actions are identified as object properties; the values are
-arrays of strings with command lines.
-
-When serialised, the values are string arrays; when parsed, the
-values may be strings.
-
-The `build` command is used to start the actual builder, after
-the build files were generated.
-
-The `run` command is used to run a test, after a successful build.
-If the `run` command is missing in a test configuration, the test is
-considered _build only_.
-
-TODO: decide if really necessary.
+---
 
 ## Source folders
 
@@ -467,7 +831,7 @@ definitions.
       "addSymbols": [ ... ],
       "removeIncludeFolders": [ ... ],
       "addIncludeFolders": [ ... ],
-      "toolchains": { ... },
+      "toolchainsSettings": { ... },
     },
     "stm32f4-discovery": {
       "crossBuildPlatforms": [
@@ -481,7 +845,7 @@ definitions.
       "addSymbols": [ ... ],
       "removeIncludeFolders": [ ... ],
       "addIncludeFolders": [ ... ],
-      "toolchains": { ... },
+      "toolchainsSettings": { ... },
       }
     }
   }
@@ -518,7 +882,7 @@ definitions.
       "addIncludeFolders": [ ... ],
       "common": { ... },
       "tools": { ... },
-      "profiles": { ... }
+      "profiles": { ... } ???
     },
     "arm-none-eabi-gcc": {
       "artefact": { ... },
@@ -531,7 +895,7 @@ definitions.
       "addIncludeFolders": [ ... ],
       "common": { ... },
       "tools": { ... },
-      "profiles": { ... }
+      "profiles": { ... } ???
     }
   }
 }
@@ -647,7 +1011,7 @@ Profile names are user defined strings.
 
 ## Folder/file specific metadata
 
-The definitions in the top `xpbuild.json` file apply to all files that enter
+The definitions in the top `*xbuild.json` file apply to all files that enter
 the build.
 
 However it is possible to enter specific definitions for folders, and

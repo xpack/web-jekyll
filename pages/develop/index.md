@@ -13,7 +13,7 @@ date: 2016-03-09 12:04:00 +0300
 
 - [How to create a new xPack Git repository]({{ site.baseurl }}/develop/how-to-new-git/)
 - [JavaScript style guide]({{ site.baseurl }}/develop/js-style-guide/)
-- [XCDL]({{ site.baseurl }}/xcdl/)
+- [metadata]({{ site.baseurl }}/metadata/)
 
 ## Schemas
 
@@ -24,7 +24,9 @@ designed methods equivalent to XML schemas.
 
 In the xPack project, currently the following JSON schemas are available:
 
-- [xcdl v0.3.0]({{ site.baseurl }}/schemas/xcdl-0.3.0.json) (work in progress)
+- [xbuild v0.3.0]({{ site.baseurl }}/schemas/xbuild-0.3.0.json) (work in progress)
+- [xpdsc v0.3.0]({{ site.baseurl }}/schemas/xpdsc-0.3.0.json) (work in progress)
+- [xsvd v0.1.0]({{ site.baseurl }}/schemas/xsvd-0.1.0.json) (work in progress)
 
 Other schema resources:
 
@@ -37,3 +39,7 @@ Other schema resources:
 ## Other resources
 
 - [Links]({{ site.baseurl }}/develop/links/)
+
+## Archive
+
+- [XCDL]({{ site.baseurl }}/xcdl/)

@@ -24,4 +24,4 @@ Contrary to the wider scope of IP-XACT, the XSVD format was intentionally kept a
 
 ## File formats
 
-* [xsvd.json]({{ site.baseurl }}/xsvd/files/xsvd-json/)
+* [xsvd.json]({{ site.baseurl }}/metadata/xsvd/)

@@ -1,6 +1,8 @@
 ---
-title: The XSVD format
-permalink: /xsvd/files/xsvd-json/
+title: The xPack SVD Definitions
+permalink: /metadata/xsvd/
+
+summary: The metadata used to describe peripheral registers.
 
 date: 2017-10-10 20:00:00 +0300
 
@@ -8,7 +10,9 @@ date: 2017-10-10 20:00:00 +0300
 
 ## Overview
 
-**XSVD** is a rework of the Arm [CMSIS SVD](http://www.keil.com/cmsis/svd), but cleaned, extended and rewritten in JSON instead of XML.
+The **XSVD** format is a rework of the Arm
+[CMSIS SVD](http://www.keil.com/cmsis/svd), but cleaned, extended and
+rewritten in JSON instead of XML.
 
 ## File conventions
 
@@ -197,7 +201,6 @@ The device supplier.
 | `fullName` | string | A longer string to externally identify the supplier, like official company name. |
 | `contact` | string | Contact information. |
 
-
 ### The _cores_ object
 
 | Parent |
@@ -215,7 +218,6 @@ Most of the properties are descriptive, and currently do not participate in code
 | `mmu` | string | A string that indicate whether the core is equipped with a memory management unit (MMU). Accepted values are `true/false` or custom names, for example, for RISC-V use 'sv32/sv39/sv48'. If no MMU is present, `none` is also accepted. |
 | `numLocalInterrupts` | string | The total number of local interrupts (specific to a core). Some platforms, like RISC-V always have at least 16 interrupts. |
 | `localInterrupts` | collection | A map of interrupt objects. |
-
 
 ### The _peripheral_ object
 

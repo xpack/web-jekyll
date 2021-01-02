@@ -1,6 +1,8 @@
 ---
-title: The XCDL format
-permalink: /xcdl/files/xcdl-json/
+title: The xPack Dvices Definitions
+permalink: /metadata/devices/
+
+summary: The metadata used to describe devices.
 
 date: 2017-10-10 19:59:00 +0300
 
@@ -8,34 +10,23 @@ date: 2017-10-10 19:59:00 +0300
 
 ## Overview
 
-The **XCDL** format describes metadata used to define various objects, from boards and devices, to software components.
+The **XPDSC** format includes metadata used to describe boards and devices.
 
-{% include note.html content="Version 0.3.0 is currnetly _work in
+It inherits from CMSIS PDSC the subset related to boards and devices.
+
+{% include note.html content="Version 0.3.0 is currently _work in
 progress_ and will be implemented in Eclipse and other tools when ready." %}
-
-## File conventions
-
-### JSON Properties
-
-As with any JSON file, the content is basically an object with several properties, represented as `"name": <value>`. The values may be strings, objects or arrays of other values.
-
-Named children objects are stored in objects (not arrays), with the names as properties (implemented as maps, with names as keys). Compared to arrays, maps have the advantage of guaranteed unique names.
-
-### Collections
-
-Traditionally, collections are stored in JSON as arrays, which impose no restrictions on the content or uniqueness.
-
-If object names must be unique, collections of named children can be stored as objects (implemented as maps) with names as properties and children objects as values.
-
-To simplify usage, except named children, collections cannot have other properties.
 
 ## File names
 
-By definition, XDL files are identified by the suffix `xcdl.json`, and
-can be prefixed by anything, preferably separated by a dash, like:
+By definition, XPDSC files are identified by the suffix `xpdsc.json`,
+and can be prefixed by anything, preferably separated by a dash, like:
 
-* `devices-xcdl.json` or `device-xcdl.json`
-* `boards-xcdl.json` or `board-xcdl.json`
+* `devices-xpdsc.json` or `device-pdsc.json`
+* `boards-xpdsc.json` or `board-xpdsc.json`
+
+The use of plurals is a convention, to make explicit that the files
+contain definitions for multiple objects.
 
 ## Objects
 
@@ -46,10 +37,10 @@ The XCDL file is a hierarchy of objects, with the JSON root on top.
 | Properties | Type | Description |
 |:-----------|:-----|:------------|
 | `schemaVersion` | string | The version is used by the parser to identify different file formats. |
-| `cpus` | object | A parent for all CPU related definitions. |
-| `mcus` | object | A parent for all MCU related definitions (deprecated since 0.3 in favour of `cpus`). |
+| `cpus` | collection | A parent for all CPU related definitions. |
+| `platforms` | collection | A parent for all platform/board related definitions. |
 
-Example
+Example:
 
 ```json
 {
@@ -68,13 +59,9 @@ Example
 
 The CPU is the top-most object, and usually contains one CPU/MCU family.
 
-| Properties | Type | Description |
-|:-----------|:-----|:------------|
-| `families` | collection | A map of family objects. The keys are internal IDs used to refer to the family. |
-
-### The _mcu_ object (deprecated since 0.3)
-
-The MCU is the top-most object, and usually contains one CPU/MCU family.
+| Parents |
+|:-------|
+| The root object. |
 
 | Properties | Type | Description |
 |:-----------|:-----|:------------|
@@ -84,8 +71,7 @@ The MCU is the top-most object, and usually contains one CPU/MCU family.
 
 | Parent |
 |:-------|
-| The `cpus` property of the root object. |
-| The `mcus` property of the root object (deprecated since 0.3). |
+| A **cpu** object. |
 
 | Properties | Type | Description |
 |:-----------|:-----|:------------|
@@ -97,11 +83,11 @@ The MCU is the top-most object, and usually contains one CPU/MCU family.
 
 ### The _supplier_ object
 
+The device supplier.
+
 | Parent |
 |:-------|
 | A **family** object. |
-
-The device supplier.
 
 | Properties | Type | Description |
 |:-----------|:-----|:------------|
@@ -112,7 +98,7 @@ The device supplier.
 
 | Parent |
 |:-------|
-| The `subFamilies` property of a **family** object. |
+| A **family** object. |
 
 | Properties | Type | Description |
 |:-----------|:-----|:------------|
@@ -122,11 +108,11 @@ The device supplier.
 
 ### The _device_ object
 
-The device is the basic object, and correspond to a single implementation of a MCU which has unique characteristics from the software point of view.
+The device is the basic object, and correspond to a single implementation of a CPU/MCU which has unique characteristics from the software point of view.
 
 | Parent |
 |:-------|
-| The `devices` property of a **family** or **subFamily** object. |
+| A **family** or **subFamily** object. |
 
 | Properties | Type | Description |
 |:-----------|:-----|:------------|
@@ -167,24 +153,28 @@ An object with definitions useful for debug sessions.
 | `svd` | string | the relative path to the CMSIS SVD XML file, (POSIX paths). Used by the debugger to display the peripheral registers. Ignored if the `xsvd` property is present. |
 
 
-TBD
+TODO: add board definitions
 
 ## Revision history
 
-The format version is reflected in the `schemaVersion` property, present in the root object. The value of this property follows the semantic versioning requirements ([semver](http://semver.org)).
+The format version is reflected in the `schemaVersion` property,
+present in the root object.
+
+Starting with v3, the format was renamed as XPDSC.
 
 Versions are listed in reverse chronological order.
 
 ### v0.3.0 (2020-12-26)
 
-* for greater generality, use `cpus` instead of `mcus`.
+* renamed as xpdsc
+* for greater generality, use `cpus` instead of `mcus`
 
-### v0.2.0 (2017-12-27)
+### xcdl v0.2.0 (2017-12-27)
 
 * simplify `supplier`, keep only `id` and `displayName`
 * rename `compile` to `compiler`
 * rename `macros` to `defines`
 
-### v0.1.0 (2017-12-08)
+### xcdl v0.1.0 (2017-12-08)
 
 * preliminary version, only some device related fields.
