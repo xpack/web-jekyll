@@ -16,7 +16,7 @@ The `xbuild.json` files are intended to be consumed by
 the xPack build tools.
 
 The formal definitions are available in the JSON schema
-[xbuild-0.3.0.json]({{ site.baseurl }}/metadata/xbuild-0.3.0.json) file.
+[xbuild-0.3.0.json]({{ site.baseurl }}/schemas/xbuild-0.3.0.json) file.
 
 As for other managed build systems, the result of the xPack build generator
 process is a set of command lines to be passed to the builder.
