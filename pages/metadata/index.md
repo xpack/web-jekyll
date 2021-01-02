@@ -96,3 +96,53 @@ The values can be:
 - arrays of properties (`[ "Ford", "BMW", "Fiat" ]`)
 - objects, as maps of properties
   (`{ "name":"John", "age":30, "car":null }`).
+
+## Common definitions
+
+### The **schemaVersion** property
+
+The `schemaVersion` is used by parsers to dinamically adapt to different
+file format versions; changes in the schema or in the semantics should be
+reflected in a different version.
+
+The `schemaVersion` property is mandatory for all `*xbuild.json` files.
+A recent version of the
+xPack aware tools should be prepared to parse all older version of the
+`*xbuild.json` files. When asked to process a newer, possibly
+incompatible, version of an `*xbuild.json` file, the tools
+that do not reconise that version should throw an error.
+
+The version is also used to select a JSON schema during validation.
+
+Example:
+
+```json
+{
+  "schemaVersion": "0.3.0"
+}
+```
+
+### The **license** property
+
+The license is a short identifier, defined by
+[SPDX](https://spdx.org/licenses/).
+
+Example:
+
+```json
+{
+  "license": "MIT"
+}
+```
+
+### The **copyright** property
+
+The copyright is a short string, with the name of the copyright owner.
+
+Example:
+
+```json
+{
+  "copyright": "© 2021 Liviu Ionescu"
+}
+```
