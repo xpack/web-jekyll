@@ -172,28 +172,6 @@
         }
       }
     },
-    "profilesType": {
-      "description": "A map of profiles settings.",
-      "type": "object",
-      "additionalProperties": {
-        "$ref": "#/$defs/profileType"
-      }
-    },
-    "profileType": {
-      "type": "object",
-      "properties": {
-        "addSourcePaths": {
-          "$ref": "#/$defs/arrayOfPathsType"
-        },
-        "removeSourcePaths": {
-          "$ref": "#/$defs/arrayOfPathsType"
-        },
-        "toolsSettings": {
-          "$ref": "#/$defs/toolsSettingsType"
-        }
-      },
-      "additionalProperties": false
-    },
     "toolsSettingsType": {
       "description": "A map with settings specific to multiple tools; key are like '*gcc:(*-compiler|*-linker)'.",
       "type": "object",
@@ -226,12 +204,6 @@
         "target": {
           "$ref": "#/$defs/targetType"
         },
-        "toolsCollections": {
-          "type": "array",
-          "items": {
-            "$ref": "#/$defs/nonEmptyStringType"
-          }
-        },
         "language": {
           "$ref": "#/$defs/languageType"
         },
@@ -244,7 +216,7 @@
         "builder": {
           "$ref": "#/$defs/builderType"
         },
-        "addProfiles": {
+        "toolsCollections": {
           "type": "array",
           "items": {
             "$ref": "#/$defs/nonEmptyStringType"
@@ -275,7 +247,7 @@
         "platform": {
           "$ref": "#/$defs/nonEmptyStringType"
         },
-        "cpuType": {
+        "cpu": {
           "$ref": "#/$defs/cpuType"
         }
       }
@@ -359,14 +331,20 @@
     "name": {
       "$ref": "#/$defs/nonEmptyStringType"
     },
+    "language": {
+      "$ref": "#/$defs/languageType"
+    },
+    "artefact": {
+      "$ref": "#/$defs/artefactType"
+    },
+    "artifact": {
+      "$ref": "#/$defs/artefactType"
+    },
     "builder": {
       "$ref": "#/$defs/builderType"
     },
     "buildConfigurations": {
       "$ref": "#/$defs/buildConfigurationsType"
-    },
-    "profiles": {
-      "$ref": "#/$defs/profilesType"
     },
     "toolsCollections": {
       "$ref": "#/$defs/toolsCollectionsType"
