@@ -1,13 +1,13 @@
 ---
 title:  xPack GNU RISC-V Embedded GCC v10.1.0-1.1 released
 
-summary: "Version 10.1.0-1.1 is a maintenance release of the **xPack GNU RISC-V Embedded GCC**; it adds an embedded Python 3 instance, to make `riscv-none-embed-gdb-py3` standalone and run on any system."
+summary: "Version 10.1.0-1.1 is a new release of the **xPack GNU RISC-V Embedded GCC**; it follows the SiFive release 2020-08.0 ."
 
 version: 10.1.0-1.1
 npm_subversion: 1
 download_url: https://github.com/xpack-dev-tools/riscv-none-embed-gcc-xpack/releases/tag/v10.1.0-1.1/
 
-date:   2021-01-05 08:59:00 +0200
+date:   2021-01-05 11:42:00 +0200
 
 categories:
   - releases
@@ -194,7 +194,8 @@ the distribution.
   (~70K), the compiler sources became too large to be compiled for Arm32-bit
   ([#229](https://github.com/riscv/riscv-gcc/issues/229))
 - the archive size got too big for the Windows 32-bit node to handle, and
-  `xpm install` mai fail with _RangeError: Array buffer allocation failed_.
+  `xpm install` may fail with _RangeError: Array buffer allocation failed_;
+  the 64-bit systems are not affected.
 
 ## Shared libraries
 
@@ -263,8 +264,8 @@ The first set of tests were performed on Travis, by running
 a simple script to check if the binaries start and compile several simple
 programs on a wide range of platforms and distributions:
 
-- [test xPack RISC-V Embed GCC on stable platforms](https://travis-ci.org/github/xpack-dev-tools/riscv-none-embed-gcc-xpack/builds/752956185)
-- [test xPack RISC-V Embed GCC on latest platforms](https://travis-ci.org/github/xpack-dev-tools/riscv-none-embed-gcc-xpack/builds/738682668)
+- [test xPack RISC-V Embed GCC on stable platforms](https://travis-ci.org/github/xpack-dev-tools/riscv-none-embed-gcc-xpack/builds/752965761)
+- [test xPack RISC-V Embed GCC on latest platforms](https://travis-ci.org/github/xpack-dev-tools/riscv-none-embed-gcc-xpack/builds/752968056)
 
 ## Tests
 
