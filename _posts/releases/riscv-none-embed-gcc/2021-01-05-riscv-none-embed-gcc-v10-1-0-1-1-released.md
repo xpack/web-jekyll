@@ -1,7 +1,7 @@
 ---
 title:  xPack GNU RISC-V Embedded GCC v10.1.0-1.1 released
 
-summary: "Version 10.1.0-1.1 is a new release of the **xPack GNU RISC-V Embedded GCC**; it follows the SiFive release 2020-08.0 ."
+summary: "Version 10.1.0-1.1 is a new release of the **xPack GNU RISC-V Embedded GCC**; it follows the SiFive release 2020-08.0."
 
 version: 10.1.0-1.1
 npm_subversion: 1
@@ -191,7 +191,7 @@ the distribution.
 ## Known problems
 
 - due to the very large number of instructions added by the vector support
-  (~70K), the compiler sources became too large to be compiled for Arm32-bit
+  (~70K), the compiler sources became too large and it was not possible to build the Arm 32-bit image
   ([#229](https://github.com/riscv/riscv-gcc/issues/229))
 - the archive size got too big for the Windows 32-bit node to handle, and
   `xpm install` may fail with _RangeError: Array buffer allocation failed_;
