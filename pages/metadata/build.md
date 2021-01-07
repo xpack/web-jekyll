@@ -88,7 +88,7 @@ A typical blinky project might look like:
             "-I{{ project.absolutePath }}/include",
             "-I{{ project.absolutePath }}/system/include",
             "-I{{ project.absolutePath }}/system/include/cmsis",
-            "-I{{ project.absolutePath }}system/include/stm32f4-hal"
+            "-I{{ project.absolutePath }}/system/include/stm32f4-hal"
           ]
         },
         "cpp-compiler": {
@@ -122,7 +122,7 @@ A typical blinky project might look like:
             "-I{{ project.absolutePath }}/include",
             "-I{{ project.absolutePath }}/system/include",
             "-I{{ project.absolutePath }}/system/include/cmsis",
-            "-I{{ project.absolutePath }}system/include/stm32f4-hal"
+            "-I{{ project.absolutePath }}/system/include/stm32f4-hal"
           ]
         },
         "cpp-linker": {
@@ -181,7 +181,7 @@ A typical blinky project might look like:
             "-I{{ project.absolutePath }}/include",
             "-I{{ project.absolutePath }}/system/include",
             "-I{{ project.absolutePath }}/system/include/cmsis",
-            "-I{{ project.absolutePath }}system/include/stm32f4-hal"
+            "-I{{ project.absolutePath }}/system/include/stm32f4-hal"
           ]
         },
         "cpp-compiler": {
@@ -212,7 +212,7 @@ A typical blinky project might look like:
             "-I{{ project.absolutePath }}/include",
             "-I{{ project.absolutePath }}/system/include",
             "-I{{ project.absolutePath }}/system/include/cmsis",
-            "-I{{ project.absolutePath }}system/include/stm32f4-hal"
+            "-I{{ project.absolutePath }}/system/include/stm32f4-hal"
           ]
         },
         "cpp-linker": {
