@@ -353,7 +353,7 @@ with the JSON root on top.
 | `schemaVersion` | string | The version in [semver](https://semver.org) format, that identifies the expected structure of the JSON content (see [index]({{ site.baseurl }}/metadata/)). |
 | `license` | string | The license used to distribute the file (see [index]({{ site.baseurl }}/metadata/)). |
 | `copyright` | string | The copyright owner (see [index]({{ site.baseurl }}/metadata/)). |
-| `description` | string | A short sentence describing the content of the file. May be displayed by tools processing the file. |
+| `description` | string | A short sentence describing the project or the content of the file. May be displayed by GUI tools processing the file. |
 | `$comment` | string | A place to keep internal notices. |
 | `name` | string | The build name. It is mandatory for projects and for tests. |
 | `builder` | string | The default builder name. |
@@ -435,7 +435,23 @@ for example when creating new debug launchers.
 | `platform` | string | The target platform id. |
 | `cpu` | object | The target CPU. |
 
+Example:
+
+```json
+{
+  "target": { 
+    "platform": "stm32f4-discovery",
+    "cpu": {
+      "device": "stm32f407vg"
+    }
+  }
+}
+```
+
 ## The _cpu_ object
+
+The **cpu** object defines the target CPU device name, and possibly
+other grouping names (like family, subFamily, variant).
 
 | Parent |
 |:-------|
@@ -452,14 +468,15 @@ for example when creating new debug launchers.
 
 Alias: `artifact` (american spelling).
 
-The `artefact` object defines the type and name of the output file.
+The **artefact** object defines the type and name of the output file.
 
 It can be used only in project or test `*xbuild.json` files; using it in folder
 specific metadata files triggers an warning.
 
-| Parent |
+| Parents |
 |:-------|
-| The `buildConfigurations` collection, a property of the root object. |
+| The root object. |
+| The **buildConfiguration** object. |
 
 | Properties | Type | Description |
 |:-----------|:-----|:------------|
@@ -588,7 +605,7 @@ remaining files enter the build.
 
 | Parent |
 |:-------|
-| The **buildConfigurations** object. |
+| The **buildConfiguration** object. |
 
 | Properties | Type | Description |
 |:-----------|:-----|:------------|
@@ -597,15 +614,21 @@ remaining files enter the build.
 
 ## The _sourceFoldersSetting_ object
 
+The **sourceFoldersSetting** object defines additional options
+specific to a folder.
+
 | Parent |
 |:-------|
-| The **buildConfigurations** object. |
+| The **buildConfiguration** object. |
 
 | Properties | Type | Description |
 |:-----------|:-----|:------------|
-| `toolsSettings` | collection | Collection of tools. |
+| `toolsSettings` | collection | Collection of tools settings. |
 
 ## The _sourceFilesSetting_ object
+
+The **sourceFilesSetting** object defines additional options
+specific to a file.
 
 | Parent |
 |:-------|
@@ -617,6 +640,43 @@ remaining files enter the build.
 | `removeOptions` | string[] | Array of strings with command line options to be removed. |
 
 ## The _toolsCollection_ object
+
+The **toolsCollection** object defines a group of related tools,
+usually a toolchain.
+
+| Parent |
+|:-------|
+| The root object. |
+
+| Properties | Type | Description |
+|:-----------|:-----|:------------|
+| `displayDescription` | string | A short sentence describing the tools collection. May be displayed by GUI tools processing the collection. |
+| `commandPrefix` | string | TODO |
+| `commandSuffix` | string | TODO |
+| `displayDescriptionPrefix` | string | TODO |
+| `isCross` | boolean | TODO |
+| `objectExtension` | string | TODO |
+| `makeObjectsVariable` | string | TODO |
+| `tools` | collection | Collection of tools. |
+
+TODO
+
+## The _tool_ object
+
+The **tool** object defines the characteristics of a tool from a tools
+collection.
+
+| Parent |
+|:-------|
+| The **toolsCollection** object. |
+
+| Properties | Type | Description |
+|:-----------|:-----|:------------|
+| `displayDescription` | string | A short sentence describing the tool. May be displayed by GUI tools processing the tools. |
+| `commandName` | string | TODO |
+| `inputFileExtensions` | string[] | TODO (like `.c`, `.cpp`) |
+| `outputFileExtension` | string | TODO (like `.o`) |
+| ... | string | TODO |
 
 TODO
 
