@@ -75,6 +75,14 @@ The easiest way to create new projects is to use the existing
 Instantiate it into your organisation and update the project details
 in `package.json` and the copyright owner.
 
+- click the **Use this template** button
+- select the owner or the organisation
+- enter the repository name, preferably suffixed with `-xpack`
+- enter the description `A source/binary xPack with ...`
+- select Public
+- enable **Include all branches** (very important!)
+- click **Create repositories from template**
+
 ### Create the GitHub project manually
 
 The following steps apply to GitHub. Adjust them for other Git hosting sites.
