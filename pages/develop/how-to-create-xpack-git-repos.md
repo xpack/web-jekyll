@@ -20,14 +20,31 @@ will be used for new projects,
 with original content, so, in principle, these projects can be created
 to have any structure.
 
-The reality is that there are a lot of existing
+In reality there are a lot of existing 3rd party
 software projects, each using its specific structure, and migrating them to
 xPacks may add some maintenance burden to keep them in sync with the
 originals.
 
+If the 3rd party projects use a public Git, fork them, with its original
+`master` branch, and continue to track them in the future.
+
+## The `originals` branch
+
+If the 3rd party projects do not use a
+public Git project, but are distributed only as release archives, to
+keep track of the changes it is recommended to
+recreate the Git with the original
+code on a separate branch, like `originals`.
+
+With each upstream release, while on the `originals` branch,
+fuly remove the content and extract the newly released archive.
+
+In case the archive contains binary files, or other large files considerd
+not essential for the xPack distribution, add them to `.gitignore`.
+
 ## The `xpack` branch and three-way merging
 
-One way to reduce the maintenance burden is to use the
+One way to reduce the maintenance burden of source xPacks is to use the
 [three-way merge](https://en.wikipedia.org/wiki/Merge_(version_control)#Three-way_merge)
 feature of Git and a separate branch to accommodate the xPack specific changes.
 
@@ -41,7 +58,7 @@ easily track the upstream repository, while the xPack specific changes
 continue to be developed using the `xpack` branch; from time to time the
 main branch can be merged into the `xpack` branch and things kept in sync.
 
-## Creating xPacks with original content
+## Creating xPacks
 
 For consistency reasons, it is recommended for the new xPacks, even if
 they do not include 3rd party content, to use the `xpack` branch instead
@@ -51,27 +68,34 @@ of the `master` branch.
 do not enforce the use of a branch named `xpack`, this is only
 a recommendation." %}
 
+### The GitHub Template project
+
+The easiest way to create new projects is to use the existing
+[GitHub Template](https://github.com/xpack/github-template-xpack) project.
+Instantiate it into your organisation and update the project details
+in `package.json` and the copyright owner.
+
+### Create the GitHub project manually
+
 The following steps apply to GitHub. Adjust them for other Git hosting sites.
 
 The editor of choice is Visual Studio Code (VSC), but you can use
 any editor you like; just be sure that on Windows it does not mess the
 line terminators.
 
-### Create the GitHub project
-
 {% include tip.html content="To easily identify the project as
 an xPack, it is recommended to suffix the project name with '-xpack'." %}
 
-With a browser, at GitHub, select your account or one of your
-  organisations (like
-  [xPacks](https://github.com/xpacks),
-  [xPacks Dev Tools](https://github.com/xpack-dev-tools),
-  [µOS++](https://github.com/micro-os-plus)).
+With a browser, at GitHub, select your account or organisation.
+(for the purposes of this project, here are some organisations that use xPacks:
+[xPacks](https://github.com/xpacks),
+[xPacks Dev Tools](https://github.com/xpack-dev-tools),
+[µOS++](https://github.com/micro-os-plus)).
 
 - click the green **New** button to create a new repository
   - enter **Repository name**; use all lowercase and hyphens to
     separate words (not underscores!); preferably suffix the name with `-xpack`
-  - enter **Description** (like _An xPack with ..._ or _A binary xPack with ..._; no ending dot)
+  - enter **Description** (like _A source xPack with ..._ or _A binary xPack with ..._; no ending dot!)
   - select **Public**
   - enable **Initialize this repository with a README**
   - select **Add .gitignore: Node**
@@ -130,7 +154,7 @@ build/
 With VSC, Sourcetree or Git:
 
 - stage the `.gitignore` file
-- commit with the following message: **.gitignore: add xpm specifics**
+- commit with the following message: **.gitignore: add xPack specifics**
 
 ### Check/edit the `LICENSE` file
 
@@ -145,7 +169,7 @@ Check and possibly adjust to match your `LICENSE` requirements.
 ```
 MIT License
 
-Copyright (c) 2019 Liviu Ionescu
+Copyright (c) 2021 Liviu Ionescu
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 ...
@@ -177,6 +201,29 @@ With VSC, Sourcetree or Git:
 - stage the `README.md` file
 - commit with the following message: **README: 'no master' notice**
 
+### Create the `originals` branch
+
+If the xPack will be used for 3rd party content, create an `originals`
+branch:
+
+Sourcetree:
+- select the `master` branch
+- click the **Branch** button
+- in the **Name Branch** field, enter `originals`
+- click the **Create Branch** button
+
+Edit the README file to read:
+
+```
+This branch is used to recreate the 3rd party project history
+from release archives.
+```
+
+With VSC, Sourcetree or Git:
+
+- stage the `README.md` file
+- commit with the following message: **README: notice for 3rd party content**
+
 ### Create the `xpack` branch
 
 With VSC, Sourcetree or Git.
@@ -192,13 +239,13 @@ Sourcetree:
 - in the **Name Branch** field, enter `xpack`
 - click the **Create Branch** button
 
-### Publish both branches
+### Publish all branches
 
 With VSC, Sourcetree or Git.
 
 (Sourcetree)
 - click the **Push** button
-- select the `master` and `xpack` local branches
+- select all local branches (`master`, `xpack` and maybe the `originals`)
 - click the **OK** button
 
 With the GitHub web interface (as shortcut, in Sourcetree, click
@@ -221,21 +268,21 @@ $ cd <project>.git
 $ xpm init
 $ cat package.json
 {
-  "name": "xxx",
-  "version": "0.0.1",
-  "description": "An xPack with <your-description-here>",
+  "name": "@<scope>/<project-name>",
+  "version": "0.1.0",
+  "description": "A source/binary xPack with <your-description-here>",
   "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/<user-id>/xxx.git"
+    "url": "git+https://github.com/<user-id>/<project-name>-xpack.git"
   },
   "bugs": {
-    "url": "https://github.com/<user-id>/xxx/issues"
+    "url": "https://github.com/<user-id>/<project-name>-xpack/issues"
   },
-  "homepage": "https://github.com/<user-id>/xxx",
+  "homepage": "https://github.com/<user-id>/<project-name>-xpack",
   "keywords": [
     "xpack"
   ],
@@ -258,7 +305,7 @@ Open `package.json` with Visual Studio Code:
 - as **name** enter the scope (your npm account name or one of
   your npm organisations) and the project name, without `-xpack.git`
   (like `@micro-os-plus/diag-trace`, `@xpack-dev-tools/ninja-build`)
-- as **version**, enter `0.0.1` if the project is in early development,
+- as **version**, enter `0.1.0` if the project is in early development,
   or accept 1.0.0 for the first stable release; generally use the
   [semver](http://semver.org) conventions
 - as **description**, use the same string as the GitHub project description
@@ -270,7 +317,7 @@ Open `package.json` with Visual Studio Code:
   "author": {
     "name": "Liviu Ionescu",
     "email": "ilg@livius.net",
-    "url": "https://github.com/ilg-ul"
+    "url": "https://github.com/ilg-ul/"
   }
 }
 ```
@@ -299,7 +346,7 @@ Open `package.json` with Visual Studio Code:
 With VSC, Sourcetree or Git:
 
 - stage the `package.json`
-- commit with the following message: **package.json: v0.0.1**
+- commit with the following message: **package.json: v0.1.0**
 
 ### Edit the `README.md` file with actual content
 
@@ -313,13 +360,13 @@ With the editor of your choice:
 - in the License section, use something like
   ```
 The original content is released under the
-[MIT License](https://opensource.org/licenses/MIT), with all rights
-reserved to [Liviu Ionescu](https://github.com/ilg-ul).
+[MIT License](https://opensource.org/licenses/MIT), with all rights reserved to
+[Liviu Ionescu](https://github.com/ilg-ul).
 ```
 
 With Sourcetree or Git:
 
-- stage the `README.md` file
+- stage the `README*.md` files
 - commit with the following message: **README: preliminary content**
 
 ### Publish the initial version to GitHub
@@ -339,10 +386,6 @@ With Sourcetree or Git:
 - stage the new files
 - commit with the following message: **add initial content**
 
-### Publish the branch
-
-- with Sourcetree or Git, click **Push** and select `xpack`
-
 ### Create the `xpack-develop` branch
 
 With Sourcetree or Git:
@@ -352,6 +395,11 @@ With Sourcetree or Git:
 
 Generally work in the `xpack-develop` branch and only when ready merge it
 to `master`.
+
+### Publish the branches to GitHub
+
+- with Sourcetree or Git, click **Push** and select all
+  (or at least `xpack` and `xpack-develop`)
 
 ### Publish the initial version to the npmjs public registry
 
