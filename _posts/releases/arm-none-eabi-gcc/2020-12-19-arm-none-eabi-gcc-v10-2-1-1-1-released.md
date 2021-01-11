@@ -6,7 +6,7 @@ summary: "Version 10.2.1-1.1 is a new release of **xPack GNU Arm Embedded GCC**,
 arm_version: 10-2020-q4-major
 arm_date: December 11, 2020
 version: 10.2.1-1.1
-npm_subversion: 1
+npm_subversion: 2
 download_url: https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases/v10.2.1-1.1/
 
 date:   2020-12-19 11:11:00 +0200
