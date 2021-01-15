@@ -185,7 +185,8 @@ Writing messages via an USART is not supported.
   controller code from larger cores, and is not very accurate.
 
 {% include note.html content="Except the GPIOs, none of the other
-device specific peripherals are supported." %}
+device specific peripherals are supported. No USARTs, at least
+for now." %}
 
 ## Documentation
 
