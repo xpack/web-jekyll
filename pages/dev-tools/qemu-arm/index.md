@@ -148,12 +148,16 @@ The xPack QEMU Arm maintains a certain degree of compatibility with the
 original **qemu-system-arm**, but it does not include the large Arm
 cores, being focused only on Cortex-M cores.
 
-The main compatibility requirement for the emulator was to support
+xPack QEMU Arm is mainly intended for running tests, mainly unit tests.
+As such, the main compatibility requirement for the emulator was to support
 all devices addressed during the standard CMSIS initialisations,
 which generally refer to PLL & clock settings.
 
 The next requirement was to fully support the GPIOs, at the level
 of allowing one or more LEDs to blink.
+
+{% include note.html content="Emulating USARTs is not supported. To get
+messages out of the emulated target, use ITM or semihosting." %}
 
 ### SysTick
 
@@ -165,6 +169,13 @@ this, but also provides relatively accurate time intervals, and the
 SysTick exception can be used from simple time measuring to driving
 a real-time scheduler with a reasonable number of task switches per
 second (1000 Hz is OK).
+
+## Semihosting and ITM
+
+The recommended method to display messages from the target is via
+semihosting or ITM, both fully supported.
+
+Writing messages via an USART is not supported.
 
 ## Limitations
 
