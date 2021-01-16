@@ -58,7 +58,8 @@ Regardless how and where it is installed, the `node`
 executable must be in the curent path." %}
 
 {% capture version_manager %}
-## `nvm` install (node version manager)
+
+## Install `nvm` (node version manager)
 
 Node.js can be installed manually, but for a greater flexibility, on POSIX
 platforms
@@ -71,15 +72,21 @@ page.
 {% endcapture %}
 
 {% capture manual_install %}
+
 ## Manual install
+
 {% endcapture %}
 
 {% capture node_install %}
+
 ### `node` install
+
 {% endcapture %}
 
 {% capture npm_update %}
+
 ## `npm` update
+
 {% endcapture %}
 
 {% capture tl_dr %}
@@ -95,7 +102,7 @@ exit
 
 and in new terminal:
 
-```
+```sh
 nvm install --lts node
 nvm use node
 node --version
