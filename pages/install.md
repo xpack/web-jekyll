@@ -493,6 +493,12 @@ adjustments." %}
 The next step is to install the
 [xPack Package Manager]({{ site.baseurl }}/xpm/install/).
 
+If you already know what this is all about, issue the following command:
+
+```sh
+npm install --global xpm@latest
+```
+
 ## Miscellaneous
 
 The official page explaining how to install **npm** in a custom folder is
