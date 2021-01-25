@@ -9,6 +9,8 @@ date: 2017-10-09 02:47:00 +0300
 
 ---
 
+## Standard JS
+
 After many years dealing with style guides for various languages, the conclusion is that the style itself is less important than applying it consistently.
 
 So, for the xPack JavaScript source files to be consistent, the first requirement is to pass the [Standard JS](https://standardjs.com) validation tools.
@@ -312,7 +314,7 @@ class Base {
     assert(params, 'There must be params.')
 
     assert(params.name)
-    console.log(args.name)
+    console.log(params.name)
   }
 
   f2 () {
