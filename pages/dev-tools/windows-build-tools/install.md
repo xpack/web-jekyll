@@ -40,7 +40,7 @@ With xpm available, installing
 the latest version of the package is quite easy:
 
 ```console
-$ xpm install --global @xpack-dev-tools/windows-build-tools@latest
+$ xpm install --global @xpack-dev-tools/windows-build-tools@latest --verbose
 ```
 
 This command will always install the latest available version,
@@ -76,7 +76,7 @@ older versions or configure the path manually." %}
 To remove the installed xPack, the command is similar:
 
 ```console
-$ xpm uninstall --global @xpack-dev-tools/windows-build-tools
+$ xpm uninstall --global @xpack-dev-tools/windows-build-tools --verbose
 ```
 
 {% include note.html content="Not yet implemented. As a temporary workaround,

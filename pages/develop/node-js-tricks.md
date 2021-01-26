@@ -22,12 +22,25 @@ const util = require('util')
 console.log(util.inspect(something))
 ```
 
+### Check if file/folder exist
+
+Use `stat()`.
+
+```
+    try {
+      await fsPromises.stat(aPath)
+      // It does.
+    } catch (err) {
+      // It does not.
+    }
+```
+
 ### Check if symbolic link
 
 Use `lstat()`, since `stat()` follows the link.
 
 ```js
-const stats = await fsPromises.lstat(globalPackageLinkPath)
+const stats = await fsPromises.lstat(aPath)
 
 if (stats.isSymbolicLink()) {
   // ...

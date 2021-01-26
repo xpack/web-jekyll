@@ -273,7 +273,7 @@ Use `xpm init` and later edit the `package.json`.
 
 ```console
 $ cd <project>.git
-$ xpm init
+$ xpm init --verbose
 $ cat package.json
 {
   "name": "@<scope>/<project-name>",

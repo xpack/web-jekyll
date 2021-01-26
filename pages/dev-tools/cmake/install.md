@@ -41,7 +41,7 @@ With xpm available, installing
 the latest version of the package is quite easy:
 
 ```console
-$ xpm install --global @xpack-dev-tools/cmake@latest
+$ xpm install --global @xpack-dev-tools/cmake@latest --verbose
 ```
 
 This command will always install the latest available version,
@@ -68,7 +68,7 @@ settings like **Show Hidden Files**." %}
 To remove the installed xPack, the command is similar:
 
 ```console
-$ xpm uninstall --global @xpack-dev-tools/cmake
+$ xpm uninstall --global @xpack-dev-tools/cmake --verbose
 ```
 
 {% include note.html content="Not yet implemented. As a temporary workaround,

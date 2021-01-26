@@ -142,7 +142,7 @@ A more automated method is to use `xpm init`:
 ```console
 $ mkdir xyz
 $ cd xyz
-$ xpm init
+$ xpm init --verbose
 xPack manager - create an xPack, empty or from a template
 Creating project 'xyz'...
 File 'package.json' generated.
@@ -317,7 +317,7 @@ xPacks contribute a lot of links to `xpacks/.bin`:
 
 ```console
 $ cd /tmp/hifive1-blinky-cpp
-$ xpm install
+$ xpm install --verbose
 xPack manager - install package(s)
 
 Installing dependencies for 'hifive1-blinky-cpp'...

@@ -62,7 +62,7 @@ Example:
 
 ```console
 $ cd /tmp/hifive1-blinky-cpp
-$ xpm install
+$ xpm install --verbose
 xPack manager - install package(s)
 
 Installing dependencies for 'hifive1-blinky-cpp'...
@@ -138,7 +138,7 @@ For detail please see [`npm install`](https://docs.npmjs.com/cli/install).
 Examples:
 
 ```console
-$ xpm install --global @gnu-mcu-eclipse/arm-none-eabi-gcc
+$ xpm install --global @gnu-mcu-eclipse/arm-none-eabi-gcc --verbose
 xPack manager - install package(s)
 
 Processing @gnu-mcu-eclipse/arm-none-eabi-gcc@8.2.1-1.7.1...

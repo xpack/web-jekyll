@@ -73,7 +73,7 @@ Example: Create a project in an interractive session by answering
 lots of questions:
 
 ```console
-$ xpm init --template @sifive/templates
+$ xpm init --template @sifive/templates --verbose
 xPack manager - create an xPack, empty or from a template
 
 Processing @sifive/templates@1.0.4...
