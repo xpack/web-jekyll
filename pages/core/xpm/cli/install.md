@@ -18,11 +18,12 @@ xpm install [<options> ...] [<args>...]
 
 Invoked with no args, running in a package folder:
 
-```
+```bash
 xpm install [<options> ...]
 ```
 
 Aliases:
+
 - `i`
 
 ## Description
@@ -46,7 +47,7 @@ to automate path management for dependent tools.
 
 ### Install dependencies
 
-When invoked without arguments in a package folder, `xpm` installs
+When invoked without arguments in a package folder, `xpm install` installs
 the dependencies listed in the `dependencies` and `devDependencies`
 field in `package.json`.
 

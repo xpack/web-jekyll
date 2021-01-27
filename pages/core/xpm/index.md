@@ -23,21 +23,22 @@ User pages:
 
 - [Install]({{ site.baseurl }}/xpm/install/)
 - [Support]({{ site.baseurl }}/xpm/support/)
-- [npmjs.com](https://www.npmjs.com/package/xpm)
-- [Published versions](https://www.npmjs.com/package/xpm?activeTab=versions)
+- [Releases]({{ site.baseurl }}/xpm/releases/)
+- [npmjs.com](https://www.npmjs.com/package/xpm) (published [versions](https://www.npmjs.com/package/xpm?activeTab=versions))
 
 Developer & maintainer pages:
 
 - [GitHub](https://github.com/xpack/xpm-js)
-- How to build (TBD)
-- How to publish (TBD)
+- [MAINTAINER](https://github.com/xpack/xpm-js/blob/master/README-MAINTAINER.md)
 
 ## Overview
 
-`xpm` stands for **x**Pack **p**ackage **m**anager and is a Node.js CLI
+**xpm** stands for **x**Pack **p**ackage **m**anager and is a
+[Node.js](https://nodejs.org/en/) CLI
 application to manage xPacks; it can install both source and binary xPacks.
 
-**xpm** is an extension to **npm** and shares the same public repository.
+**xpm** is an extension to **npm** and shares the same public
+packages repository ([npmjs.com](https://www.npmjs.com)).
 
 The open source project is hosted on GitHub as
 [`xpack/xpm-js`](https://github.com/xpack/xpm-js.git).
@@ -55,7 +56,7 @@ Please read the [xPacks Overview]({{ site.baseurl }}/) and
 The main purpose of the `xpm` CLI tool is to install xPacks, including all
 dependent xPacks, and to easily update them when new versions are released.
 
-For developers, **xpm** provides a very convenient way of publishing the
+For developers, the xPack tools provide a very convenient way of publishing the
 software packages, using the same central repository as **npm**.
 
 ## xpm CLI commands
@@ -63,6 +64,8 @@ software packages, using the same central repository as **npm**.
 - [`xpm`]({{ site.baseurl }}/xpm/cli/)
 - [`xpm init`]({{ site.baseurl }}/xpm/cli/init/)
 - [`xpm install`]({{ site.baseurl }}/xpm/cli/install/)
+- [`xpm uninstall`]({{ site.baseurl }}/xpm/cli/uninstall/)
+- [`xpm list`]({{ site.baseurl }}/xpm/cli/list/)
 - [`xpm run-script`]({{ site.baseurl }}/xpm/cli/run-script/)
 
 ## Configuring xpm
@@ -83,5 +86,5 @@ The design is heavily influenced by the npm application,
 
 ## Note
 
-The xpm tool is currently experimental and should not be used in
-sensitive production environments.
+The **xpm** tool is currently _work in
+progress_ and should be used with caution.
