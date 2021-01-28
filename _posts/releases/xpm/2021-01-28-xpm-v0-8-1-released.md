@@ -1,12 +1,14 @@
 ---
-title:  xPack xpm v0.8.0 pre-release
+title:  xPack xpm v0.8.1 pre-release
 
-summary: "Version **0.8.0** is a new release of **xpm**; it allows to install xPacks from Git repositories and adds new commands (list, uninstall)."
+summary: "Version **0.8.1** is a new release of **xpm**; it allows to install xPacks from Git repositories and adds new commands (list, uninstall); it also changes the default repository location on Linux."
 
-version: 0.8.0
-download_url: https://github.com/xpack/xpm/releases/tag/v0.8.0/
+version: 0.8.1
 
-date:   2021-01-27 20:52:00 +0200
+redirect_from:
+  - /blog/2021/01/27/xpm-v0-8-0-released/
+
+date:   2021-01-28 18:40:00 +0200
 
 categories:
   - releases
@@ -141,7 +143,7 @@ xpm <command> -h|--help  Quick help on command
 xpm --version            Show version 
 xpm -i|--interactive     Enter interactive mode 
 
-npm xpm@0.8.0 '/Users/ilg/.nvm/versions/node/v12.14.0/lib/node_modules/xpm'
+npm xpm@0.8.1 '/Users/ilg/.nvm/versions/node/v12.14.0/lib/node_modules/xpm'
 Home page: <https://xpack.github.io/xpm/>
 Bug reports: <https://github.com/xpack/xpm-js/issues/>
 ```
