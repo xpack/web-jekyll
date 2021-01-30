@@ -8,7 +8,7 @@ version: 0.8.1
 redirect_from:
   - /blog/2021/01/27/xpm-v0-8-0-released/
 
-date:   2021-01-28 18:40:00 +0200
+date:   2021-01-30 21:49:00 +0200
 
 categories:
   - releases
@@ -69,7 +69,7 @@ is generally compatible with previous 0.7.x releases.
 
 - [#66] - due to a partial implementation,
   installing packages that were not published in the npmjs.com repository, 
-  directly from Git or local files, failed; fixed
+  directly from Git, GitHub, GitLab, archive or local files, failed; fixed
 - [#72] - installing standalone packages was done by directly copying
   the content locally; for consistency reasons,the behaviour was changed,
   the content is now also
@@ -81,6 +81,8 @@ is generally compatible with previous 0.7.x releases.
 
 ### Enhancements
 
+- [#78] - installing dependencies proved quite slow; to make things
+  faster, dependencies are downloaded in parallel
 - [#13] - the command `uninstall` was added; it can remove packages
   from the local project or from the global repository (`-g`)
 - [#76] - the command `list` was added; it can list packages
