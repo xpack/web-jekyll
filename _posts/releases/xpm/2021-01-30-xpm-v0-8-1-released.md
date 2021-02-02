@@ -1,5 +1,5 @@
 ---
-title:  xPack xpm v0.8.1 pre-release
+title:  xPack xpm v0.8.1 release
 
 summary: "Version **0.8.1** is a new release of **xpm**; it allows to install xPacks from Git repositories and adds new commands (list, uninstall); it also changes the default repository location on Linux."
 
@@ -35,12 +35,6 @@ For the prerequisites, since it is recommended
 to use a version manager or to customize the **npm** install location,
 please read the
 [Install](https://xpack.github.io/xpm/install/) page for more details.
-
-To install the pre-release version, use:
-
-```console
-$ npm install --global xpm@next
-```
 
 To install the **latest stable** version available, use:
 
