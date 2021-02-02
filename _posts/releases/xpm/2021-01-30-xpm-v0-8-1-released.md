@@ -1,5 +1,5 @@
 ---
-title:  xPack xpm v0.8.1 release
+title:  xPack xpm v0.8.1 released
 
 summary: "Version **0.8.1** is a new release of **xpm**; it allows to install xPacks from Git repositories and adds new commands (list, uninstall); it also changes the default repository location on Linux."
 
