@@ -60,9 +60,6 @@ To install this specific version, use:
 $ xpm install --global @xpack-dev-tools/openocd@{{ page.version }}.{{ page.npm_subversion }}
 ```
 
-{% include warning.html content="This method will be
-available on Arm platforms in the next release of xpm." %}
-
 ## Compliance
 
 The xPack OpenOCD generally follows the official
