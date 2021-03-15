@@ -26,7 +26,7 @@ Developer & maintainer pages:
 
 - [GitHub](https://github.com/xpack-dev-tools/windows-build-tools-xpack)
 - [How to build](https://github.com/xpack-dev-tools/windows-build-tools-xpack/blob/xpack/README-BUILD.md)
-- [How to publish](https://github.com/xpack-dev-tools/windows-build-tools-xpack/blob/xpack/README-PUBLISH.md)
+- [How to publish](https://github.com/xpack-dev-tools/windows-build-tools-xpack/blob/xpack/README-RELEASE.md)
 
 ## Overview
 
