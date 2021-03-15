@@ -1,8 +1,8 @@
 ---
 title:  xPack OpenOCD v0.11.0-1 released
 
-summary: "Version 0.11.0-1 is a maintenance release; it updates to
-the latest upstream master."
+summary: "Version 0.11.0-1 is a new major release; it updates to
+the latest upstream major release."
 
 version: 0.11.0-1
 npm_subversion: 1
