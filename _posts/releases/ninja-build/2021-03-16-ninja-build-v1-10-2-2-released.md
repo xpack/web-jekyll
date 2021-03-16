@@ -91,7 +91,7 @@ from Nov 28th, 2020.
 
 Compared to the upstream version, the Windows version also supports
 spawning scripts via `cmd.exe /c`. These scripts are used by **npm**/**xpm**
-to redirect invocations to the repository of central packages.
+to redirect invocations to the central packages repository.
 
 ## Known problems
 
