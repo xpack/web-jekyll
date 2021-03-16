@@ -70,6 +70,38 @@ C:\>xpm --version
 0.5.0
 ```
 
+### Power Shell execution policy
+
+By default, Power Shell restricts scripts, and **xpm** is not allowed to run:
+
+```ps
+PS C:\Users\ilg> xpm --version
+xpm : File C:\Users\ilg\AppData\Roaming\npm\xpm.ps1 cannot be loaded because running scripts is disabled on this
+system. For more information, see about_Execution_Policies at https:/go.microsoft.com/fwlink/?LinkID=135170.
+At line:1 char:1
++ xpm --version
++ ~~~
+    + CategoryInfo          : SecurityError: (:) [], PSSecurityException
+    + FullyQualifiedErrorId : UnauthorizedAccess
+PS C:\Users\ilg>
+```
+
+In order to run **xpm** it is
+necessary to change the execution policy:
+
+```ps
+PS C:\Users\ilg> Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser
+
+Execution Policy Change
+The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose
+you to the security risks described in the about_Execution_Policies help topic at
+https:/go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the execution policy?
+[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): A
+PS C:\Users\ilg> xpm --version
+0.8.1
+PS C:\Users\ilg>
+```
+
 ### Aggressive antivirus programs & xpm
 
 On Windows, binary xPacks are `.zip` archives containing `.exe` files;
@@ -79,7 +111,7 @@ thus preventing the packages to be installed.
 
 Errors may look like:
 
-```
+```cmd
 Downloading https://github.com/gnu-mcu-eclipse/qemu/releases/download/v2.8.0-4-20190211/gnu-mcu-eclipse-qemu-2.8.0-4-20190211-0633-win64.zip...
 { Error: sha256-p3CgzXJt4zi5g0kxQXlOpss3Xu5Yy+Zv8HXWXkUdg6g= integrity checksum failed when using sha256: wanted sha256-p3CgzXJt4zi5g0kxQXlOpss3Xu5Yy+Zv8HXWXkUdg6g= but got sha512-k1s9UW6Zb20llIuopUwbf3D38OP1F+Nkgf3wGWwsXPwoQfhuiR89+VF3Rrf7YF20fN3tG4/3jZSC3apiHbQ6NA== sha256-ABnfxLMtY8E5KqJkrtIlPB4ML7CSFvjizCabv7i7SbU=. (9 bytes)
 ...
