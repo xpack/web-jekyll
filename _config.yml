@@ -28,7 +28,7 @@ copyright_holder: Liviu Ionescu
 # If you're using Github, provide the basepath to the branch you've
 # created for reviews, following the sample here. if not, leave this
 # value blank.
-github_editme_path: xpack/xpack.github.io/blob/master/
+github_editme_path: xpack/web-jekyll/blob/master/
 
 # If you're using disqus for comments, add the short name here.
 # If not, leave this value blank.
