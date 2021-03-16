@@ -163,8 +163,8 @@ The first set of tests were performed on Travis, by running
 a simple script to check if the binaries start on a wide range of
 platforms and distributions:
 
-- [test xPack CMake on stable platforms](https://travis-ci.org/github/xpack-dev-tools/cmake-xpack/builds/753267034)
-- [test xPack CMake on latest platforms](https://travis-ci.org/github/xpack-dev-tools/cmake-xpack/builds/753269372)
+- [test xPack CMake on stable platforms](https://travis-ci.org/github/xpack-dev-tools/cmake-xpack/builds/220317746)
+- [test xPack CMake on latest platforms](https://travis-ci.org/github/xpack-dev-tools/cmake-xpack/builds/220317753)
 
 ## Tests
 
