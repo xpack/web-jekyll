@@ -1,13 +1,13 @@
 ---
-title:  xPack Ninja Build v1.10.2-1 released
+title:  xPack Ninja Build v1.10.2-2 released
 
-summary: "Version 1.10.2-1 is a new release of the **xPack Ninja Build** package."
+summary: "Version 1.10.2-2 is a maintenance release of the **xPack Ninja Build** package, fixing the spawning of cmd.exe scripts on Windows"
 
-version: 1.10.2-1
+version: 1.10.2-2
 npm_subversion: 1
-download_url: https://github.com/xpack-dev-tools/ninja-build-xpack/releases/tag/v1.10.2-1/
+download_url: https://github.com/xpack-dev-tools/ninja-build-xpack/releases/tag/v1.10.2-2/
 
-date:   2020-12-19 12:14:00 +0200
+date:   2021-03-16 18:58:00 +0200
 
 categories:
   - releases
@@ -89,7 +89,8 @@ from Nov 28th, 2020.
 
 ## Changes
 
-Compared to the upstream version, there are no changes.
+Compared to the upstream version, the Windows version also supports
+spawning scripts via `cmd.exe /c`.
 
 ## Known problems
 
@@ -160,8 +161,8 @@ The first set of tests were performed on Travis, by running
 a simple script to check if the binaries start on a wide range of
 platforms and distributions:
 
-- [test xPack Ninja Build on stable platforms](https://travis-ci.org/github/xpack-dev-tools/ninja-build-xpack/builds/750535406)
-- [test xPack Ninja Build on latest platforms](https://travis-ci.org/github/xpack-dev-tools/ninja-build-xpack/builds/750535435)
+- [test xPack Ninja Build on stable platforms](https://travis-ci.org/github/xpack-dev-tools/ninja-build-xpack/builds/220286429)
+- [test xPack Ninja Build on latest platforms](https://travis-ci.org/github/xpack-dev-tools/ninja-build-xpack/builds/220286630)
 
 ## Tests
 
@@ -171,27 +172,27 @@ TBD
 
 The SHA-256 hashes for the files are:
 
-```
-06135291fd6153c6ea98243013e834dd3491c0e919b01dc22159f438006a18db
-xpack-ninja-build-1.10.2-1-darwin-x64.tar.gz
+```console
+64d764c3bfb386037126725b3a4ff58b9bc9b72985490cd9e3d0f93b5133a43c
+xpack-ninja-build-1.10.2-2-darwin-x64.tar.gz
 
-df05a2ba777d7af2657325f9ff895252364d2a8c81083f1d7282974fae5a556a
-xpack-ninja-build-1.10.2-1-linux-arm64.tar.gz
+c633669347fce592757bd44d6a9f058e6391528a8593c91552e2547ffa7b4d19
+xpack-ninja-build-1.10.2-2-linux-arm64.tar.gz
 
-3af6ff22520383a5e0e539835a13114d5db055adfc899a1f61fb3b784f9141c3
-xpack-ninja-build-1.10.2-1-linux-arm.tar.gz
+74131427efe2a61e25f7a75d866631cea696bd00ff98f2dc096778a8cae29be1
+xpack-ninja-build-1.10.2-2-linux-arm.tar.gz
 
-2d72d42004033c6595e359e36634494aaad798bfacc2197827beb8007d73be52
-xpack-ninja-build-1.10.2-1-linux-ia32.tar.gz
+5dcdfcb8d217fe60a26a3b5989b9886359dd5409bb7066e0915174124275a640
+xpack-ninja-build-1.10.2-2-linux-ia32.tar.gz
 
-6c47cc86d549c1078d2d7c1ceb5f5b96c5c6768f6f1cb09866e95ca9dcee2b6e
-xpack-ninja-build-1.10.2-1-linux-x64.tar.gz
+99bac03fee8c482c2ea3aed0f18f5b09198069503aff28b5831fa7cca88c5121
+xpack-ninja-build-1.10.2-2-linux-x64.tar.gz
 
-cc8fc51d9394f8822ae88c4b479f2d5e15eae05ff87063c5e52f56c03e6adf5d
-xpack-ninja-build-1.10.2-1-win32-ia32.zip
+dd3b64d7513eb37d661d756824c98343ef10b47d1ae7b9b059bee2168b442e9f
+xpack-ninja-build-1.10.2-2-win32-ia32.zip
 
-d9743f21206e0bd93729b05a1d909ab12f73e6facd2d016fc5fba2f62b0e57e2
-xpack-ninja-build-1.10.2-1-win32-x64.zip
+4187623b5595f2efa7196ccaf982739f5bb83954ac0c82a1412d5eea1cc3a6db
+xpack-ninja-build-1.10.2-2-win32-x64.zip
 ```
 
 ## Download analytics
