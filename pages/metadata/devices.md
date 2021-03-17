@@ -1,5 +1,5 @@
 ---
-title: The xPack Dvices Definitions
+title: The xPack Devices Definitions
 permalink: /metadata/devices/
 
 summary: The metadata used to describe devices.
