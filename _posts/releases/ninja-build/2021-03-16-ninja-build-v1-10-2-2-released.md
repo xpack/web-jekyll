@@ -1,7 +1,7 @@
 ---
 title:  xPack Ninja Build v1.10.2-2 released
 
-summary: "Version 1.10.2-2 is a maintenance release of the **xPack Ninja Build** package, fixing the spawning of cmd.exe scripts on Windows"
+summary: "Version 1.10.2-2 is a maintenance release of the **xPack Ninja Build** package, fixing the spawning of cmd.exe scripts on Windows."
 
 version: 1.10.2-2
 npm_subversion: 1
@@ -162,8 +162,8 @@ The first set of tests were performed on Travis, by running
 a simple script to check if the binaries start on a wide range of
 platforms and distributions:
 
-- [test xPack Ninja Build on stable platforms](https://travis-ci.org/github/xpack-dev-tools/ninja-build-xpack/builds/220286429)
-- [test xPack Ninja Build on latest platforms](https://travis-ci.org/github/xpack-dev-tools/ninja-build-xpack/builds/220286630)
+- [test xPack Ninja Build on stable platforms](https://travis-ci.com/github/xpack-dev-tools/ninja-build-xpack/builds/220286429)
+- [test xPack Ninja Build on latest platforms](https://travis-ci.com/github/xpack-dev-tools/ninja-build-xpack/builds/220286630)
 
 ## Tests
 
