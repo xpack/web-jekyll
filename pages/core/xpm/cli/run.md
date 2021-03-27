@@ -1,5 +1,5 @@
 ---
-title: xpm run-script
+title: xpm run
 permalink: /xpm/cli/run/
 
 redirect_from:
