@@ -51,8 +51,17 @@ entries:
     - title: xpm install
       url: /xpm/cli/install/
       output: web
-    - title: xpm run-script
-      url: /xpm/cli/run-script/
+    - title: xpm link
+      url: /xpm/cli/link/
+      output: web
+    - title: xpm list
+      url: /xpm/cli/list/
+      output: web
+    - title: xpm run
+      url: /xpm/cli/run/
+      output: web
+    - title: xpm uninstall
+      url: /xpm/cli/uninstall/
       output: web
 
 
