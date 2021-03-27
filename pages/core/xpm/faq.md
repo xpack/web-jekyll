@@ -11,11 +11,27 @@ date: 2019-06-28 11:03:00 +0300
 
 ### The `xpm` Frequently Asked Questions
 
-{% capture question_1 %}
+{% capture question_50 %}
+Why xpm manages configurations, instead of limiting itself to manage
+dependencies/packages, as the name implies?
+{% endcapture %}
+
+{% capture answer_50 %}
+In the most generic use case, configurations can have specific dependencies,
+for example different configurations can use different architecture
+toolchains, or, in test cases, different versions of the same
+toolchain.
+
+Thus, defining configurations in `package.json` is probably the
+best choice, otherwise both xpm and the build tools must handle
+multiple files with partly redundant content.
+{% endcapture %}
+
+{% capture question_40 %}
 `static async start () ... SyntaxError: Unexpected identifier`
 {% endcapture %}
 
-{% capture answer_1 %}
+{% capture answer_40 %}
 This problem occurs usually on GNU/Linux, and is caused by trying to use
 the outdated version of Node available in the distribution, which
 does not understand the `async` keyword.
@@ -44,11 +60,11 @@ The solution is to install the most recent LTS version of Node, as
 described in the [prerequisites]({{ site.baseurl }}/install/) page.
 {% endcapture %}
 
-{% capture question_2 %}
+{% capture question_30 %}
 `error: Cannot read property 'path' of null`
 {% endcapture %}
 
-{% capture answer_2 %}
+{% capture answer_30 %}
 This problem is specific to Windows and is caused by aggressive antivirus programs.
 
 On Windows, binary xPacks are .zip archives containing .exe files;
@@ -73,11 +89,11 @@ at least for files in the
 If this is not possible, temporarily disable the antivirus program.
 {% endcapture %}
 
-{% capture question_3 %}
+{% capture question_20 %}
 Cannot find the `Library` folder (on macOS)
 {% endcapture %}
 
-{% capture answer_3 %}
+{% capture answer_20 %}
 Yes, due to an unfortunate Apple decision,
 this folder is hidden for regular browsing in Finder.
 
@@ -89,11 +105,11 @@ $ xattr -d com.apple.FinderInfo ~/Library
 ```
 {% endcapture %}
 
-{% capture question_4 %}
+{% capture question_10 %}
 Cannot find the `.content` folder (on macOS)
 {% endcapture %}
 
-{% capture answer_4 %}
+{% capture answer_10 %}
 Yes, due to an unfortunate Apple decision,
 all folders starting with a dot are hidden for regular browsing in Finder.
 
@@ -109,8 +125,9 @@ using it again reverts to hiding them.
 {% endcapture %}
 
 {% include div-panel-group.html %}
-{% include faq-panel.html id="collapse-1" question=question_1 answer=answer_1 %}
-{% include faq-panel.html id="collapse-2" question=question_2 answer=answer_2 %}
-{% include faq-panel.html id="collapse-3" question=question_3 answer=answer_3 %}
-{% include faq-panel.html id="collapse-4" question=question_4 answer=answer_4 %}
+{% include faq-panel.html id="collapse-50" question=question_50 answer=answer_50 %}
+{% include faq-panel.html id="collapse-40" question=question_40 answer=answer_40 %}
+{% include faq-panel.html id="collapse-30" question=question_30 answer=answer_30 %}
+{% include faq-panel.html id="collapse-20" question=question_20 answer=answer_20 %}
+{% include faq-panel.html id="collapse-10" question=question_10 answer=answer_10 %}
 {% include div-end.html %}
