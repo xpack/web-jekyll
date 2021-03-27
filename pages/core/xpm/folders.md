@@ -9,7 +9,7 @@ date: 2017-10-09 14:14:00 +0300
 
 ---
 
-The locations of folders used by xmp can be controlled by several environment
+The locations of folders used by xpm can be controlled by several environment
 variables.
 
 Please note that when the variables must be available in GUI applications,
@@ -19,56 +19,56 @@ its own configuration files.
 
 ## Environment
 
-* `XPACKS_REPO_FOLDER`
-* `XPACKS_CACHE_FOLDER`
-* `XPACKS_SYSTEM_FOLDER`
+- `XPACKS_REPO_FOLDER`
+- `XPACKS_CACHE_FOLDER`
+- `XPACKS_SYSTEM_FOLDER`
 
 ## macOS
 
 Global (home) install:
 
-* `${HOME}/Library/xPacks`
-* `${HOME}/Library/Caches/xPacks`
+- `${HOME}/Library/xPacks`
+- `${HOME}/Library/Caches/xPacks`
 
 System install (not implemented yet):
 
-* `/opt/xPacks` with
-* links in `/usr/local/bin` (normally in `PATH`)
+- `/opt/xPacks` with
+- links in `/usr/local/bin` (normally in `PATH`)
 
 ## GNU/Linux
 
 Global (home) install:
 
-* `${HOME}/opt/xPacks`
-* `${HOME}/.cache/xPacks`
+- `${HOME}/.local/xPacks` (was `${HOME}/opt/xPacks` in earlier versions)
+- `${HOME}/.cache/xPacks`
 
 System install (not implemented):
 
-* `/opt/xPacks`
-* links in `/usr/local/bin` (normally in `PATH`)
+- `/opt/xPacks`
+- links in `/usr/local/bin` (normally in `PATH`)
 
 ## Windows
 
 Global (home) install:
 
-* `%APPDATA%\xPacks` (`C:\Users\ilg\AppData\Roaming\xPacks`)
-* `%LOCALAPPDATA%\Caches\xPacks` (`C:\Users\ilg\AppData\Local\Caches\xPacks`)
+- `%APPDATA%\xPacks` (`C:\Users\ilg\AppData\Roaming\xPacks`)
+- `%LOCALAPPDATA%\Caches\xPacks` (`C:\Users\ilg\AppData\Local\Caches\xPacks`)
 
 System install (not implemented):
 
-* `%ProgramFiles%\xPacks` (`C:\Program Files\xPacks`)
-* links in `%ProgramFiles%\xPacks\.bin`, which must be added to the `Path`
+- `%ProgramFiles%\xPacks` (`C:\Program Files\xPacks`)
+- links in `%ProgramFiles%\xPacks\.bin`, which must be added to the `Path`
 
 ## The xPacks folder
 
 Individual packages are stored as separate folders:
 
-* `[@<scope>/]<name>/<version>`
+- `[@<scope>/]<name>/<version>`
 
 The `xpm link` inside a local package produces a symbolic link from
 the local package folder to something like:
 
-* `[@<scope>/]<name>/link`
+- `[@<scope>/]<name>/.link`
 
 ## The cache folder
 

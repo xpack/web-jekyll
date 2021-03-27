@@ -16,8 +16,8 @@ xpm <command> [<subcommand>...] [<options> ...] [<args>...]
 
 ## Description
 
-`xpm` is the package manager for xPacks. It puts xPacks in place so
-that builds can find them, and manages dependencies.
+`xpm` is the xPacks dependency manager. It manages dependencies
+and puts xPacks in known places so that builds can find them.
 
 {% include note.html content="`xpm` is an extension of
 [npm](https://docs.npmjs.com/cli/npm.html) and
@@ -43,28 +43,27 @@ The xPack package manager command line tool
 Usage: xpm <command> [<subcommand>...] [<options> ...] [<args>...]
 
 where <command> is one of:
-  build, init, install, run-script
+  init, install, link, list, run, uninstall
 
 Common options:
-  --loglevel <level>     Set log level (silent|warn|info|verbose|debug|trace)
-  -s|--silent            Disable all messages (--loglevel silent)
-  -q|--quiet             Mostly quiet, warnings and errors (--loglevel warn)
-  --informative          Informative (--loglevel info)
-  -v|--verbose           Verbose (--loglevel verbose)
-  -d|--debug             Debug messages (--loglevel debug)
-  -dd|--trace            Trace messages (--loglevel trace, -d -d)
-  --no-update-notifier   Skip check for a more recent version
-  -C <folder>            Set current folder
+  --loglevel <level>     Set log level (silent|warn|info|verbose|debug|trace) 
+  -s|--silent            Disable all messages (--loglevel silent) 
+  -q|--quiet             Mostly quiet, warnings and errors (--loglevel warn) 
+  --informative          Informative (--loglevel info) 
+  -v|--verbose           Verbose (--loglevel verbose) 
+  -d|--debug             Debug messages (--loglevel debug) 
+  -dd|--trace            Trace messages (--loglevel trace, -d -d) 
+  --no-update-notifier   Skip check for a more recent version 
+  -C <folder>            Set current folder 
 
-xpm -h|--help            Quick help
-xpm <command> -h|--help  Quick help on command
-xpm --version            Show version
-xpm -i|--interactive     Enter interactive mode
+xpm -h|--help            Quick help 
+xpm <command> -h|--help  Quick help on command 
+xpm --version            Show version 
+xpm -i|--interactive     Enter interactive mode 
 
-npm xpm@0.5.0 '/Users/ilg/Library/npm/lib/node_modules/xpm'
-Home page: <https://github.com/xpack/xpm-js>
-Bug reports: <https://github.com/xpack/xpm-js/issues>
-$
+npm xpm@0.9.0 '/Users/ilg/.nvm/versions/node/v14.16.0/lib/node_modules/xpm'
+Home page: <https://xpack.github.io/xpm/>
+Bug reports: <https://github.com/xpack/xpm-js/issues/>
 ```
 
 This works both at top level and with commands/subcommands.
@@ -99,7 +98,7 @@ version, with `--version`:
 
 ```console
 $ xpm --version
-0.5.0
+0.9.0
 ```
 
 The result is written to the standard output stream, and consists of the
@@ -123,13 +122,16 @@ commands as needed.
 ```console
 $ xpm -i
 xpm> version
-0.5.0
+0.9.0
 xpm>
 ...
 ```
 
 ## Commands
 
-* [xpm init]({{ site.baseurl }}/xpm/cli/init/)
-* [xpm install]({{ site.baseurl }}/xpm/cli/install/)
-* [xpm run-script]({{ site.baseurl }}/xpm/cli/run-script/)
+- [`xpm init`]({{ site.baseurl }}/xpm/cli/init/)
+- [`xpm install`]({{ site.baseurl }}/xpm/cli/install/)
+- [`xpm link`]({{ site.baseurl }}/xpm/cli/link/)
+- [`xpm list`]({{ site.baseurl }}/xpm/cli/list/)
+- [`xpm run`]({{ site.baseurl }}/xpm/cli/run/)
+- [`xpm uninstall`]({{ site.baseurl }}/xpm/cli/uninstall/)

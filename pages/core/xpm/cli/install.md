@@ -10,21 +10,22 @@ date: 2017-10-09 12:56:00 +0300
 
 ## Synopsis
 
-Invoked with args referring to packages:
+Invoked with arguments referring to packages:
 
+```sh
+xpm install [<options> ...] [<packs>...]
 ```
-xpm install [<options> ...] [<args>...]
-```
 
-Invoked with no args, running in a package folder:
+Invoked with no package arguments, and running in a package folder:
 
-```bash
+```sh
 xpm install [<options> ...]
 ```
 
 Aliases:
 
 - `i`
+- `intstall`
 
 ## Description
 
@@ -114,7 +115,6 @@ Folder 'gnu-mcu-eclipse-windows-build-tools' linked to '@gnu-mcu-eclipse/windows
 $
 ```
 
-
 ### Install packages
 
 When invoked with arguments, they must refer to packages. The common
@@ -122,17 +122,22 @@ use case is to use names of packages stored on the public repository,
 but since xpm uses the same library to manage downloads as npm,
 all formats are accepted:
 
-```
+```sh
 xpm install [<@scope>/]<name>
 xpm install [<@scope>/]<name>@<tag>
 xpm install [<@scope>/]<name>@<version>
 xpm install [<@scope>/]<name>@<version range>
-xpm install <git-host>:<git-user>/<repo-name>
+xpm install <github>:<organization>/<repo-name>[#commit-id]
+xpm install <github>:<organization>/<repo-name>[#semver:X.Y.Z]
+xpm install <gitlab>:<organization>/<repo-name>[#commit-id]
+xpm install <gitlab>:<organization>/<repo-name>[#semver:X.Y.Z]
 xpm install <git repo url>
 xpm install <tarball file>
 xpm install <tarball url>
 xpm install <folder>
 ```
+
+When refering to GitHub by semver, a tag named `vX.Y.Z` must be present.
 
 For detail please see [`npm install`](https://docs.npmjs.com/cli/install).
 
@@ -155,43 +160,56 @@ $
 
 ### Help (`--help`)
 
-```
+```console
 $ xpm install --help
 
 xPack manager - install package(s)
-Usage: xpm install [options...] [--global] [--system] [--force] [--dry-run]
-                   [[@<scope>]/<name>[@<version]]
+Usage: xpm install [options...] [--global] [--system] [--force]
+                   [--config <config_name>] [--dry-run] [--save-prod]
+                   [--no-save] [--save-dev] [--save-optional] [--save-bundle]
+                   [--save-exact]
+                   [[@<scope>/]<name>[@<version]|<github_name>/<repo>]...
 
 Install options:
-  -g|--global           Install the package globally in the home folder (optional)
-  -sy|--system          Install the package in a system folder (not impl) (optional)
-  -f|--force            Force install over existing package (optional)
-  -n|--dry-run          Pretend to install the package (not impl) (optional)
+  -g|--global                Install the package globally in the home folder (optional)
+  -sy|--system               Install the package in a system folder (optional)
+  -f|--force                 Force install over existing package (optional)
+  -c|--config <config_name>  Install configuration specific dependencies (optional)
+  -n|--dry-run               Pretend to install the package(s) (optional)
+  -P|--save-prod             Save to dependencies; default unless -D or -O (optional)
+  --no-save                  Prevent saving to dependencies (optional)
+  -D|--save-dev              Save to devDependencies (optional)
+  -O|--save-optional         Save to optionalDependencies (optional)
+  -B|--save-bundle           Save to bundleDependencies (optional)
+  -E|--save-exact            Save deps with exact version (optional)
 
 Common options:
-  --loglevel <level>    Set log level (silent|warn|info|verbose|debug|trace)
-  -s|--silent           Disable all messages (--loglevel silent)
-  -q|--quiet            Mostly quiet, warnings and errors (--loglevel warn)
-  --informative         Informative (--loglevel info)
-  -v|--verbose          Verbose (--loglevel verbose)
-  -d|--debug            Debug messages (--loglevel debug)
-  -dd|--trace           Trace messages (--loglevel trace, -d -d)
-  --no-update-notifier  Skip check for a more recent version
-  -C <folder>           Set current folder
+  --loglevel <level>         Set log level (silent|warn|info|verbose|debug|trace) 
+  -s|--silent                Disable all messages (--loglevel silent) 
+  -q|--quiet                 Mostly quiet, warnings and errors (--loglevel warn) 
+  --informative              Informative (--loglevel info) 
+  -v|--verbose               Verbose (--loglevel verbose) 
+  -d|--debug                 Debug messages (--loglevel debug) 
+  -dd|--trace                Trace messages (--loglevel trace, -d -d) 
+  --no-update-notifier       Skip check for a more recent version 
+  -C <folder>                Set current folder 
 
-xpm -h|--help           Quick help
-xpm --version           Show version
-xpm -i|--interactive    Enter interactive mode
+xpm -h|--help                Quick help 
+xpm --version                Show version 
+xpm -i|--interactive         Enter interactive mode 
 
-npm xpm@0.5.0 '/Users/ilg/Library/npm/lib/node_modules/xpm'
-Home page: <https://github.com/xpack/xpm-js>
-Bug reports: <https://github.com/xpack/xpm-js/issues>
-$
+npm xpm@0.9.0 '/Users/ilg/.nvm/versions/node/v14.16.0/lib/node_modules/xpm'
+Home page: <https://xpack.github.io/xpm/>
+Bug reports: <https://github.com/xpack/xpm-js/issues/>
 ```
 
-### Install globally (`-g|--global`)
+### Global install (`-g|--global`)
 
-Install the package(s) in the global repository (in the user home folder).
+Install package(s) in the global repository (in the user home folder).
+
+### System install (`-sy|--system`)
+
+Install package(s) in the system repository.
 
 ### Force install (`-f|--force`)
 
@@ -199,7 +217,116 @@ Normally if a package is already installed, xpm exits with a message.
 
 Use this option to force xpm to reinstall a package.
 
+### Configuration (`-c|--config`)
+
+Install dependencies into an existing configuration build
+folder instead of the top project folder.
+
+```console
+$ xpm install --config stm32f4discovery-cmake-gcc10-debug @xpack-dev-tools/arm-none-eabi-gcc@10.2.1-1.1.2
+$ xpm install --config stm32f4discovery-cmake-gcc9-debug @xpack-dev-tools/arm-none-eabi-gcc@9.3.1-1.4.1
+```
+
+The `xpacks` folders are not stored in the project folder, but in the
+configuration build folder, configured via the `buildFolderRelativePath`
+property.
+
+Similarly, the dependencies are stored in the configuration, for
+example:
+
+```json
+{
+  "...": "...",
+  "xpack": {
+    "configurations": {
+      "stm32f4discovery-cmake-gcc10-debug": {
+        "devDependencies": {
+          "@xpack-dev-tools/arm-none-eabi-gcc": "10.2.1-1.1.2"
+        }
+      },
+      "stm32f4discovery-cmake-gcc9-debug": {
+        "devDependencies": {
+          "@xpack-dev-tools/arm-none-eabi-gcc": "9.3.1-1.4.1"
+        }
+      }
+    }
+  }
+}
+```
+
 ### Dry-run (`-n|--dry-run`)
 
-Do everything except to actually install the package(s).
+Do everything except to actually install the packages(s).
 
+### Save to dependencies (`-P|--save-prod`)
+
+Add the installed packages to the `dependencies` array and
+update the `package.json`;
+
+Unless an explicit `-D` or `-O`, source xPacks are stored to
+`dependencies` by default.
+
+### Prevent saving to dependencies (`--no-save`)
+
+Prevent saving to dependencies and updating the `package.json` file.
+
+### Save to devDependencies (`-D|--save-dev`)
+
+Add the installed packages to the `devDependencies` array and
+update the `package.json`.
+
+Unless an explicit `-P`, binary xPacks and npm modules are stored to
+`devDependencies` by default.
+
+### Save to optionalDependencies (`-O|--save-optional`)
+
+Add the installed packages to the `optionalDependencies` array and
+update the `package.json`.
+
+{% include note.html content="Currently xpm does not use the
+optional dependencies, but npm may do so." %}
+
+### Save to bundleDependencies (`-B|--save-bundle`)
+
+Add the installed packages to the `bundleDependencies` array and
+update the `package.json`.
+
+{% include note.html content="Currently xpm does not use the
+bundle dependencies, but npm may do so." %}
+
+### Save with exact version (`-E|--save-exact`)
+
+By default, the stored reference to the installed package
+uses the `^` syntax,
+which is the npm/semver convention that means _compatible_,
+in other words the
+highest version that does not change the major number, if available.
+
+For example:
+
+```json
+{
+  "...": "...",
+  "devDependencies": {
+    "liquidjs": "^9.23.3"
+  },
+  "xpack": {}
+}
+```
+
+This option changes the behaviour by storing the version without `^`,
+which means the exact version is required.
+
+Unless an explicit `-D`, binary xPacks with longer version
+strings (that do not comply to
+semver) are stored without `^` by default, for example:
+
+```json
+{
+  "...": "...",
+  "devDependencies": {
+    "@xpack-dev-tools/arm-none-eabi-gcc": "10.2.1-1.1.2"
+  },
+  "xpack": {}
+}
+```

@@ -38,7 +38,7 @@ to help find the xPacks in the public repository.
 }
 ```
 
-## The binary xPack properties
+## The `binaries` property
 
 Binary xPacks do not include the binaries, they include only URLs where
 to download the binaries from, and checksums to validate the downloads.
@@ -99,11 +99,13 @@ The supported platforms are:
 - `linux-arm` - Arm GNU/Linux 32-bit (since 0.6.0)
 - `linux-arm64` - Arm GNU/Linux 64-bit (since 0.6.0)
 - `linux-x86` (deprecated)
-- `linux-x32` - Intel GNU/Linux 32-bit (since 0.6.0)
+- `linux-x32` (deprecated)
+- `linux-ia32` - Intel GNU/Linux 32-bit (since 0.6.0)
 - `linux-x64` - Intel GNU/Linux 64-bit
 - `darwin-x64` - macOS 64-bit
 - `win32-x86` (deprecated)
-- `win32-x86` - Windows 32-bit (since 0.6.0)
+- `win32-x32` (deprecated)
+- `win32-ia32` - Windows 32-bit (since 0.6.0)
 - `win32-x64` - Windows 64-bit
 
 {% include note.html content="The names are exactly the Node.js
@@ -128,3 +130,14 @@ stubs are created.
 {% include important.html content="To accommodate for the `.cmd` stubs,
 programs launching the executables should do this via a `cmd.exe` shell." %}
 
+## The `properties` property
+
+TBD
+
+## The `actions` property
+
+TBD
+
+## The `configurations` property
+
+TBD

@@ -64,9 +64,10 @@ software packages, using the same central repository as **npm**.
 - [`xpm`]({{ site.baseurl }}/xpm/cli/)
 - [`xpm init`]({{ site.baseurl }}/xpm/cli/init/)
 - [`xpm install`]({{ site.baseurl }}/xpm/cli/install/)
-- [`xpm uninstall`]({{ site.baseurl }}/xpm/cli/uninstall/)
+- [`xpm link`]({{ site.baseurl }}/xpm/cli/link/)
 - [`xpm list`]({{ site.baseurl }}/xpm/cli/list/)
-- [`xpm run-script`]({{ site.baseurl }}/xpm/cli/run-script/)
+- [`xpm run`]({{ site.baseurl }}/xpm/cli/run/)
+- [`xpm uninstall`]({{ site.baseurl }}/xpm/cli/uninstall/)
 
 ## Configuring xpm
 
