@@ -167,5 +167,5 @@ Continuous integration tests are done via GitHub
 
 Credit to [Shields IO](https://shields.io) for the badges.
 
-{% include warning.html content="The **xpm** tool is currently _work in
+{% include important.html content="The **xpm** tool is currently _work in
 progress_ and should be used with caution." %}
