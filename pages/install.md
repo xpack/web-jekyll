@@ -142,7 +142,7 @@ A version of **npm**, usually a bit older, comes packed with Node.
 C:\>where npm.cmd
 C:\Program Files\nodejs\npm.cmd
 C:\>npm --version
-6.4.1
+{{ page.node_version }}
 ```
 
 It is recommended to update it to the latest version:
@@ -161,7 +161,7 @@ Surprisingly, checking the version usually shows the old version:
 C:\>where npm.cmd
 C:\Program Files\nodejs\npm.cmd
 C:\>npm --version
-6.4.1
+{{ page.node_version }}
 ```
 
 This is because on Windows, by default, global node packages are
