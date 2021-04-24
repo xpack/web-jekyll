@@ -48,7 +48,7 @@ If you are convinced that you identified a bug in **xpm**
 (if you have doubts, use the forum),
 or you have a pertinent suggestion how to enhance **xpm**,
 register a **New Issue** in the the
-[GitHub issues](https://github.com/xpack/xpm-js/issues/issues/) tracker.
+[GitHub issues](https://github.com/xpack/xpm-js/issues/) tracker.
 
 {% include tip.html content="**DO NOT** use the GitHub issues tracker
 for questions and support, **use the forums**." %}
