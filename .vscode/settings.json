@@ -2,5 +2,7 @@
 {
   "files.associations": {
     "*.html": "liquid"
-  }
+  },
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true
 }
