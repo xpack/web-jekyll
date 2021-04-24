@@ -58,7 +58,7 @@ More text.
     Code line 3
     Code line 4
 
-## Header 2
+## Header 2 bis
 
 Again.
 
