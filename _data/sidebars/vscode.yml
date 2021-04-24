@@ -1,0 +1,30 @@
+# This is vscode sidebar TOC.
+# The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: Sidebar
+  product: VS Code xPack C/C++ Build Extension
+  # version: 1.0
+  folders:
+
+  - title: Getting Started
+    output: web
+    folderitems:
+    - title: Overview
+      url: /vscode/
+      output: web
+    - title: Install
+      url: /vscode/install/
+      output: web
+    - title: Quick Start
+      url: /vscode/quick-start/
+      output: web
+    - title: Support
+      url: /vscode/support/
+      output: web
+    - title: FAQ
+      url: /vscode/faq/
+      output: web
+    - title: Releases
+      url: /vscode/releases/
+      output: web

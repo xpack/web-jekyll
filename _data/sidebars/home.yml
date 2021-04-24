@@ -69,6 +69,14 @@ entries:
       url: /meson-build/
       output: web
 
+  - title: VS Code Extensions
+    output: web
+    folderitems:
+
+    - title: xPack C/C++ Build Tools
+      url: /vscode/
+      output: web
+
   - title: Support
     output: web
     folderitems:

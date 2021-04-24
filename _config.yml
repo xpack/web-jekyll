@@ -380,6 +380,21 @@ defaults:
       toc: false
       github_editme: true
 
+  -
+    scope:
+      path: "pages/vscode"
+      type: "pages"
+    values:
+      layout: "page"
+      comments: false
+      search: true
+      sidebar: vscode
+      topnav: topnav
+      author: Liviu Ionescu
+      toc: true
+      github_editme: true
+
+
 
 # Used in links.html to find all links.
 sidebars:
