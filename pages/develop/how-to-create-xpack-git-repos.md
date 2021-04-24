@@ -39,7 +39,7 @@ code on a separate branch, like `originals`.
 With each upstream release, while on the `originals` branch,
 fuly remove the content and extract the newly released archive.
 
-In case the archive contains binary files, or other large files considerd
+In case the archive contains binary files, or other large files considered
 not essential for the xPack distribution, add them to `.gitignore`.
 
 ## The `xpack` branch and three-way merging
@@ -68,26 +68,19 @@ of the `master` branch.
 do not enforce the use of a branch named `xpack`, this is only
 a recommendation." %}
 
-### The GitHub Template project
+### Do not use a GitHub Template project
 
-The easiest way to create new projects is to use the existing
-[GitHub Template](https://github.com/xpack/github-template-xpack) project.
-Instantiate it into your organisation and update the project details
-in `package.json` and the copyright owner.
+The easiest way to create new projects would be to use an existing
+GitHub Template project.
 
-- click the **Use this template** button
-- select the owner or the organisation
-- enter the repository name, preferably suffixed with `-xpack`
-- enter the description `A source/binary xPack with ...`
-- select Public
-- enable **Include all branches** (very important!)
-- click **Create repositories from template**
+Unfortunately this path leads to repositories with weirds histories,
+like disconnected commits, and is not practical.
 
 ### Create the GitHub project manually
 
 The following steps apply to GitHub. Adjust them for other Git hosting sites.
 
-The editor of choice is Visual Studio Code (VSC), but you can use
+The editor of choice is Visual Studio Code (VS Code), but you can use
 any editor you like; just be sure that on Windows it does not mess the
 line terminators.
 
@@ -122,10 +115,11 @@ With a browser, at GitHub, select your account or organisation.
 - click the **Copy** icon, or explicitly copy the URL
 - in a terminal window, in a place of our choice, create a folder
   to store all xPacks (for example it can be named `xpacks`):
-  ```console
-$ mkdir -p xpacks
-$ cd xpacks
-$ git clone https://github.com/<user>/<project>.git <project>.git
+
+```sh
+mkdir -p xpacks
+cd xpacks
+git clone https://github.com/<user>/<project>.git <project>.git
 ```
 
 ### Edit the `.gitignore` file
@@ -134,7 +128,7 @@ With Visual Studio Code:
 
 - add the following to `.gitignore`:
 
-```
+```text
 # xpm
 xpacks/
 
@@ -150,7 +144,7 @@ Thumbs.db
 
 - for Eclipse C/C++ projects you can include:
 
-```
+```text
 # Eclipse
 .settings/
 Debug/
@@ -159,7 +153,7 @@ test-*/
 build/
 ```
 
-With VSC, Sourcetree or Git:
+With VS Code, Sourcetree or Git:
 
 - stage the `.gitignore` file
 - commit with the following message: **.gitignore: add xPack specifics**
@@ -174,7 +168,7 @@ your name in the copyright notice.
 
 Check and possibly adjust to match your `LICENSE` requirements.
 
-```
+```text
 MIT License
 
 Copyright (c) 2021 Liviu Ionescu
@@ -183,7 +177,7 @@ Permission is hereby granted, free of charge, to any person obtaining a copy
 ...
 ```
 
-With VSC, Sourcetree or Git:
+With VS Code, Sourcetree or Git:
 
 - stage the `LICENSE` file
 - commit with the following message: **LICENSE: update copyright owner**
@@ -198,13 +192,13 @@ party content, it is recommended to use an `xpack` branch.
 In this case, to warn users about this configuration, edit
 the `README.md` file and replace its entire content with:
 
-```
+```text
 This project does not use the `master` branch, please
 switch to the `xpack` branch to get the project files.
 
 ```
 
-With VSC, Sourcetree or Git:
+With VS Code, Sourcetree or Git:
 
 - stage the `README.md` file
 - commit with the following message: **README: 'no master' notice**
@@ -215,6 +209,7 @@ If the xPack will be used for 3rd party content, create an `originals`
 branch:
 
 Sourcetree:
+
 - select the `master` branch
 - click the **Branch** button
 - in the **Name Branch** field, enter `originals`
@@ -222,26 +217,27 @@ Sourcetree:
 
 Edit the README file to read:
 
-```
+```text
 This branch is used to recreate the 3rd party project history
 from release archives.
 ```
 
-With VSC, Sourcetree or Git:
+With VS Code, Sourcetree or Git:
 
 - stage the `README.md` file
 - commit with the following message: **README: notice for 3rd party content**
 
 ### Create the `xpack` branch
 
-With VSC, Sourcetree or Git.
+With VS Code, Sourcetree or Git.
 
-- VSC menu **View** → **Command Palette...** 
+- VS Code menu **View** → **Command Palette...**
   - **Git: Create branch**
 
-(or with GitLens)
+(or with Git view, **...** → **Branch** → **Create Branch...**)
 
 Sourcetree:
+
 - select the `master` branch
 - click the **Branch** button
 - in the **Name Branch** field, enter `xpack`
@@ -249,9 +245,10 @@ Sourcetree:
 
 ### Publish all branches
 
-With VSC, Sourcetree or Git.
+With VS Code, Sourcetree or Git.
 
-(Sourcetree)
+With Sourcetree:
+
 - click the **Push** button
 - select all local branches (`master`, `xpack` and maybe the `originals`)
 - click the **OK** button
@@ -285,7 +282,7 @@ $ cat package.json
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/<user-id>/<project-name>-xpack.git"
+    "url": "https://github.com/<user-id>/<project-name>-xpack.git"
   },
   "bugs": {
     "url": "https://github.com/<user-id>/<project-name>-xpack/issues"
@@ -320,7 +317,8 @@ Open `package.json` with Visual Studio Code:
 - in **scripts**, check and possibly remove a trailing comma,
 - as **url** and **homepage**, use the actual project Git URL
 - as **author**, enter full data, like
-  ```json
+
+```json
 {
   "author": {
     "name": "Liviu Ionescu",
@@ -329,15 +327,19 @@ Open `package.json` with Visual Studio Code:
   }
 }
 ```
+
 - as **license**, enter the [SPDX](https://spdx.org/licenses/) license
   identifier (like `MIT`); if the license is not a standard one, provide
   the text in a `LICENSE` file and update the JSON to read:
-  ```json
+
+```json
 { "license": "SEE LICENSE IN <filename>" }
 ```
+
 - if the package is inspired by other existing code, enter the author
   as the first contributor, for example:
-  ```json
+
+```json
 {
   "contributors": [
     {
@@ -351,7 +353,7 @@ Open `package.json` with Visual Studio Code:
 
 ### Commit the initial package file
 
-With VSC, Sourcetree or Git:
+With VS Code, Sourcetree or Git:
 
 - stage the `package.json`
 - commit with the following message: **package.json: v0.1.0**
@@ -366,10 +368,13 @@ With the editor of your choice:
 - explain how to install the xPack
   (like `xpm install --global @scope/name`)
 - in the License section, use something like
-  ```
+
+```markdown
+### License
+
 The original content is released under the
 [MIT License](https://opensource.org/licenses/MIT), with all rights reserved to
-[Liviu Ionescu](https://github.com/ilg-ul).
+[Liviu Ionescu](https://github.com/ilg-ul/).
 ```
 
 With Sourcetree or Git:
