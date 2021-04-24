@@ -33,9 +33,10 @@ please follow the instructions in the
 The easiest way to start with the **xPack C/C++ Managed Build** extension
 is to create the classical _Hello World_ project.
 
-Open the 
-[Quick Start]({{ site.baseurl }}/quick-start/) page in a browser and
-follow the steps.
+Follow the steps in the
+[Quick Start]({{ site.baseurl }}/quick-start/) page and the result will
+be not only a fully functional project,
+but also a good starting point for more complex projects.
 
 ## How it works
 
@@ -66,7 +67,7 @@ by design defined as
 
 each using a separate build folder, and
 
-> each with its own set of named **actions**,
+> each with its own set of named **actions**
 
 defined as sequences of commands (stored in JSON as arrays of string).
 

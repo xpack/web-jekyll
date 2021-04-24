@@ -19,11 +19,13 @@ tags:
 
 ---
 
-**ilg-vscode.xpack** is a **Visual Studio Code** extension,
-available from the
-[Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=ilg-vscode.xpack)
-
 ## Install
+
+The **VS Code xPack C/C++ Managed Build Extension** is
+available as **ilg-vscode.xpack** from the
+[Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=ilg-vscode.xpack).
+
+It can also be installed from a terminal:
 
 ```sh
 code --install-extension ilg-vscode.xpack@0.1.5

@@ -15,8 +15,9 @@ is to create the classical _Hello World_ project.
 ## Create a Hello World C++ project
 
 Projects can be created from scratch, but, to simplify things, the process
-can be automated by using a project template, and this VS Code extension
-already includes a command to create a project from a template:
+can be automated by using a project template, and the xPack extension
+already includes a command to create a project from a template.
+To run it:
 
 - open the **Command Palette** (in the **View** menu, or with the
 platform specific keyboard shortcut, Ctrl+Shift+P, or Cmd+Shift+P on macOS)
@@ -28,7 +29,8 @@ platform specific keyboard shortcut, Ctrl+Shift+P, or Cmd+Shift+P on macOS)
 The project creation requires an empty folder. The xPack extension asks
 the user for the location of this folder.
 
-In this example, a folder called `tmp/hello` in the user home folder is used.
+In this example, a folder called `tmp/hello` in the user home folder is used,
+but any location is good as well:
 
 ![Create Hello folder]({{ site.baseurl }}/assets/images/2021/create-folder.png)
 
@@ -85,9 +87,9 @@ of the explorer line (described by tooltip as **Run Action**).
 
 ### Tooltips
 
-As most of other graphical objects, the xPacks Actions explorer shows
+As with most other graphical objects, the xPacks Actions explorer shows
 additional information as tooltips, visible after hovering with the
-mouse for a few moments on the visible items.
+mouse for a few moments over the tree items.
 
 ## Satisfy dependencies
 
