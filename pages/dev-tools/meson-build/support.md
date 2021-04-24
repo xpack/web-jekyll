@@ -63,6 +63,6 @@ private e-mail** for support, **use the xPack forums**." %}
 
 Sending private messages will be automatically replied with
 a link to this page.
-The reason for this rude behaviour is simply an attempt to efficiently use
-the time; since forum posts are archived, other people
+The reason for this rude behaviour is simply an attempt to use
+the time more efficiently; since forum posts are archived, other people
 having similar problems might benefit from the answers.
