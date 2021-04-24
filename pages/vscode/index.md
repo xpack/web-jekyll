@@ -189,4 +189,4 @@ but anything MAY
 change at any time and the public API SHOULD NOT be considered stable.
 
 More details about each release can be found in the
-[releases](http://localhost:4002/web-preview/vscode/releases/) page.
+[releases]({{ site.baseurl }}/vscode/releases/) page.
