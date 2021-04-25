@@ -1,0 +1,20 @@
+{
+  "name": "xpack-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "link-opt-jekyll": "mkdir -p node_modules/.bin; ln -s  ${HOME}/opt/homebrew/jekyll/bin/bundle node_modules/.bin/bundle",
+    "serve-preview": "bundle exec jekyll serve --trace --safe --baseurl \"/web-preview\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xpack/web-jekyll.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xpack/web-jekyll/issues/"
+  },
+  "homepage": "https://github.com/xpack/web-jekyll#readme"
+}
