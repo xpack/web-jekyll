@@ -126,7 +126,7 @@ The workspace file is a JSON with the paths to workspace folders. If all
 those folders are children of the workspace, all paths are relative, and
 the file is portable, which means it can be stored in repositories.
 
-{% include note.html content="The xPack extensions does its best to cope with
+{% include note.html content="The xPack extension does its best to cope with
 multiple projects in a folder, but, for IntelliSense to work, it needs
 to create a `.vscode/c_cpp_properties.json` file in the top
 workspace folder. This file contains absolute paths and **should not** be
