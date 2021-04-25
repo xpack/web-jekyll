@@ -34,7 +34,7 @@ The easiest way to start with the **xPack C/C++ Managed Build** extension
 is to create the classical _Hello World_ project.
 
 Follow the steps in the
-[Quick Start]({{ site.baseurl }}/quick-start/) page and the result will
+[Quick Start]({{ site.baseurl }}/vscode/quick-start/) page and the result will
 be not only a fully functional project,
 but also a good starting point for more complex projects.
 
@@ -130,7 +130,7 @@ using CMake, may look like:
       "test": [
         "xpm run build-all",
         "xpm run execute-all"
-      ]    
+      ]
     },
     "buildConfigurations": {
       "Debug": {
@@ -180,13 +180,13 @@ Note: this example assumes the presence of a toolchain, like GCC or clang.
 
 ## Release Notes
 
-The latest release is **v0.4.4**, which,
+The latest release is **v0.x**, which,
 according to [semantic versioning](https://semver.org) rules,
 means it is _in initial development_ phase.
 
-The xPack extension is functional and can be used for beta-testing, 
+The xPack extension is functional and can be used for beta-testing,
 but anything MAY
 change at any time and the public API SHOULD NOT be considered stable.
 
 More details about each release can be found in the
-[releases]({{ site.baseurl }}/vscode/releases/) page.
+[releases]({{ site.baseurl }}/vscode/releases/) pages.

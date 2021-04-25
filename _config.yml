@@ -58,6 +58,8 @@ exclude:
   - jekyll*.mac.command
   - jekyll-localhost*.webloc
   - CONTRIBUTING.md
+  - package.json
+  - node_modules/
 
 feedback_subject_line: [xPack]
 
@@ -426,4 +428,3 @@ last-modified-at:
 
 whitelist:
   - jekyll-redirect-from
-

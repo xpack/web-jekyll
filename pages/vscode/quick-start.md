@@ -81,7 +81,7 @@ The explorer also shows multiple actions, which are
 associated with custom sequences of commands (shown as tooltips).
 There are global
 actions, and actions specific to each build configuration.
-Actions can be executed by clicking the 
+Actions can be executed by clicking the
 triangular icon (▷) at the right side
 of the explorer line (described by tooltip as **Run Action**).
 
@@ -155,16 +155,26 @@ invokes the `hello-world` executable:
 
 ## IntelliSense
 
+VS Code provides a very elaborate code indexer, called
+[IntelliSense](https://code.visualstudio.com/docs/editor/intellisense).
+
+The VS Code C/C++ extension stores the IntelliSense
+configuration in `${workspaceFolder}/.vscode/c_cpp_properties.json` files,
+located in each workspace folder.
+
 For build system generators which create the `compile_commands.json` file
 (like CMake and meson), the xPack extension automatically
-adds the paths to these files in the `.vscode/c_cpp_properties.json` file,
-and the VS Code C/C++ extension automatically processes them.
+adds the paths to these files in the `c_cpp_properties.json` file,
+and the VS Code C/C++ extension can automatically process them.
 
 ![IntelliSense Debug]({{ site.baseurl }}/assets/images/2021/intellisense-debug.png)
 
-As it can be seen, the editor renders dead code in gray (actually in a
+As it can be seen, the editor renders any dead code in gray (actually in a
 set of lighter colours), which is a good sign that the project
 was configured correctly.
+
+For details on the indexer, please read the separate
+[Intellisense]({{ site.baseurl }}/vscode/intellisense/) web page.
 
 ## Switching build configurations
 
@@ -186,6 +196,14 @@ After selecting **Release**, the editor will automatically update the content,
 and show the debug dead code as grey:
 
 ![IntelliSense Release]({{ site.baseurl }}/assets/images/2021/intellisense-release.png)
+
+{% include note.html content="When the `compile_commands.json`
+files do not exist (for example
+right after the project creation and
+before performing the first build), VS Code
+cannot provide IntelliSense services. Run the **build** action,
+or at least the **prepare** action, for all configurations, to create
+these files." %}
 
 ## Closing the workspace
 
@@ -219,10 +237,10 @@ and manually add them to any custom configuration.
 
 ### Create a C version of the Hello World
 
-The project template is configurable, and can be invoked in interractive
+The project template is configurable, and can be invoked in interactive
 mode, which will ask the user for different choices, including
 choosing between C and C++ projects.
 
-To do this from withon the xPack extension, select the 
+To do this from within the xPack extension, select the
 **xPack: Create a Hello World project** and check the console for
 the questions.

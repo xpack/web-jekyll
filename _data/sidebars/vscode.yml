@@ -19,6 +19,9 @@ entries:
     - title: Quick Start
       url: /vscode/quick-start/
       output: web
+    - title: IntelliSense
+      url: /vscode/intellisense/
+      output: web
     - title: Support
       url: /vscode/support/
       output: web
