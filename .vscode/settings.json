@@ -4,5 +4,7 @@
     "*.html": "liquid"
   },
   "files.insertFinalNewline": true,
-  "files.trimFinalNewlines": true
+  "files.trimFinalNewlines": true,
+  "editor.renderWhitespace": "all",
+  "files.trimTrailingWhitespace": true
 }
