@@ -94,7 +94,7 @@ Compared to the upstream version, there are no functional changes.
 
 ## Embedded Python
 
-To simplify dependency management, this release embeddeds a Python
+To simplify dependency management, this release embeds a Python
 3.8.6 instance.
 
 The `meson` executable is a standard ELF/EXE which includes the Python

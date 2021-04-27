@@ -77,7 +77,7 @@ from Sep 11th, 2020.
 
 ## Embedded Python
 
-To simplify dependency management, this release embeddeds a Python
+To simplify dependency management, this release embeds a Python
 3.8.5 instance.
 
 The `meson` executable is a standard ELF/EXE which includes the Python
