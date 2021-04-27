@@ -38,8 +38,8 @@ is generally compatible with previous releases.
 
 ### Bug fixes
 
-- [#13] - the `c_cpp_properties.json` is create only if the workspace
-  folder is package
+- [#13] - the `.vscode/c_cpp_properties.json` is create only if the workspace
+  folder is a package
 
 ### Enhancements
 
