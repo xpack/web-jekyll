@@ -7,7 +7,7 @@ version: 0.56.2-2
 npm_subversion: 1
 download_url: https://github.com/xpack-dev-tools/meson-build-xpack/releases/tag/v0.56.2-2/
 
-date:   2021-04-27 14:57:00 +0200
+date:   2021-04-27 14:57:00 +0300
 
 categories:
   - releases
