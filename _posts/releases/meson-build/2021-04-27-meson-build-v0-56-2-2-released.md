@@ -1,13 +1,13 @@
 ---
-title:  xPack Meson Build v0.56.2-1 released
+title:  xPack Meson Build v0.56.2-2 released
 
-summary: "Version 0.56.2-1 is a new release of the **xPack Meson Build** package, following the Meson release."
+summary: "Version 0.56.2-2 is a maintenance release of the **xPack Meson Build** package, intended to fix the macOS starting bug."
 
-version: 0.56.2-1
+version: 0.56.2-2
 npm_subversion: 1
-download_url: https://github.com/xpack-dev-tools/meson-build-xpack/releases/tag/v0.56.2-1/
+download_url: https://github.com/xpack-dev-tools/meson-build-xpack/releases/tag/v0.56.2-2/
 
-date:   2021-02-02 23:50:00 +0200
+date:   2021-04-27 14:57:00 +0200
 
 categories:
   - releases
@@ -77,7 +77,9 @@ from Jan 10th, 2021.
 
 ## Bug fixes
 
-- none
+- [#3] on macOS, the binary did not identify the executable
+  absolute path correctly and failed to start; the logic was
+  changed to use `proc_pidpath()` and the bug was fixed.
 
 ## Enhancements
 
@@ -115,7 +117,7 @@ available only as `.pyc`.
 
 ## Known problems
 
-- [#3] The macOS version fails to start properly with multiple symbolic links.
+- none
 
 ## Shared libraries
 
@@ -182,8 +184,8 @@ The first set of tests were performed on Travis, by running
 a simple script to check if the binaries start on a wide range of
 platforms and distributions:
 
-- [test xPack Meson Build on stable platforms](https://travis-ci.org/github/xpack-dev-tools/meson-build-xpack/builds/757289367)
-- [test xPack Meson Build on latest platforms](https://travis-ci.org/github/xpack-dev-tools/meson-build-xpack/builds/757289397)
+- [test xPack Meson Build on stable platforms](https://travis-ci.com/github/xpack-dev-tools/meson-build-xpack/builds/224217626)
+- [test xPack Meson Build on latest platforms](https://travis-ci.com/github/xpack-dev-tools/meson-build-xpack/builds/224217632)
 
 ## Tests
 
@@ -193,27 +195,27 @@ TBD
 
 The SHA-256 hashes for the files are:
 
-```
-0c621e837266e7bdf17e0b74e1802239eb069c0a922c8ccc5c63e5e0e703d738
-xpack-meson-build-0.56.2-1-darwin-x64.tar.gz
+```console
+61739c5dc93d61205cc40a49d604caebad71c9889ea356fa15d022831385c155
+xpack-meson-build-0.56.2-2-darwin-x64.tar.gz
 
-9e233d0379c1d17fb9efc1898965aa2ba300423e63230353f6378e7cbba442c4
-xpack-meson-build-0.56.2-1-linux-arm64.tar.gz
+157a890caa5badf8a40d530f50571822a0b45227d115f53a1ddc8dc8ce64068b
+xpack-meson-build-0.56.2-2-linux-arm64.tar.gz
 
-0e177adc93f90921ebbfbe38916a1216890816f70ab7eae73127703f9f026fbc
-xpack-meson-build-0.56.2-1-linux-arm.tar.gz
+90307812e56ccfa8a3ed63e99be157af8f757c1a3f3018218d032e48a7709762
+xpack-meson-build-0.56.2-2-linux-arm.tar.gz
 
-5fc3883798d8eea0ad95ac0ada3b13ca1286468079b92e27f43d861c5582b7d6
-xpack-meson-build-0.56.2-1-linux-ia32.tar.gz
+1840280797bc046a49cb6c7e9379be8404d00aa000b00ae73a1bfd8f9bea4200
+xpack-meson-build-0.56.2-2-linux-ia32.tar.gz
 
-fd37cf6cbeb7429fb9816d1333d8b0c1da40b3a66a0b2de8d74d1e1fcf5d4a67
-xpack-meson-build-0.56.2-1-linux-x64.tar.gz
+4f81cb5c18b41e5d8b78f78c5570f908d2030e7a2cbcdeb0b72c9e744449164b
+xpack-meson-build-0.56.2-2-linux-x64.tar.gz
 
-048f382c8f7023a49c9235dafde61b58785ce8bc55853d9a1ef8968c6a389abf
-xpack-meson-build-0.56.2-1-win32-ia32.zip
+f7b78b7f286db6e4bf700b88b9f4d2756507bee0c7fd26e9b4d9a552f3b4b3af
+xpack-meson-build-0.56.2-2-win32-ia32.zip
 
-fc5daa4b6b2c06ab5d3514b53fc5a6b8a3576e6beb7c25574a737ff7cddad520
-xpack-meson-build-0.56.2-1-win32-x64.zip
+bf0fec9f84997910994e391a6695967fec1a6781f7055206d3e557e47b0fb5d2
+xpack-meson-build-0.56.2-2-win32-x64.zip
 ```
 
 ## Download analytics
