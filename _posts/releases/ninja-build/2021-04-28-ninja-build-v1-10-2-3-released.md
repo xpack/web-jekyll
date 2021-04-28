@@ -1,13 +1,13 @@
 ---
-title:  xPack Ninja Build v1.10.2-2 released
+title:  xPack Ninja Build v1.10.2-3 released
 
-summary: "Version 1.10.2-2 is a maintenance release of the **xPack Ninja Build** package, fixing the spawning of cmd.exe scripts on Windows."
+summary: "Version 1.10.2-3 is a maintenance release of the **xPack Ninja Build** package, fixing the spawning of cmd.exe scripts on Windows."
 
-version: 1.10.2-2
+version: 1.10.2-3
 npm_subversion: 1
-download_url: https://github.com/xpack-dev-tools/ninja-build-xpack/releases/tag/v1.10.2-2/
+download_url: https://github.com/xpack-dev-tools/ninja-build-xpack/releases/tag/v1.10.2-3/
 
-date:   2021-03-16 18:58:00 +0200
+date:   2021-04-28 22:58:00 +0200
 
 categories:
   - releases
@@ -81,7 +81,9 @@ from Nov 28th, 2020.
 
 ## Bug fixes
 
-- none
+- [#1] on Windows, starting npm/xpm applications via the `.cmd` forwarders
+  still not fully functional, as it was shown when trying meson; the problem
+  was identified as the missing quotes around the command passed to cmd.exe.
 
 ## Enhancements
 
@@ -95,8 +97,7 @@ to redirect invocations to the central packages repository.
 
 ## Known problems
 
-- [#1] as discoverd after starting to use meson, starting applications on
-  Windows was still problematic; fixed on 1.10.2-3.
+- none
 
 ## Shared libraries
 
@@ -175,26 +176,27 @@ TBD
 The SHA-256 hashes for the files are:
 
 ```console
-64d764c3bfb386037126725b3a4ff58b9bc9b72985490cd9e3d0f93b5133a43c
-xpack-ninja-build-1.10.2-2-darwin-x64.tar.gz
 
-c633669347fce592757bd44d6a9f058e6391528a8593c91552e2547ffa7b4d19
-xpack-ninja-build-1.10.2-2-linux-arm64.tar.gz
+bab7c9f80775d71c28bbf0c7322e9209059ca435276df221506c6a84d501e822
+xpack-ninja-build-1.10.2-3-darwin-x64.tar.gz
 
-74131427efe2a61e25f7a75d866631cea696bd00ff98f2dc096778a8cae29be1
-xpack-ninja-build-1.10.2-2-linux-arm.tar.gz
+ae093330e3f55f983a8e8de3b3ee4d6962d8ac1ff439fa505ffa34e475d5c5f2
+xpack-ninja-build-1.10.2-3-linux-arm64.tar.gz
 
-5dcdfcb8d217fe60a26a3b5989b9886359dd5409bb7066e0915174124275a640
-xpack-ninja-build-1.10.2-2-linux-ia32.tar.gz
+97baabda3edf74726e5d60682a9b0fe95fdc8895e631694a65974ea94e4650a6
+xpack-ninja-build-1.10.2-3-linux-arm.tar.gz
 
-99bac03fee8c482c2ea3aed0f18f5b09198069503aff28b5831fa7cca88c5121
-xpack-ninja-build-1.10.2-2-linux-x64.tar.gz
+52ed3dd29174b584bd57ea100f69ab5b1888df7064b9368ba8522fb99957cdbd
+xpack-ninja-build-1.10.2-3-linux-ia32.tar.gz
 
-dd3b64d7513eb37d661d756824c98343ef10b47d1ae7b9b059bee2168b442e9f
-xpack-ninja-build-1.10.2-2-win32-ia32.zip
+b49522febca4c4605e335b9482b96994f530729337623efc153098738f517e62
+xpack-ninja-build-1.10.2-3-linux-x64.tar.gz
 
-4187623b5595f2efa7196ccaf982739f5bb83954ac0c82a1412d5eea1cc3a6db
-xpack-ninja-build-1.10.2-2-win32-x64.zip
+223a3a32c00c12f3a64e42994c88d28a2595f70369893187fef2c96deb0c9e5c
+xpack-ninja-build-1.10.2-3-win32-ia32.zip
+
+e25d9f00bb4052eb6c61641f69ea7dcbf8ab45212d3c2078c98ef2cd1a074a5e
+xpack-ninja-build-1.10.2-3-win32-x64.zip
 ```
 
 ## Download analytics
