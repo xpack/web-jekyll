@@ -30,17 +30,22 @@ please follow the instructions in the
 
 ## Quick Start
 
-The easiest way to start with the **xPack C/C++ Managed Build** extension
-is to create the classical _Hello World_ project.
+TL;DR: **View** → **Command Palette...** →
+**xPack: Quick Start a Hello World project (C++, CMake)**
+(but better read the web page).
+
+The easiest way to start with the **VS Code xPack C/C++ Managed Build**
+extension is to create the classical _Hello World_ project.
 
 Follow the steps in the
-[Quick Start]({{ site.baseurl }}/vscode/quick-start/) page and the result will
-be not only a fully functional project,
-but also a good starting point for more complex projects.
+[Quick Start]({{ site.baseurl }}/vscode/quick-start/) page.
+In addition to being
+a fully functional project, the result will also be a good
+starting point for more complex projects.
 
 ## How it works
 
-The VS Code xPack Managed Build is neutral to the build system, and basically
+The xPack Managed Build is neutral to the build system, and basically
 can invoke any tools, old and new, but favours modern tools
 (like CMake and meson) which can
 generate a `compile_commands.json` file, since this
@@ -72,7 +77,6 @@ each using a separate build folder, and
 defined as sequences of commands (stored in JSON as arrays of string).
 
 ![xPack Actions]({{ site.baseurl }}/assets/images/2021/xpack-actions.png)
-
 
 To avoid redundant definitions between configurations,
 the actions can use generic templates, with substitutions performed by the

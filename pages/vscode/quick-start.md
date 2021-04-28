@@ -174,7 +174,7 @@ set of lighter colours), which is a good sign that the project
 was configured correctly.
 
 For details on the indexer, please read the separate
-[Intellisense]({{ site.baseurl }}/vscode/intellisense/) web page.
+[IntelliSense]({{ site.baseurl }}/vscode/intellisense/) web page.
 
 ## Switching build configurations
 
