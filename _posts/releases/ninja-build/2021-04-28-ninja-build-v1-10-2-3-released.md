@@ -164,8 +164,8 @@ The first set of tests were performed on Travis, by running
 a simple script to check if the binaries start on a wide range of
 platforms and distributions:
 
-- [test xPack Ninja Build on stable platforms](https://travis-ci.com/github/xpack-dev-tools/ninja-build-xpack/builds/220286429)
-- [test xPack Ninja Build on latest platforms](https://travis-ci.com/github/xpack-dev-tools/ninja-build-xpack/builds/220286630)
+- [test xPack Ninja Build on stable platforms](https://travis-ci.com/github/xpack-dev-tools/ninja-build-xpack/builds/224429685)
+- [test xPack Ninja Build on latest platforms](https://travis-ci.com/github/xpack-dev-tools/ninja-build-xpack/builds/224429690)
 
 ## Tests
 
