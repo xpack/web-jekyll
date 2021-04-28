@@ -46,7 +46,7 @@ is generally compatible with previous releases.
 provides a convenient way to navigate between multiple build configurations
 and actions; to make it visible, open a `package.json` created via
 `xpm init` and add the xpack property (for example from the above code)
-- actions are integrated into the usual VSCode workflow by associating
+- actions are integrated into the usual VS Code workflow by associating
 internal tasks with each action; separate tasks are added for common
 commands like `xpm install`.
 

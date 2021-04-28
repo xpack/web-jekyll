@@ -1,11 +1,14 @@
 ---
-title:  VS Code xPack extension v0.4.8 released
+title:  VS Code xPack extension v0.4.9 released
 
-summary: "Version **0.4.8** is a new development release of **ilg-vscode.xpack**; it fixes a bug."
+summary: "Version **0.4.9** is a new development release of **ilg-vscode.xpack**; it fixes a bug."
 
-version: 0.4.8
+version: 0.4.9
 
 date:   2021-04-28 00:51:00 +0300
+
+redirect_from:
+  - /blog/2021/04/28/vscode-xpack-v0-4-8-released/
 
 categories:
   - releases
@@ -28,7 +31,7 @@ available as **ilg-vscode.xpack** from the
 It can also be installed from a terminal:
 
 ```sh
-code --install-extension ilg-vscode.xpack@0.4.8
+code --install-extension ilg-vscode.xpack@0.4.9
 ```
 
 ## Changes
