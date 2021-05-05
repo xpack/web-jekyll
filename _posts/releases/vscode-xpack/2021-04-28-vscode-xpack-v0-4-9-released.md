@@ -61,6 +61,8 @@ is generally compatible with previous releases.
 "npm.exclude": "**/xpacks/**"
 ```
 
+(fixed in 0.4.10)
+
 ## Supported platforms
 
 The **ilg-vscode.xpack** extension is fully portable and works on any
