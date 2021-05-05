@@ -1,11 +1,14 @@
 ---
-title:  VS Code xPack extension v0.4.11 released
+title:  VS Code xPack extension v0.4.12 released
 
-summary: "Version **0.4.11** is a new development release of **ilg-vscode.xpack**; it does some cleanups."
+summary: "Version **0.4.12** is a new development release of **ilg-vscode.xpack**; it does some cleanups."
 
-version: 0.4.11
+version: 0.4.12
 
-date:   2021-05-05 19:23:00 +0300
+date:   2021-05-05 19:47:00 +0300
+
+redirect_from:
+  - /blog/2021/05/05/vscode-xpack-v0-4-11-released/
 
 categories:
   - releases
@@ -28,7 +31,7 @@ available as **ilg-vscode.xpack** from the
 It can also be installed from a terminal:
 
 ```sh
-code --install-extension ilg-vscode.xpack@0.4.11
+code --install-extension ilg-vscode.xpack@0.4.12
 ```
 
 ## Changes
