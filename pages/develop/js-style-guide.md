@@ -2,33 +2,49 @@
 title: JavaScript Style Guide
 permalink: /develop/js-style-guide/
 
-summary: For consistency, use the Standard JS validation tools.
+summary: For consistency, use the Standard JS/TS validation tools.
 comments: true
 
 date: 2017-10-09 02:47:00 +0300
 
 ---
 
-## Standard JS
+{% include note.html content="Given the positive experience with
+TypeScript while writing the VS Code xPack extension, starting with 2021,
+existing JavaScript projects will be migrated to TypeScript." %}
 
-After many years dealing with style guides for various languages, the conclusion is that the style itself is less important than applying it consistently.
+## Standard TS/JS
 
-So, for the xPack JavaScript source files to be consistent, the first requirement is to pass the [Standard JS](https://standardjs.com) validation tools.
+After many years dealing with style guides for various languages,
+the conclusion is that the style itself is less important than applying
+it consistently.
+
+So, for the xPack JavaScript source files to be consistent, the first
+requirement is to pass the [Standard JS](https://standardjs.com)
+validation tools, which also have a TypeScript variant
+([ts-standard](https://www.npmjs.com/package/ts-standard))
 
 After this, the main recommendations are:
 
 - use the **ECMAScript 6** specifications (ES 6),
-- if the module does something reasonably complex, the module public functions **must be asynchronous**,
-- asynchronous functions must **use promises** (and definitely **avoid callbacks**),
+- if the module does something reasonably complex, the module public
+functions **must be asynchronous**,
+- asynchronous functions must **use promises** (and definitely
+**avoid callbacks**),
 - **reentrancy** should be seriously considered (avoid module-global variables).
 
 <div style="clear: both;"></div>
 
 ## The xPack project preferences
 
-### Prefer ES6 solutions
+### Prefer TypeScript to JavaScript
 
-This is Rule no. 1, that overrides all other rules. Definitely **avoid using old style code**.
+This is Rule no. 1, that overrides all other rules.
+
+If JavaScript code must be
+still used in some places, prefer ES6 solution.
+
+Definitely **avoid using old style code**.
 
 ### Use classes as much as possible
 
@@ -86,7 +102,7 @@ module.exports.func1 = function () {
 };
 module.exports.func2 = function () { ... }
 ...
-const func = require('name').func1
+const { func1 } = require('name')
 ```
 
 The recommendation is to always return functions or preferably classes
@@ -107,14 +123,14 @@ break backward compatibility.
 Th spread operator expands an iterable into its member objects. It also works
 with arrays and objects
 
-* Create array copies
+- Create array copies
 
 ```js
 const arr1 = [1, 2 3]
 const arr2 = [...arr1]
 ```
 
-* Concatenate arrays
+- Concatenate arrays
 
 ```js
 const arr1 = [1, 2 3]
@@ -122,7 +138,7 @@ const arr2 = [4, 5 6]
 const arr3 = [...arr1, ...arr2]
 ```
 
-* Enumerate object properties
+- Enumerate object properties
 
 ```js
 class Base {
@@ -343,13 +359,13 @@ useful during tests).
 
 ### Use a separate location for private variables
 
-To reduce clutter, group the private variables below a `private_` object.
+To reduce clutter, group the private variables below a `_private` object.
 
 No need to end the name of the variables with `_`.
 
 ### Use a separate location for cached variables
 
-If the object uses local cached objects, group them below a `cache_` object.
+If the object uses local cached objects, group them below a `_cache` object.
 Initialise it to an empty object in the constructor an in the `clear()` method.
 
 No need to end the name of the variables with `_`.
@@ -357,11 +373,11 @@ No need to end the name of the variables with `_`.
 ```js
 class Base {
   constructor () {
-    this.cache_ = {}
+    this._cache = {}
   }
 
   clear () {
-    this.cache_ = {}
+    this._cache = {}
   }
 }
 ```
@@ -665,12 +681,12 @@ These are really objects, available in all modules. (see Node.js [Globals](https
 
 According to [JavaScript ES6— The Spread Syntax (…)](https://codeburst.io/javascript-es6-the-spread-syntax-f5c35525f754):
 
-* The spread syntax is simply three dots: `...`
-* It allows an iterable to expand in places where 0+ arguments are expected.
+- The spread syntax is simply three dots: `...`
+- It allows an iterable to expand in places where 0+ arguments are expected.
 
 Useful cases:
 
-* inserting Arrays
+- inserting Arrays
 
 ```js
 var mid = [3, 4];
@@ -679,7 +695,7 @@ var arr = [1, 2, ...mid, 5, 6];
 console.log(arr);
 ```
 
-* Math
+- Math
 
 ```js
 var arr = [2, 4, 8, 6, 0];
@@ -688,7 +704,7 @@ var max = Math.max(...arr);
 console.log(max);
 ```
 
-* Copy an Array
+- Copy an Array
 
 ```js
 var arr = ['a', 'b', 'c'];
@@ -697,7 +713,7 @@ var arr2 = [...arr];
 console.log(arr2);
 ```
 
-* String to Array
+- String to Array
 
 ```js
 var str = "hello";
