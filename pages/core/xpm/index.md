@@ -33,9 +33,9 @@ Developer & maintainer pages:
 
 ## Overview
 
-**xpm** stands for **x**Pack **p**ackage **m**anager and is a
+**xpm** stands for **x**Pack **p**roject **m**anager and is a
 [Node.js](https://nodejs.org/en/) CLI
-application to manage xPacks; it can install both source and binary xPacks.
+application to manage xPack projects; it can install both source and binary xPacks.
 
 **xpm** is an extension to **npm** and shares the same public
 packages repository ([npmjs.com](https://www.npmjs.com)).

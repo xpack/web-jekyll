@@ -22,7 +22,7 @@ tags:
 
 ---
 
-**xpm** stands for **x**Pack **p**ackage **m**anager and is a 
+**xpm** stands for **x**Pack **p**roject **m**anager and is a
 [Node.js](https://nodejs.org/en/) CLI
 application to manage
 [xPacks](https://xpack.github.io/intro/#but-what-are-xpacks).
@@ -62,7 +62,7 @@ is generally compatible with previous 0.7.x releases.
 ### Bug fixes
 
 - [#66] - due to a partial implementation,
-  installing packages that were not published in the npmjs.com repository, 
+  installing packages that were not published in the npmjs.com repository,
   directly from Git, GitHub, GitLab, archive or local files, failed; fixed
 - [#72] - installing standalone packages was done by directly copying
   the content locally; for consistency reasons,the behaviour was changed,
@@ -124,20 +124,20 @@ where <command> is one of:
   init, install, link, list, run-script, uninstall
 
 Common options:
-  --loglevel <level>     Set log level (silent|warn|info|verbose|debug|trace) 
-  -s|--silent            Disable all messages (--loglevel silent) 
-  -q|--quiet             Mostly quiet, warnings and errors (--loglevel warn) 
-  --informative          Informative (--loglevel info) 
-  -v|--verbose           Verbose (--loglevel verbose) 
-  -d|--debug             Debug messages (--loglevel debug) 
-  -dd|--trace            Trace messages (--loglevel trace, -d -d) 
-  --no-update-notifier   Skip check for a more recent version 
-  -C <folder>            Set current folder 
+  --loglevel <level>     Set log level (silent|warn|info|verbose|debug|trace)
+  -s|--silent            Disable all messages (--loglevel silent)
+  -q|--quiet             Mostly quiet, warnings and errors (--loglevel warn)
+  --informative          Informative (--loglevel info)
+  -v|--verbose           Verbose (--loglevel verbose)
+  -d|--debug             Debug messages (--loglevel debug)
+  -dd|--trace            Trace messages (--loglevel trace, -d -d)
+  --no-update-notifier   Skip check for a more recent version
+  -C <folder>            Set current folder
 
-xpm -h|--help            Quick help 
-xpm <command> -h|--help  Quick help on command 
-xpm --version            Show version 
-xpm -i|--interactive     Enter interactive mode 
+xpm -h|--help            Quick help
+xpm <command> -h|--help  Quick help on command
+xpm --version            Show version
+xpm -i|--interactive     Enter interactive mode
 
 npm xpm@0.8.1 '/Users/ilg/.nvm/versions/node/v12.14.0/lib/node_modules/xpm'
 Home page: <https://xpack.github.io/xpm/>

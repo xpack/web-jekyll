@@ -19,7 +19,7 @@ Well, first, **xPacks** do not introduce a new package format, but use
 exactly the same format as **npm**, and xPacks can be stored in the same
 repositories, public or private.
 
-And **xpm**, the dependencies manager, builds on top of **npm**, the very
+And **xpm**, the project manager, builds on top of **npm**, the very
 popular JavaScript package manager, extending it with new language
 neutral features,
 so things are not that scary as they seemed initially.
@@ -53,7 +53,7 @@ and making the auto-configure scripts more and more complex with every day,
 why not allow the application to ask for the exact versions that are known
 to be compatible, and let an automated tool handle the dependencies?
 
-The **xPacks** dependency manager can do just this, bring in the project
+The **xPacks** project manager can do just this, bring in the project
 exactly the versions needed, thus making the auto-configure step superfluos.
 
 ## But what are xPacks?
@@ -334,7 +334,7 @@ $ tree -a
     ├── xpack-dev-tools-cmake -> /Users/ilg/Library/xPacks/@xpack-dev-tools/cmake/3.19.2-2.1
     └── xpack-dev-tools-ninja-build -> /Users/ilg/Library/xPacks/@xpack-dev-tools/ninja-build/1.10.2-2.1
 
-8 directories, 40 files 
+8 directories, 40 files
 ```
 
 When later running actions like `xpm run build`, the `PATH` is automatically
@@ -370,7 +370,7 @@ This results in another link in the `xpacks` folder
 (mind the linearised package name):
 
 ```console
-$ tree xpacks     
+$ tree xpacks
 xpacks
 ├── micro-os-plus-diag-trace -> /Users/ilg/Library/xPacks/@micro-os-plus/diag-trace/1.0.7
 ├── xpack-dev-tools-arm-none-eabi-gcc -> /Users/ilg/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/10.2.1-1.1.2
@@ -378,7 +378,7 @@ xpacks
 └── xpack-dev-tools-ninja-build -> /Users/ilg/Library/xPacks/@xpack-dev-tools/ninja-build/1.10.2-2.1
 
 4 directories, 0 files
-$ tree xpacks/micro-os-plus-diag-trace 
+$ tree xpacks/micro-os-plus-diag-trace
 xpacks/micro-os-plus-diag-trace
 ├── CHANGELOG.md
 ├── LICENSE
