@@ -498,7 +498,7 @@ adjustments." %}
 ## Install xpm
 
 The next step is to install the
-[xPack Package Manager]({{ site.baseurl }}/xpm/install/).
+[xPack Project Manager]({{ site.baseurl }}/xpm/install/).
 
 If you already know what this is all about, issue the following command:
 

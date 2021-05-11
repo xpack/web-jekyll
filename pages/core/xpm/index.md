@@ -1,5 +1,5 @@
 ---
-title: The xPack Package Manager
+title: The xPack Project Manager
 permalink: /xpm/
 
 summary: A tool to manage dependencies for generic multi-version source and binary packages, inspired by npm.

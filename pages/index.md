@@ -77,7 +77,7 @@ published as separated GitHub _organisations_
 
 The core xPack tools are:
 
-- [`xpm`]({{ site.baseurl }}/xpm/) - the **xPack Package Manager**
+- [`xpm`]({{ site.baseurl }}/xpm/) - the **xPack Project Manager**
 
 Planned:
 
