@@ -1,5 +1,5 @@
 ---
-title: "The xPack Project"
+title: "The xPack Build Framework"
 permalink: /
 
 keywords: packages, code sharing, reusing, libraries, applications, c/c++, embedded
