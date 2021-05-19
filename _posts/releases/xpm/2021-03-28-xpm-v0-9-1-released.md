@@ -35,21 +35,20 @@ please read the
 
 To install the **latest stable** version available, use:
 
-```console
-$ npm install --global xpm@latest
+```sh
+npm install --global xpm@latest
 ```
 
 To install this specific version, use:
 
-```console
-$ xpm install --global xpm@{{ page.version }}
+```sh
+xpm install --global xpm@{{ page.version }}
 ```
 
 {% include note.html content="In the current configuration,
-**npm** complains about several deprecated
-packages; these packages are used by some third party packages, and until
-those packages will update their dependencies, there is not much we can
-do to prevent these warnings." %}
+**npm** complains about several deprecated packages;
+until these third party packages will be updated,
+in v0.10.2 an workaround was added, by bundling the dependencies." %}
 
 ## Changes
 
@@ -78,6 +77,7 @@ build folders (like debug/release, but also multi-platform builds).
 
 ### Known problems
 
+- the warnings triggered by third party dependencies during install; fixed in v0.10.2
 - [#57] when multiple versions of the same package are referenced
   via different dependencies paths, the program fails; version
   mitigation will be implemented in a future release.
@@ -96,20 +96,20 @@ where <command> is one of:
   init, install, link, list, run, uninstall
 
 Common options:
-  --loglevel <level>     Set log level (silent|warn|info|verbose|debug|trace) 
-  -s|--silent            Disable all messages (--loglevel silent) 
-  -q|--quiet             Mostly quiet, warnings and errors (--loglevel warn) 
-  --informative          Informative (--loglevel info) 
-  -v|--verbose           Verbose (--loglevel verbose) 
-  -d|--debug             Debug messages (--loglevel debug) 
-  -dd|--trace            Trace messages (--loglevel trace, -d -d) 
-  --no-update-notifier   Skip check for a more recent version 
-  -C <folder>            Set current folder 
+  --loglevel <level>     Set log level (silent|warn|info|verbose|debug|trace)
+  -s|--silent            Disable all messages (--loglevel silent)
+  -q|--quiet             Mostly quiet, warnings and errors (--loglevel warn)
+  --informative          Informative (--loglevel info)
+  -v|--verbose           Verbose (--loglevel verbose)
+  -d|--debug             Debug messages (--loglevel debug)
+  -dd|--trace            Trace messages (--loglevel trace, -d -d)
+  --no-update-notifier   Skip check for a more recent version
+  -C <folder>            Set current folder
 
-xpm -h|--help            Quick help 
-xpm <command> -h|--help  Quick help on command 
-xpm --version            Show version 
-xpm -i|--interactive     Enter interactive mode 
+xpm -h|--help            Quick help
+xpm <command> -h|--help  Quick help on command
+xpm --version            Show version
+xpm -i|--interactive     Enter interactive mode
 
 npm xpm@0.9.1 '/Users/ilg/.nvm/versions/node/v14.16.0/lib/node_modules/xpm'
 Home page: <https://xpack.github.io/xpm/>

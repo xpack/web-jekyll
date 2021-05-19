@@ -38,21 +38,20 @@ please read the
 
 To install the **latest stable** version available, use:
 
-```console
-$ npm install --global xpm@latest
+```sh
+npm install --global xpm@latest
 ```
 
 To install this specific version, use:
 
-```console
-$ xpm install --global xpm@{{ page.version }}
+```sh
+xpm install --global xpm@{{ page.version }}
 ```
 
 {% include note.html content="In the current configuration,
-**npm** complains about several deprecated
-packages; these packages are used by some third party packages, and until
-those packages will update their dependencies, there is not much we can
-do to prevent these warnings." %}
+**npm** complains about several deprecated packages;
+until these third party packages will be updated,
+in v0.10.2 an workaround was added, by bundling the dependencies." %}
 
 ## Changes
 
@@ -106,6 +105,7 @@ is generally compatible with previous 0.7.x releases.
 
 ### Known problems
 
+- the warnings triggered by third party dependencies during install; fixed in v0.10.2
 - [#57] when multiple versions of the same package are referenced
   via different dependencies paths, the program fails; version
   mitigation will be implemented in a future release.
