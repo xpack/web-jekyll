@@ -12,7 +12,7 @@ date: 2019-06-28 11:03:00 +0300
 ### The `xpm` Frequently Asked Questions
 
 {% capture question_60 %}
-zsh: command not found: xpm
+`zsh: command not found: xpm`
 {% endcapture %}
 
 {% capture answer_60 %}
