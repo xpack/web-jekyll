@@ -67,8 +67,7 @@ $ xpm install --global @xpack-dev-tools/cmake@{{ page.version }}.{{ page.npm_sub
 ## Compliance
 
 The **xPack CMake** is based on the official
-[CMake](https://cmake.org),
-without any changes.
+[CMake](https://cmake.org).
 
 The current version is based on:
 
