@@ -51,7 +51,7 @@ does not understand the `async` keyword.
 
 Errors may look like:
 
-```
+```console
 $ xpm -v
 /home/ilg/opt/npm/lib/node_modules/xpm/node_modules/@ilg/cli-start-options/lib/cli-application.js:150
   static async start () {
@@ -87,7 +87,7 @@ thus preventing the packages to be installed.
 
 Errors may look like:
 
-```
+```console
 Downloading https://github.com/gnu-mcu-eclipse/qemu/releases/download/v2.8.0-4-20190211/gnu-mcu-eclipse-qemu-2.8.0-4-20190211-0633-win64.zip...
 { Error: sha256-p3CgzXJt4zi5g0kxQXlOpss3Xu5Yy+Zv8HXWXkUdg6g= integrity checksum failed when using sha256: wanted sha256-p3CgzXJt4zi5g0kxQXlOpss3Xu5Yy+Zv8HXWXkUdg6g= but got sha512-k1s9UW6Zb20llIuopUwbf3D38OP1F+Nkgf3wGWwsXPwoQfhuiR89+VF3Rrf7YF20fN3tG4/3jZSC3apiHbQ6NA== sha256-ABnfxLMtY8E5KqJkrtIlPB4ML7CSFvjizCabv7i7SbU=. (9 bytes)
 ...
@@ -112,10 +112,11 @@ this folder is hidden for regular browsing in Finder.
 
 To make it back visible, use:
 
-```console
-$ /usr/bin/chflags nohidden ~/Library
-$ xattr -d com.apple.FinderInfo ~/Library
+```sh
+/usr/bin/chflags nohidden ~/Library
+xattr -d com.apple.FinderInfo ~/Library
 ```
+
 {% endcapture %}
 
 {% capture question_10 %}
@@ -128,7 +129,7 @@ all folders starting with a dot are hidden for regular browsing in Finder.
 
 Fortunately there is a workaround for this:
 
-```
+```console
 cmd+shift+'.'
 ```
 

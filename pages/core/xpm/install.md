@@ -23,7 +23,7 @@ npm package [xpm](https://www.npmjs.com/package/xpm) from the
 
 ## Prerequisites
 
-- a recent [Node.js](https://nodejs.org) (>=**10.x**), since the ECMAScript 6 
+- a recent [Node.js](https://nodejs.org) (>=**10.x**), since the ECMAScript 6
 class syntax is used and some dependencies also require new features
 - a recent [npm](https://docs.npmjs.com/cli/npm).
 
@@ -266,16 +266,16 @@ is hidden for regular browsing in Finder.
 
 To make it back visible, use:
 
-```console
-$ /usr/bin/chflags nohidden ~/Library
-$ xattr -d com.apple.FinderInfo ~/Library
+```sh
+/usr/bin/chflags nohidden ~/Library
+xattr -d com.apple.FinderInfo ~/Library
 ```
 
 A more general solution is to make all hidden files:
 
-```console
-$ defaults write com.apple.Finder AppleShowAllFiles true
-$ killall Finder
+```sh
+defaults write com.apple.Finder AppleShowAllFiles true
+killall Finder
 ```
 
 Another anoying behaviour of the file browser is to hide names starting
@@ -284,7 +284,7 @@ extracted in a folder named `.content`.
 
 Fortunately there is a workaround for this too:
 
-```
+```console
 cmd+shift+'.'
 ```
 
@@ -297,13 +297,13 @@ using it again reverts to hiding them.
 To get an initial glimpse on the program, ask for help:
 
 ```console
-$ xpm --help
+% xpm --help
 
-The xPack package manager command line tool
+The xPack project manager command line tool
 Usage: xpm <command> [<subcommand>...] [<options> ...] [<args>...]
 
 where <command> is one of:
-  build, init, install, run-script
+  init, install, link, list, run, uninstall
 
 Common options:
   --loglevel <level>     Set log level (silent|warn|info|verbose|debug|trace)
@@ -313,6 +313,7 @@ Common options:
   -v|--verbose           Verbose (--loglevel verbose)
   -d|--debug             Debug messages (--loglevel debug)
   -dd|--trace            Trace messages (--loglevel trace, -d -d)
+  --no-update-notifier   Skip check for a more recent version
   -C <folder>            Set current folder
 
 xpm -h|--help            Quick help
@@ -320,8 +321,8 @@ xpm <command> -h|--help  Quick help on command
 xpm --version            Show version
 xpm -i|--interactive     Enter interactive mode
 
-npm xpm@0.2.10 '/Users/ilg/My Files/MacBookPro Projects/xPack/npm-modules/xpm-js.git'
-Home page: <https://github.com/xpack/xpm-js>
-Bug reports: <https://github.com/xpack/xpm-js/issues>
-$
+npm xpm@0.10.2 '/Users/ilg/.nvm/versions/node/v14.16.0/lib/node_modules/xpm'
+Home page: <https://xpack.github.io/xpm/>
+Bug reports: <https://github.com/xpack/xpm-js/issues/>
+%
 ```
