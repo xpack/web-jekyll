@@ -6,5 +6,7 @@
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "editor.renderWhitespace": "all",
-  "files.trimTrailingWhitespace": true
-}
+  "files.trimTrailingWhitespace": true,
+  "markdownlint.config": {
+    "MD041": false
+  }}
