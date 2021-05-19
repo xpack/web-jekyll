@@ -11,6 +11,19 @@ date: 2019-06-28 11:03:00 +0300
 
 ### The `xpm` Frequently Asked Questions
 
+{% capture question_60 %}
+zsh: command not found: xpm
+{% endcapture %}
+
+{% capture answer_60 %}
+The location where npm installs global modules got lost; most probably
+you recently switched to `zsh` and forgot to migrate the shell startup
+to `.zprofile`.
+
+Copy the `PATH` setting from your previous shell startup file to
+`.zprofile`.
+{% endcapture %}
+
 {% capture question_50 %}
 Why xpm manages configurations, instead of limiting itself to manage
 dependencies/packages, as the name implies?
@@ -125,6 +138,7 @@ using it again reverts to hiding them.
 {% endcapture %}
 
 {% include div-panel-group.html %}
+{% include faq-panel.html id="collapse-60" question=question_60 answer=answer_60 %}
 {% include faq-panel.html id="collapse-50" question=question_50 answer=answer_50 %}
 {% include faq-panel.html id="collapse-40" question=question_40 answer=answer_40 %}
 {% include faq-panel.html id="collapse-30" question=question_30 answer=answer_30 %}
