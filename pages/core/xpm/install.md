@@ -39,7 +39,7 @@ user home folder, in `%APPDATA%\npm`
 (like `C:\Users\ilg\AppData\Roaming\npm`), and managing packages
 does not require administrative rights.
 
-```
+```console
 C:\>npm install --global xpm@latest
 C:\Users\ilg\AppData\Roaming\npm\xpm -> C:\Users\ilg\AppData\Roaming\npm\node_modules\xpm\bin\xpm.js
 + xpm@0.5.0
@@ -48,7 +48,7 @@ added 260 packages from 147 contributors in 36.304s
 
 The result is a pair of files in the `%APPDATA%\npm` folder:
 
-```
+```console
 C:\>dir "%APPDATA%"\npm\xpm*
  Volume in drive C has no label.
  Volume Serial Number is 28CE-1C06
@@ -65,7 +65,7 @@ If you followed the instructions in the
 [prerequisites]({{ site.baseurl }}/install/) page, you should
 already have this path configured and the program should start normally:
 
-```
+```console
 C:\>xpm --version
 0.5.0
 ```
@@ -74,7 +74,7 @@ C:\>xpm --version
 
 By default, Power Shell restricts scripts, and **xpm** is not allowed to run:
 
-```ps
+```console
 PS C:\Users\ilg> xpm --version
 xpm : File C:\Users\ilg\AppData\Roaming\npm\xpm.ps1 cannot be loaded because running scripts is disabled on this
 system. For more information, see about_Execution_Policies at https:/go.microsoft.com/fwlink/?LinkID=135170.
@@ -89,7 +89,7 @@ PS C:\Users\ilg>
 In order to run **xpm** it is
 necessary to change the execution policy:
 
-```ps
+```console
 PS C:\Users\ilg> Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser
 
 Execution Policy Change
@@ -111,7 +111,7 @@ thus preventing the packages to be installed.
 
 Errors may look like:
 
-```cmd
+```console
 Downloading https://github.com/gnu-mcu-eclipse/qemu/releases/download/v2.8.0-4-20190211/gnu-mcu-eclipse-qemu-2.8.0-4-20190211-0633-win64.zip...
 { Error: sha256-p3CgzXJt4zi5g0kxQXlOpss3Xu5Yy+Zv8HXWXkUdg6g= integrity checksum failed when using sha256: wanted sha256-p3CgzXJt4zi5g0kxQXlOpss3Xu5Yy+Zv8HXWXkUdg6g= but got sha512-k1s9UW6Zb20llIuopUwbf3D38OP1F+Nkgf3wGWwsXPwoQfhuiR89+VF3Rrf7YF20fN3tG4/3jZSC3apiHbQ6NA== sha256-ABnfxLMtY8E5KqJkrtIlPB4ML7CSFvjizCabv7i7SbU=. (9 bytes)
 ...
@@ -137,8 +137,8 @@ already have configured npm to use a location in the home folder.
 
 With the environment properly set, the command to install xpm is:
 
-```console
-$ npm install --global xpm@latest
+```sh
+npm install --global xpm@latest
 ```
 
 To test if xpm starts:
@@ -147,7 +147,7 @@ To test if xpm starts:
 $ which xpm
 /Users/ilg/Library/npm/bin/xpm
 $ xpm --version
-0.5.0
+0.10.2
 ```
 
 {% endcapture %}
@@ -165,8 +165,8 @@ already have configured npm to use a location in the home folder.
 
 With the environment properly set, the command to install xpm is:
 
-```console
-$ npm install --global xpm@latest
+```sh
+npm install --global xpm@latest
 ```
 
 To test if xpm starts:
@@ -175,7 +175,7 @@ To test if xpm starts:
 $ which xpm
 /home/ilg/opt/npm/bin/xpm
 $ xpm --version
-0.5.0
+0.10.2
 ```
 
 ### Using an out of date Node.js
@@ -184,7 +184,7 @@ Ignoring the recommendation to use the LTS version of Node.js and
 insisting on using the one provided by the distribution usually results in
 errors like this:
 
-```
+```console
 $ xpm -v
 /home/ilg/opt/npm/lib/node_modules/xpm/node_modules/@ilg/cli-start-options/lib/cli-application.js:150
   static async start () {
@@ -217,8 +217,8 @@ Follow the instructions in the
 
 To remove xpm, the command is:
 
-```console
-$ npm uninstall --global xpm
+```sh
+npm uninstall --global xpm
 ```
 
 ## Miscellaneous
@@ -233,7 +233,7 @@ benefit from it by using the `npx` comand, as a trampoline to start xpm:
 
 ```console
 $ npx xpm --version
-0.4.3
+0.10.2
 ```
 
 However, for regular usage, this method is not efficient, since
@@ -291,6 +291,12 @@ cmd+shift+'.'
 This keyboard shortcut works like a toggle, using it once makes files
 starting with dot visible,
 using it again reverts to hiding them.
+
+## `zsh: command not found: xpm`
+
+If you recently switched to `zsh`, or updated macOS to 11.x, which does
+this automatically, you need to copy the `PATH` setting from your previous shell startup file to `.zprofile`, otherwise the location
+where npm installs global modules is not in the path.
 
 ## User info
 
