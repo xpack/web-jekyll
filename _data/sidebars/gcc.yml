@@ -1,0 +1,27 @@
+# This is the gcc sidebar TOC.
+# The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: Sidebar
+  product: GNU Compiler Collection GCC
+  # version: 1.0
+  folders:
+
+  - title: Getting Started
+    output: web
+    folderitems:
+    - title: Overview
+      url: /gcc/
+      output: web
+    - title: Install
+      url: /gcc/install/
+      output: web
+    - title: Support
+      url: /gcc/support/
+      output: web
+    - title: FAQ
+      url: /gcc/faq/
+      output: web
+    - title: Releases
+      url: /gcc/releases/
+      output: web

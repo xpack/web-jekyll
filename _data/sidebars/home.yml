@@ -44,6 +44,9 @@ entries:
     output: web
     folderitems:
 
+    - title: gcc
+      url: /gcc/
+      output: web
     - title: arm-none-eabi-gcc
       url: /arm-none-eabi-gcc/
       output: web

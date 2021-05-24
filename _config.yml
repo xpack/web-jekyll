@@ -163,6 +163,20 @@ defaults:
 
   -
     scope:
+      path: "pages/dev-tools/gcc"
+      type: "pages"
+    values:
+      layout: "page"
+      comments: false
+      search: true
+      sidebar: gcc
+      topnav: topnav
+      author: Liviu Ionescu
+      toc: true
+      github_editme: true
+
+  -
+    scope:
       path: "pages/dev-tools/arm-none-eabi-gcc"
       type: "pages"
     values:
