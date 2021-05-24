@@ -42,9 +42,9 @@ the xPack Meson Build embeds a Python3 instance.
 
 The main advantages of using the **xPack Meson Build** are:
 
-- a convenient, uniform and portable install/uninstall/upgrade procedure;
+- a convenient, uniform and portable install/uninstall/upgrade procedure,
   the same procedure is used for all major
-  platforms (Windows 64/32-bit, GNU/Linux 64/32-bit, macOS);
+  platforms (Windows 64/32-bit, GNU/Linux 64/32-bit, macOS)
 - a better integration with development environments
 - a more convenient integration with CI environment
 
@@ -71,7 +71,7 @@ The original Meson documentation is available online:
 ## Support
 
 For the various support options, please read the separate
-[Support]({{ site.baseurl }}/meson-build/support/) page.
+[support]({{ site.baseurl }}/meson-build/support/) page.
 
 ## Change log
 
@@ -90,4 +90,4 @@ folder.
 
 ## Releases
 
-See the [Releases]({{ site.baseurl }}/meson-build/releases/) page.
+See the [releases]({{ site.baseurl }}/meson-build/releases/) pages.

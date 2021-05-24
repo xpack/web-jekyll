@@ -14,7 +14,7 @@ date: 2020-07-14 16:26:00 +0300
 
 ## Overview
 
-The **xPack Windows Build Tools** can be installed automatically, via **xpm** (the
+The **xPack Windows Build Tools** can be installed automatically, via `xpm` (the
 recommended method), or manually, by downloading and unpacking one of the
 portable archives.
 
@@ -132,7 +132,8 @@ The `win32` part is confusing, but we have to leave with it." %}
 
 ### Unpack
 
-Unpack the archive and copy it into the
+To manually install the xPack Windows Build Tools,
+unpack the archive and copy it into the
 `%USERPROFILE%\AppData\Roaming\xPacks\windows-build-tools`
 (for example `C:\Users\ilg\AppData\Roaming\xPacks\windows-build-tools`) folder;
 according to Microsoft, `AppData\Roaming` is the recommended location for

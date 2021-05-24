@@ -42,11 +42,11 @@ maintained by Arm.
 
 The main advantages of using the **xPack GNU Arm Embedded GCC** are:
 
-- a convenient, uniform and portable install/uninstall/upgrade procedure;
+- a convenient, uniform and portable install/uninstall/upgrade procedure,
   the same procedure is used for all major
-  platforms (Windows 64/32-bit, GNU/Linux 64/32-bit, macOS);
+  platforms (Windows 64/32-bit, GNU/Linux 64/32-bit, macOS)
 - a convenient integration with Continuous Integration environments,
-  like Travis;
+  like GitHub Actions
 - a better integration with development environments
   like **Eclipse Embedded CDT**.
 
@@ -103,7 +103,7 @@ share/doc/pdf
 ## Support
 
 For the various support options, please read the separate
-[Support]({{ site.baseurl }}/arm-none-eabi-gcc/support/) page.
+[support]({{ site.baseurl }}/arm-none-eabi-gcc/support/) page.
 
 ## Change log
 
@@ -122,5 +122,4 @@ folder.
 
 ## Releases
 
-See the [Releases]({{ site.baseurl }}/arm-none-eabi-gcc/releases/) page.
-
+See the [releases]({{ site.baseurl }}/arm-none-eabi-gcc/releases/) pages.

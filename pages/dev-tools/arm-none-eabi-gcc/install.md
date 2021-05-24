@@ -15,7 +15,7 @@ date: 2019-07-10 17:53:00 +0300
 
 ## Overview
 
-The **xPack GNU Arm Embedded GCC** can be installed automatically, via **xpm** (the
+The **xPack GNU Arm Embedded GCC** can be installed automatically, via `xpm` (the
 recommended method), or manually, by downloading and unpacking one of the
 portable archives.
 
@@ -79,7 +79,7 @@ For the moment, to update the package, try to install the latest release again,
 as shown before. If there is a new release, it will be installed,
 otherwise a message will warn that the package is already installed.
 
-Future versions of xpm will implement the `outdted` and `update` command,
+Future versions of xpm will implement the `outdated` and `update` commands,
 as npm does.
 
 ### Uninstall
@@ -105,7 +105,8 @@ released as portable
 archives that can be installed in any location.
 
 The archives can be downloaded from the
-GitHub [releases](https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases/) page.
+GitHub [releases](https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases/)
+pages.
 {% endcapture %}
 
 {% capture windows %}
@@ -140,7 +141,8 @@ The `win32` part is confusing, but we have to leave with it." %}
 
 ### Unpack
 
-Unpack the archive and copy the versioned folder into the
+To manually install the xPack GNU Arm Embedded GCC,
+unpack the archive and copy the versioned folder into the
 `%USERPROFILE%\AppData\Roaming\xPacks\arm-none-eabi-gcc`
 (for example `C:\Users\ilg\AppData\Roaming\xPacks\arm-none-eabi-gcc`) folder;
 according to Microsoft, `AppData\Roaming` is the recommended location for
@@ -199,8 +201,9 @@ Download the latest version named like:
 
 ### Unpack
 
-To install GNU Arm Embedded GCC, unpack the archive and copy it to
-`/${HOME}/opt/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-<version>`:
+To manually install the xPack GNU Arm Embedded GCC,
+unpack the archive and copy it to
+`~/opt/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-<version>`:
 
 ```console
 $ mkdir -p ~/opt/xPacks/arm-none-eabi-gcc
@@ -331,14 +334,15 @@ The GNU/Linux versions of **xPack GNU Arm Embedded GCC** are packed as
 - `xpack-arm-none-eabi-gcc-{{ page.version }}-1.1-linux-ia32.tar.gz`
 
 As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
-CentOS, but can be executed on most recent GNU/Linux distributions.
+Ubuntu, but can be executed on most recent GNU/Linux distributions.
 Select the `-x64` file for 64-bit machines and the `-ia32` file for 32-bit
 machines.
 
 ### Unpack
 
-To install GNU Arm Embedded GCC, unpack the archive and copy it to
-`/${HOME}/opt/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-<version>`:
+To manually install the xPack GNU Arm Embedded GCC,
+unpack the archive and copy it to
+`~/opt/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-<version>`:
 
 ```console
 $ mkdir -p ~/opt/xPacks/arm-none-eabi-gcc

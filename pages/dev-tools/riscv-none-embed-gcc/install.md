@@ -15,7 +15,7 @@ date: 2019-07-10 17:53:00 +0300
 
 ## Overview
 
-The **xPack GNU RISC-V Embedded GCC** can be installed automatically, via **xpm** (the
+The **xPack GNU RISC-V Embedded GCC** can be installed automatically, via `xpm` (the
 recommended method), or manually, by downloading and unpacking one of the
 portable archives.
 
@@ -137,7 +137,8 @@ The `win32` part is confusing, but we have to leave with it." %}
 
 ### Unpack
 
-Unpack the archive and copy it into the
+To manually install the xPack GNU RISC-V Embedded GCC,
+unpack the archive and copy it into the
 `%USERPROFILE%\AppData\Roaming\xPacks\riscv-none-embed-gcc`
 (for example `C:\Users\ilg\AppData\Roaming\xPacks\riscv-none-embed-gcc`) folder;
 according to Microsoft, `AppData\Roaming` is the recommended location for
@@ -191,8 +192,9 @@ Download the latest version named like:
 
 ### Unpack
 
-To install GNU RISC-V Embedded GCC, unpack the archive and copy it to
-`/${HOME}/opt/xPacks/riscv-none-embed-gcc/<version>`:
+To manually install the xPack GNU RISC-V Embedded GCC,
+unpack the archive and copy it to
+`~/opt/xPacks/riscv-none-embed-gcc/<version>`:
 
 ```console
 $ mkdir -p ~/opt
@@ -318,14 +320,15 @@ The GNU/Linux versions of **xPack GNU RISC-V Embedded GCC** are packed as
 - `xpack-riscv-none-embed-gcc-{{ page.version }}-3.1-linux-x32.tgz`
 
 As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
-CentOS, but can be executed on most recent GNU/Linux distributions.
+Ubuntu, but can be executed on most recent GNU/Linux distributions.
 Select the `-x64` file for 64-bit machines and the `-x32` file for 32-bit
 machines.
 
 ### Unpack
 
-To install GNU RISC-V Embedded GCC, unpack the archive and move it to
-`/${HOME}/opt/xPacks/riscv-none-embed-gcc/xpack-riscv-none-embed-gcc-{{ page.version }}-3.1`:
+To manually install the xPack GNU RISC-V Embedded GCC,
+unpack the archive and move it to
+`~/opt/xPacks/riscv-none-embed-gcc/xpack-riscv-none-embed-gcc-{{ page.version }}-3.1`:
 
 ```console
 $ mkdir -p ~/opt

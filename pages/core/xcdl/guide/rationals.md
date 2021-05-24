@@ -57,7 +57,7 @@ The same is true when new package versions are released (for example STM release
 
 #### Improved testability
 
-With all metadata available in the packages, and the full configuration also saved as metadata, it is very easy to recreate the project from a script, and integrate the project build into a Continuous Integration systems (like Travis CI, or Jenkins/Hudson), greatly simplifying the definition and use of unit tests.
+With all metadata available in the packages, and the full configuration also saved as metadata, it is very easy to recreate the project from a script, and integrate the project build into a Continuous Integration systems (like GitHub Actions, or Jenkins/Hudson), greatly simplifying the definition and use of unit tests.
 
 
 ## Why XCDL? (the long version)

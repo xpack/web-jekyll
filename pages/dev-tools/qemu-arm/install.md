@@ -15,7 +15,7 @@ date: 2015-09-04 17:03:00 +0300
 
 ## Overview
 
-The **xPack QEMU Arm** can be installed automatically, via **xpm** (the
+The **xPack QEMU Arm** can be installed automatically, via `xpm` (the
 recommended method), or manually, by downloading and unpacking one of the
 portable archives.
 
@@ -88,7 +88,8 @@ For all platforms, the **xPack QEMU Arm** binaries are released as portable
 archives that can be installed in any location.
 
 The archives can be downloaded from the
-GitHub [releases](https://github.com/xpack-dev-tools/qemu-arm-xpack/releases/) page.
+GitHub [Releases](https://github.com/xpack-dev-tools/qemu-arm-xpack/releases/)
+pages.
 
 {% capture windows %}
 ### Download
@@ -108,7 +109,8 @@ The `win32` part is confusing, but we have to leave with it." %}
 
 ### Unpack
 
-Unpack the archive and copy it into the
+To manually install the xPack QEMU Arm,
+unpack the archive and copy it into the
 `%USERPROFILE%\AppData\Roaming\xPacks\qemu-arm`
 (for example `C:\Users\ilg\AppData\Roaming\xPacks\qemu-arm`) folder;
 according to Microsoft, `AppData\Roaming` is the recommended location for
@@ -150,8 +152,9 @@ Download the latest version named like:
 
 ### Unpack
 
-To install QEMU, unpack the archive and move it to
-`/${HOME}/opt/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-7`:
+To manually install the xPack QEMU Arm,
+unpack the archive and move it to
+`~/opt/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-7`:
 
 ```console
 $ mkdir -p ~/opt
@@ -222,14 +225,15 @@ Download the latest version named like:
 - `xpack-qemu-arm-{{ page.version }}-7-linux-x32.tgz`
 
 As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
-CentOS, but can be executed on most recent GNU/Linux distributions.
+Ubuntu, but can be executed on most recent GNU/Linux distributions.
 Select the `-x64` file for 64-bit machines and the `-x32` file for 32-bit
 machines.
 
 ### Unpack
 
-To install QEMU, unpack the archive and move it to
-`/${HOME}/opt/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-7`:
+To manually install the xPack QEMU Arm,
+unpack the archive and move it to
+`~/opt/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-7`:
 
 ```console
 $ mkdir -p ~/opt
@@ -306,4 +310,3 @@ drivers required.
 {% endcapture %}
 
 {% include platform-tabs.html %}
-

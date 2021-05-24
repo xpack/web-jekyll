@@ -87,6 +87,7 @@ A typical example of a project with two build configurations,
 using CMake, may look like:
 
 {% raw %}
+
 ```json
 {
   "name": "hello-world",
@@ -169,6 +170,7 @@ using CMake, may look like:
   }
 }
 ```
+
 {% endraw %}
 
 With the help of `xpm`, the complete cycle of prepare/build/execute

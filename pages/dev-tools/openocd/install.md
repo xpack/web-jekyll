@@ -15,7 +15,7 @@ date: 2015-09-09 19:43:00 +0300
 
 ## Overview
 
-The **xPack OpenOCD** can be installed automatically, via **xpm** (the
+The **xPack OpenOCD** can be installed automatically, via `xpm` (the
 recommended method), or manually, by downloading and unpacking one of the
 portable archives.
 
@@ -131,7 +131,8 @@ The `win32` part is confusing, but we have to leave with it." %}
 
 ### Unpack
 
-Unpack the archive and copy it into the
+To manually install the xPack OpenOCD,
+unpack the archive and copy it into the
 `%USERPROFILE%\AppData\Roaming\xPacks\openocd`
 (for example `C:\Users\ilg\AppData\Roaming\xPacks\openocd`) folder;
 according to Microsoft, `AppData\Roaming` is the recommended location for
@@ -237,8 +238,9 @@ Download the latest version named like:
 
 ### Unpack
 
-To install OpenOCD, unpack the archive and copy it to
-`/${HOME}/opt/xPacks/openocd/<version>`:
+To manually install the xPack OpenOCD,
+unpack the archive and copy it to
+`~/opt/xPacks/openocd/<version>`:
 
 ```console
 $ mkdir -p ~/opt
@@ -334,14 +336,15 @@ Download the latest version named like:
 - `xpack-openocd-{{ page.version }}-13-linux-x32.tgz`
 
 As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
-CentOS, but can be executed on most recent GNU/Linux distributions.
+Ubuntu, but can be executed on most recent GNU/Linux distributions.
 Select the `-x64` file for 64-bit machines and the `-x32` file for 32-bit
 machines.
 
 ### Unpack
 
-To install OpenOCD, unpack the archive and move it to
-`/${HOME}/opt/xPacks/openocd/xpack-openocd-{{ page.version }}-13`:
+To manually install the xPack OpenOCD,
+unpack the archive and move it to
+`~/opt/xPacks/openocd/xpack-openocd-{{ page.version }}-13`:
 
 ```console
 $ mkdir -p ~/opt

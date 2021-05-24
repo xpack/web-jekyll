@@ -39,9 +39,9 @@ an open source project hosted on
 
 The main advantages of using the **xPack CMake** are:
 
-- a convenient, uniform and portable install/uninstall/upgrade procedure;
+- a convenient, uniform and portable install/uninstall/upgrade procedure,
   the same procedure is used for all major
-  platforms (Windows 64/32-bit, GNU/Linux 64/32-bit, macOS);
+  platforms (Windows 64/32-bit, GNU/Linux 64/32-bit, macOS)
 - a better integration with development environments
 - a more convenient integration with CI environment
 
@@ -72,7 +72,7 @@ and online from:
 ## Support
 
 For the various support options, please read the separate
-[Support]({{ site.baseurl }}/cmake/support/) page.
+[support]({{ site.baseurl }}/cmake/support/) page.
 
 ## Change log
 
@@ -91,4 +91,4 @@ folder.
 
 ## Releases
 
-See the [Releases]({{ site.baseurl }}/cmake/releases/) page.
+See the [releases]({{ site.baseurl }}/cmake/releases/) pages.

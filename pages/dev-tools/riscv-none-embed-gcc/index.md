@@ -42,11 +42,11 @@ is an alternate binary distribution that complements the official
 
 The main advantages of using the **xPack GNU RISC-V Embedded GCC** are:
 
-- a convenient, uniform and portable install/uninstall/upgrade procedure;
+- a convenient, uniform and portable install/uninstall/upgrade procedure,
   the same procedure is used for all major
-  platforms (Windows 64/32-bit, GNU/Linux 64/32-bit, macOS);
+  platforms (Windows 64/32-bit, GNU/Linux 64/32-bit, macOS)
 - a convenient integration with Continuous Integration environments,
-  like Travis;
+  like GitHub Actions
 - a better integration with development environments
   like **Eclipse Embedded CDT** (formerly GNU MCU/ARM Eclipse).
 
@@ -187,7 +187,7 @@ Please check the release for the actual list.
 ## Support
 
 For the various support options, please read the separate
-[Support]({{ site.baseurl }}/riscv-none-embed-gcc/support/) page.
+[support]({{ site.baseurl }}/riscv-none-embed-gcc/support/) page.
 
 ## Change log
 
@@ -206,5 +206,4 @@ folder.
 
 ## Releases
 
-See the [Releases]({{ site.baseurl }}/riscv-none-embed-gcc/releases/) page.
-
+See the [releases]({{ site.baseurl }}/riscv-none-embed-gcc/releases/) pages.

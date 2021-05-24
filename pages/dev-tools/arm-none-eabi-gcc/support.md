@@ -1,5 +1,5 @@
 ---
-title: How to get help for xPack GNU Arm Embedded GCC?
+title: How to get help for xPack GNU Arm Embedded GCC
 permalink: /arm-none-eabi-gcc/support/
 
 comments: true
