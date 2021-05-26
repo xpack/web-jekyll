@@ -36,6 +36,7 @@ please read the
 To install the **latest stable** version available, use:
 
 ```sh
+npm uninstall --global xpm
 npm install --global xpm@latest
 ```
 
