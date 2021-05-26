@@ -298,6 +298,28 @@ If you recently switched to `zsh`, or updated macOS to 11.x, which does
 this automatically, you need to copy the `PATH` setting from your previous shell startup file to `.zprofile`, otherwise the location
 where npm installs global modules is not in the path.
 
+## `Cannot find module '@ilg/cli-start-options'`
+
+In certain conditions, npm may fail when installing
+a new xpm over an existing one, and xpm becomes unusable,
+complaining about missing modules.
+
+```console
+% xpm --version
+internal/modules/cjs/loader.js:888
+  throw err;
+  ^
+
+Error: Cannot find module '@ilg/cli-start-options'
+Require stack:
+- /home/ilg/.nvm/versions/node/v14.17.0/lib/node_modules/xpm/lib/main.js
+- /home/ilg/.nvm/versions/node/v14.17.0/lib/node_modules/xpm/bin/xpm.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:885:15)
+```
+
+If this happens, a new install usually fixes the problem,
+if not, the safe way is to first uninstall xpm and then re-install.
+
 ## User info
 
 To get an initial glimpse on the program, ask for help:
