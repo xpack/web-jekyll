@@ -82,7 +82,7 @@ The core xPack tools are:
 Planned:
 
 - [`@xpack/xpbuild`]({{ site.baseurl }}/xpbuild/) - the **xPack Project Builder** (under development)
-- [`@xpack/xpcdl`]({{ site.baseurl }}/xpbuild/) - the **xPack Build Configurator**
+- [`@xpack/xpcdl`]({{ site.baseurl }}/xpcdl/) - the **xPack Build Configurator**
 - `@xpack/xpliquid` - the **xPack Liquid Template Engine**
 - `@xpack/xpjson` - the **xPack JSON Manager**
 - [`@xpack/xpninja`]({{ site.baseurl }}/xpninja/) - the **xPack Build Runner**
@@ -94,7 +94,7 @@ These projects are hosted in the GitHub
 
 The main binary tools packed as xPacks are:
 
-- [`@xpack-dev-tools/gcc`]({{ site.baseurl }}/arm-none-eabi-gcc/) - the **xPack GNU Compiler Collection (GCC)** (C/C++/Obj-C/Obj-C++/Fortran)
+- [`@xpack-dev-tools/gcc`]({{ site.baseurl }}/gcc/) - the **xPack GNU Compiler Collection (GCC)** (C/C++/Obj-C/Obj-C++/Fortran)
 - [`@xpack-dev-tools/arm-none-eabi-gcc`]({{ site.baseurl }}/arm-none-eabi-gcc/) - the **xPack Arm Embedded GCC** toolchain
 - [`@xpack-dev-tools/openocd`]({{ site.baseurl }}/openocd/) - the **xPack OpenOCD**
 - [`@xpack-dev-tools/qemu-arm`]({{ site.baseurl }}/qemu-arm/) - the **xPack QEMU Arm Cortex-M**
@@ -111,7 +111,6 @@ Under development:
 Planned:
 
 - `@xpack-dev-tools/gdb` - the **xPack GNU GDB**
-- `@xpack-dev-tools/binutils` - the **xPack GNU binutils**
 - `@xpack-dev-tools/coreutils` - the **xPack GNU coreutils**
 - `@xpack-dev-tools/make` - the **xPack make**
 
