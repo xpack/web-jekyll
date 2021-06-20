@@ -46,7 +46,8 @@ is generally compatible with previous releases.
 
 ### Other changes
 
-- [#17] - no longer use `ms-vscode.cmake-tools` as `configurationProvider`
+- [#17] - no longer use `"configurationProvider": "ms-vscode.cmake-tools"` in `c_cpp_properties.json`
+- dependency on `ms-vscode.cmake-tools` removed
 
 ### Known problems
 
