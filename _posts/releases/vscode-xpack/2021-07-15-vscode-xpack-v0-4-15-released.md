@@ -1,11 +1,11 @@
 ---
-title:  VS Code xPack extension v0.4.14 released
+title:  VS Code xPack extension v0.4.15 released
 
-summary: "Version **0.4.14** is a new development release of **ilg-vscode.xpack**; it uses a new version of the liquid engine."
+summary: "Version **0.4.15** is a maintenance release of **ilg-vscode.xpack**; it fixes a bug affecting the display of the explorer."
 
-version: 0.4.14
+version: 0.4.15
 
-date:   2021-06-20 12:44:00 +0300
+date:   2021-07-15 10:57:00 +0300
 
 categories:
   - releases
@@ -28,7 +28,7 @@ available as **ilg-vscode.xpack** from the
 It can also be installed from a terminal:
 
 ```sh
-code --install-extension ilg-vscode.xpack@0.4.14
+code --install-extension ilg-vscode.xpack@0.4.15
 ```
 
 ## Changes
@@ -38,7 +38,10 @@ is generally compatible with previous releases.
 
 ### Bug fixes
 
-- none
+- [#21] - in certain conditions, starting with VS Code 1.58,
+  the content of the xPack explorer was incomplete;
+  the problem was identified as a race condition in preparing the tree items;
+  the fix was a simple code reorder.
 
 ### Enhancements
 
@@ -46,14 +49,11 @@ is generally compatible with previous releases.
 
 ### Other changes
 
-- [#17] - no longer use `"configurationProvider": "ms-vscode.cmake-tools"` in `c_cpp_properties.json`
-- dependency on `ms-vscode.cmake-tools` removed
+- none
 
 ### Known problems
 
-- starting with VS Code 1.58, in certain conditions the
-  content of the xPack explorer was incomplete;
-  the problem was fixed in the next release (0.4.15).
+- none
 
 ## Supported platforms
 
