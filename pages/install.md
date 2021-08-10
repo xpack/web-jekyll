@@ -209,6 +209,35 @@ also install the [Git for Windows](https://git-scm.com/download/win) package.
 The xPack Core Tools can run either in the Windows `cmd.exe` terminal,
 or in the Git shell terminal.
 
+## PowerShell Execution Policies
+
+Recent Windows versions use PowerShell, which has a more restrictive
+execution policy intended to prevent
+the execution of malicious scripts; unfortunatelly this also prevents
+the execution of node.js applications.
+
+If you get a message in the console as the one below:
+
+```doscon
+xpm : File C:\Users\...\AppData\Roaming\npm\xpm.ps1 cannot be loaded because running scripts is disabled on this system. For more information, see about_Execution_Policies at
+https:/go.microsoft.com/fwlink/?LinkID=135170.
+At line:1 char:1
++ xpm init --template @xpack/hello-world-template@latest --property lan ...
++ ~~~
+    + CategoryInfo          : SecurityError: (:) [], PSSecurityException
+    + FullyQualifiedErrorId : UnauthorizedAccess
+The terminal process "C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -Command xpm init --template @xpack/hello-world-template@latest --property language
+```
+
+then run the following command in a PowerShell terminal:
+
+```doscon
+Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser
+```
+
+For more details please read the Microsoft
+[about_Execution_Policies](https://docs.microsoft.com/en-gb/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.1) page.
+
 {% endcapture %}
 
 {% capture macos %}
