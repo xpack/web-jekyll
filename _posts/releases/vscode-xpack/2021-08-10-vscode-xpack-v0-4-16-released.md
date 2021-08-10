@@ -47,11 +47,14 @@ is generally compatible with previous releases.
 ### Bug fixes
 
 - [#22] - due to a bug in the logic to redraw the xPack Actions tree, after
-  editing the `package.json`, attempts to perform any actions failed with
-  an error (_Error running command xpack.runAction: Running the contributed
+  editing the `package.json`, all attempts to perform any actions via the
+  play icon failed with an error
+  (_Error running command xpack.runAction: Running the contributed
   command: 'xpack.runAction' failed. This is likely caused by the extension
-  that contributes xpack.runAction._) and the project required a reload, or
-  VS Code a restart. The `TreeDataProvider` member was properly renamed to
+  that contributes xpack.runAction._). Possible workarounds were to
+  close/reopen the project, or to restart VS Code.
+  The problem was caused by a member of the `TreeDataProvider` class which,
+  in a previous release, was erroneously renamed. The name was reverted to
   `onDidChangeTreeData`, and this fixed the bug.
   Many thanks to Erich Styger for helping identify this bug.
 
