@@ -127,7 +127,7 @@ with administrative rights.
 The result is a folder like `C:\Program Files\nodejs`, added to the
 system path since it includes the `node.exe` binary.
 
-```
+```doscon
 C:\>where node.exe
 C:\Program Files\nodejs\node.exe
 C:\>node --version
@@ -138,7 +138,7 @@ v{{ page.node_version }}
 
 A version of **npm**, usually a bit older, comes packed with Node.
 
-```
+```doscon
 C:\>where npm.cmd
 C:\Program Files\nodejs\npm.cmd
 C:\>npm --version
@@ -147,7 +147,7 @@ C:\>npm --version
 
 It is recommended to update it to the latest version:
 
-```
+```doscon
 C:\>npm install --global npm@latest
 C:\Users\ilg\AppData\Roaming\npm\npm -> C:\Users\ilg\AppData\Roaming\npm\node_modules\npm\bin\npm-cli.js
 C:\Users\ilg\AppData\Roaming\npm\npx -> C:\Users\ilg\AppData\Roaming\npm\node_modules\npm\bin\npx-cli.js
@@ -157,7 +157,7 @@ added 435 packages from 816 contributors in 72.64s
 
 Surprisingly, checking the version usually shows the old version:
 
-```
+```doscon
 C:\>where npm.cmd
 C:\Program Files\nodejs\npm.cmd
 C:\>npm --version
@@ -170,19 +170,19 @@ user home folder, in `%APPDATA%\npm`
 (like `C:\Users\ilg\AppData\Roaming\npm`);
 and this path **is not** in the default environment.
 
-```
+```doscon
 C:\>echo %Path%
 ```
 
 It must be added manually in front of the current path:
 
-```
+```doscon
 C:\>set Path=%APPDATA%\npm;%Path%
 ```
 
 To make this setting persistent, also issue the following:
 
-```
+```doscon
 C:\>setx Path "%APPDATA%\npm;%Path%"
 ```
 
@@ -195,7 +195,7 @@ the syntax to match their specifics." %}
 
 After this, the new version of the program should be visible:
 
-```
+```doscon
 C:\>npm --version
 {{ page.npm_version }}
 ```
