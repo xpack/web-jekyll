@@ -224,18 +224,18 @@ in the `~/.nvm/versions/node` folder.
 If you have a previous version of npm installed with a local prefix,
 remove it:
 
-```console
-$ sudo rm -rf /usr/local/lib/node-modules /usr/local/bin/node /usr/local/bin/npm /usr/local/bin/npm
-$ rm -rf ~/Library/npm ~/opt/npm
-$ npm config delete prefix
+```sh
+sudo rm -rf /usr/local/lib/node-modules /usr/local/bin/node /usr/local/bin/npm /usr/local/bin/npm
+rm -rf ~/Library/npm ~/opt/npm
+npm config delete prefix
 ```
 
 Also remove `${HOME}/Library/npm/bin` or `${HOME}/opt/npm/bin` from the PATH.
 
 When everything is clean, run the install script:
 
-```console
-$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+```sh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
 ```
 
 This will install the version manager in `~/.nvm`, and add a few lines to
@@ -370,10 +370,10 @@ in the `~/.nvm/versions/node` folder.
 If you have a previous version of npm installed with a local prefix,
 remove it:
 
-```console
-$ sudo rm -rf /usr/local/lib/nodejs
-$ rm -rf ~/opt/npm
-$ npm config delete prefix
+```sh
+sudo rm -rf /usr/local/lib/nodejs
+rm -rf ~/opt/npm
+npm config delete prefix
 ```
 
 Also remove `${HOME}/opt/npm/bin` from the PATH.
