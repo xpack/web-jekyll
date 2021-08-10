@@ -47,7 +47,7 @@ is generally compatible with previous releases.
 ### Bug fixes
 
 - [#22] - due to a bug in the logic to redraw the xPack Actions tree, after
-  editing the `package.json`, attempts to perform any actions fail with
+  editing the `package.json`, attempts to perform any actions failed with
   an error (_Error running command xpack.runAction: Running the contributed
   command: 'xpack.runAction' failed. This is likely caused by the extension
   that contributes xpack.runAction._) and the project required a reload, or
