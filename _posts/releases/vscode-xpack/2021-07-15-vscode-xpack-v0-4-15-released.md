@@ -53,7 +53,11 @@ is generally compatible with previous releases.
 
 ### Known problems
 
-- none
+- [#22] - due to a bug in the logic to redraw the xPack Actions tree, after
+  editing the `package.json`, attempts to perform any actions fail with
+  an error (_Error running command xpack.runAction: Running the contributed
+  command: 'xpack.runAction' failed. This is likely caused by the extension
+  that contributes xpack.runAction._). Fixed in v0.4.16.
 
 ## Supported platforms
 
