@@ -15,9 +15,9 @@ This is probably the first thought many people might have when hearing about
 xPacks. There are enough package formats and package managers,
 why would we need yet another one?
 
-Well, first, **xPacks** do not introduce a new package format, but use
-exactly the same format as **npm**, and xPacks can be stored in the same
-repositories, public or private.
+Well, first, the xPacks project **does not introduce a new package format**,
+but uses exactly the same format as **npm**,
+and xPacks can be stored in the same repositories, public or private.
 
 And **xpm**, the project manager, builds on top of **npm**, the very
 popular JavaScript package manager, extending it with new language
