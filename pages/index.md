@@ -94,7 +94,6 @@ These projects are hosted in the GitHub
 
 The main binary tools packed as xPacks are:
 
-- [`@xpack-dev-tools/gcc`]({{ site.baseurl }}/gcc/) - the **xPack GNU Compiler Collection (GCC)** (C/C++/Obj-C/Obj-C++/Fortran)
 - [`@xpack-dev-tools/arm-none-eabi-gcc`]({{ site.baseurl }}/arm-none-eabi-gcc/) - the **xPack Arm Embedded GCC** toolchain
 - [`@xpack-dev-tools/openocd`]({{ site.baseurl }}/openocd/) - the **xPack OpenOCD**
 - [`@xpack-dev-tools/qemu-arm`]({{ site.baseurl }}/qemu-arm/) - the **xPack QEMU Arm Cortex-M**
@@ -106,11 +105,11 @@ The main binary tools packed as xPacks are:
 
 Under development:
 
-- `@xpack-dev-tools/gcc` - the **xPack GNU GCC**
+- [`@xpack-dev-tools/gcc`]({{ site.baseurl }}/gcc/) - the **xPack GNU Compiler Collection (GCC)** (C/C++/Obj-C/Obj-C++/Fortran)
+- `@xpack-dev-tools/clang` - the **xPack GNU GDB**
 
 Planned:
 
-- `@xpack-dev-tools/gdb` - the **xPack GNU GDB**
 - `@xpack-dev-tools/coreutils` - the **xPack GNU coreutils**
 - `@xpack-dev-tools/make` - the **xPack make**
 
@@ -179,7 +178,7 @@ The development environments are based on:
   distributions
 - **Ubuntu 16** Docker images, used to build the Arm GNU/Linux
   distributions
-- **macOS 10.10** tools, used to build the macOS Intel distributions
+- **macOS 10.10** tools, used to build the Intel macOS distributions
 
 These scripts are hosted in the Github
 [`xpack/xpack-build-box`](https://github.com/xpack/xpack-build-box) project.
