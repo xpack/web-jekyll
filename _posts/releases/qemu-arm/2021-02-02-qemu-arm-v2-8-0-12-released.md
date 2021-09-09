@@ -84,7 +84,6 @@ The supported boards are:
 xPack 64-bit QEMU v2.8.0 (qemu-system-gnuarmeclipse).
 
 Supported boards:
-Supported boards:
   BluePill             BluePill STM32F103C8T6
   Maple                LeafLab Arduino-style STM32 microcontroller board (r5)
   NUCLEO-F072RB        ST Nucleo Development Board for STM32 F072 devices
