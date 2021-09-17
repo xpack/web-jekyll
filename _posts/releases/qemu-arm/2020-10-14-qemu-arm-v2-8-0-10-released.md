@@ -129,7 +129,7 @@ fields get mixed up when parsing the SVD; fixed.
 ## Shared libraries
 
 On all platforms the packages are standalone, and expect only the standard
-runtime to be present on the host.
+runtime (including X11) to be present on the host.
 
 All dependencies that are build as shared libraries are copied locally in the
 same folder as the executable.
