@@ -254,13 +254,13 @@ in the user home.
 There are two main folders:
 
 - a cache folder, where all downloaded files are stored
-- a central repository folder, where the xPacks are expanded
+- a central storage folder, where the xPacks are expanded
 
 For more details see [xpm folders]({{ site.baseurl }}/xpm/folders/).
 
 ### macOS specifics
 
-The default location used to install the global packages repository is
+The default location used to install the global packages is
 in `~/Library`, a folder that, due to an unfortunate Apple decision,
 is hidden for regular browsing in Finder.
 

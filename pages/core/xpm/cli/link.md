@@ -36,11 +36,11 @@ development of source xPacks while being used as dependencies in
 an application.
 
 It does this by replacing the links to the read-only folders in the
-central repository by links to writable folders.
+central storage by links to writable folders.
 
 This is done in two steps:
 
-- create a special link (called `.link`) from the central repository
+- create a special link (called `.link`) from the central storage
 to the writable folder; this is done by invoking `xpm link` in the
 writable folder
 - replace the link in the application with a link to the above `.link`;
@@ -57,7 +57,7 @@ TBD
 ### Help (`--help`)
 
 ```console
-$ xpm link --help     
+$ xpm link --help
 
 xPack manager - create links to packages under development
 Usage: xpm link [options...] [--config <config_name>] [[@<scope>/]<name>]
@@ -66,19 +66,19 @@ Link options:
   -c|--config <config_name>  Link to the configuration build folder (optional)
 
 Common options:
-  --loglevel <level>         Set log level (silent|warn|info|verbose|debug|trace) 
-  -s|--silent                Disable all messages (--loglevel silent) 
-  -q|--quiet                 Mostly quiet, warnings and errors (--loglevel warn) 
-  --informative              Informative (--loglevel info) 
-  -v|--verbose               Verbose (--loglevel verbose) 
-  -d|--debug                 Debug messages (--loglevel debug) 
-  -dd|--trace                Trace messages (--loglevel trace, -d -d) 
-  --no-update-notifier       Skip check for a more recent version 
-  -C <folder>                Set current folder 
+  --loglevel <level>         Set log level (silent|warn|info|verbose|debug|trace)
+  -s|--silent                Disable all messages (--loglevel silent)
+  -q|--quiet                 Mostly quiet, warnings and errors (--loglevel warn)
+  --informative              Informative (--loglevel info)
+  -v|--verbose               Verbose (--loglevel verbose)
+  -d|--debug                 Debug messages (--loglevel debug)
+  -dd|--trace                Trace messages (--loglevel trace, -d -d)
+  --no-update-notifier       Skip check for a more recent version
+  -C <folder>                Set current folder
 
-xpm -h|--help                Quick help 
-xpm --version                Show version 
-xpm -i|--interactive         Enter interactive mode 
+xpm -h|--help                Quick help
+xpm --version                Show version
+xpm -i|--interactive         Enter interactive mode
 
 npm xpm@0.9.0 '/Users/ilg/.nvm/versions/node/v14.16.0/lib/node_modules/xpm'
 Home page: <https://xpack.github.io/xpm/>

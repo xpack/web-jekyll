@@ -45,7 +45,7 @@ $ xpm install --global @xpack-dev-tools/cmake@latest --verbose
 ```
 
 This command will always install the latest available version,
-in the central xPacks repository, which is a platform dependent folder
+in the central xPacks storage, which is a platform dependent folder
 (check the output of the `xpm` command for the actual folder used on
 your platform).
 

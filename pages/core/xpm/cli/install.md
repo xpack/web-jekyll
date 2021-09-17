@@ -118,7 +118,7 @@ $
 ### Install packages
 
 When invoked with arguments, they must refer to packages. The common
-use case is to use names of packages stored on the public repository,
+use case is to use names of packages stored on the public npm repository,
 but since xpm uses the same library to manage downloads as npm,
 all formats are accepted:
 
@@ -184,19 +184,19 @@ Install options:
   -E|--save-exact            Save deps with exact version (optional)
 
 Common options:
-  --loglevel <level>         Set log level (silent|warn|info|verbose|debug|trace) 
-  -s|--silent                Disable all messages (--loglevel silent) 
-  -q|--quiet                 Mostly quiet, warnings and errors (--loglevel warn) 
-  --informative              Informative (--loglevel info) 
-  -v|--verbose               Verbose (--loglevel verbose) 
-  -d|--debug                 Debug messages (--loglevel debug) 
-  -dd|--trace                Trace messages (--loglevel trace, -d -d) 
-  --no-update-notifier       Skip check for a more recent version 
-  -C <folder>                Set current folder 
+  --loglevel <level>         Set log level (silent|warn|info|verbose|debug|trace)
+  -s|--silent                Disable all messages (--loglevel silent)
+  -q|--quiet                 Mostly quiet, warnings and errors (--loglevel warn)
+  --informative              Informative (--loglevel info)
+  -v|--verbose               Verbose (--loglevel verbose)
+  -d|--debug                 Debug messages (--loglevel debug)
+  -dd|--trace                Trace messages (--loglevel trace, -d -d)
+  --no-update-notifier       Skip check for a more recent version
+  -C <folder>                Set current folder
 
-xpm -h|--help                Quick help 
-xpm --version                Show version 
-xpm -i|--interactive         Enter interactive mode 
+xpm -h|--help                Quick help
+xpm --version                Show version
+xpm -i|--interactive         Enter interactive mode
 
 npm xpm@0.9.0 '/Users/ilg/.nvm/versions/node/v14.16.0/lib/node_modules/xpm'
 Home page: <https://xpack.github.io/xpm/>
@@ -205,7 +205,7 @@ Bug reports: <https://github.com/xpack/xpm-js/issues/>
 
 ### Global install (`-g|--global`)
 
-Install package(s) in the global repository (in the user home folder).
+Install package(s) in the global storage (in the user home folder).
 
 ### System install (`-sy|--system`)
 
