@@ -254,7 +254,7 @@ in the user home.
 There are two main folders:
 
 - a cache folder, where all downloaded files are stored
-- a central storage folder, where the xPacks are expanded
+- a global xPacks store folder, where the xPacks are expanded
 
 For more details see [xpm folders]({{ site.baseurl }}/xpm/folders/).
 

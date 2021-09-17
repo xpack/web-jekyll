@@ -1,7 +1,7 @@
 ---
 title:  xPack xpm v0.8.1 released
 
-summary: "Version **0.8.1** is a new release of **xpm**; it allows to install xPacks from Git repositories and adds new commands (list, uninstall); it also changes the default storage location on Linux."
+summary: "Version **0.8.1** is a new release of **xpm**; it allows to install xPacks from Git repositories and adds new commands (list, uninstall); it also changes the default global xPacks store location on Linux."
 
 version: 0.8.1
 
@@ -67,7 +67,7 @@ is generally compatible with previous 0.7.x releases.
 - [#72] - installing standalone packages was done by directly copying
   the content locally; for consistency reasons,the behaviour was changed,
   the content is now also
-  installed in the central xPacks storage and links are added locally, as
+  installed in the global xPacks store and links are added locally, as
   for any package
 - [#70] - in certain conditions, if the project `package.json` had no
   name/version properties defined, the program crashed with asserts; a better
@@ -78,11 +78,11 @@ is generally compatible with previous 0.7.x releases.
 - [#78] - installing dependencies proved quite slow; to make things
   faster, dependencies are downloaded in parallel
 - [#13] - the command `uninstall` was added; it can remove packages
-  from the local project or from the global storage (`-g`)
+  from the local project or from the global store (`-g`)
 - [#76] - the command `list` was added; it can list packages
-  installed in the local project or in the global storage (`-g`)
-- [#73] - with folders from the central storage linked to the local
-  project, it was possible to change the content in the central storage,
+  installed in the local project or in the global store (`-g`)
+- [#73] - with folders from the global store linked to the local
+  project, it was possible to change the content in the global store,
   thus damaging the packages; to prevent this, now all installed
   packages are changed to read-only, and changed back to read-write
   only before uninstall

@@ -27,7 +27,7 @@ Aliases:
 ## Description
 
 This command uninstalls/removes one or more packages from the project
-available in the current folder or from the global storage.
+available in the current folder or from the global xPacks store.
 
 Example:
 
@@ -76,11 +76,11 @@ Bug reports: <https://github.com/xpack/xpm-js/issues/>
 
 ### Global uninstall (`-g|--global`)
 
-Remove package(s) from the global storage.
+Remove package(s) from the global xPacks store.
 
 ### System install (`-sy|--system`)
 
-Remove package(s) from the system storage.
+Remove package(s) from the system xPacks store.
 
 ### Configuration (`-c|--config`)
 

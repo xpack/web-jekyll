@@ -22,7 +22,7 @@ Aliases:
 ## Description
 
 This command lists the packages installed in the project located
-in the current folder or installed in the global storage.
+in the current folder or installed in the global xPacks store.
 
 Example:
 
@@ -67,13 +67,11 @@ Bug reports: <https://github.com/xpack/xpm-js/issues/>
 
 ### List global packages (`-g|--global`)
 
-List the packages installed in the global
-storage.
+List the packages installed in the global store.
 
 ### List system packages (`-sy|--system`)
 
-List the packages installed in the system
-storage.
+List the packages installed in the system store.
 
 ### Configuration (`-c|--config`)
 

@@ -36,11 +36,11 @@ development of source xPacks while being used as dependencies in
 an application.
 
 It does this by replacing the links to the read-only folders in the
-central storage by links to writable folders.
+global xPacks store by links to writable folders.
 
 This is done in two steps:
 
-- create a special link (called `.link`) from the central storage
+- create a special link (called `.link`) from the global xPacks store
 to the writable folder; this is done by invoking `xpm link` in the
 writable folder
 - replace the link in the application with a link to the above `.link`;

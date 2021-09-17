@@ -205,7 +205,7 @@ Bug reports: <https://github.com/xpack/xpm-js/issues/>
 
 ### Global install (`-g|--global`)
 
-Install package(s) in the global storage (in the user home folder).
+Install package(s) in the global xPacks store (in the user home folder).
 
 ### System install (`-sy|--system`)
 

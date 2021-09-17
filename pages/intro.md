@@ -206,7 +206,7 @@ and not any version but a specific one, like `10.2.1`; it also needs
 the latest CMake, ninja and the liquidjs npm module.
 
 For this, in the project forlder, issue the following command, which
-will install the required tools in a central location, and add links
+will install the required tools in a global xPacks store location, and add links
 to them.
 
 ```console
@@ -272,8 +272,8 @@ highest version that does not change the major number, if available." %}
 Use this syntax for binary xPacks with longer version numbers,
 which generally do not abide by the semver requirements." %}
 
-The result is the tools being downloaded and installed in the central
-xPack storage (a folder in user's home) and links from the project
+The result is the tools being downloaded and installed in the global
+xPack store (a folder in user's home) and links from the project
 to that folders created in the local `xpacks` folder, with links to
 individual programs added in `xpacks/.bin` (or `.cmd` stubs on Windows).
 
