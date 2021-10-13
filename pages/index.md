@@ -169,19 +169,10 @@ Packages with 3rd party content:
 
 ## xPack Build Box (XBB)
 
-Scripts to create the development environments used to build the
-archives used by the binary xPacks.
-
-The development environments are based on:
-
-- **Ubuntu 12** Docker images, used to build the Intel GNU/Linux and Windows
-  distributions
-- **Ubuntu 16** Docker images, used to build the Arm GNU/Linux
-  distributions
-- **macOS 10.10** tools, used to build the Intel macOS distributions
-
-These scripts are hosted in the Github
-[`xpack/xpack-build-box`](https://github.com/xpack/xpack-build-box) project.
+The [xPack Build Box]({{ site.baseurl }}/xbb/)
+is an elaborated build environment focused on
+obtaining reproducible builds while building cross-platform standalone
+binaries for GNU/Linux, macOS and Windows.
 
 ## Notifications
 
