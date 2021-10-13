@@ -4,7 +4,9 @@
   "description": "",
   "main": "",
   "scripts": {
-    "link-opt-jekyll": "mkdir -p node_modules/.bin; ln -s  ${HOME}/opt/homebrew/jekyll/bin/bundle node_modules/.bin/bundle",
+    "link-local-bundle": "mkdir -pv node_modules/.bin; rm -f node_modules/.bin/bundle; ln -sv  ${HOME}/.local/homebrew/jekyll/bin/bundle node_modules/.bin/bundle",
+    "bundle-install": "bundle install; bundle info jekyll; bundle exec jekyll --version",
+    "which-bundle": "which bundle; bundle --version",
     "serve-preview": "bundle exec jekyll serve --trace --safe --baseurl \"/web-preview\""
   },
   "repository": {

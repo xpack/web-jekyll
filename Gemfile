@@ -6,7 +6,7 @@ source "https://rubygems.org"
 # gem 'html-proofer'
 
 # to publich without github page
-gem 'jekyll', '=3.9.0'
+gem 'jekyll', '=4.2.1'
 
 group :jekyll_plugins do
     gem 'jekyll-sitemap', '>=1.4.0'
@@ -19,11 +19,12 @@ group :jekyll_plugins do
 
     # https://github.com/gjtorikian/jekyll-last-modified-at
     gem 'jekyll-last-modified-at', '>=1.1.0'
-    
+
     # https://github.com/jekyll/jekyll-redirect-from
     gem 'jekyll-redirect-from', '>=0.16.0'
 
     gem 'html-proofer'
     # gem 'nokogiri', '>=1.8.2'
+
+    gem 'webrick'
   end
-  
