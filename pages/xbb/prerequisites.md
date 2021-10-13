@@ -20,7 +20,7 @@ Arm GNU/Linux.
 an Arm machine. A Raspberry Pi 4 8GB equiped with a SanDisk Extreme
 USB 3 SSD are a good solution." %}
 
-v2.x used CentOS 6 for Intel, and CentOS 7 was the favourite when
+XBB v2.x used CentOS 6 for Intel, and CentOS 7 was the favourite when
 considering the update, but Docker CentOS 7 armv7l container does not
 run on 64-bit Docker host, and requires a 32-bit host, which is impractical.
 The problem was reported as

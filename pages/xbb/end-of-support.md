@@ -21,7 +21,7 @@ However support for RHEL 7 is very important, and will be preserved for
 as long as possible. In practical terms, the ldd version must be
 2.17 or lower.
 
-## Distro versions
+## GNU/Linux distro versions
 
 To better decide whch versions to support, below is a list of existing versions.
 
@@ -90,7 +90,7 @@ as long as Node.js still supports them via the
 
 ## Conclusions
 
-For Intel Linux, to preserve support for older distributions,
+For Intel GNU/Linux, to preserve support for older distributions,
 the **Ubuntu 12 (precise)** (2.15) distribution was selected;
 the resulting binaries should also run on RHEL 7 or newer;
 support for RHEL 6 was discontinued.
