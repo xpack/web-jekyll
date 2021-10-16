@@ -1,0 +1,286 @@
+---
+title:  xPack OpenOCD 0.11.0-2 released
+
+TODO: select one summary
+
+summary: "Version 0.11.0-2 is a maintenance release; it updates to
+the latest upstream master."
+
+version: 0.11.0-2
+npm_subversion: 1
+download_url: https://github.com/xpack-dev-tools/openocd-xpack/releases/tag/v0.11.0-2/
+
+date:   2021-10-17 01:27:46 +0300
+
+categories:
+  - releases
+  - openocd
+
+tags:
+  - releases
+  - openocd
+
+---
+
+[The xPack OpenOCD](https://xpack.github.io/openocd/)
+is a standalone cross-platform binary distribution of
+[OpenOCD](http://openocd.org).
+
+There are separate binaries for **Windows** (Intel 32/64-bit),
+**macOS** (Intel 64-bit) and **GNU/Linux** (Intel 32/64-bit, Arm 32/64-bit).
+
+{% include note.html content="The main targets for the Arm binaries
+are the **Raspberry Pi** class devices." %}
+
+## Download
+
+The binary files are available from GitHub [releases]({{ page.download_url }}).
+
+## Install
+
+The full details of installing the **xPack OpenOCD** on various platforms
+are presented in the separate
+[Install]({{ site.baseurl }}/openocd/install/) page.
+
+### Easy install
+
+The easiest way to install OpenOCD is with
+[`xpm`]({{ site.baseurl }}/xpm/)
+by using the **binary xPack**, available as
+[`@xpack-dev-tools/openocd`](https://www.npmjs.com/package/@xpack-dev-tools/openocd)
+from the [`npmjs.com`](https://www.npmjs.com) registry.
+
+With the `xpm` tool available, installing
+the latest version of the package and adding it as
+a dependency for a project is quite easy:
+
+```sh
+cd my-project
+xpm init # Only at first use.
+
+xpm install @xpack-dev-tools/openocd@latest
+
+ls -l xpacks/.bin
+```
+
+To install this specific version, use:
+
+```sh
+xpm install @xpack-dev-tools/openocd@{{ page.version }}.{{ page.npm_subversion }}
+```
+
+For xPacks aware tools, like the **Eclipse Embedded C/C++ plug-ins**,
+it is also possible to install OpenOCD globally, in the user home folder.
+
+```sh
+xpm install --global @xpack-dev-tools/openocd@latest
+```
+
+Eclipse will automatically
+identify binaries installed with
+`xpm` and provide a convenient method to manage paths.
+
+### Uninstall
+
+To remove the links from the current project:
+
+```sh
+cd my-project
+
+xpm uninstall @xpack-dev-tools/openocd
+```
+
+To completely remove the package from the global store:
+
+```sh
+xpm uninstall --global @xpack-dev-tools/openocd
+```
+
+## Compliance
+
+The xPack OpenOCD generally follows the official
+[OpenOCD](http://openocd.org) releases.
+
+The current version is based on:
+
+TODO: update commit id and date.
+
+- OpenOCD version 0.11.0, the development commit
+[918811529](https://github.com/xpack-dev-tools/openocd/commit/9188115296917ce74ad5b0f83451414735225ce5)
+from Oct. 2, 2021.
+
+## Changes
+
+There are no functional changes.
+
+Compared to the upstream, the following changes were applied:
+
+- a configure option was added to configure branding (`--enable-branding`)
+- the `src/openocd.c` file was edited to display the branding string
+- the `contrib/60-openocd.rules` file was simplified to avoid protection
+  related issues.
+
+## Bug fixes
+
+- none
+
+## Enhancements
+
+- none
+
+## Known problems
+
+- none
+
+## Shared libraries
+
+On all platforms the packages are standalone, and expect only the standard
+runtime to be present on the host.
+
+All dependencies that are build as shared libraries are copied locally
+in the `libexec` folder (or in the same folder as the executable for Windows).
+
+### `DT_RPATH` and `LD_LIBRARY_PATH`
+
+On GNU/Linux the binaries are adjusted to use a relative path:
+
+```console
+$ readelf -d library.so | grep runpath
+ 0x000000000000001d (RPATH)            Library rpath: [$ORIGIN]
+```
+
+In the GNU ld.so search strategy, the `DT_RPATH` has
+the highest priority, higher than `LD_LIBRARY_PATH`, so if this later one
+is set in the environment, it should not interfere with the xPack binaries.
+
+Please note that previous versions, up to mid-2020, used `DT_RUNPATH`, which
+has a priority lower than `LD_LIBRARY_PATH`, and does not tolerate setting
+it in the environment.
+
+### `@executable_path`
+
+Similarly, on macOS, the dynamic libraries are adjusted with `otool` to use a
+relative path.
+
+## Documentation
+
+The original documentation is available in the `share/doc` folder.
+
+## Supported platforms
+
+Binaries for **Windows**, **macOS** and **Intel/Arm GNU/Linux** are provided.
+
+The binaries were built using the
+[xPack Build Box (XBB)](https://github.com/xpack/xpack-build-box), a set
+of build environments based on slightly older distributions, that should be
+compatible with most recent systems.
+
+- Intel GNU/Linux: all binaries were built with GCC 11.1, running in an
+  Ubuntu 12 Docker container
+- Arm GNU/Linux: all binaries were built with GCC 11.1, running in an
+  Ubuntu 16 Docker container (added in mid-2020)
+- Windows: all binaries were built with mingw-w64 GCC 11.1, running in an
+  Ubuntu 12 Docker container
+- macOS: all binaries were built with GCC 11.1, running in a separate
+  folder on macOS 10.13.6, but were tested and also run on 10.10.
+
+## Build
+
+The scripts used to build this distribution are in:
+
+- `distro-info/scripts`
+
+For the prerequisites and more details on the build procedure, please see the
+[How to build](https://github.com/xpack-dev-tools/openocd-xpack/blob/xpack/README-BUILD.md) page.
+
+## CI tests
+
+Before publishing, a set of simple tests were performed on an exhaustive
+set of platforms. The results are available from:
+
+- [GitHub Actions](https://github.com/xpack-dev-tools/openocd-xpack/actions/)
+- [travis-ci.com](https://app.travis-ci.com/github/xpack-dev-tools/openocd-xpack/builds/)
+
+## Tests
+
+The binaries were testes on Windows 10 Pro 32/64-bit, Intel Ubuntu 18
+LTS 64-bit, Intel Xubuntu 18 LTS 32-bit and macOS 10.15.
+
+Install the package with xpm.
+
+The simple test, consists in starting the binaries
+only to identify the STM32F4DISCOVERY board.
+
+```sh
+.../xpack-openocd-0.11.0-2/bin/openocd -f board/stm32f4discovery.cfg
+xPack OpenOCD x86_64 Open On-Chip Debugger 0.11.0+dev (2021-10-17-00:10)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+srst_only separate srst_nogate srst_open_drain connect_deassert_srst
+
+Info : Listening on port 6666 for tcl connections
+Info : Listening on port 4444 for telnet connections
+Info : clock speed 2000 kHz
+Info : STLINK V2J14S0 (API v2) VID:PID 0483:3748
+Info : Target voltage: 2.889911
+Info : stm32f4x.cpu: Cortex-M4 r0p1 processor detected
+Info : stm32f4x.cpu: target has 6 breakpoints, 4 watchpoints
+Info : starting gdb server for stm32f4x.cpu on 3333
+Info : Listening on port 3333 for gdb connections
+target halted due to breakpoint, current mode: Thread
+xPSR: 0x21000000 pc: 0x0800113c msp: 0x2001ff78
+^Cshutdown command invoked
+
+```
+
+A more complex test consist in programming and debugging a simple blinky
+application on the STM32F4DISCOVERY board. The binaries were
+those generated by
+[simple Eclipse projects](https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/tree/xpack/tests/eclipse)
+available in the **xPack GNU Arm Embedded GCC** project.
+
+## Checksums
+
+The SHA-256 hashes for the files are:
+
+```console
+1c02a4dbf4611b934d7a821d621d12ab8cb4ceaad4974c61a2c8bf62a9f1fa91
+xpack-openocd-0.11.0-2-darwin-x64.tar.gz
+
+cf5aa652177ce3ace57ae08f3d25b4159104167b57fe39db5b32b82947a61d94
+xpack-openocd-0.11.0-2-linux-arm.tar.gz
+
+84e8fdb542b4e6ad9182b8e4187541c2dd062996a1ca4d6448adf634c44560df
+xpack-openocd-0.11.0-2-linux-arm64.tar.gz
+
+17a1d1ef06d1a0bffd97f2396753106125a8fd0c6f716236ee793ecd3228490c
+xpack-openocd-0.11.0-2-linux-ia32.tar.gz
+
+d0b59e9858e30d4ca7b78d12adc1d1693859e5308eaf0dcffc34247526aa8d8c
+xpack-openocd-0.11.0-2-linux-x64.tar.gz
+
+ea148b2eaab5dd474ef7a8950a248c89108198ce24cf74062e90037f5ae4ba28
+xpack-openocd-0.11.0-2-win32-ia32.zip
+
+781a0b46d0fdcf59dfd0d0306e81d9d3e3cf57d7882899ec163a94b1244bf287
+xpack-openocd-0.11.0-2-win32-x64.zip
+
+```
+
+## Download analytics
+
+- GitHub [xpack-dev-tools/openocd-xpack](https://github.com/xpack-dev-tools/openocd-xpack/)
+  - this release [![Github All Releases](https://img.shields.io/github/downloads/xpack-dev-tools/openocd-xpack/v{{ page.version }}/total.svg)](https://github.com/xpack-dev-tools/openocd-xpack/releases/v{{ page.version }}/)
+  - all xPack releases [![Github All Releases](https://img.shields.io/github/downloads/xpack-dev-tools/openocd-xpack/total.svg)](https://github.com/xpack-dev-tools/openocd-xpack/releases/)
+  - all GNU MCU Eclipse releases [![Github All Releases](https://img.shields.io/github/downloads/gnu-mcu-eclipse/openocd/total.svg)](https://github.com/gnu-mcu-eclipse/openocd/releases/)
+  - [individual file counters](https://somsubhra.github.io/github-release-stats/?username=xpack-dev-tools&repository=openocd-xpack) (grouped per release)
+- npmjs.com [@xpack-dev-tools/openocd](https://www.npmjs.com/package/@xpack-dev-tools/openocd)
+  - latest releases [![npm](https://img.shields.io/npm/dw/@xpack-dev-tools/openocd.svg)](https://www.npmjs.com/package/@xpack-dev-tools/openocd/)
+  - all @xpack-dev-tools releases [![npm](https://img.shields.io/npm/dt/@xpack-dev-tools/openocd.svg)](https://www.npmjs.com/package/@xpack-dev-tools/openocd/)
+  - all @gnu-mcu-eclipse releases [![npm](https://img.shields.io/npm/dt/@gnu-mcu-eclipse/openocd.svg)](https://www.npmjs.com/package/@gnu-mcu-eclipse/openocd/)
+
+Credit to [Shields IO](https://shields.io) for the badges and to
+[Somsubhra/github-release-stats](https://github.com/Somsubhra/github-release-stats)
+for the individual file counters.
