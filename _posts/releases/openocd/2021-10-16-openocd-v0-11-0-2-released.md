@@ -103,8 +103,6 @@ The xPack OpenOCD generally follows the official
 
 The current version is based on:
 
-TODO: update commit id and date.
-
 - OpenOCD version 0.11.0, the development commit
 [918811529](https://github.com/xpack-dev-tools/openocd/commit/9188115296917ce74ad5b0f83451414735225ce5)
 from Oct. 2, 2021.
