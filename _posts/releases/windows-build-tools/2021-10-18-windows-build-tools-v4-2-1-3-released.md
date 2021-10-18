@@ -28,8 +28,9 @@ tags:
 
 [The xPack Windows Build Tools](https://xpack.github.io/windows-build-tools/)
 is a standalone Windows binary distribution of
-GNU make and a few of other tools required by the Eclipse Embedded CDT
-(formerly GNU MCU/ARM Eclipse) project.
+**GNU make** and a few of other tools required by the Eclipse Embedded CDT
+(formerly GNU MCU/ARM Eclipse) project, but the binaries can also be used in
+generic build environments.
 
 There are separate binaries for **Windows** (Intel 32/64-bit).
 
