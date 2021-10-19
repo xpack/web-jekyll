@@ -120,7 +120,7 @@ The current version is based on:
 
 TODO: update commit id and date.
 
-- Meson Build release {{ page.upstream_version }}
+- Meson Build release
 [{{ page.upstream_version }}](https://github.com/mesonbuild/meson/releases/tag/{{ page.upstream_version }})
 from {{ page.upstream_release_date }}.
 
@@ -142,8 +142,8 @@ Compared to the upstream version, there are no functional changes.
 
 ## Embedded Python
 
-To simplify dependency management, this release embeds a Python
-{{ page.python_version }}.{{ page.python_subversion }} instance.
+To simplify dependency management, this release embeds a **Python
+{{ page.python_version }}.{{ page.python_subversion }}** instance.
 
 The `meson` executable is a standard ELF/EXE which includes the Python
 run-time; the `main()` function prepares the Python environment and then
