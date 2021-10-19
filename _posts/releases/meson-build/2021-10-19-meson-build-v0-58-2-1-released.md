@@ -1,7 +1,7 @@
 ---
 title:  xPack Meson Build 0.58.2-1 released
 
-summary: "Version 0.58.2-1 is a new release; it follows the upstream release."
+summary: "Version 0.58.2-1 is a new release; it follows the upstream release; it also updates to the latest build environment."
 
 version: 0.58.2-1
 upstream_version: 0.58.2
@@ -117,8 +117,6 @@ The xPack Meson Build generally follows the official
 [Meson Build](http://meson-build.org) releases.
 
 The current version is based on:
-
-TODO: update commit id and date.
 
 - Meson Build release
 [{{ page.upstream_version }}](https://github.com/mesonbuild/meson/releases/tag/{{ page.upstream_version }})
