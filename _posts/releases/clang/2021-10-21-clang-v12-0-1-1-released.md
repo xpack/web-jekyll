@@ -9,7 +9,7 @@ the latest upstream master."
 summary: "Version 12.0.1-1 is the first release of the **xPack LLVM clang** package."
 
 version: 12.0.1-1
-npm_subversion: 1
+npm_subversion: 2
 download_url: https://github.com/xpack-dev-tools/clang-xpack/releases/tag/v12.0.1-1/
 
 date:   2021-10-22 00:51:58 +0300
