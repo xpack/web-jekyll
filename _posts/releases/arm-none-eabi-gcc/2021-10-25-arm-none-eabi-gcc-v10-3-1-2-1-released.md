@@ -120,7 +120,7 @@ The xPack Arm Embedded GCC generally follows the official
 
 The current version is based on:
 
-[GNU Arm Embedded Toolchain](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm)
+- [GNU Arm Embedded Toolchain](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm)
 release **{{ page.arm_version }}** from {{ page.arm_date }} and uses the
 `gcc-arm-none-eabi-{{ page.arm_version }}-src.tar.bz2` source invariant.
 
