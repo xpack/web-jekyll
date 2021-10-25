@@ -1,7 +1,7 @@
 ---
 title:  xPack QEMU Arm 2.8.0-13 released
 
-summary: "Version 2.8.0-13 is a maintenance release; it fixes a bug and updates to the latests build environment."
+summary: "Version **2.8.0-13** is a maintenance release; it fixes a bug and updates to the latests build environment."
 
 version: 2.8.0-13
 npm_subversion: 1

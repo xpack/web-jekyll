@@ -1,7 +1,7 @@
 ---
 title:  xPack Ninja Build 1.10.2-4 released
 
-summary: "Version 1.10.2-4 is a maintenance release; it is a rebuild with the latest build environment."
+summary: "Version **1.10.2-4** is a maintenance release; it is a rebuild with the latest build environment."
 
 version: 1.10.2-4
 npm_subversion: 1

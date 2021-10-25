@@ -1,12 +1,7 @@
 ---
 title:  xPack LLVM clang 12.0.1-1 released
 
-TODO: select one summary
-
-summary: "Version 12.0.1-1 is a maintenance release; it updates to
-the latest upstream master."
-
-summary: "Version 12.0.1-1 is the first release of the **xPack LLVM clang** package."
+summary: "Version **12.0.1-1** is the first release of the **xPack LLVM clang** package."
 
 version: 12.0.1-1
 npm_subversion: 2

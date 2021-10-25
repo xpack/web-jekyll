@@ -1,7 +1,7 @@
 ---
 title:  xPack Arm Embedded GCC 10.3.1-2.1 released
 
-summary: "Version 10.3.1-2.1 is a new release; it follows the upstream Arm release."
+summary: "Version **10.3.1-2.1** is a new release; it follows the upstream Arm release."
 
 arm_version: 10.3-2021.10
 arm_date: October 21, 2021

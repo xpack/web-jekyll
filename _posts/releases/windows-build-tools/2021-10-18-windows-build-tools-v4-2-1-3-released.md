@@ -3,7 +3,7 @@ title:  xPack Windows Build Tools 4.2.1-3 released
 
 TODO: select one summary
 
-summary: "Version 4.2.1-3 is a maintenance release; it updates to the latest upstream Busybox and to the new build scripts."
+summary: "Version **4.2.1-3** is a maintenance release; it updates to the latest upstream Busybox and to the new build scripts."
 
 version: 4.2.1-3
 npm_subversion: 1

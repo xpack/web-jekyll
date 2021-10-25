@@ -3,7 +3,7 @@ title:  xPack OpenOCD 0.11.0-2 released
 
 TODO: select one summary
 
-summary: "Version 0.11.0-2 is a maintenance release; it updates to
+summary: "Version **0.11.0-2** is a maintenance release; it updates to
 the latest upstream master."
 
 version: 0.11.0-2
