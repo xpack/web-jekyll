@@ -26,6 +26,8 @@ tags:
 
 ---
 
+{% include warning.html content="This version seems to have a problem, in certain conditions, `make` throws _Error -1073741819_; for the moment please use the previous release. Thank you for your understanding." %}
+
 [The xPack Windows Build Tools](https://xpack.github.io/windows-build-tools/)
 is a standalone Windows binary distribution of
 **GNU make** and a few of other tools required by the Eclipse Embedded CDT
