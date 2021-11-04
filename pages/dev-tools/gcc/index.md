@@ -2,15 +2,12 @@
 title: The xPack GNU Compiler Collection (GCC)
 permalink: /gcc/
 
-summary: "A binary distribution of the GNU Compiler Collection (C/C++/Obj-C/Obj-C++/Fortran)."
+summary: "A binary distribution of the GNU Compiler Collection."
 comments: true
 keywords:
   - gnu
   - gcc
   - c++
-  - obj-c
-  - obj-c++
-  - fortran
 
 date: 2021-05-22 00:27:00 +0300
 
