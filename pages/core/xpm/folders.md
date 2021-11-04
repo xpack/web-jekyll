@@ -81,7 +81,7 @@ here (like toolchain binaries).
 ## Setting session wide environment variables
 
 {% capture windows %}
-To define session wide environment variables on Windows 10, use the 
+To define session wide environment variables on Windows 10, use the
 Control Panel and add the variables.
 
 TODO: find out commands to do this in a terminal.
@@ -134,7 +134,6 @@ Links:
 
 - [www.launchd.info](https://www.launchd.info)
 - [support.apple.com](https://support.apple.com/en-in/guide/terminal/apdc6c1077b-5d5d-4d35-9c19-60f2397b2369/mac)
-- [support.shotgunsoftware.com](https://support.shotgunsoftware.com/hc/en-us/articles/219042108)
 
 {% endcapture %}
 
