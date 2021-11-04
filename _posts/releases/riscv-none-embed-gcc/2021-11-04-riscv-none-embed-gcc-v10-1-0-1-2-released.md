@@ -4,8 +4,8 @@ title:  xPack GNU RISC-V Embedded GCC 10.1.0-1.2 released
 summary: "Version **10.1.0-1.2** is a maintenance release; it fixes the mising multi-libs on Windows and updates to
 the latest build scripts."
 
-sifive_version: v2020.12.0
-sifive_date: April 7, 2021
+sifive_version: v2020.08.0
+sifive_date: December 19, 2020
 version: 10.1.0-1.2
 npm_subversion: 1
 download_url: https://github.com/xpack-dev-tools/riscv-none-embed-gcc-xpack/releases/tag/v10.1.0-1.2/
