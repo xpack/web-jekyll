@@ -71,13 +71,16 @@ Last version was 8.4; discontinued by the end of 2021; see Rocky Linux.
 - `fedora:23` - 2015-11, GLIBC 2.22, kernel 4.2
 - `fedora:24` - 2016-06, GLIBC 2.23, kernel 4.5 <-- XBB v3.3 Arm
 - `fedora:25` - 2016-11, GLIBC 2.24, kernel 4.8
-- `fedora:26` - 2017-07,
+- `fedora:26` - 2017-07, GLIBC 2.25, kernel 4.11
 - `fedora:27` - 2017-11, GLIBC 2.26, kernel 4.13
-- `fedora:28` - 2018-05,
+- `fedora:28` - 2018-05, GLIBC 2.27, kernel 4.16
 - `fedora:29` - 2018-10, GLIBC 2.28, kernel 4.18 <-- (**next XBB**)
-- `fedora:30` - 2019-05,
+- `fedora:30` - 2019-05, GLIBC 2.29, kernel 5.0
 - `fedora:31` - 2019-10, GLIBC 2.30, kernel 5.3
-- `fedora:32` - 2020-04, GLIBC 2.30, kernel 5.6
+- `fedora:32` - 2020-04, GLIBC 2.31, kernel 5.6
+- `fedora:33` - 2020-10, GLIBC 2.32, kernel 5.8
+- `fedora:34` - 2021-04, GLIBC 2.33, kernel 5.11
+- `fedora:35` - 2021-11, GLIBC 2.34, kernel 5.14
 
 ## 32-bit support
 
