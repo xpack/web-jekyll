@@ -31,7 +31,7 @@ is a standalone cross-platform binary distribution of the
 [SiFive RISC-V GCC](https://github.com/sifive/freedom-tools/releases).
 
 There are separate binaries for **Windows** (Intel 32/64-bit),
-**macOS** (Intel 64-bit) and **GNU/Linux** (Intel 32/64-bit, Arm 32/64-bit).
+**macOS** (Intel 64-bit) and **GNU/Linux** (Intel 32/64-bit, Arm 64-bit).
 
 {% include note.html content="The main targets for the Arm binaries
 are the **Raspberry Pi** class devices." %}
@@ -118,13 +118,13 @@ xpm uninstall --global @xpack-dev-tools/riscv-none-embed-gcc
 ## Compliance
 
 The xPack GNU RISC-V Embedded GCC generally follows the official
-SiFive RISC-V GCC [releases](https://github.com/sifive/freedom-tools/releases)),
+SiFive RISC-V GCC [Releases](https://github.com/sifive/freedom-tools/releases),
 with as little differences as possible.
 
 The current version is based on:
 
 - SiFive RISC-V GCC release **{{ page.sifive_version }}** from {{ page.sifive_date }},
-and includes the SiFive extensions, including the vector support.
+and includes the SiFive extensions, including the RVV vector support.
 
 ## Changes
 
@@ -305,12 +305,12 @@ with Ubuntu 18 and RedHat 8.
 - GitHub [xpack-dev-tools/riscv-none-embed-gcc-xpack](https://github.com/xpack-dev-tools/riscv-none-embed-gcc-xpack/)
   - this release [![Github All Releases](https://img.shields.io/github/downloads/xpack-dev-tools/riscv-none-embed-gcc-xpack/v{{ page.version }}/total.svg)](https://github.com/xpack-dev-tools/riscv-none-embed-gcc-xpack/releases/v{{ page.version }}/)
   - all xPack releases [![Github All Releases](https://img.shields.io/github/downloads/xpack-dev-tools/riscv-none-embed-gcc-xpack/total.svg)](https://github.com/xpack-dev-tools/riscv-none-embed-gcc-xpack/releases/)
-  - all GNU MCU Eclipse releases [![Github All Releases](https://img.shields.io/github/downloads/gnu-mcu-eclipse/riscv-none-embed-gcc/total.svg)](https://github.com/gnu-mcu-eclipse/riscv-none-embed-gcc/releases/)
+  - all GNU MCU Eclipse releases [![Github All Releases](https://img.shields.io/github/downloads/gnu-mcu-eclipse/riscv-none-gcc/total.svg)](https://github.com/gnu-mcu-eclipse/riscv-none-gcc/releases/)
   - [individual file counters](https://somsubhra.github.io/github-release-stats/?username=xpack-dev-tools&repository=riscv-none-embed-gcc-xpack) (grouped per release)
 - npmjs.com [@xpack-dev-tools/riscv-none-embed-gcc](https://www.npmjs.com/package/@xpack-dev-tools/riscv-none-embed-gcc)
   - latest releases [![npm](https://img.shields.io/npm/dw/@xpack-dev-tools/riscv-none-embed-gcc.svg)](https://www.npmjs.com/package/@xpack-dev-tools/riscv-none-embed-gcc/)
   - all @xpack-dev-tools releases [![npm](https://img.shields.io/npm/dt/@xpack-dev-tools/riscv-none-embed-gcc.svg)](https://www.npmjs.com/package/@xpack-dev-tools/riscv-none-embed-gcc/)
-  - all @gnu-mcu-eclipse releases [![npm](https://img.shields.io/npm/dt/@gnu-mcu-eclipse/riscv-none-embed-gcc.svg)](https://www.npmjs.com/package/@gnu-mcu-eclipse/riscv-none-embed-gcc/)
+  - all @gnu-mcu-eclipse releases [![npm](https://img.shields.io/npm/dt/@gnu-mcu-eclipse/riscv-none-gcc.svg)](https://www.npmjs.com/package/@gnu-mcu-eclipse/riscv-none-gcc/)
 
 Credit to [Shields IO](https://shields.io) for the badges and to
 [Somsubhra/github-release-stats](https://github.com/Somsubhra/github-release-stats)
