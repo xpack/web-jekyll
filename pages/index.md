@@ -102,16 +102,27 @@ The main binary tools packed as xPacks are:
 - [`@xpack-dev-tools/ninja-build`]({{ site.baseurl }}/ninja-build/) - the **xPack Ninja Build**
 - [`@xpack-dev-tools/cmake`]({{ site.baseurl }}/cmake/) - the **xPack CMake**
 - [`@xpack-dev-tools/meson-build`]({{ site.baseurl }}/meson-build/) - the **xPack Meson Build**
-
-Under development:
-
-- [`@xpack-dev-tools/gcc`]({{ site.baseurl }}/gcc/) - the **xPack GNU Compiler Collection (GCC)** (C/C++/Obj-C/Obj-C++/Fortran)
-- `@xpack-dev-tools/clang` - the **xPack GNU GDB**
+- [`@xpack-dev-tools/gcc`]({{ site.baseurl }}/gcc/) - the **xPack GNU Compiler Collection (GCC)**
+- [`@xpack-dev-tools/clang`]({{ site.baseurl }}/clang/) - the **xPack LLVM clang**
 
 Planned:
 
+- `@xpack-dev-tools/mingw-gcc` - the **xPack Mingw-w64 GCC**
+- `@xpack-dev-tools/mingw-clang` - the **xPack Mingw-w64 LLVM clang**
 - `@xpack-dev-tools/coreutils` - the **xPack GNU coreutils**
-- `@xpack-dev-tools/make` - the **xPack make**
+- `@xpack-dev-tools/make` - the **xPack GNU make**
+- `@xpack-dev-tools/automake` - the **xPack automake**
+- `@xpack-dev-tools/autoconfig` - the **xPack autoconfig**
+- `@xpack-dev-tools/pkg-config` - the **xPack pkg-config**
+- `@xpack-dev-tools/python` - the **xPack Python 3**
+- `@xpack-dev-tools/patchelf` - the **xPack patchelf**
+- `@xpack-dev-tools/wine` - the **xPack Wine**
+- `@xpack-dev-tools/gawk` - the **xPack GNU AWK**
+- `@xpack-dev-tools/gsed` - the **xPack GNU sed**
+- `@xpack-dev-tools/dos2unix` - the **xPack dos2unix**
+- `@xpack-dev-tools/m4` - the **xPack m4**
+- `@xpack-dev-tools/diffutils` - the **xPack GNU diffutils**
+- possibly more...
 
 These projects are hosted in the GitHub
 [`xpack-dev-tools`](https://github.com/xpack-dev-tools) group
