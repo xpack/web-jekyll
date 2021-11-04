@@ -200,6 +200,6 @@ The xPack Build Box is inspired by the
 ## Links
 
 - [Prerequisites]({{ site.baseurl }}/xbb/prerequisites/) for using XBB
-- [End-of-life]({{ site.baseurl }}/xbb/end-of-life/) considerations for GNU/Linux distributions
+- [End-of-life]({{ site.baseurl }}/xbb/end-of-support/) considerations for GNU/Linux distributions
 - [Releases]({{ site.baseurl }}/xbb/releases/)
 - [GitHub](https://github.com/xpack/xpack-build-box)
