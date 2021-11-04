@@ -28,7 +28,7 @@ OpenOCD, and does not intend to add new functionality, or to fix existing
 problems.
 
 If you have problems related to the current OpenOCD functionality, please
-use the official OpenOCD [support channels](http://openocd.org/discussion/).
+use the official OpenOCD [support channels](https://openocd.org/pages/discussion.html).
 
 ## Check the FAQ
 
