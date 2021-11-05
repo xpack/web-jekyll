@@ -202,7 +202,13 @@ Unless otherwise mentioned, all **xPack** tools with original content
 are provided **free of charge** under the terms of the
 [MIT License](https://opensource.org/licenses/MIT).
 
-## Let us know if you enjoyed using this project!
+[![MacStadium](https://uploads-ssl.webflow.com/5ac3c046c82724970fc60918/5c019d917bba312af7553b49_MacStadium-developerlogo.png){:style="float: right; width: 200px;"}](https://www.macstadium.com/)
+
+## Credits
+
+Special thanks to **MacStadium**, for providing the Apple Silicon development infrastructure.
+
+## Let us know if you enjoyed using this project
 
 If you enjoyed using this project, please let us know; here are some advices:
 
