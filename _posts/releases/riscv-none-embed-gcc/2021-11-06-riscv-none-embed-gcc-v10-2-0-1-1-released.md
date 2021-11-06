@@ -87,8 +87,8 @@ To install this specific version, use:
 xpm install @xpack-dev-tools/riscv-none-embed-gcc@{{ page.version }}.{{ page.npm_subversion }}
 ```
 
-{% include warning.html content="In certain cases, on 32-bit platforms this
-might fail with _RangeError: Array buffer allocation failed_." %}
+{% include warning.html content="In certain cases, on 32-bit platforms, this
+command might fail with _RangeError: Array buffer allocation failed_." %}
 
 For xPacks aware tools, like the **Eclipse Embedded C/C++ plug-ins**,
 it is also possible to install GNU RISC-V Embedded GCC globally, in the user home folder.
