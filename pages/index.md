@@ -206,7 +206,8 @@ are provided **free of charge** under the terms of the
 
 ## Credits
 
-Special thanks to **MacStadium**, for providing the Apple Silicon development infrastructure.
+Special thanks to **MacStadium**, for providing the Apple Silicon development infrastructure as part of their
+[Open Source Program](https://www.macstadium.com/opensource).
 
 ## Let us know if you enjoyed using this project
 
