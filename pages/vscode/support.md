@@ -48,10 +48,11 @@ for questions and support, **use the discussions**." %}
 ## Use of private e-mail
 
 {% include important.html content="Please, please, please: **do not use
-private e-mail** for support, **use the xPack forums**." %}
+private e-mail** for support, **use the
+GitHub [Discussions](https://github.com/xpack/vscode-xpack-extension-ts/discussions/)**." %}
 
 Sending private messages will be automatically replied with
 a link to this page.
 The reason for this rude behaviour is simply an attempt to use
-the time more efficiently; since forum posts are archived, other people
+the time more efficiently; since discussions are archived, other people
 having similar problems might benefit from the answers.
