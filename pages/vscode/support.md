@@ -18,9 +18,8 @@ GitHub [Discussions](https://github.com/xpack/vscode-xpack-extension-ts/discussi
 Before asking a question:
 
 - read carefully the VS Code xPack [documentation]({{ site.baseurl }}/vscode/)
-- check the [FAQ]({{ site.baseurl }}/xpm/faq/) for similar problems
-- check the GitHub [Discussions](https://github.com/xpack/vscode-xpack-extension-ts/discussions/) for
-discussions on similar problems
+- check the [FAQ]({{ site.baseurl }}/xpm/faq/)
+- check the GitHub [Discussions](https://github.com/xpack/vscode-xpack-extension-ts/discussions/)
 - check the
 GitHub [Issues](https://github.com/xpack/vscode-xpack-extension-ts/issues/)
 tracker for similar problems.
