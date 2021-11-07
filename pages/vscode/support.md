@@ -41,8 +41,8 @@ register a **New Issue** in the the
 GitHub [Issues](https://github.com/xpack/vscode-xpack-extension-ts/issues/)
 tracker.
 
-{% include tip.html content="**DO NOT** use the GitHub issues tracker
-for questions and support, **use the discussions**." %}
+{% include tip.html content="**DO NOT** use the GitHub Issues tracker
+for questions and support, **use the GitHub Discussions**." %}
 
 ## Use of private e-mail
 
