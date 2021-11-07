@@ -25,7 +25,7 @@ discussions on similar problems
 GitHub [Issues](https://github.com/xpack/vscode-xpack-extension-ts/issues/)
 tracker for similar problems.
 
-## Ask questions in the forums
+## Ask questions in GitHub Discussions
 
 If you still could not find an answer, if you have interesting use
 cases, if you have custom configurations, and generally if you have
