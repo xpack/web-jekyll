@@ -22,7 +22,7 @@ Before asking a question:
 - check the [GitHub Discussions](https://github.com/xpack/vscode-xpack-extension-ts/discussions/) for
 discussions on similar problems
 - check the
-[GitHub issues](https://github.com/xpack/vscode-xpack-extension-ts/issues/)
+GitHub [Issues](https://github.com/xpack/vscode-xpack-extension-ts/issues/)
 tracker for similar problems.
 
 ## Ask questions in the forums
@@ -39,7 +39,7 @@ extension
 (if you have doubts, use the discussions),
 or you have a pertinent suggestion how to enhance **ilg-vscode.xpack**,
 register a **New Issue** in the the
-[GitHub issues](https://github.com/xpack/vscode-xpack-extension-ts/issues/)
+GitHub [Issues](https://github.com/xpack/vscode-xpack-extension-ts/issues/)
 tracker.
 
 {% include tip.html content="**DO NOT** use the GitHub issues tracker

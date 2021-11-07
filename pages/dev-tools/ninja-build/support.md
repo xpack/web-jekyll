@@ -33,7 +33,7 @@ similar problems.
 ## Check the GitHub issues
 
 Check the
-[GitHub issues](https://github.com/xpack-dev-tools/ninja-build-xpack/issues/)
+GitHub [Issues](https://github.com/xpack-dev-tools/ninja-build-xpack/issues/)
 tracker for similar problems.
 
 ## Ask questions in the forums
@@ -50,7 +50,7 @@ If you are convinced that you identified a bug related to the binary
 distribution, not Ninja itself (if you have doubts, use the forum),
 or you have a pertinent suggestion how to enhance the **xPack Ninja Build**
 distribution, register a **New Issue** in the the
-[GitHub issues](https://github.com/xpack-dev-tools/ninja-build-xpack/issues/)
+GitHub [Issues](https://github.com/xpack-dev-tools/ninja-build-xpack/issues/)
 tracker.
 
 {% include tip.html content="**DO NOT** use the GitHub issues tracker

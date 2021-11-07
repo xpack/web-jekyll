@@ -43,7 +43,7 @@ similar problems.
 ## Check the GitHub issues
 
 Check the
-[GitHub issues](https://github.com/xpack-dev-tools/windows-build-tools-xpack/issues/)
+GitHub [Issues](https://github.com/xpack-dev-tools/windows-build-tools-xpack/issues/)
 tracker for similar problems.
 
 ## Ask questions in the forums
@@ -60,7 +60,7 @@ If you are convinced that you identified a bug related to the binary
 distribution, not GNU Make itself (if you have doubts, use the forum),
 or you have a pertinent suggestion how to enhance the **xPack Windows Build Tools**
 distribution, register a **New Issue** in the the
-[GitHub issues](https://github.com/xpack-dev-tools/windows-build-tools-xpack/issues/)
+GitHub [Issues](https://github.com/xpack-dev-tools/windows-build-tools-xpack/issues/)
 tracker.
 
 {% include tip.html content="**DO NOT** use the GitHub issues tracker

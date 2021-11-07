@@ -71,7 +71,7 @@ documentation,
 you can fork the
 [web-jekyll.git project](https://github.com/xpack/web-jekyll/pulls/)
 and send a **Pull Request**, or use the
-[GitHub issues](https://github.com/xpack/web-jekyll/issues/) tracker.
+GitHub [Issues](https://github.com/xpack/web-jekyll/issues/) tracker.
 
 ## Use of private e-mail
 
