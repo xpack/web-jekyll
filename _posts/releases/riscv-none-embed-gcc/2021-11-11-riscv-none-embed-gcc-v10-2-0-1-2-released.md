@@ -1,15 +1,15 @@
 ---
-title:  xPack GNU RISC-V Embedded GCC 10.2.0-1.1 released
+title:  xPack GNU RISC-V Embedded GCC 10.2.0-1.2 released
 
-summary: "Version **10.2.0-1.1** is a new release; it follows the upstream Sifive release v2020.12.0 from April 7, 2021."
+summary: "Version **10.2.0-1.2** is a maintenance release; it expands the multi-libs with non-C (compressed) configurations.."
 
 sifive_version: v2020.12.0
 sifive_date: April 7, 2021
-version: 10.2.0-1.1
+version: 10.2.0-1.2
 npm_subversion: 1
-download_url: https://github.com/xpack-dev-tools/riscv-none-embed-gcc-xpack/releases/tag/v10.2.0-1.1/
+download_url: https://github.com/xpack-dev-tools/riscv-none-embed-gcc-xpack/releases/tag/v10.2.0-1.2/
 
-date:   2021-11-06 12:12:10 +0200
+date:   2021-11-11 11:37:02 +0200
 
 categories:
   - releases
@@ -87,9 +87,6 @@ To install this specific version, use:
 xpm install @xpack-dev-tools/riscv-none-embed-gcc@{{ page.version }}.{{ page.npm_subversion }}
 ```
 
-{% include warning.html content="In certain cases, on 32-bit platforms, this
-command might fail with _RangeError: Array buffer allocation failed_." %}
-
 For xPacks aware tools, like the **Eclipse Embedded C/C++ plug-ins**,
 it is also possible to install GNU RISC-V Embedded GCC globally, in the user home folder.
 
@@ -128,6 +125,111 @@ The current version is based on:
 - SiFive RISC-V GCC release **{{ page.sifive_version }}** from {{ page.sifive_date }},
 and includes the SiFive extensions, including the RVV vector support.
 
+## Supported libraries
+
+The supported libraries are:
+
+```console
+$ riscv-none-embed-gcc -print-multi-lib
+.;
+rv32e/ilp32e;@march=rv32e@mabi=ilp32e
+rv32ea/ilp32e;@march=rv32ea@mabi=ilp32e
+rv32em/ilp32e;@march=rv32em@mabi=ilp32e
+rv32ema/ilp32e;@march=rv32ema@mabi=ilp32e
+rv32i/ilp32;@march=rv32i@mabi=ilp32
+rv32ia/ilp32;@march=rv32ia@mabi=ilp32
+rv32im/ilp32;@march=rv32im@mabi=ilp32
+rv32ima/ilp32;@march=rv32ima@mabi=ilp32
+rv32if/ilp32f;@march=rv32if@mabi=ilp32f
+rv32ifd/ilp32d;@march=rv32ifd@mabi=ilp32d
+rv32iaf/ilp32f;@march=rv32iaf@mabi=ilp32f
+rv32iafd/ilp32d;@march=rv32iafd@mabi=ilp32d
+rv32imf/ilp32f;@march=rv32imf@mabi=ilp32f
+rv32imfd/ilp32d;@march=rv32imfd@mabi=ilp32d
+rv32imaf/ilp32f;@march=rv32imaf@mabi=ilp32f
+rv32imafd/ilp32d;@march=rv32imafd@mabi=ilp32d
+rv64i/lp64;@march=rv64i@mabi=lp64
+rv64i/lp64/compact;@march=rv64i@mabi=lp64@mcmodel=compact
+rv64ia/lp64;@march=rv64ia@mabi=lp64
+rv64ia/lp64/compact;@march=rv64ia@mabi=lp64@mcmodel=compact
+rv64im/lp64;@march=rv64im@mabi=lp64
+rv64im/lp64/compact;@march=rv64im@mabi=lp64@mcmodel=compact
+rv64ima/lp64;@march=rv64ima@mabi=lp64
+rv64ima/lp64/compact;@march=rv64ima@mabi=lp64@mcmodel=compact
+rv64if/lp64f;@march=rv64if@mabi=lp64f
+rv64if/lp64f/compact;@march=rv64if@mabi=lp64f@mcmodel=compact
+rv64ifd/lp64d;@march=rv64ifd@mabi=lp64d
+rv64ifd/lp64d/compact;@march=rv64ifd@mabi=lp64d@mcmodel=compact
+rv64iaf/lp64f;@march=rv64iaf@mabi=lp64f
+rv64iaf/lp64f/compact;@march=rv64iaf@mabi=lp64f@mcmodel=compact
+rv64iafd/lp64d;@march=rv64iafd@mabi=lp64d
+rv64iafd/lp64d/compact;@march=rv64iafd@mabi=lp64d@mcmodel=compact
+rv64imf/lp64f;@march=rv64imf@mabi=lp64f
+rv64imf/lp64f/compact;@march=rv64imf@mabi=lp64f@mcmodel=compact
+rv64imfd/lp64d;@march=rv64imfd@mabi=lp64d
+rv64imfd/lp64d/compact;@march=rv64imfd@mabi=lp64d@mcmodel=compact
+rv64imaf/lp64f;@march=rv64imaf@mabi=lp64f
+rv64imaf/lp64f/compact;@march=rv64imaf@mabi=lp64f@mcmodel=compact
+rv64imafd/lp64d;@march=rv64imafd@mabi=lp64d
+rv64imafd/lp64d/compact;@march=rv64imafd@mabi=lp64d@mcmodel=compact
+rv32ec/ilp32e;@march=rv32ec@mabi=ilp32e
+rv32ec_zba_zbb/ilp32e;@march=rv32ec_zba_zbb@mabi=ilp32e
+rv32eac/ilp32e;@march=rv32eac@mabi=ilp32e
+rv32eac_zba_zbb/ilp32e;@march=rv32eac_zba_zbb@mabi=ilp32e
+rv32emc/ilp32e;@march=rv32emc@mabi=ilp32e
+rv32emc_zba_zbb/ilp32e;@march=rv32emc_zba_zbb@mabi=ilp32e
+rv32emac/ilp32e;@march=rv32emac@mabi=ilp32e
+rv32emac_zba_zbb/ilp32e;@march=rv32emac_zba_zbb@mabi=ilp32e
+rv32ic/ilp32;@march=rv32ic@mabi=ilp32
+rv32ic_zba_zbb/ilp32;@march=rv32ic_zba_zbb@mabi=ilp32
+rv32iac/ilp32;@march=rv32iac@mabi=ilp32
+rv32iac_zba_zbb/ilp32;@march=rv32iac_zba_zbb@mabi=ilp32
+rv32imc/ilp32;@march=rv32imc@mabi=ilp32
+rv32imc_zba_zbb/ilp32;@march=rv32imc_zba_zbb@mabi=ilp32
+rv32imac/ilp32;@march=rv32imac@mabi=ilp32
+rv32imac_zba_zbb/ilp32;@march=rv32imac_zba_zbb@mabi=ilp32
+rv32imfc/ilp32f;@march=rv32imfc@mabi=ilp32f
+rv32imfc_zba_zbb/ilp32f;@march=rv32imfc_zba_zbb@mabi=ilp32f
+rv32imafc/ilp32f;@march=rv32imafc@mabi=ilp32f
+rv32imafc_zba_zbb/ilp32f;@march=rv32imafc_zba_zbb@mabi=ilp32f
+rv32imfdc/ilp32d;@march=rv32imfdc@mabi=ilp32d
+rv32imfdc_zba_zbb/ilp32d;@march=rv32imfdc_zba_zbb@mabi=ilp32d
+rv32imafdc/ilp32d;@march=rv32imafdc@mabi=ilp32d
+rv32imafdc_zba_zbb/ilp32d;@march=rv32imafdc_zba_zbb@mabi=ilp32d
+rv64ic/lp64;@march=rv64ic@mabi=lp64
+rv64ic/lp64/compact;@march=rv64ic@mabi=lp64@mcmodel=compact
+rv64ic_zba_zbb/lp64;@march=rv64ic_zba_zbb@mabi=lp64
+rv64ic_zba_zbb/lp64/compact;@march=rv64ic_zba_zbb@mabi=lp64@mcmodel=compact
+rv64iac/lp64;@march=rv64iac@mabi=lp64
+rv64iac/lp64/compact;@march=rv64iac@mabi=lp64@mcmodel=compact
+rv64iac_zba_zbb/lp64;@march=rv64iac_zba_zbb@mabi=lp64
+rv64iac_zba_zbb/lp64/compact;@march=rv64iac_zba_zbb@mabi=lp64@mcmodel=compact
+rv64imc/lp64;@march=rv64imc@mabi=lp64
+rv64imc/lp64/compact;@march=rv64imc@mabi=lp64@mcmodel=compact
+rv64imc_zba_zbb/lp64;@march=rv64imc_zba_zbb@mabi=lp64
+rv64imc_zba_zbb/lp64/compact;@march=rv64imc_zba_zbb@mabi=lp64@mcmodel=compact
+rv64imac/lp64;@march=rv64imac@mabi=lp64
+rv64imac/lp64/compact;@march=rv64imac@mabi=lp64@mcmodel=compact
+rv64imac_zba_zbb/lp64;@march=rv64imac_zba_zbb@mabi=lp64
+rv64imac_zba_zbb/lp64/compact;@march=rv64imac_zba_zbb@mabi=lp64@mcmodel=compact
+rv64imfc/lp64f;@march=rv64imfc@mabi=lp64f
+rv64imfc/lp64f/compact;@march=rv64imfc@mabi=lp64f@mcmodel=compact
+rv64imfc_zba_zbb/lp64f;@march=rv64imfc_zba_zbb@mabi=lp64f
+rv64imfc_zba_zbb/lp64f/compact;@march=rv64imfc_zba_zbb@mabi=lp64f@mcmodel=compact
+rv64imafc/lp64f;@march=rv64imafc@mabi=lp64f
+rv64imafc/lp64f/compact;@march=rv64imafc@mabi=lp64f@mcmodel=compact
+rv64imafc_zba_zbb/lp64f;@march=rv64imafc_zba_zbb@mabi=lp64f
+rv64imafc_zba_zbb/lp64f/compact;@march=rv64imafc_zba_zbb@mabi=lp64f@mcmodel=compact
+rv64imfdc/lp64d;@march=rv64imfdc@mabi=lp64d
+rv64imfdc/lp64d/compact;@march=rv64imfdc@mabi=lp64d@mcmodel=compact
+rv64imfdc_zba_zbb/lp64d;@march=rv64imfdc_zba_zbb@mabi=lp64d
+rv64imfdc_zba_zbb/lp64d/compact;@march=rv64imfdc_zba_zbb@mabi=lp64d@mcmodel=compact
+rv64imafdc/lp64d;@march=rv64imafdc@mabi=lp64d
+rv64imafdc/lp64d/compact;@march=rv64imafdc@mabi=lp64d@mcmodel=compact
+rv64imafdc_zba_zbb/lp64d;@march=rv64imafdc_zba_zbb@mabi=lp64d
+rv64imafdc_zba_zbb/lp64d/compact;@march=rv64imafdc_zba_zbb@mabi=lp64d@mcmodel=compact
+```
+
 ## Changes
 
 There are no functional changes.
@@ -140,6 +242,47 @@ options are supported, and there are minimal functional changes
 - `libgloss` was removed from the list of libraries always linked to the
   application, since it issues `ECALL`
   instructions that fail in bare metal environments
+
+### Compressed instructions libraries
+
+The SiFive v2020.12.0 release no longer includes libraries without
+the C (compressed) instructions; however there are still many RISC-V designs,
+like gatecount/area conscious soft IP implementation targeting FPGA without
+compressed instructions; to
+support them too, in addition to the libraries included in the SiFive
+toolchain, in the xPack distribution the list of multi-libs was expanded
+with 28 more combinations:
+
+```console
+rv32e-ilp32e--
+rv32ea-ilp32e--
+rv32em-ilp32e--
+rv32ema-ilp32e--
+rv32i-ilp32--
+rv32ia-ilp32--
+rv32im-ilp32--
+rv32ima-ilp32--
+rv32if-ilp32f--
+rv32ifd-ilp32d--
+rv32iaf-ilp32f--
+rv32iafd-ilp32d--
+rv32imf-ilp32f--
+rv32imfd-ilp32d--
+rv32imaf-ilp32f--
+rv32imafd-ilp32d--
+rv64i-lp64--
+rv64ia-lp64--
+rv64im-lp64--
+rv64ima-lp64--
+rv64if-lp64f--
+rv64ifd-lp64d--
+rv64iaf-lp64f--
+rv64iafd-lp64d--
+rv64imf-lp64f--
+rv64imfd-lp64d--
+rv64imaf-lp64f--
+rv64imafd-lp64d--
+```
 
 ### newlib-nano
 
@@ -190,9 +333,6 @@ the distribution.
 
 ## Known problems
 
-- the SiFive v2020.12.0 release no longer includes libraries without
-  the C (compressed) instructions; the list of multi-libs was expanded with
-  28 more libraries in v10.2.0-1.2
 - due to the very large number of instructions added by the vector support
   (~70K), the compiler sources became too large and it was not possible to build the Arm 32-bit image
   ([#229](https://github.com/riscv/riscv-gcc/issues/229))
@@ -268,23 +408,23 @@ build, not the compiler functionality.
 The SHA-256 hashes for the files are:
 
 ```console
-361eddbb7e5af900a49d1de8e2be37e8bdbb82acf1ca7729a4c8a967d110a95d
-xpack-riscv-none-embed-gcc-10.2.0-1.1-darwin-x64.tar.gz
+62637b65ba5f57b88ee32ebf329164cbd9b2fa1d4531915950f707499a7efa2a
+xpack-riscv-none-embed-gcc-10.2.0-1.2-darwin-x64.tar.gz
 
-26a7bca59b93eab7c9adef485660c46cbfa24099ff7ca3aec0da50b621802973
-xpack-riscv-none-embed-gcc-10.2.0-1.1-linux-arm64.tar.gz
+8d516bc593144935d844e1a34f113cde4b9e0ee0046c1f0228e9924f35b4dd30
+xpack-riscv-none-embed-gcc-10.2.0-1.2-linux-arm64.tar.gz
 
-f11eebf0761b1c054ec8ba88bde5398cc6ca2ded6f540c77c5859a52928a3524
-xpack-riscv-none-embed-gcc-10.2.0-1.1-linux-ia32.tar.gz
+2e3f947403404359c8996a8b8c50dc61e8ee0f720da561d354f74b57f2fd4d53
+xpack-riscv-none-embed-gcc-10.2.0-1.2-linux-ia32.tar.gz
 
-9596a0cca454384d5ec7d56250ca2e91c435941f10ff54ebdaf60e63421d85eb
-xpack-riscv-none-embed-gcc-10.2.0-1.1-linux-x64.tar.gz
+d72bdcd1eee41dc5a208a8a03976b70d014510deb5890c9e8738e804ba23f985
+xpack-riscv-none-embed-gcc-10.2.0-1.2-linux-x64.tar.gz
 
-6b026ba05dd3c8123a03014df47f13e3b1a17005a6f825569b587c1ad0462330
-xpack-riscv-none-embed-gcc-10.2.0-1.1-win32-ia32.zip
+f9d25d057d69e3d460fd15f422b533ae315e6ecdcd389bbd784cc2e083ba64b3
+xpack-riscv-none-embed-gcc-10.2.0-1.2-win32-ia32.zip
 
-e95cf9075dd03dd15d9020d0ae05542bd8079c41f990e4d29519c1fea7b32f03
-xpack-riscv-none-embed-gcc-10.2.0-1.1-win32-x64.zip
+2ec9f651dc349da0672edf6d26542e85c7c8068c8eab11b88b99b0edbd2260fc
+xpack-riscv-none-embed-gcc-10.2.0-1.2-win32-x64.zip
 
 ```
 
