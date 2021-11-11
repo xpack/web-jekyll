@@ -1,7 +1,7 @@
 ---
 title:  xPack GNU RISC-V Embedded GCC 10.2.0-1.2 released
 
-summary: "Version **10.2.0-1.2** is a maintenance release; it expands the multi-libs with non-C (compressed) configurations.."
+summary: "Version **10.2.0-1.2** is a maintenance release; it expands the multi-libs with non-C (compressed) configurations."
 
 sifive_version: v2020.12.0
 sifive_date: April 7, 2021
