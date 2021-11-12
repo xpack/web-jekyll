@@ -1,7 +1,7 @@
 ---
 title:  xPack Arm Embedded GCC 10.3.1-2.2 released
 
-summary: "Version **10.3.1-2.2** is a maintenance release; it lightly reduces the size of the archives."
+summary: "Version **10.3.1-2.2** is a maintenance release; it slightly reduces the size of the archives."
 
 arm_version: 10.3-2021.10
 arm_date: October 21, 2021
@@ -163,6 +163,11 @@ thumb/v8.1-m.main+mve/hard;@mthumb@march=armv8.1-m.main+mve@mfloat-abi=hard
 ## Changes
 
 Compared to the Arm version, there should be no functional changes.
+
+Compared to 10.3.1-2.2, this release uses a new version of the
+build scripts, which provide a better control over the content of the
+binary objects, and thus is able to further optimize the size of
+the libraries, resulting in slightly smaller archives.
 
 ### Python
 
