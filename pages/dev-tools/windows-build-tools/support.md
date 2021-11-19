@@ -51,7 +51,7 @@ If you still could not find a solution, if you have interesting use
 cases, if you have custom configurations, and generally if you have
 any experience that you want to share with others, use the
 GitHub [Discussions](https://github.com/xpack-dev-tools/windows-build-tools-xpack/discussions/),
-and enter a **New discussion**.
+and enter a **New discussion** in the **Q&A** category.
 
 ## Register a new support ticket only if necessary
 
