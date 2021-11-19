@@ -29,7 +29,8 @@ tracker for similar problems.
 If you still could not find an answer, if you have interesting use
 cases, if you have custom configurations, and generally if you have
 any experience that you want to share with others, use the
-GitHub [Discussions](https://github.com/xpack/vscode-xpack-extension-ts/discussions/).
+GitHub [Discussions](https://github.com/xpack/vscode-xpack-extension-ts/discussions/),
+and enter a **New discussion**.
 
 ## Register a new support ticket only if necessary
 

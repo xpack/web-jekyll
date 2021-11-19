@@ -10,8 +10,7 @@ date: 2020-07-14 16:26:00 +0300
 
 ## Quicklinks
 
-- [xPack forums](https://www.tapatalk.com/groups/xpack/) - the best source
-  for support; be sure you select the right group/discussion.
+- GitHub [Discussions](https://github.com/xpack-dev-tools/windows-build-tools-xpack/discussions/)
 - [xPack chatroom](https://gitter.im/xpack/) - a place for users to chat
 
 ## Check the documentation
@@ -35,44 +34,45 @@ use the official [support channels](http://savannah.gnu.org/projects/make/).
 Check the [FAQ]({{ site.baseurl }}/windows-build-tools/faq/)
 for similar problems.
 
-## Check the xPack forums
+## Check the GitHub Discussions
 
-Check the [xPack forums](https://www.tapatalk.com/groups/xpack/) for
+Check the GitHub [Discussions](https://github.com/xpack-dev-tools/windows-build-tools-xpack/discussions/) for
 similar problems.
 
-## Check the GitHub issues
+## Check the GitHub Issues
 
 Check the
 GitHub [Issues](https://github.com/xpack-dev-tools/windows-build-tools-xpack/issues/)
 tracker for similar problems.
 
-## Ask questions in the forums
+## Ask questions in GitHub Discussions
 
 If you still could not find a solution, if you have interesting use
 cases, if you have custom configurations, and generally if you have
 any experience that you want to share with others, use the
-[xPack forums](https://www.tapatalk.com/groups/xpack/),
-and enter a **New Topic** in the Windows Build Tools section.
+GitHub [Discussions](https://github.com/xpack-dev-tools/windows-build-tools-xpack/discussions/),
+and enter a **New discussion**.
 
 ## Register a new support ticket only if necessary
 
 If you are convinced that you identified a bug related to the binary
-distribution, not GNU Make itself (if you have doubts, use the forum),
+distribution, not GNU Make itself (if you have doubts, use the GitHub Discussions),
 or you have a pertinent suggestion how to enhance the **xPack Windows Build Tools**
 distribution, register a **New Issue** in the the
 GitHub [Issues](https://github.com/xpack-dev-tools/windows-build-tools-xpack/issues/)
 tracker.
 
-{% include tip.html content="**DO NOT** use the GitHub issues tracker
-for questions and support, **use the forums**." %}
+{% include tip.html content="**DO NOT** use the GitHub Issues tracker
+for questions and support, **use the GitHub Discussions**." %}
 
 ## Use of private e-mail
 
 {% include important.html content="Please, please, please: **do not use
-private e-mail** for support, **use the xPack forums**." %}
+private e-mail** for support, **use the
+GitHub [Discussions](https://github.com/xpack-dev-tools/windows-build-tools-xpack/discussions/)**." %}
 
 Sending private messages will be automatically replied with
 a link to this page.
 The reason for this rude behaviour is simply an attempt to use
-the time more efficiently; since forum posts are archived, other people
+the time more efficiently; since discussions are archived, other people
 having similar problems might benefit from the answers.

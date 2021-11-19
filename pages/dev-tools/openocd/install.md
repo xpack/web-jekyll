@@ -462,7 +462,7 @@ $ sudo usermod -aG plugdev $USER
 Then restart and login again.
 
 If you still have problems, check your distribution documentation and
-when you have a functional solution post it on the project forum.
+when you have a functional solution post it on the project GitHub Discussions.
 
 ### Test
 
