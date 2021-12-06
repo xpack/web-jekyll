@@ -115,7 +115,7 @@ The xPack Ninja Build generally follows the official
 The current version is based on:
 
 - Ninja release
-[1.10.2](https://github.com/ninja-build/ninja/releases/tag/v1.10.1)
+[1.10.2](https://github.com/ninja-build/ninja/releases/tag/v1.10.2)
 from Nov 28th, 2020.
 
 ## Changes
