@@ -191,11 +191,11 @@ install locally:
 ```bash
 python3_version="3.7.9"
 mkdir -p "${HOME}/Downloads"
-curl -L --fail -o "${HOME}/Downloads/Python-${python3_version}.tgz" https://www.python.org/ftp/python/${python3_version}/Python-${python3_version}.tgz 
+curl -L --fail -o "${HOME}/Downloads/Python-${python3_version}.tgz" https://www.python.org/ftp/python/${python3_version}/Python-${python3_version}.tgz
 rm -rf "${HOME}/Work/Python-${python3_version}"
 mkdir -p "${HOME}/Work"
 cd "${HOME}/Work"
-tar xzf "${HOME}/Downloads/Python-${python3_version}.tgz" 
+tar xzf "${HOME}/Downloads/Python-${python3_version}.tgz"
 cd "${HOME}/Work/Python-${python3_version}"
 bash ./configure --prefix="${HOME}/opt"
 make
@@ -251,7 +251,7 @@ in the environment, it might interfere with the xPack binaries.
 
 ### `@executable_path`
 
-Similarly, on macOS, the dynamic libraries are adjusted with `otool` to use a
+Similarly, on macOS, the binaries are adjusted with `otool` to use a
 relative path.
 
 ## Documentation
@@ -312,25 +312,25 @@ executed again.
 The SHA-256 hashes for the files are:
 
 ```
-2009f256e59291e1025cc099e4300d7662dda040b304fe3462b4cb7c35c71378  
+2009f256e59291e1025cc099e4300d7662dda040b304fe3462b4cb7c35c71378
 xpack-riscv-none-embed-gcc-8.3.0-1.2-darwin-x64.tar.gz
 
-751f28a28148ddaec8cfcbf7eb794a70d24ee6650dc29da91e6aa672b9deae52  
+751f28a28148ddaec8cfcbf7eb794a70d24ee6650dc29da91e6aa672b9deae52
 xpack-riscv-none-embed-gcc-8.3.0-1.2-linux-arm64.tar.gz
 
-63f232cbeddbe968130f4c8386cca24c5e1410cc2551738d071b279a94cd8b75  
+63f232cbeddbe968130f4c8386cca24c5e1410cc2551738d071b279a94cd8b75
 xpack-riscv-none-embed-gcc-8.3.0-1.2-linux-arm.tar.gz
 
-1d99730d6e1e5d3a60fa0ccfbbcf0276e77dd83d58b6d8d1543cef40a1dd96ca  
+1d99730d6e1e5d3a60fa0ccfbbcf0276e77dd83d58b6d8d1543cef40a1dd96ca
 xpack-riscv-none-embed-gcc-8.3.0-1.2-linux-x32.tar.gz
 
-079a88d7f7c18cfd735a9ed1f0eefa28ab28d3007b5f7591920ab25225c89248  
+079a88d7f7c18cfd735a9ed1f0eefa28ab28d3007b5f7591920ab25225c89248
 xpack-riscv-none-embed-gcc-8.3.0-1.2-linux-x64.tar.gz
 
-8e7e98117900f3eed717b20555b346c2473dcbb9090e05c456412008f39fb62d  
+8e7e98117900f3eed717b20555b346c2473dcbb9090e05c456412008f39fb62d
 xpack-riscv-none-embed-gcc-8.3.0-1.2-win32-x32.zip
 
-5b7a4e3a2bb22566fed951972d726d10ff43bc35db17f9287eed52766e80ecee  
+5b7a4e3a2bb22566fed951972d726d10ff43bc35db17f9287eed52766e80ecee
 xpack-riscv-none-embed-gcc-8.3.0-1.2-win32-x64.zip
 ```
 

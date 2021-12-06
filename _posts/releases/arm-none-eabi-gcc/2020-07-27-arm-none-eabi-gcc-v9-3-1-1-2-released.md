@@ -1,8 +1,8 @@
 ---
 title:  xPack GNU Arm Embedded GCC v9.3.1-1.2 released
 
-summary: "Version 9.3.1-1.2 is a maintenance release of **xPack GNU Arm 
-Embedded GCC**, intended to **fix C++ exceptions** support for non-nano 
+summary: "Version 9.3.1-1.2 is a maintenance release of **xPack GNU Arm
+Embedded GCC**, intended to **fix C++ exceptions** support for non-nano
 libraries, and to use **DT_RPATH** to make the binaries immune to custom
 LD_LIBRARY_PATH."
 
@@ -155,11 +155,11 @@ install locally:
 ```bash
 python3_version="3.7.9"
 mkdir -p "${HOME}/Downloads"
-curl -L --fail -o "${HOME}/Downloads/Python-${python3_version}.tgz" https://www.python.org/ftp/python/${python3_version}/Python-${python3_version}.tgz 
+curl -L --fail -o "${HOME}/Downloads/Python-${python3_version}.tgz" https://www.python.org/ftp/python/${python3_version}/Python-${python3_version}.tgz
 rm -rf "${HOME}/Work/Python-${python3_version}"
 mkdir -p "${HOME}/Work"
 cd "${HOME}/Work"
-tar xzf "${HOME}/Downloads/Python-${python3_version}.tgz" 
+tar xzf "${HOME}/Downloads/Python-${python3_version}.tgz"
 cd "${HOME}/Work/Python-${python3_version}"
 bash ./configure --prefix="${HOME}/opt"
 make
@@ -219,7 +219,7 @@ it in the environment.
 
 ### `@executable_path`
 
-Similarly, on macOS, the dynamic libraries are adjusted with `otool` to use a
+Similarly, on macOS, the binaries are adjusted with `otool` to use a
 relative path.
 
 ## Documentation

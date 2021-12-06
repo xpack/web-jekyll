@@ -165,7 +165,7 @@ it in the environment.
 
 ### `@rpath`
 
-Similarly, on macOS, the dynamic libraries are adjusted with `install_name_tool` to use a
+Similarly, on macOS, the binaries are adjusted with `install_name_tool` to use a
 relative path.
 
 ## Documentation

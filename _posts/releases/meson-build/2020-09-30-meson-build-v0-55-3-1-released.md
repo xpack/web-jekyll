@@ -137,7 +137,7 @@ is set in the environment, it should not interfere with the xPack binaries.
 
 ### `@executable_path`
 
-Similarly, on macOS, the dynamic libraries are adjusted with `otool` to use a
+Similarly, on macOS, the binaries are adjusted with `otool` to use a
 relative path.
 
 ## Documentation

@@ -142,11 +142,11 @@ install locally:
 ```bash
 python3_version="3.7.9"
 mkdir -p "${HOME}/Downloads"
-curl -L --fail -o "${HOME}/Downloads/Python-${python3_version}.tgz" https://www.python.org/ftp/python/${python3_version}/Python-${python3_version}.tgz 
+curl -L --fail -o "${HOME}/Downloads/Python-${python3_version}.tgz" https://www.python.org/ftp/python/${python3_version}/Python-${python3_version}.tgz
 rm -rf "${HOME}/Work/Python-${python3_version}"
 mkdir -p "${HOME}/Work"
 cd "${HOME}/Work"
-tar xzf "${HOME}/Downloads/Python-${python3_version}.tgz" 
+tar xzf "${HOME}/Downloads/Python-${python3_version}.tgz"
 cd "${HOME}/Work/Python-${python3_version}"
 bash ./configure --prefix="${HOME}/opt"
 make
@@ -221,7 +221,7 @@ it in the environment.
 
 ### `@executable_path`
 
-Similarly, on macOS, the dynamic libraries are adjusted with `otool` to use a
+Similarly, on macOS, the binaries are adjusted with `otool` to use a
 relative path.
 
 ## Documentation
