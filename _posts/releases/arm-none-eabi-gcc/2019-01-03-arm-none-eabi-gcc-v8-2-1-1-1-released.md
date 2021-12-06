@@ -27,31 +27,31 @@ Use v8.2.1-1.6.
 
 ## Compliance
 
-This release follows the official 
-[GNU Arm Embedded Toolchain](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm) 
-**8-2018-q4-major** release from December 20, 2018 and it is based on the 
+This release follows the official
+[GNU Arm Embedded Toolchain](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm)
+**8-2018-q4-major** release from December 20, 2018 and it is based on the
 `gcc-arm-none-eabi-8-2018-q4-major-src.tar.bz2` source invariant.
 
 ## Binaries
 
 Binaries for **Windows**, **macOS** and **GNU/Linux** are provided.
 
-The GNU/Linux binaries were built on two CentOS 6 Docker images (32/64-bit), 
+The GNU/Linux binaries were built on two CentOS 6 Docker images (32/64-bit),
 and run on any distribution based on CentOS 6 or later.
 
-The macOS binary was built on a macOS 10.10.5 and must run on any newer 
+The macOS binary was built on a macOS 10.10.5 and must run on any newer
 macOS system.
 
-The Windows binaries were built with mingw-w64, and run on any reasonably 
+The Windows binaries were built with mingw-w64, and run on any reasonably
 recent **i686** and **x86_64** Windows machines.
 
-Instructions on how to install the binaries are available in the 
+Instructions on how to install the binaries are available in the
 [How to install the ARM toolchain?]({{ site.baseurl }}/arm-none-eabi-gcc/install/)
 page.
 
-The toolchain is also available as an 
-[xPack](https://www.npmjs.com/package/@gnu-mcu-eclipse/arm-none-eabi-gcc) 
-and can be conveniently installed with 
+The toolchain is also available as an
+[xPack](https://www.npmjs.com/package/@gnu-mcu-eclipse/arm-none-eabi-gcc)
+and can be conveniently installed with
 [`xpm`](https://www.npmjs.com/package/xpm):
 
 ```console
@@ -60,16 +60,16 @@ $ xpm install --global @gnu-mcu-eclipse/arm-none-eabi-gcc
 
 This installs the latest available version.
 
-For better control and repeatability, the build scripts use Docker containers; 
-all files required during builds are available as a separate 
+For better control and repeatability, the build scripts use Docker containers;
+all files required during builds are available as a separate
 [gnu-mcu-eclipse/arm-none-eabi-gcc-build](https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc-build)
-project. 
+project.
 
 ## Known problems
 
 The latest Binutils, also used in Arm Embedded GCC, have a problem when running on 32-bit machines, and `objdump` fails to generate .hex files. The bug affects both Windows and GNU/Linux machines. 64-bit builds are not affected. The bug is documented as [1810274](https://bugs.launchpad.net/gcc-arm-embedded/+bug/1810274).
 
-The current solution is to upgrade to 8.2.1-1.2; the workaround is to 
+The current solution is to upgrade to 8.2.1-1.2; the workaround is to
 override `arm-none-eabi-objdump` with an older binary.
 
 ## Checksums

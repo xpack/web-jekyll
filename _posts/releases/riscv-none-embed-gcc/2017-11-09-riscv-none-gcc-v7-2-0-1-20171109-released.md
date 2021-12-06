@@ -16,7 +16,7 @@ tags:
 
 ---
 
-Version v7.2.0-1-20171109 is a new release of **GNU MCU Eclipse RISC-V Embedded GCC**; the main improvement is in GDB, which no longer returns the 4096 CSRs together with the general registers. In contrast to the `riscv64-unknown-elf` toolchain, this toolchain is clearly intended for bare-metal embedded applications; for this it was necessary to  update to the latest newlib 2.5 release which uses 'underscore' syscall functions and to **remove the mandatory use of libgloss**. 
+Version v7.2.0-1-20171109 is a new release of **GNU MCU Eclipse RISC-V Embedded GCC**; the main improvement is in GDB, which no longer returns the 4096 CSRs together with the general registers. In contrast to the `riscv64-unknown-elf` toolchain, this toolchain is clearly intended for bare-metal embedded applications; for this it was necessary to  update to the latest newlib 2.5 release which uses 'underscore' syscall functions and to **remove the mandatory use of libgloss**.
 
 To avoid any confusions with the `riscv64-unknown-elf` toolchain, this toolchain was renamed to the more appropriate `riscv-none-embedded-`.
 
@@ -91,7 +91,7 @@ The initial RISC-V newlib was erroneously configured to directly call system fun
 
 The latest newlib 2.5.0 for RISC-V fixed this, and switched to the usual newlib configuration, which uses 'underscore' functions (like `_write()`) that must be defined by the application to implement the system calls.
 
-This change is welcome, since it brings the RISC-V toolchain in line with other toolchains, like `arm-none-eabi`. 
+This change is welcome, since it brings the RISC-V toolchain in line with other toolchains, like `arm-none-eabi`.
 
 Unfortunately this change breaks the builds for the initial SiFive SDK samples, which implements the direct function names in the `libwrap` library. To fix them, `libwrap` should no longer be used, the `--wrap` options should no longer be passed to the linker, and several functions (like `_write()`, `_istty()`, ...) must be implemented by the application.
 
@@ -119,7 +119,7 @@ $ xpm install --global @gnu-mcu-eclipse/riscv-none-gcc
 
 This installs the latest available version.
 
-For better control and repeatability, the build scripts use Docker containers; all files required during builds are available as a separate [gnu-mcu-eclipse/riscv-none-gcc-build](https://github.com/gnu-mcu-eclipse/riscv-none-gcc-build) project. 
+For better control and repeatability, the build scripts use Docker containers; all files required during builds are available as a separate [gnu-mcu-eclipse/riscv-none-gcc-build](https://github.com/gnu-mcu-eclipse/riscv-none-gcc-build) project.
 
 ## Known problems
 

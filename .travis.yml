@@ -45,7 +45,7 @@ notifications:
   email:
     on_success: always # default: change
     on_failure: always # default: always
-   
+
 cache:
   bundler: true
 
@@ -75,7 +75,7 @@ script:
 #  script: bash scripts/travis.linux.sh deploy
 #  on:
 #    branch: master
- 
+
 # after_script:
 #  - bash scripts/travis.linux.sh after_script
 

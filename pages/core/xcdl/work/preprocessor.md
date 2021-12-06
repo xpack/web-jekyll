@@ -71,7 +71,7 @@ CubeMX uses `.ftl` files with a complex script syntax, somehow inspired by xml; 
     [#assign methodList = configModel.methods]
 [#else]
     [#if configModel.methods??]
-        [#assign methodList = configModel.libMethod]  
+        [#assign methodList = configModel.libMethod]
     [/#if]
 [/#if]
 [#assign writeConfigComments=false]
@@ -131,7 +131,7 @@ def instanceLabel
       apps.add(app);
     }
  }
-out.print("""     
+out.print("""
 
 /** @Initialization of Apps Init Functions */
 
@@ -144,7 +144,7 @@ out.print("""
   {
     /**  Initialization of ${appName} App instance ${instanceLabel} */
     init_status = (DAVE_STATUS_t)${appName}_Init(&${instanceLabel});
-  }  
+  }
 """);
 
 }

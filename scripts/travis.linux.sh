@@ -130,7 +130,7 @@ function do_script() {
   # to break the build if not successful.
 
   cd "${dest_folder}"
-  
+
   if [ "${TRAVIS_PULL_REQUEST}" != "false" ]
   then
     echo "A pull request, skip deploy."
@@ -228,7 +228,7 @@ then
     echo "Unsupported command" "${action}" "$@"
     exit 1
     ;;
-   
+
   esac
   exit 0
 else

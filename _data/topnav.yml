@@ -38,12 +38,10 @@ topnav_dropdowns:
           external_url: https://github.com/eclipse-embed-cdt/
         - title: µOS++ IIIe
           external_url: https://github.com/micro-os-plus/
-          
+
     - title: Forums
       folderitems:
         - title: The xPack Forums
           external_url: https://www.tapatalk.com/groups/xpack/
         - title: The xPack Chatroom
           external_url: https://gitter.im/xpack/
-
-

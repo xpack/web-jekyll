@@ -41,19 +41,19 @@ A typical blinky project might look like:
   ],
   "description": "STM32F4DISCOVERY Blinky project",
   "name": "blinky",
-  "target": { 
+  "target": {
     "platform": "stm32f4-discovery",
     "cpu": {
       "device": "stm32f407vg"
     }
   },
-  "toolsCollections": [ 
+  "toolsCollections": [
     "xpack-arm-none-eabi-gcc"
   ],
   "language": "c++",
   "builder": "ninja",
   "buildConfigurations": {
-    "debug": { 
+    "debug": {
       "addSourcePaths": [
         "src"
       ],
@@ -74,7 +74,7 @@ A typical blinky project might look like:
             "-std=gnu11",
             "-fmessage-length=0",
             "-fsigned-char",
-            "-ffunction-sections", 
+            "-ffunction-sections",
             "-fdata-sections",
             "-DDEBUG",
             "-DTRACE",
@@ -100,15 +100,15 @@ A typical blinky project might look like:
             "-Wall",
             "-Wextra",
             "-O0",
-            "-std=gnu++11", 
+            "-std=gnu++11",
             "-fabi-version=0",
-            "-fno-exceptions", 
-            "-fno-rtti", 
-            "-fno-use-cxa-atexit", 
+            "-fno-exceptions",
+            "-fno-rtti",
+            "-fno-use-cxa-atexit",
             "-fno-threadsafe-statics",
             "-fmessage-length=0",
             "-fsigned-char",
-            "-ffunction-sections", 
+            "-ffunction-sections",
             "-fdata-sections",
             "-DDEBUG",
             "-DTRACE",
@@ -137,12 +137,12 @@ A typical blinky project might look like:
             "-std=gnu11",
             "-fmessage-length=0",
             "-fsigned-char",
-            "-ffunction-sections", 
+            "-ffunction-sections",
             "-fdata-sections",
             "-Wl,--gc-sections",
-            "-T{{ project.absolutePath }}/linker-scripts/mem.ld", 
+            "-T{{ project.absolutePath }}/linker-scripts/mem.ld",
             "-T{{ project.absolutePath }}/linker-scripts/sections.ld",
-            "-nostartfiles", 
+            "-nostartfiles",
             "-Wl,-Map,\"{{ artefact.name }}.map\"",
             "--specs=nano.specs"
           ]
@@ -170,7 +170,7 @@ A typical blinky project might look like:
             "-std=gnu11",
             "-fmessage-length=0",
             "-fsigned-char",
-            "-ffunction-sections", 
+            "-ffunction-sections",
             "-fdata-sections",
             "-DNDEBUG",
             "-DSTM32F407xx",
@@ -193,15 +193,15 @@ A typical blinky project might look like:
             "-Wall",
             "-Wextra",
             "-Os",
-            "-std=gnu++11", 
+            "-std=gnu++11",
             "-fabi-version=0",
-            "-fno-exceptions", 
-            "-fno-rtti", 
-            "-fno-use-cxa-atexit", 
+            "-fno-exceptions",
+            "-fno-rtti",
+            "-fno-use-cxa-atexit",
             "-fno-threadsafe-statics",
             "-fmessage-length=0",
             "-fsigned-char",
-            "-ffunction-sections", 
+            "-ffunction-sections",
             "-fdata-sections",
             "-DNDEBUG",
             "-DSTM32F407xx",
@@ -227,12 +227,12 @@ A typical blinky project might look like:
             "-std=gnu11",
             "-fmessage-length=0",
             "-fsigned-char",
-            "-ffunction-sections", 
+            "-ffunction-sections",
             "-fdata-sections",
             "-Wl,--gc-sections",
-            "-T{{ project.absolutePath }}/linker-scripts/mem.ld", 
+            "-T{{ project.absolutePath }}/linker-scripts/mem.ld",
             "-T{{ project.absolutePath }}/linker-scripts/sections.ld",
-            "-nostartfiles", 
+            "-nostartfiles",
             "-Wl,-Map,\"{{ artefact.name }}.map\"",
             "--specs=nano.specs"
           ]
@@ -439,7 +439,7 @@ Example:
 
 ```json
 {
-  "target": { 
+  "target": {
     "platform": "stm32f4-discovery",
     "cpu": {
       "device": "stm32f407vg"

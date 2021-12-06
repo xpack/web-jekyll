@@ -41,16 +41,16 @@ Both the make and BusyBox sources were upgraded to the latest available.
 
 Only binaries for **Windows** are provided.
 
-They were built with mingw-w64, and run on any reasonably 
+They were built with mingw-w64, and run on any reasonably
 recent **i686** and **x86_64** Windows machines.
 
-Instructions on how to install the binaries are available in the 
+Instructions on how to install the binaries are available in the
 [How to install the Windows Build Tools?]({{ site.baseurl }}/windows-build-tools/install/)
 page.
 
-The build tools are also available as an 
-[xPack](https://www.npmjs.com/package/@gnu-mcu-eclipse/windows-build-tools) 
-and can be conveniently installed with 
+The build tools are also available as an
+[xPack](https://www.npmjs.com/package/@gnu-mcu-eclipse/windows-build-tools)
+and can be conveniently installed with
 [`xpm`](https://www.npmjs.com/package/xpm):
 
 ```console
@@ -59,19 +59,19 @@ $ xpm install --global @gnu-mcu-eclipse/windows-build-tools
 
 This installs the latest available version.
 
-For better control and repeatability, the build scripts use Docker containers; 
-all files required during builds are available as a separate 
+For better control and repeatability, the build scripts use Docker containers;
+all files required during builds are available as a separate
 [gnu-mcu-eclipse/windows-build-tools](https://github.com/gnu-mcu-eclipse/windows-build-tools)
-project. 
+project.
 
 ## Checksums
 
 The SHA-256 hashes for the files are:
 
 ```console
-fb4c6a3a3a93f7ac5dbd88879b782b9b1c31c4b51273dc6c8c4299c23b3c4d98 
+fb4c6a3a3a93f7ac5dbd88879b782b9b1c31c4b51273dc6c8c4299c23b3c4d98
 gnu-mcu-eclipse-windows-build-tools-2.12-20190422-1053-win32.zip
 
-a8fd184310ffb5bf91660fd09f5b230675ef121deb03722c49562edf4d03318f 
+a8fd184310ffb5bf91660fd09f5b230675ef121deb03722c49562edf4d03318f
 gnu-mcu-eclipse-windows-build-tools-2.12-20190422-1053-win64.zip
 ```

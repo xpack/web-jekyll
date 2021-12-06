@@ -7,7 +7,7 @@ date:   2019-01-19 21:46:00 +0300
 categories:
   - releases
   - arm-none-eabi-gcc
-  
+
 tags:
   - releases
   - arm
@@ -17,8 +17,8 @@ tags:
 
 ---
 
-Version v8.2.1-1.2 20190119 is a maintenance release of 
-**GNU MCU Eclipse ARM Embedded GCC** that fixes the 32-bit objcopy bug 
+Version v8.2.1-1.2 20190119 is a maintenance release of
+**GNU MCU Eclipse ARM Embedded GCC** that fixes the 32-bit objcopy bug
 present in the previous release.
 
 [Binary files »]({{ page.download_url }})
@@ -29,9 +29,9 @@ Use v8.2.1-1.6.
 
 ## Compliance
 
-This release follows the official 
-[GNU Arm Embedded Toolchain](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm) 
-**8-2018-q4-major** release from December 20, 2018 and it is based on the 
+This release follows the official
+[GNU Arm Embedded Toolchain](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm)
+**8-2018-q4-major** release from December 20, 2018 and it is based on the
 `gcc-arm-none-eabi-8-2018-q4-major-src.tar.bz2` source invariant.
 
 The patch to fix `objcopy` is from [git](https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git;a=commitdiff;h=a9859e01726d085db79cff88550fdb38e2434e42;hp=171b8e19575654ab32321eb99f3fd112663ae7fa).
@@ -40,22 +40,22 @@ The patch to fix `objcopy` is from [git](https://sourceware.org/git/gitweb.cgi?
 
 Binaries for **Windows**, **macOS** and **GNU/Linux** are provided.
 
-The GNU/Linux binaries were built on two CentOS 6 Docker images (32/64-bit), 
+The GNU/Linux binaries were built on two CentOS 6 Docker images (32/64-bit),
 and run on any distribution based on CentOS 6 or later.
 
-The macOS binary was built on a macOS 10.10.5 and must run on any newer 
+The macOS binary was built on a macOS 10.10.5 and must run on any newer
 macOS system.
 
-The Windows binaries were built with mingw-w64, and run on any reasonably 
+The Windows binaries were built with mingw-w64, and run on any reasonably
 recent **i686** and **x86_64** Windows machines.
 
-Instructions on how to install the binaries are available in the 
+Instructions on how to install the binaries are available in the
 [How to install the ARM toolchain?]({{ site.baseurl }}/arm-none-eabi-gcc/install/)
 page.
 
-The toolchain is also available as an 
-[xPack](https://www.npmjs.com/package/@gnu-mcu-eclipse/arm-none-eabi-gcc) 
-and can be conveniently installed with 
+The toolchain is also available as an
+[xPack](https://www.npmjs.com/package/@gnu-mcu-eclipse/arm-none-eabi-gcc)
+and can be conveniently installed with
 [`xpm`](https://www.npmjs.com/package/xpm):
 
 ```console
@@ -64,10 +64,10 @@ $ xpm install --global @gnu-mcu-eclipse/arm-none-eabi-gcc
 
 This installs the latest available version.
 
-For better control and repeatability, the build scripts use Docker containers; 
-all files required during builds are available as a separate 
+For better control and repeatability, the build scripts use Docker containers;
+all files required during builds are available as a separate
 [gnu-mcu-eclipse/arm-none-eabi-gcc-build](https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc-build)
-project. 
+project.
 
 ## Known problems
 

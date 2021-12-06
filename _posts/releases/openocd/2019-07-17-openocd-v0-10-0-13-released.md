@@ -93,7 +93,7 @@ compatible with most recent systems.
   Docker container
 - Windows: all binaries were built with mingw-w64 GCC 7.4, running in a
   CentOS 6 Docker container
-- macOS: most binaries were built with GCC 7.4, running in a separate 
+- macOS: most binaries were built with GCC 7.4, running in a separate
   folder on macOS 10.10.5; GDB cannot be compiled with GCC, so Apple
   clang was used.
 

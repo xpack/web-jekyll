@@ -188,7 +188,7 @@ TODO: define.
 
 Possibly a more generic version of `xpack build`, if XCDL can be extended with features specific to cmake/autotools/etc.
 
-Perform a sequence of tasks to make something, similar to `make`. 
+Perform a sequence of tasks to make something, similar to `make`.
 
 ## xsvd
 
@@ -207,6 +207,3 @@ Modify an XSVD file by adding definitions from a patch file.
 ### gen-code
 
 Generate source code for QEMU peripherals.
-
-
-

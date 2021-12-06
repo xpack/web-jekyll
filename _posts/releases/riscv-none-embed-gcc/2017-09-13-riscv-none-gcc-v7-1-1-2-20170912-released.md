@@ -87,7 +87,7 @@ The initial RISC-V newlib was erroneously configured to directly call system fun
 
 The latest newlib 2.5.0 for RISC-V fixed this, and switched to the usual newlib configuration, which uses 'underscore' functions (like `_write()`) that must be defined by the application to implement the system calls.
 
-This change is welcome, since it brings the RISC-V toolchain in line with other toolchains, like `arm-none-eabi`. 
+This change is welcome, since it brings the RISC-V toolchain in line with other toolchains, like `arm-none-eabi`.
 
 Unfortunately this change breaks the builds for the initial SiFive SDK samples, which implements the direct function names in the `libwrap` library. To fix them, `libwrap` should no longer be used, the `--wrap` options should no longer be passed to the linker, and several functions (like `_write()`, `_istty()`, ...) must be implemented by the application.
 
@@ -107,7 +107,7 @@ Binaries for **Windows**, **macOS** and **GNU/Linux** are provided. For Windows 
 
 Instructions on how to install them are available in the [How to install the RISC-V toolchain?]({{ site.baseurl }}/riscv-none-embed-gcc/install/) page.
 
-For better control and repeatability, the build scripts use Docker containers; all files required during builds are available as a separate [gnu-mcu-eclipse/riscv-none-gcc-build](https://github.com/gnu-mcu-eclipse/riscv-none-gcc-build) project. 
+For better control and repeatability, the build scripts use Docker containers; all files required during builds are available as a separate [gnu-mcu-eclipse/riscv-none-gcc-build](https://github.com/gnu-mcu-eclipse/riscv-none-gcc-build) project.
 
 ## Checksums
 

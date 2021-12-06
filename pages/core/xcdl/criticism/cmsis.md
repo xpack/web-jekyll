@@ -104,7 +104,7 @@ Perhaps a more visually pleasant solution would have been to use the standard PO
 
 Here is an unfortunate example from the STM32F4-Discovery board:
 
-```    
+```
 <book category="overview"  name="http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1199/PF252419" title="STM32F4-Discovery Web Page"/>
 <book category="setup"     name="Documents\DM00037368.pdf" title="Getting Started"/>
 <book category="schematic" name="Documents\stm32f4discovery_sch.zip" title="Schematics"/>

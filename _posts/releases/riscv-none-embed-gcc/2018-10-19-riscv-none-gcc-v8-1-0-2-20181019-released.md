@@ -16,42 +16,42 @@ tags:
 
 ---
 
-Version v8.1.0-2-20181019 is a maintenance release of **GNU MCU Eclipse 
+Version v8.1.0-2-20181019 is a maintenance release of **GNU MCU Eclipse
 RISC-V Embedded GCC**.
 
 [Binary files »]({{ page.download_url }})
 
 ## Compliance
 
-This release closely follows the official 
-[RISC-V distribution](https://github.com/riscv/riscv-gcc) maintained by 
+This release closely follows the official
+[RISC-V distribution](https://github.com/riscv/riscv-gcc) maintained by
 [SiFive](https://www.sifive.com).
 
-It is more or less similar to the 20180928 release, except support for 
+It is more or less similar to the 20180928 release, except support for
 SiFive specific CLIC interrupts, which was not included.
 
 The following commits were used:
 
-- the [riscv/riscv-gcc](https://github.com/riscv/riscv-gcc) project, 
+- the [riscv/riscv-gcc](https://github.com/riscv/riscv-gcc) project,
 branch `riscv-gcc-8.1.0`, commit
 [3c148a7e6ea](https://github.com/gnu-mcu-eclipse/riscv-none-gcc/commit/3c148a7e6ea1379e3a8e8b5350ec03a72e5d4137)
 from from July 3rd, 2018
-- the [riscv/riscv-binutils-gdb](https://github.com/riscv/riscv-binutils-gdb) 
-project, branch `riscv-binutils-2.30`, commit 
+- the [riscv/riscv-binutils-gdb](https://github.com/riscv/riscv-binutils-gdb)
+project, branch `riscv-binutils-2.30`, commit
 [0d2fb1b7ff](https://github.com/gnu-mcu-eclipse/riscv-binutils-gdb/commit/0d2fb1b7ff9b94e40352306f1f8857b863c6f787)
 from Aug 11th, 2018
 - the [riscv/riscv-newlib](https://github.com/riscv/riscv-newlib) project,
 commit [77e11e180](https://github.com/gnu-mcu-eclipse/riscv-newlib/commit/77e11e1800f57cac7f5468b2bd064100a44755d4)
 from July 12th, 2018
 
-GDB is a bit special, since it is only partly upstreamed and the RISC-V repos 
-are no longer updated, so the current build uses 
-`git://sourceware.org/git/binutils-gdb.git`, the `7dd36a6f1c` commit from 
+GDB is a bit special, since it is only partly upstreamed and the RISC-V repos
+are no longer updated, so the current build uses
+`git://sourceware.org/git/binutils-gdb.git`, the `7dd36a6f1c` commit from
 Aug 23rd, 2018 (same as the SiFive release).
 
 ## Improvements
 
-All architectures, ABIs and libraries supported by the `riscv64-unknown-elf` 
+All architectures, ABIs and libraries supported by the `riscv64-unknown-elf`
 toolchain are also supported, with the following improvements:
 
 * a newer `newlib` was included, which supports the 'underscore' syscall functions
@@ -64,19 +64,19 @@ toolchain are also supported, with the following improvements:
 
 Binaries for **Windows**, **macOS** and **GNU/Linux** are provided.
 
-The GNU/Linux binaries were built on two CentOS 6 Docker images (32/64-bit), 
+The GNU/Linux binaries were built on two CentOS 6 Docker images (32/64-bit),
 and run on any distribution based on CentOS 6 or later.
 
-The Windows binaries were built with mingw-w64, and run on any reasonably 
+The Windows binaries were built with mingw-w64, and run on any reasonably
 recent **i686** and **x86_64** Windows machines.
 
-Instructions on how to install the binaries are available in the 
-[How to install the RISC-V toolchain?]({{ site.baseurl }}/riscv-none-embed-gcc/install/) 
+Instructions on how to install the binaries are available in the
+[How to install the RISC-V toolchain?]({{ site.baseurl }}/riscv-none-embed-gcc/install/)
 page.
 
-The toolchain is also available as an 
-[xPack](https://www.npmjs.com/package/@gnu-mcu-eclipse/riscv-none-gcc) 
-and can be conveniently installed with 
+The toolchain is also available as an
+[xPack](https://www.npmjs.com/package/@gnu-mcu-eclipse/riscv-none-gcc)
+and can be conveniently installed with
 [`xpm`](https://www.npmjs.com/package/xpm):
 
 ```console
@@ -85,10 +85,10 @@ $ xpm install --global @gnu-mcu-eclipse/riscv-none-gcc
 
 This installs the latest available version.
 
-For better control and repeatability, the build scripts use Docker 
-containers; all files required during builds are available as a separate 
-[gnu-mcu-eclipse/riscv-none-gcc-build](https://github.com/gnu-mcu-eclipse/riscv-none-gcc-build) 
-project. 
+For better control and repeatability, the build scripts use Docker
+containers; all files required during builds are available as a separate
+[gnu-mcu-eclipse/riscv-none-gcc-build](https://github.com/gnu-mcu-eclipse/riscv-none-gcc-build)
+project.
 
 ## Known problems
 

@@ -46,7 +46,7 @@ $ xpm install --global @gnu-mcu-eclipse/arm-none-eabi-gcc
 
 This installs the latest available version.
 
-For better control and repeatability, the build scripts use Docker containers; all files required during builds are available as a separate [gnu-mcu-eclipse/arm-none-eabi-gcc-build](https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc-build) project. 
+For better control and repeatability, the build scripts use Docker containers; all files required during builds are available as a separate [gnu-mcu-eclipse/arm-none-eabi-gcc-build](https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc-build) project.
 
 ## Known problems
 

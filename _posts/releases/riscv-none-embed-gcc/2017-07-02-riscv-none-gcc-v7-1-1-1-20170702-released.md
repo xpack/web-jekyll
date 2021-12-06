@@ -33,9 +33,9 @@ The current version is based on project [riscv/riscv-gnu-toolchain](https://gith
 The supported architectures (`-march=`) are:
 
 * rv32i[m][a][f[d]][c]
-* rv32g[c] 
+* rv32g[c]
 * rv64i[m][a][f[d]][c]
-* rv64g[c] 
+* rv64g[c]
 
 The supported ABIs (`-mabi=`) are:
 
@@ -82,7 +82,7 @@ Binaries for **Windows**, **macOS** and **GNU/Linux** are provided. For Windows 
 
 Instructions on how to install them are available in the [How to install the RISC-V toolchain?]({{ site.baseurl }}/riscv-none-embed-gcc/install/) page.
 
-For better control and repetability, the build scripts use Docker containers; all files required during builds are available as a separate [gnu-mcu-eclipse/riscv-none-gcc-build](https://github.com/gnu-mcu-eclipse/riscv-none-gcc-build) project. 
+For better control and repetability, the build scripts use Docker containers; all files required during builds are available as a separate [gnu-mcu-eclipse/riscv-none-gcc-build](https://github.com/gnu-mcu-eclipse/riscv-none-gcc-build) project.
 
 ## Known problems
 

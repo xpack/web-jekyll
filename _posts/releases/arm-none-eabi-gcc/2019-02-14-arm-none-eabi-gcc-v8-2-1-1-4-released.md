@@ -19,8 +19,8 @@ tags:
 
 ---
 
-Version v8.2.1-1.4 20190214 is a maintenance release of 
-**GNU MCU Eclipse ARM Embedded GCC** that fixes the bugs affecting Windows 
+Version v8.2.1-1.4 20190214 is a maintenance release of
+**GNU MCU Eclipse ARM Embedded GCC** that fixes the bugs affecting Windows
 LTO builds, present in the previous release.
 
 [Binary files »]({{ page.download_url }})
@@ -31,23 +31,23 @@ Use v8.2.1-1.6.
 
 ## Compliance
 
-This release follows the official 
-[GNU Arm Embedded Toolchain](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm) 
-**8-2018-q4-major** release from December 20, 2018 and it is based on the 
+This release follows the official
+[GNU Arm Embedded Toolchain](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm)
+**8-2018-q4-major** release from December 20, 2018 and it is based on the
 `gcc-arm-none-eabi-8-2018-q4-major-src.tar.bz2` source invariant.
 
 ## Changes
 
-Compared to the ARM distribution, the build procedure is more or less the 
-same and there should be no functional differences, except the following 
+Compared to the ARM distribution, the build procedure is more or less the
+same and there should be no functional differences, except the following
 bug fixes:
 
-- a patch was applied to binutils to fix the 32-bit objcopy bug 
+- a patch was applied to binutils to fix the 32-bit objcopy bug
   [24065](https://sourceware.org/bugzilla/show_bug.cgi?id=24065)
 - GDB was built the Git commit ad0f979c9 from 2019-01-29, to fix the bugs
   affecting C++ LTO projects
   [24145](https://sourceware.org/bugzilla/show_bug.cgi?id=24145)
-- [Issue:[#3](https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc-build/issues/3)] 
+- [Issue:[#3](https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc-build/issues/3)]
   by default, the GCC build script fails to create `liblto_plugin-0.dll`
   for static builds with mingw; code to create the plugin was added
 - [Issue:[#1](https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc-build/issues/1)]
@@ -62,22 +62,22 @@ bug fixes:
 
 Binaries for **Windows**, **macOS** and **GNU/Linux** are provided.
 
-The GNU/Linux binaries were built on two CentOS 6 Docker images (32/64-bit), 
+The GNU/Linux binaries were built on two CentOS 6 Docker images (32/64-bit),
 and run on any distribution based on CentOS 6 or later.
 
-The macOS binary was built on a macOS 10.10.5 and must run on any newer 
+The macOS binary was built on a macOS 10.10.5 and must run on any newer
 macOS system.
 
-The Windows binaries were built with mingw-w64, and run on any reasonably 
+The Windows binaries were built with mingw-w64, and run on any reasonably
 recent **i686** and **x86_64** Windows machines.
 
-Instructions on how to install the binaries are available in the 
+Instructions on how to install the binaries are available in the
 [How to install the ARM toolchain?]({{ site.baseurl }}/arm-none-eabi-gcc/install/)
 page.
 
-The toolchain is also available as an 
-[xPack](https://www.npmjs.com/package/@gnu-mcu-eclipse/arm-none-eabi-gcc) 
-and can be conveniently installed with 
+The toolchain is also available as an
+[xPack](https://www.npmjs.com/package/@gnu-mcu-eclipse/arm-none-eabi-gcc)
+and can be conveniently installed with
 [`xpm`](https://www.npmjs.com/package/xpm):
 
 ```console
@@ -86,10 +86,10 @@ $ xpm install --global @gnu-mcu-eclipse/arm-none-eabi-gcc
 
 This installs the latest available version.
 
-For better control and repeatability, the build scripts use Docker containers; 
-all files required during builds are available as a separate 
+For better control and repeatability, the build scripts use Docker containers;
+all files required during builds are available as a separate
 [gnu-mcu-eclipse/arm-none-eabi-gcc-build](https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc-build)
-project. 
+project.
 
 ## Known problems
 
