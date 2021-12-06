@@ -111,8 +111,6 @@ The **xPack CMake** is based on the official
 
 The current version is based on:
 
-TODO: update commit id and date.
-
 - CMake release
 [3.20.6](https://github.com/Kitware/CMake/releases/tag/v3.20.6/)
 from Sep 20, 2021.
