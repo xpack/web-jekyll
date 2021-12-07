@@ -1,7 +1,7 @@
 ---
 title:  xPack OpenOCD 0.11.0-3 released
 
-summary: "Version **0.11.0-3** is a maintenance release; it updates to the latest upstream master, **adds support for Apple Silicon** and updates to the latest build scripts"
+summary: "Version **0.11.0-3** is a maintenance release; it updates to the latest upstream master, **adds support for Apple Silicon** and uses the latest build scripts"
 
 version: 0.11.0-3
 npm_subversion: 1

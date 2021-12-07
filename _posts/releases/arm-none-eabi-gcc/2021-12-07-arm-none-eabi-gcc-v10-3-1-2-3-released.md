@@ -1,7 +1,7 @@
 ---
 title:  xPack Arm Embedded GCC 10.3.1-2.3 released
 
-summary: "Version **10.3.1-2.3** is a maintenance release;  it **adds support for Apple Silicon** and updates to the latest build scripts."
+summary: "Version **10.3.1-2.3** is a maintenance release;  it **adds support for Apple Silicon** and uses the latest build scripts."
 
 arm_version: 10.3-2021.10
 arm_date: October 21, 2021
