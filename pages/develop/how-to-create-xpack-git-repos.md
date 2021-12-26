@@ -104,7 +104,9 @@ With a browser, at GitHub, select your account or organisation.
     choice for xPacks, but any other license of your choice is also ok
   - click the **Create Repository** button
 - select the **Settings** tab
-  - in the **Features** section, disable the **Wikis** and **Projects** options
+  - in the **Features** section
+    - disable the **Wikis** and **Projects** options
+    - enable **Discussions**
 
 ### Clone the repository to a local folder
 
@@ -114,11 +116,11 @@ With a browser, at GitHub, select your account or organisation.
   small **Clone to HTTPS** window
 - click the **Copy** icon, or explicitly copy the URL
 - in a terminal window, in a place of our choice, create a folder
-  to store all xPacks (for example it can be named `xpacks`):
+  to store all xPacks (for example it can be named `xPacks`):
 
 ```sh
-mkdir -p xpacks
-cd xpacks
+mkdir -p xPacks
+cd xPacks
 git clone https://github.com/<user>/<project>.git <project>.git
 ```
 
@@ -190,7 +192,7 @@ organise the branches, for consistency with xPacks that use 3rd
 party content, it is recommended to use an `xpack` branch.
 
 In this case, to warn users about this configuration, edit
-the `README.md` file and replace its entire content with:
+the `README.md` file; keep the header line and replace the content with:
 
 ```text
 This project does not use the `master` branch, please
@@ -436,11 +438,11 @@ When the release is considered stable, promote it as `latest`. For example:
 
 In general, depending on the _disruption_ degree, chose one of the following:
 
-```console
-$ cd <project>.git
-$ npm version patch
-$ npm version minor
-$ npm version major
+```sh
+cd <project>.git
+npm version patch
+npm version minor
+npm version major
 ```
 
 With Sourcetree or Git:
