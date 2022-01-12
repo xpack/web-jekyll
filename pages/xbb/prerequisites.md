@@ -13,7 +13,7 @@ containers (separate 32/64-bit containers) based on older
 and more conservative distributions, to avoid problems when
 attempting to run the executables on older versions.
 
-The XBB v3.4 uses Ubuntu 18 for bot hIntel and Arm GNU/Linux.
+The XBB v3.4 uses Ubuntu 18 for both Intel and Arm GNU/Linux.
 
 {% include note.html content="Building Arm binaries requires
 an Arm machine. A Raspberry Pi 4 8GB equiped with a SanDisk Extreme
@@ -65,7 +65,7 @@ This is true for most versions, except the very latest one, which might not
 yet be made available by the Docker team. In this case set the
 `version_name` manually to the previous version.
 You can also do this by
-manually editting the `/etc/apt/sources.list` file.
+manually editting the `/etc/apt/sources.list` file." %}
 
 To check if the install is functional, run the _Hello World_ image,
 for the moment as `sudo`:
