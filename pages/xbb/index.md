@@ -46,20 +46,23 @@ for native builds as well.
 
 Generally, xPack binaries are available for the following platforms:
 
-- Intel Windows 32-bit
-- Intel Windows 64-bit
-- Intel GNU/Linux 32-bit
-- Intel GNU/Linux 64-bit
-- Arm GNU/Linux 32-bit
-- Arm GNU/Linux 64-bit
-- Intel macOS 64-bit
+- Windows Intel 64-bit
+- GNU/Linux Intel 64-bit
+- GNU/Linux Arm 32-bit
+- GNU/Linux Arm 64-bit
+- macOS Intel 64-bit
+- macOS Apple Silicon 64-bit
+
+{% include note.html content="Starting with 2022, support for
+macOS Apple Silicon was added; 32-bit support for Windows and
+GNU/Linux Intel was discontinued." %}
 
 XBB supports creating binaries for all these platforms.
 
 For the detailed supported versions, please check the specific
 [release]({{ site.baseurl }}/xbb/releases/) page.
 
-### Arm binaries
+### GNU/Linux Arm binaries
 
 Support for Arm binaries was added in v3.1, in early 2020.
 
@@ -67,6 +70,10 @@ The supported architectures are:
 
 - `arm64v8` - the ARMv8 64-bit architecture Aarch64
 - `arm32v7` - the ARMv7 32-bit architecture with hardware float (armhf)
+
+### macOS Apple Silicon
+
+Support for Apple Silicon was added in v3.4, in late 2021.
 
 ## Docker specifics
 
@@ -77,7 +84,7 @@ To pass the folder with the build scripts in and the results out,
 it is usual to use a `Work` folder, for example:
 
 ```console
-$ docker run -it --volume "${HOME}/Work:/Host/Work" ilegeul/ubuntu:amd64-12.04-xbb-v3.3
+$ docker run -it --volume "${HOME}/Work:/Host/Work" ilegeul/ubuntu:amd64-18.04-xbb-v3.4
 root@831bc35faf9f:/# ls -l /Host/Work
 total 175320
 drwxr-xr-x  14 root root       448 Mar  7 19:47 arm-none-eabi-gcc-9.2.1-1.2
@@ -185,11 +192,10 @@ also support RedHat Enterprise systems.
 
 RedHat maintenance support 1 for RHEL 7 ended in Aug. 2020, with
 maintenance support 2 to last until June. 2024. However XBB support
-for RHEL 7 is a tough requirement, and will be dropped in the next major
-release, probably in 2022.
+for RHEL 7 is a tough requirement, and was discontinued starting with 2022.
 
-For the future release, the plan is to move up to
-Ubuntu 18 (GLIBC 2.27). This will also provide compatibility with
+Compatibility was moved up to
+Ubuntu 18 (GLIBC 2.27). This also provides compatibility with
 RedHat 8 / Debian 10, which both use GLIBC 2.28.
 
 ## Credits

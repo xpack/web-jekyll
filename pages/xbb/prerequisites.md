@@ -13,24 +13,14 @@ containers (separate 32/64-bit containers) based on older
 and more conservative distributions, to avoid problems when
 attempting to run the executables on older versions.
 
-The XBB v3.3 uses Ubuntu 12 for Intel GNU/Linux and Ubuntu 16 for
-Arm GNU/Linux.
+The XBB v3.4 uses Ubuntu 18 for bot hIntel and Arm GNU/Linux.
 
 {% include note.html content="Building Arm binaries requires
 an Arm machine. A Raspberry Pi 4 8GB equiped with a SanDisk Extreme
 USB 3 SSD are a good solution." %}
 
-XBB v2.x used CentOS 6 for Intel, and CentOS 7 was the favourite when
-considering the update, but Docker CentOS 7 armv7l container does not
-run on 64-bit Docker host, and requires a 32-bit host, which is impractical.
-The problem was reported as
-[#171](https://github.com/CentOS/sig-cloud-instance-images/issues/171)
-and posted on the CentOS
-[forum](https://forums.centos.org/viewtopic.php?f=48&t=75475), but so far
-there were no solution.
-
 The Windows binaries are generated on the same Docker Intel GNU/Linux
-containers, using [mingw-w64](http://mingw-w64.org).
+container, using [mingw-w64](http://mingw-w64.org).
 
 ### GNU/Linux
 
@@ -40,11 +30,8 @@ perfectly fine. For better results, dedicate 3-4 cores and 8-12 GB of RAM.
 
 The procedure was tested on:
 
-- Ubuntu 16.04 LTS, running as a virtual machine in Parallels Desktop on macOS 10.12.
-- Ubuntu 17.10, running as a virtual machine in VirtualBox on macOS 10.13
-- Ubuntu 18.04 Server, running on an Intel NUC NUC8i7BEH with 32 GB of RAM
+- Ubuntu 18.04 LTS, running on an Intel NUC NUC8i7BEH with 32 GB of RAM
 - Debian 10 (buster), running on an Intel NUC NUC8i7BEH with 32 GB of RAM
-- Debian 9 (stretch), running on a ROCK Pi with 4 GB of RAM
 - Raspberry Pi OS 64-bit, running on a Raspberry Pi 4 with 4 or 8 GB of RAM
 
 The build scripts do most of the actual work in the Docker container, and,
@@ -79,9 +66,6 @@ yet be made available by the Docker team. In this case set the
 `version_name` manually to the previous version.
 You can also do this by
 manually editting the `/etc/apt/sources.list` file.
-At the time
-of writing this, the version for Ubuntu 19.10 **eoan** is not available
-and you must use **disco**." %}
 
 To check if the install is functional, run the _Hello World_ image,
 for the moment as `sudo`:
@@ -130,19 +114,16 @@ Hello from Docker!
 
 ### macOS
 
-For development build, the procedure is executed on the latest macOS
-version (currently 10.13).
-
-{% include note.html content="The procedure failed on macOS 10.15 and
-was moved to macOS 11.0, which will be used for Apple Silicon platforms
-anyway." %}
+For development build, the procedure is executed on a recent macOS
+version (currently 11.6).
 
 For production builds it is recommended to use a slightly older version.
 macOS 10.13 is a good compromise.
 
 It is not mandatory to have a physical macOS 10.13 machine, a virtual
 machine is also perfectly fine. Both Parallels and VirtualBox were
-checked and work without problems.
+checked and were functional (although VirtualBox was not as stable
+as Parallels).
 
 #### Install the Command Line Tools
 
@@ -160,15 +141,17 @@ $ xcode-select --install
 $ xcode-select -p
 /Library/Developer/CommandLineTools
 $ gcc --version
-Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
-Apple LLVM version 8.1.0 (clang-802.0.42)
-Target: x86_64-apple-darwin16.7.0
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/4.2.1
+Apple clang version 13.0.0 (clang-1300.0.29.3)
+Target: x86_64-apple-darwin20.6.0
 Thread model: posix
 InstalledDir: /Library/Developer/CommandLineTools/usr/bin
 ```
 
-{% include note.html content="In recent macOS versions it is
-recommended to install only the CommandLineTools package." %}
+{% include note.html content="Xcode alone includes the compiler
+in the Xcode.app folder, which may very in different versions;
+for a stable configuration it is
+required to install the CommandLineTools package." %}
 
 #### macOS Docker
 
@@ -189,7 +172,7 @@ the Dockerfiles available from
 [XBB (xPack Build Box)](https://github.com/xpack/xpack-build-box/tree/master/).
 
 If not already loaded, Docker will load the images at first usage.
-The images are relatively large, around 3-5 GB.
+The images are relatively large, around 5 GB.
 
 It is possible to separately load the Docker images, using the
 script `preload-images` command of each script.
