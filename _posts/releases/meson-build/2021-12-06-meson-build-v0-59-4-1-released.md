@@ -1,5 +1,5 @@
 ---
-title:  xPack Meson Build 0.59.4-1 released
+title:  xPack Meson Build v0.59.4-1 released
 
 summary: "Version **0.59.4-1** is a new release; it follows the upstream release. It also **adds support for Apple Silicon** and uses the latest build scripts."
 

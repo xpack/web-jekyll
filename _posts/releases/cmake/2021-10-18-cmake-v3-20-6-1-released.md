@@ -1,5 +1,5 @@
 ---
-title:  xPack CMake 3.20.6-1 released
+title:  xPack CMake v3.20.6-1 released
 
 summary: "Version **3.20.6-1** is a new release; it follows the upstream release."
 

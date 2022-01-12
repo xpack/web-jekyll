@@ -1,5 +1,5 @@
 ---
-title:  xPack LLVM clang 12.0.1-1 released
+title:  xPack LLVM clang v12.0.1-1 released
 
 summary: "Version **12.0.1-1** is the first release of the **xPack LLVM clang** package."
 

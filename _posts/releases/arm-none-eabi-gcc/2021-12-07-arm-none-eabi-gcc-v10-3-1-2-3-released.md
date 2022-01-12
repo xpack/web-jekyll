@@ -1,5 +1,5 @@
 ---
-title:  xPack Arm Embedded GCC 10.3.1-2.3 released
+title:  xPack Arm Embedded GCC v10.3.1-2.3 released
 
 summary: "Version **10.3.1-2.3** is a maintenance release;  it **adds support for Apple Silicon** and uses the latest build scripts."
 

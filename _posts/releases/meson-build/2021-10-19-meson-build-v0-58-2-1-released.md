@@ -1,5 +1,5 @@
 ---
-title:  xPack Meson Build 0.58.2-1 released
+title:  xPack Meson Build v0.58.2-1 released
 
 summary: "Version **0.58.2-1** is a new release; it follows the upstream release; it also updates to the latest build environment."
 

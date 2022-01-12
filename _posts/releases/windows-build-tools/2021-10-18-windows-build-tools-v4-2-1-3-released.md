@@ -1,5 +1,5 @@
 ---
-title:  xPack Windows Build Tools 4.2.1-3 released
+title:  xPack Windows Build Tools v4.2.1-3 released
 
 TODO: select one summary
 
