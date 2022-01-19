@@ -6,6 +6,8 @@ date: 2019-07-09 17:48:00 +0300
 
 ---
 
+## Overview
+
 The technical definition of an xPack is _a folder which includes a
 package.json file with some minimal content_
 ([full definition]({{ site.baseurl }}/intro/));
@@ -13,7 +15,7 @@ it does not require
 any special structure for the folders or for the version-control system,
 if any.
 
-## Projects with 3rd party content
+### Projects with 3rd party content
 
 The first thought is that xPacks, as a new technology,
 will be used for new projects,
@@ -25,24 +27,7 @@ software projects, each using its specific structure, and migrating them to
 xPacks may add some maintenance burden to keep them in sync with the
 originals.
 
-If the 3rd party projects use a public Git, fork them, with its original
-`master` branch, and continue to track them in the future.
-
-## The `originals` branch
-
-If the 3rd party projects do not use a
-public Git project, but are distributed only as release archives, to
-keep track of the changes it is recommended to
-recreate the Git with the original
-code on a separate branch, like `originals`.
-
-With each upstream release, while on the `originals` branch,
-fuly remove the content and extract the newly released archive.
-
-In case the archive contains binary files, or other large files considered
-not essential for the xPack distribution, add them to `.gitignore`.
-
-## The `xpack` branch and three-way merging
+### The `xpack` branch and three-way merging
 
 One way to reduce the maintenance burden of source xPacks is to use the
 [three-way merge](https://en.wikipedia.org/wiki/Merge_(version_control)#Three-way_merge)
@@ -58,23 +43,43 @@ easily track the upstream repository, while the xPack specific changes
 continue to be developed using the `xpack` branch; from time to time the
 main branch can be merged into the `xpack` branch and things kept in sync.
 
-## Creating xPacks
-
-For consistency reasons, it is recommended for the new xPacks, even if
-they do not include 3rd party content, to use the `xpack` branch instead
-of the `master` branch.
-
 {% include note.html content="The xPack tools do not require and
 do not enforce the use of a branch named `xpack`, this is only
 a recommendation." %}
 
-### Do not use a GitHub Template project
+## Create xPacks with 3rd party content
 
+### Existing Git
+
+If the 3rd party project uses a public Git, fork it, with its original
+`master` branch, and continue from the **Common steps** section.
+
+### Non-public repository
+
+If the 3rd party project does not use a public repository,
+it is necessary to create one.
+
+For projects distributed as archives, to simplify maintenance,
+it is recommended to reconstruct the history in a separate branch
+(like `originals`).
+
+## Create xPacks repositories
+
+If the project does not already have a forked repository, create a new
+Git project.
+
+!!!!
+For consistency reasons, it is recommended for the new xPacks, even if
+they do not include 3rd party content, to use the `xpack` branch instead
+of the `master` branch.
+
+{% include warning.html content="Do not use a GitHub Template project!
 The easiest way to create new projects would be to use an existing
-GitHub Template project.
-
-Unfortunately this path leads to repositories with weirds histories,
-like disconnected commits, and is not practical.
+GitHub Template project. Unfortunately, at the time of testing,
+the repositories resulted
+by using this method had weirds histories,
+like disconnected commits; until this will be fixed,
+this method is not recommended." %}
 
 ### Create the GitHub project manually
 
@@ -151,7 +156,6 @@ Thumbs.db
 .settings/
 Debug/
 Release/
-test-*/
 build/
 ```
 
@@ -160,29 +164,6 @@ With VS Code, Sourcetree or Git:
 - stage the `.gitignore` file
 - commit with the following message: **.gitignore: add xPack specifics**
 
-### Check/edit the `LICENSE` file
-
-The automatically generated `LICENSE` file already includes the
-user name as the copyright owner. When the project is owned by
-an organisation, the name refers to the organisation. Probably
-this is not exactly what you need, and you might prefer to have
-your name in the copyright notice.
-
-Check and possibly adjust to match your `LICENSE` requirements.
-
-```text
-MIT License
-
-Copyright (c) 2021 Liviu Ionescu
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-...
-```
-
-With VS Code, Sourcetree or Git:
-
-- stage the `LICENSE` file
-- commit with the following message: **LICENSE: update copyright owner**
 
 ### Edit the master `README.md` file
 
@@ -205,34 +186,39 @@ With VS Code, Sourcetree or Git:
 - stage the `README.md` file
 - commit with the following message: **README: 'no master' notice**
 
-### Create the `originals` branch
+## Create the `originals` branch
 
-If the xPack will be used for 3rd party content, create an `originals`
-branch:
+For a 3rd party project that does not use a
+public Git project, but is distributed only as release archives, to
+keep track of the changes it is recommended to
+recreate the Git with the original
+code on a separate branch, like `originals`, and later treat it
+as the `master` branch.
 
-Sourcetree:
+With each upstream release, while on the `originals` branch,
+fuly remove the content and extract the newly released archive.
 
-- select the `master` branch
-- click the **Branch** button
-- in the **Name Branch** field, enter `originals`
-- click the **Create Branch** button
+Then merge the update `originals` branch into the `xpacks` branch.
 
-Edit the README file to read:
+In case the archive contains binary files, or other large files considered
+not essential for the xPack distribution, add them to `.gitignore`.
+
+Add/Edit the README file to read:
 
 ```text
 This branch is used to recreate the 3rd party project history
 from release archives.
 ```
 
-With VS Code, Sourcetree or Git:
+Commit with the following message: **README: notice for 3rd party content**
 
-- stage the `README.md` file
-- commit with the following message: **README: notice for 3rd party content**
+## Common steps
 
 ### Create the `xpack` branch
 
 With VS Code, Sourcetree or Git.
 
+- select the `master` branch
 - VS Code menu **View** → **Command Palette...**
   - **Git: Create branch**
 
@@ -311,7 +297,8 @@ Open `package.json` with Visual Studio Code:
 
 - as **name** enter the scope (your npm account name or one of
   your npm organisations) and the project name, without `-xpack.git`
-  (like `@micro-os-plus/diag-trace`, `@xpack-dev-tools/ninja-build`)
+  (like `@micro-os-plus/diag-trace`, `@xpack-dev-tools/ninja-build`,
+  `@xpack-3rd-party/arm-cmsis-core`)
 - as **version**, enter `0.1.0` if the project is in early development,
   or accept 1.0.0 for the first stable release; generally use the
   [semver](http://semver.org) conventions
@@ -347,9 +334,27 @@ Open `package.json` with Visual Studio Code:
     {
       "name": "SEGGER Microcontroller GmbH & Co. KG",
       "email": "support@segger.com",
-      "url": "https://www.segger.com/"
+      "url": "https://www.segger.com/",
+      "license": "..."
     }
-  ]
+  ],
+  "...": "..."
+}
+```
+
+Update the list of npm scripts:
+
+```json
+{
+  "scripts": {
+    "npm-install": "npm install",
+    "pack": "npm pack",
+    "version-patch": "npm version patch",
+    "version-minor": "npm version minor",
+    "postversion": "git push origin --all && git push origin --tags",
+    "git-log": "git log --pretty='%cd * %h %s' --date=short"
+  },
+  "...": "..."
 }
 ```
 
@@ -359,6 +364,30 @@ With VS Code, Sourcetree or Git:
 
 - stage the `package.json`
 - commit with the following message: **package.json: v0.1.0**
+
+### Check/edit the `LICENSE` file
+
+The automatically generated `LICENSE` file already includes the
+user name as the copyright owner. When the project is owned by
+an organisation, the name refers to the organisation. Probably
+this is not exactly what you need, and you might prefer to have
+your name in the copyright notice.
+
+Check and possibly adjust to match your `LICENSE` requirements.
+
+```text
+MIT License
+
+Copyright (c) 2022 Liviu Ionescu
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+...
+```
+
+With VS Code, Sourcetree or Git:
+
+- stage the `LICENSE` file
+- commit with the following message: **LICENSE: update copyright owner**
 
 ### Edit the `README.md` file with actual content
 
@@ -383,6 +412,44 @@ With Sourcetree or Git:
 
 - stage the `README*.md` files
 - commit with the following message: **README: preliminary content**
+
+### Add a CHANGELOG.md file
+
+A possible content:
+
+```md
+# Change & release log
+
+Releases in reverse chronological order.
+
+Please check
+[GitHub](https://github.com/micro-os-plus/micro-test-plus-xpack/issues/)
+and close existing issues and pull requests.
+
+## 2022-01-03
+
+- v2.0.5
+```
+
+With Sourcetree or Git:
+
+- stage the `CHANGELOG.md` files
+- commit with the following message: **CHANGELOG: preliminary content**
+
+### Add .npmignore
+
+If the package uses 3rd party content, add a `.npmignore` file.
+
+Update the content until `npm pack` shows only the desired content.
+
+### Add README-MAINTAINER.md
+
+Create or copy/paste from a similar project.
+
+With Sourcetree or Git:
+
+- stage the `README-MAINTAINER.md` files
+- commit with the following message: **README-MAINTAINER: preliminary content**
 
 ### Publish the initial version to GitHub
 
@@ -424,7 +491,8 @@ to `master`.
 - `npm version v1.10.0-1.1`; the first 4 numbers are the same as the
   GitHub release; the fifth number is the npm specific version
 - `npm pack` and check the content of the archive, which should list
-only the `package.json`, the `README.md`, `LICENSE` and `CHANGELOG.md`
+only the desired content and
+the `package.json`, the `README.md`, `LICENSE` and `CHANGELOG.md` files
 - push all changes to GitHub
 - `npm publish --access public --tag next`
 
