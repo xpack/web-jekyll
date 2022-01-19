@@ -32,7 +32,7 @@ is a standalone cross-platform binary distribution of the
 There are separate binaries for **Windows** (Intel 32/64-bit),
 **macOS** (Intel 64-bit) and **GNU/Linux** (Intel 32/64-bit, Arm 64-bit).
 
-{% include note.html content="The main targets for the Arm binaries
+{% include note.html content="The main targets for the GNU/Linux Arm binaries
 are the **Raspberry Pi** class devices." %}
 
 {% include note.html content="Due to memory limitations during the build, there is no Arm 32-bit image." %}
