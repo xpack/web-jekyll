@@ -138,6 +138,7 @@ With Visual Studio Code:
 ```text
 # xpm
 xpacks/
+build/
 
 # Windows
 Thumbs.db
@@ -156,7 +157,7 @@ Thumbs.db
 .settings/
 Debug/
 Release/
-build/
+
 ```
 
 With VS Code, Sourcetree or Git:
