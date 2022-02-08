@@ -129,7 +129,11 @@ Compared to the upstream, there are no functional changes.
 
 ## Known problems
 
-- none
+- on GNU/Linux, support for the clang run-time and C++ libraries is basic,
+  the libraries are available, but using them is tricky, since it requires
+  the compiled binaries to take care of the path to them, otherwise it is
+  very likely that the system libraries will be used; thus it is
+  recommended to avoid such use cases.
 
 ## Shared libraries
 
