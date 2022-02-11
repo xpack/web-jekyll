@@ -64,35 +64,13 @@ platforms are presented in the separate
 
 ## Documentation
 
-The **xPack GNU Compiler Collection** distribution includes the
-standard GCC documentation, in info, man and pdf format;
-it is located in the `share/doc` folder, for example the pdf files are:
+To save space and bandwidth, the original documentation is available
+[online](https://gcc.gnu.org/onlinedocs/).
 
-```console
-$ tree share/doc/pdf
-share/doc/pdf
-├── annotate.pdf
-├── as.pdf
-├── bfd.pdf
-├── binutils.pdf
-├── gcc
-│   ├── cpp.pdf
-│   ├── cppinternals.pdf
-│   ├── gcc.pdf
-│   ├── gccinstall.pdf
-│   └── gccint.pdf
-├── gdb.pdf
-├── gprof.pdf
-├── ld.pdf
-├── libc.pdf
-├── libiberty.pdf
-├── libm.pdf
-├── porting.pdf
-├── refcard.pdf
-└── stabs.pdf
+## Predefined macros
 
-1 directory, 18 files
-```
+The list of build-in macros is available in a
+[separate page]({{ site.baseurl }}/gcc/predefined-macros/).
 
 ## Support
 
