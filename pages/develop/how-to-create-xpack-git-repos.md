@@ -61,17 +61,18 @@ it is necessary to create one.
 
 For projects distributed as archives, to simplify maintenance,
 it is recommended to reconstruct the history in a separate branch
-(like `originals`).
+(like `originals`) by adding commits with the content of each released
+archive.
 
 ## Create xPacks repositories
 
 If the project does not already have a forked repository, create a new
 Git project.
 
-!!!!
-For consistency reasons, it is recommended for the new xPacks, even if
+{% include note.html content="For consistency reasons, it is
+recommended for the new xPacks, even if
 they do not include 3rd party content, to use the `xpack` branch instead
-of the `master` branch.
+of the `master` branch." %}
 
 {% include warning.html content="Do not use a GitHub Template project!
 The easiest way to create new projects would be to use an existing
@@ -110,8 +111,11 @@ With a browser, at GitHub, select your account or organisation.
   - click the **Create Repository** button
 - select the **Settings** tab
   - in the **Features** section
-    - disable the **Wikis** and **Projects** options
+    - disable **Wikis**
+    - enable **Sponsorship** (if needed)
+    - disable **Projects**
     - enable **Discussions**
+  - quit the **Settings** tab (there is no Save)
 
 ### Clone the repository to a local folder
 
@@ -164,7 +168,6 @@ With VS Code, Sourcetree or Git:
 
 - stage the `.gitignore` file
 - commit with the following message: **.gitignore: add xPack specifics**
-
 
 ### Edit the master `README.md` file
 
