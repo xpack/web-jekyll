@@ -178,7 +178,7 @@ switch to the `xpack` branch to get the project files.
 
 ```
 
-With VS Code, Sourcetree or Git:
+With VS Code, Fork or Git:
 
 - stage the `README.md` file
 - commit with the following message: **README: 'no master' notice**
@@ -195,12 +195,12 @@ as the `master` branch.
 With each upstream release, while on the `originals` branch,
 fuly remove the content and extract the newly released archive.
 
-Then merge the update `originals` branch into the `xpacks` branch.
+Then merge the update `originals` branch into the `xpack` branch.
 
 In case the archive contains binary files, or other large files considered
 not essential for the xPack distribution, add them to `.gitignore`.
 
-Add/Edit the README file to read:
+Add/Edit the README file to add:
 
 ```text
 This branch is used to recreate the 3rd party project history
@@ -244,40 +244,27 @@ Release/
 
 ```
 
-With VS Code, Sourcetree or Git:
+With VS Code, Fork or Git:
 
 - stage the `.gitignore` file
 - commit with the following message: **.gitignore: add xPack specifics**
 
 ### Create the `xpack` branch
 
-With VS Code, Sourcetree or Git.
+With VS Code, Fork or Git:
 
 - select the `master` branch
-- VS Code menu **View** → **Command Palette...**
-  - **Git: Create branch**
-
-(or with Git view, **...** → **Branch** → **Create Branch...**)
-
-Sourcetree:
-
-- select the `master` branch
-- click the **Branch** button
-- in the **Name Branch** field, enter `xpack`
-- click the **Create Branch** button
+- create new branch `xpack`
 
 ### Publish all branches
 
-With VS Code, Sourcetree or Git.
+With VS Code, Fork or Git:
 
-With Sourcetree:
+- push all local branches (`master`, `xpack` and maybe the `originals`)
 
-- click the **Push** button
-- select all local branches (`master`, `xpack` and maybe the `originals`)
-- click the **OK** button
+### Change default branch to `xpack`
 
-With the GitHub web interface (as shortcut, in Sourcetree, click
-the **View Remote** button):
+With the GitHub web interface:
 
 - select the **Settings** tab
 - select the **Branches** grouping
@@ -328,7 +315,7 @@ $ cat package.json
 $
 ```
 
-Open `package.json` with Visual Studio Code:
+Open `package.json` with VS Code:
 
 - as **name** enter the scope (your npm account name or one of
   your npm organisations) and the project name, without `-xpack.git`
@@ -395,7 +382,7 @@ Update the list of npm scripts:
 
 ### Commit the initial package file
 
-With VS Code, Sourcetree or Git:
+With VS Code, Fork or Git:
 
 - stage the `package.json`
 - commit with the following message: **package.json: v0.1.0**
@@ -419,7 +406,7 @@ Permission is hereby granted, free of charge, to any person obtaining a copy
 ...
 ```
 
-With VS Code, Sourcetree or Git:
+With VS Code, Fork or Git:
 
 - stage the `LICENSE` file
 - commit with the following message: **LICENSE: update copyright owner**
@@ -443,7 +430,7 @@ The original content is released under the
 [Liviu Ionescu](https://github.com/ilg-ul/).
 ```
 
-With Sourcetree or Git:
+With VS Code, Fork or Git:
 
 - stage the `README*.md` files
 - commit with the following message: **README: preliminary content**
@@ -466,7 +453,7 @@ and close existing issues and pull requests.
 - v2.0.5
 ```
 
-With Sourcetree or Git:
+With VS Code, Fork or Git:
 
 - stage the `CHANGELOG.md` files
 - commit with the following message: **CHANGELOG: preliminary content**
@@ -481,14 +468,14 @@ Update the content until `npm pack` shows only the desired content.
 
 Create or copy/paste from a similar project.
 
-With Sourcetree or Git:
+With VS Code, Fork or Git:
 
 - stage the `README-MAINTAINER.md` files
 - commit with the following message: **README-MAINTAINER: preliminary content**
 
 ### Publish the initial version to GitHub
 
-With Sourcetree or Git:
+With VS Code, Fork or Git:
 
 - click the **Push** button (to push the `xpack` branch to the server)
 
@@ -498,14 +485,14 @@ With Sourcetree or Git:
 
 ### Commit the initial content
 
-With Sourcetree or Git:
+With VS Code, Fork or Git:
 
 - stage the new files
 - commit with the following message: **add initial content**
 
 ### Create the `xpack-develop` branch
 
-With Sourcetree or Git:
+With VS Code, Fork or Git:
 
 - select the `xpack` branch
 - create the `xpack-develop` branch
@@ -515,8 +502,9 @@ to `master`.
 
 ### Publish the branches to GitHub
 
-- with Sourcetree or Git, click **Push** and select all
-  (or at least `xpack` and `xpack-develop`)
+With VS Code, Fork or Git:
+
+- **Push** all branches (or at least `xpack` and `xpack-develop`)
 
 ### Publish the initial version to the npmjs public registry
 
@@ -548,6 +536,6 @@ npm version minor
 npm version major
 ```
 
-With Sourcetree or Git:
+With VS Code, Fork or Git:
 
-- click **Push**, to push the commits
+- **Push** the commits
