@@ -162,42 +162,6 @@ cd xPacks
 git clone https://github.com/<user>/<project>.git <project>.git
 ```
 
-### Edit the `.gitignore` file
-
-With Visual Studio Code:
-
-- add the following to `.gitignore`:
-
-```text
-# xpm
-xpacks/
-build/
-
-# Windows
-Thumbs.db
-
-# macOS
-.DS_Store
-
-# end
-
-```
-
-- for Eclipse C/C++ projects you can include:
-
-```text
-# Eclipse
-.settings/
-Debug/
-Release/
-
-```
-
-With VS Code, Sourcetree or Git:
-
-- stage the `.gitignore` file
-- commit with the following message: **.gitignore: add xPack specifics**
-
 ### Edit the master `README.md` file
 
 As mentioned in the introduction,
@@ -246,6 +210,44 @@ from release archives.
 Commit with the following message: **README: notice for 3rd party content**
 
 ## Common steps
+
+### Edit the `.gitignore` file
+
+With VS Code:
+
+- add the following to `.gitignore`:
+
+```text
+# xpm
+xpacks/
+build/
+
+*.tgz
+
+# Windows
+Thumbs.db
+
+# macOS
+.DS_Store
+
+# end
+
+```
+
+- for Eclipse C/C++ projects you can include:
+
+```text
+# Eclipse
+.settings/
+Debug/
+Release/
+
+```
+
+With VS Code, Sourcetree or Git:
+
+- stage the `.gitignore` file
+- commit with the following message: **.gitignore: add xPack specifics**
 
 ### Create the `xpack` branch
 
