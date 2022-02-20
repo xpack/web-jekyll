@@ -51,8 +51,37 @@ a recommendation." %}
 
 ### Existing Git
 
-If the 3rd party project uses a public Git, fork it, with its original
-`master` branch, and continue from the **Common steps** section.
+If the 3rd party project uses a public Git:
+
+- fork it, with its original `master` or `main` branch (for example in the
+  [3rd party xPacks](https://github.com/xpack-3rd-party) organization)
+- preferably rename it, to add a `-xpack` suffix
+- select the **Settings** tab
+  - in the **Features** section
+    - disable **Wikis**
+    - enable **Issues**
+    - enable **Sponsorship** (if needed); Set up sponsor
+    - disable **Projects**
+    - enable **Discussions**, Set up discussions
+  - quit the **Settings** tab (there is no Save)
+
+Clone the project locally on the development machine:
+
+- select the GitHub project
+- select the **Code** tab
+- click the **Clone or download** button; this will open a
+  small **Clone to HTTPS** window
+- click the **Copy** icon, or explicitly copy the URL
+- in a terminal window, in a place of our choice, create a folder
+  to store all xPacks (for example it can be named `xpack-3rd-party`)
+
+```sh
+mkdir -p xpack-3rd-party
+cd xpack-3rd-party
+git clone https://github.com/xpack-3rd-party/<project>.git <project>.git
+```
+
+Continue from the **Common steps** section below.
 
 ### Non-public repository
 
