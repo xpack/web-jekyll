@@ -218,7 +218,11 @@ With VS Code:
 - add the following to `.gitignore`:
 
 ```text
+
+.vscode/c_cpp_properties.json
+
 # xpm
+node_modules/
 xpacks/
 build/
 
