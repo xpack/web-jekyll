@@ -22,7 +22,7 @@ will be used for new projects,
 with original content, so, in principle, these projects can be created
 to have any structure.
 
-In reality there are a lot of existing 3rd party
+In reality there are lots of existing 3rd party
 software projects, each using its specific structure, and migrating them to
 xPacks may add some maintenance burden to keep them in sync with the
 originals.
@@ -47,7 +47,7 @@ main branch can be merged into the `xpack` branch and things kept in sync.
 do not enforce the use of a branch named `xpack`, this is only
 a recommendation." %}
 
-## Create xPacks with 3rd party content
+## Create source library xPacks with 3rd party content
 
 ### Existing Git
 
@@ -55,7 +55,10 @@ If the 3rd party project uses a public Git:
 
 - fork it, with its original `master` or `main` branch (for example in the
   [3rd party xPacks](https://github.com/xpack-3rd-party) organization)
-- preferably rename it, to add a `-xpack` suffix
+- preferably rename it:
+  - add a prefix with the name of the original organization
+  - add the `-xpack` suffix
+  - click the **Rename** button
 - select the **Settings** tab
   - in the **Features** section
     - disable **Wikis**
@@ -69,17 +72,9 @@ Clone the project locally on the development machine:
 
 - select the GitHub project
 - select the **Code** tab
-- click the **Clone or download** button; this will open a
-  small **Clone to HTTPS** window
-- click the **Copy** icon, or explicitly copy the URL
-- in a terminal window, in a place of our choice, create a folder
-  to store all xPacks (for example it can be named `xpack-3rd-party`)
-
-```sh
-mkdir -p xpack-3rd-party
-cd xpack-3rd-party
-git clone https://github.com/xpack-3rd-party/<project>.git <project>.git
-```
+- click the **Clone or download** button
+- click Open with GitHub Desktop; save to a folder like
+  `xpack-3rd-party/<project>.git`
 
 Continue from the **Common steps** section below.
 
@@ -211,6 +206,14 @@ Commit with the following message: **README: notice for 3rd party content**
 
 ## Common steps
 
+### Create the `xpack` branch
+
+With VS Code, Fork or Git:
+
+- select the `master` branch
+- create new branch `xpack`
+- switch to it
+
 ### Edit the `.gitignore` file
 
 With VS Code:
@@ -218,6 +221,8 @@ With VS Code:
 - add the following to `.gitignore`:
 
 ```text
+
+# added for xPack
 
 .vscode/c_cpp_properties.json
 
@@ -252,13 +257,6 @@ With VS Code, Fork or Git:
 
 - stage the `.gitignore` file
 - commit with the following message: **.gitignore: add xPack specifics**
-
-### Create the `xpack` branch
-
-With VS Code, Fork or Git:
-
-- select the `master` branch
-- create new branch `xpack`
 
 ### Publish all branches
 
@@ -360,8 +358,9 @@ Open `package.json` with VS Code:
     {
       "name": "SEGGER Microcontroller GmbH & Co. KG",
       "email": "support@segger.com",
-      "url": "https://www.segger.com/",
-      "license": "..."
+      "url": "https://www.segger.com/""...",
+      "git": "https://github.com/boost-ext/ut.git",
+      "license":
     }
   ],
   "...": "..."
@@ -413,6 +412,7 @@ Permission is hereby granted, free of charge, to any person obtaining a copy
 With VS Code, Fork or Git:
 
 - stage the `LICENSE` file
+- for 3rd party content, rename it to LICENSE-XPACK
 - commit with the following message: **LICENSE: update copyright owner**
 
 ### Edit the `README.md` file with actual content
@@ -439,7 +439,7 @@ With VS Code, Fork or Git:
 - stage the `README*.md` files
 - commit with the following message: **README: preliminary content**
 
-### Add a CHANGELOG.md file
+### Add a CHANGELOG[-XPACK].md file
 
 A possible content:
 
@@ -466,11 +466,35 @@ With VS Code, Fork or Git:
 
 If the package uses 3rd party content, add a `.npmignore` file.
 
-Update the content until `npm pack` shows only the desired content.
+Start with something like:
 
-### Add README-MAINTAINER.md
+```console
+.github/
+.vscode/
+build/
+ci/
+docs/
+tests*/
+example/
 
-Create or copy/paste from a similar project.
+.clang-*
+.cmake-format
+CONTRIBUTING**
+README-MAINTAINER*.md
+
+*.tgz
+
+```
+
+- update the content until `npm pack` shows only the desired content
+- commit with the following message: **.npmignore preliminary content**
+
+### Add README-MAINTAINER[-XPACK].md
+
+Create or copy/paste from a similar project, or from the template available
+in the `build-helper-xpack` project.
+
+For 3rd party projects, suffix the name with `-XPACK`.
 
 With VS Code, Fork or Git:
 
