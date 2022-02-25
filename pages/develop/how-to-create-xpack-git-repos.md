@@ -49,36 +49,7 @@ a recommendation." %}
 
 ## Create source library xPacks with 3rd party content
 
-### Existing Git
-
-If the 3rd party project uses a public Git:
-
-- fork it, with its original `master` or `main` branch (for example in the
-  [3rd party xPacks](https://github.com/xpack-3rd-party) organization)
-- preferably rename it:
-  - add a prefix with the name of the original organization
-  - add the `-xpack` suffix
-  - click the **Rename** button
-- select the **Settings** tab
-  - in the **Features** section
-    - disable **Wikis**
-    - enable **Issues**
-    - enable **Sponsorship** (if needed); Set up sponsor
-    - disable **Projects**
-    - enable **Discussions**, Set up discussions
-  - quit the **Settings** tab (there is no Save)
-
-Clone the project locally on the development machine:
-
-- select the GitHub project
-- select the **Code** tab
-- click the **Clone or download** button
-- click Open with GitHub Desktop; save to a folder like
-  `xpack-3rd-party/<project>.git`
-
-Continue from the **Common steps** section below.
-
-### Non-public repository
+### Projects without a public repository
 
 If the 3rd party project does not use a public repository,
 it is necessary to create one.
@@ -88,7 +59,60 @@ it is recommended to reconstruct the history in a separate branch
 (like `originals`) by adding commits with the content of each released
 archive.
 
-## Create xPacks repositories
+Follow the steps to create a new repository, and watch for the extra steps to
+create the `originals` branch.
+
+### Projects with existing Git
+
+If the 3rd party project uses a public Git:
+
+#### Fork
+
+- select the GitHub project
+- fork it, for example in the
+  [3rd party xPacks](https://github.com/xpack-3rd-party) organization)
+- preferably rename it:
+  - add a prefix with the name of the original organization
+  - add the `-xpack` suffix
+  - click the **Rename** button
+- select the **Settings** tab
+  - in the **Features** section
+    - disable **Wikis**
+    - enable **Issues**
+    - enable **Sponsorship** (if needed)
+    - disable **Projects**
+    - enable **Discussions**, Set up discussions
+  - quit the **Settings** tab (there is no Save)
+
+#### Clone locally
+
+Clone the project locally on the development machine:
+
+- select the GitHub project
+- select the **Code** tab
+- click the **Clone or download** button
+- click Open with GitHub Desktop; save to a folder like
+  `xpack-3rd-party/<project>-xpack.git`
+
+#### Identify the latest release
+
+With VS Code, Fork or Git:
+
+- identify the stable branch
+- identify the latest release tag
+- reset the current branch to the tagged commit
+
+#### Create the `xpack` branch
+
+With VS Code, Fork or Git:
+
+- select the tagged commit
+- create new branch `xpack`
+- switch to it
+
+Continue from the **Common steps** section below.
+
+## Create new xPack repository
 
 If the project does not already have a forked repository, create a new
 Git project.
@@ -106,7 +130,7 @@ by using this method had weirds histories,
 like disconnected commits; until this will be fixed,
 this method is not recommended." %}
 
-### Create the GitHub project manually
+### Create the Git project
 
 The following steps apply to GitHub. Adjust them for other Git hosting sites.
 
@@ -178,7 +202,7 @@ With VS Code, Fork or Git:
 - stage the `README.md` file
 - commit with the following message: **README: 'no master' notice**
 
-## Create the `originals` branch
+### Create the `originals` branch
 
 For a 3rd party project that does not use a
 public Git project, but is distributed only as release archives, to
@@ -204,8 +228,6 @@ from release archives.
 
 Commit with the following message: **README: notice for 3rd party content**
 
-## Common steps
-
 ### Create the `xpack` branch
 
 With VS Code, Fork or Git:
@@ -213,6 +235,8 @@ With VS Code, Fork or Git:
 - select the `master` branch
 - create new branch `xpack`
 - switch to it
+
+## Common steps
 
 ### Edit the `.gitignore` file
 
