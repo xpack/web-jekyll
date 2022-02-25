@@ -68,7 +68,9 @@ If the 3rd party project uses a public Git:
 
 #### Fork
 
-- select the upstream GitHub project
+With the GitHub web interface:
+
+- select the upstream project
 - fork it, for example in the
   [3rd party xPacks](https://github.com/xpack-3rd-party) organization)
 - preferably rename it:
@@ -88,7 +90,9 @@ If the 3rd party project uses a public Git:
 
 Clone the project locally on the development machine:
 
-- select the GitHub project
+With the GitHub web interface:
+
+- open the forked project
 - select the **Code** tab
 - click the **Clone or download** button
 - click Open with GitHub Desktop; save to a folder like
@@ -167,7 +171,9 @@ With a browser, at GitHub, select your account or organisation.
 
 ### Clone the repository to a local folder
 
-- select the GitHub project
+With the GitHub web interface:
+
+- open the project
 - select the **Code** tab
 - click the **Clone or download** button; this will open a
   small **Clone to HTTPS** window
@@ -292,6 +298,7 @@ With VS Code, Fork or Git:
 
 With the GitHub web interface:
 
+- open the project
 - select the **Settings** tab
 - select the **Branches** grouping
 - change the **Default branch** to `xpack`
@@ -382,9 +389,9 @@ Open `package.json` with VS Code:
     {
       "name": "SEGGER Microcontroller GmbH & Co. KG",
       "email": "support@segger.com",
-      "url": "https://www.segger.com/""...",
+      "url": "https://www.segger.com/",
       "git": "https://github.com/boost-ext/ut.git",
-      "license":
+      "license": "..."
     }
   ],
   "...": "..."
@@ -414,7 +421,7 @@ With VS Code, Fork or Git:
 - stage the `package.json`
 - commit with the following message: **package.json: v0.1.0**
 
-### Check/edit the `LICENSE` file
+### Check/edit the `LICENSE[-XPACK]` file
 
 The automatically generated `LICENSE` file already includes the
 user name as the copyright owner. When the project is owned by
@@ -435,8 +442,8 @@ Permission is hereby granted, free of charge, to any person obtaining a copy
 
 With VS Code, Fork or Git:
 
-- stage the `LICENSE` file
-- for 3rd party content, rename it to LICENSE-XPACK
+- for 3rd party content, rename it to `LICENSE-XPACK`
+- stage the file
 - commit with the following message: **LICENSE: update copyright owner**
 
 ### Edit the `README.md` file with actual content
@@ -462,6 +469,18 @@ With VS Code, Fork or Git:
 
 - stage the `README*.md` files
 - commit with the following message: **README: preliminary content**
+
+### Add README-MAINTAINER[-XPACK].md
+
+Create or copy/paste from a similar project, or from the template available
+in the `build-helper-xpack` project.
+
+For 3rd party projects, suffix the name with `-XPACK`.
+
+With VS Code, Fork or Git:
+
+- stage the `README-MAINTAINER.md` files
+- commit with the following message: **README-MAINTAINER: preliminary content**
 
 ### Add a CHANGELOG[-XPACK].md file
 
@@ -512,18 +531,6 @@ README-MAINTAINER*.md
 
 - update the content until `npm pack` shows only the desired content
 - commit with the following message: **.npmignore preliminary content**
-
-### Add README-MAINTAINER[-XPACK].md
-
-Create or copy/paste from a similar project, or from the template available
-in the `build-helper-xpack` project.
-
-For 3rd party projects, suffix the name with `-XPACK`.
-
-With VS Code, Fork or Git:
-
-- stage the `README-MAINTAINER.md` files
-- commit with the following message: **README-MAINTAINER: preliminary content**
 
 ### Publish the initial version to GitHub
 
