@@ -47,7 +47,7 @@ main branch can be merged into the `xpack` branch and things kept in sync.
 do not enforce the use of a branch named `xpack`, this is only
 a recommendation." %}
 
-## Create source library xPacks with 3rd party content
+## Create a source library xPacks with 3rd party content
 
 ### Projects without a public repository
 
@@ -68,7 +68,7 @@ If the 3rd party project uses a public Git:
 
 #### Fork
 
-- select the GitHub project
+- select the upstream GitHub project
 - fork it, for example in the
   [3rd party xPacks](https://github.com/xpack-3rd-party) organization)
 - preferably rename it:
@@ -112,7 +112,7 @@ With VS Code, Fork or Git:
 
 Continue from the **Common steps** section below.
 
-## Create new xPack repository
+## Create a new xPack repository
 
 If the project does not already have a forked repository, create a new
 Git project.
@@ -288,7 +288,7 @@ With VS Code, Fork or Git:
 
 - push all local branches (`master`, `xpack` and maybe the `originals`)
 
-### Change default branch to `xpack`
+### Change the default branch to `xpack`
 
 With the GitHub web interface:
 
