@@ -532,6 +532,17 @@ README-MAINTAINER*.md
 - update the content until `npm pack` shows only the desired content
 - commit with the following message: **.npmignore preliminary content**
 
+### Add .github/workflows/*
+
+Copy/paste files like:
+
+- `CI.yml`
+- `test-all.yml`
+
+- commit with the following message: **.github/workflows preliminary content**
+
+For projects with an upstream Git, disable existing workflows.
+
 ### Publish the initial version to GitHub
 
 With VS Code, Fork or Git:
@@ -541,6 +552,7 @@ With VS Code, Fork or Git:
 ### Add more content
 
 - add project files
+- copy/paste the `tests[-xpack]` folder
 
 ### Commit the initial content
 
