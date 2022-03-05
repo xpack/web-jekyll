@@ -118,7 +118,8 @@ There are no functional changes from original projects.
 
 ## Bug fixes
 
-- the BusyBox code includes a patch around the UCRT bug that affects spawning
+- [#19](https://github.com/xpack-dev-tools/windows-build-tools-xpack/issues/19)
+  the BusyBox code includes a patch around the UCRT bug that affects spawning
   sub-processes.
 
 ## Enhancements

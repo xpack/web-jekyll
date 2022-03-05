@@ -1,9 +1,7 @@
 ---
 title:  xPack Windows Build Tools v4.2.1-3 released
 
-TODO: select one summary
-
-summary: "Version **4.2.1-3** is a maintenance release; it updates to the latest upstream Busybox and to the new build scripts."
+summary: "DO NOT USE! Version **4.2.1-3** is a maintenance release; it updates to the latest upstream Busybox and to the new build scripts."
 
 version: 4.2.1-3
 npm_subversion: 1
@@ -26,7 +24,7 @@ tags:
 
 ---
 
-{% include warning.html content="This version seems to have a problem, in certain conditions, `make` throws _Error -1073741819_; for the moment please use the previous release. Thank you for your understanding." %}
+{% include warning.html content="This version is affected by the Windows UCRT bug, `make` throws _Error -1073741819_; please use v4.3.x or later. Thank you for your understanding." %}
 
 [The xPack Windows Build Tools](https://xpack.github.io/windows-build-tools/)
 is a standalone Windows binary distribution of
@@ -130,7 +128,11 @@ There are no functional changes from original projects.
 
 ## Known problems
 
-- none
+- [#19](https://github.com/xpack-dev-tools/windows-build-tools-xpack/issues/19)
+  A bug was identified in [Microsoft UCRT](https://github.com/xpack-dev-tools/ms-spawn-issue),
+  affecting programs which spawn subprocesses, like `sh.exe`, `make.exe`, etc;
+  a workaround was identified for BusyBox, and the problem was fixed in
+  v4.3.0-1.
 
 ## Shared libraries
 
