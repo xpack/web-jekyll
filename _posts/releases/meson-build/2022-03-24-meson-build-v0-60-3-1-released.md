@@ -3,12 +3,12 @@ title:  xPack Meson Build v0.60.3-1 released
 
 summary: "Version **0.60.3-1** is a new release; it follows the upstream release."
 
-version: 0.60.3-1
-upstream_version: 0.60.3
+version: "0.60.3-1"
+upstream_version: "0.60.3"
 upstream_release_date: "Dec 22nd, 2021"
-npm_subversion: 1
-python_version: 3.10
-python_subversion: 4
+npm_subversion: "1"
+python_version: "3.10"
+python_subversion: "4"
 download_url: https://github.com/xpack-dev-tools/meson-build-xpack/releases/tag/v0.60.3-1/
 
 date:   2022-03-24 22:56:39 +0200
