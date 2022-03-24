@@ -120,8 +120,6 @@ The xPack Meson Build generally follows the official
 
 The current version is based on:
 
-TODO: update commit id and date.
-
 - Meson Build release
 [{{ page.upstream_version }}](https://github.com/mesonbuild/meson/releases/tag/{{ page.upstream_version }})
 from {{ page.upstream_release_date }}.
