@@ -119,7 +119,7 @@ TODO: update commit id and date.
 
 - CMake release
 [{{ page.upstream_version }}](https://github.com/Kitware/CMake/releases/tag/v{{ page.upstream_version }}/)
-from {{ page.upstream_version }}.
+from {{ page.upstream_release_date }}.
 
 ## Changes
 
