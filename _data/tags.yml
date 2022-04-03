@@ -65,3 +65,4 @@ allowed-tags:
   - extension
   - clang
   - box
+  - aarch64
