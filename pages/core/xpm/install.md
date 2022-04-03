@@ -23,8 +23,8 @@ npm package [xpm](https://www.npmjs.com/package/xpm) from the
 
 ## Prerequisites
 
-- a recent [Node.js](https://nodejs.org) (>=**10.x**), since the ECMAScript 6
-class syntax is used and some dependencies also require new features
+- a recent [Node.js](https://nodejs.org) (>=**12.x**), since some dependencies
+  require new features
 - a recent [npm](https://docs.npmjs.com/cli/npm).
 
 For details, please read (carefully!) the
