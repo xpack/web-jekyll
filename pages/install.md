@@ -25,8 +25,8 @@ via **npm** which uses Node.
 
 ## Prerequisites
 
-A recent [Node.js](https://nodejs.org) (>=**10.x**), since the ECMAScript 6 class
-syntax is used, and some dependencies may also require new features.
+A recent [Node.js](https://nodejs.org) (>=**12.x**), since
+some dependencies require new features.
 
 ```console
 $ node --version
@@ -49,9 +49,10 @@ the `npm-cli.js` script, which is part of the Node module that implements
 the npm functionality (on Windows instead of soft links,
 `.cmd` stubs are used).
 
-{% include tip.html content="The usual method is to install Node with
-administrative rights;
-however, the prefered method is to install it
+{% include tip.html content="Due to a misconception, some distributions
+offer to install Node with administrative rights; this is not a problem
+for Node, but will also require administrative right for using npm and xpm;
+to simplify maintenance, the prefered method is to install Node/npm
 in a custom location in the home folder, using a version
 manager or by directly unpacking the archive distributions.
 Regardless how and where it is installed, the `node`
@@ -100,15 +101,21 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
 exit
 ```
 
-and in new terminal:
+and in a new terminal:
 
 ```sh
 nvm install --lts node
 nvm use node
-node --version
 nvm install-latest-npm
-npm --version
 npm install --global xpm@latest
+```
+
+To check the result, use:
+
+```sh
+node --version
+npm --version
+xpm --version
 ```
 
 {% endcapture %}
@@ -267,12 +274,21 @@ When everything is clean, run the install script:
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
 ```
 
-This will install the version manager in `~/.nvm`, and add a few lines to
-the shell profile, for example to `.bash_profile` on older versions.
+This will install the version manager in `~/.nvm`, and suggest to
+add a few lines to the shell profile, for example to `.zprofile`.
 
-{% include warning.html content="Please note that macOS Catalina no
-longer uses bash, and the current npm install script does not
-support zsh yet, so the two lines must be manually added to `.zprofile." %}
+To do this, use:
+
+```sh
+echo >>.zprofile
+echo 'export NVM_DIR="$HOME/.nvm"' >>.zprofile
+echo '[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm' >> .zprofile
+
+cat .zprofile
+```
+
+{% include warning.html content="Please note that without these settings
+nvm is not functional." %}
 
 To install the latest node, after updating the shell profile, open a new
 terminal (to make use of the new environment variables) and issue the
@@ -392,7 +408,7 @@ are supported, currently in both 32/64-bit variants." %}
 {{ version_manager }}
 
 In short, [nvm](https://github.com/nvm-sh/nvm) changes the install
-location to `C:\Users\<user>\AppData\Roaming\npm` and allows to install
+location to `~/.nvm` and allows to install
 multiple instances of node
 in the `~/.nvm/versions/node` folder.
 
