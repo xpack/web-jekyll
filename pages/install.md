@@ -394,7 +394,7 @@ use `nvm use <version>`.
 
 ## Command Line Tools
 
-Although not a requirement for node/npm/xpm themselves, if the xPack
+Although not a requirement for the node/npm/xpm tools themselves, if the xPack
 toolchains are used for software development, including running tests,
 the system C/C++ headers and most probably other tools, will be needed;
 they are provided by Apple as the separate Command Line Tools package.
@@ -559,11 +559,12 @@ adjustments." %}
 
 ## The GCC development headers and libraries
 
-Although not a requirement for node/npm/xpm themselves, if the xPack binaries
-are used for software development, the xPack toolchains will require the
-system C/C++ headers, provided by Apple as the Command Line Tools.
+Although not a requirement for the node/npm/xpm tools themselves, if the
+xPack toolchains
+are used for software development, including for running tests, the
+system C/C++ headers and libraries will be needed.
 
-Install the C++ libraries and headers according to the distribution specifics.
+Install them according to the distribution specifics.
 
 {% endcapture %}
 
@@ -574,7 +575,8 @@ Install the C++ libraries and headers according to the distribution specifics.
 The next step is to install the
 [xPack Project Manager]({{ site.baseurl }}/xpm/install/).
 
-If you already know what this is all about, issue the following command:
+If you followed the TL;DR steps, it was already installed. Otherwise,
+if you already know what this is all about, issue the following command:
 
 ```sh
 npm install --global xpm@latest
