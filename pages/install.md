@@ -392,6 +392,25 @@ $ which npm
 At any time, to switch between any of the installed versions,
 use `nvm use <version>`.
 
+## Command Line Tools
+
+Although not a requirement for node/npm/xpm themselves, if the xPack binaries
+are used for software development, the xPack toolchains will require the
+system C/C++ headers, provided by Apple as the Command Line Tools.
+
+{% include note.html content="Please note that although these headers
+are also part of Xcode, their location is not fixed, hence the Command
+Line Tools package must still be installed." %}
+
+To install the Command Line Tools only if they are not already there, use:
+
+```sh
+if [ ! -d "/Library/Developer/CommandLineTools/usr/" ]
+then
+  xcode-select --install
+fi
+```
+
 {% endcapture %}
 
 {% capture linux %}
@@ -536,6 +555,14 @@ use `nvm use <version>`.
 {% include note.html content="These commands were tested with `bash` on
 Ubuntu 18 LTS and Manjaro 18; for other shells they may need small
 adjustments." %}
+
+## The GCC development headers and libraries
+
+Although not a requirement for node/npm/xpm themselves, if the xPack binaries
+are used for software development, the xPack toolchains will require the
+system C/C++ headers, provided by Apple as the Command Line Tools.
+
+Install the C++ libraries and headers according to the distribution specifics.
 
 {% endcapture %}
 
