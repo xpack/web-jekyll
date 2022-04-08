@@ -51,8 +51,9 @@ the npm functionality (on Windows instead of soft links,
 
 {% include tip.html content="Due to a misconception, some distributions
 offer to install Node with administrative rights; this is not a problem
-for Node, but will also require administrative right for using npm and xpm;
-to simplify maintenance, the prefered method is to install Node/npm
+for Node itself, but will also require administrative rights for using
+npm and xpm;
+to simplify maintenance, the preferred method is to install Node/npm
 in a custom location in the home folder, using a version
 manager or by directly unpacking the archive distributions.
 Regardless how and where it is installed, the `node`
