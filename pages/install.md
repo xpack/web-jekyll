@@ -252,7 +252,7 @@ then
 fi
 ```
 
-{% include note.html content="Please note that although these headers
+{% include note.html content="Please note that although the C/C++ headers
 are also part of Xcode, their location is not fixed, hence the Command
 Line Tools package must still be installed, for the xPack toolchains to
 find them in the expected location." %}
