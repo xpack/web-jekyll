@@ -266,9 +266,9 @@ If you have a previous version of npm installed with a local prefix,
 remove it:
 
 ```sh
+npm config delete prefix
 sudo rm -rf /usr/local/lib/node-modules /usr/local/bin/node /usr/local/bin/npm /usr/local/bin/npm
 rm -rf ~/Library/npm ~/opt/npm
-npm config delete prefix
 ```
 
 Also remove `${HOME}/Library/npm/bin` or `${HOME}/opt/npm/bin` from the PATH.
