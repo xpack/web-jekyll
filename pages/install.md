@@ -368,16 +368,17 @@ use `nvm use <version>`.
 
 ## Command Line Tools
 
-Although not a requirement for the node/npm/xpm tools themselves, if the xPack
-toolchains are used for software development, including running tests,
-the system C/C++ headers and most probably other tools, will be needed;
+The system C/C++ headers and most development tools are not in the
+standard macOS distribution, and need to be installed separately;
 they are provided by Apple as the separate Command Line Tools package.
 
 {% include note.html content="Please note that although these headers
 are also part of Xcode, their location is not fixed, hence the Command
 Line Tools package must still be installed." %}
 
-To install the Command Line Tools only if they are not already in the expected location, use:
+If you followed the TL;DR steps, it was already installed. Otherwise,
+to install the Command Line Tools only if they are not already in the
+expected location, use:
 
 ```sh
 if [ ! -d "/Library/Developer/CommandLineTools/" ]
