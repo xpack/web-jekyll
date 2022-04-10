@@ -46,9 +46,9 @@ The general procedure is to download the package suitable for your
 platform and install it as usual. For GNU/Linux and macOS, the recommended
 procedure is to **use a version manager** (see below).
 The result is a binary program named `node` (that can be used to execute
-JavaScript code from the terminal), and a link named `npm`, pointing to
+JavaScript code from the terminal), and a symbolic link named `npm`, pointing to
 the `npm-cli.js` script, which is part of the Node module that implements
-the npm functionality (on Windows instead of soft links,
+the npm functionality (on Windows, where symbolic links are problematic,
 `.cmd` stubs are used).
 
 {% include tip.html content="Due to a misconception, some
