@@ -91,35 +91,6 @@ page.
 
 {% endcapture %}
 
-{% capture tl_dr %}
-
-## TL;DR
-
-If you know what you're doing, copy paste the following into a terminal:
-
-```sh
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
-exit
-```
-
-and in a new terminal:
-
-```sh
-nvm install --lts node
-nvm use node
-nvm install-latest-npm
-npm install --global xpm@latest
-```
-
-To check the result, use:
-
-```sh
-node --version
-npm --version
-xpm --version
-```
-
-{% endcapture %}
 {% capture windows %}
 
 {{ manual_install }}
@@ -250,7 +221,36 @@ For more details please read the Microsoft
 
 {% capture macos %}
 
-{{ tl_dr }}
+## TL;DR
+
+If you know what you're doing, copy paste the following into a terminal:
+
+```sh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+
+echo >>.zprofile
+echo 'export NVM_DIR="$HOME/.nvm"' >>.zprofile
+echo '[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm' >> .zprofile
+
+exit
+```
+
+and in a new terminal:
+
+```sh
+nvm install --lts node
+nvm use node
+nvm install-latest-npm
+npm install --global xpm@latest
+```
+
+To check the result, use:
+
+```sh
+node --version
+npm --version
+xpm --version
+```
 
 {{ version_manager }}
 
@@ -416,7 +416,31 @@ fi
 
 {% capture linux %}
 
-{{ tl_dr }}
+## TL;DR
+
+If you know what you're doing, copy paste the following into a terminal:
+
+```sh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+exit
+```
+
+and in a new terminal:
+
+```sh
+nvm install --lts node
+nvm use node
+nvm install-latest-npm
+npm install --global xpm@latest
+```
+
+To check the result, use:
+
+```sh
+node --version
+npm --version
+xpm --version
+```
 
 {% include note.html content="The official Node.js distribution no
 longer provides Intel 32-bit images. The version manager is still able
