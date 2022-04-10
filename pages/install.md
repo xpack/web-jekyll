@@ -26,8 +26,8 @@ via **npm** which uses Node.
 ## Prerequisites
 
 A recent [Node.js](https://nodejs.org) (>=**12.x**), since
-some dependencies require new features. Below are detailed instructions
-for each supported platform.
+some dependencies require new features. Detailed instructions
+for each supported platform are available in the next section.
 
 ```console
 $ node --version
@@ -44,7 +44,7 @@ there are two Node versions, **LTS** (**Long Term Service**) and
 
 The general procedure is to download the package suitable for your
 platform and install it as usual. For GNU/Linux and macOS, the recommended
-procedure is to use a version manager (see below).
+procedure is to **use a version manager** (see below).
 The result is a binary program named `node` (that can be used to execute
 JavaScript code from the terminal), and a link named `npm`, pointing to
 the `npm-cli.js` script, which is part of the Node module that implements
