@@ -241,10 +241,6 @@ The system C/C++ headers and most development tools are not in the
 standard macOS distribution, and need to be installed separately;
 they are provided by Apple as the separate Command Line Tools package.
 
-{% include note.html content="Please note that although these headers
-are also part of Xcode, their location is not fixed, hence the Command
-Line Tools package must still be installed, for the xPack toolchains to find them in the expected location." %}
-
 If you followed the TL;DR steps, it was already installed. Otherwise,
 to install the Command Line Tools only if they are not already in the
 expected location, use:
@@ -255,6 +251,11 @@ then
   xcode-select --install
 fi
 ```
+
+{% include note.html content="Please note that although these headers
+are also part of Xcode, their location is not fixed, hence the Command
+Line Tools package must still be installed, for the xPack toolchains to
+find them in the expected location." %}
 
 {{ version_manager }}
 
