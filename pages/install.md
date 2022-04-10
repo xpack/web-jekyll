@@ -9,8 +9,8 @@ keywords:
   - xpack
   - install
 
-node_version: 12.14.0
-npm_version: 6.14.7
+node_version: 16.14.2
+npm_version: 8.6.0
 
 date: 2017-10-09 14:14:00 +0300
 
