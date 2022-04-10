@@ -226,13 +226,34 @@ For more details please read the Microsoft
 
 ## TL;DR
 
-If you know what you're doing, copy/paste the following
+If you prefer a shortcut, copy/paste the following
 [script](https://github.com/xpack/assets/blob/master/scripts/install-nvm-node-npm-xpm.sh) into a terminal:
 
 ```sh
 curl -o- https://raw.githubusercontent.com/xpack/assets/master/scripts/install-nvm-node-npm-xpm.sh | bash
 
 exit
+```
+
+## Command Line Tools
+
+The system C/C++ headers and most development tools are not in the
+standard macOS distribution, and need to be installed separately;
+they are provided by Apple as the separate Command Line Tools package.
+
+{% include note.html content="Please note that although these headers
+are also part of Xcode, their location is not fixed, hence the Command
+Line Tools package must still be installed, for the xPack toolchains to find them in the expected location." %}
+
+If you followed the TL;DR steps, it was already installed. Otherwise,
+to install the Command Line Tools only if they are not already in the
+expected location, use:
+
+```sh
+if [ ! -d "/Library/Developer/CommandLineTools/" ]
+then
+  xcode-select --install
+fi
 ```
 
 {{ version_manager }}
@@ -366,26 +387,6 @@ $ which npm
 At any time, to switch between any of the installed versions,
 use `nvm use <version>`.
 
-## Command Line Tools
-
-The system C/C++ headers and most development tools are not in the
-standard macOS distribution, and need to be installed separately;
-they are provided by Apple as the separate Command Line Tools package.
-
-{% include note.html content="Please note that although these headers
-are also part of Xcode, their location is not fixed, hence the Command
-Line Tools package must still be installed." %}
-
-If you followed the TL;DR steps, it was already installed. Otherwise,
-to install the Command Line Tools only if they are not already in the
-expected location, use:
-
-```sh
-if [ ! -d "/Library/Developer/CommandLineTools/" ]
-then
-  xcode-select --install
-fi
-```
 
 {% endcapture %}
 
@@ -393,7 +394,7 @@ fi
 
 ## TL;DR
 
-If you know what you're doing, copy/paste the following
+If you prefer a shortcut, copy/paste the following
 [script](https://github.com/xpack/assets/blob/master/scripts/install-nvm-node-npm-xpm.sh) into a terminal:
 
 ```sh
