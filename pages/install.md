@@ -226,33 +226,13 @@ For more details please read the Microsoft
 
 ## TL;DR
 
-If you know what you're doing, copy paste the following into a terminal:
+If you know what you're doing, copy paste the following
+[script](https://github.com/xpack/assets/blob/master/scripts/install-nvm-node-npm-xpm.sh) into a terminal:
 
 ```sh
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
-
-echo >>.zprofile
-echo 'export NVM_DIR="$HOME/.nvm"' >>.zprofile
-echo '[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm' >> .zprofile
+curl -o- https://raw.githubusercontent.com/xpack/assets/master/scripts/install-nvm-node-npm-xpm.sh | bash
 
 exit
-```
-
-and in a new terminal:
-
-```sh
-nvm install --lts node
-nvm use node
-nvm install-latest-npm
-npm install --global xpm@latest
-```
-
-To check the result, use:
-
-```sh
-node --version
-npm --version
-xpm --version
 ```
 
 {{ version_manager }}
@@ -275,21 +255,12 @@ Also remove `${HOME}/Library/npm/bin` or `${HOME}/opt/npm/bin` from the PATH.
 When everything is clean, run the install script:
 
 ```sh
+touch ~/.zshrc
+
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
 ```
 
-This will install the version manager in `~/.nvm`, and suggest to
-add a few lines to the shell profile, for example to `.zprofile`.
-
-To do this, use:
-
-```sh
-echo >>.zprofile
-echo 'export NVM_DIR="$HOME/.nvm"' >>.zprofile
-echo '[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm' >> .zprofile
-
-cat .zprofile
-```
+This will install the version manager in `~/.nvm`, and add a few lines to the shell profile (`.zshrc`, which must be present).
 
 {% include warning.html content="Please note that without these settings
 nvm is not functional." %}
@@ -421,28 +392,13 @@ fi
 
 ## TL;DR
 
-If you know what you're doing, copy paste the following into a terminal:
+If you know what you're doing, copy paste the following
+[script](https://github.com/xpack/assets/blob/master/scripts/install-nvm-node-npm-xpm.sh) into a terminal:
 
 ```sh
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+curl -o- https://raw.githubusercontent.com/xpack/assets/master/scripts/install-nvm-node-npm-xpm.sh | bash
+
 exit
-```
-
-and in a new terminal:
-
-```sh
-nvm install --lts node
-nvm use node
-nvm install-latest-npm
-npm install --global xpm@latest
-```
-
-To check the result, use:
-
-```sh
-node --version
-npm --version
-xpm --version
 ```
 
 {% include note.html content="The official Node.js distribution no
