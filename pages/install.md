@@ -1,5 +1,5 @@
 ---
-title: How to install the xPack tools
+title: How to install the xPack prerequisites
 permalink: /install/
 
 toc: false
@@ -18,7 +18,7 @@ date: 2017-10-09 14:14:00 +0300
 
 ## Overview
 
-All Core Tools are [Node.js](https://nodejs.org) CLI application
+All xPack Core Tools are [Node.js](https://nodejs.org) CLI application
 available from the
 [npmjs.com](https://www.npmjs.com) public repository and are installed
 via **npm** which uses Node.
