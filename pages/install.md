@@ -262,7 +262,7 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
 
 This will install the version manager in `~/.nvm`, and add a few lines to the shell profile (`.zshrc`, which must be present).
 
-{% include warning.html content="Please note that without these settings
+{% include warning.html content="Please note that without these shell settings
 nvm is not functional." %}
 
 To install the latest node, after updating the shell profile, open a new
