@@ -226,7 +226,7 @@ For more details please read the Microsoft
 
 ## TL;DR
 
-If you know what you're doing, copy paste the following
+If you know what you're doing, copy/paste the following
 [script](https://github.com/xpack/assets/blob/master/scripts/install-nvm-node-npm-xpm.sh) into a terminal:
 
 ```sh
@@ -392,7 +392,7 @@ fi
 
 ## TL;DR
 
-If you know what you're doing, copy paste the following
+If you know what you're doing, copy/paste the following
 [script](https://github.com/xpack/assets/blob/master/scripts/install-nvm-node-npm-xpm.sh) into a terminal:
 
 ```sh
