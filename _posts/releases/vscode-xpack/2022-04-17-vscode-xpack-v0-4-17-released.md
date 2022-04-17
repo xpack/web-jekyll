@@ -1,5 +1,5 @@
 ---
-title:  VS Code xPack extension v0.4.16 released
+title:  VS Code xPack extension v0.4.17 released
 
 summary: "Version **0.4.17** is a maintenance release of **ilg-vscode.xpack**; it add support from inheritance in build configurations."
 
