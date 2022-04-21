@@ -17,7 +17,7 @@ Why is VS Code asking for a _kit_?
 
 {% capture answer_40 %}
 When opening xPack projects using CMake for the first time,
-VS Code asks for _kits_:
+VS Code asks for a _kit_:
 
 ![CMake kits]({{ site.baseurl }}/assets/images/2022/cmake-kits-unspecified.png)
 
