@@ -11,6 +11,19 @@ date: 2021-04-22 23:09:00 +0300
 
 ### The VS Code xPack Frequently Asked Questions
 
+{% capture question_40 %}
+Why is VS Code asking for a _kit_?
+{% endcapture %}
+
+{% capture answer_40 %}
+When opening xPack projects using CMake for the first time,
+VS Code asks for _kits_:
+
+![CMake kits]({{ site.baseurl }}/assets/images/2022/cmake-kits-unspecified.png)
+
+Select _Unspecified_, since kits are not used by the xPack extension.
+{% endcapture %}
+
 {% capture question_30 %}
 What is the *active* configuration?
 {% endcapture %}
@@ -49,6 +62,7 @@ create a workspace and add all project folders to it
 {% endcapture %}
 
 {% include div-panel-group.html %}
+{% include faq-panel.html id="collapse-40" question=question_40 answer=answer_40 %}
 {% include faq-panel.html id="collapse-30" question=question_30 answer=answer_30 %}
 {% include faq-panel.html id="collapse-20" question=question_20 answer=answer_20 %}
 {% include faq-panel.html id="collapse-10" question=question_10 answer=answer_10 %}
