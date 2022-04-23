@@ -103,7 +103,8 @@ but might be dropped in one of the future version.
 
 ## armv6
 
-Support for `armv6` is not provided.
+`armv6` is currently not supported, so Raspberry Pi 1, Raspberry Pi Zero
+and Compute Module 1 cannot be used.
 
 ## Conclusions
 
