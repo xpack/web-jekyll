@@ -9,4 +9,13 @@
   "files.trimTrailingWhitespace": true,
   "markdownlint.config": {
     "MD041": false
-  }}
+  },
+  "cSpell.ignoreWords": [
+    "aarch64",
+    "armv6",
+    "armv7l",
+    "balenalib",
+    "raspberrypi3",
+    "raspberrypi4"
+  ]
+}
