@@ -22,7 +22,8 @@ was discontinued
 
 ## GNU/Linux distro versions
 
-To better decide whch versions to support, below is a list of existing versions.
+To better decide which versions to support, below is a list of existing
+versions.
 
 The names are in fact docker image names, and can be used directly to query
 the `ldd --version`:
@@ -38,6 +39,8 @@ docker run -it <image> ldd --version
 - `debian:8` - jessie - 2015-2018, GLIBC 2.19, kernel 3.16
 - `debian:9` - stretch - 2017-2020, GLIBC 2.24, kernel 4.9.0-6 (first with arm64)
 - `debian:10` - buster - 2019-2022, GLIBC 2.28, kernel 4.19.0-6 <-- **XBB v3.4**
+- `debian:11` - bullseye - 2021-2026, GLIBC 2.31, kernel 5.10
+- `debian:12` - bookworm - ?
 
 ### [Ubuntu](https://en.wikipedia.org/wiki/Ubuntu_version_history)
 
@@ -46,7 +49,8 @@ docker run -it <image> ldd --version
 - `ubuntu:14.04` - trusty - 2014-2022, GLIBC 2.19, kernel 3.16
 - `ubuntu:16.04` - xenial - 2016-2024, GLIBC **2.23**, kernel 4.4 <--- XBB v3.3 Arm Linux choice
 - `ubuntu:18.04` - bionic - 2018-2028, GLIBC **2.27**, kernel 4.15 <-- **XBB v3.4** Intel & Arm Linux choice
-- `ubuntu:20.04` - focal - 2020-2-30, GLIBC 2.31, kernel 5.4
+- `ubuntu:20.04` - focal - 2020-2230, GLIBC 2.31, kernel 5.4
+- `ubuntu:22.04` - jammy - 2022-2232, GLIBC 2.35, kernel 5.15
 
 ### [RHEL](https://access.redhat.com/support/policy/updates/errata/#Life_Cycle_Dates)
 
@@ -78,15 +82,28 @@ Last version was 8.4; discontinued by the end of 2021; see Rocky Linux.
 - `fedora:31` - 2019-10, GLIBC 2.30, kernel 5.3
 - `fedora:32` - 2020-04, GLIBC 2.31, kernel 5.6
 - `fedora:33` - 2020-10, GLIBC 2.32, kernel 5.8
-- `fedora:34` - 2021-04, GLIBC 2.33, kernel 5.11
-- `fedora:35` - 2021-11, GLIBC 2.34, kernel 5.14
+- `fedora:34` - 2021-04 - 2022-05, GLIBC 2.33, kernel 5.11
+- `fedora:35` - 2021-11 - 2022-12, GLIBC 2.34, kernel 5.15
+- `fedora:36` - 2021-11 - 2023-05, GLIBC 2.35, kernel 5.17
+- `fedora:37` - 2021-11 - 2023-11, GLIBC ?, kernel ?
+
+## Raspberry Pi
+
+- `raspbian/stretch` - (Raspbian 9.4 stretch) - GLIBC 2.24
+- `balenalib/raspberrypi3:buster` - (Debian 10) - GLIBC 2.28 (armv7l)
+- `balenalib/raspberrypi3:bullseye` - (Debian 11) - GLIBC 2.31 (armv7l)
+- `balenalib/raspberrypi4-64-debian:bullseye` (Debian 11) - GLIBC 2.31 (aarch64)
 
 ## 32-bit support
 
 Existing support for 32-bit Windows and GNU/Linux Intel builds was dropped.
-Support for 32-bit GNU/Linux Arm will be preserved for the moment, since
-there are still many 32-bit Raspberry Pi machines,
+Support for 32-bit GNU/Linux Arm (`armv7l`) will be preserved for the moment,
+since there are still many 32-bit Raspberry Pi machines,
 but might be dropped in one of the future version.
+
+## armv6
+
+Support for `armv6` is not provided.
 
 ## Conclusions
 
@@ -103,4 +120,4 @@ Raspberry Pi class machines, or larger/newer.
 
 ### Next XBB
 
-The future releases will move to a modular aproach, using binary xPacks.
+The future releases will move to a modular approach, using binary xPacks.
