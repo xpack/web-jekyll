@@ -281,7 +281,7 @@ So, to stay close to this syntax, the recommendation is to preserve the
 original `module.exports` object, and add properties to it, preferably
 classes, even if they have only static members.
 
-To import them, the syntax uses the explicit classs name:
+To import them, the syntax uses the explicit class name:
 
 ```js
 const WscriptAvoider = require('wscript-avoider').WscriptAvoider

@@ -33,8 +33,9 @@ is a standalone cross-platform binary distribution of
 There are separate binaries for **Windows** (Intel 32/64-bit),
 **macOS** (Intel 64-bit) and **GNU/Linux** (Intel 32/64-bit, Arm 32/64-bit).
 
-{% include note.html content="The main targets for the GNU/Linux Arm binaries
-are the **Raspberry Pi** class devices." %}
+{% include note.html content="The main targets for the GNU/Linux
+ARMv7 and Aarch64 binaries are the **Raspberry Pi** class devices
+(RPi 2 and up; no RPi 1, being ARMv6). %}
 
 {% include note.html content="Release 10.3.1-1.1, corresponding to Arm release 10.3-2021.07, was skipped." %}
 

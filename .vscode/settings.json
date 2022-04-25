@@ -11,11 +11,35 @@
     "MD041": false
   },
   "cSpell.ignoreWords": [
+    "Arduino",
+    "Dockerfiles",
+    "PYTHONHOME",
+    "PYTHONPATH",
+    "RPATH",
+    "Somsubhra",
     "aarch64",
+    "altinstall",
+    "armv5te",
     "armv6",
+    "armv7",
     "armv7l",
+    "armv8",
     "balenalib",
+    "cmake",
+    "eabi",
+    "gpasswd",
+    "marm",
+    "mfloat",
+    "mkdir",
+    "mthumb",
+    "nofp",
+    "npmjs",
+    "otool",
+    "pathsep",
     "raspberrypi3",
-    "raspberrypi4"
+    "raspberrypi4",
+    "readelf",
+    "runpath",
+    "softfp"
   ]
 }

@@ -16,7 +16,7 @@ attempting to run the executables on older versions.
 The XBB v3.4 uses Ubuntu 18 for both Intel and Arm GNU/Linux.
 
 {% include note.html content="Building Arm binaries requires
-an Arm machine. A Raspberry Pi 4 8GB equiped with a SanDisk Extreme
+an Arm machine. A Raspberry Pi 4 8GB equipped with a SanDisk Extreme
 USB 3 SSD are a good solution." %}
 
 The Windows binaries are generated on the same Docker Intel GNU/Linux
@@ -65,7 +65,7 @@ This is true for most versions, except the very latest one, which might not
 yet be made available by the Docker team. In this case set the
 `version_name` manually to the previous version.
 You can also do this by
-manually editting the `/etc/apt/sources.list` file." %}
+manually editing the `/etc/apt/sources.list` file." %}
 
 To check if the install is functional, run the _Hello World_ image,
 for the moment as `sudo`:
