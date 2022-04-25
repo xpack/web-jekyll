@@ -34,7 +34,7 @@ There are separate binaries for **Windows** (Intel 32/64-bit),
 
 {% include note.html content="The main targets for the GNU/Linux
 ARMv7 and Aarch64 binaries are the **Raspberry Pi** class devices
-(RPi 2 and up; no RPi 1, being ARMv6). %}
+(RPi 2 and up; no RPi 1, being ARMv6)." %}
 
 {% include note.html content="Due to memory limitations during the build, there is no Arm 32-bit image." %}
 
