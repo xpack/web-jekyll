@@ -141,7 +141,7 @@ Bug reports: <https://github.com/xpack/xpm-js/issues/>
 
 Similar pages are available for each command.
 
-For more detials, the project documentation is available online from the
+For more details, the project documentation is available online from the
 [web site](https://xpack.github.io/xpm/).
 
 ## Supported platforms
