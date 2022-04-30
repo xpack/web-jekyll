@@ -28,6 +28,7 @@
     "cmake",
     "eabi",
     "gpasswd",
+    "loglevel",
     "marm",
     "mfloat",
     "mkdir",
