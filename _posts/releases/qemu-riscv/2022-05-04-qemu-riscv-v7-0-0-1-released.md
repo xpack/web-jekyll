@@ -122,8 +122,8 @@ with no major changes.
 
 The current version is based on:
 
-- QEMU version 7.0.0, commit [44f28df](https://github.com/xpack-dev-tools/qemu/commit/44f28df24767cf9dca1ddc9b23157737c4cbb645)
-  from Dec 14th, 2021.
+- QEMU version 7.0.0, commit [823a3f1](https://github.com/xpack-dev-tools/qemu/commit/823a3f11fb8f04c3c3cc0f95f968fef1bfc6534f)
+  from Apr 19th, 2022.
 
 ## Changes
 
@@ -163,7 +163,6 @@ rv64
 shakti-c
 sifive-e51
 sifive-u54
-
 ```
 
 ## Bug fixes
