@@ -12,7 +12,12 @@
   },
   "cSpell.ignoreWords": [
     "Arduino",
+    "Aspeed",
+    "Bellard",
     "Dockerfiles",
+    "Fabrice",
+    "Gumstix",
+    "OMAP310",
     "PYTHONHOME",
     "PYTHONPATH",
     "RPATH",
@@ -26,8 +31,11 @@
     "armv7l",
     "armv8",
     "balenalib",
+    "blinky",
     "cmake",
+    "cmdline",
     "eabi",
+    "gnuarmeclipse",
     "gpasswd",
     "libexec",
     "loglevel",
@@ -37,6 +45,7 @@
     "mkdir",
     "mthumb",
     "nofp",
+    "nographic",
     "npmjs",
     "opentitan",
     "otool",
@@ -48,6 +57,7 @@
     "runpath",
     "sifive",
     "softfp",
+    "unimp",
     "virt"
   ]
 }
