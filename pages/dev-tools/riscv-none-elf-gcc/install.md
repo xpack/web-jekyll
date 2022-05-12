@@ -1,13 +1,17 @@
 ---
 title: How to install the xPack GNU RISC-V Embedded GCC binaries
-permalink: /riscv-none-embed-gcc/install/
+permalink: /riscv-none-elf-gcc/install/
+
+redirect_from:
+  - /riscv-none-embed-gcc/install/
 
 summary: "The recommended method is via xpm."
 
 toc: false
 comments: true
 
-version: 8.2.1
+version: 11.3.0
+subversion: 1.1
 
 date: 2019-07-10 17:53:00 +0300
 
@@ -25,7 +29,7 @@ portable archives.
 
 The easiest way to install GNU RISC-V Embedded GCC is by using the
 **binary xPack**, available as
-[`@xpack-dev-tools/riscv-none-embed-gcc`](https://www.npmjs.com/package/@xpack-dev-tools/riscv-none-embed-gcc)
+[`@xpack-dev-tools/riscv-none-elf-gcc`](https://www.npmjs.com/package/@xpack-dev-tools/riscv-none-elf-gcc)
 from the [`npmjs.com`](https://www.npmjs.com) registry.
 
 ### Prerequisites
@@ -41,8 +45,8 @@ follow the instructions from the
 With xpm available, installing
 the latest version of the package is quite easy:
 
-```console
-$ xpm install --global @xpack-dev-tools/riscv-none-embed-gcc@latest --verbose
+```sh
+xpm install --global @xpack-dev-tools/riscv-none-elf-gcc@latest --verbose
 ```
 
 This command will always install the latest available version,
@@ -82,12 +86,12 @@ older versions or configure the path manually." %}
 
 To remove the installed xPack, the command is similar:
 
-```console
-$ xpm uninstall --global @xpack-dev-tools/riscv-none-embed-gcc --verbose
+```sh
+xpm uninstall --global @xpack-dev-tools/riscv-none-elf-gcc --verbose
 ```
 
 {% include note.html content="Not yet implemented. As a temporary workaround,
-simply remove the `xPacks/@xpack-dev-tools/riscv-none-embed-gcc` folder,
+simply remove the `xPacks/@xpack-dev-tools/riscv-none-elf-gcc` folder,
 or one of the versioned subfolders." %}
 
 {% endcapture %}
@@ -101,7 +105,7 @@ released as portable
 archives that can be installed in any location.
 
 The archives can be downloaded from the
-GitHub [releases](https://github.com/xpack-dev-tools/riscv-none-embed-gcc-xpack/releases/) page.
+GitHub [releases](https://github.com/xpack-dev-tools/riscv-none-elf-gcc-xpack/releases/) page.
 
 {% endcapture %}
 
@@ -113,9 +117,9 @@ GitHub [releases](https://github.com/xpack-dev-tools/riscv-none-embed-gcc-xpack/
 
 To check if the xpm installed GCC starts, use something like:
 
-```
-C:\>%USERPROFILE%\AppData\Roaming\xPacks\@xpack-dev-tools\riscv-none-embed-gcc\{{ page.version }}-3.1.1\.content\bin\riscv-none-embed-gcc.exe" --version
-riscv-none-embed-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) {{ page.version }}
+```dos
+C:\>%USERPROFILE%\AppData\Roaming\xPacks\@xpack-dev-tools\riscv-none-elf-gcc\{{ page.version }}-{{ page.subversion }}.1\.content\bin\riscv-none-elf-gcc.exe" --version
+riscv-none-elf-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) {{ page.version }}
 ```
 
 {{ manual_install }}
@@ -125,11 +129,7 @@ riscv-none-embed-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) {{ page.version }}
 The Windows versions of **xPack GNU RISC-V Embedded GCC** are packed as ZIP files.
 Download the latest version named like:
 
-- `xpack-riscv-none-embed-gcc-{{ page.version }}-3.1-win32-x64.zip`
-- `xpack-riscv-none-embed-gcc-{{ page.version }}-3.1-win32-x32.zip`
-
-Select the `-x64` file for 64-bit Windows machines and the `-x32` file
-for 32-bit Windows machines.
+- `xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}-win32-x64.zip`
 
 {% include note.html content="In case you wonder where the suffix comes
 from, it is exactly the Node.js `process.platform` and `process.arch`.
@@ -139,8 +139,8 @@ The `win32` part is confusing, but we have to leave with it." %}
 
 To manually install the xPack GNU RISC-V Embedded GCC,
 unpack the archive and copy it into the
-`%USERPROFILE%\AppData\Roaming\xPacks\riscv-none-embed-gcc`
-(for example `C:\Users\ilg\AppData\Roaming\xPacks\riscv-none-embed-gcc`) folder;
+`%USERPROFILE%\AppData\Roaming\xPacks\riscv-none-elf-gcc`
+(for example `C:\Users\ilg\AppData\Roaming\xPacks\riscv-none-elf-gcc`) folder;
 according to Microsoft, `AppData\Roaming` is the recommended location for
 installing user specific packages.
 
@@ -158,9 +158,9 @@ for the executable in this location." %}
 
 To check if the manually installed GCC starts, use something like:
 
-```
-C:\>%USERPROFILE%\AppData\Roaming\xPacks\riscv-none-embed-gcc\xpack-riscv-none-embed-gcc-{{ page.version }}-3.1\bin\riscv-none-embed-gcc.exe" --version
-riscv-none-embed-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) {{ page.version }}
+```dos
+C:\>%USERPROFILE%\AppData\Roaming\xPacks\riscv-none-elf-gcc\xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}\bin\riscv-none-elf-gcc.exe" --version
+riscv-none-elf-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) {{ page.version }}
 ```
 
 {% include tip.html content="Since Windows does not provide the GNU make
@@ -177,8 +177,8 @@ binaries, it is recommended to also install the **Windows Build Tools**." %}
 To check if the xpm installed GCC starts, use something like:
 
 ```console
-$ ~/opt/xPacks/@xpack-dev-tools/riscv-none-embed-gcc/{{ page.version }}-3.1.1/.content/bin/riscv-none-embed-gcc --version
-riscv-none-embed-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) {{ page.version }}
+$ ~/opt/xPacks/@xpack-dev-tools/riscv-none-elf-gcc/{{ page.version }}-{{ page.subversion }}.1/.content/bin/riscv-none-elf-gcc --version
+riscv-none-elf-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) {{ page.version }}
 ```
 
 {{ manual_install }}
@@ -188,20 +188,19 @@ riscv-none-embed-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) {{ page.version }}
 The macOS version of **xPack GNU RISC-V Embedded GCC** is packed as a .tar.gz archive.
 Download the latest version named like:
 
-- `xpack-riscv-none-embed-gcc-{{ page.version }}-3.1-darwin-x64.tgz`
+- `xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}-darwin-x64.tgz`
 
 ### Unpack
 
 To manually install the xPack GNU RISC-V Embedded GCC,
 unpack the archive and copy it to
-`~/opt/xPacks/riscv-none-embed-gcc/<version>`:
+`~/opt/xPacks/riscv-none-elf-gcc/<version>`:
 
-```console
-$ mkdir -p ~/opt
-$ cd ~/opt
+```sh
+mkdir -p ~/opt && cd ~/opt
 
-$ tar xvf ~/Downloads/xpack-riscv-none-embed-gcc-{{ page.version }}-3.1-darwin-x64.tgz
-$ chmod -R -w xPacks/riscv-none-embed-gcc/xpack-riscv-none-embed-gcc-{{ page.version }}-3.1
+tar xvf ~/Downloads/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}-darwin-x64.tgz
+chmod -R -w xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}
 ```
 
 {% include note.html content="For manual installs, the recommended
@@ -215,8 +214,8 @@ for the executable in this location." %}
 The result is a structure like:
 
 ```console
-$ tree -L 2 /Users/ilg/opt/xPacks/riscv-none-embed-gcc/xpack-riscv-none-embed-gcc-{{ page.version }}-3.1
-/Users/ilg/opt/xPacks/riscv-none-embed-gcc/xpack-riscv-none-embed-gcc-{{ page.version }}-3.1/
+$ tree -L 2 /Users/ilg/opt/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}
+/Users/ilg/opt/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}/
 ├── README.md
 ├── bin
 │   ├── libexpat.1.6.7.dylib
@@ -236,11 +235,11 @@ $ tree -L 2 /Users/ilg/opt/xPacks/riscv-none-embed-gcc/xpack-riscv-none-embed-gc
 │   ├── riscv-none-embed-cpp
 │   ├── riscv-none-embed-elfedit
 │   ├── riscv-none-embed-g++
-│   ├── riscv-none-embed-gcc
-│   ├── riscv-none-embed-gcc-{{ page.version }}
-│   ├── riscv-none-embed-gcc-ar
-│   ├── riscv-none-embed-gcc-nm
-│   ├── riscv-none-embed-gcc-ranlib
+│   ├── riscv-none-elf-gcc
+│   ├── riscv-none-elf-gcc-{{ page.version }}
+│   ├── riscv-none-elf-gcc-ar
+│   ├── riscv-none-elf-gcc-nm
+│   ├── riscv-none-elf-gcc-ranlib
 │   ├── riscv-none-embed-gcov
 │   ├── riscv-none-embed-gcov-dump
 │   ├── riscv-none-embed-gcov-tool
@@ -290,8 +289,8 @@ $ tree -L 2 /Users/ilg/opt/xPacks/riscv-none-embed-gcc/xpack-riscv-none-embed-gc
 To check if the manually installed GCC starts, use something like:
 
 ```console
-$ ~/opt/xPacks/riscv-none-embed-gcc/xpack-riscv-none-embed-gcc-{{ page.version }}-3.1/bin/riscv-none-embed-gcc --version
-riscv-none-embed-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) {{ page.version }}
+$ ~/opt/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}/bin/riscv-none-elf-gcc --version
+riscv-none-elf-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) {{ page.version }}
 ```
 
 {% endcapture %}
@@ -305,8 +304,8 @@ riscv-none-embed-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) {{ page.version }}
 To check if the xpm installed GCC starts, use something like:
 
 ```console
-$ ~/opt/xPacks/@xpack-dev-tools/riscv-none-embed-gcc/{{ page.version }}-3.1.1/.content/bin/riscv-none-embed-gcc --version
-riscv-none-embed-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) {{ page.version }}
+$ ~/opt/xPacks/@xpack-dev-tools/riscv-none-elf-gcc/{{ page.version }}-{{ page.subversion }}.1/.content/bin/riscv-none-elf-gcc --version
+riscv-none-elf-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) {{ page.version }}
 ```
 
 {{ manual_install }}
@@ -316,26 +315,22 @@ riscv-none-embed-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) {{ page.version }}
 The GNU/Linux versions of **xPack GNU RISC-V Embedded GCC** are packed as
 .tar.gz archives. Download the latest version named like:
 
-- `xpack-riscv-none-embed-gcc-{{ page.version }}-3.1-linux-x64.tgz`
-- `xpack-riscv-none-embed-gcc-{{ page.version }}-3.1-linux-x32.tgz`
+- `xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}-linux-x64.tgz`
 
 As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
 Ubuntu, but can be executed on most recent GNU/Linux distributions.
-Select the `-x64` file for 64-bit machines and the `-x32` file for 32-bit
-machines.
 
 ### Unpack
 
 To manually install the xPack GNU RISC-V Embedded GCC,
 unpack the archive and move it to
-`~/opt/xPacks/riscv-none-embed-gcc/xpack-riscv-none-embed-gcc-{{ page.version }}-3.1`:
+`~/opt/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}`:
 
-```console
-$ mkdir -p ~/opt
-$ cd ~/opt
+```sh
+mkdir -p ~/opt && cd ~/opt
 
-$ tar xvf ~/Downloads/xpack-riscv-none-embed-gcc-{{ page.version }}-3.1-linux-x64.tgz
-$ chmod -R -w xPacks/riscv-none-embed-gcc/xpack-riscv-none-embed-gcc-{{ page.version }}-3.1
+tar xvf ~/Downloads/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}-linux-x64.tgz
+chmod -R -w xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}
 ```
 
 {% include note.html content="For manual installs, the recommended
@@ -351,8 +346,8 @@ for the executable in this location." %}
 The result is a structure like:
 
 ```console
-$ tree -L 2 /home/ilg/opt/xPacks/riscv-none-embed-gcc/xpack-riscv-none-embed-gcc-{{ page.version }}-3.1/
-/home/ilg/opt/xPacks/riscv-none-embed-gcc/xpack-riscv-none-embed-gcc-{{ page.version }}-3.1/
+$ tree -L 2 /home/ilg/opt/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}/
+/home/ilg/opt/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}/
 ├── bin
 │   ├── libexpat.so.1 -> libexpat.so.1.6.7
 │   ├── libexpat.so.1.6.7
@@ -377,11 +372,11 @@ $ tree -L 2 /home/ilg/opt/xPacks/riscv-none-embed-gcc/xpack-riscv-none-embed-gcc
 │   ├── riscv-none-embed-cpp
 │   ├── riscv-none-embed-elfedit
 │   ├── riscv-none-embed-g++
-│   ├── riscv-none-embed-gcc
-│   ├── riscv-none-embed-gcc-{{ page.version }}
-│   ├── riscv-none-embed-gcc-ar
-│   ├── riscv-none-embed-gcc-nm
-│   ├── riscv-none-embed-gcc-ranlib
+│   ├── riscv-none-elf-gcc
+│   ├── riscv-none-elf-gcc-{{ page.version }}
+│   ├── riscv-none-elf-gcc-ar
+│   ├── riscv-none-elf-gcc-nm
+│   ├── riscv-none-elf-gcc-ranlib
 │   ├── riscv-none-embed-gcov
 │   ├── riscv-none-embed-gcov-dump
 │   ├── riscv-none-embed-gcov-tool
@@ -437,8 +432,8 @@ $ tree -L 2 /home/ilg/opt/xPacks/riscv-none-embed-gcc/xpack-riscv-none-embed-gcc
 To check if the manually installed GCC starts, use something like:
 
 ```console
-$ ~/opt/xPacks/riscv-none-embed-gcc/xpack-riscv-none-embed-gcc-{{ page.version }}-3.1/bin/riscv-none-embed-gcc --version
-riscv-none-embed-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) {{ page.version }}
+$ ~/opt/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}/bin/riscv-none-elf-gcc --version
+riscv-none-elf-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) {{ page.version }}
 ```
 
 {% endcapture %}
