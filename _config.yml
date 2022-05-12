@@ -191,13 +191,13 @@ defaults:
 
   -
     scope:
-      path: "pages/dev-tools/riscv-none-embed-gcc"
+      path: "pages/dev-tools/riscv-none-elf-gcc"
       type: "pages"
     values:
       layout: "page"
       comments: false
       search: true
-      sidebar: riscv-none-embed-gcc
+      sidebar: riscv-none-elf-gcc
       topnav: topnav
       author: Liviu Ionescu
       toc: true

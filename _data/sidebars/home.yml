@@ -50,8 +50,8 @@ entries:
     - title: arm-none-eabi-gcc
       url: /arm-none-eabi-gcc/
       output: web
-    - title: riscv-none-embed-gcc
-      url: /riscv-none-embed-gcc/
+    - title: riscv-none-elf-gcc
+      url: /riscv-none-elf-gcc/
       output: web
     - title: openocd
       url: /openocd/
