@@ -67,8 +67,8 @@ settings like **Show Hidden Files**." %}
 
 To remove the installed xPack, the command is similar:
 
-```console
-$ xpm uninstall --global @xpack-dev-tools/cmake --verbose
+```sh
+xpm uninstall --global @xpack-dev-tools/cmake --verbose
 ```
 
 {% endcapture %}

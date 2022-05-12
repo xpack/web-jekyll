@@ -20,8 +20,8 @@ date: 2019-07-10 17:53:00 +0300
 
 ## Quicklinks
 
-If you already know the general facts about the xPack GNU RISC-V Embedded GCC, you can
-directly skip to the desired pages.
+If you already know the general facts about the xPack GNU RISC-V Embedded GCC,
+you can directly skip to the desired pages.
 
 User pages:
 
@@ -38,8 +38,7 @@ Developer & maintainer pages:
 ## Overview
 
 The **xPack GNU RISC-V Embedded GCC**
-is an alternate binary distribution that complements the official
-[SiFive](https://www.sifive.com/boards) toolchain.
+is a binary distribution of the GNU RISC-V Embedded GCC toolchain.
 
 ## Benefits
 
@@ -73,7 +72,7 @@ platforms are presented in the separate
 The original documentation is available
 [online](https://gcc.gnu.org/onlinedocs/).
 
-## riscv64-none-elf-gcc
+## riscv-none-elf-gcc
 
 After installing the toolchain, you'll end up with lots of programs
 prefixed by `riscv-none-elf-`. For those used to the RISC-V original
@@ -83,9 +82,11 @@ based on `-march` and `-mabi`.
 
 ## `-march` and `-mabi`
 
-The RISC-V design is not a single architecture, but a family of architectures, with optional components, identified by letters.
+The RISC-V design is not a single architecture, but a family of
+architectures, with optional components, identified by letters.
 
-RISC-V ISA strings begin with either RV32I, RV32E, RV64I, or RV128I indicating the supported address space size in bits for the base integer ISA.
+RISC-V ISA strings begin with either RV32I, RV32E, RV64I, or RV128I
+indicating the supported address space size in bits for the base integer ISA.
 
 - RV32I: A load-store ISA with 32, 32-bit general-purpose integer registers.
 - RV32E: An embedded flavour of RV32I with only 16 integer registers.
@@ -93,7 +94,8 @@ RISC-V ISA strings begin with either RV32I, RV32E, RV64I, or RV128I indicating t
   are 64-bit wide.
 
 In addition to these base ISAs, a handful of extensions have been
-specified. The extensions that have both been specified and are supported by the toolchain are:
+specified. The extensions that have both been specified and are supported
+by the toolchain are:
 
 - M - Integer Multiplication and Division
 - A - Atomics
@@ -132,10 +134,10 @@ while the floating-point ABIs are a RISC-V specific addition:
 
 - "" (the empty string): No floating-point arguments are passed in registers.
 - `f`: 32-bit and smaller floating-point arguments are passed in registers.
-This ABI requires the F extension, as without F there are no
-floating-point registers.
+  This ABI requires the F extension, as without F there are no
+  floating-point registers.
 - `d`: 64-bit and smaller floating-point arguments are passed in registers.
-This ABI requires the D extension.
+  This ABI requires the D extension.
 
 Just like ISA strings, ABI strings are concatenated together and passed via
 the `-mabi` argument to GCC. For example:

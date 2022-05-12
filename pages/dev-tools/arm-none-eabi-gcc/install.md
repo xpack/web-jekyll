@@ -86,8 +86,8 @@ as npm does.
 
 To remove the installed xPack, the command is similar:
 
-```console
-$ xpm uninstall --global @xpack-dev-tools/arm-none-eabi-gcc --verbose
+```sh
+xpm uninstall --global @xpack-dev-tools/arm-none-eabi-gcc --verbose
 ```
 
 {% endcapture %}

@@ -39,8 +39,8 @@ TBD
 
 ### Help (`--help`)
 
-```console
-$ xpm uninstall --help
+```sh
+xpm uninstall --help
 
 xPack manager - uninstall package(s)
 Usage: xpm uninstall [options...] [--global] [--system]

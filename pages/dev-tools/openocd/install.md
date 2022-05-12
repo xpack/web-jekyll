@@ -76,8 +76,8 @@ older versions or configure the path manually." %}
 
 To remove the installed xPack, the command is similar:
 
-```console
-$ xpm uninstall --global @xpack-dev-tools/openocd --verbose
+```sh
+xpm uninstall --global @xpack-dev-tools/openocd --verbose
 ```
 
 {% endcapture %}

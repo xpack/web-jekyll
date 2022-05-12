@@ -74,8 +74,8 @@ older versions or configure the path manually." %}
 
 To remove the installed xPack, the command is similar:
 
-```console
-$ xpm uninstall --global @xpack-dev-tools/qemu-arm --verbose
+```sh
+xpm uninstall --global @xpack-dev-tools/qemu-arm --verbose
 ```
 
 ## Manual install
