@@ -10,8 +10,8 @@ date: 2019-07-10 17:53:00 +0300
 
 ## Quicklinks
 
-The quick answer is to use the
-GitHub [Discussions](https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/discussions/).
+The quick answer is to use the GitHub
+[Discussions](https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/discussions/).
 
 ## Check the documentation
 
@@ -32,16 +32,16 @@ similar problems.
 
 ## Check the GitHub Issues
 
-Check the
-GitHub [Issues](https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/issues/)
+Check the GitHub
+[Issues](https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/issues/)
 tracker for similar problems.
 
 ## Ask questions in GitHub Discussions
 
 If you still could not find a solution, if you have interesting use
 cases, if you have custom configurations, and generally if you have
-any experience that you want to share with others, use the
-GitHub [Discussions](https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/discussions/),
+any experience that you want to share with others, use the GitHub
+[Discussions](https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/discussions/),
 and enter a **New discussion** in the **Q&A** category.
 
 ## Register a new support ticket only if necessary
@@ -49,8 +49,8 @@ and enter a **New discussion** in the **Q&A** category.
 If you are convinced that you identified a bug (if you have doubts,
 use the GitHub Discussions),
 or you have a pertinent suggestion how to enhance the **xPack GNU Arm Embedded GCC**
-distribution, register a **New Issue** in the the
-GitHub [Issues](https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/issues/)
+distribution, register a **New Issue** in the the GitHub
+[Issues](https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/issues/)
 tracker.
 
 {% include tip.html content="**DO NOT** use the GitHub Issues tracker
@@ -59,8 +59,8 @@ for questions and support, **use the GitHub Discussions**." %}
 ## Use of private e-mail
 
 {% include important.html content="Please, please, please: **do not use
-private e-mail** for support, **use the
-GitHub [Discussions](https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/discussions/)**." %}
+private e-mail** for support, **use the GitHub
+[Discussions](https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/discussions/)**." %}
 
 Sending private messages will be automatically replied with
 a link to this page.

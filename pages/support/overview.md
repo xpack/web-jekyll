@@ -70,8 +70,8 @@ wrong phrasing, etc), or you have suggestions on how to improve the
 documentation,
 you can fork the
 [web-jekyll.git project](https://github.com/xpack/web-jekyll/pulls/)
-and send a **Pull Request**, or use the
-GitHub [Issues](https://github.com/xpack/web-jekyll/issues/) tracker.
+and send a **Pull Request**, or use the GitHub
+[Issues](https://github.com/xpack/web-jekyll/issues/) tracker.
 
 ## Use of private e-mail
 

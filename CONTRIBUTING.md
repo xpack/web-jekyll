@@ -21,8 +21,8 @@ for other readers, don't hesitate to add them as Disqus comments.
 ## Submit bug reports & enhancement requests
 
 If you discovered a typo, a broken link, or you have a pertinent
-suggestion how to enhance the Eclipse Embedded CDT web site, please use the
-GitHub [Issues](https://github.com/xpack/web-jekyll/issues/) tracker.
+suggestion how to enhance the Eclipse Embedded CDT web site, please use the GitHub
+[Issues](https://github.com/xpack/web-jekyll/issues/) tracker.
 
 Be sure you report only issues related to the xPack web site.
 

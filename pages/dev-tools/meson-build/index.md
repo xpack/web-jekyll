@@ -44,7 +44,8 @@ The main advantages of using the **xPack Meson Build** are:
 
 - a convenient, uniform and portable install/uninstall/upgrade procedure,
   the same procedure is used for all major
-  platforms (Windows 64/32-bit, GNU/Linux 64/32-bit, macOS)
+  platforms (Intel Windows 64-bit, Intel GNU/Linux 64-bit, Arm GNU/Linux
+  64/32-bit, Intel macOS 64-bit, Apple Silicon macOS 64-bit)
 - a better integration with development environments
 - a more convenient integration with CI environment
 
