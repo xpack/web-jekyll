@@ -71,10 +71,6 @@ To remove the installed xPack, the command is similar:
 $ xpm uninstall --global @xpack-dev-tools/meson-build --verbose
 ```
 
-{% include note.html content="Not yet implemented. As a temporary workaround,
-simply remove the `xPacks/@xpack-dev-tools/meson-build` folder,
-or one of the versioned subfolders." %}
-
 {% endcapture %}
 
 {% capture manual_install %}

@@ -79,10 +79,6 @@ To remove the installed xPack, the command is similar:
 $ xpm uninstall --global @xpack-dev-tools/windows-build-tools --verbose
 ```
 
-{% include note.html content="Not yet implemented. As a temporary workaround,
-simply remove the `xPacks/@xpack-dev-tools/windows-build-tools` folder,
-or one of the versioned subfolders." %}
-
 {% endcapture %}
 
 {% capture manual_install %}

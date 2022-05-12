@@ -90,10 +90,6 @@ To remove the installed xPack, the command is similar:
 xpm uninstall --global @xpack-dev-tools/riscv-none-elf-gcc --verbose
 ```
 
-{% include note.html content="Not yet implemented. As a temporary workaround,
-simply remove the `xPacks/@xpack-dev-tools/riscv-none-elf-gcc` folder,
-or one of the versioned subfolders." %}
-
 {% endcapture %}
 
 {% capture manual_install %}

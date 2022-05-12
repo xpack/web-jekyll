@@ -90,10 +90,6 @@ To remove the installed xPack, the command is similar:
 $ xpm uninstall --global @xpack-dev-tools/arm-none-eabi-gcc --verbose
 ```
 
-{% include note.html content="Not yet implemented. As a temporary workaround,
-simply remove the `xPacks/@xpack-dev-tools/arm-none-eabi-gcc` folder,
-or one of the versioned subfolders." %}
-
 {% endcapture %}
 
 {% capture manual_install %}

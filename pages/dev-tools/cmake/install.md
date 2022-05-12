@@ -71,10 +71,6 @@ To remove the installed xPack, the command is similar:
 $ xpm uninstall --global @xpack-dev-tools/cmake --verbose
 ```
 
-{% include note.html content="Not yet implemented. As a temporary workaround,
-simply remove the `xPacks/@xpack-dev-tools/cmake` folder,
-or one of the versioned subfolders." %}
-
 {% endcapture %}
 
 {% capture manual_install %}
