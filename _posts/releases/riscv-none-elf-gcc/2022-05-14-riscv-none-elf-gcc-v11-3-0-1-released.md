@@ -299,7 +299,7 @@ Before publishing, a set of simple tests were performed on an exhaustive
 set of platforms. The results are available from:
 
 - [GitHub Actions](https://github.com/xpack-dev-tools/riscv-none-elf-gcc-xpack/actions/)
-- [travis-ci.com](https://app.travis-ci.com/github/xpack-dev-tools/riscv-none-elf-gcc-xpack/builds/)
+- [Travis CI](https://app.travis-ci.com/github/xpack-dev-tools/riscv-none-elf-gcc-xpack/builds/)
 
 ## Tests
 
