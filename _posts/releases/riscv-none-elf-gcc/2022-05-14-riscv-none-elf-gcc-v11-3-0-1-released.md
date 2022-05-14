@@ -241,7 +241,10 @@ the distribution.
 
 ## Known problems
 
-- due to the large number of libraries, the archive is >400 MB.
+- due to the large number of libraries, the archive is >400 MB
+- due to the large size, installing via xpm on 32-bit Arm fails with
+  _error: RangeError: Array buffer allocation failed_; as a workaround,
+  unpack the archive manually
 
 ## Shared libraries
 
