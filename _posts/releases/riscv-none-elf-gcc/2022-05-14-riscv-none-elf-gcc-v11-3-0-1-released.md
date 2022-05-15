@@ -199,6 +199,11 @@ rv64imfdc_zicsr/lp64d;@march=rv64imfdc_zicsr@mabi=lp64d
 
 Compared to the upstream GNU release, there are no functional changes.
 
+### risc-none-elf-gcc
+
+For compliance reasons, starting with 11.x, the name of the toolchain
+was updated to `risc-none-elf-gcc`.
+
 ### newlib-nano
 
 Support for **newlib-nano** is available using the
