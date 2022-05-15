@@ -1,5 +1,5 @@
 ---
-title:  xPack AArch64 Embedded GCC v11.2.1-1.1 released
+title:  xPack GNU AArch64 Embedded GCC v11.2.1-1.1 released
 
 summary: "Version **11.2.1-1.1** is a new release; it follows the upstream Arm release."
 
@@ -27,7 +27,7 @@ tags:
 
 ---
 
-[The xPack AArch64 Embedded GCC](https://xpack.github.io/aarch64-none-elf-gcc/)
+[The xPack GNU AArch64 Embedded GCC](https://xpack.github.io/aarch64-none-elf-gcc/)
 is a standalone cross-platform binary distribution of
 [GNU AArch64 Embedded Toolchain](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain).
 
@@ -59,7 +59,7 @@ The binary files are available from GitHub [Releases]({{ page.download_url }}).
 
 ## Install
 
-The full details of installing the **xPack AArch64 Embedded GCC** on various platforms
+The full details of installing the **xPack GNU AArch64 Embedded GCC** on various platforms
 are presented in the separate
 [Install]({{ site.baseurl }}/aarch64-none-elf-gcc/install/) page.
 
@@ -119,7 +119,7 @@ xpm uninstall --global @xpack-dev-tools/aarch64-none-elf-gcc
 
 ## Compliance
 
-The xPack AArch64 Embedded GCC generally follows the official
+The xPack GNU AArch64 Embedded GCC generally follows the official
 [Arm Embedded GCC](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/downloads)
 releases.
 

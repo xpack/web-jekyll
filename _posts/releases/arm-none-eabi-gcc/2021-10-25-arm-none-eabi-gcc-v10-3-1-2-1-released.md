@@ -1,5 +1,5 @@
 ---
-title:  xPack Arm Embedded GCC v10.3.1-2.1 released
+title:  xPack GNU Arm Embedded GCC v10.3.1-2.1 released
 
 summary: "Version **10.3.1-2.1** is a new release; it follows the upstream Arm release 10.3-2021.10 from October 21, 2021."
 
@@ -26,7 +26,7 @@ tags:
 
 ---
 
-[The xPack Arm Embedded GCC](https://xpack.github.io/arm-none-eabi-gcc/)
+[The xPack GNU Arm Embedded GCC](https://xpack.github.io/arm-none-eabi-gcc/)
 is a standalone cross-platform binary distribution of
 [GNU Arm Embedded Toolchain](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm).
 
@@ -58,7 +58,7 @@ The binary files are available from GitHub [Releases]({{ page.download_url }}).
 
 ## Install
 
-The full details of installing the **xPack Arm Embedded GCC** on various platforms
+The full details of installing the **xPack GNU Arm Embedded GCC** on various platforms
 are presented in the separate
 [Install]({{ site.baseurl }}/arm-none-eabi-gcc/install/) page.
 
@@ -118,7 +118,7 @@ xpm uninstall --global @xpack-dev-tools/arm-none-eabi-gcc
 
 ## Compliance
 
-The xPack Arm Embedded GCC generally follows the official
+The xPack GNU Arm Embedded GCC generally follows the official
 [Arm Embedded GCC](http://arm-none-eabi-gcc.org) releases.
 
 The current version is based on:
