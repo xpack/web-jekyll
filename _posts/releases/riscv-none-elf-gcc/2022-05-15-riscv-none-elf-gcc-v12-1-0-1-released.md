@@ -1,13 +1,13 @@
 ---
-title:  xPack GNU RISC-V Embedded GCC v11.3.0-1 released
+title:  xPack GNU RISC-V Embedded GCC v12.1.0-1 released
 
-summary: "Version **11.3.0-1** is a new release; it follows the GNU GCC release."
+summary: "Version **12.1.0-1** is a new release; it follows the GNU GCC release."
 
-version: 11.3.0-1
+version: 12.1.0-1
 npm_subversion: 1
-download_url: https://github.com/xpack-dev-tools/riscv-none-elf-gcc-xpack/releases/tag/v11.3.0-1/
+download_url: https://github.com/xpack-dev-tools/riscv-none-elf-gcc-xpack/releases/tag/v12.1.0-1/
 
-date:   2022-05-14 08:47:10 +0300
+date:   2022-05-15 06:50:50 +0300
 
 categories:
   - releases
@@ -34,11 +34,6 @@ and **GNU/Linux** (Intel 64-bit, Arm 32/64-bit).
 {% include note.html content="The main targets for the Arm binaries
 are the **Raspberry Pi** class devices (armv7l and aarch64;
 armv6 is not supported)." %}
-
-{% include note.html content="Starting with 2022 (GCC 11.3), the
-xPack RISC-V toolchain no longer tracks the SiFive vendor GCC
-branch, but the official GNU releases; also the name was updated
-to `riscv-none-elf-gcc`." %}
 
 ## Download
 
@@ -123,11 +118,29 @@ xpm uninstall --global @xpack-dev-tools/riscv-none-elf-gcc
 The xPack GNU RISC-V Embedded GCC use the official sources,
 with no functional changes:
 
-- GCC 11.3.0
+- GCC 12.1.0
 - binutils 2.38
 - gdb 12.1
 - newlib 4.2.0.20211231
 - python 3.10.4
+
+## ISA updates
+
+Compared to previous releases, starting from 12.x, the compiler
+implements the new RISC-V ISA, which introduces an incompatibility issue,
+and builds might throw error messages like _unrecognized opcode `csrr`_.
+
+The reason is that csr read/write (`csrr*`/`csrw*`)
+instructions and `fence.i` instruction were separated from the `I`
+extension, becoming two standalone extensions: `Zicsr` and `Zifencei`.
+
+The solution is to add `_zicsr` and/or `_zifencei` to the
+`-march` option, e.g. `-march=rv32imac` becomes
+`-march=rv32imac_zicsr_zifencei`.
+
+In Eclipse, until the GUI will be updated, select the *Toolchain Default*
+for _Architecture_ and
+enter the new string separately as _Other target flags_.
 
 ## Supported libraries
 
@@ -246,10 +259,7 @@ the distribution.
 
 ## Known problems
 
-- due to the large number of libraries, the archive is >400 MB
-- due to the large size, installing via xpm on 32-bit Arm fails with
-  _error: RangeError: Array buffer allocation failed_; as a workaround,
-  unpack the archive manually
+- due to the large number of libraries, the archive is >400 MB.
 
 ## Shared libraries
 
@@ -320,23 +330,23 @@ build, not the compiler functionality.
 The SHA-256 hashes for the files are:
 
 ```console
-e3fda6401ea1a055a90bfe3116f4d46fdc9201280df7c3991bb964f4bad18886
-xpack-riscv-none-elf-gcc-11.3.0-1-darwin-arm64.tar.gz
+a3eb788e1e5485e951ff1067ddf174c35f296540bfeb9e2a4dfd452a72b7c18e
+xpack-riscv-none-elf-gcc-12.1.0-1-darwin-arm64.tar.gz
 
-67c2f2d9bb530948610400e2b43aeef8a1d4913fae275b1edf04968019fb19b9
-xpack-riscv-none-elf-gcc-11.3.0-1-darwin-x64.tar.gz
+6ab43e586728af78ef2aede74cea976836a3bfec9e970b5cbbd7bdd30788e992
+xpack-riscv-none-elf-gcc-12.1.0-1-darwin-x64.tar.gz
 
-5a1729612cf187a9a3a395aab572bd3869491616998a9d298a0ae28c2a3bbf93
-xpack-riscv-none-elf-gcc-11.3.0-1-linux-arm.tar.gz
+3b5186d891d4cb20b476d3b2ee345f4f71defe67a5bf9f3978983bd9ee6ae625
+xpack-riscv-none-elf-gcc-12.1.0-1-linux-arm.tar.gz
 
-2cd91f4bcc0c7a0f5b5beead3be834f6708d7a196f94f7728ac68e1ad06cee24
-xpack-riscv-none-elf-gcc-11.3.0-1-linux-arm64.tar.gz
+78f9b63a97f378239cd447fdda54e7dd19d2823ee282b27f3e65aac398eedabb
+xpack-riscv-none-elf-gcc-12.1.0-1-linux-arm64.tar.gz
 
-1c99fb1573ff2ed5deffce64cb96bb9272f351f054684c49dfd5ad41c6dd804d
-xpack-riscv-none-elf-gcc-11.3.0-1-linux-x64.tar.gz
+d6dc108ab53a41df3036f57cae4d0e538fb0d47c7b4d5fc8bb1b5499a64a2cdc
+xpack-riscv-none-elf-gcc-12.1.0-1-linux-x64.tar.gz
 
-56cc2e340bdcaa718862b3526a7c550605e699847a8903e471336ba0a4535c68
-xpack-riscv-none-elf-gcc-11.3.0-1-win32-x64.zip
+7b79381242dbb3838e7f6a832dfd2628c7f6b36d9be793649ebaebad14cacbd9
+xpack-riscv-none-elf-gcc-12.1.0-1-win32-x64.zip
 
 ```
 
