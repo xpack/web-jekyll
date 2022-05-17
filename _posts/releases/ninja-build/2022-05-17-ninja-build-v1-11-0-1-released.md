@@ -120,7 +120,7 @@ The xPack Ninja Build generally follows the official
 The current version is based on:
 
 - Ninja Build version {{ page.ninja_version }}
-from {{ page.ninja_version }}.
+from {{ page.ninja_date }}.
 
 ## Changes
 
