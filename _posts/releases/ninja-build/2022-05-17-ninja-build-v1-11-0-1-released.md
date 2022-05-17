@@ -3,6 +3,8 @@ title:  xPack Ninja Build v1.11.0-1 released
 
 summary: "Version **1.11.0-1** is a new release; it follows the upstream release."
 
+ninja_version: 0.11.1
+ninja_date: May 15, 2022
 version: 1.11.0-1
 npm_subversion: 1
 download_url: https://github.com/xpack-dev-tools/ninja-build-xpack/releases/tag/v1.11.0-1/
