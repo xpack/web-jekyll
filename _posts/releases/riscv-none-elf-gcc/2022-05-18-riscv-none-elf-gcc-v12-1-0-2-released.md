@@ -1,7 +1,7 @@
 ---
 title:  xPack GNU RISC-V Embedded GCC v12.1.0-2 released
 
-summary: "Version **12.1.0-2** is a new release; it adds support for size optimised C++ system libraries in the nano variant of newlib)."
+summary: "Version **12.1.0-2** is a new release; it adds support for size optimised C++ system libraries in the nano variant of newlib."
 
 version: 12.1.0-2
 npm_subversion: 1
