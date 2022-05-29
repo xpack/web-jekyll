@@ -1,16 +1,16 @@
 ---
-title:  xPack GNU Arm Embedded GCC v11.2.1-1.1 released
+title:  xPack GNU Arm Embedded GCC v11.2.1-1.2 released
 
-summary: "Version **11.2.1-1.1** is a new release; it follows the Arm release."
+summary: "Version **11.2.1-1.2** is a maintenance release; it brings back support for parsing XML files in GDB, allowing it to auto-configure on target capabilities when connecting to J-Link GDB server."
 
 arm_version: 11.2-2022.02
 arm_date: February 15, 2022
-version: 11.2.1-1.1
+version: 11.2.1-1.2
 npm_subversion: 1
 python_version: 10
-download_url: https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases/tag/v11.2.1-1.1/
+download_url: https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases/tag/v11.2.1-1.2/
 
-date:   2022-05-16 00:58:52 +0300
+date:   2022-05-29 17:01:21 +0300
 
 categories:
   - releases
@@ -173,6 +173,14 @@ thumb/v8.1-m.main+mve/hard;@mthumb@march=armv8.1-m.main+mve@mfloat-abi=hard
 
 Compared to the Arm version, there should be no functional changes.
 
+### XML parsing in GDB
+
+Some advanced GDB servers, like the one provided with SEGGER J-Link, are
+capable of passing an XML with the target capabilities to the GDB client.
+For unknown reasons, the Arm toolchain distribution came without XML
+parsing support. The xPack distribution brings back support for
+XML parsing and full integration with the SEGGER J-Link GDB server.
+
 ### Python
 
 Support for Python scripting was added to GDB. This distribution provides
@@ -187,10 +195,15 @@ Support for Python 2 was discontinued.
 
 ### Text User Interface (TUI)
 
-Support for TUI was added to GDB. The `ncurses` library (v6.2) was added to
+Support for TUI was added to GDB. The `ncurses` library was added to
 the distribution.
 
 {% include note.html content="TUI is not available on Windows." %}
+
+### No Guile
+
+Due to the difficulties of building standalone Guile libraries on all
+platforms, support for Guile scripting in GDB is currently not available.
 
 ## Bug fixes
 
@@ -202,11 +215,7 @@ the distribution.
 
 ## Known problems
 
-- for unknown reasons, in the Arm distribution used as reference,
-  support for parsing XML files in GDB was disabled; when connecting
-  to SEGGER J-Link GDB server, the warning _Can not parse XML target
-  description; XML support was disabled at compile time_ is displayed
-  and some functionality is not available; fixed in 11.2.1-1.2.
+- none
 
 ## Shared libraries
 
@@ -277,23 +286,23 @@ build, not the compiler functionality.
 The SHA-256 hashes for the files are:
 
 ```console
-4253a3263108302efcaae03fc247d2826809e58eb02c6f55a59dc2553b19d810
-xpack-arm-none-eabi-gcc-11.2.1-1.1-darwin-arm64.tar.gz
+c3b81e9fdefc07203556900b5017b68c06a8cbaa1e47d9ffead905b15834cc35
+xpack-arm-none-eabi-gcc-11.2.1-1.2-darwin-arm64.tar.gz
 
-1e7c0ef244b5a9eb304dda3b2c50668cae956bd33170fb324ccb850395fbbac5
-xpack-arm-none-eabi-gcc-11.2.1-1.1-darwin-x64.tar.gz
+0e9a84d281277315b78df3c60e6496f43434710ac718409491b5f0b5c8a2460d
+xpack-arm-none-eabi-gcc-11.2.1-1.2-darwin-x64.tar.gz
 
-27913d2fa515da19b91ee06bda362dcf8a5618d1138d85b209b21dc5f3e68478
-xpack-arm-none-eabi-gcc-11.2.1-1.1-linux-arm.tar.gz
+74ffd1063ae81c62887c173667c8b6112313a86d845795a41e1dea4a3b35c4df
+xpack-arm-none-eabi-gcc-11.2.1-1.2-linux-arm.tar.gz
 
-c1a5fd91bbbb3bf258a96439f13e9baa01c3dc368d406ad68acab3c089f2007f
-xpack-arm-none-eabi-gcc-11.2.1-1.1-linux-arm64.tar.gz
+2b7eb2ae60f5844773ea5d45bc893e33da9c6d33621129f3b30a2786f5a134fb
+xpack-arm-none-eabi-gcc-11.2.1-1.2-linux-arm64.tar.gz
 
-898649436d523b4dc552fb5602a9511089bb30e7df1cba3db401e895c04f12b9
-xpack-arm-none-eabi-gcc-11.2.1-1.1-linux-x64.tar.gz
+75d8a042d1ad00f6a2a0da0dd73ac443c8af6ae76e7c7113e5aa0b5d092d4435
+xpack-arm-none-eabi-gcc-11.2.1-1.2-linux-x64.tar.gz
 
-a9327ff3a764a2cabfe385921f02d90e9e424d2c8fb504a3600e598fcea99e7c
-xpack-arm-none-eabi-gcc-11.2.1-1.1-win32-x64.zip
+00ebb2432a8456444e1ac7f131904292ac708db05b45531ba18ba58a74f15855
+xpack-arm-none-eabi-gcc-11.2.1-1.2-win32-x64.zip
 
 ```
 
