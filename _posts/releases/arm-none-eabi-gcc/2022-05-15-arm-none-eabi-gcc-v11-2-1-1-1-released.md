@@ -206,7 +206,9 @@ the distribution.
   support for parsing XML files in GDB was disabled; when connecting
   to SEGGER J-Link GDB server, the warning _Can not parse XML target
   description; XML support was disabled at compile time_ is displayed
-  and some functionality is not available; fixed in 11.2.1-1.2.
+  and some functionality is not available; fixed in 11.2.1-1.2;
+- due to an error in the build scripts, the libgcov.a library resulted
+  with empty content; fixed in 11.2.1-1.2.
 
 ## Shared libraries
 
