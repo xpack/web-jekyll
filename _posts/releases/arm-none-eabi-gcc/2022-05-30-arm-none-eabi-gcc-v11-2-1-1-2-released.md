@@ -1,16 +1,19 @@
 ---
 title:  xPack GNU Arm Embedded GCC v11.2.1-1.2 released
 
-summary: "Version **11.2.1-1.2** is a maintenance release; it brings back support for parsing XML files in GDB, allowing it to auto-configure on target capabilities when connecting to J-Link GDB server."
+summary: "Version **11.2.1-1.2** is a maintenance release; it brings back support for parsing XML files in GDB, allowing it to auto-configure on target capabilities when connecting to J-Link GDB server and fixes libconv.a, which resulted empty in the previous release"
 
 arm_version: 11.2-2022.02
 arm_date: February 15, 2022
 version: 11.2.1-1.2
-npm_subversion: 1
+npm_subversion: 2
 python_version: 10
 download_url: https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases/tag/v11.2.1-1.2/
 
-date:   2022-05-29 17:01:21 +0300
+redirect_from:
+  - /blog/2022/05/29/arm-none-eabi-gcc-v11-2-1-1-2-released/
+
+date:   2022-05-30 16:28:15 +0300
 
 categories:
   - releases
@@ -286,22 +289,22 @@ build, not the compiler functionality.
 The SHA-256 hashes for the files are:
 
 ```console
-c3b81e9fdefc07203556900b5017b68c06a8cbaa1e47d9ffead905b15834cc35
+85afae936d84b5ed94ad15300d2333d4b0af34b53bbf92283e558a96209d0dd7
 xpack-arm-none-eabi-gcc-11.2.1-1.2-darwin-arm64.tar.gz
 
-0e9a84d281277315b78df3c60e6496f43434710ac718409491b5f0b5c8a2460d
+f2910d5ec4971baee9cd9cd3efe13fc8573b2f1c8185a6f18a7bb7fb3787a60d
 xpack-arm-none-eabi-gcc-11.2.1-1.2-darwin-x64.tar.gz
 
-74ffd1063ae81c62887c173667c8b6112313a86d845795a41e1dea4a3b35c4df
+cce74d7f5c96099595b7f28c34ed91bfbf88c3e85db61645f944522c74f73cfd
 xpack-arm-none-eabi-gcc-11.2.1-1.2-linux-arm.tar.gz
 
-2b7eb2ae60f5844773ea5d45bc893e33da9c6d33621129f3b30a2786f5a134fb
+e5bd60f5aaaf498e01d7fa4e2d2bd64671330217f8c6b0437208be42eac4c837
 xpack-arm-none-eabi-gcc-11.2.1-1.2-linux-arm64.tar.gz
 
-75d8a042d1ad00f6a2a0da0dd73ac443c8af6ae76e7c7113e5aa0b5d092d4435
+7479becc1ea98fbceecadf1f036ddaba8dc39c9cce5cb45f0a7a36e923d33c9a
 xpack-arm-none-eabi-gcc-11.2.1-1.2-linux-x64.tar.gz
 
-00ebb2432a8456444e1ac7f131904292ac708db05b45531ba18ba58a74f15855
+4a45e1df1c621f0a97a2bcb63977a3745ffcff7afc0e31ad2f3d5cc1272acf4b
 xpack-arm-none-eabi-gcc-11.2.1-1.2-win32-x64.zip
 
 ```
