@@ -1,7 +1,7 @@
 ---
 title:  xPack GNU Arm Embedded GCC v11.2.1-1.2 released
 
-summary: "Version **11.2.1-1.2** is a maintenance release; it brings back support for parsing XML files in GDB, allowing it to auto-configure on target capabilities when connecting to J-Link GDB server and fixes libconv.a, which resulted empty in the previous release"
+summary: "Version **11.2.1-1.2** is a maintenance release; it brings back support for parsing XML files in GDB, allowing it to auto-configure on target capabilities when connecting to J-Link GDB server and fixes libgcov.a, which resulted empty in the previous release"
 
 arm_version: 11.2-2022.02
 arm_date: February 15, 2022
