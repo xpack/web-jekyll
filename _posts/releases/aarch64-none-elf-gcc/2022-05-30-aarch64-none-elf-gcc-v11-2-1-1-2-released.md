@@ -1,16 +1,16 @@
 ---
-title:  xPack GNU AArch64 Embedded GCC v11.2.1-1.1 released
+title:  xPack GNU AArch64 Embedded GCC v11.2.1-1.2 released
 
-summary: "Version **11.2.1-1.1** is a new release; it follows the upstream Arm release."
+summary: "Version **11.2.1-1.2** is a maintenance release; it brings back support for parsing XML files in GDB, allowing it to auto-configure on target capabilities when connecting to J-Link GDB server and fixes libgcov.a, which resulted empty in the previous release."
 
 arm_version: 11.2-2022.02
 arm_date: February 15, 2022
-version: 11.2.1-1.1
+version: 11.2.1-1.2
 npm_subversion: 1
 python_version: 10
-download_url: https://github.com/xpack-dev-tools/aarch64-none-elf-gcc-xpack/releases/tag/v11.2.1-1.1/
+download_url: https://github.com/xpack-dev-tools/aarch64-none-elf-gcc-xpack/releases/tag/v11.2.1-1.2/
 
-date:   2022-05-15 12:14:17 +0300
+date:   2022-05-30 23:59:04 +0300
 
 categories:
   - releases
@@ -142,6 +142,14 @@ ilp32;@mabi=ilp32
 
 Compared to the Arm version, there should be no functional changes.
 
+### XML parsing in GDB
+
+Some advanced GDB servers, like the one provided with SEGGER J-Link, are
+capable of passing an XML with the target capabilities to the GDB client.
+For unknown reasons, the Arm toolchain distribution came without XML
+parsing support. The xPack distribution brings back support for
+XML parsing and full integration with the SEGGER J-Link GDB server.
+
 ### Python
 
 Support for Python scripting was added to GDB. This distribution provides
@@ -154,10 +162,15 @@ versions.
 
 ### Text User Interface (TUI)
 
-Support for TUI was added to GDB. The `ncurses` library (v6.3) was added to
+Support for TUI was added to GDB. The `ncurses` library was added to
 the distribution.
 
 {% include note.html content="TUI is not available on Windows." %}
+
+### No Guile
+
+Due to the difficulties of building standalone Guile libraries on all
+platforms, support for Guile scripting in GDB is currently not available.
 
 ## Bug fixes
 
@@ -169,13 +182,7 @@ the distribution.
 
 ## Known problems
 
-- for unknown reasons, in the Arm distribution used as reference,
-  support for parsing XML files in GDB was disabled; when connecting
-  to SEGGER J-Link GDB server, the warning _Can not parse XML target
-  description; XML support was disabled at compile time_ is displayed
-  and some functionality is not available; fixed in 11.2.1-1.2;
-- due to an error in the build scripts, the libgcov.a library resulted
-  with empty content; fixed in 11.2.1-1.2.
+- none
 
 ## Shared libraries
 
@@ -209,7 +216,7 @@ relative path.
 
 ## Documentation
 
-The original documentation is available
+The original GNU GCC documentation is available
 [online](https://gcc.gnu.org/onlinedocs/).
 
 ## Build
@@ -246,23 +253,23 @@ build, not the compiler functionality.
 The SHA-256 hashes for the files are:
 
 ```console
-fdd941fa157fbd187a2168171a6222d53fbc02a1c21dc0454ce3b7315b3a3141
-xpack-aarch64-none-elf-gcc-11.2.1-1.1-darwin-arm64.tar.gz
+98a5dac858a3317e7d650b2eaad5dc034d1eb47fc415035ad4d13ac49d8fefdd
+xpack-aarch64-none-elf-gcc-11.2.1-1.2-darwin-arm64.tar.gz
 
-285e232032b71bc76cac796d3553072ad23c5efb928b8128bdb7bcb6d726852c
-xpack-aarch64-none-elf-gcc-11.2.1-1.1-darwin-x64.tar.gz
+95f5b1355019fdcbf25b533cc15a76305c78b63d09d251f83fa85ea41dac6084
+xpack-aarch64-none-elf-gcc-11.2.1-1.2-darwin-x64.tar.gz
 
-83f2630bcc0fc04bacea477737dea76e2335e7380c38d4860d943bba46d6cef2
-xpack-aarch64-none-elf-gcc-11.2.1-1.1-linux-arm.tar.gz
+b00d208e9247f01aad45563df3586a3a1e8ed88cf74c8f36c3d577215025e941
+xpack-aarch64-none-elf-gcc-11.2.1-1.2-linux-arm.tar.gz
 
-9e2753aea1d019f5c7853932b6b1afb623de11e4abe8ab367341a648d5b0e941
-xpack-aarch64-none-elf-gcc-11.2.1-1.1-linux-arm64.tar.gz
+8b5f80fe0ffe2376f193fe7b6835f553909c9384370bd991d8ec9a6ca926e978
+xpack-aarch64-none-elf-gcc-11.2.1-1.2-linux-arm64.tar.gz
 
-f422b9a3a26c9801598233c9621d218c3c268547ed302d390061b2e9103bd188
-xpack-aarch64-none-elf-gcc-11.2.1-1.1-linux-x64.tar.gz
+70d46ce9389c6b1d14021267fe0342e68394acd68a4ccca6f263ca5e676f4ded
+xpack-aarch64-none-elf-gcc-11.2.1-1.2-linux-x64.tar.gz
 
-e5c5bb40fc8820a45ebd359e61e82a98b6d0c136e24628b2cba668261a9d8683
-xpack-aarch64-none-elf-gcc-11.2.1-1.1-win32-x64.zip
+67f4e04f597a15204fa3bd244cd53f6cecb994973368013f695357be0fe0ff78
+xpack-aarch64-none-elf-gcc-11.2.1-1.2-win32-x64.zip
 
 ```
 
