@@ -147,9 +147,9 @@ an xPack, it is recommended to suffix the project name with '-xpack'." %}
 
 With a browser, at GitHub, select your account or organisation.
 (for the purposes of this project, here are some organisations that use xPacks:
-[xPacks](https://github.com/xpacks),
-[xPacks Dev Tools](https://github.com/xpack-dev-tools),
-[µOS++](https://github.com/micro-os-plus)).
+[xPacks Dev Tools](https://github.com/xpack-dev-tools/),
+[µOS++](https://github.com/micro-os-plus/),
+[3rd party source xPacks](https://github.com/xpack-3rd-party/)).
 
 - click the green **New** button to create a new repository
   - enter **Repository name**; use all lowercase and hyphens to
