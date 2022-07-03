@@ -50,7 +50,7 @@ toolchain are also supported, with the following improvements:
 
 * a newer `newlib` was included, which supports the 'underscore' syscall functions
 * the mandatory reference to `libgloss` in the linker configuration was removed
-* the `march=rv32imaf/mabi=ilp32f` library was added to the list of multilibs
+* the `march=rv32imaf/mabi=ilp32f` library was added to the list of multi-libs
 * support for `newlib-nano` was added
 * the standard documentation, in PDF and HTML, was added
 

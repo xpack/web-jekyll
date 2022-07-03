@@ -37,7 +37,7 @@ ARMv7 and Aarch64 binaries are the **Raspberry Pi** class devices
 
 The binary files are available from GitHub [releases]({{ page.download_url }}).
 
-## Prerquisites
+## Prerequisites
 
 - Intel GNU/Linux 32/64-bit: any system with **GLIBC 2.15** or higher
   (like Ubuntu 12 or later, Debian 8 or later, RedHat/CentOS 7 later,

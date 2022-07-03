@@ -187,7 +187,7 @@ with different minor numbers.
 Most modern distributions come with both Python 2 and 3 available as
 native packages, but some come with versions different from 2.7 and 3.7.
 
-For consistent results, the GDB binaries were built agains the official
+For consistent results, the GDB binaries were built against the official
 Python binaries, available from
 [Python Source Releases](https://www.python.org/downloads/source/):
 
@@ -217,7 +217,7 @@ make
 sudo make altinstall
 ```
 
-To check where the new biraries were installed:
+To check where the new binaries were installed:
 
 ```console
 $ which python2.7
@@ -244,7 +244,7 @@ make
 sudo make altinstall
 ```
 
-To check where the new biraries were installed:
+To check where the new binaries were installed:
 
 ```console
 $ which python3.7

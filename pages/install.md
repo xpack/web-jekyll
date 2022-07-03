@@ -60,7 +60,7 @@ to simplify maintenance, the preferred method is to install Node/npm
 in a custom location in the home folder, using a version
 manager or by directly unpacking the archive distributions.
 Regardless how and where it is installed, the `node`
-executable must be in the curent path." %}
+executable must be in the current path." %}
 
 {% capture version_manager %}
 
@@ -195,7 +195,7 @@ or in the Git shell terminal.
 
 Recent Windows versions use PowerShell, which has a more restrictive
 execution policy intended to prevent
-the execution of malicious scripts; unfortunatelly this also prevents
+the execution of malicious scripts; unfortunately this also prevents
 the execution of node.js applications.
 
 If you get a message in the console as the one below:

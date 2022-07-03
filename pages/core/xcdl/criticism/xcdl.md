@@ -18,4 +18,4 @@ Along with the many features, XCDL also inherits from eCos a good degree of comp
 
 At first look the XCDL files seem pretty verbose, requiring many lines, including a lot of descriptive properties, like `description`. However the advantages are seen when using the graphical interface, where these properties belong.
 
-To be noted the deliberate decision to make the generated file names and definitions explicit, instead of resorting to nonintuitive default settings, derived from the preprocessor definition, like in eCos.
+To be noted the deliberate decision to make the generated file names and definitions explicit, instead of resorting to non-intuitive default settings, derived from the preprocessor definition, like in eCos.

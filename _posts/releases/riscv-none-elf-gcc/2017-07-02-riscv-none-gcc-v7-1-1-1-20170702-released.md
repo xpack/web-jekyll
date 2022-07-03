@@ -58,7 +58,7 @@ march=rv64imac/mabi=lp64
 march=rv64imafdc/mabi=lp64d
 ```
 
-Plese note that not all possible combinations of architecture and ABI have libraries.
+Please note that not all possible combinations of architecture and ABI have libraries.
 
 ## Changes
 
@@ -82,7 +82,7 @@ Binaries for **Windows**, **macOS** and **GNU/Linux** are provided. For Windows 
 
 Instructions on how to install them are available in the [How to install the RISC-V toolchain?]({{ site.baseurl }}/riscv-none-embed-gcc/install/) page.
 
-For better control and repetability, the build scripts use Docker containers; all files required during builds are available as a separate [gnu-mcu-eclipse/riscv-none-gcc-build](https://github.com/gnu-mcu-eclipse/riscv-none-gcc-build) project.
+For better control and repeatability, the build scripts use Docker containers; all files required during builds are available as a separate [gnu-mcu-eclipse/riscv-none-gcc-build](https://github.com/gnu-mcu-eclipse/riscv-none-gcc-build) project.
 
 ## Known problems
 

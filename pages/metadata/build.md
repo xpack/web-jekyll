@@ -251,7 +251,7 @@ A typical blinky project might look like:
 - **build configuration**: a complete group of definitions which will
   eventually result in an artefact; in a project, the build
   configuration names (including those used for tests), must be unique;
-  for simple projects usualy there are only two top configurations,
+  for simple projects usually there are only two top configurations,
   `debug`/`release`; for
   complex projects there can be more, for different targets or,
   in test cases, even for different toolchains;
@@ -280,7 +280,7 @@ dependencies.
 
 Inner files can include other files, at any depth.
 
-Multiple occurences of the same definitions trigger warnings and are
+Multiple occurrences of the same definitions trigger warnings and are
 ignored.
 
 Example:

@@ -137,7 +137,7 @@ xpm install <tarball url>
 xpm install <folder>
 ```
 
-When refering to GitHub by semver, a tag named `vX.Y.Z` must be present.
+When referring to GitHub by semver, a tag named `vX.Y.Z` must be present.
 
 For detail please see [`npm install`](https://docs.npmjs.com/cli/install).
 

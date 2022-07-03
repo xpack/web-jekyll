@@ -15,7 +15,7 @@ binaries** for GNU/Linux, macOS and Windows.
 
 ## How it works?
 
-XBB achieves repetability and consistency by compiling all dependencies
+XBB achieves repeatability and consistency by compiling all dependencies
 from sources.
 
 This applies both to the development environment and to the final
@@ -95,7 +95,7 @@ drwxr-xr-x  12 root root       384 Oct 30 19:00 riscv-none-embed-gcc-8.3.0-1.1
 
 In this simple configuration, the builds run with root permissions; with
 more elaborate configurations it is possible to start the Docker images
-with user rights, but they are beyound the scope of this document.
+with user rights, but they are beyond the scope of this document.
 
 ## How to use the XBB tools
 

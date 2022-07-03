@@ -35,7 +35,7 @@ The **xPack Meson Build** is a cross-platform binary distribution of
 an open source project hosted on
 [GitHub](https://github.com/mesonbuild/meson/).
 
-The Meson project is writen in Python. To simplify dependencies management,
+The Meson project is written in Python. To simplify dependencies management,
 the xPack Meson Build embeds a Python3 instance.
 
 ## Benefits

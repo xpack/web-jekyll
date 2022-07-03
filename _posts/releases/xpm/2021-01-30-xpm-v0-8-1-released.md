@@ -96,12 +96,12 @@ is generally compatible with previous 0.7.x releases.
   difficult; fixed
 - [#74] - in certain conditions, when the internal links were
   no longer available, the `link` command reported an
-  internal error (`ENOENT`), insted of a more user friendly message
+  internal error (`ENOENT`), instead of a more user friendly message
   informing about the broken link; fixed
 
 ### Other changes
 
-- [#75] - the `build` command was removed, its functioanlity is already
+- [#75] - the `build` command was removed, its functionality is already
   provided by the more general `run` command
 
 ### Known problems

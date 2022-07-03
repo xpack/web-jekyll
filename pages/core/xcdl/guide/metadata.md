@@ -105,7 +105,7 @@ The hierarchy serves two purposes. It allows options to be controlled en masse, 
 
 Each package has one top-level XCDL file meta/xcdl.xml. The first object in the top-level file should be `<package>` and there should be only one `<package>` object per package.
 
-By default, an object is placed added to the children list of the top level object defined in the parent folder, so the objects hierarchy follows the file system folders hierarchy, but it is possible to override this using a parent property. This is generally useful for separately distributed packages, to attach in a convenient location in the hierarchy. Components, options and interfaces can also be reparented, but this is less common.
+By default, an object is placed added to the children list of the top level object defined in the parent folder, so the objects hierarchy follows the file system folders hierarchy, but it is possible to override this using a parent property. This is generally useful for separately distributed packages, to attach in a convenient location in the hierarchy. Components, options and interfaces can also be re-parented, but this is less common.
 
 Components can also contain options and other XCDL objects, in fact that is what distinguishes them from options. These can be defined in the body of the `<component>`:
 
@@ -127,7 +127,7 @@ Components can also contain options and other XCDL objects, in fact that is what
 
     </component>
 
-Nesting options inside the bodies of components like this is fine for simple packages with only a limited number of configuration options, but it becomes unsatisfactory as the number of options increases. Instead it is possible to split the XCDL data into multiple XCDL file, on a per-component basis. The `<includeFile>` property should be used for this. For example, in the case of the C library all stdio-related configuration options could be put into stdio.xml, and the top-level XCDL file libc.xml would contain the following:
+Nesting options inside the bodies of components like this is fine for simple packages with only a limited number of configuration options, but it becomes unsatisfactory as the number of options increases. Instead it is possible to split the XCDL data into multiple XCDL file, on a per-component basis. The `<includeFile>` property should be used for this. For example, in the case of the C library all stdio-related configuration options could be put into `stdio.xml`, and the top-level XCDL file `libc.xml` would contain the following:
 
     <package name="libc">
       ...
@@ -157,7 +157,7 @@ This section lists the various properties, grouped by purpose. Each property als
 
 ### Information-providing properties
 
-Users can only be expected to manipulate configuration options sensibly if they are given sufficient information about these options. There are three properties which serve to explain an option in plain text: the `<display>` property gives a textual alias for an option, which is usually more comprehensible than something like *[time zones]*; the `<description>` property gives a longer description, typically a paragraph or so; the `<doc>` property specifies the location of additional online documentation related to a configuration option. In the context of a graphical tool the `<display>` string will be the primary way for users to identify configuration options; the <description> paragraph will be visible whenever the option is selected; the online documentation will only be accessed when the user explicitly requests it.
+Users can only be expected to manipulate configuration options sensibly if they are given sufficient information about these options. There are three properties which serve to explain an option in plain text: the `<display>` property gives a textual alias for an option, which is usually more comprehensible than something like *[time zones]*; the `<description>` property gives a longer description, typically a paragraph or so; the `<doc>` property specifies the location of additional online documentation related to a configuration option. In the context of a graphical tool the `<display>` string will be the primary way for users to identify configuration options; the `<description>` paragraph will be visible whenever the option is selected; the online documentation will only be accessed when the user explicitly requests it.
 
     <package name="uitron">
 
@@ -188,7 +188,7 @@ The `<parent>` property can be used to move a XCDL entity somewhere else in the 
       ...
     </package>
 
-The `<parent>` property can also be used in the body of a `<component>`, `<option>` or `<interface>`, but this is less common. However care has to be taken since excessive reparenting can be confusing. Care also has to be taken when reparenting below some other package that may not actually be loaded in a given configuration, since the resulting behaviour is undefined.
+The `<parent>` property can also be used in the body of a `<component>`, `<option>` or `<interface>`, but this is less common. However care has to be taken since excessive re-parenting can be confusing. Care also has to be taken when re-parenting below some other package that may not actually be loaded in a given configuration, since the resulting behaviour is undefined.
 
 The `<includeFile>` property can only be used in the body of a `<component>` object. The property takes a single filename as argument, and this should be another XCDL file containing additional options, subcomponents and interfaces that should go below the current component in the hierarchy. If the directory layout conventions are observed then the component framework will look for the specified file relative to the meta subdirectory of the package, otherwise the filename will be treated as relative to the package’s top-level directory.
 
@@ -222,11 +222,11 @@ This type indicates that only the boolean part is user-modifiable: if active, th
 -   `<valueType>bool \| int \| float \| string</valueType>` <br>
 Both the boolean and the data part of the option are user-modifiable. To make the boolean part non user-configurable, use `<configurable>false</configurable>`. To make the data part non user-configurable, use `<computed>true</computed>`.
 
-For more details of XCDL flavors and how a flavor affects expression evaluation, and other consequences, see the Section called Values and Expressions.
+For more details of XCDL flavors and how a flavour affects expression evaluation, and other consequences, see the Section called Values and Expressions.
 
 The `<valueType>` property cannot be used for a package because packages always have the *string* type. Options and components have the *none* type by default, since most configuration choices are simple yes-or-no choices. Interfaces have the *int* type by default.
 
-The <configurable> property can disable the change of the boolean part in the interface, so the option cannot be enabled/disabled by the user.
+The `<configurable>` property can disable the change of the boolean part in the interface, so the option cannot be enabled/disabled by the user.
 
 The `<computed>` property can be used for options which should not be user-modifiable, but which instead are fixed by the target hardware or determined from the current values of other options. In general calculated options should be avoided, since they can be confusing to users who need to figure out whether or not a particular option can actually be changed. There are a number of valid uses for calculated options, and quite a few invalid ones as well. The reference packages should be consulted for further details. The property takes an ordinary XCDL expression as argument, for example:
 
@@ -241,7 +241,7 @@ The `<computed>` property can be used for options which should not be user-modif
 
     </option>
 
-The `<computed>` property cannot be used for packages or interfaces. The value of a package always corresponds to the version of that package which is loaded, and this is under user control. Interfaces are implicitly calculated, based on the number of active and enabled implementors.
+The `<computed>` property cannot be used for packages or interfaces. The value of a package always corresponds to the version of that package which is loaded, and this is under user control. Interfaces are implicitly calculated, based on the number of active and enabled implementers.
 
 The `<defaultValue>` property is similar to `<computed>`, but only specifies a default value which users can modify. Again this property is not relevant to packages or interfaces. A typical example would be:
 
@@ -256,7 +256,7 @@ The `<defaultValue>` property is similar to `<computed>`, but only specifies a d
         ...
     </option>
 
-The `<legalValues>` property imposes a constraint on the possible values of the data part of an option. Hence it is only applicable to options with the data or booldata flavors. It cannot be used for a package since the only valid value for a package is its version number. The arguments to the <legalValues> property should constitute a XCDL list expression.
+The `<legalValues>` property imposes a constraint on the possible values of the data part of an option. Hence it is only applicable to options with the data or booldata flavors. It cannot be used for a package since the only valid value for a package is its version number. The arguments to the `<legalValues>` property should constitute a XCDL list expression.
 
     <component name="libc">
 
@@ -274,7 +274,7 @@ The `<legalValues>` property imposes a constraint on the possible values of the 
       </option>
     </component>
 
-The <activeIf> property does not relate directly to an option’s value, but rather to its active state. Usually this is controlled via the configuration hierarchy: if the *[libc/stdio]* component is disabled then all options below it are inactive and do not have any consequences. In some cases the hierarchy does not provide sufficient control, for example an option should only be active if two disjoint sets of conditions are satisfied: the hierarchy could be used for one of these conditions, and an additional <activeIf> property could be used for the other one. The arguments to <activeIf> should constitute a XCDL goal expression.
+The `<activeIf>` property does not relate directly to an option’s value, but rather to its active state. Usually this is controlled via the configuration hierarchy: if the *[libc/stdio]* component is disabled then all options below it are inactive and do not have any consequences. In some cases the hierarchy does not provide sufficient control, for example an option should only be active if two disjoint sets of conditions are satisfied: the hierarchy could be used for one of these conditions, and an additional `<activeIf>` property could be used for the other one. The arguments to `<activeIf>` should constitute a XCDL goal expression.
 
     <!--  Do not provide extra semaphore debugging if there are no semaphores -->
     <option name="binsem">
@@ -353,7 +353,7 @@ Most of the source files that go into a package should simply be compiled with t
 
 The arguments to the `<sourceFile>` property should be one source file. Typically most of the sources will be needed for the package as a whole, and hence they will be listed in several `<sourceFile>` properties in the object body. Some sources may be specific to particular configuration options, in other words there is no point in compiling them unless that option is enabled, in which case the sources should be listed in a compile property in the corresponding `<option>`, `<component>` or `<interface>` body.
 
-Some packages may have more complicated build requirements, for example they may involve a special target such as a linker script which should not end up in the usual library, or they may involve special build steps for generating an object file. The <make> and <make_object> properties provide support for such requirements, for example:
+Some packages may have more complicated build requirements, for example they may involve a special target such as a linker script which should not end up in the usual library, or they may involve special build steps for generating an object file. The `<make>` and `<make_object>` properties provide support for such requirements, for example:
 
     <package name="am33">
 
@@ -438,9 +438,9 @@ Any options which are not in the current configuration are handled as follows:
 
 The next issue to consider is whether or not a particular option is active. Configuration options are organized in a hierarchy of components and sub-components. For example the C library package contains a `component('libc/stdio')` containing all the options related to standard I/O. If a user disables the component as a whole then all the options below it become inactive: it makes no sense to disable all stdio functionality and then manipulate the buffer sizes.
 
-Inactive is not quite the same as disabled, although the effects are similar. The value of an inactive option is preserved. If the user modifies a buffer size option, then disables the whole stdio component, the buffer size value remains in case the stdio component is re-enabled later on. Some tools such as the graphical configuration tool will treat inactive options specially, for example such options may be grayed out.
+Inactive is not quite the same as disabled, although the effects are similar. The value of an inactive option is preserved. If the user modifies a buffer size option, then disables the whole stdio component, the buffer size value remains in case the stdio component is re-enabled later on. Some tools such as the graphical configuration tool will treat inactive options specially, for example such options may be greyed out.
 
-The active or inactive state of an option may affect other packages. For example a package may use the sprintf() function and require support for floating point conversions, a constraint that is not satisfied if the relevant option is inactive. It is necessary to define exactly what it means for an option to be inactive:
+The active or inactive state of an option may affect other packages. For example a package may use the `sprintf()` function and require support for floating point conversions, a constraint that is not satisfied if the relevant option is inactive. It is necessary to define exactly what it means for an option to be inactive:
 
 1.  An option is inactive if its parent is either inactive or disabled. For example if `component('libc/stdio')` is disabled then all the options and sub-components become inactive; since `component('libc/stdio/floating point')` is now inactive, `component('libc/stdio/floating point/printf')` is inactive as well.
 2.  Options may also be inactive as a result of an `<activeIf>` property. This is useful if a particular option is only relevant if two or more disjoint sets of conditions need to be satisfied, since the hierarchical structure can only cope with at most one such set.

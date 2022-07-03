@@ -176,7 +176,7 @@ available yet.
 in certain conditions, with some linker script memory configurations,
 the emulator failed complaining that the flash regions overlap; the
 problem was fixed on in v2.11 and the two related patches were cherry
-picked and addapted to this distribution.
+picked and adapted to this distribution.
 
 ## Enhancements
 

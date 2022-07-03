@@ -13,6 +13,7 @@ date: 2017-10-09 16:46:00 +0300
 The `xmake.json` file defines the metadata required by the xmake build process.
 
 This file is used in two contexts:
+
 - when located in the project root, or in a test folder, this file
 defines how to build the artefact (executable or library); it must
 have a mandatory `name` field.
@@ -627,4 +628,3 @@ not define exclusion from a child folder).
 
 - add linker definitions
 - add pre/post actions
-

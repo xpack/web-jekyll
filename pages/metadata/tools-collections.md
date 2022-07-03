@@ -11,7 +11,7 @@ date: 2020-11-31 16:50:00 +0300
 ## Overview
 
 Tool collections are generic sets of programming
-tools used to perform diferent task.
+tools used to perform different task.
 
 Toolchains are a good example of such tools sets, and usually include
 a compiler, a linker and other related tools.

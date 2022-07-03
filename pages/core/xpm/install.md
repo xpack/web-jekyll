@@ -229,7 +229,7 @@ folder is [How to Prevent Permissions Errors](https://docs.npmjs.com/getting-sta
 ## `npx`
 
 If, for any reason, you decide not to install xpm, you can still
-benefit from it by using the `npx` comand, as a trampoline to start xpm:
+benefit from it by using the `npx` command, as a trampoline to start xpm:
 
 ```console
 $ npx xpm --version
@@ -278,7 +278,7 @@ defaults write com.apple.Finder AppleShowAllFiles true
 killall Finder
 ```
 
-Another anoying behaviour of the file browser is to hide names starting
+Another annoying behaviour of the file browser is to hide names starting
 with `.` (dot), which is a real pity since the binary packages are
 extracted in a folder named `.content`.
 

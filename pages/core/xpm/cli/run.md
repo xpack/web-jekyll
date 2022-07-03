@@ -45,7 +45,7 @@ in `package.json`.
 Options passed after the double dash separator are not processed
 but appended _as is_ at the end of the command string.
 
-Before creating new processes to run the comman, `xpm run` prepends
+Before creating new processes to run the command, `xpm run` prepends
 `xpacks/.bin:node_modules/.bin` to the environment `PATH`.
 
 {% include important.html content="This has the effect that all

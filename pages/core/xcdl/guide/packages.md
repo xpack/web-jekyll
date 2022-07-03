@@ -71,7 +71,7 @@ The full and up-to-date definition of this schema is available from the separate
 
 ### `name`
 
-A string that must uniquely identify the project node in the local repository hierarchy. It does not need to match the GitHub repository name, althought usually it is closely related.
+A string that must uniquely identify the project node in the local repository hierarchy. It does not need to match the GitHub repository name, although usually it is closely related.
 
 The parent path must have at least one level, and generally defines the originator of the package (user or organization).
 
@@ -146,7 +146,7 @@ Syntax (array of objects):
 
 The `archives` array define an ordered list of locations where the binary package can be downloaded from.
 
-The inner `repository` object defines the location where the release sources are available; only the `tag` property is mandatory; if this location is identical with the top definition, the `type` and `url` properties may be ommited.
+The inner `repository` object defines the location where the release sources are available; only the `tag` property is mandatory; if this location is identical with the top definition, the `type` and `url` properties may be omitted.
 
 Example:
 

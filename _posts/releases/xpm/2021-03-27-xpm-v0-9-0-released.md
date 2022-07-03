@@ -86,7 +86,7 @@ template engine to process substitutions in actions/scripts.
 
 Other enhancements:
 
-- [#35] - to better accomodate future enhancements, and spot cases
+- [#35] - to better accommodate future enhancements, and spot cases
   when an old xpm is used to process a `package.json` which includes
   new content, the `xpack.checkMinimumXpmRequired` property was added
 - [#93] - processing for `--dry-run` was implemented for `xpm install`

@@ -130,7 +130,7 @@ of the `master` branch." %}
 The easiest way to create new projects would be to use an existing
 GitHub Template project. Unfortunately, at the time of testing,
 the repositories resulted
-by using this method had weirds histories,
+by using this method had weird histories,
 like disconnected commits; until this will be fixed,
 this method is not recommended." %}
 
@@ -218,7 +218,7 @@ code on a separate branch, like `originals`, and later treat it
 as the `master` branch.
 
 With each upstream release, while on the `originals` branch,
-fuly remove the content and extract the newly released archive.
+fully remove the content and extract the newly released archive.
 
 Then merge the update `originals` branch into the `xpack` branch.
 

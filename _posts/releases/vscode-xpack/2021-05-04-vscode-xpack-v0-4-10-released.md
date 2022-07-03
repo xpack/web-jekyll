@@ -47,7 +47,7 @@ is generally compatible with previous releases.
 - [#6] - add a command to create a new configurations by duplicating an
   existing one
 - [#5] - add xpack.exclude to configuration
-- [#2] - add code to automatically exlude `**/xpacks/**` from npm searches
+- [#2] - add code to automatically exclude `**/xpacks/**` from npm searches
 - [#4] - add configuration variable for maxDepthLevel
 - [#14] - add configuration variable for the log level
 

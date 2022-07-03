@@ -73,7 +73,7 @@ $
 Create the xPack using a template. The template itself is an xPack
 with a specific code that implements a template API.
 
-Example: Create a project in an interractive session by answering
+Example: Create a project in an interactive session by answering
 lots of questions:
 
 ```console

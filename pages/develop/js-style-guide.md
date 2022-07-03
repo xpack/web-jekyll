@@ -73,7 +73,7 @@ of sharing common data between multiple instances of objects created
 inside the same module, but if not handled correctly this may have
 unexpected results.
 
-The general recommendation is to **make the modules reentrant**.
+The general recommendation is to **make the modules re-entrant**.
 In practical terms, **do not use module-global variables** at all;
 make the module **export a class, and create instances of it**
 whenever needed; for sharing data between instances,

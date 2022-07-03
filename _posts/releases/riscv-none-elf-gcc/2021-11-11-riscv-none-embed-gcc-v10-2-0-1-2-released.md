@@ -248,7 +248,7 @@ options are supported, and there are minimal functional changes
 
 The SiFive v2020.12.0 release no longer includes libraries without
 the C (compressed) instructions; however there are still many RISC-V designs,
-like gatecount/area conscious soft IP implementation targeting FPGA without
+like gate count/area conscious soft IP implementation targeting FPGA without
 compressed instructions; to
 support them too, in addition to the libraries included in the SiFive
 toolchain, in the xPack distribution the list of multi-libs was expanded

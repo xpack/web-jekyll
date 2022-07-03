@@ -1,5 +1,5 @@
 ---
-itle: The commands line reference (outdated)
+title: The commands line reference (outdated)
 permalink: /xcdl/reference/commands/
 
 date: 2015-11-15 12:00:00 +0200
@@ -27,7 +27,7 @@ Similar to `npm access`.
 
 Similar to `npm build`, but it might have different semantics.
 
-```
+```sh
 xpack build [--target <name>] [--toolchain <name>] [--profile <name>] -- ...
 xpack build --test <name> ... [--target <name>] [--toolchain <name>] [--profile <name>] -- ...
 xpack build --tests -- ...

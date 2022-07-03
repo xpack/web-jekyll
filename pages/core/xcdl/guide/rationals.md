@@ -6,7 +6,7 @@ date: 2015-11-16 12:00:00 +0200
 
 ---
 
-## Why XCDL? (for the impacient)
+## Why XCDL? (for the impatient)
 
 ### The very short answer
 

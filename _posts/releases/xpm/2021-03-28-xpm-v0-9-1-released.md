@@ -69,7 +69,7 @@ build folders (like debug/release, but also multi-platform builds).
 
 ### Enhancements
 
-- [#97] - the prefered property used to define configurations is now
+- [#97] - the preferred property used to define configurations is now
   `buildConfigurations`, instead of `configurations`;
 
 ### Other changes

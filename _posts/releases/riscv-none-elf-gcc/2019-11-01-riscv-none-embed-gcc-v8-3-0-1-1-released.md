@@ -60,7 +60,7 @@ Starting with v8.2.0-2, this distribution closely follows the official
 This release is based on the
 [v2019.08.0](https://github.com/sifive/freedom-tools/releases/tag/v2019.08.0)
 release, and includes the SiFive extensions (like CLIC interrupts and a an
-even larger multilib set).
+even larger multi-lib set).
 
 The following commits (from [sifive/freedom-tools](https://github.com/sifive/freedom-tools/tree/master/src)) were used:
 
@@ -141,9 +141,9 @@ options are supported, and there are minimal functional changes
 - `libgloss` was removed from the list of libraries always linked to the
   application, since it issues `ECALL`
   instructions that fail in bare metal environments
-- `march=rv32imaf/mabi=ilp32f` was added to the list of multilibs
+- `march=rv32imaf/mabi=ilp32f` was added to the list of multi-libs
 - the standard documentation, in PDF and HTML, is included
-- experimental support for Pyhton in GDB was added
+- experimental support for Python in GDB was added
 
 ## newlib-nano
 

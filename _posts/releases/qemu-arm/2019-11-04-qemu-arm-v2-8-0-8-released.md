@@ -109,7 +109,7 @@ available yet.
   were added to the F1 GPIO code, crashing QEMU for F1 targets; fixed;
 - [[#2](https://github.com/xpack-dev-tools/qemu/issues/2)] due an error
   in a previous patch enabling custom RAM sizes, the actual device RAM
-  size was overriden by 128 and small boards had more memory than real;
+  size was overridden by 128 and small boards had more memory than real;
   fixed.
 
 ## Known problems

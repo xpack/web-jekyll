@@ -135,7 +135,7 @@ Each node must have a string property called `description`. Descriptions are rea
       ...
     }
 
-When used to decorate a GUI, the node description is generally shwown as a tooltip, activated when the mouse hovers over the node, or in additional views showing all node details.
+When used to decorate a GUI, the node description is generally shown as a tooltip, activated when the mouse hovers over the node, or in additional views showing all node details.
 
 #### Node children
 

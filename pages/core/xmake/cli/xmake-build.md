@@ -14,11 +14,12 @@ Generate the build files and build.
 
 ## Synopsis
 
-```
+```sh
 xmake build [--target <name>]* [--toolchain <name>]* [--profile <name>]* [-- <args>]
 ```
 
 Aliases:
+
 - `b`
 - `bild`
 
@@ -51,4 +52,3 @@ $ xmake build -- clean all
 When executed, this command creates sub-folders like `darwin-clang-debug` and
 `darwin-clang-release` and invokes `make` in each folder
 to run the actual build.
-

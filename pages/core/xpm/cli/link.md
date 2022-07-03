@@ -10,13 +10,13 @@ date: 2021-03-27 16:16:00 +0200
 
 ## Synopsis
 
-Invoked with no package arguments in a writable dependency folder:
+Invoked with no package arguments in a writeable dependency folder:
 
 ```sh
 xpm link [<options> ...]
 ```
 
-Invoked with arguments referring to writable dependencies:
+Invoked with arguments referring to writeable dependencies:
 
 ```sh
 xpm link [<options> ...] [<packs>...]
@@ -36,13 +36,13 @@ development of source xPacks while being used as dependencies in
 an application.
 
 It does this by replacing the links to the read-only folders in the
-global xPacks store by links to writable folders.
+global xPacks store by links to writeable folders.
 
 This is done in two steps:
 
 - create a special link (called `.link`) from the global xPacks store
-to the writable folder; this is done by invoking `xpm link` in the
-writable folder
+to the writeable folder; this is done by invoking `xpm link` in the
+writeable folder
 - replace the link in the application with a link to the above `.link`;
 this is done by invoking `xpm link <package>` in the application folder.
 

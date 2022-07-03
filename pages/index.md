@@ -1,10 +1,10 @@
 ---
-title: "The xPack Build Framework"
+title: "The xPack Reproducible Build Framework"
 permalink: /
 
 keywords: packages, code sharing, reusing, libraries, applications, c/c++, embedded
 toc: false
-summary: Tools to manage, configure and build complex, package based, multi-target projects.
+summary: Tools to manage, configure and build complex, package based, multi-target projects, in a reproducible way.
 
 date: 2019-06-20 23:11:00 +0300
 
@@ -19,7 +19,7 @@ Based on a simple multi-version dependencies manager
 the xPack project aims to provide a set of cross-platform tools
 to manage, configure and build complex,
 modular, multi-target (multi-architecture, multi-board, multi-toolchain)
-projects, with an emphasis on **C/C++** and
+projects, in a reproducible way, with an emphasis on **C/C++** and
 bare-metal embedded projects.
 
 The expected benefits are more efficient **code sharing** and
@@ -59,7 +59,7 @@ Based on the installed content, there are currently two
 types of xPacks: **source** and **binary**:
 
 - **source xPacks** are packages that install source files,
-generally libraries used by the project
+generally libraries dependencies
 - **binary xPacks** are packages that install binary/executable files,
 generally tools used during the build process, like toolchains,
 builders, etc.
@@ -68,8 +68,8 @@ For more details, read the [xPack 101]({{ site.baseurl }}/intro/) page.
 
 The entire xPack project is split amongst several groups,
 published as separated GitHub _organisations_
-([xpack](https://github.com/xpack),
-[xpack-dev-tools](https://github.com/xpack-dev-tools),
+([xpack](https://github.com/xpack/),
+[xpack-dev-tools](https://github.com/xpack-dev-tools/),
 [micro-os-plus](https://github.com/micro-os-plus/),
 [xpack-3rd-party](https://github.com/xpack-3rd-party)).
 
@@ -88,16 +88,17 @@ Planned:
 - [`@xpack/xpninja`]({{ site.baseurl }}/xpninja/) - the **xPack Build Runner**
 
 These projects are hosted in the GitHub
-[`xpack`](https://github.com/xpack) organisation.
+[`xpack`](https://github.com/xpack/) organisation.
 
 ## xPack based Development Tools
 
 The main binary tools packed as xPacks are:
 
-- [`@xpack-dev-tools/arm-none-eabi-gcc`]({{ site.baseurl }}/arm-none-eabi-gcc/) - the **xPack Arm Embedded GCC** toolchain
+- [`@xpack-dev-tools/arm-none-eabi-gcc`]({{ site.baseurl }}/arm-none-eabi-gcc/) - the **xPack GNU Arm Embedded GCC** toolchain
 - [`@xpack-dev-tools/openocd`]({{ site.baseurl }}/openocd/) - the **xPack OpenOCD**
-- [`@xpack-dev-tools/qemu-arm`]({{ site.baseurl }}/qemu-arm/) - the **xPack QEMU Arm Cortex-M**
+- [`@xpack-dev-tools/qemu-arm`]({{ site.baseurl }}/qemu-arm/) - the **xPack QEMU Arm**
 - [`@xpack-dev-tools/riscv-none-elf-gcc`]({{ site.baseurl }}/riscv-none-elf-gcc/) - the **xPack RISC-V Embedded GCC** toolchain
+- [`@xpack-dev-tools/qemu-arm`]({{ site.baseurl }}/qemu-arm/) - the **xPack QEMU RISC-V**
 - [`@xpack-dev-tools/windows-build-tools`]({{ site.baseurl }}/windows-build-tools/) - the **xPack Windows Build Tools**
 - [`@xpack-dev-tools/ninja-build`]({{ site.baseurl }}/ninja-build/) - the **xPack Ninja Build**
 - [`@xpack-dev-tools/cmake`]({{ site.baseurl }}/cmake/) - the **xPack CMake**
@@ -134,41 +135,41 @@ These projects are hosted in the GitHub
 
 Packages part of the µOS++ framework:
 
-- [@micro-os-plus/architecture-cortexm](https://github.com/micro-os-plus/architecture-cortexm-xpack)
+- [@micro-os-plus/architecture-cortexm](https://github.com/micro-os-plus/architecture-cortexm-xpack/)
   A source xPack with the µOS++ Arm Cortex-M architecture port
-- [@micro-os-plus/architecture-riscv](https://github.com/micro-os-plus/architecture-riscv-xpack)
+- [@micro-os-plus/architecture-riscv](https://github.com/micro-os-plus/architecture-riscv-xpack/)
   A source xPack with the µOS++ RISC-V architecture port
-- [@micro-os-plus/architecture-synthetic-posix](https://github.com/micro-os-plus/architecture-synthetic-posix-xpack)
+- [@micro-os-plus/architecture-synthetic-posix](https://github.com/micro-os-plus/architecture-synthetic-posix-xpack/)
   A source xPack with the µOS++ synthetic POSIX architecture port
-- [@micro-os-plus/build-helper](https://github.com/micro-os-plus/build-helper-xpack)
+- [@micro-os-plus/build-helper](https://github.com/micro-os-plus/build-helper-xpack/)
   A source xPack to assist the µOS++ builds
-- [@micro-os-plus/cmsis-os](https://github.com/micro-os-plus/cmsis-os-xpack)
+- [@micro-os-plus/cmsis-os](https://github.com/micro-os-plus/cmsis-os-xpack/)
   A source xPack with the µOS++ CMSIS RTOS compatibility layer
-- [@micro-os-plus/devices-stm32f0-extras](https://github.com/micro-os-plus/devices-stm32f0-extras-xpack)
+- [@micro-os-plus/devices-stm32f0-extras](https://github.com/micro-os-plus/devices-stm32f0-extras-xpack/)
   A source xPack with µOS++ complementary STM32F0 files
-- [@micro-os-plus/devices-stm32f4-extras](https://github.com/micro-os-plus/devices-stm32f4-extras-xpack)
+- [@micro-os-plus/devices-stm32f4-extras](https://github.com/micro-os-plus/devices-stm32f4-extras-xpack/)
   A source xPack with µOS++ complementary STM32F4 files
-- [@micro-os-plus/diag-trace](https://github.com/micro-os-plus/diag-trace-xpack)
+- [@micro-os-plus/diag-trace](https://github.com/micro-os-plus/diag-trace-xpack/)
   A source xPack with the µOS++ trace::printf() tracing infrastructure
-- [@micro-os-plus/libs-c](https://github.com/micro-os-plus/libs-c-xpack)
+- [@micro-os-plus/libs-c](https://github.com/micro-os-plus/libs-c-xpack/)
   A source xPack with µOS++ complementary C library functions
-- [@micro-os-plus/libs-cpp](https://github.com/micro-os-plus/libs-cpp-xpack)
+- [@micro-os-plus/libs-cpp](https://github.com/micro-os-plus/libs-cpp-xpack/)
   A source xPack with complementary C++ library functions
-- [@micro-os-plus/libs-cpp-estd](https://github.com/micro-os-plus/libs-cpp-estd-xpack)
+- [@micro-os-plus/libs-cpp-estd](https://github.com/micro-os-plus/libs-cpp-estd-xpack/)
   A source xPack with µOS++ embedded std:: support
-- [@micro-os-plus/memory-allocators](https://github.com/micro-os-plus/memory-allocators-xpack)
+- [@micro-os-plus/memory-allocators](https://github.com/micro-os-plus/memory-allocators-xpack/)
   A source xPack with µOS++ memory allocators
-- [@micro-os-plus/posix-io](https://github.com/micro-os-plus/posix-io-xpack)
+- [@micro-os-plus/posix-io](https://github.com/micro-os-plus/posix-io-xpack/)
   A source xPack with POSIX I/O
-- [@micro-os-plus/rtos](https://github.com/micro-os-plus/rtos-xpack)
+- [@micro-os-plus/rtos](https://github.com/micro-os-plus/rtos-xpack/)
   A source xPack with the µOS++ RTOS
-- [@micro-os-plus/semihosting](https://github.com/micro-os-plus/semihosting-xpack)
+- [@micro-os-plus/semihosting](https://github.com/micro-os-plus/semihosting-xpack/)
   A source xPack with the portable semihosting definitions
-- [@micro-os-plus/startup](https://github.com/micro-os-plus/startup-xpack)
+- [@micro-os-plus/startup](https://github.com/micro-os-plus/startup-xpack/)
   A source xPack with the µOS++ startup code for bare-metal platforms
-- [@micro-os-plus/utils-lists](https://github.com/micro-os-plus/utils-lists-xpack)
+- [@micro-os-plus/utils-lists](https://github.com/micro-os-plus/utils-lists-xpack/)
   A source xPack with C++ lists support for µOS++
-- [@micro-os-plus/version](https://github.com/micro-os-plus/version-xpack)
+- [@micro-os-plus/version](https://github.com/micro-os-plus/version-xpack/)
   A source xPack with the µOS++ version definitions
 
 ### 3rd Party
@@ -188,7 +189,7 @@ binaries for GNU/Linux, macOS and Windows.
 ## Notifications
 
 To stay up-to-date with new binary tools releases, the recommended way is
-to follow [@xpack_project](https://twitter.com/xpack_project) on Twitter.
+to follow [@xpack_project](https://twitter.com/xpack_project/) on Twitter.
 
 Alternatively you can subscribe to this site RSS feed
 [https://xpack.github.io/feed.xml](https://xpack.github.io/feed.xml).
@@ -217,9 +218,9 @@ If you enjoyed using this project, please let us know; here are some advices:
 up development and help future versions include more and more great
 features, please consider donating; any contribution, small or
 generous, will be highly appreciated;
-- star the projects you liked on GitHub ([xPack](https://github.com/xpack)
+- star the projects you liked on GitHub ([xPack](https://github.com/xpack/)
 or [xPack Dev Tools](https://github.com/xpack-dev-tools/));
-- follow the project on [Twitter](https://twitter.com/xpack_project),
+- follow the project on [Twitter](https://twitter.com/xpack_project/),
 to get notifications on new releases.
 
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">

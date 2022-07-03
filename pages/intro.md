@@ -19,7 +19,7 @@ Well, first, the xPacks project **does not introduce a new package format**,
 but uses exactly the same format as **npm**,
 and xPacks can be stored in the same repositories, public or private.
 
-And **xpm**, the project manager, builds on top of **npm**, the very
+And **xpm**, the project manager, is built on top of **npm**, the very
 popular JavaScript package manager, extending it with new language
 neutral features,
 so things are not that scary as they seemed initially.
@@ -43,7 +43,7 @@ The traditional way of dealing with different versions and variations between
 systems is to add a complex auto-configure mechanism that is able to detect
 which tools/components are present, which versions, and with
 this input do its best to parametrise the process (for example a project build),
-to accomodate for all these differences.
+to accommodate for all these differences.
 
 This approach started with GNU _configure_, and today use even more complex
 solutions, like _CMake_ or _meson_ scripts.
@@ -54,7 +54,7 @@ why not allow the application to ask for the exact versions that are known
 to be compatible, and let an automated tool handle the dependencies?
 
 The **xPacks** project manager can do just this, bring in the project
-exactly the versions needed, thus making the auto-configure step superfluos.
+exactly the versions needed, thus making the auto-configure step superfluous.
 
 ## But what are xPacks?
 
@@ -69,9 +69,9 @@ types of xPacks: **source** and **binary**:
 
 - **source xPacks** are packages that install source files,
 generally libraries used by the project.
-- **binary xPacks** are packages that install standlone binary files,
+- **binary xPacks** are packages that install standalone binary files,
 generally tools used during the build process, like toolchains,
-builders, etc; standalone means they are selfcontained and do not
+builders, etc; standalone means they are self-contained and do not
 depend on other shared libraries or tools.
 
 ## Where does the name come from?
@@ -205,7 +205,7 @@ toolchain to build,
 and not any version but a specific one, like `10.2.1`; it also needs
 the latest CMake, ninja and the liquidjs npm module.
 
-For this, in the project forlder, issue the following command, which
+For this, in the project folder, issue the following command, which
 will install the required tools in a global xPacks store location, and add links
 to them.
 
@@ -503,25 +503,52 @@ TODO: update for a more recent blinky project.
 The high degree of automation provided by xpm is of great help
 for automated test environments.
 
-### Travis
+### GitHub Actions
 
-For example, with the proper scripts configured, the Travis configuration
-for an xPack project is as simple as this:
+For example, with the proper scripts configured, a multi-platform test
+configuration for an xPack project may look like this:
 
 ```yml
-os:
-  - linux
+name: CI on Push
 
-dist: trusty
+on:
+  push:
 
-language: node_js
-node_js:
-  - "node"
+jobs:
+  ci-test:
+    name: 'CI tests'
 
-install:
-  - npm install --global xpm@latest
+    runs-on: ${{ matrix.os }}
 
-script:
-  - xpm install
-  - xpm run test
+    strategy:
+      matrix:
+        node-version: [14]
+        # https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners
+        os: [ubuntu-18.04, macos-10.15, windows-2019]
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 3
+
+    - name: Setup Node.js ${{ matrix.node-version }} on ${{ matrix.os }}
+      # https://github.com/actions/setup-node
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Install xpm on Linux/macOS
+      if: runner.os != 'Windows'
+      run: sudo npm install --global xpm@latest
+
+    - name: Install xpm on Windows
+      if: runner.os == 'Windows'
+      run: npm install --global xpm@latest
+
+    - name: Satisfy project dependencies
+      run: xpm install --quiet
+
+    - name: Run test
+      run: xpm run test
 ```
