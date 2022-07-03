@@ -24,7 +24,7 @@ User pages:
 
 Developer & maintainer pages:
 
-- [GitHub](https://github.com/xpack-dev-tools/cmake-xpack)
+- [GitHub](https://github.com/xpack-dev-tools/cmake-xpack/)
 - [How to build](https://github.com/xpack-dev-tools/cmake-xpack/blob/xpack/README-BUILD.md)
 - [How to publish](https://github.com/xpack-dev-tools/cmake-xpack/blob/xpack/README-RELEASE.md)
 

@@ -14,7 +14,7 @@ tags:
 ---
 
 After several re-branding iterations, the xPack project, available from
-[GitHub](https://github.com/xpack), has a new web site.
+[GitHub](https://github.com/xpack/), has a new web site.
 
 ## GitHub Pages
 
@@ -43,5 +43,3 @@ Switching fom the external builder to GitHub required some changes:
   the `last_updated:` was added to posts
 - the `kramdown` markdown parser does not have the `autolink` option, so
   links must be explicit
-
-

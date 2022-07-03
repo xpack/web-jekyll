@@ -36,7 +36,7 @@ but any location is good as well:
 
 Once the folder is selected, the xPack extension invokes `xpm init` to
 create a new project based on the
-[@xpack/hello-world-template](https://github.com/xpack/hello-world-template-xpack)
+[@xpack/hello-world-template](https://github.com/xpack/hello-world-template-xpack/)
 which is a separate source xPack.
 
 The command is executed in a separate shell, and the console output

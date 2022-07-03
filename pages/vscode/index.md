@@ -15,7 +15,7 @@ Manage typical **multi-configuration projects** (like _Debug/Release_), but
 also complex, **multi-platform**, **multi-architecture**, **multi-toolchain**
 projects, with an emphasis on **modern C/C++** and **embedded** applications.
 
-This sub-project is part of [The xPack Project](https://github.com/xpack).
+This sub-project is part of [The xPack Project](https://github.com/xpack/).
 
 It is intended as a replacement for the managed build system available
 in [Eclipse Embedded CDT](https://projects.eclipse.org/projects/iot.embed-cdt/).
