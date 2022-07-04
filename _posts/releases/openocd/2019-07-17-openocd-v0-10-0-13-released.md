@@ -40,14 +40,14 @@ from the [`npmjs.com`](https://www.npmjs.com) registry.
 
 To install the latest version available, use:
 
-```console
-$ xpm install --global @xpack-dev-tools/openocd@latest
+```sh
+xpm install --global @xpack-dev-tools/openocd@latest
 ```
 
 To install this specific version, use:
 
-```console
-$ xpm install --global @xpack-dev-tools/openocd@{{ page.version }}.{{ page.npm_subversion }}
+```sh
+xpm install --global @xpack-dev-tools/openocd@{{ page.version }}.{{ page.npm_subversion }}
 ```
 
 ## Compliance

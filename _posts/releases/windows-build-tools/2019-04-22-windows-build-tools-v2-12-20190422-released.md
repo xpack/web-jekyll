@@ -53,8 +53,8 @@ The build tools are also available as an
 and can be conveniently installed with
 [`xpm`](https://www.npmjs.com/package/xpm):
 
-```console
-$ xpm install --global @gnu-mcu-eclipse/windows-build-tools
+```sh
+xpm install --global @gnu-mcu-eclipse/windows-build-tools
 ```
 
 This installs the latest available version.

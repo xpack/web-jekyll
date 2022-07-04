@@ -53,8 +53,8 @@ Instructions on how to install the binaries are available in the [How to install
 
 The toolchain is also available as an [xPack](https://www.npmjs.com/package/@gnu-mcu-eclipse/riscv-none-gcc) and can be conveniently installed with [`xpm`](https://www.npmjs.com/package/xpm):
 
-```console
-$ xpm install --global @gnu-mcu-eclipse/riscv-none-gcc
+```sh
+xpm install --global @gnu-mcu-eclipse/riscv-none-gcc
 ```
 
 This installs the latest available version.

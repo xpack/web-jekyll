@@ -51,8 +51,8 @@ The toolchain is also available as an
 and can be conveniently installed with
 [`xpm`](https://www.npmjs.com/package/xpm):
 
-```console
-$ xpm install --global @gnu-mcu-eclipse/arm-none-eabi-gcc
+```sh
+xpm install --global @gnu-mcu-eclipse/arm-none-eabi-gcc
 ```
 
 This installs the latest available version.
