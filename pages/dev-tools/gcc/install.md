@@ -127,10 +127,6 @@ The Windows versions of **xPack GNU Compiler Collection** are packed as ZIP fil
 Download the latest version named like:
 
 - `xpack-gcc-{{ page.version }}-1-win32-x64.zip`
-- `xpack-gcc-{{ page.version }}-1-win32-ia32.zip`
-
-Select the `-x64` file for 64-bit Windows machines and the `-ia32` file
-for 32-bit Windows machines.
 
 {% include note.html content="In case you wonder where the suffix comes
 from, it is exactly the Node.js `process.platform` and `process.arch`.
@@ -247,12 +243,9 @@ The GNU/Linux versions of **xPack GNU Compiler Collection** are packed as
 `.tar.gz` archives. Download the latest version named like:
 
 - `xpack-gcc-{{ page.version }}-1-linux-x64.tar.gz`
-- `xpack-gcc-{{ page.version }}-1-linux-ia32.tar.gz`
 
 As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
 Ubuntu, but can be executed on most recent GNU/Linux distributions.
-Select the `-x64` file for 64-bit machines and the `-ia32` file for 32-bit
-machines.
 
 ### Unpack
 

@@ -117,10 +117,6 @@ The Windows versions of **xPack Windows Build Tools** are packed as ZIP files.
 Download the latest version named like:
 
 - `xpack-windows-build-tools-{{ page.version }}-win32-x64.zip`
-- `xpack-windows-build-tools-{{ page.version }}-win32-x32.zip`
-
-Select the `-x64` file for 64-bit Windows machines and the `-x32` file
-for 32-bit Windows machines.
 
 {% include note.html content="In case you wonder where the suffix comes
 from, it is exactly the Node.js `process.platform` and `process.arch`.

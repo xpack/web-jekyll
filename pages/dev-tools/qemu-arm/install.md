@@ -94,10 +94,6 @@ The Windows versions of **xPack QEMU Arm** are packed as ZIP files.
 Download the latest version named like:
 
 - `xpack-qemu-arm-{{ page.version }}-7-win32-x64.zip`
-- `xpack-qemu-arm-{{ page.version }}-7-win32-x32.zip`
-
-Select the `-x64` file for 64-bit Windows machines and the `-x32` file
-for 32-bit Windows machines.
 
 {% include note.html content="In case you wonder where the suffix comes
 from, it is exactly the Node.js `process.platform` and `process.arch`.
@@ -218,12 +214,9 @@ The GNU/Linux versions of **xPack QEMU Arm** are packed as plain archives.
 Download the latest version named like:
 
 - `xpack-qemu-arm-{{ page.version }}-7-linux-x64.tgz`
-- `xpack-qemu-arm-{{ page.version }}-7-linux-x32.tgz`
 
 As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
 Ubuntu, but can be executed on most recent GNU/Linux distributions.
-Select the `-x64` file for 64-bit machines and the `-x32` file for 32-bit
-machines.
 
 ### Unpack
 
