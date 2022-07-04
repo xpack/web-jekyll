@@ -41,8 +41,8 @@ follow the instructions from the
 With xpm available, installing
 the latest version of the package is quite easy:
 
-```console
-$ xpm install --global @xpack-dev-tools/arm-none-eabi-gcc@latest --verbose
+```sh
+xpm install --global @xpack-dev-tools/arm-none-eabi-gcc@latest --verbose
 ```
 
 This command will always install the latest available version,
@@ -113,7 +113,7 @@ pages.
 
 To check if the xpm installed GCC starts, use something like:
 
-```
+```doscon
 C:\>%USERPROFILE%\AppData\Roaming\xPacks\@xpack-dev-tool\arm-none-eabi-gcc\{{ page.version }}-1.1.1\.content\bin\arm-none-eabi-gcc.exe" --version
 arm-none-eabi-gcc (xPack GNU Arm Embedded GCC, 64-bit) {{ page.version }} 20191025 (release) [ARM/arm-9-branch revision 277599]
 ```
@@ -156,7 +156,7 @@ for the executables in this location." %}
 
 To check if the manually installed GCC starts, use something like:
 
-```
+```doscon
 C:\>%USERPROFILE%\AppData\Roaming\xPacks\arm-none-eabi-gcc\xpack-arm-none-eabi-gcc-{{ page.version }}-1.1\bin\arm-none-eabi-gcc.exe" --version
 arm-none-eabi-gcc (xPack GNU Arm Embedded GCC, 64-bit) {{ page.version }} 20191025 (release) [ARM/arm-9-branch revision 277599]
 ```
@@ -177,7 +177,7 @@ binaries, it is recommended to also install the **Windows Build Tools**." %}
 To check if the xpm installed GCC starts, use something like:
 
 ```console
-$ ~/opt/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/{{ page.version }}-1.1.1/.content/bin/arm-none-eabi-gcc --version
+$ ~/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/{{ page.version }}-1.1.1/.content/bin/arm-none-eabi-gcc --version
 arm-none-eabi-gcc (xPack GNU Arm Embedded GCC, 64-bit) {{ page.version }} 20191025 (release) [ARM/arm-9-branch revision 277599]
 ```
 
@@ -195,14 +195,14 @@ Download the latest version named like:
 
 To manually install the xPack GNU Arm Embedded GCC,
 unpack the archive and copy it to
-`~/opt/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-<version>`:
+`~/.local/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-<version>`:
 
-```console
-$ mkdir -p ~/opt/xPacks/arm-none-eabi-gcc
-$ cd ~/opt/xPacks/arm-none-eabi-gcc
+```sh
+mkdir -p ~/.local/xPacks/arm-none-eabi-gcc
+cd ~/.local/xPacks/arm-none-eabi-gcc
 
-$ tar xvf ~/Downloads/xpack-arm-none-eabi-gcc-{{ page.version }}-1.1-darwin-x64.tar.gz
-$ chmod -R -w xpack-arm-none-eabi-gcc-{{ page.version }}-1.1
+tar xvf ~/Downloads/xpack-arm-none-eabi-gcc-{{ page.version }}-1.1-darwin-x64.tar.gz
+chmod -R -w xpack-arm-none-eabi-gcc-{{ page.version }}-1.1
 ```
 
 You may shorten the last folder name and keep only the version.
@@ -296,7 +296,7 @@ $ tree -L 2 /Users/ilg/Library/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-
 To check if the manually installed GCC starts, use something like:
 
 ```console
-$ ~/opt/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-{{ page.version }}-1.1/bin/arm-none-eabi-gcc --version
+$ ~/.local/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-{{ page.version }}-1.1/bin/arm-none-eabi-gcc --version
 arm-none-eabi-gcc (xPack GNU Arm Embedded GCC, 64-bit) {{ page.version }} 20191025 (release) [ARM/arm-9-branch revision 277599]
 ```
 
@@ -311,7 +311,7 @@ arm-none-eabi-gcc (xPack GNU Arm Embedded GCC, 64-bit) {{ page.version }} 201910
 To check if the xpm installed GCC starts, use something like:
 
 ```console
-$ ~/opt/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/{{ page.version }}-1.1.1/.content/bin/arm-none-eabi-gcc --version
+$ ~/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/{{ page.version }}-1.1.1/.content/bin/arm-none-eabi-gcc --version
 arm-none-eabi-gcc (xPack GNU Arm Embedded GCC, 64-bit) {{ page.version }} 20191025 (release) [ARM/arm-9-branch revision 277599]
 ```
 
@@ -331,14 +331,14 @@ Ubuntu, but can be executed on most recent GNU/Linux distributions.
 
 To manually install the xPack GNU Arm Embedded GCC,
 unpack the archive and copy it to
-`~/opt/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-<version>`:
+`~/.local/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-<version>`:
 
-```console
-$ mkdir -p ~/opt/xPacks/arm-none-eabi-gcc
-$ cd ~/opt/xPacks/arm-none-eabi-gcc
+```sh
+mkdir -p ~/.local/xPacks/arm-none-eabi-gcc
+cd ~/.local/xPacks/arm-none-eabi-gcc
 
-$ tar xvf ~/Downloads/xpack-arm-none-eabi-gcc-{{ page.version }}-1.1-linux-x64.tar.gz
-$ chmod -R -w xpack-arm-none-eabi-gcc-{{ page.version }}-1.1
+tar xvf ~/Downloads/xpack-arm-none-eabi-gcc-{{ page.version }}-1.1-linux-x64.tar.gz
+chmod -R -w xpack-arm-none-eabi-gcc-{{ page.version }}-1.1
 ```
 
 You may shorten the last folder name and keep only the version.
@@ -356,8 +356,8 @@ for the executables in this location." %}
 The result is a structure like:
 
 ```console
-$ tree -L 2 /home/ilg/opt/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-{{ page.version }}-1.1
-/home/ilg/opt/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-{{ page.version }}-1.1
+$ tree -L 2 /home/ilg/.local/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-{{ page.version }}-1.1
+/home/ilg/.local/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-{{ page.version }}-1.1
 ├── arm-none-eabi
 │   ├── bin
 │   ├── include
@@ -450,7 +450,7 @@ $ tree -L 2 /home/ilg/opt/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-{{ pa
 To check if the manually installed GCC starts, use something like:
 
 ```console
-$ ~/opt/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-{{ page.version }}-1.1/bin/arm-none-eabi-gcc --version
+$ ~/.local/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-{{ page.version }}-1.1/bin/arm-none-eabi-gcc --version
 arm-none-eabi-gcc (xPack GNU Arm Embedded GCC, 64-bit) {{ page.version }} 20191025 (release) [ARM/arm-9-branch revision 277599]
 ```
 

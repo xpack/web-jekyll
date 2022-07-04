@@ -38,8 +38,8 @@ follow the instructions from the
 With xpm available, installing
 the latest version of the package is quite easy:
 
-```console
-$ xpm install --global @xpack-dev-tools/qemu-arm@latest --verbose
+```sh
+xpm install --global @xpack-dev-tools/qemu-arm@latest --verbose
 ```
 
 This command will always install the latest available version,
@@ -122,7 +122,7 @@ for the executable in this location." %}
 
 To check if the manually installed QEMU starts, use something like:
 
-```
+```doscon
 C:\>%USERPROFILE%\AppData\Roaming\xPacks\qemu-arm\xpack-qemu-arm-{{ page.version }}-7\bin\qemu-system-gnuarmeclipse.exe" --version
 xPack 64-bit QEMU emulator version {{ page.version }}-7 (v{{ page.version }}-7-20180523-6-gee07085299-dirty)
 Copyright (c) 2003-2016 Fabrice Bellard and the QEMU Project developers
@@ -146,14 +146,14 @@ Download the latest version named like:
 
 To manually install the xPack QEMU Arm,
 unpack the archive and move it to
-`~/opt/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-7`:
+`~/.local/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-7`:
 
-```console
-$ mkdir -p ~/opt
-$ cd ~/opt
+```sh
+mkdir -p ~/.local/xPacks/qemu-arm
+cd ~/.local/xPacks/qemu-arm
 
-$ tar xvf ~/Downloads/xpack-qemu-arm-{{ page.version }}-7-darwin-x64.tgz
-$ chmod -R -w xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-7
+tar xvf ~/Downloads/xpack-qemu-arm-{{ page.version }}-7-darwin-x64.tgz
+chmod -R -w xpack-qemu-arm-{{ page.version }}-7
 ```
 
 {% include note.html content="For manual installs, the recommended
@@ -167,8 +167,8 @@ for the executable in this location." %}
 The result is a structure like:
 
 ```console
-$ tree -L 2 /Users/ilg/Library/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-7
-/Users/ilg/Library/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-7/
+$ tree -L 2 /Users/ilg/.local/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-7
+/Users/ilg/.local/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-7/
 ├── README.md
 ├── bin
 │   ├── libSDL2-2.0.0.dylib
@@ -200,7 +200,7 @@ $ tree -L 2 /Users/ilg/Library/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}
 To check if the manually installed QEMU starts, use something like:
 
 ```console
-$ ~/opt/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-7/bin/qemu-system-gnuarmeclipse --version
+$ ~/.local/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-7/bin/qemu-system-gnuarmeclipse --version
 xPack 64-bit QEMU emulator version {{ page.version }}-7 (v{{ page.version }}-4-20190211-47-g109b69f49a-dirty)
 Copyright (c) 2003-2016 Fabrice Bellard and the QEMU Project developers
 ```
@@ -222,14 +222,14 @@ Ubuntu, but can be executed on most recent GNU/Linux distributions.
 
 To manually install the xPack QEMU Arm,
 unpack the archive and move it to
-`~/opt/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-7`:
+`~/.local/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-7`:
 
-```console
-$ mkdir -p ~/opt
-$ cd ~/opt
+```sh
+mkdir -p ~/.local/xPacks/qemu-arm
+cd ~/.local/xPacks/qemu-arm
 
-$ tar xvf ~/Downloads/xpack-qemu-arm-{{ page.version }}-7-linux-x64.tgz
-$ chmod -R -w xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-7
+tar xvf ~/Downloads/xpack-qemu-arm-{{ page.version }}-7-linux-x64.tgz
+chmod -R -w xpack-qemu-arm-{{ page.version }}-7
 ```
 
 {% include note.html content="For manual installs, the recommended
@@ -245,8 +245,8 @@ for the executable in this location." %}
 The result is a structure like:
 
 ```console
-$ tree -L 2 '/home/ilg/opt/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-7'
-/home/ilg/opt/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-7/
+$ tree -L 2 '/home/ilg/.local/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-7'
+/home/ilg/.local/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-7/
 ├── bin
 │   ├── libglib-2.0.so.0 -> libglib-2.0.so.0.5600.4
 │   ├── libglib-2.0.so.0.5600.4
@@ -286,7 +286,7 @@ $ tree -L 2 '/home/ilg/opt/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-7'
 To check if the manually installed QEMU starts, use something like:
 
 ```console
-$ ~/opt/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-7/bin/qemu-system-gnuarmeclipse --version
+$ ~/.local/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-7/bin/qemu-system-gnuarmeclipse --version
 xPack 64-bit QEMU emulator version {{ page.version }}-7 (v{{ page.version }}-4-20190211-47-g109b69f49a-dirty)
 Copyright (c) 2003-2016 Fabrice Bellard and the QEMU Project developers
 ```

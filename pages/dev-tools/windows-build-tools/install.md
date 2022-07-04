@@ -39,8 +39,8 @@ follow the instructions from the
 With xpm available, installing
 the latest version of the package is quite easy:
 
-```console
-$ xpm install --global @xpack-dev-tools/windows-build-tools@latest --verbose
+```sh
+xpm install --global @xpack-dev-tools/windows-build-tools@latest --verbose
 ```
 
 This command will always install the latest available version,
@@ -102,7 +102,7 @@ page.
 
 To check if the xpm installed `make` starts, use something like:
 
-```
+```doscon
 C:\>%USERPROFILE%\AppData\Roaming\xPacks\@xpack-dev-tools\windows-build-tools\{{ page.version }}-1\.content\bin\make --version
 GNU Make 4.1
 Built for i686-w64-mingw32
@@ -145,7 +145,7 @@ for the executable in this location." %}
 
 To check if the manually installed `make` starts, use something like:
 
-```
+```doscon
 C:\>%USERPROFILE%\AppData\Roaming\xPacks\windows-build-tools\xpack-windows-build-tools-{{ page.version }}\bin\make --version
 GNU Make 4.1
 Built for i686-w64-mingw32

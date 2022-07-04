@@ -113,7 +113,7 @@ GitHub [releases](https://github.com/xpack-dev-tools/riscv-none-elf-gcc-xpack/re
 
 To check if the xpm installed GCC starts, use something like:
 
-```dos
+```doscon
 C:\>%USERPROFILE%\AppData\Roaming\xPacks\@xpack-dev-tools\riscv-none-elf-gcc\{{ page.version }}-{{ page.subversion }}.1\.content\bin\riscv-none-elf-gcc.exe" --version
 riscv-none-elf-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) {{ page.version }}
 ```
@@ -173,7 +173,7 @@ binaries, it is recommended to also install the **Windows Build Tools**." %}
 To check if the xpm installed GCC starts, use something like:
 
 ```console
-$ ~/opt/xPacks/@xpack-dev-tools/riscv-none-elf-gcc/{{ page.version }}-{{ page.subversion }}.1/.content/bin/riscv-none-elf-gcc --version
+$ ~/.local/xPacks/@xpack-dev-tools/riscv-none-elf-gcc/{{ page.version }}-{{ page.subversion }}.1/.content/bin/riscv-none-elf-gcc --version
 riscv-none-elf-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) {{ page.version }}
 ```
 
@@ -190,13 +190,14 @@ Download the latest version named like:
 
 To manually install the xPack GNU RISC-V Embedded GCC,
 unpack the archive and copy it to
-`~/opt/xPacks/riscv-none-elf-gcc/<version>`:
+`~/.local/xPacks/riscv-none-elf-gcc/<version>`:
 
 ```sh
-mkdir -p ~/opt && cd ~/opt
+mkdir -p ~/.local/xPacks/riscv-none-elf-gcc
+cd ~/.local/xPacks/riscv-none-elf-gcc
 
 tar xvf ~/Downloads/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}-darwin-x64.tgz
-chmod -R -w xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}
+chmod -R -w xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}
 ```
 
 {% include note.html content="For manual installs, the recommended
@@ -210,8 +211,8 @@ for the executable in this location." %}
 The result is a structure like:
 
 ```console
-$ tree -L 2 /Users/ilg/opt/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}
-/Users/ilg/opt/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}/
+$ tree -L 2 /Users/ilg/.local/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}
+/Users/ilg/.local/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}/
 ├── README.md
 ├── bin
 │   ├── libexpat.1.6.7.dylib
@@ -285,7 +286,7 @@ $ tree -L 2 /Users/ilg/opt/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-{{
 To check if the manually installed GCC starts, use something like:
 
 ```console
-$ ~/opt/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}/bin/riscv-none-elf-gcc --version
+$ ~/.local/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}/bin/riscv-none-elf-gcc --version
 riscv-none-elf-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) {{ page.version }}
 ```
 
@@ -300,7 +301,7 @@ riscv-none-elf-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) {{ page.version }}
 To check if the xpm installed GCC starts, use something like:
 
 ```console
-$ ~/opt/xPacks/@xpack-dev-tools/riscv-none-elf-gcc/{{ page.version }}-{{ page.subversion }}.1/.content/bin/riscv-none-elf-gcc --version
+$ ~/.local/xPacks/@xpack-dev-tools/riscv-none-elf-gcc/{{ page.version }}-{{ page.subversion }}.1/.content/bin/riscv-none-elf-gcc --version
 riscv-none-elf-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) {{ page.version }}
 ```
 
@@ -320,13 +321,14 @@ Ubuntu, but can be executed on most recent GNU/Linux distributions.
 
 To manually install the xPack GNU RISC-V Embedded GCC,
 unpack the archive and move it to
-`~/opt/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}`:
+`~/.local/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}`:
 
 ```sh
-mkdir -p ~/opt && cd ~/opt
+mkdir -p ~/.local/xPacks/riscv-none-elf-gcc
+cd ~/.local/xPacks/riscv-none-elf-gcc
 
 tar xvf ~/Downloads/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}-linux-x64.tgz
-chmod -R -w xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}
+chmod -R -w xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}
 ```
 
 {% include note.html content="For manual installs, the recommended
@@ -342,8 +344,8 @@ for the executable in this location." %}
 The result is a structure like:
 
 ```console
-$ tree -L 2 /home/ilg/opt/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}/
-/home/ilg/opt/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}/
+$ tree -L 2 /home/ilg/.local/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}/
+/home/ilg/.local/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}/
 ├── bin
 │   ├── libexpat.so.1 -> libexpat.so.1.6.7
 │   ├── libexpat.so.1.6.7
@@ -428,7 +430,7 @@ $ tree -L 2 /home/ilg/opt/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-{{ 
 To check if the manually installed GCC starts, use something like:
 
 ```console
-$ ~/opt/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}/bin/riscv-none-elf-gcc --version
+$ ~/.local/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}/bin/riscv-none-elf-gcc --version
 riscv-none-elf-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) {{ page.version }}
 ```
 

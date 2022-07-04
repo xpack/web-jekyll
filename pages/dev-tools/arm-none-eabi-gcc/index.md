@@ -71,35 +71,8 @@ platforms are presented in the separate
 
 ## Documentation
 
-The **xPack GNU Arm Embedded GCC** distribution includes the
-standard GCC documentation, in info, man and pdf format;
-it is located in the `share/doc` folder, for example the pdf files are:
-
-```console
-$ tree share/doc/pdf
-share/doc/pdf
-├── annotate.pdf
-├── as.pdf
-├── bfd.pdf
-├── binutils.pdf
-├── gcc
-│   ├── cpp.pdf
-│   ├── cppinternals.pdf
-│   ├── gcc.pdf
-│   ├── gccinstall.pdf
-│   └── gccint.pdf
-├── gdb.pdf
-├── gprof.pdf
-├── ld.pdf
-├── libc.pdf
-├── libiberty.pdf
-├── libm.pdf
-├── porting.pdf
-├── refcard.pdf
-└── stabs.pdf
-
-1 directory, 18 files
-```
+To save space and bandwidth, the original GNU GCC documentation is available
+[online](https://gcc.gnu.org/onlinedocs/).
 
 ## Support
 
@@ -117,7 +90,7 @@ For those interested in building the binaries, please read the
 [How to build](https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/blob/xpack/README-BUILD.md)
 page.
 However, the ultimate source for details are the build scripts themselves,
-all available from the 
+all available from the
 [`arm-none-eabi-gcc-xpack.git/scripts`](https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/tree/xpack/scripts/)
 folder.
 

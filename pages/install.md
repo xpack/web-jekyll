@@ -388,7 +388,6 @@ $ which npm
 At any time, to switch between any of the installed versions,
 use `nvm use <version>`.
 
-
 {% endcapture %}
 
 {% capture linux %}
@@ -432,8 +431,8 @@ Also remove `${HOME}/opt/npm/bin` from the PATH.
 
 When everything is clean, run the install script:
 
-```console
-$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+```sh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
 ```
 
 This will install the version manager in `~/.nvm`, and add a few lines to

@@ -40,8 +40,8 @@ follow the instructions from the
 With xpm available, installing
 the latest version of the package is quite easy:
 
-```console
-$ xpm install --global @xpack-dev-tools/meson-build@latest --verbose
+```sh
+xpm install --global @xpack-dev-tools/meson-build@latest --verbose
 ```
 
 This command will always install the latest available version,
@@ -94,7 +94,7 @@ page.
 
 To check if the xpm installed Meson starts, use something like:
 
-```
+```doscon
 C:\>%USERPROFILE%\AppData\Roaming\xPacks\@xpack-dev-tools\{{ page.version }}-1.1\.content\bin\meson.exe --version
 {{ page.version }}
 ```
@@ -130,7 +130,7 @@ and `.content` to store the unpacked archive." %}
 
 To check if the manually installed Meson starts, use something like:
 
-```
+```doscon
 C:\>%USERPROFILE%\AppData\Roaming\xPacks\meson-build\xpack-meson-{{ page.version }}-1\bin\meson.exe --version
 {{ page.version }}
 ```
@@ -146,7 +146,7 @@ C:\>%USERPROFILE%\AppData\Roaming\xPacks\meson-build\xpack-meson-{{ page.version
 To check if the xpm installed Meson starts, use something like:
 
 ```console
-$ ~/opt/xPacks/@xpack-dev-tools/meson-build/{{ page.version }}-1.1/.content/bin/meson --version
+$ ~/.local/xPacks/@xpack-dev-tools/meson-build/{{ page.version }}-1.1/.content/bin/meson --version
 {{ page.version }}
 ```
 
@@ -163,14 +163,14 @@ Download the latest version named like:
 
 To manually install the xPack Meson Build,
 unpack the archive and copy it to
-`~/opt/xPacks/meson-build/xpack-meson-build-{{ page.version }}-1`:
+`~/.local/xPacks/meson-build/xpack-meson-build-{{ page.version }}-1`:
 
-```console
-$ mkdir -p ~/opt
-$ cd ~/opt
+```sh
+mkdir -p ~/.local/xPacks/meson-build
+cd ~/.local/xPacks/meson-build
 
-$ tar xvf ~/Downloads/xpack-meson-build-{{ page.version }}-1-darwin-x64.tgz
-$ chmod -R -w xPacks/meson-build/xpack-meson-build-{{ page.version }}-1
+tar xvf ~/Downloads/xpack-meson-build-{{ page.version }}-1-darwin-x64.tgz
+chmod -R -w xpack-meson-build-{{ page.version }}-1
 ```
 
 {% include note.html content="For manual installs, the recommended
@@ -179,8 +179,8 @@ install location is different from the xpm install folders." %}
 The result is a structure like:
 
 ```console
-$ tree -L 2 /Users/ilg/Library/xPacks/meson-build/xpack-meson-build-{{ page.version }}-1
-/Users/ilg/Library/xPacks/meson-build/xpack-meson-build-{{ page.version }}-1/
+$ tree -L 2 /Users/ilg/.local/xPacks/meson-build/xpack-meson-build-{{ page.version }}-1
+/Users/ilg/.local/xPacks/meson-build/xpack-meson-build-{{ page.version }}-1/
 ├── README.md
 ├── bin
 │   ├── libcrypt.2.dylib
@@ -203,7 +203,7 @@ $ tree -L 2 /Users/ilg/Library/xPacks/meson-build/xpack-meson-build-{{ page.vers
 To check if the manually installed Meson starts, use something like:
 
 ```console
-$ ~/opt/xPacks/meson-build/xpack-meson-build-{{ page.version }}-1/bin/meson --version
+$ ~/.local/xPacks/meson-build/xpack-meson-build-{{ page.version }}-1/bin/meson --version
 0.5.3
 ```
 
@@ -218,7 +218,7 @@ $ ~/opt/xPacks/meson-build/xpack-meson-build-{{ page.version }}-1/bin/meson --ve
 To check if the xpm installed Meson starts, use something like:
 
 ```console
-$ ~/opt/xPacks/@xpack-dev-tools/meson-build/{{ page.version }}-1.1/.content/bin/meson --version
+$ ~/.local/xPacks/@xpack-dev-tools/meson-build/{{ page.version }}-1.1/.content/bin/meson --version
 {{ page.version }}
 ```
 
@@ -238,14 +238,14 @@ Ubuntu, but can be executed on most recent GNU/Linux distributions.
 
 To manually install the xPack Meson Build,
 unpack the archive and move it to
-`~/opt/xPacks/meson-build/xpack-meson-build-{{ page.version }}-1`:
+`~/.local/xPacks/meson-build/xpack-meson-build-{{ page.version }}-1`:
 
-```console
-$ mkdir -p ~/opt
-$ cd ~/opt
+```sh
+mkdir -p ~/.local/xPacks/meson-build
+cd ~/.local/xPacks/meson-build
 
-$ tar xvf ~/Downloads/xpack-meson-build-{{ page.version }}-1-linux-x64.tgz
-$ chmod -R -w xPacks/meson-build/xpack-meson-build-{{ page.version }}-1
+tar xvf ~/Downloads/xpack-meson-build-{{ page.version }}-1-linux-x64.tgz
+chmod -R -w xpack-meson-build-{{ page.version }}-1
 ```
 
 {% include note.html content="For manual installs, the recommended
@@ -254,8 +254,8 @@ which use the scope (like `@xpack-dev-tools`) to group different tools,
 and `.content` to store the unpacked archive." %}
 
 ```console
-$ tree -L 2 '/home/ilg/opt/xPacks/meson-build/xpack-meson-build-{{ page.version }}-1'
-/home/ilg/opt/xPacks/meson-build/xpack-meson-build-{{ page.version }}-1/
+$ tree -L 2 '/home/ilg/.local/xPacks/meson-build/xpack-meson-build-{{ page.version }}-1'
+/home/ilg/.local/xPacks/meson-build/xpack-meson-build-{{ page.version }}-1/
 ├── bin
 │   └── meson
 ├── distro-info
@@ -275,7 +275,7 @@ $ tree -L 2 '/home/ilg/opt/xPacks/meson-build/xpack-meson-build-{{ page.version 
 To check if the manually installed Meson starts, use something like:
 
 ```console
-$ ~/opt/xPacks/meson-build/xpack-meson-build-{{ page.version }}-1/bin/meson --version
+$ ~/.local/xPacks/meson-build/xpack-meson-build-{{ page.version }}-1/bin/meson --version
 {{ page.version }}
 ```
 

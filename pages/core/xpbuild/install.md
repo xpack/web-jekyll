@@ -39,13 +39,13 @@ user home folder, in `%APPDATA%\npm`
 (like `C:\Users\ilg\AppData\Roaming\npm`), and managing packages
 does not require administrative rights.
 
-```
+```doscon
 C:\>npm install --global xpbuild@latest
 ```
 
 The result is a pair of files in the `%APPDATA%\npm` folder:
 
-```
+```doscon
 C:\>dir "%APPDATA%"\npm\xpbuild*
  Volume in drive C has no label.
  Volume Serial Number is 28CE-1C06
@@ -62,7 +62,7 @@ If you followed the instructions in the
 [Prerequisites]({{ site.baseurl }}/install/) page, you should
 already have this path configured and the program should start normally:
 
-```
+```doscon
 C:\>xpbuild --version
 0.5.0
 ```

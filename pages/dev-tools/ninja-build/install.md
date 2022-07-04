@@ -40,8 +40,8 @@ follow the instructions from the
 With xpm available, installing
 the latest version of the package is quite easy:
 
-```console
-$ xpm install --global @xpack-dev-tools/ninja-build@latest --verbose
+```sh
+xpm install --global @xpack-dev-tools/ninja-build@latest --verbose
 ```
 
 This command will always install the latest available version,
@@ -94,7 +94,7 @@ page.
 
 To check if the xpm installed Ninja starts, use something like:
 
-```
+```doscon
 C:\>%USERPROFILE%\AppData\Roaming\xPacks\@xpack-dev-tools\ninja-build\{{ page.version }}-1.1\.content\bin\ninja.exe --version
 {{ page.version }}
 ```
@@ -130,7 +130,7 @@ and `.content` to store the unpacked archive." %}
 
 To check if the manually installed Ninja starts, use something like:
 
-```
+```doscon
 C:\>%USERPROFILE%\AppData\Roaming\xPacks\ninja-build\xpack-ninja-{{ page.version }}-1\bin\ninja.exe --version
 {{ page.version }}
 ```
@@ -146,7 +146,7 @@ C:\>%USERPROFILE%\AppData\Roaming\xPacks\ninja-build\xpack-ninja-{{ page.version
 To check if the xpm installed Ninja starts, use something like:
 
 ```console
-$ ~/opt/xPacks/@xpack-dev-tools/ninja-build/{{ page.version }}-1.1/.content/bin/ninja --version
+$ ~/.local/xPacks/@xpack-dev-tools/ninja-build/{{ page.version }}-1.1/.content/bin/ninja --version
 {{ page.version }}
 ```
 
@@ -163,14 +163,14 @@ Download the latest version named like:
 
 To manually install the xPack Ninja Build,
 unpack the archive and move it to
-`~/opt/xPacks/ninja-build/xpack-ninja-build-{{ page.version }}-1`:
+`~/.local/xPacks/ninja-build/xpack-ninja-build-{{ page.version }}-1`:
 
-```console
-$ mkdir -p ~/opt
-$ cd ~/opt
+```sh
+mkdir -p ~/.local/xPacks/ninja-build
+cd ~/.local/xPacks/ninja-build
 
-$ tar xvf ~/Downloads/xpack-ninja-build-{{ page.version }}-1-darwin-x64.tgz
-$ chmod -R -w xPacks/ninja-build/xpack-ninja-build-{{ page.version }}-1
+tar xvf ~/Downloads/xpack-ninja-build-{{ page.version }}-1-darwin-x64.tgz
+chmod -R -w xpack-ninja-build-{{ page.version }}-1
 ```
 
 {% include note.html content="For manual installs, the recommended
@@ -179,8 +179,8 @@ install location is different from the xpm install folders." %}
 The result is a structure like:
 
 ```console
-$ tree -L 2 /Users/ilg/Library/xPacks/ninja-build/xpack-ninja-build-{{ page.version }}-1
-/Users/ilg/Library/xPacks/ninja-build/xpack-ninja-build-{{ page.version }}-1/
+$ tree -L 2 /Users/ilg/.local/xPacks/ninja-build/xpack-ninja-build-{{ page.version }}-1
+/Users/ilg/.local/xPacks/ninja-build/xpack-ninja-build-{{ page.version }}-1/
 ├── README.md
 ├── bin
 │   ├── libgcc_s.1.dylib
@@ -200,7 +200,7 @@ $ tree -L 2 /Users/ilg/Library/xPacks/ninja-build/xpack-ninja-build-{{ page.vers
 To check if the manually installed Ninja starts, use something like:
 
 ```console
-$ ~/opt/xPacks/ninja-build/{{ page.version }}-1/bin/ninja --version
+$ ~/.local/xPacks/ninja-build/{{ page.version }}-1/bin/ninja --version
 {{ page.version }}
 ```
 
@@ -215,7 +215,7 @@ $ ~/opt/xPacks/ninja-build/{{ page.version }}-1/bin/ninja --version
 To check if the xpm installed Ninja starts, use something like:
 
 ```console
-$ ~/opt/xPacks/@xpack-dev-tools/ninja-build/{{ page.version }}-1.1/.content/bin/ninja --version
+$ ~/.local/xPacks/@xpack-dev-tools/ninja-build/{{ page.version }}-1.1/.content/bin/ninja --version
 {{ page.version }}
 ```
 
@@ -235,14 +235,14 @@ Ubuntu, but can be executed on most recent GNU/Linux distributions.
 
 To manually install the xPack Ninja Build,
 unpack the archive and move it to
-`~/opt/xPacks/ninja-build/xpack-ninja-build-{{ page.version }}-1`:
+`~/.local/xPacks/ninja-build/xpack-ninja-build-{{ page.version }}-1`:
 
-```console
-$ mkdir -p ~/opt
-$ cd ~/opt
+```sh
+mkdir -p ~/.local/xPacks/ninja-build
+cd ~/.local/xPacks/ninja-build
 
-$ tar xvf ~/Downloads/xpack-ninja-build-{{ page.version }}-1-linux-x64.tgz
-$ chmod -R -w xPacks/ninja-build/xpack-ninja-build-{{ page.version }}-1
+tar xvf ~/Downloads/xpack-ninja-build-{{ page.version }}-1-linux-x64.tgz
+chmod -R -w xpack-ninja-build-{{ page.version }}-1
 ```
 
 {% include note.html content="For manual installs, the recommended
@@ -251,8 +251,8 @@ which use the scope (like `@xpack-dev-tools`) to group different tools,
 and `.content` to store the unpacked archive." %}
 
 ```console
-$ tree -L 2 '/home/ilg/opt/xPacks/ninja-build/xpack-ninja-build-{{ page.version }}-1'
-/home/ilg/opt/xPacks/ninja-build/xpack-ninja-build-{{ page.version }}-1/
+$ tree -L 2 '/home/ilg/.local/xPacks/ninja-build/xpack-ninja-build-{{ page.version }}-1'
+/home/ilg/.local/xPacks/ninja-build/xpack-ninja-build-{{ page.version }}-1/
 ├── bin
 │   └── ninja
 ├── distro-info
@@ -270,7 +270,7 @@ $ tree -L 2 '/home/ilg/opt/xPacks/ninja-build/xpack-ninja-build-{{ page.version 
 To check if the manually installed Ninja starts, use something like:
 
 ```console
-$ ~/opt/xPacks/ninja-build/xpack-ninja-build-{{ page.version }}-1/bin/ninja --version
+$ ~/.local/xPacks/ninja-build/xpack-ninja-build-{{ page.version }}-1/bin/ninja --version
 {{ page.version }}
 ```
 

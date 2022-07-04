@@ -222,9 +222,9 @@ Use this option to force xpm to reinstall a package.
 Install dependencies into an existing configuration build
 folder instead of the top project folder.
 
-```console
-$ xpm install --config stm32f4discovery-cmake-gcc10-debug @xpack-dev-tools/arm-none-eabi-gcc@10.2.1-1.1.2
-$ xpm install --config stm32f4discovery-cmake-gcc9-debug @xpack-dev-tools/arm-none-eabi-gcc@9.3.1-1.4.1
+```sh
+xpm install --config stm32f4discovery-cmake-gcc10-debug @xpack-dev-tools/arm-none-eabi-gcc@10.2.1-1.1.2
+xpm install --config stm32f4discovery-cmake-gcc9-debug @xpack-dev-tools/arm-none-eabi-gcc@9.3.1-1.4.1
 ```
 
 The `xpacks` folders are not stored in the project folder, but in the

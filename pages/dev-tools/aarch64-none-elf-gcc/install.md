@@ -219,8 +219,8 @@ for the executables in this location." %}
 The result is a structure like:
 
 ```console
-$ tree -L 2 /Users/ilg/Library/xPacks/aarch64-none-elf-gcc/xpack-aarch64-none-elf-gcc-{{ page.version }}-1.1
-/Users/ilg/Library/xPacks/aarch64-none-elf-gcc/xpack-aarch64-none-elf-gcc-{{ page.version }}-1.1
+$ tree -L 2 /Users/ilg/.local/xPacks/aarch64-none-elf-gcc/xpack-aarch64-none-elf-gcc-{{ page.version }}-1.1
+/Users/ilg/.local/xPacks/aarch64-none-elf-gcc/xpack-aarch64-none-elf-gcc-{{ page.version }}-1.1
 ├── README.md
 ├── aarch64-none-elf
 │   ├── bin
@@ -347,12 +347,12 @@ To manually install the xPack GNU AArch64 Embedded GCC,
 unpack the archive and copy it to
 `~/.local/xPacks/aarch64-none-elf-gcc/xpack-aarch64-none-elf-gcc-<version>`:
 
-```console
-$ mkdir -p ~/.local/xPacks/aarch64-none-elf-gcc
-$ cd ~/.local/xPacks/aarch64-none-elf-gcc
+```sh
+mkdir -p ~/.local/xPacks/aarch64-none-elf-gcc
+cd ~/.local/xPacks/aarch64-none-elf-gcc
 
-$ tar xvf ~/Downloads/xpack-aarch64-none-elf-gcc-{{ page.version }}-1.1-linux-x64.tar.gz
-$ chmod -R -w xpack-aarch64-none-elf-gcc-{{ page.version }}-1.1
+tar xvf ~/Downloads/xpack-aarch64-none-elf-gcc-{{ page.version }}-1.1-linux-x64.tar.gz
+chmod -R -w xpack-aarch64-none-elf-gcc-{{ page.version }}-1.1
 ```
 
 You may shorten the last folder name and keep only the version.
