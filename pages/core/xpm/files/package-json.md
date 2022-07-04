@@ -77,10 +77,6 @@ These information are stored in the `xpack` property of `package.json`.
           "sha256": "185c070f9729cf38dca08686c2905561c07a63c563e5bc7a70e045f2a1865c11",
           "fileName": "xpack-openocd-0.10.0-14-linux-x64.tar.gz"
         },
-        "win32-x32": {
-          "sha256": "633e46b2f4d2d38c683df2414b9f464d7250c336d010c84010bbaff9d3d29c7c",
-          "fileName": "xpack-openocd-0.10.0-14-win32-x32.zip"
-        },
         "win32-x64": {
           "sha256": "1fb26bbcfd65dbabe747ce3c8467a1f1cece7253bde4a95de13c2267d422ed8b",
           "fileName": "xpack-openocd-0.10.0-14-win32-x64.zip"
@@ -100,12 +96,12 @@ The supported platforms are:
 - `linux-arm64` - Arm GNU/Linux 64-bit (since 0.6.0)
 - `linux-x86` (deprecated)
 - `linux-x32` (deprecated)
-- `linux-ia32` - Intel GNU/Linux 32-bit (since 0.6.0)
+- `linux-ia32` - Intel GNU/Linux 32-bit (since 0.6.0; deprecated)
 - `linux-x64` - Intel GNU/Linux 64-bit
 - `darwin-x64` - macOS 64-bit
 - `win32-x86` (deprecated)
 - `win32-x32` (deprecated)
-- `win32-ia32` - Windows 32-bit (since 0.6.0)
+- `win32-ia32` - Windows 32-bit (since 0.6.0; deprecated)
 - `win32-x64` - Windows 64-bit
 
 {% include note.html content="The names are exactly the Node.js
