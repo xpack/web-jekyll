@@ -12,6 +12,12 @@ date: 2020-01-28 19:18:00 +0200
 
 ## Overview
 
+{% include note.html content="This page applies only to early
+releases, which
+required Python to be installed in the system; current releases
+are standalone and include a Python runtime, so
+these steps are no longer required." %}
+
 Starting with GDB 7, support for
 [extending GDB with Python scripting](https://sourceware.org/gdb/current/onlinedocs/gdb/Python.html)
 was added to GDB.
