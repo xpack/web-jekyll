@@ -163,6 +163,20 @@ defaults:
 
   -
     scope:
+      path: "pages/dev-tools/qemu-riscv"
+      type: "pages"
+    values:
+      layout: "page"
+      comments: false
+      search: true
+      sidebar: qemu-riscv
+      topnav: topnav
+      author: Liviu Ionescu
+      toc: true
+      github_editme: true
+
+  -
+    scope:
       path: "pages/dev-tools/gcc"
       type: "pages"
     values:
@@ -177,6 +191,20 @@ defaults:
 
   -
     scope:
+      path: "pages/dev-tools/clang"
+      type: "pages"
+    values:
+      layout: "page"
+      comments: false
+      search: true
+      sidebar: clang
+      topnav: topnav
+      author: Liviu Ionescu
+      toc: true
+      github_editme: true
+
+  -
+    scope:
       path: "pages/dev-tools/arm-none-eabi-gcc"
       type: "pages"
     values:
@@ -184,6 +212,20 @@ defaults:
       comments: false
       search: true
       sidebar: arm-none-eabi-gcc
+      topnav: topnav
+      author: Liviu Ionescu
+      toc: true
+      github_editme: true
+
+  -
+    scope:
+      path: "pages/dev-tools/aarch64-none-elf-gcc"
+      type: "pages"
+    values:
+      layout: "page"
+      comments: false
+      search: true
+      sidebar: aarch64-none-elf-gcc
       topnav: topnav
       author: Liviu Ionescu
       toc: true
@@ -254,6 +296,20 @@ defaults:
       comments: false
       search: true
       sidebar: meson-build
+      topnav: topnav
+      author: Liviu Ionescu
+      toc: true
+      github_editme: true
+
+  -
+    scope:
+      path: "pages/vscode"
+      type: "pages"
+    values:
+      layout: "page"
+      comments: false
+      search: true
+      sidebar: vscode
       topnav: topnav
       author: Liviu Ionescu
       toc: true
@@ -394,20 +450,6 @@ defaults:
       topnav: topnav
       author: Liviu Ionescu
       toc: false
-      github_editme: true
-
-  -
-    scope:
-      path: "pages/vscode"
-      type: "pages"
-    values:
-      layout: "page"
-      comments: false
-      search: true
-      sidebar: vscode
-      topnav: topnav
-      author: Liviu Ionescu
-      toc: true
       github_editme: true
 
 
