@@ -73,18 +73,15 @@ and can be installed in any location.
 ### Compatibility & peripherals
 
 The xPack QEMU RISC-V is fully compatible with the original
-**qemu-system-riscv32** and **qemu-system-riscv64**.
+`qemu-system-riscv32` and `qemu-system-riscv64`.
 
-xPack QEMU RISC-V is generally intended for running tests, mainly unit tests.
+**xPack QEMU RISC-V** is generally intended for running tests, mainly
+**unit tests**.
 
 ## Semihosting and ITM
 
 The recommended method to display messages from the target is via
 semihosting.
-
-## Limitations
-
-- none
 
 ## Documentation
 

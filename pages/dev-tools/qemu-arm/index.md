@@ -35,10 +35,10 @@ Developer & maintainer pages:
 
 ## Deprecated qemu-system-gnuarmeclipse
 
-Starting with 2022, the custom QEMU known as
-[`qemu-system-gnuarmeclipse`]({{ site.baseurl }}/qemu-arm/gnuarmeclipse/),
-used initially with Eclipse, was deprecated, and the project was updated to
-use the current upstream sources.
+Starting with 2022, the custom QEMU known as `qemu-system-gnuarmeclipse`,
+used initially with Eclipse, was
+[deprecated]({{ site.baseurl }}/qemu-arm/gnuarmeclipse/),
+and the project was updated to use the current upstream sources.
 
 For compatibility reasons, `qemu-system-gnuarmeclipse` will still be
 available for a while, but it is no longer recommended for new projects.
@@ -85,18 +85,15 @@ and can be installed in any location.
 ### Compatibility & peripherals
 
 The xPack QEMU Arm is fully compatible with the original
-**qemu-system-arm** and **qemu-system-aarch64**.
+`qemu-system-arm` and `qemu-system-aarch64`.
 
-xPack QEMU Arm is generally intended for running tests, mainly unit tests.
+**xPack QEMU Arm** is generally intended for running tests, mainly
+**unit tests**.
 
 ## Semihosting and ITM
 
 The recommended method to display messages from the target is via
 semihosting.
-
-## Limitations
-
-- none
 
 ## Documentation
 
