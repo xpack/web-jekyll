@@ -180,7 +180,7 @@ Packages should normally come with one or more test cases. This allows applicati
 
 XCDL itself does not include a specific testing infrastructure and tests may use any C/C++ testing infrastructure.
 
-µOS++ fully supports the [Google Test](http://code.google.com/p/googletest/) & [Google Mock](http://code.google.com/p/googlemock/) testing infrastructure, and XCDL should be able to configure the environment required to run these tests.
+µOS++ fully supports the [Google Test](http://code.google.com/p/googletest/) testing infrastructure, and XCDL should be able to configure the environment required to run these tests.
 
 #### Running tests on the host
 
