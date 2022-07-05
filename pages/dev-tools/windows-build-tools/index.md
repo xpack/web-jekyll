@@ -113,7 +113,7 @@ For those interested in building the binaries, please read the
 page.
 However, the ultimate source for details are the build scripts themselves,
 all available from the 
-[`openocd-xpack.git/scripts`](https://github.com/xpack-dev-tools/windows-build-tools-xpack/tree/xpack/scripts/)
+[`windows-build-tools-xpack.git/scripts`](https://github.com/xpack-dev-tools/windows-build-tools-xpack/tree/xpack/scripts/)
 folder.
 
 ## Releases
