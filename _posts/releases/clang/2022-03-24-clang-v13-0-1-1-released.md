@@ -1,5 +1,6 @@
 ---
 title:  xPack LLVM clang v13.0.1-1 released
+sidebar: clang
 
 summary: "Version **13.0.1-1** is a new release; it follows the upstream release."
 

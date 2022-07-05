@@ -1,5 +1,6 @@
 ---
 title:  xPack GNU RISC-V Embedded GCC v8.3.0-2.1 released
+sidebar: riscv-none-elf-gcc
 
 summary: "Version 8.3.0-2.1 is a new release of the **xPack GNU RISC-V Embedded GCC**, following SiFive release 2020.04.0 from August 2020; it also changes to use **DT_RPATH** to make the binaries immune to custom LD_LIBRARY_PATH."
 

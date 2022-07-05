@@ -1,5 +1,6 @@
 ---
 title:  xPack GNU Arm Embedded GCC v10.2.1-1.1 released
+sidebar: arm-none-eabi-gcc
 
 summary: "Version 10.2.1-1.1 is a new release of **xPack GNU Arm Embedded GCC**, following Arm release from Dec 11, 2020 (version **10-2020-q4-major**)."
 

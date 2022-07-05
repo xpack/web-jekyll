@@ -1,5 +1,6 @@
 ---
 title:  xPack GNU AArch64 Embedded GCC v11.2.1-1.1 released
+sidebar: aarch64-none-elf-gcc
 
 summary: "Version **11.2.1-1.1** is a new release; it follows the upstream Arm release."
 

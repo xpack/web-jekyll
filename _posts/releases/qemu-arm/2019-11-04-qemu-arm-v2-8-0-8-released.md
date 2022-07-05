@@ -1,5 +1,6 @@
 ---
 title:  xPack QEMU Arm v2.8.0-8 released
+sidebar: qemu-arm
 
 summary: "Version 2.8.0-8 is a maintenance release, to fix a bug affecting STM32F1 GPIOs."
 

@@ -1,5 +1,6 @@
 ---
 title:  xPack CMake v3.20.6-2 released
+sidebar: cmake
 
 summary: "Version **3.20.6-2** is a maintenance release; it **adds support for Apple Silicon** and uses the latest build scripts."
 

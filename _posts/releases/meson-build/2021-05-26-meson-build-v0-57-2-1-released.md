@@ -1,5 +1,6 @@
 ---
 title:  xPack Meson Build v0.57.2-1 released
+sidebar: meson-build
 
 summary: "Version 0.57.2-1 is a new release of the **xPack Meson Build** package, following the Meson release."
 

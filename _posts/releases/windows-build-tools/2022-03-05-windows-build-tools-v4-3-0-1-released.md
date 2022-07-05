@@ -1,5 +1,6 @@
 ---
 title:  xPack Windows Build Tools v4.3.0-1 released
+sidebar: windows-build-tools
 
 summary: "Version **4.3.0-1** is a new release of the **xPack Windows Build Tools** package; it updates to **GNU make 4.3** and to the latest upstream Busybox."
 

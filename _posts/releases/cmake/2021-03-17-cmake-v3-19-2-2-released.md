@@ -1,5 +1,6 @@
 ---
 title:  xPack CMake v3.19.2-2 released
+sidebar: cmake
 
 summary: "Version 3.19.2-2 is a maintenance release of the **xPack CMake** package, fixing the spawning of cmd.exe scripts on Windows."
 

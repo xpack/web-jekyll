@@ -1,5 +1,6 @@
 ---
 title:  xPack GNU RISC-V Embedded GCC v11.3.0-1 released
+sidebar: riscv-none-elf-gcc
 
 summary: "Version **11.3.0-1** is a new release; it follows the GNU GCC release."
 

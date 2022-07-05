@@ -1,5 +1,6 @@
 ---
 title:  VS Code xPack extension v0.1.5 released
+sidebar: vscode
 
 summary: "Version **0.1.5** is a new development release of **ilg-vscode.xpack**; it adds the actions explorer."
 

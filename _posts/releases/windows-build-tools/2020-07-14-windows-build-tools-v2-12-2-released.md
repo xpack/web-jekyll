@@ -1,5 +1,6 @@
 ---
 title:  xPack Windows Build Tools v2.12.2 released
+sidebar: windows-build-tools
 
 summary: "Version 2.12.2 is a maintenance release; it repacks the same
 tools from the previous release, but built with the new XBB v3.2 tools."

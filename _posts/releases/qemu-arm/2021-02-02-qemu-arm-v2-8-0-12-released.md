@@ -1,5 +1,6 @@
 ---
 title:  xPack QEMU Arm v2.8.0-12 released
+sidebar: qemu-arm
 
 summary: "Version 2.8.0-12 is a maintenance release; it fixes the macOS startup via links and enables Thumb2 for Arm v6."
 

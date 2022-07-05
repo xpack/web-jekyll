@@ -1,5 +1,6 @@
 ---
 title:  VS Code xPack extension v0.4.16 released
+sidebar: vscode
 
 summary: "Version **0.4.16** is a maintenance release of **ilg-vscode.xpack**; it fixes a bug affecting performing the actions after editing package.json."
 

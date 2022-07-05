@@ -1,5 +1,6 @@
 ---
 title:  xPack Meson Build v0.55.3-1 released
+sidebar: meson-build
 
 summary: "Version 0.55.3-1 is the first release of the **xPack Meson Build** package."
 

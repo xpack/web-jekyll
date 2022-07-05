@@ -1,5 +1,6 @@
 ---
 title:  xPack QEMU Arm v2.8.0-11 released
+sidebar: qemu-arm
 
 summary: "Version 2.8.0-11 is a maintenance release; it add support for STM32F407VGTx and STM32F429ZITx."
 

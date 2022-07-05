@@ -1,5 +1,6 @@
 ---
 title:  xPack Ninja Build v1.10.2-5 released
+sidebar: ninja-build
 
 summary: "Version **1.10.2-5** is a maintenance release; it **adds support for Apple Silicon** and uses the latest build scripts."
 

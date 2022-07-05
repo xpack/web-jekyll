@@ -1,5 +1,6 @@
 ---
 title:  xPack OpenOCD v0.10.0-15 released
+sidebar: openocd
 
 summary: "Version 0.10.0-15 is a maintenance release; it updates to
 the latest upstream master."

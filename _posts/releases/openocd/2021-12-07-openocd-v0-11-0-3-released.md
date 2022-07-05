@@ -1,5 +1,6 @@
 ---
 title:  xPack OpenOCD v0.11.0-3 released
+sidebar: openocd
 
 summary: "Version **0.11.0-3** is a maintenance release; it updates to the latest upstream master, **adds support for Apple Silicon** and uses the latest build scripts."
 

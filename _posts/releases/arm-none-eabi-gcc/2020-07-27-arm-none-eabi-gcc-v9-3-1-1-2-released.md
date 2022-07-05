@@ -1,5 +1,6 @@
 ---
 title:  xPack GNU Arm Embedded GCC v9.3.1-1.2 released
+sidebar: arm-none-eabi-gcc
 
 summary: "Version 9.3.1-1.2 is a maintenance release of **xPack GNU Arm
 Embedded GCC**, intended to **fix C++ exceptions** support for non-nano

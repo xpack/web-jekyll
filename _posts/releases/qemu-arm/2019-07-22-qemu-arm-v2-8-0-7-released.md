@@ -1,5 +1,6 @@
 ---
 title:  xPack QEMU Arm v2.8.0-7 released
+sidebar: qemu-arm
 
 summary: "Version 2.8.0-7 is a maintenance release, to fix a bug
 affecting Windows."

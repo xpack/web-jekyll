@@ -1,5 +1,6 @@
 ---
 title:  VS Code xPack extension v0.4.4 released
+sidebar: vscode
 
 summary: "Version **0.4.4** is a new development release of **ilg-vscode.xpack**; it adds commands to create simple projects from templates."
 

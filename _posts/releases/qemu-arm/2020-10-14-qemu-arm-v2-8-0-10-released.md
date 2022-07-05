@@ -1,5 +1,6 @@
 ---
 title:  xPack QEMU Arm v2.8.0-10 released
+sidebar: qemu-arm
 
 summary: "Version 2.8.0-10 is a maintenance release; it fixes one bug and updates to the new, more robust, build scripts."
 

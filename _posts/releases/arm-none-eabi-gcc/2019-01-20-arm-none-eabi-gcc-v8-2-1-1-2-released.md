@@ -1,5 +1,7 @@
 ---
 title:  GNU MCU Eclipse ARM Embedded GCC v8.2.1-1.2 20190119 released
+sidebar: arm-none-eabi-gcc
+
 download_url: https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc/releases/tag/v8.2.1-1.2/
 
 date:   2019-01-19 21:46:00 +0300

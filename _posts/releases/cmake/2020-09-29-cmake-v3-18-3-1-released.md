@@ -1,5 +1,6 @@
 ---
 title:  xPack CMake v3.18.3-1 released
+sidebar: cmake
 
 summary: "Version 3.18.3-1 is the first release of the **xPack CMake** package."
 

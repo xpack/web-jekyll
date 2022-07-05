@@ -1,5 +1,6 @@
 ---
 title:  xPack QEMU Arm v6.2.0-1 released
+sidebar: qemu-arm
 
 summary: "Version **6.2.0-1** is a new release; it follows the upstream QEMU release."
 

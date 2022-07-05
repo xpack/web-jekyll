@@ -1,5 +1,6 @@
 ---
 title:  xPack QEMU Arm v6.2.0-2 released
+sidebar: qemu-arm
 
 summary: "Version **6.2.0-2** is a maintenance release; it fixes graphical issues on macOS."
 

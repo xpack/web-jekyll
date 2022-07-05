@@ -1,5 +1,6 @@
 ---
 title:  Build Tools repacked as Setup
+sidebar: windows-build-tools
 
 download_url: https://github.com/gnu-mcu-eclipse/windows-build-tools/releases/tag/v2.0
 

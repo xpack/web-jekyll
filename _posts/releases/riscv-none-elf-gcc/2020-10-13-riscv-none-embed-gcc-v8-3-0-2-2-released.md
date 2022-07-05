@@ -1,5 +1,6 @@
 ---
 title:  xPack GNU RISC-V Embedded GCC v8.3.0-2.2 released
+sidebar: riscv-none-elf-gcc
 
 summary: "Version 8.3.0-2.2 is a maintenance release of the **xPack GNU RISC-V Embedded GCC**, to fix a regression bug in binutils 2.32 affecting the parsing of LENGTH and ORIGIN in linker scripts."
 

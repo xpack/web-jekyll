@@ -1,5 +1,6 @@
 ---
 title:  xPack OpenOCD v0.11.0-2 released
+sidebar: openocd
 
 TODO: select one summary
 

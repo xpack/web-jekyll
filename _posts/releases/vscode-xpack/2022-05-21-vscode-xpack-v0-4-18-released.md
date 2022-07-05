@@ -1,5 +1,6 @@
 ---
 title:  VS Code xPack extension v0.4.18 released
+sidebar: vscode
 
 summary: "Version **0.4.18** is a maintenance release of **ilg-vscode.xpack**; it implements the `hidden` property for inherited build configurations."
 

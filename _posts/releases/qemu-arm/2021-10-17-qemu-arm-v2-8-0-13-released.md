@@ -1,5 +1,6 @@
 ---
 title:  xPack QEMU Arm v2.8.0-13 released
+sidebar: qemu-arm
 
 summary: "Version **2.8.0-13** is a maintenance release; it fixes a bug and updates to the latests build environment."
 

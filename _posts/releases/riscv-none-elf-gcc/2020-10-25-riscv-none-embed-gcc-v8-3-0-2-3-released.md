@@ -1,5 +1,6 @@
 ---
 title:  xPack GNU RISC-V Embedded GCC v8.3.0-2.3 released
+sidebar: riscv-none-elf-gcc
 
 summary: "Version 8.3.0-2.3 is a maintenance release of the **xPack GNU RISC-V Embedded GCC**; it adds an embedded Python 3 instance, to make `riscv-none-embed-gdb-py3` standalone and run on any system."
 

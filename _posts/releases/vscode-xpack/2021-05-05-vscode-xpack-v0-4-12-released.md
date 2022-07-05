@@ -1,5 +1,6 @@
 ---
 title:  VS Code xPack extension v0.4.12 released
+sidebar: vscode
 
 summary: "Version **0.4.12** is a new development release of **ilg-vscode.xpack**; it does some clean-ups."
 

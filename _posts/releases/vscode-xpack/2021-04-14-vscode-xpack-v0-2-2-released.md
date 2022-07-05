@@ -1,5 +1,6 @@
 ---
 title:  VS Code xPack extension v0.2.2 released
+sidebar: vscode
 
 summary: "Version **0.2.2** is a new development release of **ilg-vscode.xpack**; it adds IntelliSense support."
 

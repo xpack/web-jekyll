@@ -1,5 +1,6 @@
 ---
 title:  VS Code xPack extension v0.4.15 released
+sidebar: vscode
 
 summary: "Version **0.4.15** is a maintenance release of **ilg-vscode.xpack**; it fixes a bug affecting the display of the explorer."
 

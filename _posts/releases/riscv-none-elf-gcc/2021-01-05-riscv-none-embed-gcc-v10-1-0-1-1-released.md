@@ -1,5 +1,6 @@
 ---
 title:  xPack GNU RISC-V Embedded GCC v10.1.0-1.1 released
+sidebar: riscv-none-elf-gcc
 
 summary: "Version 10.1.0-1.1 is a new release of the **xPack GNU RISC-V Embedded GCC**; it follows the SiFive release 2020-08.0."
 

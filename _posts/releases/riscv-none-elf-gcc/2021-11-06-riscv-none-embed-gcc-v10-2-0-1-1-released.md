@@ -1,5 +1,6 @@
 ---
 title:  xPack GNU RISC-V Embedded GCC v10.2.0-1.1 released
+sidebar: riscv-none-elf-gcc
 
 summary: "Version **10.2.0-1.1** is a new release; it follows the upstream Sifive release v2020.12.0 from April 7, 2021."
 

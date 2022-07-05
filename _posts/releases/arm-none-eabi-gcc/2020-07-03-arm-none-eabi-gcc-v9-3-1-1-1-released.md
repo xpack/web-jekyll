@@ -1,5 +1,6 @@
 ---
 title:  xPack GNU Arm Embedded GCC v9.3.1-1.1 released
+sidebar: arm-none-eabi-gcc
 
 summary: "Version 9.3.1-1.1 is a new release of **xPack GNU Arm Embedded GCC**, following Arm release from June 01, 2020 (version **9-2020-q2-update**). This
 is also the first release that **adds support for running on Arm platforms**,

@@ -1,5 +1,6 @@
 ---
 title:  xPack OpenOCD v0.11.0-4 released
+sidebar: openocd
 
 summary: "Version **0.11.0-4** is a maintenance release; it updates to
 the latest upstream master."

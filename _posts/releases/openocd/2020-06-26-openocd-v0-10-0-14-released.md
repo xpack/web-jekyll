@@ -1,5 +1,6 @@
 ---
 title:  xPack OpenOCD v0.10.0-14 released
+sidebar: openocd
 
 summary: "Version 0.10.0-14 is a maintenance release; it updates to
 the latest upstream master and adds support for running on Arm

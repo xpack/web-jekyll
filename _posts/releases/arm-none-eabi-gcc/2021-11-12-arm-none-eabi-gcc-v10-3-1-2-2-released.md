@@ -1,5 +1,6 @@
 ---
 title:  xPack GNU Arm Embedded GCC v10.3.1-2.2 released
+sidebar: arm-none-eabi-gcc
 
 summary: "Version **10.3.1-2.2** is a maintenance release; it slightly reduces the size of the archives."
 

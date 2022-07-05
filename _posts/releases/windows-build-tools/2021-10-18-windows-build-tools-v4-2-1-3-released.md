@@ -1,5 +1,6 @@
 ---
 title:  xPack Windows Build Tools v4.2.1-3 released
+sidebar: windows-build-tools
 
 summary: "DO NOT USE! Version **4.2.1-3** is a maintenance release; it updates to the latest upstream Busybox and to the new build scripts."
 

@@ -1,5 +1,6 @@
 ---
 title:  xPack OpenOCD v0.11.0-1 released
+sidebar: openocd
 
 summary: "Version 0.11.0-1 is a new major release; it updates to
 the latest upstream major release."

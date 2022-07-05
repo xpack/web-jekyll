@@ -1,5 +1,6 @@
 ---
 title:  xPack Meson Build v0.60.3-1 released
+sidebar: meson-build
 
 summary: "Version **0.60.3-1** is a new release; it follows the upstream release."
 

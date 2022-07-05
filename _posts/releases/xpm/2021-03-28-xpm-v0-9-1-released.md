@@ -1,5 +1,6 @@
 ---
 title:  xPack xpm v0.9.1 released
+sidebar: xpm
 
 summary: "Version **0.9.1** is a new release of **xpm**; it adds support for configurations and configuration specific dependencies."
 

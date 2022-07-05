@@ -1,5 +1,6 @@
 ---
 title:  xPack GNU Arm Embedded GCC v8.3.1-1.4 released
+sidebar: arm-none-eabi-gcc
 
 summary: "Version 8.3.1-1.4 is a maintenance release of xPack GNU Arm Embedded GCC repacking the files from the previous 8.3.1-1.3 release in archives with a simpler structure and more standard names."
 

@@ -1,5 +1,6 @@
 ---
 title:  xPack QEMU RISC-V v7.0.0-1 released
+sidebar: qemu-riscv
 
 summary: "Version **7.0.0-1** is a new release."
 

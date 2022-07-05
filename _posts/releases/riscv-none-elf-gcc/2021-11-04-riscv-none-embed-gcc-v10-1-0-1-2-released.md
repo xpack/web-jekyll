@@ -1,5 +1,6 @@
 ---
 title:  xPack GNU RISC-V Embedded GCC v10.1.0-1.2 released
+sidebar: riscv-none-elf-gcc
 
 summary: "Version **10.1.0-1.2** is a maintenance release; it fixes the missing multi-libs on Windows and updates to
 the latest build scripts."

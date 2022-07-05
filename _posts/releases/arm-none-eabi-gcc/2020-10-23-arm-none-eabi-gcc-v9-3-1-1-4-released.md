@@ -1,5 +1,6 @@
 ---
 title:  xPack GNU Arm Embedded GCC v9.3.1-1.4 released
+sidebar: arm-none-eabi-gcc
 
 summary: "Version 9.3.1-1.4 is a maintenance release of **xPack GNU Arm Embedded GCC**; it adds an embedded Python 3 instance, to make `arm-none-eabi-gdb-py3` standalone and run on any system."
 

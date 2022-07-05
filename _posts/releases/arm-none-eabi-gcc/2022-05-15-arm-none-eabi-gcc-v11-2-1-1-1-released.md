@@ -1,5 +1,6 @@
 ---
 title:  xPack GNU Arm Embedded GCC v11.2.1-1.1 released
+sidebar: arm-none-eabi-gcc
 
 summary: "Version **11.2.1-1.1** is a new release; it follows the Arm release."
 

@@ -1,5 +1,6 @@
 ---
 title:  xPack GNU AArch64 Embedded GCC v11.2.1-1.2 released
+sidebar: aarch64-none-elf-gcc
 
 summary: "Version **11.2.1-1.2** is a maintenance release; it brings back support for parsing XML files in GDB, allowing it to auto-configure on target capabilities when connecting to J-Link GDB server and fixes libgcov.a, which resulted empty in the previous release."
 
