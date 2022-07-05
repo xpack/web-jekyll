@@ -47,8 +47,14 @@ entries:
     - title: gcc
       url: /gcc/
       output: web
+    - title: clang
+      url: /clang/
+      output: web
     - title: arm-none-eabi-gcc
       url: /arm-none-eabi-gcc/
+      output: web
+    - title: aarch64-none-elf-gcc
+      url: /aarch64-none-elf-gcc/
       output: web
     - title: riscv-none-elf-gcc
       url: /riscv-none-elf-gcc/
@@ -58,6 +64,9 @@ entries:
       output: web
     - title: qemu-arm
       url: /qemu-arm/
+      output: web
+    - title: qemu-riscv
+      url: /qemu-riscv/
       output: web
     - title: windows-build-tools
       url: /windows-build-tools/
