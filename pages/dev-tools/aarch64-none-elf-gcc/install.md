@@ -8,6 +8,7 @@ toc: false
 comments: true
 
 version: 11.2.1
+version-timestamp: 20220111
 
 date: 2019-07-10 17:53:00 +0300
 
@@ -116,7 +117,7 @@ To check if the xpm installed GCC starts, use something like:
 
 ```doscon
 C:\>%USERPROFILE%\AppData\Roaming\xPacks\@xpack-dev-tool\aarch64-none-elf-gcc\{{ page.version }}-1.1\.content\bin\aarch64-none-elf-gcc.exe" --version
-aarch64-none-elf-gcc (xPack GNU AArch64 Embedded GCC, 64-bit) {{ page.version }} 20191025 (release) [ARM/arm-9-branch revision 277599]
+aarch64-none-elf-gcc.exe (xPack GNU AArch64 Embedded GCC x86_64) {{ page.version }} {{ page.version-timestamp }}
 ```
 
 {{ manual_install }}
@@ -159,7 +160,7 @@ To check if the manually installed GCC starts, use something like:
 
 ```doscon
 C:\>%USERPROFILE%\AppData\Roaming\xPacks\aarch64-none-elf-gcc\xpack-aarch64-none-elf-gcc-{{ page.version }}-1.1\bin\aarch64-none-elf-gcc.exe" --version
-aarch64-none-elf-gcc (xPack GNU AArch64 Embedded GCC x86_64) 11.2.1 20220111
+aarch64-none-elf-gcc (xPack GNU AArch64 Embedded GCC x86_64) {{ page.version }} {{ page.version-timestamp }}
 ```
 
 ### Windows Build Tools
@@ -179,7 +180,7 @@ To check if the xpm installed GCC starts, use something like:
 
 ```console
 $ ~/.local/xPacks/@xpack-dev-tools/aarch64-none-elf-gcc/{{ page.version }}-1.1/.content/bin/aarch64-none-elf-gcc --version
-aarch64-none-elf-gcc (xPack GNU AArch64 Embedded GCC x86_64) 11.2.1 20220111
+aarch64-none-elf-gcc (xPack GNU AArch64 Embedded GCC x86_64) {{ page.version }} {{ page.version-timestamp }}
 ```
 
 {{ manual_install }}
@@ -238,7 +239,7 @@ $ tree -L 2 /Users/ilg/.local/xPacks/aarch64-none-elf-gcc/xpack-aarch64-none-elf
 │   ├── aarch64-none-elf-elfedit
 │   ├── aarch64-none-elf-g++
 │   ├── aarch64-none-elf-gcc
-│   ├── aarch64-none-elf-gcc-11.2.1
+│   ├── aarch64-none-elf-gcc-{{ page.version }}
 │   ├── aarch64-none-elf-gcc-ar
 │   ├── aarch64-none-elf-gcc-nm
 │   ├── aarch64-none-elf-gcc-ranlib
@@ -300,7 +301,7 @@ $ tree -L 2 /Users/ilg/.local/xPacks/aarch64-none-elf-gcc/xpack-aarch64-none-elf
 │   └── libz.1.dylib -> libz.1.2.12.dylib
 └── share
     ├── doc
-    └── gcc-11.2.1
+    └── gcc-{{ page.version }}
 
 21 directories, 59 files
 ```
@@ -388,7 +389,7 @@ $ tree -L 2 /home/ilg/.local/xPacks/aarch64-none-elf-gcc/xpack-aarch64-none-elf-
 │   ├── aarch64-none-elf-elfedit
 │   ├── aarch64-none-elf-g++
 │   ├── aarch64-none-elf-gcc
-│   ├── aarch64-none-elf-gcc-11.2.1
+│   ├── aarch64-none-elf-gcc-{{ page.version }}
 │   ├── aarch64-none-elf-gcc-ar
 │   ├── aarch64-none-elf-gcc-nm
 │   ├── aarch64-none-elf-gcc-ranlib
@@ -471,7 +472,7 @@ $ tree -L 2 /home/ilg/.local/xPacks/aarch64-none-elf-gcc/xpack-aarch64-none-elf-
 ├── README.md
 └── share
     ├── doc
-    └── gcc-11.2.1
+    └── gcc-{{ page.version }}
 
 22 directories, 78 files
 ```
@@ -482,7 +483,7 @@ To check if the manually installed GCC starts, use something like:
 
 ```console
 $ ~/.local/xPacks/aarch64-none-elf-gcc/xpack-aarch64-none-elf-gcc-{{ page.version }}-1.1/bin/aarch64-none-elf-gcc --version
-aarch64-none-elf-gcc (xPack GNU AArch64 Embedded GCC x86_64) 11.2.1 20220111
+aarch64-none-elf-gcc (xPack GNU AArch64 Embedded GCC x86_64) {{ page.version }} {{ page.version-timestamp }}
 ```
 
 {% endcapture %}

@@ -15,10 +15,8 @@ The quick answer is to use the GitHub
 
 ## Check the documentation
 
-The xPack GNU AArch64 Embedded GCC provides the original documentation in the
-installed folders:
-
-- `share/doc/pdf`
+The original GNU GCC documentation is available
+[online](https://gcc.gnu.org/onlinedocs/).
 
 ## Check the FAQ
 
