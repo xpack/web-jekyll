@@ -66,3 +66,6 @@ allowed-tags:
   - clang
   - box
   - aarch64
+  - riscv-none-elf-gcc
+  - risc-v
+  - aarch64-none-elf-gcc
