@@ -116,7 +116,7 @@ To check if the xpm installed GCC starts, use something like:
 
 ```doscon
 C:\>%USERPROFILE%\AppData\Roaming\xPacks\@xpack-dev-tool\gcc\{{ page.version }}-1.1\.content\bin\gcc.exe" --version
-gcc version {{ page.version }} (xPack GCC 64-bit)
+gcc (xPack GCC x86_64) -{{ page.version }}
 ```
 
 {{ manual_install }}
@@ -154,7 +154,7 @@ To check if the manually installed GCC starts, use something like:
 
 ```doscon
 C:\>%USERPROFILE%\AppData\Roaming\xPacks\gcc\xpack-gcc-{{ page.version }}-1\bin\gcc.exe" --version
-gcc version {{ page.version }} (xPack GCC x86_64)
+gcc (xPack GCC x86_64) -{{ page.version }}
 ```
 
 {% endcapture %}
@@ -169,7 +169,7 @@ To check if the xpm installed GCC starts, use something like:
 
 ```console
 $ ~/Library/xPacks/@xpack-dev-tools/gcc/{{ page.version }}-1.1/.content/bin/gcc --version
-gcc version {{ page.version }} (xPack GCC x86_64)
+gcc (xPack GCC x86_64) -{{ page.version }}
 ```
 
 {{ manual_install }}
@@ -309,7 +309,7 @@ To check if the manually installed GCC starts, use something like:
 
 ```console
 $ ~/.local/xPacks/gcc/xpack-gcc-{{ page.version }}-1.1/bin/gcc --version
-gcc version {{ page.version }} (xPack GCC x86_64)
+gcc (xPack GCC x86_64) -{{ page.version }}
 ```
 
 {% endcapture %}
