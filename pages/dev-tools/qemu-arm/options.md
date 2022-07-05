@@ -1,8 +1,8 @@
 ---
-title: The xPack QEMU Arm command line options
+title: The GNU MCU Eclipse QEMU command line options
 permalink: /qemu-arm/options/
 
-summary: "The QEMU Arm command line options allow to start standalone graphical or non-graphical emulation sessions, or to run as a GBD server in connection to a GDB client."
+summary: "DEPRECATED: The  GNU MCU Eclipse QEMU command line options allow to start standalone graphical or non-graphical emulation sessions, or to run as a GBD server in connection to a GDB client."
 
 toc: true
 comments: true
@@ -38,7 +38,7 @@ QEMU has lots, lots of options. The official QEMU documentation (available in th
 
 Unfortunately most of these options were designed for the larger versions of QEMU, intended to emulate Linux systems, and are of little use for Cortex-M emulation.
 
-The xPack QEMU Arm redefines some of these general options, or adds new ones, and generally uses only a small subset of the available options.
+The GNU MCU Eclipse QEMU redefines some of these general options, or adds new ones, and generally uses only a small subset of the available options.
 
 The common ones are presented below.
 
@@ -96,14 +96,13 @@ When in GDB server mode, it is no longer required to specify the ELF image, sinc
 
 ### `nographic`
 
-By default, the xPack QEMU Arm will try to start in graphical mode, by displaying an image of the emulated board and one or more animated LEDs.
+By default, the GNU MCU Eclipse QEMU will try to start in graphical mode, by displaying an image of the emulated board and one or more animated LEDs.
 
 For running unit tests this is generally not needed, and QEMU can be started with graphics support disabled:
 
 ```
 --nographic
 ```
-
 
 ### `verbose`
 
