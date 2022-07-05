@@ -7,7 +7,7 @@ summary: "The recommended method is via xpm."
 toc: false
 comments: true
 
-version: 0.55.3
+version: 0.60.3
 
 date: 2020-09-27 11:09:00 +0300
 
@@ -183,19 +183,31 @@ $ tree -L 2 /Users/ilg/.local/xPacks/meson-build/xpack-meson-build-{{ page.versi
 /Users/ilg/.local/xPacks/meson-build/xpack-meson-build-{{ page.version }}-1/
 ├── README.md
 ├── bin
-│   ├── libcrypt.2.dylib
-│   ├── libgcc_s.1.dylib
-│   ├── libpython3.8.dylib
 │   └── meson
 ├── distro-info
 │   ├── CHANGELOG.md
 │   ├── licenses
 │   ├── patches
 │   └── scripts
-└── lib
-    └── python3.8
+├── lib
+│   └── python3.10
+└── libexec
+    ├── libcrypt.2.dylib
+    ├── libcrypto.1.1.dylib
+    ├── libffi.8.dylib
+    ├── libgcc_s.1.dylib
+    ├── liblzma.5.dylib
+    ├── libncurses.6.dylib
+    ├── libpanel.6.dylib
+    ├── libpython3.10.dylib
+    ├── libreadline.8.1.dylib
+    ├── libreadline.8.dylib -> libreadline.8.1.dylib
+    ├── libsqlite3.0.dylib
+    ├── libssl.1.1.dylib
+    ├── libz.1.2.11.dylib
+    └── libz.1.dylib -> libz.1.2.11.dylib
 
-7 directories, 6 files
+8 directories, 17 files
 ```
 
 ### Test
@@ -204,7 +216,7 @@ To check if the manually installed Meson starts, use something like:
 
 ```console
 $ ~/.local/xPacks/meson-build/xpack-meson-build-{{ page.version }}-1/bin/meson --version
-0.5.3
+{{ page.version }}
 ```
 
 {% endcapture %}
@@ -264,10 +276,30 @@ $ tree -L 2 '/home/ilg/.local/xPacks/meson-build/xpack-meson-build-{{ page.versi
 │   ├── patches
 │   └── scripts
 ├── lib
-│   └── python3.8
+│   └── python3.10
+├── libexec
+│   ├── libcrypto.so.1.1
+│   ├── libcrypt.so.1 -> libcrypt.so.1.1.0
+│   ├── libcrypt.so.1.1.0
+│   ├── libffi.so.8 -> libffi.so.8.1.0
+│   ├── libffi.so.8.1.0
+│   ├── liblzma.so.5 -> liblzma.so.5.2.5
+│   ├── liblzma.so.5.2.5
+│   ├── libncurses.so.6 -> libncurses.so.6.3
+│   ├── libncurses.so.6.3
+│   ├── libpanel.so.6 -> libpanel.so.6.3
+│   ├── libpanel.so.6.3
+│   ├── libpython3.10.so.1.0
+│   ├── libreadline.so.8 -> libreadline.so.8.1
+│   ├── libreadline.so.8.1
+│   ├── libsqlite3.so.0 -> libsqlite3.so.0.8.6
+│   ├── libsqlite3.so.0.8.6
+│   ├── libssl.so.1.1
+│   ├── libz.so.1 -> libz.so.1.2.11
+│   └── libz.so.1.2.11
 └── README.md
 
-7 directories, 3 files
+8 directories, 22 files
 ```
 
 ### Test
