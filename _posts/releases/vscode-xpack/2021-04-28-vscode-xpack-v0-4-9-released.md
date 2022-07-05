@@ -10,6 +10,7 @@ date:   2021-04-28 00:51:00 +0300
 
 redirect_from:
   - /blog/2021/04/27/vscode-xpack-v0-4-8-released/
+  - /blog/2021/04/28/vscode-xpack-v0-4-9-released/
 
 categories:
   - releases

@@ -8,6 +8,9 @@ version: 0.4.10
 
 date:   2021-05-05 00:53:00 +0300
 
+redirect_from:
+  - /blog/2021/05/05/vscode-xpack-v0-4-10-released/
+
 categories:
   - releases
   - vscode-xpack
