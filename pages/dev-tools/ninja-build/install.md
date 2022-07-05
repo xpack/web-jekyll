@@ -7,7 +7,7 @@ summary: "The recommended method is via xpm."
 toc: false
 comments: true
 
-version: 1.10.1
+version: 1.11.0
 
 date: 2020-09-27 11:09:00 +0300
 
@@ -183,8 +183,6 @@ $ tree -L 2 /Users/ilg/.local/xPacks/ninja-build/xpack-ninja-build-{{ page.versi
 /Users/ilg/.local/xPacks/ninja-build/xpack-ninja-build-{{ page.version }}-1/
 ├── README.md
 ├── bin
-│   ├── libgcc_s.1.dylib
-│   ├── libstdc++.6.dylib
 │   └── ninja
 └── distro-info
     ├── CHANGELOG.md
@@ -192,7 +190,7 @@ $ tree -L 2 /Users/ilg/.local/xPacks/ninja-build/xpack-ninja-build-{{ page.versi
     ├── patches
     └── scripts
 
-5 directories, 5 files
+5 directories, 3 files
 ```
 
 ### Test
