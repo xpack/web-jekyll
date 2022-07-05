@@ -124,7 +124,7 @@ xpm uninstall --global @xpack-dev-tools/arm-none-eabi-gcc
 ## Compliance
 
 The xPack GNU Arm Embedded GCC generally follows the official
-[Arm Embedded GCC](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/downloads) releases.
+[Arm Embedded GCC](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/downloads/) releases.
 
 The current version is based on:
 
