@@ -20,7 +20,7 @@ date: 2016-03-09 12:04:00 +0300
 ## Distribution management systems
 
 - [OpenEmbedded](http://www.openembedded.org/wiki/Main_Page) - the build framework for embedded Linux (with more detail in the Yocto documentation)
-- [BitBake User Manual](http://www.yoctoproject.org/docs/)
+- BitBake User Manual
 - [Gentoo Development Guide](https://devmanual.gentoo.org/)
 - [MacPorts Guide](https://guide.macports.org/)
 - [Arch PKGBUILD](https://wiki.archlinux.org/index.php/PKGBUILD)

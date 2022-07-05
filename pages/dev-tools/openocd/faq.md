@@ -16,7 +16,7 @@ My JTAG probe XXX is not supported, can you add it?
 {% endcapture %}
 
 {% capture answer_1 %}
-Unfortunately not. The xPack OpenOCD is only a binary distribution of the standard source code OpenOCD, and does not intend to add new functionality. Please use the official OpenOCD [support channels](http://openocd.org/discussion/) to ask for new features.
+Unfortunately not. The xPack OpenOCD is only a binary distribution of the standard source code OpenOCD, and does not intend to add new functionality. Please use the official OpenOCD [support channels](https://openocd.org/pages/discussion.html) to ask for new features.
 {% endcapture %}
 
 {% capture question_2 %}
