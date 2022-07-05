@@ -1,0 +1,27 @@
+# This is the qemu sidebar TOC.
+# The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: Sidebar
+  product: QEMU RISC-V
+  # version: 1.0
+  folders:
+
+  - title: Getting Started
+    output: web
+    folderitems:
+    - title: Overview
+      url: /qemu-riscv/
+      output: web
+    - title: Install
+      url: /qemu-riscv/install/
+      output: web
+    - title: Support
+      url: /qemu-riscv/support/
+      output: web
+    - title: FAQ
+      url: /qemu-riscv/faq/
+      output: web
+    - title: Releases
+      url: /qemu-riscv/releases/
+      output: web
