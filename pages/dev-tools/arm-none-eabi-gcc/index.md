@@ -79,6 +79,10 @@ To save space and bandwidth, the original GNU GCC documentation is available
 For the various support options, please read the separate
 [support]({{ site.baseurl }}/arm-none-eabi-gcc/support/) page.
 
+In early releases, Python support in `gdb` was tricky and required
+the same versions of
+[Python]({{ site.baseurl }}/arm-none-eabi-gcc/python/) to be installed.
+
 ## Change log
 
 The release and change log is available in the repository

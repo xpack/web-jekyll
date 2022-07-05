@@ -7,7 +7,8 @@ summary: "The recommended method is via xpm."
 toc: false
 comments: true
 
-version: 9.2.1
+version: 11.2.1
+version-timestamp: 20220111
 
 date: 2019-07-10 17:53:00 +0300
 
@@ -115,7 +116,7 @@ To check if the xpm installed GCC starts, use something like:
 
 ```doscon
 C:\>%USERPROFILE%\AppData\Roaming\xPacks\@xpack-dev-tool\arm-none-eabi-gcc\{{ page.version }}-1.1.1\.content\bin\arm-none-eabi-gcc.exe" --version
-arm-none-eabi-gcc (xPack GNU Arm Embedded GCC, 64-bit) {{ page.version }} 20191025 (release) [ARM/arm-9-branch revision 277599]
+arm-none-eabi-gcc.exe (xPack GNU Arm Embedded GCC x86_64) {{ page.version }} {{ page.version-timestamp }}
 ```
 
 {{ manual_install }}
@@ -158,7 +159,7 @@ To check if the manually installed GCC starts, use something like:
 
 ```doscon
 C:\>%USERPROFILE%\AppData\Roaming\xPacks\arm-none-eabi-gcc\xpack-arm-none-eabi-gcc-{{ page.version }}-1.1\bin\arm-none-eabi-gcc.exe" --version
-arm-none-eabi-gcc (xPack GNU Arm Embedded GCC, 64-bit) {{ page.version }} 20191025 (release) [ARM/arm-9-branch revision 277599]
+arm-none-eabi-gcc.exe (xPack GNU Arm Embedded GCC x86_64) {{ page.version }} {{ page.version-timestamp }}
 ```
 
 ### Windows Build Tools
@@ -178,7 +179,7 @@ To check if the xpm installed GCC starts, use something like:
 
 ```console
 $ ~/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/{{ page.version }}-1.1.1/.content/bin/arm-none-eabi-gcc --version
-arm-none-eabi-gcc (xPack GNU Arm Embedded GCC, 64-bit) {{ page.version }} 20191025 (release) [ARM/arm-9-branch revision 277599]
+arm-none-eabi-gcc (xPack GNU Arm Embedded GCC x86_64) {{ page.version }} {{ page.version-timestamp }}
 ```
 
 {{ manual_install }}
@@ -297,7 +298,7 @@ To check if the manually installed GCC starts, use something like:
 
 ```console
 $ ~/.local/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-{{ page.version }}-1.1/bin/arm-none-eabi-gcc --version
-arm-none-eabi-gcc (xPack GNU Arm Embedded GCC, 64-bit) {{ page.version }} 20191025 (release) [ARM/arm-9-branch revision 277599]
+arm-none-eabi-gcc (xPack GNU Arm Embedded GCC x86_64) {{ page.version }} {{ page.version-timestamp }}
 ```
 
 {% endcapture %}
@@ -312,7 +313,7 @@ To check if the xpm installed GCC starts, use something like:
 
 ```console
 $ ~/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/{{ page.version }}-1.1.1/.content/bin/arm-none-eabi-gcc --version
-arm-none-eabi-gcc (xPack GNU Arm Embedded GCC, 64-bit) {{ page.version }} 20191025 (release) [ARM/arm-9-branch revision 277599]
+arm-none-eabi-gcc (xPack GNU Arm Embedded GCC x86_64) {{ page.version }} {{ page.version-timestamp }}
 ```
 
 {{ manual_install }}
@@ -451,7 +452,7 @@ To check if the manually installed GCC starts, use something like:
 
 ```console
 $ ~/.local/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-{{ page.version }}-1.1/bin/arm-none-eabi-gcc --version
-arm-none-eabi-gcc (xPack GNU Arm Embedded GCC, 64-bit) {{ page.version }} 20191025 (release) [ARM/arm-9-branch revision 277599]
+arm-none-eabi-gcc (xPack GNU Arm Embedded GCC x86_64) {{ page.version }} {{ page.version-timestamp }}
 ```
 
 {% endcapture %}
