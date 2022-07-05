@@ -168,7 +168,8 @@ relative path.
 
 ## Documentation
 
-The original documentation is available in the `share/doc` folder.
+To save space and bandwidth, the original documentation is available
+[online](https://clang.llvm.org/docs/UsersManual.html).
 
 ## Build
 
