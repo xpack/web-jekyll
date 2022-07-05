@@ -10,7 +10,7 @@ summary: "The recommended method is via xpm."
 toc: false
 comments: true
 
-version: 11.3.0
+version: 12.1.0
 subversion: 1.1
 
 date: 2019-07-10 17:53:00 +0300
@@ -115,7 +115,7 @@ To check if the xpm installed GCC starts, use something like:
 
 ```doscon
 C:\>%USERPROFILE%\AppData\Roaming\xPacks\@xpack-dev-tools\riscv-none-elf-gcc\{{ page.version }}-{{ page.subversion }}.1\.content\bin\riscv-none-elf-gcc.exe" --version
-riscv-none-elf-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) {{ page.version }}
+riscv-none-elf-gcc.exe (xPack GNU RISC-V Embedded GCC x86_64) {{ page.version }}
 ```
 
 {{ manual_install }}
@@ -156,7 +156,7 @@ To check if the manually installed GCC starts, use something like:
 
 ```dos
 C:\>%USERPROFILE%\AppData\Roaming\xPacks\riscv-none-elf-gcc\xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}\bin\riscv-none-elf-gcc.exe" --version
-riscv-none-elf-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) {{ page.version }}
+riscv-none-elf-gcc.exe (xPack GNU RISC-V Embedded GCC x86_64) {{ page.version }}
 ```
 
 {% include tip.html content="Since Windows does not provide the GNU make
@@ -174,7 +174,7 @@ To check if the xpm installed GCC starts, use something like:
 
 ```console
 $ ~/.local/xPacks/@xpack-dev-tools/riscv-none-elf-gcc/{{ page.version }}-{{ page.subversion }}.1/.content/bin/riscv-none-elf-gcc --version
-riscv-none-elf-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) {{ page.version }}
+riscv-none-elf-gcc (xPack GNU RISC-V Embedded GCC x86_64) {{ page.version }}
 ```
 
 {{ manual_install }}
@@ -215,46 +215,39 @@ $ tree -L 2 /Users/ilg/.local/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc
 /Users/ilg/.local/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}/
 ├── README.md
 ├── bin
-│   ├── libexpat.1.6.7.dylib
-│   ├── libexpat.1.dylib -> libexpat.1.6.7.dylib
-│   ├── libgcc_s.1.dylib
-│   ├── libgmp.10.dylib
-│   ├── libiconv.2.dylib
-│   ├── liblzma.5.dylib
-│   ├── libmpfr.4.dylib
-│   ├── libz.1.2.8.dylib
-│   ├── libz.1.dylib -> libz.1.2.8.dylib
-│   ├── riscv-none-embed-addr2line
-│   ├── riscv-none-embed-ar
-│   ├── riscv-none-embed-as
-│   ├── riscv-none-embed-c++
-│   ├── riscv-none-embed-c++filt
-│   ├── riscv-none-embed-cpp
-│   ├── riscv-none-embed-elfedit
-│   ├── riscv-none-embed-g++
+│   ├── riscv-none-elf-addr2line
+│   ├── riscv-none-elf-ar
+│   ├── riscv-none-elf-as
+│   ├── riscv-none-elf-c++
+│   ├── riscv-none-elf-c++filt
+│   ├── riscv-none-elf-cpp
+│   ├── riscv-none-elf-elfedit
+│   ├── riscv-none-elf-g++
 │   ├── riscv-none-elf-gcc
-│   ├── riscv-none-elf-gcc-{{ page.version }}
+│   ├── riscv-none-elf-gcc-12.1.0
 │   ├── riscv-none-elf-gcc-ar
 │   ├── riscv-none-elf-gcc-nm
 │   ├── riscv-none-elf-gcc-ranlib
-│   ├── riscv-none-embed-gcov
-│   ├── riscv-none-embed-gcov-dump
-│   ├── riscv-none-embed-gcov-tool
-│   ├── riscv-none-embed-gdb
-│   ├── riscv-none-embed-gdb-add-index
-│   ├── riscv-none-embed-gdb-add-index-py
-│   ├── riscv-none-embed-gdb-py
-│   ├── riscv-none-embed-gprof
-│   ├── riscv-none-embed-ld
-│   ├── riscv-none-embed-ld.bfd
-│   ├── riscv-none-embed-nm
-│   ├── riscv-none-embed-objcopy
-│   ├── riscv-none-embed-objdump
-│   ├── riscv-none-embed-ranlib
-│   ├── riscv-none-embed-readelf
-│   ├── riscv-none-embed-size
-│   ├── riscv-none-embed-strings
-│   └── riscv-none-embed-strip
+│   ├── riscv-none-elf-gcov
+│   ├── riscv-none-elf-gcov-dump
+│   ├── riscv-none-elf-gcov-tool
+│   ├── riscv-none-elf-gdb
+│   ├── riscv-none-elf-gdb-add-index
+│   ├── riscv-none-elf-gdb-add-index-py3
+│   ├── riscv-none-elf-gdb-py3
+│   ├── riscv-none-elf-gfortran
+│   ├── riscv-none-elf-gprof
+│   ├── riscv-none-elf-ld
+│   ├── riscv-none-elf-ld.bfd
+│   ├── riscv-none-elf-lto-dump
+│   ├── riscv-none-elf-nm
+│   ├── riscv-none-elf-objcopy
+│   ├── riscv-none-elf-objdump
+│   ├── riscv-none-elf-ranlib
+│   ├── riscv-none-elf-readelf
+│   ├── riscv-none-elf-size
+│   ├── riscv-none-elf-strings
+│   └── riscv-none-elf-strip
 ├── distro-info
 │   ├── CHANGELOG.md
 │   ├── licenses
@@ -266,19 +259,40 @@ $ tree -L 2 /Users/ilg/.local/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc
 │   ├── bfd-plugins
 │   ├── gcc
 │   ├── libcc1.0.so
-│   └── libcc1.so -> libcc1.0.so
+│   ├── libcc1.so -> libcc1.0.so
+│   └── python3.10
 ├── libexec
-│   └── gcc
-├── riscv-none-embed
+│   ├── gcc
+│   ├── libcrypt.2.dylib
+│   ├── libcrypto.1.1.dylib
+│   ├── libffi.8.dylib
+│   ├── libgcc_s.1.dylib
+│   ├── libgmp.10.dylib
+│   ├── libiconv.2.dylib
+│   ├── libisl.23.dylib
+│   ├── liblzma.5.dylib
+│   ├── libmpc.3.dylib
+│   ├── libmpfr.6.dylib
+│   ├── libncurses.6.dylib
+│   ├── libpanel.6.dylib
+│   ├── libpython3.10.dylib
+│   ├── libreadline.8.1.dylib
+│   ├── libreadline.8.dylib -> libreadline.8.1.dylib
+│   ├── libsqlite3.0.dylib
+│   ├── libssl.1.1.dylib
+│   ├── libstdc++.6.dylib
+│   ├── libz.1.2.12.dylib
+│   └── libz.1.dylib -> libz.1.2.12.dylib
+├── riscv-none-elf
 │   ├── bin
 │   ├── include
 │   ├── lib
 │   └── share
 └── share
     ├── doc
-    └── gcc-riscv-none-embed
+    └── gcc-12.1.0
 
-20 directories, 44 files
+21 directories, 57 files
 ```
 
 ### Test
@@ -287,7 +301,7 @@ To check if the manually installed GCC starts, use something like:
 
 ```console
 $ ~/.local/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}/bin/riscv-none-elf-gcc --version
-riscv-none-elf-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) {{ page.version }}
+riscv-none-elf-gcc (xPack GNU RISC-V Embedded GCC x86_64) {{ page.version }}
 ```
 
 {% endcapture %}
@@ -302,7 +316,7 @@ To check if the xpm installed GCC starts, use something like:
 
 ```console
 $ ~/.local/xPacks/@xpack-dev-tools/riscv-none-elf-gcc/{{ page.version }}-{{ page.subversion }}.1/.content/bin/riscv-none-elf-gcc --version
-riscv-none-elf-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) {{ page.version }}
+riscv-none-elf-gcc (xPack GNU RISC-V Embedded GCC x86_64) {{ page.version }}
 ```
 
 {{ manual_install }}
@@ -347,52 +361,41 @@ The result is a structure like:
 $ tree -L 2 /home/ilg/.local/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}/
 /home/ilg/.local/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}/
 ├── bin
-│   ├── libexpat.so.1 -> libexpat.so.1.6.7
-│   ├── libexpat.so.1.6.7
-│   ├── libfl.so.2 -> libfl.so.2.0.0
-│   ├── libfl.so.2.0.0
-│   ├── libgmp.so.10 -> libgmp.so.10.3.2
-│   ├── libgmp.so.10.3.2
-│   ├── libiconv.so.2 -> libiconv.so.2.6.0
-│   ├── libiconv.so.2.6.0
-│   ├── liblzma.so.5 -> liblzma.so.5.2.3
-│   ├── liblzma.so.5.2.3
-│   ├── libmpfr.so.4 -> libmpfr.so.4.1.6
-│   ├── libmpfr.so.4.1.6
-│   ├── libpython2.7.so.1.0
-│   ├── libz.so.1 -> libz.so.1.2.8
-│   ├── libz.so.1.2.8
-│   ├── riscv-none-embed-addr2line
-│   ├── riscv-none-embed-ar
-│   ├── riscv-none-embed-as
-│   ├── riscv-none-embed-c++
-│   ├── riscv-none-embed-c++filt
-│   ├── riscv-none-embed-cpp
-│   ├── riscv-none-embed-elfedit
-│   ├── riscv-none-embed-g++
+│   ├── libgpm.so.2 -> libgpm.so.2.1.0
+│   ├── libgpm.so.2.1.0
+│   ├── riscv-none-elf-addr2line
+│   ├── riscv-none-elf-ar
+│   ├── riscv-none-elf-as
+│   ├── riscv-none-elf-c++
+│   ├── riscv-none-elf-c++filt
+│   ├── riscv-none-elf-cpp
+│   ├── riscv-none-elf-elfedit
+│   ├── riscv-none-elf-g++
 │   ├── riscv-none-elf-gcc
-│   ├── riscv-none-elf-gcc-{{ page.version }}
+│   ├── riscv-none-elf-gcc-12.1.0
 │   ├── riscv-none-elf-gcc-ar
 │   ├── riscv-none-elf-gcc-nm
 │   ├── riscv-none-elf-gcc-ranlib
-│   ├── riscv-none-embed-gcov
-│   ├── riscv-none-embed-gcov-dump
-│   ├── riscv-none-embed-gcov-tool
-│   ├── riscv-none-embed-gdb
-│   ├── riscv-none-embed-gdb-add-index
-│   ├── riscv-none-embed-gdb-add-index-py
-│   ├── riscv-none-embed-gdb-py
-│   ├── riscv-none-embed-gprof
-│   ├── riscv-none-embed-ld
-│   ├── riscv-none-embed-ld.bfd
-│   ├── riscv-none-embed-nm
-│   ├── riscv-none-embed-objcopy
-│   ├── riscv-none-embed-objdump
-│   ├── riscv-none-embed-ranlib
-│   ├── riscv-none-embed-readelf
-│   ├── riscv-none-embed-size
-│   ├── riscv-none-embed-strings
-│   └── riscv-none-embed-strip
+│   ├── riscv-none-elf-gcov
+│   ├── riscv-none-elf-gcov-dump
+│   ├── riscv-none-elf-gcov-tool
+│   ├── riscv-none-elf-gdb
+│   ├── riscv-none-elf-gdb-add-index
+│   ├── riscv-none-elf-gdb-add-index-py3
+│   ├── riscv-none-elf-gdb-py3
+│   ├── riscv-none-elf-gfortran
+│   ├── riscv-none-elf-gprof
+│   ├── riscv-none-elf-ld
+│   ├── riscv-none-elf-ld.bfd
+│   ├── riscv-none-elf-lto-dump
+│   ├── riscv-none-elf-nm
+│   ├── riscv-none-elf-objcopy
+│   ├── riscv-none-elf-objdump
+│   ├── riscv-none-elf-ranlib
+│   ├── riscv-none-elf-readelf
+│   ├── riscv-none-elf-size
+│   ├── riscv-none-elf-strings
+│   └── riscv-none-elf-strip
 ├── distro-info
 │   ├── CHANGELOG.md
 │   ├── licenses
@@ -402,27 +405,59 @@ $ tree -L 2 /home/ilg/.local/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-
 │   └── gdb
 ├── lib
 │   ├── bfd-plugins
-│   └── gcc
+│   ├── gcc
+│   └── python3.10
 ├── lib64
 │   ├── libcc1.so -> libcc1.so.0.0.0
 │   ├── libcc1.so.0 -> libcc1.so.0.0.0
-│   ├── libcc1.so.0.0.0
-│   ├── libgcc_s.so.1
-│   ├── libstdc++.so.6 -> libstdc++.so.6.0.24
-│   └── libstdc++.so.6.0.24
+│   └── libcc1.so.0.0.0
 ├── libexec
-│   └── gcc
+│   ├── gcc
+│   ├── libcrypto.so.1.1
+│   ├── libcrypt.so.1 -> libcrypt.so.1.1.0
+│   ├── libcrypt.so.1.1.0
+│   ├── libffi.so.8 -> libffi.so.8.1.0
+│   ├── libffi.so.8.1.0
+│   ├── libfl.so.2 -> libfl.so.2.0.0
+│   ├── libfl.so.2.0.0
+│   ├── libgcc_s.so.1
+│   ├── libgmp.so.10 -> libgmp.so.10.4.1
+│   ├── libgmp.so.10.4.1
+│   ├── libiconv.so.2 -> libiconv.so.2.6.1
+│   ├── libiconv.so.2.6.1
+│   ├── libisl.so.23 -> libisl.so.23.1.0
+│   ├── libisl.so.23.1.0
+│   ├── liblzma.so.5 -> liblzma.so.5.2.5
+│   ├── liblzma.so.5.2.5
+│   ├── libmpc.so.3 -> libmpc.so.3.2.1
+│   ├── libmpc.so.3.2.1
+│   ├── libmpfr.so.6 -> libmpfr.so.6.1.0
+│   ├── libmpfr.so.6.1.0
+│   ├── libncurses.so.6 -> libncurses.so.6.3
+│   ├── libncurses.so.6.3
+│   ├── libpanel.so.6 -> libpanel.so.6.3
+│   ├── libpanel.so.6.3
+│   ├── libpython3.10.so.1.0
+│   ├── libreadline.so.8 -> libreadline.so.8.1
+│   ├── libreadline.so.8.1
+│   ├── libsqlite3.so.0 -> libsqlite3.so.0.8.6
+│   ├── libsqlite3.so.0.8.6
+│   ├── libssl.so.1.1
+│   ├── libstdc++.so.6 -> libstdc++.so.6.0.29
+│   ├── libstdc++.so.6.0.29
+│   ├── libz.so.1 -> libz.so.1.2.12
+│   └── libz.so.1.2.12
 ├── README.md
-├── riscv-none-embed
+├── riscv-none-elf
 │   ├── bin
 │   ├── include
 │   ├── lib
 │   └── share
 └── share
     ├── doc
-    └── gcc-riscv-none-embed
+    └── gcc-12.1.0
 
-21 directories, 54 files
+22 directories, 74 files
 ```
 
 ### Test
@@ -431,7 +466,7 @@ To check if the manually installed GCC starts, use something like:
 
 ```console
 $ ~/.local/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}/bin/riscv-none-elf-gcc --version
-riscv-none-elf-gcc (xPack GNU RISC-V Embedded GCC, 64-bit) {{ page.version }}
+riscv-none-elf-gcc (xPack GNU RISC-V Embedded GCC x86_64) {{ page.version }}
 ```
 
 {% endcapture %}
