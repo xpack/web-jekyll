@@ -62,11 +62,7 @@ presented in the separate
 
 ## Documentation
 
-The current version specific CMake documentation is available in each packet:
-
-- `doc/cmake-X.Y/html/index.html`
-
-and online from:
+The current version specific CMake documentation is available online from:
 
 - [https://cmake.org/documentation/](https://cmake.org/documentation/)
 

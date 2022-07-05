@@ -7,7 +7,8 @@ summary: "The recommended method is via xpm."
 toc: false
 comments: true
 
-version: 3.19.1
+version: 3.21.6
+version-major-minor: 3.21
 
 date: 2020-09-29 14:05:00 +0300
 
@@ -192,24 +193,25 @@ $ tree -L 2 /Users/ilg/.local/xPacks/cmake/xpack-cmake-{{ page.version }}-1
 │   ├── ccmake
 │   ├── cmake
 │   ├── cpack
-│   ├── ctest
-│   ├── libgcc_s.1.dylib
-│   └── libncurses.6.dylib
+│   └── ctest
 ├── distro-info
 │   ├── CHANGELOG.md
 │   ├── licenses
 │   ├── patches
 │   └── scripts
 ├── doc
-│   └── cmake-3.18
+│   └── cmake-{{ page.version-major-minor }}
+├── libexec
+│   ├── libgcc_s.1.dylib
+│   └── libncurses.6.dylib
 └── share
     ├── aclocal
     ├── bash-completion
-    ├── cmake-3.18
+    ├── cmake-{{ page.version-major-minor }}
     ├── emacs
     └── vim
 
-13 directories, 8 files
+14 directories, 8 files
 ```
 
 ### Test
@@ -276,27 +278,28 @@ $ tree -L 2 '/home/ilg/.local/xPacks/cmake/xpack-cmake-{{ page.version }}-1'
 │   ├── ccmake
 │   ├── cmake
 │   ├── cpack
-│   ├── ctest
-│   ├── libcrypto.so.1.1
-│   ├── libncurses.so.6 -> libncurses.so.6.2
-│   ├── libncurses.so.6.2
-│   └── libssl.so.1.1
+│   └── ctest
 ├── distro-info
 │   ├── CHANGELOG.md
 │   ├── licenses
 │   ├── patches
 │   └── scripts
 ├── doc
-│   └── cmake-3.18
+│   └── cmake-{{ page.version-major-minor }}
+├── libexec
+│   ├── libcrypto.so.1.1
+│   ├── libncurses.so.6 -> libncurses.so.6.2
+│   ├── libncurses.so.6.2
+│   └── libssl.so.1.1
 ├── README.md
 └── share
     ├── aclocal
     ├── bash-completion
-    ├── cmake-3.18
+    ├── cmake-{{ page.version-major-minor }}
     ├── emacs
     └── vim
 
-13 directories, 10 files
+14 directories, 10 files
 ```
 
 ### Test
