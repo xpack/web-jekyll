@@ -7,7 +7,8 @@ summary: "The recommended method is via xpm."
 toc: false
 comments: true
 
-version: 1.11.0
+version: "1.11.0"
+subversion: "1"
 
 date: 2020-09-27 11:09:00 +0300
 
@@ -95,7 +96,7 @@ page.
 To check if the xpm installed Ninja starts, use something like:
 
 ```doscon
-C:\>%USERPROFILE%\AppData\Roaming\xPacks\@xpack-dev-tools\ninja-build\{{ page.version }}-1.1\.content\bin\ninja.exe --version
+C:\>%USERPROFILE%\AppData\Roaming\xPacks\@xpack-dev-tools\ninja-build\{{ page.version }}-{{ page.subversion }}.1\.content\bin\ninja.exe --version
 {{ page.version }}
 ```
 
@@ -106,7 +107,7 @@ C:\>%USERPROFILE%\AppData\Roaming\xPacks\@xpack-dev-tools\ninja-build\{{ page.ve
 The Windows versions of **xPack Ninja Build** are packed as ZIP files.
 Download the latest version named like:
 
-- `xpack-ninja-build-{{ page.version }}-1-win32-x64.zip`
+- `xpack-ninja-build-{{ page.version }}-{{ page.subversion }}-win32-x64.zip`
 
 {% include note.html content="In case you wonder where the suffix comes
 from, it is exactly the Node.js `process.platform` and `process.arch`.
@@ -131,7 +132,7 @@ and `.content` to store the unpacked archive." %}
 To check if the manually installed Ninja starts, use something like:
 
 ```doscon
-C:\>%USERPROFILE%\AppData\Roaming\xPacks\ninja-build\xpack-ninja-{{ page.version }}-1\bin\ninja.exe --version
+C:\>%USERPROFILE%\AppData\Roaming\xPacks\ninja-build\xpack-ninja-{{ page.version }}-{{ page.subversion }}\bin\ninja.exe --version
 {{ page.version }}
 ```
 
@@ -146,7 +147,7 @@ C:\>%USERPROFILE%\AppData\Roaming\xPacks\ninja-build\xpack-ninja-{{ page.version
 To check if the xpm installed Ninja starts, use something like:
 
 ```console
-$ ~/.local/xPacks/@xpack-dev-tools/ninja-build/{{ page.version }}-1.1/.content/bin/ninja --version
+$ ~/.local/xPacks/@xpack-dev-tools/ninja-build/{{ page.version }}-{{ page.subversion }}.1/.content/bin/ninja --version
 {{ page.version }}
 ```
 
@@ -157,20 +158,21 @@ $ ~/.local/xPacks/@xpack-dev-tools/ninja-build/{{ page.version }}-1.1/.content/b
 The macOS version of **xPack Ninja Build** is packed as a .tar.gz archive.
 Download the latest version named like:
 
-- `xpack-ninja-build-{{ page.version }}-1-darwin-x64.tgz`
+- `xpack-ninja-build-{{ page.version }}-{{ page.subversion }}-darwin-x64.tar.gz`
+- `xpack-ninja-build-{{ page.version }}-{{ page.subversion }}-darwin-arm64.tar.gz`
 
 ### Unpack
 
 To manually install the xPack Ninja Build,
 unpack the archive and move it to
-`~/.local/xPacks/ninja-build/xpack-ninja-build-{{ page.version }}-1`:
+`~/.local/xPacks/ninja-build/xpack-ninja-build-{{ page.version }}-{{ page.subversion }}`:
 
 ```sh
 mkdir -p ~/.local/xPacks/ninja-build
 cd ~/.local/xPacks/ninja-build
 
-tar xvf ~/Downloads/xpack-ninja-build-{{ page.version }}-1-darwin-x64.tgz
-chmod -R -w xpack-ninja-build-{{ page.version }}-1
+tar xvf ~/Downloads/xpack-ninja-build-{{ page.version }}-{{ page.subversion }}-darwin-x64.tar.gz
+chmod -R -w xpack-ninja-build-{{ page.version }}-{{ page.subversion }}
 ```
 
 {% include note.html content="For manual installs, the recommended
@@ -179,8 +181,8 @@ install location is different from the xpm install folders." %}
 The result is a structure like:
 
 ```console
-$ tree -L 2 /Users/ilg/.local/xPacks/ninja-build/xpack-ninja-build-{{ page.version }}-1
-/Users/ilg/.local/xPacks/ninja-build/xpack-ninja-build-{{ page.version }}-1/
+$ tree -L 2 /Users/ilg/.local/xPacks/ninja-build/xpack-ninja-build-{{ page.version }}-{{ page.subversion }}
+/Users/ilg/.local/xPacks/ninja-build/xpack-ninja-build-{{ page.version }}-{{ page.subversion }}/
 ├── README.md
 ├── bin
 │   └── ninja
@@ -198,7 +200,7 @@ $ tree -L 2 /Users/ilg/.local/xPacks/ninja-build/xpack-ninja-build-{{ page.versi
 To check if the manually installed Ninja starts, use something like:
 
 ```console
-$ ~/.local/xPacks/ninja-build/{{ page.version }}-1/bin/ninja --version
+$ ~/.local/xPacks/ninja-build/{{ page.version }}-{{ page.subversion }}/bin/ninja --version
 {{ page.version }}
 ```
 
@@ -213,7 +215,7 @@ $ ~/.local/xPacks/ninja-build/{{ page.version }}-1/bin/ninja --version
 To check if the xpm installed Ninja starts, use something like:
 
 ```console
-$ ~/.local/xPacks/@xpack-dev-tools/ninja-build/{{ page.version }}-1.1/.content/bin/ninja --version
+$ ~/.local/xPacks/@xpack-dev-tools/ninja-build/{{ page.version }}-{{ page.subversion }}.1/.content/bin/ninja --version
 {{ page.version }}
 ```
 
@@ -224,7 +226,9 @@ $ ~/.local/xPacks/@xpack-dev-tools/ninja-build/{{ page.version }}-1.1/.content/b
 The GNU/Linux versions of **xPack Ninja Build** are packed as plain archives.
 Download the latest version named like:
 
-- `xpack-ninja-build-{{ page.version }}-1-linux-x64.tgz`
+- `xpack-ninja-build-{{ page.version }}-{{ page.subversion }}-linux-x64.tar.gz`
+- `xpack-ninja-build-{{ page.version }}-{{ page.subversion }}-linux-arm.tar.gz`
+- `xpack-ninja-build-{{ page.version }}-{{ page.subversion }}-linux-arm64.tar.gz`
 
 As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
 Ubuntu, but can be executed on most recent GNU/Linux distributions.
@@ -233,14 +237,14 @@ Ubuntu, but can be executed on most recent GNU/Linux distributions.
 
 To manually install the xPack Ninja Build,
 unpack the archive and move it to
-`~/.local/xPacks/ninja-build/xpack-ninja-build-{{ page.version }}-1`:
+`~/.local/xPacks/ninja-build/xpack-ninja-build-{{ page.version }}-{{ page.subversion }}`:
 
 ```sh
 mkdir -p ~/.local/xPacks/ninja-build
 cd ~/.local/xPacks/ninja-build
 
-tar xvf ~/Downloads/xpack-ninja-build-{{ page.version }}-1-linux-x64.tgz
-chmod -R -w xpack-ninja-build-{{ page.version }}-1
+tar xvf ~/Downloads/xpack-ninja-build-{{ page.version }}-{{ page.subversion }}-linux-x64.tar.gz
+chmod -R -w xpack-ninja-build-{{ page.version }}-{{ page.subversion }}
 ```
 
 {% include note.html content="For manual installs, the recommended
@@ -249,8 +253,8 @@ which use the scope (like `@xpack-dev-tools`) to group different tools,
 and `.content` to store the unpacked archive." %}
 
 ```console
-$ tree -L 2 '/home/ilg/.local/xPacks/ninja-build/xpack-ninja-build-{{ page.version }}-1'
-/home/ilg/.local/xPacks/ninja-build/xpack-ninja-build-{{ page.version }}-1/
+$ tree -L 2 '/home/ilg/.local/xPacks/ninja-build/xpack-ninja-build-{{ page.version }}-{{ page.subversion }}'
+/home/ilg/.local/xPacks/ninja-build/xpack-ninja-build-{{ page.version }}-{{ page.subversion }}/
 ├── bin
 │   └── ninja
 ├── distro-info
@@ -268,7 +272,7 @@ $ tree -L 2 '/home/ilg/.local/xPacks/ninja-build/xpack-ninja-build-{{ page.versi
 To check if the manually installed Ninja starts, use something like:
 
 ```console
-$ ~/.local/xPacks/ninja-build/xpack-ninja-build-{{ page.version }}-1/bin/ninja --version
+$ ~/.local/xPacks/ninja-build/xpack-ninja-build-{{ page.version }}-{{ page.subversion }}/bin/ninja --version
 {{ page.version }}
 ```
 

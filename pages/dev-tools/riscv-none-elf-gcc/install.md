@@ -10,8 +10,8 @@ summary: "The recommended method is via xpm."
 toc: false
 comments: true
 
-version: 12.1.0
-subversion: 1.1
+version: "12.1.0"
+subversion: "2"
 
 date: 2019-07-10 17:53:00 +0300
 
@@ -184,7 +184,8 @@ riscv-none-elf-gcc (xPack GNU RISC-V Embedded GCC x86_64) {{ page.version }}
 The macOS version of **xPack GNU RISC-V Embedded GCC** is packed as a .tar.gz archive.
 Download the latest version named like:
 
-- `xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}-darwin-x64.tgz`
+- `xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}-darwin-x64.tar.gz`
+- `xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}-darwin-arm64.tar.gz`
 
 ### Unpack
 
@@ -196,7 +197,7 @@ unpack the archive and copy it to
 mkdir -p ~/.local/xPacks/riscv-none-elf-gcc
 cd ~/.local/xPacks/riscv-none-elf-gcc
 
-tar xvf ~/Downloads/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}-darwin-x64.tgz
+tar xvf ~/Downloads/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}-darwin-x64.tar.gz
 chmod -R -w xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}
 ```
 
@@ -326,7 +327,9 @@ riscv-none-elf-gcc (xPack GNU RISC-V Embedded GCC x86_64) {{ page.version }}
 The GNU/Linux versions of **xPack GNU RISC-V Embedded GCC** are packed as
 .tar.gz archives. Download the latest version named like:
 
-- `xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}-linux-x64.tgz`
+- `xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}-linux-x64.tar.gz`
+- `xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}-linux-arm.tar.gz`
+- `xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}-linux-arm64.tar.gz`
 
 As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
 Ubuntu, but can be executed on most recent GNU/Linux distributions.
@@ -341,7 +344,7 @@ unpack the archive and move it to
 mkdir -p ~/.local/xPacks/riscv-none-elf-gcc
 cd ~/.local/xPacks/riscv-none-elf-gcc
 
-tar xvf ~/Downloads/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}-linux-x64.tgz
+tar xvf ~/Downloads/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}-linux-x64.tar.gz
 chmod -R -w xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}
 ```
 

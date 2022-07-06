@@ -7,7 +7,8 @@ summary: "The recommended method is via xpm."
 toc: false
 comments: true
 
-version: 12.1.0
+version: "12.1.0"
+subversion: "1"
 
 date: 2021-05-22 00:27:00 +0300
 
@@ -115,7 +116,7 @@ GitHub [releases](https://github.com/xpack-dev-tools/gcc-xpack/releases/) pages.
 To check if the xpm installed GCC starts, use something like:
 
 ```doscon
-C:\>%USERPROFILE%\AppData\Roaming\xPacks\@xpack-dev-tool\gcc\{{ page.version }}-1.1\.content\bin\gcc.exe" --version
+C:\>%USERPROFILE%\AppData\Roaming\xPacks\@xpack-dev-tool\gcc\{{ page.version }}-{{ page.subversion }}.1\.content\bin\gcc.exe" --version
 gcc (xPack GCC x86_64) -{{ page.version }}
 ```
 
@@ -126,7 +127,7 @@ gcc (xPack GCC x86_64) -{{ page.version }}
 The Windows versions of **xPack GNU Compiler Collection** are packed as ZIP files.
 Download the latest version named like:
 
-- `xpack-gcc-{{ page.version }}-1-win32-x64.zip`
+- `xpack-gcc-{{ page.version }}-{{ page.subversion }}-win32-x64.zip`
 
 {% include note.html content="In case you wonder where the suffix comes
 from, it is exactly the Node.js `process.platform` and `process.arch`.
@@ -153,7 +154,7 @@ and `.content` to store the unpacked archive." %}
 To check if the manually installed GCC starts, use something like:
 
 ```doscon
-C:\>%USERPROFILE%\AppData\Roaming\xPacks\gcc\xpack-gcc-{{ page.version }}-1\bin\gcc.exe" --version
+C:\>%USERPROFILE%\AppData\Roaming\xPacks\gcc\xpack-gcc-{{ page.version }}-{{ page.subversion }}\bin\gcc.exe" --version
 gcc (xPack GCC x86_64) -{{ page.version }}
 ```
 
@@ -168,7 +169,7 @@ gcc (xPack GCC x86_64) -{{ page.version }}
 To check if the xpm installed GCC starts, use something like:
 
 ```console
-$ ~/Library/xPacks/@xpack-dev-tools/gcc/{{ page.version }}-1.1/.content/bin/gcc --version
+$ ~/Library/xPacks/@xpack-dev-tools/gcc/{{ page.version }}-{{ page.subversion }}.1/.content/bin/gcc --version
 gcc (xPack GCC x86_64) -{{ page.version }}
 ```
 
@@ -180,7 +181,8 @@ The macOS version of **xPack GNU Compiler Collection** is packed as a
 `.tar.gz` archive.
 Download the latest version named like:
 
-- `xpack-gcc-{{ page.version }}-1-darwin-x64.tar.gz`
+- `xpack-gcc-{{ page.version }}-{{ page.subversion }}-darwin-x64.tar.gz`
+- `xpack-gcc-{{ page.version }}-{{ page.subversion }}-darwin-arm64.tar.gz`
 
 ### Unpack
 
@@ -192,8 +194,8 @@ unpack the archive and copy it to
 mkdir -p ~/.local/xPacks/gcc
 cd ~/.local/xPacks/gcc
 
-tar xvf ~/Downloads/xpack-gcc-{{ page.version }}-1-darwin-x64.tar.gz
-chmod -R -w xpack-gcc-{{ page.version }}-1
+tar xvf ~/Downloads/xpack-gcc-{{ page.version }}-{{ page.subversion }}-darwin-x64.tar.gz
+chmod -R -w xpack-gcc-{{ page.version }}-{{ page.subversion }}
 ```
 
 You may shorten the last folder name and keep only the version.
@@ -204,8 +206,8 @@ install location is different from the xpm install folders." %}
 The result is a structure like:
 
 ```console
-$ tree -L 2 /Users/ilg/.local/xPacks/gcc/xpack-gcc-{{ page.version }}-1
-/Users/ilg/.local/xPacks/gcc/xpack-gcc-{{ page.version }}-1
+$ tree -L 2 /Users/ilg/.local/xPacks/gcc/xpack-gcc-{{ page.version }}-{{ page.subversion }}
+/Users/ilg/.local/xPacks/gcc/xpack-gcc-{{ page.version }}-{{ page.subversion }}
 ├── README.md
 ├── bin
 │   ├── c++
@@ -221,7 +223,7 @@ $ tree -L 2 /Users/ilg/.local/xPacks/gcc/xpack-gcc-{{ page.version }}-1
 │   ├── x86_64-apple-darwin21.4.0-c++
 │   ├── x86_64-apple-darwin21.4.0-g++
 │   ├── x86_64-apple-darwin21.4.0-gcc
-│   ├── x86_64-apple-darwin21.4.0-gcc-12.1.0
+│   ├── x86_64-apple-darwin21.4.0-gcc-{{ page.version }}
 │   ├── x86_64-apple-darwin21.4.0-gcc-ar
 │   ├── x86_64-apple-darwin21.4.0-gcc-nm
 │   └── x86_64-apple-darwin21.4.0-gcc-ranlib
@@ -297,7 +299,7 @@ $ tree -L 2 /Users/ilg/.local/xPacks/gcc/xpack-gcc-{{ page.version }}-1
 │   └── libstdc++.6.dylib
 └── share
     ├── doc
-    ├── gcc-12.1.0
+    ├── gcc-{{ page.version }}
     └── gdb
 
 16 directories, 77 files
@@ -308,7 +310,7 @@ $ tree -L 2 /Users/ilg/.local/xPacks/gcc/xpack-gcc-{{ page.version }}-1
 To check if the manually installed GCC starts, use something like:
 
 ```console
-$ ~/.local/xPacks/gcc/xpack-gcc-{{ page.version }}-1.1/bin/gcc --version
+$ ~/.local/xPacks/gcc/xpack-gcc-{{ page.version }}-{{ page.subversion }}.1/bin/gcc --version
 gcc (xPack GCC x86_64) -{{ page.version }}
 ```
 
@@ -323,7 +325,7 @@ gcc (xPack GCC x86_64) -{{ page.version }}
 To check if the xpm installed GCC starts, use something like:
 
 ```console
-$ ~/.local/xPacks/@xpack-dev-tools/gcc/{{ page.version }}-1.1/.content/bin/gcc --version
+$ ~/.local/xPacks/@xpack-dev-tools/gcc/{{ page.version }}-{{ page.subversion }}.1/.content/bin/gcc --version
 gcc version {{ page.version }} (xPack GCC x86_64)
 ```
 
@@ -334,7 +336,9 @@ gcc version {{ page.version }} (xPack GCC x86_64)
 The GNU/Linux versions of **xPack GNU Compiler Collection** are packed as
 `.tar.gz` archives. Download the latest version named like:
 
-- `xpack-gcc-{{ page.version }}-1-linux-x64.tar.gz`
+- `xpack-gcc-{{ page.version }}-{{ page.subversion }}-linux-x64.tar.gz`
+- `xpack-gcc-{{ page.version }}-{{ page.subversion }}-linux-arm.tar.gz`
+- `xpack-gcc-{{ page.version }}-{{ page.subversion }}-linux-arm64.tar.gz`
 
 As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
 Ubuntu, but can be executed on most recent GNU/Linux distributions.
@@ -349,8 +353,8 @@ unpack the archive and copy it to
 mkdir -p ~/.local/xPacks/gcc
 cd ~/.local/xPacks/gcc
 
-tar xvf ~/Downloads/xpack-gcc-{{ page.version }}-1-linux-x64.tar.gz
-chmod -R -w xpack-gcc-{{ page.version }}-1
+tar xvf ~/Downloads/xpack-gcc-{{ page.version }}-{{ page.subversion }}-linux-x64.tar.gz
+chmod -R -w xpack-gcc-{{ page.version }}-{{ page.subversion }}
 ```
 
 You may shorten the last folder name and keep only the version.
@@ -363,8 +367,8 @@ and `.content` to store the unpacked archive." %}
 The result is a structure like:
 
 ```console
-$ tree -L 2 /home/ilg/.local/xPacks/gcc/xpack-gcc-{{ page.version }}-1
-/home/ilg/.local/xPacks/gcc/xpack-gcc-{{ page.version }}-1
+$ tree -L 2 /home/ilg/.local/xPacks/gcc/xpack-gcc-{{ page.version }}-{{ page.subversion }}
+/home/ilg/.local/xPacks/gcc/xpack-gcc-{{ page.version }}-{{ page.subversion }}
 ── bin
 │   ├── addr2line
 │   ├── ar
@@ -401,7 +405,7 @@ $ tree -L 2 /home/ilg/.local/xPacks/gcc/xpack-gcc-{{ page.version }}-1
 │   ├── x86_64-pc-linux-gnu-c++
 │   ├── x86_64-pc-linux-gnu-g++
 │   ├── x86_64-pc-linux-gnu-gcc
-│   ├── x86_64-pc-linux-gnu-gcc-12.1.0
+│   ├── x86_64-pc-linux-gnu-gcc-{{ page.version }}
 │   ├── x86_64-pc-linux-gnu-gcc-ar
 │   ├── x86_64-pc-linux-gnu-gcc-nm
 │   └── x86_64-pc-linux-gnu-gcc-ranlib
@@ -528,7 +532,7 @@ $ tree -L 2 /home/ilg/.local/xPacks/gcc/xpack-gcc-{{ page.version }}-1
 ├── README.md
 ├── share
 │   ├── doc
-│   ├── gcc-12.1.0
+│   ├── gcc-{{ page.version }}
 │   └── gdb
 └── x86_64-pc-linux-gnu
     ├── bin
@@ -542,7 +546,7 @@ $ tree -L 2 /home/ilg/.local/xPacks/gcc/xpack-gcc-{{ page.version }}-1
 To check if the manually installed GCC starts, use something like:
 
 ```console
-$ ~/.local/xPacks/gcc/xpack-gcc-{{ page.version }}-1/bin/gcc --version
+$ ~/.local/xPacks/gcc/xpack-gcc-{{ page.version }}-{{ page.subversion }}/bin/gcc --version
 gcc version {{ page.version }} (xPack GCC x86_64)
 ```
 

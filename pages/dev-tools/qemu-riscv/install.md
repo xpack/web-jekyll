@@ -7,7 +7,7 @@ summary: "The recommended method is via xpm."
 toc: false
 comments: true
 
-version: 7.0.0
+version: "7.0.0"
 
 date: 2015-09-04 17:03:00 +0300
 
@@ -93,7 +93,7 @@ pages.
 The Windows versions of **xPack QEMU RISC-V** are packed as ZIP files.
 Download the latest version named like:
 
-- `xpack-qemu-riscv-{{ page.version }}-1-win32-x64.zip`
+- `xpack-qemu-riscv-{{ page.version }}-{{ page.subversion }}-win32-x64.zip`
 
 {% include note.html content="In case you wonder where the suffix comes
 from, it is exactly the Node.js `process.platform` and `process.arch`.
@@ -123,7 +123,7 @@ for the executable in this location." %}
 To check if the manually installed QEMU starts, use something like:
 
 ```doscon
-C:\>%USERPROFILE%\AppData\Roaming\xPacks\qemu-riscv\xpack-qemu-riscv-{{ page.version }}-1\bin\qemu-system-riscv32.exe" --version
+C:\>%USERPROFILE%\AppData\Roaming\xPacks\qemu-riscv\xpack-qemu-riscv-{{ page.version }}-{{ page.subversion }}\bin\qemu-system-riscv32.exe" --version
 xPack QEMU emulator version {{ page.version }} (v{{ page.version }}-xpack)
 Copyright (c) 2003-2022 Fabrice Bellard and the QEMU Project developers
 ```
@@ -140,20 +140,21 @@ For usual RISC-V emulation, there are no special drivers required.
 The macOS version of **xPack QEMU RISC-V** is packed as a .tar.gz archive.
 Download the latest version named like:
 
-- `xpack-qemu-riscv-{{ page.version }}-1-darwin-x64.tgz`
+- `xpack-qemu-riscv-{{ page.version }}-{{ page.subversion }}-darwin-x64.tar.gz`
+- `xpack-qemu-riscv-{{ page.version }}-{{ page.subversion }}-darwin-arm64.tar.gz`
 
 ### Unpack
 
 To manually install the xPack QEMU RISC-V,
 unpack the archive and move it to
-`~/.local/xPacks/qemu-riscv/xpack-qemu-riscv-{{ page.version }}-1`:
+`~/.local/xPacks/qemu-riscv/xpack-qemu-riscv-{{ page.version }}-{{ page.subversion }}`:
 
 ```sh
 mkdir -p ~/.local/xPacks/qemu-riscv
 cd ~/.local/xPacks/qemu-riscv
 
-tar xvf ~/Downloads/xpack-qemu-riscv-{{ page.version }}-1-darwin-x64.tgz
-chmod -R -w xpack-qemu-riscv-{{ page.version }}-1
+tar xvf ~/Downloads/xpack-qemu-riscv-{{ page.version }}-{{ page.subversion }}-darwin-x64.tar.gz
+chmod -R -w xpack-qemu-riscv-{{ page.version }}-{{ page.subversion }}
 ```
 
 {% include note.html content="For manual installs, the recommended
@@ -167,8 +168,8 @@ for the executable in this location." %}
 The result is a structure like:
 
 ```console
-$ tree -L 2 /Users/ilg/.local/xPacks/qemu-riscv/xpack-qemu-riscv-{{ page.version }}-1
-/Users/ilg/.local/xPacks/qemu-riscv/xpack-qemu-riscv-{{ page.version }}-1/
+$ tree -L 2 /Users/ilg/.local/xPacks/qemu-riscv/xpack-qemu-riscv-{{ page.version }}-{{ page.subversion }}
+/Users/ilg/.local/xPacks/qemu-riscv/xpack-qemu-riscv-{{ page.version }}-{{ page.subversion }}/
 ├── README.md
 ├── bin
 │   ├── qemu-system-riscv32
@@ -218,7 +219,7 @@ $ tree -L 2 /Users/ilg/.local/xPacks/qemu-riscv/xpack-qemu-riscv-{{ page.version
 To check if the manually installed QEMU starts, use something like:
 
 ```console
-$ ~/.local/xPacks/qemu-riscv/xpack-qemu-riscv-{{ page.version }}-1/bin/qemu-system-riscv32 --version
+$ ~/.local/xPacks/qemu-riscv/xpack-qemu-riscv-{{ page.version }}-{{ page.subversion }}/bin/qemu-system-riscv32 --version
 xPack QEMU emulator version {{ page.version }} (v{{ page.version }}-xpack)
 Copyright (c) 2003-2022 Fabrice Bellard and the QEMU Project developers
 ```
@@ -231,7 +232,9 @@ Copyright (c) 2003-2022 Fabrice Bellard and the QEMU Project developers
 The GNU/Linux versions of **xPack QEMU RISC-V** are packed as plain archives.
 Download the latest version named like:
 
-- `xpack-qemu-riscv-{{ page.version }}-1-linux-x64.tgz`
+- `xpack-qemu-riscv-{{ page.version }}-{{ page.subversion }}-linux-x64.tar.gz`
+- `xpack-qemu-riscv-{{ page.version }}-{{ page.subversion }}-linux-arm.tar.gz`
+- `xpack-qemu-riscv-{{ page.version }}-{{ page.subversion }}-linux-arm64.tar.gz`
 
 As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
 Ubuntu, but can be executed on most recent GNU/Linux distributions.
@@ -240,14 +243,14 @@ Ubuntu, but can be executed on most recent GNU/Linux distributions.
 
 To manually install the xPack QEMU RISC-V,
 unpack the archive and move it to
-`~/.local/xPacks/qemu-riscv/xpack-qemu-riscv-{{ page.version }}-1`:
+`~/.local/xPacks/qemu-riscv/xpack-qemu-riscv-{{ page.version }}-{{ page.subversion }}`:
 
 ```sh
 mkdir -p ~/.local/xPacks/qemu-riscv
 cd ~/.local/xPacks/qemu-riscv
 
-tar xvf ~/Downloads/xpack-qemu-riscv-{{ page.version }}-1-linux-x64.tgz
-chmod -R -w xpack-qemu-riscv-{{ page.version }}-1
+tar xvf ~/Downloads/xpack-qemu-riscv-{{ page.version }}-{{ page.subversion }}-linux-x64.tar.gz
+chmod -R -w xpack-qemu-riscv-{{ page.version }}-{{ page.subversion }}
 ```
 
 {% include note.html content="For manual installs, the recommended
@@ -263,8 +266,8 @@ for the executable in this location." %}
 The result is a structure like:
 
 ```console
-$ tree -L 2 '/home/ilg/.local/xPacks/qemu-riscv/xpack-qemu-riscv-{{ page.version }}-1'
-/home/ilg/.local/xPacks/qemu-riscv/xpack-qemu-riscv-{{ page.version }}-1/
+$ tree -L 2 '/home/ilg/.local/xPacks/qemu-riscv/xpack-qemu-riscv-{{ page.version }}-{{ page.subversion }}'
+/home/ilg/.local/xPacks/qemu-riscv/xpack-qemu-riscv-{{ page.version }}-{{ page.subversion }}/
 ├── bin
 │   ├── qemu-system-riscv32
 │   └── qemu-system-riscv64
@@ -336,7 +339,7 @@ $ tree -L 2 '/home/ilg/.local/xPacks/qemu-riscv/xpack-qemu-riscv-{{ page.version
 To check if the manually installed QEMU starts, use something like:
 
 ```console
-$ ~/.local/xPacks/qemu-riscv/xpack-qemu-riscv-{{ page.version }}-1/bin/qemu-system-riscv32 --version
+$ ~/.local/xPacks/qemu-riscv/xpack-qemu-riscv-{{ page.version }}-{{ page.subversion }}/bin/qemu-system-riscv32 --version
 xPack QEMU emulator version {{ page.version }} (v{{ page.version }}-xpack)
 Copyright (c) 2003-2022 Fabrice Bellard and the QEMU Project developers
 ```

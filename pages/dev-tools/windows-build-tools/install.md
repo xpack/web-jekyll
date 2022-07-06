@@ -6,8 +6,8 @@ summary: "The recommended method is via xpm."
 toc: false
 comments: true
 
-version: 4.3.0
-version-make: 4.3.90
+version: "4.3.0"
+version-make: "4.3.90"
 
 date: 2020-07-14 16:26:00 +0300
 

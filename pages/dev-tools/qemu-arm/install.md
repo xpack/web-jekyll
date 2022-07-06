@@ -7,7 +7,8 @@ summary: "The recommended method is via xpm."
 toc: false
 comments: true
 
-version: 2.8.0
+version: "7.0.0"
+subversion: "1"
 
 date: 2015-09-04 17:03:00 +0300
 
@@ -93,7 +94,7 @@ pages.
 The Windows versions of **xPack QEMU Arm** are packed as ZIP files.
 Download the latest version named like:
 
-- `xpack-qemu-arm-{{ page.version }}-7-win32-x64.zip`
+- `xpack-qemu-arm-{{ page.version }}-{{ page.subversion }}-win32-x64.zip`
 
 {% include note.html content="In case you wonder where the suffix comes
 from, it is exactly the Node.js `process.platform` and `process.arch`.
@@ -123,9 +124,9 @@ for the executable in this location." %}
 To check if the manually installed QEMU starts, use something like:
 
 ```doscon
-C:\>%USERPROFILE%\AppData\Roaming\xPacks\qemu-arm\xpack-qemu-arm-{{ page.version }}-7\bin\qemu-system-gnuarmeclipse.exe" --version
-xPack 64-bit QEMU emulator version {{ page.version }}-7 (v{{ page.version }}-7-20180523-6-gee07085299-dirty)
-Copyright (c) 2003-2016 Fabrice Bellard and the QEMU Project developers
+C:\>%USERPROFILE%\AppData\Roaming\xPacks\qemu-arm\xpack-qemu-arm-{{ page.version }}-{{ page.subversion }}\bin\qemu-system-gnuarmeclipse.exe" --version
+xPack QEMU emulator version {{ page.version }} (v{{ page.version }}-xpack)
+Copyright (c) 2003-2022 Fabrice Bellard and the QEMU Project developers
 ```
 
 #### Drivers
@@ -140,20 +141,21 @@ For usual Cortex-M emulation, there are no special drivers required.
 The macOS version of **xPack QEMU Arm** is packed as a .tar.gz archive.
 Download the latest version named like:
 
-- `xpack-qemu-arm-{{ page.version }}-7-darwin-x64.tgz`
+- `xpack-qemu-arm-{{ page.version }}-{{ page.subversion }}-darwin-x64.tar.gz`
+- `xpack-qemu-arm-{{ page.version }}-{{ page.subversion }}-darwin-arm64.tar.gz`
 
 ### Unpack
 
 To manually install the xPack QEMU Arm,
 unpack the archive and move it to
-`~/.local/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-7`:
+`~/.local/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-{{ page.subversion }}`:
 
 ```sh
 mkdir -p ~/.local/xPacks/qemu-arm
 cd ~/.local/xPacks/qemu-arm
 
-tar xvf ~/Downloads/xpack-qemu-arm-{{ page.version }}-7-darwin-x64.tgz
-chmod -R -w xpack-qemu-arm-{{ page.version }}-7
+tar xvf ~/Downloads/xpack-qemu-arm-{{ page.version }}-{{ page.subversion }}-darwin-x64.tar.gz
+chmod -R -w xpack-qemu-arm-{{ page.version }}-{{ page.subversion }}
 ```
 
 {% include note.html content="For manual installs, the recommended
@@ -167,32 +169,55 @@ for the executable in this location." %}
 The result is a structure like:
 
 ```console
-$ tree -L 2 /Users/ilg/.local/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-7
-/Users/ilg/.local/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-7/
+$ tree -L 2 /Users/ilg/.local/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-{{ page.subversion }}
+/Users/ilg/.local/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-{{ page.subversion }}/
 ├── README.md
 ├── bin
-│   ├── libSDL2-2.0.0.dylib
-│   ├── libSDL2_image-2.0.0.dylib
-│   ├── libgcc_s.1.dylib
-│   ├── libglib-2.0.0.dylib
-│   ├── libgthread-2.0.0.dylib
-│   ├── libiconv.2.dylib
-│   ├── libintl.8.dylib
-│   ├── libpixman-1.0.dylib
-│   ├── libstdc++.6.dylib
-│   ├── libz.1.2.11.dylib
-│   ├── libz.1.dylib -> libz.1.2.11.dylib
+│   ├── qemu-system-aarch64
+│   ├── qemu-system-arm
 │   └── qemu-system-gnuarmeclipse
 ├── distro-info
 │   ├── CHANGELOG.md
 │   ├── licenses
 │   ├── patches
 │   └── scripts
+├── include
+│   └── qemu-plugin.h
+├── libexec
+│   ├── libSDL2-2.0.0.dylib
+│   ├── libSDL2_image-2.0.0.dylib
+│   ├── libcrypto.1.1.dylib
+│   ├── libffi.8.dylib
+│   ├── libgio-2.0.0.dylib
+│   ├── libglib-2.0.0.dylib
+│   ├── libgmodule-2.0.0.dylib
+│   ├── libgobject-2.0.0.dylib
+│   ├── libgthread-2.0.0.dylib
+│   ├── libiconv.2.dylib
+│   ├── libintl.8.dylib
+│   ├── libjpeg.9.dylib
+│   ├── liblzo2.2.dylib
+│   ├── libncursesw.6.dylib
+│   ├── libnettle.8.4.dylib
+│   ├── libnettle.8.dylib -> libnettle.8.4.dylib
+│   ├── libpixman-1.0.40.0.dylib
+│   ├── libpixman-1.0.dylib -> libpixman-1.0.40.0.dylib
+│   ├── libpng16.16.dylib
+│   ├── libssh.4.8.7.dylib
+│   ├── libssh.4.dylib -> libssh.4.8.7.dylib
+│   ├── libusb-1.0.0.dylib
+│   ├── libvdeplug.3.dylib
+│   ├── libz.1.2.12.dylib
+│   ├── libz.1.dylib -> libz.1.2.12.dylib
+│   ├── libzstd.1.5.2.dylib
+│   └── libzstd.1.dylib -> libzstd.1.5.2.dylib
 └── share
-    ├── doc
+    ├── applications
+    ├── icons
+    ├── legacy
     └── qemu
 
-8 directories, 14 files
+12 directories, 33 files
 ```
 
 ### Test
@@ -200,9 +225,9 @@ $ tree -L 2 /Users/ilg/.local/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-
 To check if the manually installed QEMU starts, use something like:
 
 ```console
-$ ~/.local/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-7/bin/qemu-system-gnuarmeclipse --version
-xPack 64-bit QEMU emulator version {{ page.version }}-7 (v{{ page.version }}-4-20190211-47-g109b69f49a-dirty)
-Copyright (c) 2003-2016 Fabrice Bellard and the QEMU Project developers
+$ ~/.local/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-{{ page.subversion }}/bin/qemu-system-gnuarmeclipse --version
+xPack QEMU emulator version {{ page.version }} (v{{ page.version }}-xpack)
+Copyright (c) 2003-2022 Fabrice Bellard and the QEMU Project developers
 ```
 
 {% endcapture %}
@@ -213,7 +238,9 @@ Copyright (c) 2003-2016 Fabrice Bellard and the QEMU Project developers
 The GNU/Linux versions of **xPack QEMU Arm** are packed as plain archives.
 Download the latest version named like:
 
-- `xpack-qemu-arm-{{ page.version }}-7-linux-x64.tgz`
+- `xpack-qemu-arm-{{ page.version }}-{{ page.subversion }}-linux-x64.tar.gz`
+- `xpack-qemu-arm-{{ page.version }}-{{ page.subversion }}-linux-arm.tar.gz`
+- `xpack-qemu-arm-{{ page.version }}-{{ page.subversion }}-linux-arm64.tar.gz`
 
 As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
 Ubuntu, but can be executed on most recent GNU/Linux distributions.
@@ -222,14 +249,14 @@ Ubuntu, but can be executed on most recent GNU/Linux distributions.
 
 To manually install the xPack QEMU Arm,
 unpack the archive and move it to
-`~/.local/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-7`:
+`~/.local/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-{{ page.subversion }}`:
 
 ```sh
 mkdir -p ~/.local/xPacks/qemu-arm
 cd ~/.local/xPacks/qemu-arm
 
-tar xvf ~/Downloads/xpack-qemu-arm-{{ page.version }}-7-linux-x64.tgz
-chmod -R -w xpack-qemu-arm-{{ page.version }}-7
+tar xvf ~/Downloads/xpack-qemu-arm-{{ page.version }}-{{ page.subversion }}-linux-x64.tar.gz
+chmod -R -w xpack-qemu-arm-{{ page.version }}-{{ page.subversion }}
 ```
 
 {% include note.html content="For manual installs, the recommended
@@ -245,40 +272,79 @@ for the executable in this location." %}
 The result is a structure like:
 
 ```console
-$ tree -L 2 '/home/ilg/.local/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-7'
-/home/ilg/.local/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-7/
+$ tree -L 2 '/home/ilg/.local/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-{{ page.subversion }}'
+/home/ilg/.local/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-{{ page.subversion }}/
 ├── bin
-│   ├── libglib-2.0.so.0 -> libglib-2.0.so.0.5600.4
-│   ├── libglib-2.0.so.0.5600.4
-│   ├── libgthread-2.0.so.0 -> libgthread-2.0.so.0.5600.4
-│   ├── libgthread-2.0.so.0.5600.4
-│   ├── libiconv.so.2 -> libiconv.so.2.6.0
-│   ├── libiconv.so.2.6.0
-│   ├── libjpeg.so.9 -> libjpeg.so.9.2.0
-│   ├── libjpeg.so.9.2.0
-│   ├── libpixman-1.so.0 -> libpixman-1.so.0.38.0
-│   ├── libpixman-1.so.0.38.0
-│   ├── libpng16.so.16 -> libpng16.so.16.36.0
-│   ├── libpng16.so.16.36.0
-│   ├── libSDL2-2.0.so.0 -> libSDL2-2.0.so.0.9.0
-│   ├── libSDL2-2.0.so.0.9.0
-│   ├── libSDL2_image-2.0.so.0 -> libSDL2_image-2.0.so.0.2.2
-│   ├── libSDL2_image-2.0.so.0.2.2
-│   ├── libz.so.1 -> libz.so.1.2.11
-│   ├── libz.so.1.2.11
+│   ├── qemu-system-aarch64
+│   ├── qemu-system-arm
 │   └── qemu-system-gnuarmeclipse
 ├── distro-info
 │   ├── CHANGELOG.md
 │   ├── licenses
 │   ├── patches
 │   └── scripts
+├── include
+│   └── qemu-plugin.h
 ├── libexec
+│   ├── libatomic.so.1 -> libatomic.so.1.2.0
+│   ├── libatomic.so.1.2.0
+│   ├── libcrypto.so.1.1
+│   ├── libffi.so.8 -> libffi.so.8.1.0
+│   ├── libffi.so.8.1.0
+│   ├── libgcc_s.so.1
+│   ├── libgio-2.0.so.0 -> libgio-2.0.so.0.5600.4
+│   ├── libgio-2.0.so.0.5600.4
+│   ├── libglib-2.0.so.0 -> libglib-2.0.so.0.5600.4
+│   ├── libglib-2.0.so.0.5600.4
+│   ├── libgmodule-2.0.so.0 -> libgmodule-2.0.so.0.5600.4
+│   ├── libgmodule-2.0.so.0.5600.4
+│   ├── libgobject-2.0.so.0 -> libgobject-2.0.so.0.5600.4
+│   ├── libgobject-2.0.so.0.5600.4
+│   ├── libgthread-2.0.so.0 -> libgthread-2.0.so.0.5600.4
+│   ├── libgthread-2.0.so.0.5600.4
+│   ├── libiconv.so.2 -> libiconv.so.2.6.1
+│   ├── libiconv.so.2.6.1
+│   ├── libjpeg.so.9 -> libjpeg.so.9.5.0
+│   ├── libjpeg.so.9.5.0
+│   ├── liblzo2.so.2 -> liblzo2.so.2.0.0
+│   ├── liblzo2.so.2.0.0
+│   ├── libncursesw.so.6 -> libncursesw.so.6.3
+│   ├── libncursesw.so.6.3
+│   ├── libnettle.so.8 -> libnettle.so.8.4
+│   ├── libnettle.so.8.4
+│   ├── libpixman-1.so.0 -> libpixman-1.so.0.40.0
+│   ├── libpixman-1.so.0.40.0
+│   ├── libpng16.so.16 -> libpng16.so.16.37.0
+│   ├── libpng16.so.16.37.0
+│   ├── libresolv-2.27.so
+│   ├── libresolv.so.2 -> libresolv-2.27.so
+│   ├── libSDL2-2.0.so.0 -> libSDL2-2.0.so.0.22.0
+│   ├── libSDL2-2.0.so.0.22.0
+│   ├── libSDL2_image-2.0.so.0 -> libSDL2_image-2.0.so.0.2.3
+│   ├── libSDL2_image-2.0.so.0.2.3
+│   ├── libssh.so.4 -> libssh.so.4.8.7
+│   ├── libssh.so.4.8.7
+│   ├── libssp.so.0 -> libssp.so.0.0.0
+│   ├── libssp.so.0.0.0
+│   ├── libstdc++.so.6 -> libstdc++.so.6.0.29
+│   ├── libstdc++.so.6.0.29
+│   ├── libusb-1.0.so.0 -> libusb-1.0.so.0.3.0
+│   ├── libusb-1.0.so.0.3.0
+│   ├── libvdeplug.so.3 -> libvdeplug.so.3.0.1
+│   ├── libvdeplug.so.3.0.1
+│   ├── libz.so.1 -> libz.so.1.2.12
+│   ├── libz.so.1.2.12
+│   ├── libzstd.so.1 -> libzstd.so.1.5.2
+│   ├── libzstd.so.1.5.2
+│   └── qemu-bridge-helper
 ├── README.md
 └── share
-    ├── doc
+    ├── applications
+    ├── icons
+    ├── legacy
     └── qemu
 
-9 directories, 21 files
+12 directories, 57 files
 ```
 
 ### Test
@@ -286,9 +352,9 @@ $ tree -L 2 '/home/ilg/.local/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-
 To check if the manually installed QEMU starts, use something like:
 
 ```console
-$ ~/.local/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-7/bin/qemu-system-gnuarmeclipse --version
-xPack 64-bit QEMU emulator version {{ page.version }}-7 (v{{ page.version }}-4-20190211-47-g109b69f49a-dirty)
-Copyright (c) 2003-2016 Fabrice Bellard and the QEMU Project developers
+$ ~/.local/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-{{ page.subversion }}/bin/qemu-system-gnuarmeclipse --version
+xPack QEMU emulator version {{ page.version }} (v{{ page.version }}-xpack)
+Copyright (c) 2003-2022 Fabrice Bellard and the QEMU Project developers
 ```
 
 #### UDEV & Drivers

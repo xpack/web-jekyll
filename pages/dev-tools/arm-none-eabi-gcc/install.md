@@ -7,8 +7,9 @@ summary: "The recommended method is via xpm."
 toc: false
 comments: true
 
-version: 11.2.1
-version-timestamp: 20220111
+version: "11.2.1"
+subversion: "1.2"
+version-timestamp: "20220111"
 
 date: 2019-07-10 17:53:00 +0300
 
@@ -115,7 +116,7 @@ pages.
 To check if the xpm installed GCC starts, use something like:
 
 ```doscon
-C:\>%USERPROFILE%\AppData\Roaming\xPacks\@xpack-dev-tool\arm-none-eabi-gcc\{{ page.version }}-1.1.1\.content\bin\arm-none-eabi-gcc.exe" --version
+C:\>%USERPROFILE%\AppData\Roaming\xPacks\@xpack-dev-tool\arm-none-eabi-gcc\{{ page.version }}-{{ page.subversion }}.1\.content\bin\arm-none-eabi-gcc.exe" --version
 arm-none-eabi-gcc.exe (xPack GNU Arm Embedded GCC x86_64) {{ page.version }} {{ page.version-timestamp }}
 ```
 
@@ -126,7 +127,7 @@ arm-none-eabi-gcc.exe (xPack GNU Arm Embedded GCC x86_64) {{ page.version }} {{ 
 The Windows versions of **xPack GNU Arm Embedded GCC** are packed as ZIP files.
 Download the latest version named like:
 
-- `xpack-arm-none-eabi-gcc-{{ page.version }}-1.1-win32-x64.zip`
+- `xpack-arm-none-eabi-gcc-{{ page.version }}-{{ page.subversion }}-win32-x64.zip`
 
 {% include note.html content="In case you wonder where the suffix comes
 from, it is exactly the Node.js `process.platform` and `process.arch`.
@@ -158,7 +159,7 @@ for the executables in this location." %}
 To check if the manually installed GCC starts, use something like:
 
 ```doscon
-C:\>%USERPROFILE%\AppData\Roaming\xPacks\arm-none-eabi-gcc\xpack-arm-none-eabi-gcc-{{ page.version }}-1.1\bin\arm-none-eabi-gcc.exe" --version
+C:\>%USERPROFILE%\AppData\Roaming\xPacks\arm-none-eabi-gcc\xpack-arm-none-eabi-gcc-{{ page.version }}-{{ page.subversion }}\bin\arm-none-eabi-gcc.exe" --version
 arm-none-eabi-gcc.exe (xPack GNU Arm Embedded GCC x86_64) {{ page.version }} {{ page.version-timestamp }}
 ```
 
@@ -178,7 +179,7 @@ binaries, it is recommended to also install the **Windows Build Tools**." %}
 To check if the xpm installed GCC starts, use something like:
 
 ```console
-$ ~/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/{{ page.version }}-1.1.1/.content/bin/arm-none-eabi-gcc --version
+$ ~/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/{{ page.version }}-{{ page.subversion }}.1/.content/bin/arm-none-eabi-gcc --version
 arm-none-eabi-gcc (xPack GNU Arm Embedded GCC x86_64) {{ page.version }} {{ page.version-timestamp }}
 ```
 
@@ -190,7 +191,8 @@ The macOS version of **xPack GNU Arm Embedded GCC** is packed as a
 `.tar.gz` archive.
 Download the latest version named like:
 
-- `xpack-arm-none-eabi-gcc-{{ page.version }}-1.1-darwin-x64.tar.gz`
+- `xpack-arm-none-eabi-gcc-{{ page.version }}-{{ page.subversion }}-darwin-x64.tar.gz`
+- `xpack-arm-none-eabi-gcc-{{ page.version }}-{{ page.subversion }}-darwin-arm64.tar.gz`
 
 ### Unpack
 
@@ -202,8 +204,8 @@ unpack the archive and copy it to
 mkdir -p ~/.local/xPacks/arm-none-eabi-gcc
 cd ~/.local/xPacks/arm-none-eabi-gcc
 
-tar xvf ~/Downloads/xpack-arm-none-eabi-gcc-{{ page.version }}-1.1-darwin-x64.tar.gz
-chmod -R -w xpack-arm-none-eabi-gcc-{{ page.version }}-1.1
+tar xvf ~/Downloads/xpack-arm-none-eabi-gcc-{{ page.version }}-{{ page.subversion }}-darwin-x64.tar.gz
+chmod -R -w xpack-arm-none-eabi-gcc-{{ page.version }}-{{ page.subversion }}
 ```
 
 You may shorten the last folder name and keep only the version.
@@ -219,8 +221,8 @@ for the executables in this location." %}
 The result is a structure like:
 
 ```console
-$ tree -L 2 /Users/ilg/Library/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-{{ page.version }}-1.1
-/Users/ilg/Library/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-{{ page.version }}-1.1
+$ tree -L 2 /Users/ilg/Library/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-{{ page.version }}-{{ page.subversion }}
+/Users/ilg/Library/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-{{ page.version }}-{{ page.subversion }}
 ├── README.md
 ├── arm-none-eabi
 │   ├── bin
@@ -297,7 +299,7 @@ $ tree -L 2 /Users/ilg/Library/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-
 To check if the manually installed GCC starts, use something like:
 
 ```console
-$ ~/.local/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-{{ page.version }}-1.1/bin/arm-none-eabi-gcc --version
+$ ~/.local/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-{{ page.version }}-{{ page.subversion }}/bin/arm-none-eabi-gcc --version
 arm-none-eabi-gcc (xPack GNU Arm Embedded GCC x86_64) {{ page.version }} {{ page.version-timestamp }}
 ```
 
@@ -312,7 +314,7 @@ arm-none-eabi-gcc (xPack GNU Arm Embedded GCC x86_64) {{ page.version }} {{ page
 To check if the xpm installed GCC starts, use something like:
 
 ```console
-$ ~/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/{{ page.version }}-1.1.1/.content/bin/arm-none-eabi-gcc --version
+$ ~/.local/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/{{ page.version }}-{{ page.subversion }}.1/.content/bin/arm-none-eabi-gcc --version
 arm-none-eabi-gcc (xPack GNU Arm Embedded GCC x86_64) {{ page.version }} {{ page.version-timestamp }}
 ```
 
@@ -323,7 +325,9 @@ arm-none-eabi-gcc (xPack GNU Arm Embedded GCC x86_64) {{ page.version }} {{ page
 The GNU/Linux versions of **xPack GNU Arm Embedded GCC** are packed as
 `.tar.gz` archives. Download the latest version named like:
 
-- `xpack-arm-none-eabi-gcc-{{ page.version }}-1.1-linux-x64.tar.gz`
+- `xpack-arm-none-eabi-gcc-{{ page.version }}-{{ page.subversion }}-linux-x64.tar.gz`
+- `xpack-arm-none-eabi-gcc-{{ page.version }}-{{ page.subversion }}-linux-arm.tar.gz`
+- `xpack-arm-none-eabi-gcc-{{ page.version }}-{{ page.subversion }}-linux-arm64.tar.gz`
 
 As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
 Ubuntu, but can be executed on most recent GNU/Linux distributions.
@@ -338,8 +342,8 @@ unpack the archive and copy it to
 mkdir -p ~/.local/xPacks/arm-none-eabi-gcc
 cd ~/.local/xPacks/arm-none-eabi-gcc
 
-tar xvf ~/Downloads/xpack-arm-none-eabi-gcc-{{ page.version }}-1.1-linux-x64.tar.gz
-chmod -R -w xpack-arm-none-eabi-gcc-{{ page.version }}-1.1
+tar xvf ~/Downloads/xpack-arm-none-eabi-gcc-{{ page.version }}-{{ page.subversion }}-linux-x64.tar.gz
+chmod -R -w xpack-arm-none-eabi-gcc-{{ page.version }}-{{ page.subversion }}
 ```
 
 You may shorten the last folder name and keep only the version.
@@ -357,8 +361,8 @@ for the executables in this location." %}
 The result is a structure like:
 
 ```console
-$ tree -L 2 /home/ilg/.local/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-{{ page.version }}-1.1
-/home/ilg/.local/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-{{ page.version }}-1.1
+$ tree -L 2 /home/ilg/.local/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-{{ page.version }}-{{ page.subversion }}
+/home/ilg/.local/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-{{ page.version }}-{{ page.subversion }}
 ├── arm-none-eabi
 │   ├── bin
 │   ├── include
@@ -451,7 +455,7 @@ $ tree -L 2 /home/ilg/.local/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-{{
 To check if the manually installed GCC starts, use something like:
 
 ```console
-$ ~/.local/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-{{ page.version }}-1.1/bin/arm-none-eabi-gcc --version
+$ ~/.local/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-{{ page.version }}-{{ page.subversion }}/bin/arm-none-eabi-gcc --version
 arm-none-eabi-gcc (xPack GNU Arm Embedded GCC x86_64) {{ page.version }} {{ page.version-timestamp }}
 ```
 

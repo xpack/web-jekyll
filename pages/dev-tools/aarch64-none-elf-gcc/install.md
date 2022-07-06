@@ -7,8 +7,9 @@ summary: "The recommended method is via xpm."
 toc: false
 comments: true
 
-version: 11.2.1
-version-timestamp: 20220111
+version: "11.2.1"
+subversion: "1.2"
+version-timestamp: "20220111"
 
 date: 2019-07-10 17:53:00 +0300
 
@@ -116,7 +117,7 @@ pages.
 To check if the xpm installed GCC starts, use something like:
 
 ```doscon
-C:\>%USERPROFILE%\AppData\Roaming\xPacks\@xpack-dev-tool\aarch64-none-elf-gcc\{{ page.version }}-1.1\.content\bin\aarch64-none-elf-gcc.exe" --version
+C:\>%USERPROFILE%\AppData\Roaming\xPacks\@xpack-dev-tool\aarch64-none-elf-gcc\{{ page.version }}-{{ page.subversion }}.1\.content\bin\aarch64-none-elf-gcc.exe" --version
 aarch64-none-elf-gcc.exe (xPack GNU AArch64 Embedded GCC x86_64) {{ page.version }} {{ page.version-timestamp }}
 ```
 
@@ -127,7 +128,7 @@ aarch64-none-elf-gcc.exe (xPack GNU AArch64 Embedded GCC x86_64) {{ page.version
 The Windows versions of **xPack GNU AArch64 Embedded GCC** are packed as ZIP files.
 Download the latest version named like:
 
-- `xpack-aarch64-none-elf-gcc-{{ page.version }}-1.1-win32-x64.zip`
+- `xpack-aarch64-none-elf-gcc-{{ page.version }}-{{ page.subversion }}-win32-x64.zip`
 
 {% include note.html content="In case you wonder where the suffix comes
 from, it is exactly the Node.js `process.platform` and `process.arch`.
@@ -159,7 +160,7 @@ for the executables in this location." %}
 To check if the manually installed GCC starts, use something like:
 
 ```doscon
-C:\>%USERPROFILE%\AppData\Roaming\xPacks\aarch64-none-elf-gcc\xpack-aarch64-none-elf-gcc-{{ page.version }}-1.1\bin\aarch64-none-elf-gcc.exe" --version
+C:\>%USERPROFILE%\AppData\Roaming\xPacks\aarch64-none-elf-gcc\xpack-aarch64-none-elf-gcc-{{ page.version }}-{{ page.subversion }}\bin\aarch64-none-elf-gcc.exe" --version
 aarch64-none-elf-gcc (xPack GNU AArch64 Embedded GCC x86_64) {{ page.version }} {{ page.version-timestamp }}
 ```
 
@@ -179,7 +180,7 @@ binaries, it is recommended to also install the **Windows Build Tools**." %}
 To check if the xpm installed GCC starts, use something like:
 
 ```console
-$ ~/.local/xPacks/@xpack-dev-tools/aarch64-none-elf-gcc/{{ page.version }}-1.1/.content/bin/aarch64-none-elf-gcc --version
+$ ~/.local/xPacks/@xpack-dev-tools/aarch64-none-elf-gcc/{{ page.version }}-{{ page.subversion }}.1/.content/bin/aarch64-none-elf-gcc --version
 aarch64-none-elf-gcc (xPack GNU AArch64 Embedded GCC x86_64) {{ page.version }} {{ page.version-timestamp }}
 ```
 
@@ -191,7 +192,8 @@ The macOS version of **xPack GNU AArch64 Embedded GCC** is packed as a
 `.tar.gz` archive.
 Download the latest version named like:
 
-- `xpack-aarch64-none-elf-gcc-{{ page.version }}-1.1-darwin-x64.tar.gz`
+- `xpack-aarch64-none-elf-gcc-{{ page.version }}-{{ page.subversion }}-darwin-x64.tar.gz`
+- `xpack-aarch64-none-elf-gcc-{{ page.version }}-{{ page.subversion }}-darwin-arm64.tar.gz`
 
 ### Unpack
 
@@ -203,8 +205,8 @@ unpack the archive and copy it to
 mkdir -p ~/.local/xPacks/aarch64-none-elf-gcc
 cd ~/.local/xPacks/aarch64-none-elf-gcc
 
-tar xvf ~/Downloads/xpack-aarch64-none-elf-gcc-{{ page.version }}-1.1-darwin-x64.tar.gz
-chmod -R -w xpack-aarch64-none-elf-gcc-{{ page.version }}-1.1
+tar xvf ~/Downloads/xpack-aarch64-none-elf-gcc-{{ page.version }}-{{ page.subversion }}-darwin-x64.tar.gz
+chmod -R -w xpack-aarch64-none-elf-gcc-{{ page.version }}-{{ page.subversion }}
 ```
 
 You may shorten the last folder name and keep only the version.
@@ -220,8 +222,8 @@ for the executables in this location." %}
 The result is a structure like:
 
 ```console
-$ tree -L 2 /Users/ilg/.local/xPacks/aarch64-none-elf-gcc/xpack-aarch64-none-elf-gcc-{{ page.version }}-1.1
-/Users/ilg/.local/xPacks/aarch64-none-elf-gcc/xpack-aarch64-none-elf-gcc-{{ page.version }}-1.1
+$ tree -L 2 /Users/ilg/.local/xPacks/aarch64-none-elf-gcc/xpack-aarch64-none-elf-gcc-{{ page.version }}-{{ page.subversion }}
+/Users/ilg/.local/xPacks/aarch64-none-elf-gcc/xpack-aarch64-none-elf-gcc-{{ page.version }}-{{ page.subversion }}
 ├── README.md
 ├── aarch64-none-elf
 │   ├── bin
@@ -311,7 +313,7 @@ $ tree -L 2 /Users/ilg/.local/xPacks/aarch64-none-elf-gcc/xpack-aarch64-none-elf
 To check if the manually installed GCC starts, use something like:
 
 ```console
-$ ~/.local/xPacks/aarch64-none-elf-gcc/xpack-aarch64-none-elf-gcc-{{ page.version }}-1.1/bin/aarch64-none-elf-gcc --version
+$ ~/.local/xPacks/aarch64-none-elf-gcc/xpack-aarch64-none-elf-gcc-{{ page.version }}-{{ page.subversion }}/bin/aarch64-none-elf-gcc --version
 aarch64-none-elf-gcc (xPack GNU AArch64 Embedded GCC, 64-bit) {{ page.version }} 20191025 (release) [ARM/arm-9-branch revision 277599]
 ```
 
@@ -326,7 +328,7 @@ aarch64-none-elf-gcc (xPack GNU AArch64 Embedded GCC, 64-bit) {{ page.version }}
 To check if the xpm installed GCC starts, use something like:
 
 ```console
-$ ~/.local/xPacks/@xpack-dev-tools/aarch64-none-elf-gcc/{{ page.version }}-1.1/.content/bin/aarch64-none-elf-gcc --version
+$ ~/.local/xPacks/@xpack-dev-tools/aarch64-none-elf-gcc/{{ page.version }}-{{ page.subversion }}.1/.content/bin/aarch64-none-elf-gcc --version
 aarch64-none-elf-gcc (xPack GNU AArch64 Embedded GCC, 64-bit) {{ page.version }} 20191025 (release) [ARM/arm-9-branch revision 277599]
 ```
 
@@ -337,7 +339,9 @@ aarch64-none-elf-gcc (xPack GNU AArch64 Embedded GCC, 64-bit) {{ page.version }}
 The GNU/Linux versions of **xPack GNU AArch64 Embedded GCC** are packed as
 `.tar.gz` archives. Download the latest version named like:
 
-- `xpack-aarch64-none-elf-gcc-{{ page.version }}-1.1-linux-x64.tar.gz`
+- `xpack-aarch64-none-elf-gcc-{{ page.version }}-{{ page.subversion }}-linux-x64.tar.gz`
+- `xpack-aarch64-none-elf-gcc-{{ page.version }}-{{ page.subversion }}-linux-arm.tar.gz`
+- `xpack-aarch64-none-elf-gcc-{{ page.version }}-{{ page.subversion }}-linux-arm64.tar.gz`
 
 As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
 Ubuntu, but can be executed on most recent GNU/Linux distributions.
@@ -352,8 +356,8 @@ unpack the archive and copy it to
 mkdir -p ~/.local/xPacks/aarch64-none-elf-gcc
 cd ~/.local/xPacks/aarch64-none-elf-gcc
 
-tar xvf ~/Downloads/xpack-aarch64-none-elf-gcc-{{ page.version }}-1.1-linux-x64.tar.gz
-chmod -R -w xpack-aarch64-none-elf-gcc-{{ page.version }}-1.1
+tar xvf ~/Downloads/xpack-aarch64-none-elf-gcc-{{ page.version }}-{{ page.subversion }}-linux-x64.tar.gz
+chmod -R -w xpack-aarch64-none-elf-gcc-{{ page.version }}-{{ page.subversion }}
 ```
 
 You may shorten the last folder name and keep only the version.
@@ -371,8 +375,8 @@ for the executables in this location." %}
 The result is a structure like:
 
 ```console
-$ tree -L 2 /home/ilg/.local/xPacks/aarch64-none-elf-gcc/xpack-aarch64-none-elf-gcc-{{ page.version }}-1.1
-/home/ilg/.local/xPacks/aarch64-none-elf-gcc/xpack-aarch64-none-elf-gcc-{{ page.version }}-1.1
+$ tree -L 2 /home/ilg/.local/xPacks/aarch64-none-elf-gcc/xpack-aarch64-none-elf-gcc-{{ page.version }}-{{ page.subversion }}
+/home/ilg/.local/xPacks/aarch64-none-elf-gcc/xpack-aarch64-none-elf-gcc-{{ page.version }}-{{ page.subversion }}
 ├── aarch64-none-elf
 │   ├── bin
 │   ├── include
@@ -482,7 +486,7 @@ $ tree -L 2 /home/ilg/.local/xPacks/aarch64-none-elf-gcc/xpack-aarch64-none-elf-
 To check if the manually installed GCC starts, use something like:
 
 ```console
-$ ~/.local/xPacks/aarch64-none-elf-gcc/xpack-aarch64-none-elf-gcc-{{ page.version }}-1.1/bin/aarch64-none-elf-gcc --version
+$ ~/.local/xPacks/aarch64-none-elf-gcc/xpack-aarch64-none-elf-gcc-{{ page.version }}-{{ page.subversion }}/bin/aarch64-none-elf-gcc --version
 aarch64-none-elf-gcc (xPack GNU AArch64 Embedded GCC x86_64) {{ page.version }} {{ page.version-timestamp }}
 ```
 
