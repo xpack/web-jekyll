@@ -61,7 +61,7 @@ configurations like **Show Hidden Files**.
 
 {% capture include_1 %}
 The install location can be configured using the
-`XPACKS_REPO_FOLDER` environment variable; for more details please check the
+`XPACKS_STORE_FOLDER` environment variable; for more details please check the
 [xpm folders]({{ site.baseurl }}/xpm/folders/) page.
 {% endcapture %}
 

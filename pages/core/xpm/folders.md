@@ -19,7 +19,7 @@ its own configuration files.
 
 ## Environment
 
-- `XPACKS_REPO_FOLDER`
+- `XPACKS_STORE_FOLDER` (was `XPACKS_REPO_FOLDER`)
 - `XPACKS_CACHE_FOLDER`
 - `XPACKS_SYSTEM_FOLDER`
 
@@ -108,7 +108,7 @@ for example in `~/Library/LaunchAgents/`:
  <array>
   <string>sh</string>
   <string>-c</string>
-  <string>launchctl setenv XPACKS_REPO_FOLDER /Users/myself/location/xpacks</string>
+  <string>launchctl setenv XPACKS_STORE_FOLDER /Users/myself/location/xpacks</string>
  </array>
  <key>RunAtLoad</key>
  <true/>
