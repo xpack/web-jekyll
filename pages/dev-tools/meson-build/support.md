@@ -48,7 +48,7 @@ and enter a **New discussion** in the **Q&A** category.
 If you are convinced that you identified a bug related to the binary
 distribution, not Meson itself (if you have doubts, use the GitHub Discussions),
 or you have a pertinent suggestion how to enhance the **xPack Meson Build**
-distribution, register a **New Issue** in the the GitHub
+distribution, register a **New Issue** in the GitHub
 [Issues](https://github.com/xpack-dev-tools/meson-build-xpack/issues/)
 tracker.
 

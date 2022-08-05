@@ -47,7 +47,7 @@ and enter a **New discussion** in the **Q&A** category.
 If you are convinced that you identified a bug (if you have doubts,
 use the GitHub Discussions),
 or you have a pertinent suggestion how to enhance the **xPack LLVM clang**
-distribution, register a **New Issue** in the the GitHub
+distribution, register a **New Issue** in the GitHub
 [Issues](https://github.com/xpack-dev-tools/clang-xpack/issues/)
 tracker.
 

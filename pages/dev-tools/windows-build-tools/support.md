@@ -58,7 +58,7 @@ and enter a **New discussion** in the **Q&A** category.
 If you are convinced that you identified a bug related to the binary
 distribution, not GNU Make itself (if you have doubts, use the GitHub Discussions),
 or you have a pertinent suggestion how to enhance the **xPack Windows Build Tools**
-distribution, register a **New Issue** in the the GitHub
+distribution, register a **New Issue** in the GitHub
 [Issues](https://github.com/xpack-dev-tools/windows-build-tools-xpack/issues/)
 tracker.
 
