@@ -2,7 +2,7 @@
 title: The xPack Project Manager
 permalink: /xpm/
 
-summary: A tool to manage dependencies for generic multi-version source and binary packages, inspired by npm.
+summary: A tool to manage dependencies for language neutral multi-version source and binary packages, inspired by npm.
 keywords:
   - xPack
   - package
@@ -35,13 +35,26 @@ Developer & maintainer pages:
 
 **xpm** stands for **x**Pack **p**roject **m**anager and is a
 [Node.js](https://nodejs.org/en/) CLI
-application to manage xPack projects; it can install both source and binary xPacks.
+application to manage xPack projects; it can:
+
+- install source and binary packages
+- manage multiple build configurations
+- execute (multi-)command line actions
+- manage properties and perform complex substitutions, using the
+  [LiquidJS](https://liquidjs.com) engine
 
 **xpm** is an extension to **npm** and shares the same public
 packages repository ([npmjs.com](https://www.npmjs.com)).
 
 The open source project is hosted on GitHub as
 [`xpack/xpm-js`](https://github.com/xpack/xpm-js.git).
+
+An example of a representative project using **xpm** to manage multi-platform
+test is
+[@micro-os-plus/utils-lists](https://github.com/micro-os-plus/utils-lists-xpack);
+please check the
+[package.json](https://github.com/micro-os-plus/utils-lists-xpack/blob/xpack/package.json)
+file.
 
 ## xPacks overview
 
