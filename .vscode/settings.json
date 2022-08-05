@@ -188,6 +188,8 @@
     "xpack",
     "xpacks",
     "xpbuild",
+    "xpcdl",
+    "xpmake",
     "xpninja",
     "xsvd",
     "zicsr"
