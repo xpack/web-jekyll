@@ -92,7 +92,7 @@ entries:
     - title: Overview
       url: /develop/
       output: web
-    - title: Create new xPack repo
+    - title: Create a new xPack repo
       url: /develop/how-to-new-git/
       output: web
     - title: JavaScript Style Guide
