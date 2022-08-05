@@ -96,9 +96,6 @@ entries:
     - title: Overview
       url: /support/
       output: web
-    - title: The xPack Forums
-      output: web
-      external_url: https://www.tapatalk.com/groups/xpack/
 
   - title: Developer Info
     output: web

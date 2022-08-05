@@ -36,9 +36,9 @@ and enter a **New discussion** in the **Q&A** category.
 
 If you are convinced that you identified a bug in **ilg-vscode.xpack**
 extension
-(if you have doubts, use the discussions),
+(if you have doubts, use GitHub Discussions),
 or you have a pertinent suggestion how to enhance **ilg-vscode.xpack**,
-register a **New Issue** in the the GitHub
+register a **New Issue** in the GitHub
 [Issues](https://github.com/xpack/vscode-xpack-extension-ts/issues/)
 tracker.
 
