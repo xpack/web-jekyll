@@ -40,4 +40,4 @@ systems, RTOSes, build tools and Internet technologies.
 
 He can be reached at [`<ilg@livius.net>`](mailto:ilg@livius.net) (this email
 address is given for courtesy, for all correspondence related to this
-plug-in please use the project [Support]({{ site.baseurl }}/support/) page).
+project please use the project [Support]({{ site.baseurl }}/support/) page).
