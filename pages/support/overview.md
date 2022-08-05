@@ -10,7 +10,7 @@ date: 2015-09-12 13:43:00 +0300
 
 ## Quicklinks
 
-- [xpm support]({{ site.baseurl }}/xpm/support/
+- [xpm support]({{ site.baseurl }}/xpm/support/)
 - [Arm toolchain support]({{ site.baseurl }}/arm-none-eabi-gcc/support/)
 - [RISC-V toolchain support]({{ site.baseurl }}/riscv-none-elf-gcc/support/)
 - [OpenOCD support]({{ site.baseurl }}/openocd/support/)
