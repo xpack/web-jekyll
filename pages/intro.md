@@ -69,8 +69,8 @@ types of xPacks: **source** and **binary**:
 
 - **source xPacks** are packages that install source files,
 generally libraries used by the project.
-- **binary xPacks** are packages that install standalone binary files,
-generally tools used during the build process, like toolchains,
+- **binary xPacks** are packages that install standalone executables/binary
+files, generally tools used during the build process, like toolchains,
 builders, etc; standalone means they are self-contained and do not
 depend on other shared libraries or tools.
 
@@ -190,10 +190,11 @@ $
 
 ## Why would I convert my project to an xPack?
 
-The two main reasons are:
+The top reasons are:
 
 - to automate dependencies management
 - to automate path management for dependent tools
+- to manage multi-configuration builds
 
 These are both simple and complicated things. To better understand
 them, please continue to read how binary and source xPacks work.

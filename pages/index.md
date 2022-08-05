@@ -12,7 +12,7 @@ date: 2019-06-20 23:11:00 +0300
 
 ## Mission statement
 
-In short: help developers manage dependencies.
+In short: help developers manage dependencies and multi-configuration builds.
 
 Based on a simple multi-version dependencies manager
 (built on top of **npm**),
@@ -50,16 +50,17 @@ thus upgrading the system no longer impacts the project.
 mandate the use of a package manager; the binary xPacks are plain archives
 that can be extracted manually; the source xPacks can be linked to
 projects as Git submodules, etc; they all can be used in traditional
-environments too, just that it requires much more work." %}
+environments too, just that this requires more work." %}
 
-Although the focus is on **C/C++**, most of the tools are language agnostic
+Although the current focus is on **C/C++**, most of the tools are
+language agnostic
 and can be used with other programming languages as well.
 
 Based on the installed content, there are currently two
 types of xPacks: **source** and **binary**:
 
 - **source xPacks** are packages that install source files,
-generally libraries dependencies
+generally libraries
 - **binary xPacks** are packages that install binary/executable files,
 generally tools used during the build process, like toolchains,
 builders, etc.
@@ -81,30 +82,30 @@ The core xPack tools are:
 
 Planned:
 
-- [`@xpack/xpbuild`]({{ site.baseurl }}/xpbuild/) - the **xPack Project Builder** (under development)
-- [`@xpack/xpcdl`]({{ site.baseurl }}/xpcdl/) - the **xPack Build Configurator**
+- `@xpack/xpmake` - the **xPack Project Builder**
 - `@xpack/xpliquid` - the **xPack Liquid Template Engine**
 - `@xpack/xpjson` - the **xPack JSON Manager**
-- [`@xpack/xpninja`]({{ site.baseurl }}/xpninja/) - the **xPack Build Runner**
+- `@xpack/xpninja` - the **xPack Build Runner**
 
 These projects are hosted in the GitHub
 [`xpack`](https://github.com/xpack/) organisation.
 
 ## xPack based Development Tools
 
-The main binary tools packed as xPacks are:
+The main binary tools packed as xPacks are (in alphabetical order):
 
+- [`@xpack-dev-tools/aarch64-none-elf-gcc`]({{ site.baseurl }}/aarch64-none-elf-gcc/) - the **xPack GNU AArch64 Embedded GCC** toolchain
 - [`@xpack-dev-tools/arm-none-eabi-gcc`]({{ site.baseurl }}/arm-none-eabi-gcc/) - the **xPack GNU Arm Embedded GCC** toolchain
+- [`@xpack-dev-tools/clang`]({{ site.baseurl }}/clang/) - the **xPack LLVM clang**
+- [`@xpack-dev-tools/cmake`]({{ site.baseurl }}/cmake/) - the **xPack CMake**
+- [`@xpack-dev-tools/gcc`]({{ site.baseurl }}/gcc/) - the **xPack GNU Compiler Collection (GCC)**
+- [`@xpack-dev-tools/meson-build`]({{ site.baseurl }}/meson-build/) - the **xPack Meson Build**
+- [`@xpack-dev-tools/ninja-build`]({{ site.baseurl }}/ninja-build/) - the **xPack Ninja Build**
 - [`@xpack-dev-tools/openocd`]({{ site.baseurl }}/openocd/) - the **xPack OpenOCD**
 - [`@xpack-dev-tools/qemu-arm`]({{ site.baseurl }}/qemu-arm/) - the **xPack QEMU Arm**
+- [`@xpack-dev-tools/qemu-riscv`]({{ site.baseurl }}/qemu-riscv/) - the **xPack QEMU RISC-V**
 - [`@xpack-dev-tools/riscv-none-elf-gcc`]({{ site.baseurl }}/riscv-none-elf-gcc/) - the **xPack RISC-V Embedded GCC** toolchain
-- [`@xpack-dev-tools/qemu-arm`]({{ site.baseurl }}/qemu-arm/) - the **xPack QEMU RISC-V**
 - [`@xpack-dev-tools/windows-build-tools`]({{ site.baseurl }}/windows-build-tools/) - the **xPack Windows Build Tools**
-- [`@xpack-dev-tools/ninja-build`]({{ site.baseurl }}/ninja-build/) - the **xPack Ninja Build**
-- [`@xpack-dev-tools/cmake`]({{ site.baseurl }}/cmake/) - the **xPack CMake**
-- [`@xpack-dev-tools/meson-build`]({{ site.baseurl }}/meson-build/) - the **xPack Meson Build**
-- [`@xpack-dev-tools/gcc`]({{ site.baseurl }}/gcc/) - the **xPack GNU Compiler Collection (GCC)**
-- [`@xpack-dev-tools/clang`]({{ site.baseurl }}/clang/) - the **xPack LLVM clang**
 
 Planned:
 
@@ -135,6 +136,10 @@ These projects are hosted in the GitHub
 
 Packages part of the µOS++ framework:
 
+- [@micro-os-plus/architecture-aarch32](https://github.com/micro-os-plus/architecture-aarch32-xpack/)
+  A source xPack with the µOS++ AArch32 architecture port
+- [@micro-os-plus/architecture-aarch64](https://github.com/micro-os-plus/architecture-aarch64-xpack/)
+  A source xPack with the µOS++ AArch64 architecture port
 - [@micro-os-plus/architecture-cortexm](https://github.com/micro-os-plus/architecture-cortexm-xpack/)
   A source xPack with the µOS++ Arm Cortex-M architecture port
 - [@micro-os-plus/architecture-riscv](https://github.com/micro-os-plus/architecture-riscv-xpack/)
@@ -145,6 +150,14 @@ Packages part of the µOS++ framework:
   A source xPack to assist the µOS++ builds
 - [@micro-os-plus/cmsis-os](https://github.com/micro-os-plus/cmsis-os-xpack/)
   A source xPack with the µOS++ CMSIS RTOS compatibility layer
+- [@micro-os-plus/devices-qemu-aarch32](https://github.com/micro-os-plus/devices-qemu-aarch32-xpack/)
+  A source xPack with µOS++ QEMU AArch32 devices files
+- [@micro-os-plus/devices-qemu-aarch64](https://github.com/micro-os-plus/devices-qemu-aarch64-xpack/)
+  A source xPack with µOS++ QEMU AArch64 devices files
+- [@micro-os-plus/devices-qemu-cortexm](https://github.com/micro-os-plus/devices-qemu-cortexm-xpack/)
+  A source xPack with µOS++ QEMU Cortex-M devices files
+- [@micro-os-plus/devices-qemu-riscv](https://github.com/micro-os-plus/devices-qemu-riscv-xpack/)
+  A source xPack with µOS++ QEMU RISC-V devices files
 - [@micro-os-plus/devices-stm32f0-extras](https://github.com/micro-os-plus/devices-stm32f0-extras-xpack/)
   A source xPack with µOS++ complementary STM32F0 files
 - [@micro-os-plus/devices-stm32f4-extras](https://github.com/micro-os-plus/devices-stm32f4-extras-xpack/)
@@ -159,6 +172,8 @@ Packages part of the µOS++ framework:
   A source xPack with µOS++ embedded std:: support
 - [@micro-os-plus/memory-allocators](https://github.com/micro-os-plus/memory-allocators-xpack/)
   A source xPack with µOS++ memory allocators
+- [@micro-os-plus/micro-test-plus](https://github.com/micro-os-plus/micro-test-plus/)
+  A source xPack with µTest++ testing framework
 - [@micro-os-plus/posix-io](https://github.com/micro-os-plus/posix-io-xpack/)
   A source xPack with POSIX I/O
 - [@micro-os-plus/rtos](https://github.com/micro-os-plus/rtos-xpack/)
@@ -175,6 +190,17 @@ Packages part of the µOS++ framework:
 ### 3rd Party
 
 Packages with 3rd party content:
+
+- [@xpack-3rd-party/arm-cmsis-core](https://github.com/xpack-3rd-party/arm-cmsis-core/)
+  A source xPack with Arm CMSIS Core-M and Core-A files
+- [@xpack-3rd-party/boost-ut](https://github.com/xpack-3rd-party/boost-ut/)
+  A source xPack with Boost-UT files
+- [@xpack-3rd-party/catch2](https://github.com/xpack-3rd-party/catch2/)
+  A source xPack with Catch2 files
+- [@xpack-3rd-party/googletest](https://github.com/xpack-3rd-party/googletest/)
+  A source xPack with Google Test files
+
+Planned:
 
 - `@xpack-3rd-party/freertos` - FreeRTOS
 - `@xpack-3rd-party/chan-fatfs` - Chan-FatFS
@@ -207,7 +233,8 @@ are provided **free of charge** under the terms of the
 
 ## Credits
 
-Special thanks to **MacStadium**, for providing the Apple Silicon development infrastructure as part of their
+Special thanks to **MacStadium**, for providing the Apple Silicon
+development infrastructure as part of their
 [Open Source Program](https://www.macstadium.com/opensource).
 
 ## Let us know if you enjoyed using this project
