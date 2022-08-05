@@ -27,18 +27,6 @@ entries:
     - title: xpm
       url: /xpm/
       output: web
-    - title: xpbuild
-      url: /xpbuild/
-      output: web
-    - title: xpninja
-      url: /xpninja/
-      output: web
-    - title: xpmake
-      url: /xpmake/
-      output: web
-    - title: xpcdl
-      url: /xpcdl/
-      output: web
 
   - title: 3rd Party Tools
     output: web

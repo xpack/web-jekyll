@@ -37,6 +37,13 @@ Other schema resources:
 - [JSON Schema Lint](http://jsonschemalint.com/) - online JSON validator using schema, up to v7
 - [JSONSchema.net](http://jsonschema.net/#/) - schema generator
 
+## Possibly other projects
+
+- [xpbuild]({{ site.baseurl }}/xpbuild/)
+- [xpninja]({{ site.baseurl }}/xpninja/)
+- [xpmake]({{ site.baseurl }}/xpmake/)
+- [xpcdl]({{ site.baseurl }}/xpcdl/)
+
 ## Other resources
 
 - [Links]({{ site.baseurl }}/develop/links/)
