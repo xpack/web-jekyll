@@ -28,18 +28,13 @@ topnav_dropdowns:
 
     - title: GitHub
       folderitems:
-        - title: xPack Core Tools
+        - title: xPack
           external_url: https://github.com/xpack/
-        - title: 3rd Party xPack Tools
+        - title: 3rd Party xPack Dev Tools
           external_url: https://github.com/xpack-dev-tools/
+        - title: µOS++ IIIe
+          external_url: https://github.com/micro-os-plus/
         - title: 3rd Party xPacks
           external_url: https://github.com/xpack-3rd-party/
         - title: Eclipse Embedded CDT
           external_url: https://github.com/eclipse-embed-cdt/
-        - title: µOS++ IIIe
-          external_url: https://github.com/micro-os-plus/
-
-    - title: Forums
-      folderitems:
-        - title: The xPack Chatroom
-          external_url: https://gitter.im/xpack/
