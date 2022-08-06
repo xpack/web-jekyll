@@ -49,12 +49,17 @@ packages repository ([npmjs.com](https://www.npmjs.com)).
 The open source project is hosted on GitHub as
 [`xpack/xpm-js`](https://github.com/xpack/xpm-js.git).
 
+### Examples
+
 An example of a representative project using **xpm** to manage multi-platform
 test is
 [@micro-os-plus/utils-lists](https://github.com/micro-os-plus/utils-lists-xpack);
 please check the
 [package.json](https://github.com/micro-os-plus/utils-lists-xpack/blob/xpack/package.json)
 file.
+
+For a hands-on experience, see the
+[xpack/hello-world-template-xpack](https://github.com/xpack/hello-world-template-xpack/) project.
 
 ## xPacks overview
 
@@ -81,6 +86,15 @@ software packages, using the same central repository as **npm**.
 - [`xpm list`]({{ site.baseurl }}/xpm/cli/list/)
 - [`xpm run`]({{ site.baseurl }}/xpm/cli/run/)
 - [`xpm uninstall`]({{ site.baseurl }}/xpm/cli/uninstall/)
+
+For publishing and other common operation, use **npm**:
+
+- [`npm version`](https://docs.npmjs.com/cli/v8/commands/npm-version/)
+- [`npm publish`](https://docs.npmjs.com/cli/v8/commands/npm-publish/)
+- [`npm pack`](https://docs.npmjs.com/cli/v8/commands/npm-pack/)
+- [`npm deprecate`](https://docs.npmjs.com/cli/v8/commands/npm-deprecate/)
+- [`npm publish`](https://docs.npmjs.com/cli/v8/commands/npm-unpublish/)
+- etc...
 
 ## Configuring xpm
 
