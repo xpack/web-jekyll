@@ -20,9 +20,9 @@ directly skip to the desired pages.
 
 User pages:
 
-- [Install]({{ site.baseurl }}/clang/install/)
-- [Support]({{ site.baseurl }}/clang/support/)
-- [Releases]({{ site.baseurl }}/clang/releases/)
+- [install]({{ site.baseurl }}/clang/install/)
+- [support]({{ site.baseurl }}/clang/support/)
+- [releases]({{ site.baseurl }}/clang/releases/)
 
 Developer & maintainer pages:
 
@@ -61,7 +61,7 @@ original LLVM releases.
 
 The details of installing the **xPack LLVM clang** on various
 platforms are presented in the separate
-[Install]({{ site.baseurl }}/clang/install/) page.
+[install]({{ site.baseurl }}/clang/install/) page.
 
 ## Documentation
 

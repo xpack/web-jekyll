@@ -20,9 +20,9 @@ directly skip to the desired pages.
 
 User pages:
 
-- [Install]({{ site.baseurl }}/qemu-riscv/install/)
-- [Support]({{ site.baseurl }}/qemu-riscv/support/)
-- [Releases]({{ site.baseurl }}/qemu-riscv/releases/)
+- [install]({{ site.baseurl }}/qemu-riscv/install/)
+- [support]({{ site.baseurl }}/qemu-riscv/support/)
+- [releases]({{ site.baseurl }}/qemu-riscv/releases/)
 
 Developer & maintainer pages:
 
@@ -92,7 +92,7 @@ The official QEMU documentation is available
 
 The details of installing the **xPack QEMU RISC-V** on various platforms are
 presented in a dedicated
-[Install]({{ site.baseurl }}/qemu-riscv/install) page.
+[install]({{ site.baseurl }}/qemu-riscv/install) page.
 
 ## Testing
 

@@ -21,9 +21,9 @@ directly skip to the desired pages.
 
 User pages:
 
-- [Install]({{ site.baseurl }}/aarch64-none-elf-gcc/install/)
-- [Support]({{ site.baseurl }}/aarch64-none-elf-gcc/support/)
-- [Releases]({{ site.baseurl }}/aarch64-none-elf-gcc/releases/)
+- [install]({{ site.baseurl }}/aarch64-none-elf-gcc/install/)
+- [support]({{ site.baseurl }}/aarch64-none-elf-gcc/support/)
+- [releases]({{ site.baseurl }}/aarch64-none-elf-gcc/releases/)
 
 Developer & maintainer pages:
 
@@ -67,7 +67,7 @@ moves ahead of Arm and uses more recent tools versions that fix the bugs.
 
 The details of installing the **xPack GNU AArch64 Embedded GCC** on various
 platforms are presented in the separate
-[Install]({{ site.baseurl }}/aarch64-none-elf-gcc/install/) page.
+[install]({{ site.baseurl }}/aarch64-none-elf-gcc/install/) page.
 
 ## Documentation
 

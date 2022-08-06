@@ -18,9 +18,9 @@ directly skip to the desired pages.
 
 User pages:
 
-- [Install]({{ site.baseurl }}/openocd/install/)
-- [Support]({{ site.baseurl }}/openocd/support/)
-- [Releases]({{ site.baseurl }}/openocd/releases/)
+- [install]({{ site.baseurl }}/openocd/install/)
+- [support]({{ site.baseurl }}/openocd/support/)
+- [releases]({{ site.baseurl }}/openocd/releases/)
 
 Developer & maintainer pages:
 
@@ -80,7 +80,7 @@ distribution.
 
 The details of installing the **xPack OpenOCD** on various platforms are
 presented in the separate
-[Install]({{ site.baseurl }}/openocd/install/) page.
+[install]({{ site.baseurl }}/openocd/install/) page.
 
 ## Documentation
 

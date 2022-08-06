@@ -18,9 +18,9 @@ directly skip to the desired pages.
 
 User pages:
 
-- [Install]({{ site.baseurl }}/meson-build/install/)
-- [Support]({{ site.baseurl }}/meson-build/support/)
-- [Releases]({{ site.baseurl }}/meson-build/releases/)
+- [install]({{ site.baseurl }}/meson-build/install/)
+- [support]({{ site.baseurl }}/meson-build/support/)
+- [releases]({{ site.baseurl }}/meson-build/releases/)
 
 Developer & maintainer pages:
 
@@ -61,7 +61,7 @@ distribution.
 
 The details of installing the **xPack Meson Build** on various platforms are
 presented in the separate
-[Install]({{ site.baseurl }}/meson-build/install/) page.
+[install]({{ site.baseurl }}/meson-build/install/) page.
 
 ## Documentation
 

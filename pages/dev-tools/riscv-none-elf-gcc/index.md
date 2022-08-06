@@ -25,9 +25,9 @@ you can directly skip to the desired pages.
 
 User pages:
 
-- [Install]({{ site.baseurl }}/riscv-none-elf-gcc/install/)
-- [Support]({{ site.baseurl }}/riscv-none-elf-gcc/support/)
-- [Releases]({{ site.baseurl }}/riscv-none-elf-gcc/releases/)
+- [install]({{ site.baseurl }}/riscv-none-elf-gcc/install/)
+- [support]({{ site.baseurl }}/riscv-none-elf-gcc/support/)
+- [releases]({{ site.baseurl }}/riscv-none-elf-gcc/releases/)
 
 Developer & maintainer pages:
 
@@ -65,7 +65,7 @@ GNU toolchain.
 
 The details of installing the **xPack GNU RISC-V Embedded GCC** on various
 platforms are presented in the separate
-[Install]({{ site.baseurl }}/riscv-none-elf-gcc/install/) page.
+[install]({{ site.baseurl }}/riscv-none-elf-gcc/install/) page.
 
 ## Documentation
 

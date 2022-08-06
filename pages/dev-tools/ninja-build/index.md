@@ -18,9 +18,9 @@ directly skip to the desired pages.
 
 User pages:
 
-- [Install]({{ site.baseurl }}/ninja-build/install/)
-- [Support]({{ site.baseurl }}/ninja-build/support/)
-- [Releases]({{ site.baseurl }}/ninja-build/releases/)
+- [install]({{ site.baseurl }}/ninja-build/install/)
+- [support]({{ site.baseurl }}/ninja-build/support/)
+- [releases]({{ site.baseurl }}/ninja-build/releases/)
 
 Developer & maintainer pages:
 
@@ -58,7 +58,7 @@ distribution.
 
 The details of installing the **xPack Ninja Build** on various platforms are
 presented in the separate
-[Install]({{ site.baseurl }}/ninja-build/install/) page.
+[install]({{ site.baseurl }}/ninja-build/install/) page.
 
 ## Documentation
 

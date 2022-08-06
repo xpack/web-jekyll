@@ -18,9 +18,9 @@ directly skip to the desired pages.
 
 User pages:
 
-- [Install]({{ site.baseurl }}/windows-build-tools/install/)
-- [Support]({{ site.baseurl }}/windows-build-tools/support/)
-- [Releases]({{ site.baseurl }}/windows-build-tools/releases/)
+- [install]({{ site.baseurl }}/windows-build-tools/install/)
+- [support]({{ site.baseurl }}/windows-build-tools/support/)
+- [releases]({{ site.baseurl }}/windows-build-tools/releases/)
 
 Developer & maintainer pages:
 
@@ -90,7 +90,7 @@ specific make files might fail.
 
 The details of installing the **xPack Windows Build Tools** on various
 platforms are presented in the separate
-[Install]({{ site.baseurl }}/windows-build-tools/install/) page.
+[install]({{ site.baseurl }}/windows-build-tools/install/) page.
 
 ## Documentation
 

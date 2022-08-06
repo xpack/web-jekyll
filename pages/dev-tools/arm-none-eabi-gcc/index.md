@@ -21,9 +21,9 @@ directly skip to the desired pages.
 
 User pages:
 
-- [Install]({{ site.baseurl }}/arm-none-eabi-gcc/install/)
-- [Support]({{ site.baseurl }}/arm-none-eabi-gcc/support/)
-- [Releases]({{ site.baseurl }}/arm-none-eabi-gcc/releases/)
+- [install]({{ site.baseurl }}/arm-none-eabi-gcc/install/)
+- [support]({{ site.baseurl }}/arm-none-eabi-gcc/support/)
+- [releases]({{ site.baseurl }}/arm-none-eabi-gcc/releases/)
 
 Developer & maintainer pages:
 
@@ -67,7 +67,7 @@ moves ahead of Arm and uses more recent tools versions that fix the bugs.
 
 The details of installing the **xPack GNU Arm Embedded GCC** on various
 platforms are presented in the separate
-[Install]({{ site.baseurl }}/arm-none-eabi-gcc/install/) page.
+[install]({{ site.baseurl }}/arm-none-eabi-gcc/install/) page.
 
 ## Documentation
 

@@ -22,9 +22,9 @@ directly skip to the desired pages.
 
 User pages:
 
-- [Install]({{ site.baseurl }}/qemu-arm/install/)
-- [Support]({{ site.baseurl }}/qemu-arm/support/)
-- [Releases]({{ site.baseurl }}/qemu-arm/releases/)
+- [install]({{ site.baseurl }}/qemu-arm/install/)
+- [support]({{ site.baseurl }}/qemu-arm/support/)
+- [releases]({{ site.baseurl }}/qemu-arm/releases/)
 
 Developer & maintainer pages:
 
@@ -104,7 +104,7 @@ The official QEMU documentation is available
 
 The details of installing the **xPack QEMU Arm** on various platforms are
 presented in a dedicated
-[Install]({{ site.baseurl }}/qemu-arm/install) page.
+[install]({{ site.baseurl }}/qemu-arm/install) page.
 
 ## Testing
 

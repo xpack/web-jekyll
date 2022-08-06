@@ -20,9 +20,9 @@ directly skip to the desired pages.
 
 User pages:
 
-- [Install]({{ site.baseurl }}/gcc/install/)
-- [Support]({{ site.baseurl }}/gcc/support/)
-- [Releases]({{ site.baseurl }}/gcc/releases/)
+- [install]({{ site.baseurl }}/gcc/install/)
+- [support]({{ site.baseurl }}/gcc/support/)
+- [releases]({{ site.baseurl }}/gcc/releases/)
 
 Developer & maintainer pages:
 
@@ -61,7 +61,7 @@ original GNU releases.
 
 The details of installing the **xPack GNU Compiler Collection** on various
 platforms are presented in the separate
-[Install]({{ site.baseurl }}/gcc/install/) page.
+[install]({{ site.baseurl }}/gcc/install/) page.
 
 ## Documentation
 

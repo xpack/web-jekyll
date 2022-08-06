@@ -18,9 +18,9 @@ directly skip to the desired pages.
 
 User pages:
 
-- [Install]({{ site.baseurl }}/cmake/install/)
-- [Support]({{ site.baseurl }}/cmake/support/)
-- [Releases]({{ site.baseurl }}/cmake/releases/)
+- [install]({{ site.baseurl }}/cmake/install/)
+- [support]({{ site.baseurl }}/cmake/support/)
+- [releases]({{ site.baseurl }}/cmake/releases/)
 
 Developer & maintainer pages:
 
@@ -58,7 +58,7 @@ distribution.
 
 The details of installing the **xPack CMake** on various platforms are
 presented in the separate
-[Install]({{ site.baseurl }}/cmake/install/) page.
+[install]({{ site.baseurl }}/cmake/install/) page.
 
 ## Documentation
 

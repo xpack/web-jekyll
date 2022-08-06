@@ -21,9 +21,9 @@ directly skip to the desired pages.
 
 User pages:
 
-- [Install]({{ site.baseurl }}/xpm/install/)
-- [Support]({{ site.baseurl }}/xpm/support/)
-- [Releases]({{ site.baseurl }}/xpm/releases/)
+- [install]({{ site.baseurl }}/xpm/install/)
+- [support]({{ site.baseurl }}/xpm/support/)
+- [releases]({{ site.baseurl }}/xpm/releases/)
 - [npmjs.com](https://www.npmjs.com/package/xpm) (published [versions](https://www.npmjs.com/package/xpm?activeTab=versions))
 
 Developer & maintainer pages:
