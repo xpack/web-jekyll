@@ -21,7 +21,7 @@ its own configuration files.
 
 - `XPACKS_STORE_FOLDER` (was `XPACKS_REPO_FOLDER`)
 - `XPACKS_CACHE_FOLDER`
-- `XPACKS_SYSTEM_FOLDER` (to be used in a future release)
+- `XPACKS_SYSTEM_FOLDER` (not implemented yet)
 
 ## macOS
 
