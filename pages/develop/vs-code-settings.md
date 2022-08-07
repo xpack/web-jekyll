@@ -28,7 +28,7 @@ Some of these annoying behaviours can be disabled, for example:
   "makefile.configureOnOpen": false
 ```
 
-### Editor settings
+### Configure editor
 
 ```json
   "editor.rulers": [
