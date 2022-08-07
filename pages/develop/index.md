@@ -14,7 +14,7 @@ date: 2016-03-09 12:04:00 +0300
 - [How to create a new xPack Git repository]({{ site.baseurl }}/develop/how-to-new-git/)
 - [JavaScript style guide]({{ site.baseurl }}/develop/js-style-guide/)
 - [Node.js tips & tricks]({{ site.baseurl }}/develop/node-js-tricks/)
-- [VS Code settings]({{ site.baseurl }}develop/vs-code-settings/)
+- [VS Code settings]({{ site.baseurl }}/develop/vs-code-settings/)
 - [schemas]({{ site.baseurl }}/develop/schemas/)
 - [metadata]({{ site.baseurl }}/metadata/)
 
