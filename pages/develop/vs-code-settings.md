@@ -2,7 +2,7 @@
 title: VS Code Settings
 permalink: /develop/vs-code-settings/
 
-summary: Custom settings to silence some VS Code extensions.
+summary: VS Code settings useful in xPack projects.
 comments: true
 
 date: 2022-08-07 09:51:00 +0300
