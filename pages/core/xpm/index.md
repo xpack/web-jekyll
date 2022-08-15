@@ -24,6 +24,7 @@ User pages:
 - [install]({{ site.baseurl }}/xpm/install/)
 - [support]({{ site.baseurl }}/xpm/support/)
 - [releases]({{ site.baseurl }}/xpm/releases/)
+- [policies]({{ site.baseurl }}/xpm/policies/)
 - [npmjs.com](https://www.npmjs.com/package/xpm) (published [versions](https://www.npmjs.com/package/xpm?activeTab=versions))
 
 Developer & maintainer pages:
