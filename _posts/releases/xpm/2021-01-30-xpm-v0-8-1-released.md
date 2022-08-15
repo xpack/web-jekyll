@@ -62,47 +62,47 @@ is generally compatible with previous 0.7.x releases.
 
 ### Bug fixes
 
-- [#66] - due to a partial implementation,
+- [#66] due to a partial implementation,
   installing packages that were not published in the npmjs.com repository,
   directly from Git, GitHub, GitLab, archive or local files, failed; fixed
-- [#72] - installing standalone packages was done by directly copying
+- [#72] installing standalone packages was done by directly copying
   the content locally; for consistency reasons,the behaviour was changed,
   the content is now also
   installed in the global xPacks store and links are added locally, as
   for any package
-- [#70] - in certain conditions, if the project `package.json` had no
+- [#70] in certain conditions, if the project `package.json` had no
   name/version properties defined, the program crashed with asserts; a better
   error processing was implemented
 
 ### Enhancements
 
-- [#78] - installing dependencies proved quite slow; to make things
+- [#78] installing dependencies proved quite slow; to make things
   faster, dependencies are downloaded in parallel
-- [#13] - the command `uninstall` was added; it can remove packages
+- [#13] the command `uninstall` was added; it can remove packages
   from the local project or from the global store (`-g`)
-- [#76] - the command `list` was added; it can list packages
+- [#76] the command `list` was added; it can list packages
   installed in the local project or in the global store (`-g`)
-- [#73] - with folders from the global store linked to the local
+- [#73] with folders from the global store linked to the local
   project, it was possible to change the content in the global store,
   thus damaging the packages; to prevent this, now all installed
   packages are changed to read-only, and changed back to read-write
   only before uninstall
-- [#60] - the default location for installing global packages on Linux
+- [#60] the default location for installing global packages on Linux
   was changed from `$HOME/opt` to `$HOME/.local`, to better match the
   recommended Linux file system hierarchy
-- [#71] - the general program verbosity was a bit too high; reduced; for
+- [#71] the general program verbosity was a bit too high; reduced; for
   first time users it is recommended to add `-v` to increase verbosity
-- [#68] - in certain conditions, after displaying errors, the program
+- [#68] in certain conditions, after displaying errors, the program
   continued to output several more lines, making spotting errors more
   difficult; fixed
-- [#74] - in certain conditions, when the internal links were
+- [#74] in certain conditions, when the internal links were
   no longer available, the `link` command reported an
   internal error (`ENOENT`), instead of a more user friendly message
   informing about the broken link; fixed
 
 ### Other changes
 
-- [#75] - the `build` command was removed, its functionality is already
+- [#75] the `build` command was removed, its functionality is already
   provided by the more general `run` command
 
 ### Known problems

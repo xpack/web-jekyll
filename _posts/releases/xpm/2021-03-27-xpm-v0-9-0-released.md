@@ -71,27 +71,27 @@ build folders (like debug/release, but also multi-platform builds).
 The main enhancement is the addition of `xpack.configurations` in
 `package.json`, and `--config` for most commands.
 
-- [#94] - add `--config` to `xpm link`
-- [#95] - add `--config` to `xpm uninstall`
-- [#96] - update `xpm list` to show configurations dependencies
-- [#90] - iterate all configurations on `xpm install`
-- [#88] - add support for configurations & actions
+- [#94] add `--config` to `xpm link`
+- [#95] add `--config` to `xpm uninstall`
+- [#96] update `xpm list` to show configurations dependencies
+- [#90] iterate all configurations on `xpm install`
+- [#88] add support for configurations & actions
 
 Another important enhancement is the addition of `properties` and of a
 template engine to process substitutions in actions/scripts.
 
-- [#91] - fix use of properties in substitutions
-- [#92] - Add `os.platform` and `os.arch` to substitution map
-- [#91] - add template `properties`; if `--config` is used, the
+- [#91] fix use of properties in substitutions
+- [#92] Add `os.platform` and `os.arch` to substitution map
+- [#91] add template `properties`; if `--config` is used, the
   configuration properties take precedence over package properties.
 
 Other enhancements:
 
-- [#35] - to better accommodate future enhancements, and spot cases
+- [#35] to better accommodate future enhancements, and spot cases
   when an old xpm is used to process a `package.json` which includes
   new content, the `xpack.checkMinimumXpmRequired` property was added
-- [#93] - processing for `--dry-run` was implemented for `xpm install`
-- [#89] - prefer run & run-action
+- [#93] processing for `--dry-run` was implemented for `xpm install`
+- [#89] prefer run & run-action
 
 ### Other changes
 

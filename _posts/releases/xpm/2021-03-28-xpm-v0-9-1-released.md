@@ -64,13 +64,13 @@ build folders (like debug/release, but also multi-platform builds).
 
 ### Bug fixes
 
-- [#98] - when installing tools in the build configuration, the execution
+- [#98] when installing tools in the build configuration, the execution
   path was hardcoded to the `build/<configuration-name>` folder; fixed, now
   the execution path reflects the user setting;
 
 ### Enhancements
 
-- [#97] - the preferred property used to define configurations is now
+- [#97] the preferred property used to define configurations is now
   `buildConfigurations`, instead of `configurations`;
 
 ### Other changes
