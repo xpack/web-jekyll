@@ -2,7 +2,7 @@
 title: The xPack Project Manager
 permalink: /xpm/
 
-summary: A tool to orchestrate builds and manage dependencies for language neutral, multi-version, projects, inspired by npm.
+summary: A tool to orchestrate builds and manage dependencies for language neutral, multi-version projects, inspired by npm.
 keywords:
   - xPack
   - package
