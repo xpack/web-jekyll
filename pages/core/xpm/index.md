@@ -2,7 +2,7 @@
 title: The xPack Project Manager
 permalink: /xpm/
 
-summary: A tool to manage dependencies for language neutral multi-version source and binary packages, inspired by npm.
+summary: A tool to orchestrate builds and manage dependencies for language neutral, multi-version, projects, inspired by npm.
 keywords:
   - xPack
   - package
@@ -21,10 +21,7 @@ directly skip to the desired pages.
 
 User pages:
 
-- [install]({{ site.baseurl }}/xpm/install/)
-- [support]({{ site.baseurl }}/xpm/support/)
-- [releases]({{ site.baseurl }}/xpm/releases/)
-- [policies]({{ site.baseurl }}/xpm/policies/)
+- [install]({{ site.baseurl }}/xpm/install/), [support]({{ site.baseurl }}/xpm/support/), [releases]({{ site.baseurl }}/xpm/releases/), [policies]({{ site.baseurl }}/xpm/policies/)
 - [npmjs.com](https://www.npmjs.com/package/xpm) (published [versions](https://www.npmjs.com/package/xpm?activeTab=versions))
 
 Developer & maintainer pages:
@@ -44,11 +41,14 @@ application to manage xPack projects; it can:
 - manage properties and perform complex substitutions, using the
   [LiquidJS](https://liquidjs.com) engine
 
-**xpm** is an extension to **npm** and shares the same public
+**xpm** complements **npm** and shares the same public
 packages repository ([npmjs.com](https://www.npmjs.com)).
 
 The open source project is hosted on GitHub as
 [`xpack/xpm-js`](https://github.com/xpack/xpm-js.git).
+
+It is available as [xpm](https://www.npmjs.com/package/xpm) from npmjs.com
+public registry and can be installed via **npm**.
 
 ### Examples
 
@@ -72,11 +72,9 @@ Please read the [xPacks Overview]({{ site.baseurl }}/) and
 
 ## Purpose
 
-The main purpose of the `xpm` CLI tool is to install xPacks, including all
-dependent xPacks, and to easily update them when new versions are released.
-
-For developers, the xPack tools provide a very convenient way of publishing the
-software packages, using the same central repository as **npm**.
+The main purpose of the `xpm` CLI tool is to orchestrate builds, including
+to install dependencies, and to easily update them when new versions are
+released.
 
 ## xpm CLI commands
 
@@ -87,6 +85,12 @@ software packages, using the same central repository as **npm**.
 - [`xpm list`]({{ site.baseurl }}/xpm/cli/list/)
 - [`xpm run`]({{ site.baseurl }}/xpm/cli/run/)
 - [`xpm uninstall`]({{ site.baseurl }}/xpm/cli/uninstall/)
+
+Planned:
+
+- `xpm outdated`
+- `xpm update`
+- `xpm cache`
 
 For publishing and other common operation, use **npm**:
 
