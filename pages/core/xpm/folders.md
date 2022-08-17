@@ -66,6 +66,17 @@ System install (not implemented):
 - `%ProgramFiles%\xPacks\.cache`
 - `%ProgramFiles%\xPacks\.bin` (not in `Path`)
 
+## Links not created by default
+
+Please note that since installing binaries globally is strongly
+discouraged in favour of installing links in each project, the global
+or system links are not installed by default, and require the user to
+explicitly specify the desired folder.
+
+The `.bin` folders mentioned before are only recommendations and
+intentionally are not in the PATH. However, in special setups,
+users can add links to binaries in any folder.
+
 ## The xPacks folder
 
 Individual packages are stored as separate folders:
