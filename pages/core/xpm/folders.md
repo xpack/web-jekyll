@@ -17,11 +17,12 @@ setting them in shell init scripts is not effective, since the windows manager
 usually is not started by a shell, but by other system mechanism, which has
 its own configuration files.
 
-## Environment
+## Environment variables
 
 - `XPACKS_STORE_FOLDER` (was `XPACKS_REPO_FOLDER`)
 - `XPACKS_CACHE_FOLDER`
-- `XPACKS_SYSTEM_FOLDER` (not implemented yet)
+- `XPACKS_SYSTEM_STORE_FOLDER` (not implemented yet; was `XPACKS_SYSTEM_FOLDER`)
+- `XPACKS_SYSTEM_CACHE_FOLDER` (not implemented yet)
 
 ## macOS
 
@@ -29,11 +30,13 @@ Global (home) install:
 
 - `${HOME}/Library/xPacks`
 - `${HOME}/Library/Caches/xPacks`
+- `${HOME}/Library/xPacks/.bin` (not in PATH)
 
 System install (not implemented yet):
 
-- `/opt/xPacks` with
-- links in `/usr/local/bin` (normally in `PATH`)
+- `/Library/xPacks`
+- `/Library/Caches/xPacks`
+- `/Library/xPacks/.bin` (not in PATH)
 
 ## GNU/Linux
 
@@ -41,23 +44,27 @@ Global (home) install:
 
 - `${HOME}/.local/xPacks` (was `${HOME}/opt/xPacks` in earlier versions)
 - `${HOME}/.cache/xPacks`
+- `${HOME}/.local/xPacks/.bin` (not in PATH)
 
-System install (not implemented):
+System install (not implemented yet):
 
 - `/opt/xPacks`
-- links in `/usr/local/bin` (normally in `PATH`)
+- `/opt/xPacks/.cache`
+- `/opt/xPacks/.bin` (not in PATH)
 
 ## Windows
 
 Global (home) install:
 
-- `%APPDATA%\xPacks` (`C:\Users\ilg\AppData\Roaming\xPacks`)
-- `%LOCALAPPDATA%\Caches\xPacks` (`C:\Users\ilg\AppData\Local\Caches\xPacks`)
+- `%APPDATA%\xPacks` (like `C:\Users\ilg\AppData\Roaming\xPacks`)
+- `%LOCALAPPDATA%\Caches\xPacks` (like `C:\Users\ilg\AppData\Local\Caches\xPacks`)
+- `%APPDATA%\xPacks\.bin` (not in `Path`)
 
 System install (not implemented):
 
-- `%ProgramFiles%\xPacks` (`C:\Program Files\xPacks`)
-- links in `%ProgramFiles%\xPacks\.bin`, which must be added to the `Path`
+- `%ProgramFiles%\xPacks` (like `C:\Program Files\xPacks`)
+- `%ProgramFiles%\xPacks\.cache`
+- `%ProgramFiles%\xPacks\.bin` (not in `Path`)
 
 ## The xPacks folder
 
