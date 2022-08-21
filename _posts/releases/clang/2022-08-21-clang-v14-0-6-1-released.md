@@ -113,7 +113,7 @@ The xPack LLVM clang generally follows the official
 
 The current version is based on:
 
-- LLVM clang version [12.0.1](https://releases.llvm.org/download.html#12.0.1), from July 8th, 2021.
+- LLVM clang version [14.0.6](https://releases.llvm.org/download.html#14.0.6), from June 22nd, 2022.
 
 ## Changes
 
