@@ -1,16 +1,18 @@
 ---
-title:  xPack GNU AArch64 Embedded GCC v11.3.1-1.1 released
+title:  xPack GNU AArch64 Embedded GCC v11.3.1-1.2 released
 
-summary: "Version **11.3.1-1.1** is a new release; it follows the upstream Arm release."
+TODO: select one summary
+
+summary: "Version **11.3.1-1.2** is a maintenance release; it fixes an issue with the build of `aarch64-none-elf-as`."
 
 arm_version: 11.3.Rel1
 arm_date: August 8, 2022
-version: 11.3.1-1.1
+version: 11.3.1-1.2
 npm_subversion: 1
 python_version: 10
-download_url: https://github.com/xpack-dev-tools/aarch64-none-elf-gcc-xpack/releases/tag/v11.3.1-1.1/
+download_url: https://github.com/xpack-dev-tools/aarch64-none-elf-gcc-xpack/releases/tag/v11.3.1-1.2/
 
-date:   2022-08-25 20:27:12 +0300
+date:   2022-08-27 19:05:52 +0300
 
 categories:
   - releases
@@ -182,8 +184,7 @@ platforms, support for Guile scripting in GDB is currently not available.
 
 ## Known problems
 
-- an issue with the build of GDB resulted in an `aarch64-none-elf-as`
-  which does not run properly on Wine; fixed in v11.3.1-1.2.
+- none
 
 ## Shared libraries
 
@@ -254,23 +255,23 @@ build, not the compiler functionality.
 The SHA-256 hashes for the files are:
 
 ```console
-7ddb902469db43160db84c59f97ff60783b3e7b75ec1d98442e259b5e03c3201
-xpack-aarch64-none-elf-gcc-11.3.1-1.1-darwin-arm64.tar.gz
+368d0d09f806db9c4e44671047502d0185a20534997bee617b2468586bcef6ec
+xpack-aarch64-none-elf-gcc-11.3.1-1.2-darwin-arm64.tar.gz
 
-26a0a9d9098d58c758aceab30a6ac00d62d9c5d9a7b32b6494b99338c8457396
-xpack-aarch64-none-elf-gcc-11.3.1-1.1-darwin-x64.tar.gz
+40b674e43ddca0cd98c41d22a7c59187c54d9e272fe4da57a9d91e6d0c99b0c1
+xpack-aarch64-none-elf-gcc-11.3.1-1.2-darwin-x64.tar.gz
 
-37d170e50ca785d5c885d77f96f0eeb3d471e3e88e6b5e36770d2f0467c873f0
-xpack-aarch64-none-elf-gcc-11.3.1-1.1-linux-arm.tar.gz
+47d5901735969f6c83388b58a3c99f540d77615e21fae7934ff54f6680669ef7
+xpack-aarch64-none-elf-gcc-11.3.1-1.2-linux-arm.tar.gz
 
-81f610aa047f669cfcb9701737b2aed6a0956df822bdab813b1d1ca0182985c6
-xpack-aarch64-none-elf-gcc-11.3.1-1.1-linux-arm64.tar.gz
+51c8142c51e34e3559687815b0dbdf65bd18db44674a21865fa9c688a7ccba1e
+xpack-aarch64-none-elf-gcc-11.3.1-1.2-linux-arm64.tar.gz
 
-60c9d00697981f7e721f81df69a830b4c9d3da52f3cb53f8ae86420faa808864
-xpack-aarch64-none-elf-gcc-11.3.1-1.1-linux-x64.tar.gz
+1179481f8762ec1bbeda54eb1520a10187fca70d21aef37c3207ddf21e6cb8c9
+xpack-aarch64-none-elf-gcc-11.3.1-1.2-linux-x64.tar.gz
 
-c63dbea1fcd6a303fde1359e51d1819064a47ac2a3ed7cd353b554a22f3ab310
-xpack-aarch64-none-elf-gcc-11.3.1-1.1-win32-x64.zip
+bc742a197f2e04ec0735bfad82ce9f742f7fa59ccee48b7058ad33c024013631
+xpack-aarch64-none-elf-gcc-11.3.1-1.2-win32-x64.zip
 
 ```
 
