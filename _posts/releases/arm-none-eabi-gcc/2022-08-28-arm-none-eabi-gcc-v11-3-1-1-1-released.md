@@ -11,7 +11,7 @@ summary: "Version **11.3.1-1.1** is a new release; it follows the Arm release."
 arm_version: 11.3.Rel1
 arm_date: August 8, 2022
 version: 11.3.1-1.1
-npm_subversion: 1
+npm_subversion: 2
 python_version: 10
 download_url: https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases/tag/v11.3.1-1.1/
 
