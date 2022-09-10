@@ -130,8 +130,12 @@ The xPack GNU Arm Embedded GCC generally follows the official
 The current version is based on:
 
 - [GNU Arm Embedded Toolchain](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm)
-release **{{ page.arm_version }}** from {{ page.arm_date }} and uses the
-same sources.
+release **{{ page.arm_version }}** from {{ page.arm_date }}
+and uses the same sources. It includes:
+  - GCC 11.3.1
+  - binutils 2.38
+  - newlib 4.1.0
+  - GDB 12.1
 
 ## Supported libraries
 

@@ -74,10 +74,14 @@ xpm install --global @xpack-dev-tools/arm-none-eabi-gcc@{{ page.version }}.{{ pa
 
 ## Compliance
 
-This release follows the official
-[GNU Arm Embedded Toolchain](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm)
-**{{ page.arm_version }}** release {{ page.arm_date }} and it is based on the
+- [GNU Arm Embedded Toolchain](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm)
+release **{{ page.arm_version }}** from {{ page.arm_date }} and uses the
 `gcc-arm-none-eabi-{{ page.arm_version }}-src.tar.bz2` source invariant.
+It includes:
+  - GCC 10.2.1
+  - binutils 2.35
+  - newlib 3.3.0
+  - GDB 10.1
 
 For more details see the original Arm release text files:
 

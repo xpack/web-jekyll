@@ -127,7 +127,12 @@ releases.
 The current version is based on:
 
 - [GNU AArch64 Embedded Toolchain](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm)
-release **{{ page.arm_version }}** from {{ page.arm_date }} and uses the same sources.
+release **{{ page.arm_version }}** from {{ page.arm_date }}
+and uses the same sources. It includes:
+  - GCC 11.2.1
+  - binutils 2.37
+  - newlib 4.1.0
+  - GDB 11.2
 
 ## Supported libraries
 

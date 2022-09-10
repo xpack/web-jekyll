@@ -125,6 +125,11 @@ The current version is based on:
 - [GNU Arm Embedded Toolchain](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm)
 release **{{ page.arm_version }}** from {{ page.arm_date }} and uses the
 `gcc-arm-none-eabi-{{ page.arm_version }}-src.tar.bz2` source invariant.
+It includes:
+  - GCC 10.3.1
+  - binutils 2.36
+  - newlib 4.1.0
+  - GDB 10.2
 
 For more details see the original Arm release text files:
 
