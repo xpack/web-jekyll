@@ -9,7 +9,7 @@ the latest upstream master."
 summary: "Version **11.3.0-1** is the first release."
 
 version: "11.3.0-1"
-npm_subversion: 1
+npm_subversion: 3
 gcc_version: "11.3.0"
 gcc_version_major: "11"
 gcc_release_date: "Aug 19, 2022"
