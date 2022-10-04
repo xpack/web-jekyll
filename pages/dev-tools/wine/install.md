@@ -90,13 +90,13 @@ page.
 
 {% capture windows %}
 
-Not available.
+Binaries are available only for GNU/Linux.
 
 {% endcapture %}
 
 {% capture macos %}
 
-Not available.
+Binaries are available only for GNU/Linux.
 
 {% endcapture %}
 

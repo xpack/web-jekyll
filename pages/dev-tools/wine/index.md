@@ -61,7 +61,7 @@ presented in the separate
 
 The current version specific WineHQ documentation is available online from:
 
-- [https://wine.org/documentation/](https://wine.org/documentation/)
+- [https://www.winehq.org/](https://www.winehq.org/)
 
 ## Support
 
