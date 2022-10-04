@@ -68,13 +68,14 @@ entries:
     - title: meson-build
       url: /meson-build/
       output: web
-    - title: Other
-      output: web
-      folderitems:
 
-      - title: wine
-        url: /dev-tools/wine/
-        output: web
+  - title: Other 3rd Party Tools
+    output: web
+    folderitems:
+
+    - title: wine
+      url: /dev-tools/wine/
+      output: web
 
   - title: VS Code Extensions
     output: web
