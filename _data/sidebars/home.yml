@@ -68,6 +68,9 @@ entries:
     - title: meson-build
       url: /meson-build/
       output: web
+    - title: mingw-w64-gcc
+      url: /mingw-w64-gcc/
+      output: web
 
   - title: Other 3rd Party Tools
     output: web

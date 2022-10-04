@@ -1,23 +1,22 @@
 ---
-title: How to install the xPack GNU AArch64 Embedded GCC binaries
-permalink: /aarch64-none-elf-gcc/install/
+title: How to install the xPack MinGW-w64 GCC binaries
+permalink: /mingw-w64-gcc/install/
 
 summary: "The recommended method is via xpm."
 
 toc: false
 comments: true
 
-version: "11.2.1"
-subversion: "1.2"
-version-timestamp: "20220111"
+version: "11.3.0"
+subversion: "1.3"
 
-date: 2019-07-10 17:53:00 +0300
+date: 2022-10-04 11:43:00 +0300
 
 ---
 
 ## Overview
 
-The **xPack GNU AArch64 Embedded GCC** can be installed automatically,
+The **xPack MinGW-w64 GCC** can be installed automatically,
 via `xpm` (the
 recommended method), or manually, by downloading and unpacking one of the
 portable archives.
@@ -26,9 +25,9 @@ portable archives.
 
 ## Easy install
 
-The easiest way to install GNU AArch64 Embedded GCC is by using the
+The easiest way to install MinGW-w64 GCC is by using the
 **binary xPack**, available as
-[`@xpack-dev-tools/aarch64-none-elf-gcc`](https://www.npmjs.com/package/@xpack-dev-tools/aarch64-none-elf-gcc)
+[`@xpack-dev-tools/mingw-w64-gcc`](https://www.npmjs.com/package/@xpack-dev-tools/mingw-w64-gcc)
 from the [`npmjs.com`](https://www.npmjs.com) registry.
 
 ### Prerequisites
@@ -45,7 +44,7 @@ With xpm available, installing
 the latest version of the package is quite easy:
 
 ```sh
-xpm install --global @xpack-dev-tools/aarch64-none-elf-gcc@latest --verbose
+xpm install --global @xpack-dev-tools/mingw-w64-gcc@latest --verbose
 ```
 
 This command will always install the latest available version,
@@ -67,15 +66,6 @@ this might be hidden for normal browsing, and require
 separate options (like `ls -A`) or, in file browsers, to enable
 settings like **Show Hidden Files**." %}
 
-xPacks aware tools, like the **Eclipse Embedded CDT plug-ins** automatically
-identify binaries installed with
-xpm and provide a convenient method to manage paths.
-
-{% include important.html content="Automatic
-path discovery for the packages from the new `@xpack-dev-tools` scope was
-added to **GNU MCU Eclipse plug-ins** with v6.3.x in 2022-07; update
-older versions or configure the path manually." %}
-
 ### Update
 
 For the moment, to update the package, try to install the latest release again,
@@ -90,7 +80,7 @@ as npm does.
 To remove the installed xPack, the command is similar:
 
 ```sh
-xpm uninstall --global @xpack-dev-tools/aarch64-none-elf-gcc --verbose
+xpm uninstall --global @xpack-dev-tools/mingw-w64-gcc --verbose
 ```
 
 {% endcapture %}
@@ -99,12 +89,12 @@ xpm uninstall --global @xpack-dev-tools/aarch64-none-elf-gcc --verbose
 
 ## Manual install
 
-For all platforms, the **xPack GNU AArch64 Embedded GCC** binaries are
+For all platforms, the **xPack MinGW-w64 GCC** binaries are
 released as portable
 archives that can be installed in any location.
 
 The archives can be downloaded from the
-GitHub [releases](https://github.com/xpack-dev-tools/aarch64-none-elf-gcc-xpack/releases/)
+GitHub [releases](https://github.com/xpack-dev-tools/mingw-w64-gcc-xpack/releases/)
 pages.
 {% endcapture %}
 
@@ -117,18 +107,18 @@ pages.
 To check if the xpm installed GCC starts, use something like:
 
 ```doscon
-C:\>%USERPROFILE%\AppData\Roaming\xPacks\@xpack-dev-tool\aarch64-none-elf-gcc\{{ page.version }}-{{ page.subversion }}.1\.content\bin\aarch64-none-elf-gcc.exe" --version
-aarch64-none-elf-gcc.exe (xPack GNU AArch64 Embedded GCC x86_64) {{ page.version }} {{ page.version-timestamp }}
+C:\>%USERPROFILE%\AppData\Roaming\xPacks\@xpack-dev-tool\mingw-w64-gcc\{{ page.version }}-{{ page.subversion }}.1\.content\bin\x86_64-w64-mingw32-gcc.exe" --version
+x86_64-w64-mingw32-gcc.exe (xPack MinGW-w64 GCC x86_64) {{ page.version }}
 ```
 
 {{ manual_install }}
 
 ### Download
 
-The Windows versions of **xPack GNU AArch64 Embedded GCC** are packed as ZIP files.
+The Windows versions of **xPack MinGW-w64 GCC** are packed as ZIP files.
 Download the latest version named like:
 
-- `xpack-aarch64-none-elf-gcc-{{ page.version }}-{{ page.subversion }}-win32-x64.zip`
+- `xpack-mingw-w64-gcc-{{ page.version }}-{{ page.subversion }}-win32-x64.zip`
 
 {% include note.html content="In case you wonder where the suffix comes
 from, it is exactly the Node.js `process.platform` and `process.arch`.
@@ -136,10 +126,10 @@ The `win32` part is confusing, but we have to leave with it." %}
 
 ### Unpack
 
-To manually install the xPack GNU AArch64 Embedded GCC,
+To manually install the xPack MinGW-w64 GCC,
 unpack the archive and copy the versioned folder into the
-`%USERPROFILE%\AppData\Roaming\xPacks\aarch64-none-elf-gcc`
-(for example `C:\Users\ilg\AppData\Roaming\xPacks\aarch64-none-elf-gcc`) folder;
+`%USERPROFILE%\AppData\Roaming\xPacks\mingw-w64-gcc`
+(for example `C:\Users\ilg\AppData\Roaming\xPacks\mingw-w64-gcc`) folder;
 according to Microsoft, `AppData\Roaming` is the recommended location for
 installing user specific packages.
 
@@ -150,24 +140,14 @@ install location is slightly different from the xpm install folders,
 which use the scope (like `@xpack-dev-tools`) to group different tools,
 and `.content` to store the unpacked archive." %}
 
-{% include important.html content="Although perfectly possible to
-install GNU AArch64 Embedded GCC in any folder, it is highly recommended
-to use this path, since by default the Eclipse Embedded CDT plug-ins search
-for the executables in this location." %}
-
 ### Test
 
 To check if the manually installed GCC starts, use something like:
 
 ```doscon
-C:\>%USERPROFILE%\AppData\Roaming\xPacks\aarch64-none-elf-gcc\xpack-aarch64-none-elf-gcc-{{ page.version }}-{{ page.subversion }}\bin\aarch64-none-elf-gcc.exe" --version
-aarch64-none-elf-gcc (xPack GNU AArch64 Embedded GCC x86_64) {{ page.version }} {{ page.version-timestamp }}
+C:\>%USERPROFILE%\AppData\Roaming\xPacks\mingw-w64-gcc\xpack-mingw-w64-gcc-{{ page.version }}-{{ page.subversion }}\bin\mingw-w64-gcc.exe" --version
+x86_64-w64-mingw32-gcc (xPack MinGW-w64 GCC x86_64) {{ page.version }}
 ```
-
-### Windows Build Tools
-
-{% include tip.html content="Since Windows does not provide the GNU make
-binaries, it is recommended to also install the **Windows Build Tools**." %}
 
 {% endcapture %}
 
@@ -180,33 +160,33 @@ binaries, it is recommended to also install the **Windows Build Tools**." %}
 To check if the xpm installed GCC starts, use something like:
 
 ```console
-$ ~/.local/xPacks/@xpack-dev-tools/aarch64-none-elf-gcc/{{ page.version }}-{{ page.subversion }}.1/.content/bin/aarch64-none-elf-gcc --version
-aarch64-none-elf-gcc (xPack GNU AArch64 Embedded GCC x86_64) {{ page.version }} {{ page.version-timestamp }}
+$ ~/.local/xPacks/@xpack-dev-tools/mingw-w64-gcc/{{ page.version }}-{{ page.subversion }}.1/.content/bin/x86_64-w64-mingw32-gcc --version
+x86_64-w64-mingw32-gcc (xPack MinGW-w64 GCC x86_64) {{ page.version }}
 ```
 
 {{ manual_install }}
 
 ### Download
 
-The macOS version of **xPack GNU AArch64 Embedded GCC** is packed as a
+The macOS version of **xPack MinGW-w64 GCC** is packed as a
 `.tar.gz` archive.
 Download the latest version named like:
 
-- `xpack-aarch64-none-elf-gcc-{{ page.version }}-{{ page.subversion }}-darwin-x64.tar.gz`
-- `xpack-aarch64-none-elf-gcc-{{ page.version }}-{{ page.subversion }}-darwin-arm64.tar.gz`
+- `xpack-mingw-w64-gcc-{{ page.version }}-{{ page.subversion }}-darwin-x64.tar.gz`
+- `xpack-mingw-w64-gcc-{{ page.version }}-{{ page.subversion }}-darwin-arm64.tar.gz`
 
 ### Unpack
 
-To manually install the xPack GNU AArch64 Embedded GCC,
+To manually install the xPack MinGW-w64 GCC,
 unpack the archive and copy it to
-`~/.local/xPacks/aarch64-none-elf-gcc/xpack-aarch64-none-elf-gcc-<version>`:
+`~/.local/xPacks/mingw-w64-gcc/xpack-mingw-w64-gcc-<version>`:
 
 ```sh
-mkdir -p ~/.local/xPacks/aarch64-none-elf-gcc
-cd ~/.local/xPacks/aarch64-none-elf-gcc
+mkdir -p ~/.local/xPacks/mingw-w64-gcc
+cd ~/.local/xPacks/mingw-w64-gcc
 
-tar xvf ~/Downloads/xpack-aarch64-none-elf-gcc-{{ page.version }}-{{ page.subversion }}-darwin-x64.tar.gz
-chmod -R -w xpack-aarch64-none-elf-gcc-{{ page.version }}-{{ page.subversion }}
+tar xvf ~/Downloads/xpack-mingw-w64-gcc-{{ page.version }}-{{ page.subversion }}-darwin-x64.tar.gz
+chmod -R -w xpack-mingw-w64-gcc-{{ page.version }}-{{ page.subversion }}
 ```
 
 You may shorten the last folder name and keep only the version.
@@ -214,98 +194,119 @@ You may shorten the last folder name and keep only the version.
 {% include note.html content="For manual installs, the recommended
 install location is different from the xpm install folders." %}
 
-{% include important.html content="Although perfectly possible to
-install GNU AArch64 Embedded GCC in any folder, it is highly recommended
-to use this path, since by default the GNU MCU Eclipse plug-ins search
-for the executables in this location." %}
-
 The result is a structure like:
 
 ```console
-$ tree -L 2 /Users/ilg/.local/xPacks/aarch64-none-elf-gcc/xpack-aarch64-none-elf-gcc-{{ page.version }}-{{ page.subversion }}
-/Users/ilg/.local/xPacks/aarch64-none-elf-gcc/xpack-aarch64-none-elf-gcc-{{ page.version }}-{{ page.subversion }}
+$ tree -L 2 /Users/ilg/.local/xPacks/mingw-w64-gcc/xpack-mingw-w64-gcc-{{ page.version }}-{{ page.subversion }}
+/Users/ilg/.local/xPacks/mingw-w64-gcc/xpack-mingw-w64-gcc-{{ page.version }}-{{ page.subversion }}
 ├── README.md
-├── aarch64-none-elf
-│   ├── bin
-│   ├── include
-│   ├── lib
-│   └── share
 ├── bin
-│   ├── aarch64-none-elf-addr2line
-│   ├── aarch64-none-elf-ar
-│   ├── aarch64-none-elf-as
-│   ├── aarch64-none-elf-as-py3
-│   ├── aarch64-none-elf-c++
-│   ├── aarch64-none-elf-c++filt
-│   ├── aarch64-none-elf-cpp
-│   ├── aarch64-none-elf-elfedit
-│   ├── aarch64-none-elf-g++
-│   ├── aarch64-none-elf-gcc
-│   ├── aarch64-none-elf-gcc-{{ page.version }}
-│   ├── aarch64-none-elf-gcc-ar
-│   ├── aarch64-none-elf-gcc-nm
-│   ├── aarch64-none-elf-gcc-ranlib
-│   ├── aarch64-none-elf-gcov
-│   ├── aarch64-none-elf-gcov-dump
-│   ├── aarch64-none-elf-gcov-tool
-│   ├── aarch64-none-elf-gdb
-│   ├── aarch64-none-elf-gdb-add-index
-│   ├── aarch64-none-elf-gdb-add-index-py3
-│   ├── aarch64-none-elf-gdb-py3
-│   ├── aarch64-none-elf-gfortran
-│   ├── aarch64-none-elf-gprof
-│   ├── aarch64-none-elf-gprof-py3
-│   ├── aarch64-none-elf-ld
-│   ├── aarch64-none-elf-ld.bfd
-│   ├── aarch64-none-elf-lto-dump
-│   ├── aarch64-none-elf-nm
-│   ├── aarch64-none-elf-objcopy
-│   ├── aarch64-none-elf-objdump
-│   ├── aarch64-none-elf-ranlib
-│   ├── aarch64-none-elf-readelf
-│   ├── aarch64-none-elf-size
-│   ├── aarch64-none-elf-strings
-│   └── aarch64-none-elf-strip
+│   ├── i686-w64-mingw32-addr2line
+│   ├── i686-w64-mingw32-ar
+│   ├── i686-w64-mingw32-as
+│   ├── i686-w64-mingw32-c++
+│   ├── i686-w64-mingw32-c++filt
+│   ├── i686-w64-mingw32-cpp
+│   ├── i686-w64-mingw32-dlltool
+│   ├── i686-w64-mingw32-dllwrap
+│   ├── i686-w64-mingw32-elfedit
+│   ├── i686-w64-mingw32-g++
+│   ├── i686-w64-mingw32-gcc
+│   ├── i686-w64-mingw32-gcc-11.3.0
+│   ├── i686-w64-mingw32-gcc-ar
+│   ├── i686-w64-mingw32-gcc-nm
+│   ├── i686-w64-mingw32-gcc-ranlib
+│   ├── i686-w64-mingw32-gcov
+│   ├── i686-w64-mingw32-gcov-dump
+│   ├── i686-w64-mingw32-gcov-tool
+│   ├── i686-w64-mingw32-gendef
+│   ├── i686-w64-mingw32-gfortran
+│   ├── i686-w64-mingw32-gprof
+│   ├── i686-w64-mingw32-ld
+│   ├── i686-w64-mingw32-ld.bfd
+│   ├── i686-w64-mingw32-lto-dump
+│   ├── i686-w64-mingw32-nm
+│   ├── i686-w64-mingw32-objcopy
+│   ├── i686-w64-mingw32-objdump
+│   ├── i686-w64-mingw32-ranlib
+│   ├── i686-w64-mingw32-readelf
+│   ├── i686-w64-mingw32-size
+│   ├── i686-w64-mingw32-strings
+│   ├── i686-w64-mingw32-strip
+│   ├── i686-w64-mingw32-widl
+│   ├── i686-w64-mingw32-windmc
+│   ├── i686-w64-mingw32-windres
+│   ├── x86_64-w64-mingw32-addr2line
+│   ├── x86_64-w64-mingw32-ar
+│   ├── x86_64-w64-mingw32-as
+│   ├── x86_64-w64-mingw32-c++
+│   ├── x86_64-w64-mingw32-c++filt
+│   ├── x86_64-w64-mingw32-cpp
+│   ├── x86_64-w64-mingw32-dlltool
+│   ├── x86_64-w64-mingw32-dllwrap
+│   ├── x86_64-w64-mingw32-elfedit
+│   ├── x86_64-w64-mingw32-g++
+│   ├── x86_64-w64-mingw32-gcc
+│   ├── x86_64-w64-mingw32-gcc-11.3.0
+│   ├── x86_64-w64-mingw32-gcc-ar
+│   ├── x86_64-w64-mingw32-gcc-nm
+│   ├── x86_64-w64-mingw32-gcc-ranlib
+│   ├── x86_64-w64-mingw32-gcov
+│   ├── x86_64-w64-mingw32-gcov-dump
+│   ├── x86_64-w64-mingw32-gcov-tool
+│   ├── x86_64-w64-mingw32-gendef
+│   ├── x86_64-w64-mingw32-gfortran
+│   ├── x86_64-w64-mingw32-gprof
+│   ├── x86_64-w64-mingw32-ld
+│   ├── x86_64-w64-mingw32-ld.bfd
+│   ├── x86_64-w64-mingw32-lto-dump
+│   ├── x86_64-w64-mingw32-nm
+│   ├── x86_64-w64-mingw32-objcopy
+│   ├── x86_64-w64-mingw32-objdump
+│   ├── x86_64-w64-mingw32-ranlib
+│   ├── x86_64-w64-mingw32-readelf
+│   ├── x86_64-w64-mingw32-size
+│   ├── x86_64-w64-mingw32-strings
+│   ├── x86_64-w64-mingw32-strip
+│   ├── x86_64-w64-mingw32-widl
+│   ├── x86_64-w64-mingw32-windmc
+│   └── x86_64-w64-mingw32-windres
 ├── distro-info
-│   ├── CHANGELOG.md
-│   ├── licenses
-│   ├── patches
-│   └── scripts
+│   ├── CHANGELOG.md
+│   ├── licenses
+│   ├── patches
+│   └── scripts
+├── i686-w64-mingw32
+│   ├── bin
+│   ├── include
+│   └── lib
 ├── include
-│   └── gdb
 ├── lib
-│   ├── bfd-plugins
-│   ├── gcc
-│   ├── libcc1.0.so
-│   ├── libcc1.so -> libcc1.0.so
-│   └── python3.10
+│   ├── bfd-plugins
+│   ├── gcc
+│   ├── libcc1.0.so
+│   ├── libcc1.a
+│   ├── libcc1.la
+│   └── libcc1.so -> libcc1.0.so
 ├── libexec
-│   ├── gcc
-│   ├── libcrypt.2.dylib
-│   ├── libcrypto.1.1.dylib
-│   ├── libffi.8.dylib
-│   ├── libgcc_s.1.dylib
-│   ├── libgmp.10.dylib
-│   ├── libiconv.2.dylib
-│   ├── libisl.15.dylib
-│   ├── liblzma.5.dylib
-│   ├── libmpc.3.dylib
-│   ├── libmpfr.4.dylib
-│   ├── libncurses.6.dylib
-│   ├── libpanel.6.dylib
-│   ├── libpython3.10.dylib
-│   ├── libreadline.8.1.dylib
-│   ├── libreadline.8.dylib -> libreadline.8.1.dylib
-│   ├── libsqlite3.0.dylib
-│   ├── libssl.1.1.dylib
-│   ├── libstdc++.6.dylib
-│   ├── libz.1.2.12.dylib
-│   └── libz.1.dylib -> libz.1.2.12.dylib
-└── share
-    ├── doc
-    └── gcc-{{ page.version }}
+│   ├── libgcc_s.1.dylib
+│   ├── libgmp.10.dylib
+│   ├── libiconv.2.dylib
+│   ├── libisl.23.dylib
+│   ├── libmpc.3.dylib
+│   ├── libmpfr.6.dylib
+│   ├── libstdc++.6.dylib
+│   ├── libz.1.2.11.dylib
+│   └── libz.1.dylib -> libz.1.2.11.dylib
+├── share
+│   ├── gcc-11.3.0
+│   └── locale
+└── x86_64-w64-mingw32
+    ├── bin
+    ├── include
+    └── lib
 
-21 directories, 59 files
+21 directories, 85 files
 ```
 
 ### Test
@@ -313,8 +314,8 @@ $ tree -L 2 /Users/ilg/.local/xPacks/aarch64-none-elf-gcc/xpack-aarch64-none-elf
 To check if the manually installed GCC starts, use something like:
 
 ```console
-$ ~/.local/xPacks/aarch64-none-elf-gcc/xpack-aarch64-none-elf-gcc-{{ page.version }}-{{ page.subversion }}/bin/aarch64-none-elf-gcc --version
-aarch64-none-elf-gcc (xPack GNU AArch64 Embedded GCC, 64-bit) {{ page.version }} 20191025 (release) [ARM/arm-9-branch revision 277599]
+$ ~/.local/xPacks/mingw-w64-gcc/xpack-mingw-w64-gcc-{{ page.version }}-{{ page.subversion }}/bin/x86_64-w64-mingw32-gcc --version
+x86_64-w64-mingw32-gcc (xPack MinGW-w64 GCC, 64-bit) {{ page.version }}
 ```
 
 {% endcapture %}
@@ -328,36 +329,36 @@ aarch64-none-elf-gcc (xPack GNU AArch64 Embedded GCC, 64-bit) {{ page.version }}
 To check if the xpm installed GCC starts, use something like:
 
 ```console
-$ ~/.local/xPacks/@xpack-dev-tools/aarch64-none-elf-gcc/{{ page.version }}-{{ page.subversion }}.1/.content/bin/aarch64-none-elf-gcc --version
-aarch64-none-elf-gcc (xPack GNU AArch64 Embedded GCC, 64-bit) {{ page.version }} 20191025 (release) [ARM/arm-9-branch revision 277599]
+$ ~/.local/xPacks/@xpack-dev-tools/mingw-w64-gcc/{{ page.version }}-{{ page.subversion }}.1/.content/bin/x86_64-w64-mingw32-gcc --version
+x86_64-w64-mingw32-gcc (xPack MinGW-w64 GCC, 64-bit) {{ page.version }}
 ```
 
 {{ manual_install }}
 
 ### Download
 
-The GNU/Linux versions of **xPack GNU AArch64 Embedded GCC** are packed as
+The GNU/Linux versions of **xPack MinGW-w64 GCC** are packed as
 `.tar.gz` archives. Download the latest version named like:
 
-- `xpack-aarch64-none-elf-gcc-{{ page.version }}-{{ page.subversion }}-linux-x64.tar.gz`
-- `xpack-aarch64-none-elf-gcc-{{ page.version }}-{{ page.subversion }}-linux-arm.tar.gz`
-- `xpack-aarch64-none-elf-gcc-{{ page.version }}-{{ page.subversion }}-linux-arm64.tar.gz`
+- `xpack-mingw-w64-gcc-{{ page.version }}-{{ page.subversion }}-linux-x64.tar.gz`
+- `xpack-mingw-w64-gcc-{{ page.version }}-{{ page.subversion }}-linux-arm.tar.gz`
+- `xpack-mingw-w64-gcc-{{ page.version }}-{{ page.subversion }}-linux-arm64.tar.gz`
 
 As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
 Ubuntu, but can be executed on most recent GNU/Linux distributions.
 
 ### Unpack
 
-To manually install the xPack GNU AArch64 Embedded GCC,
+To manually install the xPack MinGW-w64 GCC,
 unpack the archive and copy it to
-`~/.local/xPacks/aarch64-none-elf-gcc/xpack-aarch64-none-elf-gcc-<version>`:
+`~/.local/xPacks/mingw-w64-gcc/xpack-mingw-w64-gcc-<version>`:
 
 ```sh
-mkdir -p ~/.local/xPacks/aarch64-none-elf-gcc
-cd ~/.local/xPacks/aarch64-none-elf-gcc
+mkdir -p ~/.local/xPacks/mingw-w64-gcc
+cd ~/.local/xPacks/mingw-w64-gcc
 
-tar xvf ~/Downloads/xpack-aarch64-none-elf-gcc-{{ page.version }}-{{ page.subversion }}-linux-x64.tar.gz
-chmod -R -w xpack-aarch64-none-elf-gcc-{{ page.version }}-{{ page.subversion }}
+tar xvf ~/Downloads/xpack-mingw-w64-gcc-{{ page.version }}-{{ page.subversion }}-linux-x64.tar.gz
+chmod -R -w xpack-mingw-w64-gcc-{{ page.version }}-{{ page.subversion }}
 ```
 
 You may shorten the last folder name and keep only the version.
@@ -367,118 +368,143 @@ install location is slightly different from the xpm install folders,
 which use the scope (like `@xpack-dev-tools`) to group different tools,
 and `.content` to store the unpacked archive." %}
 
-{% include important.html content="Although perfectly possible to
-install GNU AArch64 Embedded GCC in any folder, it is highly recommended
-to use this path, since by default the Eclipse Embedded CDT plug-ins search
-for the executables in this location." %}
-
 The result is a structure like:
 
 ```console
-$ tree -L 2 /home/ilg/.local/xPacks/aarch64-none-elf-gcc/xpack-aarch64-none-elf-gcc-{{ page.version }}-{{ page.subversion }}
-/home/ilg/.local/xPacks/aarch64-none-elf-gcc/xpack-aarch64-none-elf-gcc-{{ page.version }}-{{ page.subversion }}
-├── aarch64-none-elf
-│   ├── bin
-│   ├── include
-│   ├── lib
-│   └── share
+$ tree -L 2 /home/ilg/.local/xPacks/mingw-w64-gcc/xpack-mingw-w64-gcc-{{ page.version }}-{{ page.subversion }}
+/home/ilg/.local/xPacks/mingw-w64-gcc/xpack-mingw-w64-gcc-{{ page.version }}-{{ page.subversion }}
 ├── bin
-│   ├── aarch64-none-elf-addr2line
-│   ├── aarch64-none-elf-ar
-│   ├── aarch64-none-elf-as
-│   ├── aarch64-none-elf-as-py3
-│   ├── aarch64-none-elf-c++
-│   ├── aarch64-none-elf-c++filt
-│   ├── aarch64-none-elf-cpp
-│   ├── aarch64-none-elf-elfedit
-│   ├── aarch64-none-elf-g++
-│   ├── aarch64-none-elf-gcc
-│   ├── aarch64-none-elf-gcc-{{ page.version }}
-│   ├── aarch64-none-elf-gcc-ar
-│   ├── aarch64-none-elf-gcc-nm
-│   ├── aarch64-none-elf-gcc-ranlib
-│   ├── aarch64-none-elf-gcov
-│   ├── aarch64-none-elf-gcov-dump
-│   ├── aarch64-none-elf-gcov-tool
-│   ├── aarch64-none-elf-gdb
-│   ├── aarch64-none-elf-gdb-add-index
-│   ├── aarch64-none-elf-gdb-add-index-py3
-│   ├── aarch64-none-elf-gdb-py3
-│   ├── aarch64-none-elf-gfortran
-│   ├── aarch64-none-elf-gprof
-│   ├── aarch64-none-elf-gprof-py3
-│   ├── aarch64-none-elf-ld
-│   ├── aarch64-none-elf-ld.bfd
-│   ├── aarch64-none-elf-lto-dump
-│   ├── aarch64-none-elf-nm
-│   ├── aarch64-none-elf-objcopy
-│   ├── aarch64-none-elf-objdump
-│   ├── aarch64-none-elf-ranlib
-│   ├── aarch64-none-elf-readelf
-│   ├── aarch64-none-elf-size
-│   ├── aarch64-none-elf-strings
-│   ├── aarch64-none-elf-strip
-│   ├── libgpm.so.2 -> libgpm.so.2.1.0
-│   └── libgpm.so.2.1.0
+│   ├── i686-w64-mingw32-addr2line
+│   ├── i686-w64-mingw32-ar
+│   ├── i686-w64-mingw32-as
+│   ├── i686-w64-mingw32-c++
+│   ├── i686-w64-mingw32-c++filt
+│   ├── i686-w64-mingw32-cpp
+│   ├── i686-w64-mingw32-dlltool
+│   ├── i686-w64-mingw32-dllwrap
+│   ├── i686-w64-mingw32-elfedit
+│   ├── i686-w64-mingw32-g++
+│   ├── i686-w64-mingw32-gcc
+│   ├── i686-w64-mingw32-gcc-11.3.0
+│   ├── i686-w64-mingw32-gcc-ar
+│   ├── i686-w64-mingw32-gcc-nm
+│   ├── i686-w64-mingw32-gcc-ranlib
+│   ├── i686-w64-mingw32-gcov
+│   ├── i686-w64-mingw32-gcov-dump
+│   ├── i686-w64-mingw32-gcov-tool
+│   ├── i686-w64-mingw32-gendef
+│   ├── i686-w64-mingw32-gfortran
+│   ├── i686-w64-mingw32-gprof
+│   ├── i686-w64-mingw32-ld
+│   ├── i686-w64-mingw32-ld.bfd
+│   ├── i686-w64-mingw32-lto-dump
+│   ├── i686-w64-mingw32-nm
+│   ├── i686-w64-mingw32-objcopy
+│   ├── i686-w64-mingw32-objdump
+│   ├── i686-w64-mingw32-ranlib
+│   ├── i686-w64-mingw32-readelf
+│   ├── i686-w64-mingw32-size
+│   ├── i686-w64-mingw32-strings
+│   ├── i686-w64-mingw32-strip
+│   ├── i686-w64-mingw32-widl
+│   ├── i686-w64-mingw32-windmc
+│   ├── i686-w64-mingw32-windres
+│   ├── x86_64-w64-mingw32-addr2line
+│   ├── x86_64-w64-mingw32-ar
+│   ├── x86_64-w64-mingw32-as
+│   ├── x86_64-w64-mingw32-c++
+│   ├── x86_64-w64-mingw32-c++filt
+│   ├── x86_64-w64-mingw32-cpp
+│   ├── x86_64-w64-mingw32-dlltool
+│   ├── x86_64-w64-mingw32-dllwrap
+│   ├── x86_64-w64-mingw32-elfedit
+│   ├── x86_64-w64-mingw32-g++
+│   ├── x86_64-w64-mingw32-gcc
+│   ├── x86_64-w64-mingw32-gcc-11.3.0
+│   ├── x86_64-w64-mingw32-gcc-ar
+│   ├── x86_64-w64-mingw32-gcc-nm
+│   ├── x86_64-w64-mingw32-gcc-ranlib
+│   ├── x86_64-w64-mingw32-gcov
+│   ├── x86_64-w64-mingw32-gcov-dump
+│   ├── x86_64-w64-mingw32-gcov-tool
+│   ├── x86_64-w64-mingw32-gendef
+│   ├── x86_64-w64-mingw32-gfortran
+│   ├── x86_64-w64-mingw32-gprof
+│   ├── x86_64-w64-mingw32-ld
+│   ├── x86_64-w64-mingw32-ld.bfd
+│   ├── x86_64-w64-mingw32-lto-dump
+│   ├── x86_64-w64-mingw32-nm
+│   ├── x86_64-w64-mingw32-objcopy
+│   ├── x86_64-w64-mingw32-objdump
+│   ├── x86_64-w64-mingw32-ranlib
+│   ├── x86_64-w64-mingw32-readelf
+│   ├── x86_64-w64-mingw32-size
+│   ├── x86_64-w64-mingw32-strings
+│   ├── x86_64-w64-mingw32-strip
+│   ├── x86_64-w64-mingw32-widl
+│   ├── x86_64-w64-mingw32-windmc
+│   └── x86_64-w64-mingw32-windres
 ├── distro-info
 │   ├── CHANGELOG.md
 │   ├── licenses
 │   ├── patches
 │   └── scripts
+├── i686-w64-mingw32
+│   ├── bin
+│   ├── include
+│   └── lib
 ├── include
-│   └── gdb
+│   ├── ctf-api.h
+│   └── ctf.h
 ├── lib
 │   ├── bfd-plugins
 │   ├── gcc
-│   └── python3.10
+│   ├── libctf.a
+│   ├── libctf.la
+│   ├── libctf-nobfd.a
+│   ├── libctf-nobfd.la
+│   ├── libctf-nobfd.so -> libctf-nobfd.so.0.0.0
+│   ├── libctf-nobfd.so.0 -> libctf-nobfd.so.0.0.0
+│   ├── libctf-nobfd.so.0.0.0
+│   ├── libctf.so -> libctf.so.0.0.0
+│   ├── libctf.so.0 -> libctf.so.0.0.0
+│   └── libctf.so.0.0.0
 ├── lib64
+│   ├── libcc1.a
+│   ├── libcc1.la
 │   ├── libcc1.so -> libcc1.so.0.0.0
 │   ├── libcc1.so.0 -> libcc1.so.0.0.0
 │   └── libcc1.so.0.0.0
 ├── libexec
-│   ├── gcc
-│   ├── libcrypto.so.1.1
-│   ├── libcrypt.so.1 -> libcrypt.so.1.1.0
-│   ├── libcrypt.so.1.1.0
-│   ├── libexpat.so.1 -> libexpat.so.1.6.7
-│   ├── libexpat.so.1.6.7
-│   ├── libffi.so.8 -> libffi.so.8.1.0
-│   ├── libffi.so.8.1.0
 │   ├── libfl.so.2 -> libfl.so.2.0.0
 │   ├── libfl.so.2.0.0
 │   ├── libgcc_s.so.1
 │   ├── libgmp.so.10 -> libgmp.so.10.4.1
 │   ├── libgmp.so.10.4.1
-│   ├── libiconv.so.2 -> libiconv.so.2.6.0
-│   ├── libiconv.so.2.6.0
-│   ├── libisl.so.15 -> libisl.so.15.0.0
-│   ├── libisl.so.15.0.0
-│   ├── liblzma.so.5 -> liblzma.so.5.2.5
-│   ├── liblzma.so.5.2.5
-│   ├── libmpc.so.3 -> libmpc.so.3.0.0
-│   ├── libmpc.so.3.0.0
-│   ├── libmpfr.so.4 -> libmpfr.so.4.1.6
-│   ├── libmpfr.so.4.1.6
-│   ├── libncurses.so.6 -> libncurses.so.6.3
-│   ├── libncurses.so.6.3
-│   ├── libpanel.so.6 -> libpanel.so.6.3
-│   ├── libpanel.so.6.3
-│   ├── libpython3.10.so.1.0
-│   ├── libreadline.so.8 -> libreadline.so.8.1
-│   ├── libreadline.so.8.1
-│   ├── libsqlite3.so.0 -> libsqlite3.so.0.8.6
-│   ├── libsqlite3.so.0.8.6
-│   ├── libssl.so.1.1
+│   ├── libiconv.so.2 -> libiconv.so.2.6.1
+│   ├── libiconv.so.2.6.1
+│   ├── libisl.so.23 -> libisl.so.23.1.0
+│   ├── libisl.so.23.1.0
+│   ├── libmpc.so.3 -> libmpc.so.3.2.1
+│   ├── libmpc.so.3.2.1
+│   ├── libmpfr.so.6 -> libmpfr.so.6.1.0
+│   ├── libmpfr.so.6.1.0
 │   ├── libstdc++.so.6 -> libstdc++.so.6.0.29
 │   ├── libstdc++.so.6.0.29
-│   ├── libz.so.1 -> libz.so.1.2.12
-│   └── libz.so.1.2.12
+│   ├── libz.so.1 -> libz.so.1.2.11
+│   └── libz.so.1.2.11
 ├── README.md
-└── share
-    ├── doc
-    └── gcc-{{ page.version }}
+├── share
+│   └── gcc-11.3.0
+├── x86_64-pc-linux-gnu
+│   ├── i686-w64-mingw32
+│   └── x86_64-w64-mingw32
+└── x86_64-w64-mingw32
+    ├── bin
+    ├── include
+    └── lib
 
-22 directories, 78 files
+24 directories, 106 files
 ```
 
 ### Test
@@ -486,8 +512,8 @@ $ tree -L 2 /home/ilg/.local/xPacks/aarch64-none-elf-gcc/xpack-aarch64-none-elf-
 To check if the manually installed GCC starts, use something like:
 
 ```console
-$ ~/.local/xPacks/aarch64-none-elf-gcc/xpack-aarch64-none-elf-gcc-{{ page.version }}-{{ page.subversion }}/bin/aarch64-none-elf-gcc --version
-aarch64-none-elf-gcc (xPack GNU AArch64 Embedded GCC x86_64) {{ page.version }} {{ page.version-timestamp }}
+$ ~/.local/xPacks/mingw-w64-gcc/xpack-mingw-w64-gcc-{{ page.version }}-{{ page.subversion }}/bin/x86_64-w64-mingw32-gcc --version
+x86_64-w64-mingw32-gcc (xPack MinGW-w64 GCC x86_64) {{ page.version }}
 ```
 
 {% endcapture %}

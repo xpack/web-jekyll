@@ -1,11 +1,11 @@
 ---
-title: The xPack GNU AArch64 Embedded GCC Frequently Asked Questions
-permalink: /aarch64-none-elf-gcc/faq/
+title: The xPack MinGW-w64 GCC Frequently Asked Questions
+permalink: /mingw-w64-gcc/faq/
 
 toc: false
 comments: true
 
-date: 2019-07-10 17:53:00 +0300
+date: 2022-10-04 11:43:00 +0300
 
 ---
 

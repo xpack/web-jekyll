@@ -106,11 +106,14 @@ The main binary tools packed as xPacks are (in alphabetical order):
 - [`@xpack-dev-tools/qemu-riscv`]({{ site.baseurl }}/qemu-riscv/) - the **xPack QEMU RISC-V**
 - [`@xpack-dev-tools/riscv-none-elf-gcc`]({{ site.baseurl }}/riscv-none-elf-gcc/) - the **xPack RISC-V Embedded GCC** toolchain
 - [`@xpack-dev-tools/windows-build-tools`]({{ site.baseurl }}/windows-build-tools/) - the **xPack Windows Build Tools**
+- [`@xpack-dev-tools/mingw-w64-gcc`]({{ site.baseurl }}/mingw-w64-gcc/) - the **xPack MinGW-w64 GCC** toolchain
+
+Other:
+
 - [`@xpack-dev-tools/wine`]({{ site.baseurl }}/dev-tools/wine/) - the **xPack WineHQ**
 
 Planned:
 
-- `@xpack-dev-tools/mingw-gcc` - the **xPack Mingw-w64 GCC**
 - `@xpack-dev-tools/mingw-clang` - the **xPack Mingw-w64 LLVM clang**
 - `@xpack-dev-tools/coreutils` - the **xPack GNU coreutils**
 - `@xpack-dev-tools/make` - the **xPack GNU make**
@@ -119,7 +122,6 @@ Planned:
 - `@xpack-dev-tools/pkg-config` - the **xPack pkg-config**
 - `@xpack-dev-tools/python` - the **xPack Python 3**
 - `@xpack-dev-tools/patchelf` - the **xPack patchelf**
-- `@xpack-dev-tools/wine` - the **xPack Wine**
 - `@xpack-dev-tools/gawk` - the **xPack GNU AWK**
 - `@xpack-dev-tools/gsed` - the **xPack GNU sed**
 - `@xpack-dev-tools/dos2unix` - the **xPack dos2unix**

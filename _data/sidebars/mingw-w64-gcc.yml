@@ -3,7 +3,7 @@
 
 entries:
 - title: Sidebar
-  product: MinGW-w64 GNU Compiler Collection GCC
+  product: MinGW-w64 GCC
   # version: 1.0
   folders:
 

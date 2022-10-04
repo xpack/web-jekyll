@@ -1,46 +1,46 @@
 ---
-title: The xPack GNU AArch64 Embedded GCC
-permalink: /aarch64-none-elf-gcc/
+title: The xPack MinGW-w64 GCC
+permalink: /mingw-w64-gcc/
 
-summary: "A binary distribution of GNU AArch64 Embedded GCC."
+summary: "A binary distribution of MinGW-w64 GCC."
 comments: true
 keywords:
-  - aarch64-none-elf-gcc
-  - arm
+  - mingw-w64-gcc
+  - mingw-w64
+  - mingw
   - gcc
-  - embedded
 
-date: 2019-07-10 17:53:00 +0300
+date: 2022-10-04 11:43:00 +0300
 
 ---
 
 ## Quicklinks
 
-If you already know the general facts about the xPack GNU AArch64 Embedded GCC, you can
+If you already know the general facts about the xPack MinGW-w64 GCC, you can
 directly skip to the desired pages.
 
 User pages:
 
-- [install]({{ site.baseurl }}/aarch64-none-elf-gcc/install/)
-- [support]({{ site.baseurl }}/aarch64-none-elf-gcc/support/)
-- [releases]({{ site.baseurl }}/aarch64-none-elf-gcc/releases/)
+- [install]({{ site.baseurl }}/mingw-w64-gcc/install/)
+- [support]({{ site.baseurl }}/mingw-w64-gcc/support/)
+- [releases]({{ site.baseurl }}/mingw-w64-gcc/releases/)
 
 Developer & maintainer pages:
 
-- [GitHub](https://github.com/xpack-dev-tools/aarch64-none-elf-gcc-xpack/)
-- [How to build](https://github.com/xpack-dev-tools/aarch64-none-elf-gcc-xpack/blob/xpack/README-BUILD.md)
-- [How to publish](https://github.com/xpack-dev-tools/aarch64-none-elf-gcc-xpack/blob/xpack/README-RELEASE.md)
+- [GitHub](https://github.com/xpack-dev-tools/mingw-w64-gcc-xpack/)
+- [How to build](https://github.com/xpack-dev-tools/mingw-w64-gcc-xpack/blob/xpack/README-BUILD.md)
+- [How to publish](https://github.com/xpack-dev-tools/mingw-w64-gcc-xpack/blob/xpack/README-RELEASE.md)
 
 ## Overview
 
-The **xPack GNU AArch64 Embedded GCC**
-is an alternate binary distribution that complements the official
-[GNU AArch64 Embedded Toolchain](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm)
-maintained by Arm.
+The **xPack MinGW-w64 GCC**
+is an cross-platform standalone binary distribution of the
+[GNU Compiler Collection](https://gcc.gnu.org) on top of the
+[Mingw-w64](https://www.mingw-w64.org) runtime environment.
 
 ## Benefits
 
-The main advantages of using the **xPack GNU AArch64 Embedded GCC** are:
+The main advantages of using the **xPack MinGW-w64 GCC** are:
 
 - a convenient, uniform and portable install/uninstall/upgrade procedure,
   the same procedure is used for all major
@@ -56,44 +56,42 @@ and can be installed in any location.
 
 ## Compatibility
 
-The **xPack GNU AArch64 Embedded GCC** is fully compatible with the
-original GNU AArch64 Embedded Toolchain distribution by Arm.
-
-Occasionally, when bugs are discovered and the yearly Arm release schedule
-would add unacceptably long delays, the **xPack GNU AArch64 Embedded GCC**
-moves ahead of Arm and uses more recent tools versions that fix the bugs.
+The **xPack MinGW-w64 GCC** is fully compatible with the
+original GNU Compiler Collection (GCC) and generates Windows binaries.
 
 ## Install
 
-The details of installing the **xPack GNU AArch64 Embedded GCC** on various
+The details of installing the **xPack MinGW-w64 GCC** on various
 platforms are presented in the separate
-[install]({{ site.baseurl }}/aarch64-none-elf-gcc/install/) page.
+[install]({{ site.baseurl }}/mingw-w64-gcc/install/) page.
 
 ## Documentation
 
-The original GNU GCC documentation is available
-[online](https://gcc.gnu.org/onlinedocs/).
+The original GNU GCC documentation is available online:
+
+- [GCC](https://gcc.gnu.org/onlinedocs/)
+- [MinGW-w64](https://www.mingw-w64.org/docs/overview/)
 
 ## Support
 
 For the various support options, please read the separate
-[support]({{ site.baseurl }}/aarch64-none-elf-gcc/support/) page.
+[support]({{ site.baseurl }}/mingw-w64-gcc/support/) page.
 
 ## Change log
 
 The release and change log is available in the repository
-[`CHANGELOG.md`](https://github.com/xpack-dev-tools/aarch64-none-elf-gcc-xpack/blob/xpack/CHANGELOG.md) file.
+[`CHANGELOG.md`](https://github.com/xpack-dev-tools/mingw-w64-gcc-xpack/blob/xpack/CHANGELOG.md) file.
 
 ## Build details
 
 For those interested in building the binaries, please read the
-[How to build](https://github.com/xpack-dev-tools/aarch64-none-elf-gcc-xpack/blob/xpack/README-BUILD.md)
+[How to build](https://github.com/xpack-dev-tools/mingw-w64-gcc-xpack/blob/xpack/README-BUILD.md)
 page.
 However, the ultimate source for details are the build scripts themselves,
 all available from the 
-[`aarch64-none-elf-gcc-xpack.git/scripts`](https://github.com/xpack-dev-tools/aarch64-none-elf-gcc-xpack/tree/xpack/scripts/)
+[`mingw-w64-gcc-xpack.git/scripts`](https://github.com/xpack-dev-tools/mingw-w64-gcc-xpack/tree/xpack/scripts/)
 folder.
 
 ## Releases
 
-See the [releases]({{ site.baseurl }}/aarch64-none-elf-gcc/releases/) pages.
+See the [releases]({{ site.baseurl }}/mingw-w64-gcc/releases/) pages.
