@@ -208,6 +208,31 @@ With VS Code, Fork or Git:
 - stage the `README.md` file
 - commit with the following message: **README: 'no master' notice**
 
+### Edit the `LICENSE[-XPACK]` file
+
+The automatically generated `LICENSE` file already includes the
+user name as the copyright owner. When the project is owned by
+an organisation, the name refers to the organisation. Probably
+this is not exactly what you need, and you might prefer to have
+your name in the copyright notice.
+
+Check and possibly adjust to match your `LICENSE` requirements.
+
+```text
+MIT License
+
+Copyright (c) 2022 Liviu Ionescu
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+...
+```
+
+With VS Code, Fork or Git:
+
+- for 3rd party content, rename it to `LICENSE-XPACK`
+- stage the file
+- commit with the following message: **LICENSE: update copyright owner**
+
 ### Create the `originals` branch
 
 For a 3rd party project that does not use a
@@ -420,31 +445,6 @@ With VS Code, Fork or Git:
 
 - stage the `package.json`
 - commit with the following message: **package.json: v0.1.0**
-
-### Check/edit the `LICENSE[-XPACK]` file
-
-The automatically generated `LICENSE` file already includes the
-user name as the copyright owner. When the project is owned by
-an organisation, the name refers to the organisation. Probably
-this is not exactly what you need, and you might prefer to have
-your name in the copyright notice.
-
-Check and possibly adjust to match your `LICENSE` requirements.
-
-```text
-MIT License
-
-Copyright (c) 2022 Liviu Ionescu
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-...
-```
-
-With VS Code, Fork or Git:
-
-- for 3rd party content, rename it to `LICENSE-XPACK`
-- stage the file
-- commit with the following message: **LICENSE: update copyright owner**
 
 ### Edit the `README.md` file with actual content
 
