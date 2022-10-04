@@ -11,17 +11,17 @@ entries:
     output: web
     folderitems:
     - title: Overview
-      url: /wine/
+      url: /dev-tools/wine/
       output: web
     - title: Install
-      url: /wine/install/
+      url: /dev-tools/wine/install/
       output: web
     - title: Support
-      url: /wine/support/
+      url: /dev-tools/wine/support/
       output: web
     - title: FAQ
-      url: /wine/faq/
+      url: /dev-tools/wine/faq/
       output: web
     - title: Releases
-      url: /wine/releases/
+      url: /dev-tools/wine/releases/
       output: web

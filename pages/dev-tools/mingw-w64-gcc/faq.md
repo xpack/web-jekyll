@@ -1,11 +1,11 @@
 ---
-title: The xPack WineHQ Frequently Asked Questions
-permalink: /dev-tools/wine/faq/
+title: The xPack GNU AArch64 Embedded GCC Frequently Asked Questions
+permalink: /aarch64-none-elf-gcc/faq/
 
 toc: false
 comments: true
 
-date: 2022-10-04 10:32:00 +0300
+date: 2019-07-10 17:53:00 +0300
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: The xPack WineHQ
-permalink: /wine/
+permalink: /dev-tools/wine/
 
 summary: "A binary distribution of WineHQ."
 
@@ -18,9 +18,9 @@ directly skip to the desired pages.
 
 User pages:
 
-- [install]({{ site.baseurl }}/wine/install/)
-- [support]({{ site.baseurl }}/wine/support/)
-- [releases]({{ site.baseurl }}/wine/releases/)
+- [install]({{ site.baseurl }}/dev-tools/wine/install/)
+- [support]({{ site.baseurl }}/dev-tools/wine/support/)
+- [releases]({{ site.baseurl }}/dev-tools/wine/releases/)
 
 Developer & maintainer pages:
 
@@ -55,7 +55,7 @@ distribution.
 
 The details of installing the **xPack WineHQ** on various platforms are
 presented in the separate
-[install]({{ site.baseurl }}/wine/install/) page.
+[install]({{ site.baseurl }}/dev-tools/wine/install/) page.
 
 ## Documentation
 
@@ -66,7 +66,7 @@ The current version specific WineHQ documentation is available online from:
 ## Support
 
 For the various support options, please read the separate
-[support]({{ site.baseurl }}/wine/support/) page.
+[support]({{ site.baseurl }}/dev-tools/wine/support/) page.
 
 ## Change log
 
@@ -85,4 +85,4 @@ folder.
 
 ## Releases
 
-See the [releases]({{ site.baseurl }}/wine/releases/) pages.
+See the [releases]({{ site.baseurl }}/dev-tools/wine/releases/) pages.

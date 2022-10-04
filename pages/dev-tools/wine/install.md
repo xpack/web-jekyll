@@ -1,6 +1,6 @@
 ---
 title: How to install the xPack WineHQ binaries
-permalink: /wine/install/
+permalink: /dev-tools/wine/install/
 
 summary: "The recommended method is via xpm."
 
