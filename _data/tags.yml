@@ -69,3 +69,8 @@ allowed-tags:
   - riscv-none-elf-gcc
   - risc-v
   - aarch64-none-elf-gcc
+  - wine
+  - mingw
+  - mingw-w64
+  - mingw
+  - mingw-w64
