@@ -117,7 +117,8 @@ wine {{ page.version-major-minor }}
 
 ### Download
 
-The GNU/Linux versions of **xPack WineHQ** are packed as plain archives.
+The GNU/Linux versions of **xPack WineHQ**
+are packed as `.tar.gz` archives.
 Download the latest version named like:
 
 - `xpack-wine-{{ page.version }}-{{ page.subversion }}-linux-x64.tar.gz`

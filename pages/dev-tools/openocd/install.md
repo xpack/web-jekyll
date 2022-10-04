@@ -115,7 +115,8 @@ xPack OpenOCD x86_64 Open On-Chip Debugger {{ page.version }}+dev ({{ page.versi
 
 ### Download
 
-The Windows versions of **xPack OpenOCD** are packed as ZIP files.
+The Windows versions of **xPack OpenOCD**
+are packed as ZIP files.
 Download the latest version named like:
 
 - `xpack-openocd-{{ page.version }}-{{ page.subversion }}-win32-x64.zip`
@@ -226,7 +227,8 @@ xPack OpenOCD x86_64 Open On-Chip Debugger {{ page.version }}+dev ({{ page.versi
 
 ### Download
 
-The macOS version of **xPack OpenOCD** is packed as a .tar.gz archive.
+The macOS versions of **xPack OpenOCD**
+are packed as `.tar.gz` archives.
 Download the latest version named like:
 
 - `xpack-openocd-{{ page.version }}-{{ page.subversion }}-darwin-x64.tar.gz`
@@ -325,7 +327,8 @@ xPack OpenOCD x86_64 Open On-Chip Debugger {{ page.version }}+dev ({{ page.versi
 
 ### Download
 
-The GNU/Linux versions of **xPack OpenOCD** are packed as plain archives.
+The GNU/Linux versions of **xPack OpenOCD**
+are packed as `.tar.gz` archives.
 Download the latest version named like:
 
 - `xpack-openocd-{{ page.version }}-{{ page.subversion }}-linux-x64.tar.gz`

@@ -122,7 +122,8 @@ riscv-none-elf-gcc.exe (xPack GNU RISC-V Embedded GCC x86_64) {{ page.version }}
 
 ### Download
 
-The Windows versions of **xPack GNU RISC-V Embedded GCC** are packed as ZIP files.
+The Windows versions of **xPack GNU RISC-V Embedded GCC**
+are packed as ZIP files.
 Download the latest version named like:
 
 - `xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}-win32-x64.zip`
@@ -181,7 +182,8 @@ riscv-none-elf-gcc (xPack GNU RISC-V Embedded GCC x86_64) {{ page.version }}
 
 ### Download
 
-The macOS version of **xPack GNU RISC-V Embedded GCC** is packed as a .tar.gz archive.
+The macOS versions of **xPack GNU RISC-V Embedded GCC**
+are packed as `.tar.gz` archives.
 Download the latest version named like:
 
 - `xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}-darwin-x64.tar.gz`
@@ -324,8 +326,9 @@ riscv-none-elf-gcc (xPack GNU RISC-V Embedded GCC x86_64) {{ page.version }}
 
 ### Download
 
-The GNU/Linux versions of **xPack GNU RISC-V Embedded GCC** are packed as
-.tar.gz archives. Download the latest version named like:
+The GNU/Linux versions of **xPack GNU RISC-V Embedded GCC** 
+are packed as `.tar.gz` archives.
+Download the latest version named like:
 
 - `xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}-linux-x64.tar.gz`
 - `xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}-linux-arm.tar.gz`

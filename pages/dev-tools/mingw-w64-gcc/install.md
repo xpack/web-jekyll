@@ -115,7 +115,8 @@ x86_64-w64-mingw32-gcc.exe (xPack MinGW-w64 GCC x86_64) {{ page.version }}
 
 ### Download
 
-The Windows versions of **xPack MinGW-w64 GCC** are packed as ZIP files.
+The Windows versions of **xPack MinGW-w64 GCC**
+are packed as ZIP files.
 Download the latest version named like:
 
 - `xpack-mingw-w64-gcc-{{ page.version }}-{{ page.subversion }}-win32-x64.zip`
@@ -168,8 +169,8 @@ x86_64-w64-mingw32-gcc (xPack MinGW-w64 GCC x86_64) {{ page.version }}
 
 ### Download
 
-The macOS version of **xPack MinGW-w64 GCC** is packed as a
-`.tar.gz` archive.
+The macOS versions of **xPack MinGW-w64 GCC**
+are packed as `.tar.gz` archives.
 Download the latest version named like:
 
 - `xpack-mingw-w64-gcc-{{ page.version }}-{{ page.subversion }}-darwin-x64.tar.gz`
@@ -337,8 +338,9 @@ x86_64-w64-mingw32-gcc (xPack MinGW-w64 GCC, 64-bit) {{ page.version }}
 
 ### Download
 
-The GNU/Linux versions of **xPack MinGW-w64 GCC** are packed as
-`.tar.gz` archives. Download the latest version named like:
+The GNU/Linux versions of **xPack MinGW-w64 GCC** 
+are packed as `.tar.gz` archives.
+Download the latest version named like:
 
 - `xpack-mingw-w64-gcc-{{ page.version }}-{{ page.subversion }}-linux-x64.tar.gz`
 - `xpack-mingw-w64-gcc-{{ page.version }}-{{ page.subversion }}-linux-arm.tar.gz`

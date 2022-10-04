@@ -91,7 +91,8 @@ pages.
 {% capture windows %}
 ### Download
 
-The Windows versions of **xPack QEMU Arm** are packed as ZIP files.
+The Windows versions of **xPack QEMU Arm**
+are packed as ZIP files.
 Download the latest version named like:
 
 - `xpack-qemu-arm-{{ page.version }}-{{ page.subversion }}-win32-x64.zip`
@@ -138,7 +139,8 @@ For usual Cortex-M emulation, there are no special drivers required.
 {% capture macos %}
 ### Download
 
-The macOS version of **xPack QEMU Arm** is packed as a .tar.gz archive.
+The macOS versions of **xPack QEMU Arm**
+are packed as `.tar.gz` archives.
 Download the latest version named like:
 
 - `xpack-qemu-arm-{{ page.version }}-{{ page.subversion }}-darwin-x64.tar.gz`
@@ -235,7 +237,8 @@ Copyright (c) 2003-2022 Fabrice Bellard and the QEMU Project developers
 {% capture linux %}
 ### Download
 
-The GNU/Linux versions of **xPack QEMU Arm** are packed as plain archives.
+The GNU/Linux versions of **xPack QEMU Arm**
+are packed as `.tar.gz` archives.
 Download the latest version named like:
 
 - `xpack-qemu-arm-{{ page.version }}-{{ page.subversion }}-linux-x64.tar.gz`

@@ -124,7 +124,8 @@ arm-none-eabi-gcc.exe (xPack GNU Arm Embedded GCC x86_64) {{ page.version }} {{ 
 
 ### Download
 
-The Windows versions of **xPack GNU Arm Embedded GCC** are packed as ZIP files.
+The Windows versions of **xPack GNU Arm Embedded GCC**
+are packed as ZIP files.
 Download the latest version named like:
 
 - `xpack-arm-none-eabi-gcc-{{ page.version }}-{{ page.subversion }}-win32-x64.zip`
@@ -187,8 +188,8 @@ arm-none-eabi-gcc (xPack GNU Arm Embedded GCC x86_64) {{ page.version }} {{ page
 
 ### Download
 
-The macOS version of **xPack GNU Arm Embedded GCC** is packed as a
-`.tar.gz` archive.
+The macOS versions of **xPack GNU Arm Embedded GCC**
+are packed as `.tar.gz` archives.
 Download the latest version named like:
 
 - `xpack-arm-none-eabi-gcc-{{ page.version }}-{{ page.subversion }}-darwin-x64.tar.gz`
@@ -322,8 +323,9 @@ arm-none-eabi-gcc (xPack GNU Arm Embedded GCC x86_64) {{ page.version }} {{ page
 
 ### Download
 
-The GNU/Linux versions of **xPack GNU Arm Embedded GCC** are packed as
-`.tar.gz` archives. Download the latest version named like:
+The GNU/Linux versions of **xPack GNU Arm Embedded GCC** 
+are packed as `.tar.gz` archives.
+Download the latest version named like:
 
 - `xpack-arm-none-eabi-gcc-{{ page.version }}-{{ page.subversion }}-linux-x64.tar.gz`
 - `xpack-arm-none-eabi-gcc-{{ page.version }}-{{ page.subversion }}-linux-arm.tar.gz`

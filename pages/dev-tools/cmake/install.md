@@ -107,7 +107,8 @@ CMake suite maintained and supported by Kitware (kitware.com/cmake).
 
 ### Download
 
-The Windows versions of **xPack CMake** are packed as ZIP files.
+The Windows versions of **xPack CMake**
+are packed as ZIP files.
 Download the latest version named like:
 
 - `xpack-cmake-{{ page.version }}-{{ page.subversion }}-win32-x64.zip`
@@ -162,7 +163,8 @@ CMake suite maintained and supported by Kitware (kitware.com/cmake).
 
 ### Download
 
-The macOS version of **xPack CMake** is packed as a .tar.gz archive.
+The macOS versions of **xPack CMake**
+are packed as `.tar.gz` archives.
 Download the latest version named like:
 
 - `xpack-cmake-{{ page.version }}-{{ page.subversion }}-darwin-x64.tar.gz`
@@ -246,7 +248,8 @@ CMake suite maintained and supported by Kitware (kitware.com/cmake).
 
 ### Download
 
-The GNU/Linux versions of **xPack CMake** are packed as plain archives.
+The GNU/Linux versions of **xPack CMake**
+are packed as `.tar.gz` archives.
 Download the latest version named like:
 
 - `xpack-cmake-{{ page.version }}-{{ page.subversion }}-linux-x64.tar.gz`

@@ -124,7 +124,8 @@ gcc (xPack GCC x86_64) {{ page.version }}
 
 ### Download
 
-The Windows versions of **xPack GNU Compiler Collection** are packed as ZIP files.
+The Windows versions of **xPack GNU Compiler Collection**
+are packed as ZIP files.
 Download the latest version named like:
 
 - `xpack-gcc-{{ page.version }}-{{ page.subversion }}-win32-x64.zip`
@@ -177,7 +178,7 @@ gcc (xPack GCC x86_64) {{ page.version }}
 
 ### Download
 
-The macOS version of **xPack GNU Compiler Collection** is packed as a
+The macOS versions of **xPack GNU Compiler Collection** are packed as a
 `.tar.gz` archive.
 Download the latest version named like:
 
@@ -333,8 +334,9 @@ gcc version {{ page.version }} (xPack GCC x86_64)
 
 ### Download
 
-The GNU/Linux versions of **xPack GNU Compiler Collection** are packed as
-`.tar.gz` archives. Download the latest version named like:
+The GNU/Linux versions of **xPack GNU Compiler Collection** 
+are packed as `.tar.gz` archives.
+Download the latest version named like:
 
 - `xpack-gcc-{{ page.version }}-{{ page.subversion }}-linux-x64.tar.gz`
 - `xpack-gcc-{{ page.version }}-{{ page.subversion }}-linux-arm.tar.gz`

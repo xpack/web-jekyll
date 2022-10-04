@@ -125,7 +125,8 @@ aarch64-none-elf-gcc.exe (xPack GNU AArch64 Embedded GCC x86_64) {{ page.version
 
 ### Download
 
-The Windows versions of **xPack GNU AArch64 Embedded GCC** are packed as ZIP files.
+The Windows versions of **xPack GNU AArch64 Embedded GCC**
+are packed as ZIP files.
 Download the latest version named like:
 
 - `xpack-aarch64-none-elf-gcc-{{ page.version }}-{{ page.subversion }}-win32-x64.zip`
@@ -188,8 +189,8 @@ aarch64-none-elf-gcc (xPack GNU AArch64 Embedded GCC x86_64) {{ page.version }} 
 
 ### Download
 
-The macOS version of **xPack GNU AArch64 Embedded GCC** is packed as a
-`.tar.gz` archive.
+The macOS versions of **xPack GNU AArch64 Embedded GCC**
+are packed as `.tar.gz` archives.
 Download the latest version named like:
 
 - `xpack-aarch64-none-elf-gcc-{{ page.version }}-{{ page.subversion }}-darwin-x64.tar.gz`
@@ -336,8 +337,9 @@ aarch64-none-elf-gcc (xPack GNU AArch64 Embedded GCC, 64-bit) {{ page.version }}
 
 ### Download
 
-The GNU/Linux versions of **xPack GNU AArch64 Embedded GCC** are packed as
-`.tar.gz` archives. Download the latest version named like:
+The GNU/Linux versions of **xPack GNU AArch64 Embedded GCC** 
+are packed as `.tar.gz` archives.
+Download the latest version named like:
 
 - `xpack-aarch64-none-elf-gcc-{{ page.version }}-{{ page.subversion }}-linux-x64.tar.gz`
 - `xpack-aarch64-none-elf-gcc-{{ page.version }}-{{ page.subversion }}-linux-arm.tar.gz`

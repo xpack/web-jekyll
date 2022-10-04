@@ -113,7 +113,8 @@ Built for i686-w64-mingw32
 
 ### Download
 
-The Windows versions of **xPack Windows Build Tools** are packed as ZIP files.
+The Windows versions of **xPack Windows Build Tools**
+are packed as ZIP files.
 Download the latest version named like:
 
 - `xpack-windows-build-tools-{{ page.version }}-win32-x64.zip`

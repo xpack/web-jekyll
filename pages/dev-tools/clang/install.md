@@ -127,7 +127,8 @@ Thread model: posix
 
 ### Download
 
-The Windows versions of **xPack LLVM clang** are packed as ZIP files.
+The Windows versions of **xPack LLVM clang**
+are packed as ZIP files.
 Download the latest version named like:
 
 - `xpack-clang-{{ page.version }}-{{ page.subversion }}-win32-x64.zip`
@@ -184,7 +185,7 @@ Thread model: posix
 
 ### Download
 
-The macOS version of **xPack LLVM clang** is packed as a
+The macOS versions of **xPack LLVM clang** are packed as a
 `.tar.gz` archive.
 Download the latest version named like:
 
@@ -368,8 +369,9 @@ Thread model: posix
 
 ### Download
 
-The GNU/Linux versions of **xPack LLVM clang** are packed as
-`.tar.gz` archives. Download the latest version named like:
+The GNU/Linux versions of **xPack LLVM clang** 
+are packed as `.tar.gz` archives.
+Download the latest version named like:
 
 - `xpack-clang-{{ page.version }}-{{ page.subversion }}-linux-x64.tar.gz`
 - `xpack-clang-{{ page.version }}-{{ page.subversion }}-linux-arm.tar.gz`
