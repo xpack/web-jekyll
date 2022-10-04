@@ -13,13 +13,14 @@ categories:
 
 tags:
   - releases
-  - xbb-bootstrap
+  - xbb
 
 ---
 
 [The xPack XBB Bootstrap](https://xpack.github.io/xbb-bootstrap/)
 is a temporary solution intended to replace the functionality
-provided by the XBB v3.4 Docker images.
+provided by the XBB v3.4 Docker images until separate packages will
+be available with all required tools.
 
 There are separate binaries for
 **macOS** (Intel 64-bit, Apple Silicon 64-bit)
@@ -105,6 +106,39 @@ xpm uninstall --global @xpack-dev-tools/xbb-bootstrap
 The xPack XBB Bootstrap tools generally use the official sources
 of the tools, without changes.
 
+The included tools are:
+
+- bash 5.1.8
+- bison 3.8.2
+- coreutils 9.0
+- curl 7.80.0
+- diffutils 3.8
+- dos2unix 7.4.2
+- gawk 5.1.1
+- gettext 0.21
+- gnutls 3.7.2
+- gnupg 2.3.3
+- m4 1.4.19
+- make 4.3
+- makedepend 1.0.6
+- openssl 1.1.1q
+- p7zip 17.04
+- patch 2.7.6
+- patchelf 0.14.3
+- perl 5.34
+- pkg_config 0.29.2
+- python3 3.9.9
+- rhash 1.4.3
+- re2c 2.2
+- sed 4.8
+- tar 1.34
+- tcl 8.6.12
+- texinfo 6.8
+- wget 1.20.3
+- xz 5.2.5
+
+The versions match those in XBB v3.4, except p7zip and rhash, which were upgraded to simplify the build.
+
 ## Changes
 
 There are no functional changes.
@@ -119,7 +153,16 @@ There are no functional changes.
 
 ## Known problems
 
-- none
+- `bzcmp` is a link pointing to the absolute location where the package
+  was built, and fails to start
+- Perl scripts originally used absolute paths to invoke the interpreter,
+  making them non-relocatable; the paths were replaced by simply `perl`,
+  which is functional but requires the desired interpreter to be in the
+  PATH; for xPacks this means the `xpacks/.bin` folder must be in the
+  path, condition normally met when invoked via xpm actions.
+- the Python associated scripts (`2to3-3.9`, `idle-3.9`,
+  `pydoc3.9`, `python-3.9-config`) also were non-relocatable, and
+  were adjusted to invoke `python3` directly, requiring it to be in the PATH.
 
 ## Shared libraries
 
