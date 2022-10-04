@@ -106,6 +106,7 @@ The main binary tools packed as xPacks are (in alphabetical order):
 - [`@xpack-dev-tools/qemu-riscv`]({{ site.baseurl }}/qemu-riscv/) - the **xPack QEMU RISC-V**
 - [`@xpack-dev-tools/riscv-none-elf-gcc`]({{ site.baseurl }}/riscv-none-elf-gcc/) - the **xPack RISC-V Embedded GCC** toolchain
 - [`@xpack-dev-tools/windows-build-tools`]({{ site.baseurl }}/windows-build-tools/) - the **xPack Windows Build Tools**
+- [`@xpack-dev-tools/wine`]({{ site.baseurl }}/wine/) - the **xPack WineHQ**
 
 Planned:
 

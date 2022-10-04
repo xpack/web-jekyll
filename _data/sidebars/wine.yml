@@ -1,0 +1,27 @@
+# This is the wine sidebar TOC.
+# The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: Sidebar
+  product: WineHQ
+  # version: 1.0
+  folders:
+
+  - title: Getting Started
+    output: web
+    folderitems:
+    - title: Overview
+      url: /wine/
+      output: web
+    - title: Install
+      url: /wine/install/
+      output: web
+    - title: Support
+      url: /wine/support/
+      output: web
+    - title: FAQ
+      url: /wine/faq/
+      output: web
+    - title: Releases
+      url: /wine/releases/
+      output: web

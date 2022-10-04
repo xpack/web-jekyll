@@ -68,6 +68,9 @@ entries:
     - title: meson-build
       url: /meson-build/
       output: web
+    - title: wine
+      url: /wine/
+      output: web
 
   - title: VS Code Extensions
     output: web
