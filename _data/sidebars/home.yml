@@ -79,6 +79,9 @@ entries:
     - title: wine
       url: /dev-tools/wine/
       output: web
+    - title: xbb-bootstrap
+      url: /dev-tools/xbb-bootstrap/
+      output: web
 
   - title: VS Code Extensions
     output: web

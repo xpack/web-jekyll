@@ -273,7 +273,7 @@ defaults:
       toc: true
       github_editme: true
 
-        -
+  -
     scope:
       path: "pages/dev-tools/cmake"
       type: "pages"
@@ -287,7 +287,7 @@ defaults:
       toc: true
       github_editme: true
 
-        -
+  -
     scope:
       path: "pages/dev-tools/meson-build"
       type: "pages"
@@ -301,7 +301,21 @@ defaults:
       toc: true
       github_editme: true
 
-        -
+  -
+    scope:
+      path: "pages/dev-tools/mingw-w64-gcc"
+      type: "pages"
+    values:
+      layout: "page"
+      comments: false
+      search: true
+      sidebar: mingw-w64-gcc
+      topnav: topnav
+      author: Liviu Ionescu
+      toc: true
+      github_editme: true
+
+  -
     scope:
       path: "pages/dev-tools/wine"
       type: "pages"
@@ -317,13 +331,13 @@ defaults:
 
   -
     scope:
-      path: "pages/dev-tools/mingw-w64-gcc"
+      path: "pages/dev-tools/xbb-bootstrap"
       type: "pages"
     values:
       layout: "page"
       comments: false
       search: true
-      sidebar: mingw-w64-gcc
+      sidebar: xbb-bootstrap
       topnav: topnav
       author: Liviu Ionescu
       toc: true
