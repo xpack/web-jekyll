@@ -341,52 +341,56 @@ the `--lts` option." %}
 To explicitly install a previous version and to switch to it:
 
 ```console
-$ nvm install 10
-Downloading and installing node v10.17.0...
-Downloading https://nodejs.org/dist/v10.17.0/node-v10.17.0-darwin-x64.tar.gz...
-######################################################################## 100.0%
+% nvm install 12
+Downloading and installing node v12.22.12...
+Downloading https://nodejs.org/dist/v12.22.12/node-v12.22.12-darwin-x64.tar.xz...
+######################################################################################################## 100.0%
 Computing checksum with shasum -a 256
 Checksums matched!
-Now using node v10.17.0 (npm v6.11.3)
 
-$ nvm ls
-nvm ls
-->     v10.17.0
-       v12.13.0
-         system
-default -> lts/* (-> v12.13.0)
-node -> stable (-> v12.13.0) (default)
-stable -> 12.13 (-> v12.13.0) (default)
+% nvm ls
+       v10.24.1
+->    v12.22.12
+       v16.14.2
+       v16.16.0
+default -> 12 (-> v12.22.12)
 iojs -> N/A (default)
 unstable -> N/A (default)
-lts/* -> lts/erbium (-> v12.13.0)
+node -> stable (-> v16.16.0) (default)
+stable -> 16.16 (-> v16.16.0) (default)
+lts/* -> lts/gallium (-> N/A)
 lts/argon -> v4.9.1 (-> N/A)
 lts/boron -> v6.17.1 (-> N/A)
-lts/carbon -> v8.16.2 (-> N/A)
-lts/dubnium -> v10.17.0
-lts/erbium -> v12.13.0
+lts/carbon -> v8.17.0 (-> N/A)
+lts/dubnium -> v10.24.1
+lts/erbium -> v12.22.12
+lts/fermium -> v14.20.1 (-> N/A)
+lts/gallium -> v16.18.0 (-> N/A)
 
-$ nvm use 10
-Now using node v10.17.0 (npm v6.11.3)
+% nvm use 12
+Now using node v12.22.12 (npm v6.14.16)
 
-$ node --version
-v10.17.0
+% nvm alias default 12
+default -> 12 (-> v12.22.12)
 
-$ nvm install-latest-npm
+% node --version
+v12.22.12
+
+% nvm install-latest-npm
 Attempting to upgrade to the latest working version of npm...
 * Installing latest `npm`; if this does not work on your node version, please report a bug!
-/Users/ilg/.nvm/versions/node/v10.17.0/bin/npm -> /Users/ilg/.nvm/versions/node/v10.17.0/lib/node_modules/npm/bin/npm-cli.js
-/Users/ilg/.nvm/versions/node/v10.17.0/bin/npx -> /Users/ilg/.nvm/versions/node/v10.17.0/lib/node_modules/npm/bin/npx-cli.js
-+ npm@6.13.0
-added 3 packages from 2 contributors, removed 3 packages and updated 20 packages in 3.081s
-* npm upgraded to: v6.13.0
+/Users/ilg/.nvm/versions/node/v12.22.12/bin/npx -> /Users/ilg/.nvm/versions/node/v12.22.12/lib/node_modules/npm/bin/npx-cli.js
+/Users/ilg/.nvm/versions/node/v12.22.12/bin/npm -> /Users/ilg/.nvm/versions/node/v12.22.12/lib/node_modules/npm/bin/npm-cli.js
++ npm@8.19.2
+added 73 packages from 21 contributors, removed 299 packages and updated 138 packages in 5.001s
+* npm upgraded to: v8.19.2
 
 $ which npm
-/Users/ilg/.nvm/versions/node/v10.17.0/bin/npm
+/Users/ilg/.nvm/versions/node/v12.22.12/bin/npm
 ```
 
 At any time, to switch between any of the installed versions,
-use `nvm use <version>`.
+use `nvm use <version>` & `nvm alias default <version>`.
 
 {% endcapture %}
 
