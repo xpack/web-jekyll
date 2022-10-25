@@ -313,6 +313,45 @@ With VS Code, Fork or Git:
 - stage the `.gitignore` file
 - commit with the following message: **.gitignore: add xPack specifics**
 
+### Add the `.npmignore` file
+
+With VS Code, create a new file with:
+
+```text
+.DS_Store
+.git/
+.github/
+.gitignore
+.gitmodules
+.clang-*
+.cmake-format
+
+.vscode/
+
+patches/
+pkgconfig/
+scripts/
+test*/
+build/
+ci/
+docs/
+example*/
+
+xpacks/
+node_modules/
+
+*.tgz
+
+README-*
+LICENSE-*
+CONTRIBUTING**
+
+```
+
+- update the content until `npm pack` shows only the desired content
+- stage the `.npmignore` file
+- commit with the following message: **.npmignore preliminary content**
+
 ### Publish all branches
 
 With VS Code, Fork or Git:
@@ -497,40 +536,13 @@ and close existing issues and pull requests.
 
 ## 2022-01-03
 
-- v2.0.5
+* v2.0.5
 ```
 
 With VS Code, Fork or Git:
 
 - stage the `CHANGELOG.md` files
 - commit with the following message: **CHANGELOG: preliminary content**
-
-### Add .npmignore
-
-If the package uses 3rd party content, add a `.npmignore` file.
-
-Start with something like:
-
-```console
-.github/
-.vscode/
-build/
-ci/
-docs/
-tests*/
-example/
-
-.clang-*
-.cmake-format
-CONTRIBUTING**
-README-MAINTAINER*.md
-
-*.tgz
-
-```
-
-- update the content until `npm pack` shows only the desired content
-- commit with the following message: **.npmignore preliminary content**
 
 ### Add .github/workflows/*
 
