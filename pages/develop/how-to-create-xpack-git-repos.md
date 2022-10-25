@@ -318,6 +318,7 @@ With VS Code, Fork or Git:
 With VS Code, create a new file with:
 
 ```text
+
 .DS_Store
 .git/
 .github/
