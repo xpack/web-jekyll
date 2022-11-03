@@ -166,7 +166,7 @@ relative path.
 ## Documentation
 
 The original documentation is available
-[online](https://patchelf.org/manual.html).
+[online](https://github.com/NixOS/patchelf).
 
 ## Build
 
