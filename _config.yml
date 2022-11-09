@@ -5,7 +5,7 @@ url: https://xpack.github.io
 permalink: /blog/:year/:month/:day/:title/
 
 # Update this after editing the CSS files, to force a cache update.
-css-date: 202101021512
+css-date: 202211092358
 
 repository: xpack/xpack.github.io
 
@@ -35,7 +35,8 @@ github_editme_path: xpack/web-jekyll/blob/master/
 disqus_shortname: xpack
 
 # If you have google-analytics ID, put it in. if not, edit this value to blank.
-google_analytics: UA-16767008-13
+# google_analytics: UA-16767008-13
+google_analytics: "G-8WX9T80JEK"
 
 # The preview server used. Leave as is.
 host: localhost
