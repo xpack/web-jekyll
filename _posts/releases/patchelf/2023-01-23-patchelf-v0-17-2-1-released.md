@@ -1,10 +1,6 @@
 ---
 title:  xPack NixOS PatchELF v0.17.2-1 released
 
-TODO: select one summary
-
-summary: "Version **0.17.2-1** is a maintenance release; it fixes <...>."
-
 summary: "Version **0.17.2-1** is a new release; it follows the upstream release."
 
 patchelf_version: 0.17.2
