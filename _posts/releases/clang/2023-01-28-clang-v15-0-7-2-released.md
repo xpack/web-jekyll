@@ -1,15 +1,15 @@
 ---
-title:  xPack LLVM clang v15.0.7-1 released
+title:  xPack LLVM clang v15.0.7-2 released
 
-summary: "Version **15.0.7-1** is a new release; it follows the upstream release."
+summary: "Version **15.0.7-2** is a maintenance release; it fixes the missing run-time libraries in the macOS binaries."
 
-version: "15.0.7-1"
+version: "15.0.7-2"
 clang_version: "15.0.7"
 clang_date: "12 Jan 2023"
 npm_subversion: 1
-download_url: https://github.com/xpack-dev-tools/clang-xpack/releases/tag/v15.0.7-1/
+download_url: https://github.com/xpack-dev-tools/clang-xpack/releases/tag/v15.0.7-2/
 
-date:   2023-01-22 18:41:30 +0200
+date:   2023-01-28 08:52:57 +0200
 
 categories:
   - releases
@@ -117,6 +117,10 @@ The current version is based on:
 
 - LLVM clang version [{{ page.clang_version }}](https://releases.llvm.org/download.html#{{ page.clang_version }}), from {{ page.clang_date }}.
 
+The defaults are set to `libc++` and `compiler-rt`.
+
+For Intel Linux and Windows, multilib (32/64-bit) libraries are provided.
+
 ## LLVM libraries
 
 The compiler defaults are set to  use the LLVM libraries
@@ -152,7 +156,8 @@ Compared to the upstream, there are no functional changes.
 
 ## Bug fixes
 
-- none
+- [#8] due to an issue in the build scripts, some of the less used
+  compiler run-time libraries were missing from the macOS binaries; fixed
 
 ## Enhancements
 
@@ -160,9 +165,6 @@ Compared to the upstream, there are no functional changes.
 
 ## Known problems
 
-- some of the less used
-  compiler run-time libraries are missing from the macOS binaries;
-  fixed in 15.0.7-2
 - in certain conditions, the binaries compiled with `-flto` fail.
 
 ## Shared libraries
@@ -234,23 +236,23 @@ build, not the compiler functionality.
 The SHA-256 hashes for the files are:
 
 ```console
-b109ad97d44107d3734846d8fa3cd20cfb21664c0d3ff03067a2f5f589593d28
-xpack-clang-15.0.7-1-darwin-arm64.tar.gz
+967e8687b3ee331adfd8e1add14d69a2b3169a65623740766040d972adfb6bd0
+xpack-clang-15.0.7-2-darwin-arm64.tar.gz
 
-51bb18640e551ccd8bd1bdfec70434cd1de7c60dc532c6186829be1d040c96d3
-xpack-clang-15.0.7-1-darwin-x64.tar.gz
+fe51bb08d16badeecc067988610bd366264bd85f1d38670b678cb11065ec75c7
+xpack-clang-15.0.7-2-darwin-x64.tar.gz
 
-d4ed651d041044f010a377ebea1d9f315a7ac439f1d8ee6bce0e0e021afd4583
-xpack-clang-15.0.7-1-linux-arm.tar.gz
+e1ff4ae147e853382d8a3b5e6d16f7a093c1522f5e525421c9abea7333a666bf
+xpack-clang-15.0.7-2-linux-arm.tar.gz
 
-9058f76694d7fc6a9a4a73598dab98d11b96c93c4b3d312e963917bab9c14738
-xpack-clang-15.0.7-1-linux-arm64.tar.gz
+fefaed3b1325f2131b2aaaec2f45dead35e1d49c77a0de603e2158768bcd814b
+xpack-clang-15.0.7-2-linux-arm64.tar.gz
 
-30e6885fc1b4674d2d4766616af84627a4b5bdd2655e25ca8639e01b87b368c0
-xpack-clang-15.0.7-1-linux-x64.tar.gz
+30631f51c7a937d2a937e6bacf76c2a745c2f863ddb6e5a6b4abb3aa461db3c4
+xpack-clang-15.0.7-2-linux-x64.tar.gz
 
-2e16a80e5a4fa19afb58f1b39f154faa129659ace2710324bd24f1702de46409
-xpack-clang-15.0.7-1-win32-x64.zip
+449c81324ed50a3786f4650f58a4c6572f35e42a280479a3af3782e6c6b611c2
+xpack-clang-15.0.7-2-win32-x64.zip
 
 ```
 
