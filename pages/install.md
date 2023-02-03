@@ -43,8 +43,8 @@ there are two Node versions, **LTS** (**Long Term Service**) and
 ![The Node Download page]({{ site.baseurl }}/assets/images/2019/nodejs-org.png)
 
 The general procedure is to download the package suitable for your
-platform and install it as usual. For GNU/Linux and macOS, the recommended
-procedure is to **use a version manager** (see below).
+platform and install it as usual. For GNU/Linux and macOS, it is
+**highly recommended** to **use a version manager** (see below).
 The result is a binary program named `node` (that can be used to execute
 JavaScript code from the terminal), and a symbolic link named `npm`, pointing to
 the `npm-cli.js` script, which is part of the Node module that implements
@@ -55,7 +55,8 @@ the npm functionality (on Windows, where symbolic links are problematic,
 distributions offer to install Node with administrative rights;
 this is not a problem
 for Node itself, but will also require administrative rights for using
-npm and xpm;
+npm and xpm, and these tools fail in various ways when installed
+with administrative rights;
 to simplify maintenance, the preferred method is to install Node/npm
 in a custom location in the home folder, using a version
 manager or by directly unpacking the archive distributions.
@@ -257,6 +258,9 @@ are also part of Xcode, their location is not fixed, hence the Command
 Line Tools package must still be installed, for the xPack toolchains to
 find them in the expected location." %}
 
+If the `install-nvm-node-npm-xpm.sh` script was successful,
+the rest of this page is only informative and can be skipped.
+
 {{ version_manager }}
 
 In short, [nvm](https://github.com/nvm-sh/nvm) changes the install
@@ -415,13 +419,11 @@ curl -o- https://raw.githubusercontent.com/xpack/assets/master/scripts/install-n
 exit
 ```
 
-{% include note.html content="The official Node.js distribution no
-longer provides Intel 32-bit images. The version manager is still able
-to install node, by compiling it from sources, but the process takes
-quite a while." %}
-
 {% include note.html content="Arm platforms, like the Raspberry Pi,
 are supported, currently in both 32/64-bit variants." %}
+
+If the `install-nvm-node-npm-xpm.sh` script was successful,
+the rest of this page is only informative and can be skipped.
 
 {{ version_manager }}
 
