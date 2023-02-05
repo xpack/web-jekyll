@@ -2,10 +2,10 @@
 title: xpm folders
 permalink: /xpm/folders/
 
+date: 2017-10-09 14:14:00 +0300
+
 redirect_from:
   - /xpm/files/folders/
-
-date: 2017-10-09 14:14:00 +0300
 
 ---
 

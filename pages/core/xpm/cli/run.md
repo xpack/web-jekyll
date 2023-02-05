@@ -2,12 +2,12 @@
 title: xpm run
 permalink: /xpm/cli/run/
 
-redirect_from:
-  - /xpm/cli/run-script/
-
 comments: true
 
 date: 2017-10-09 12:57:00 +0300
+
+redirect_from:
+  - /xpm/cli/run-script/
 
 ---
 

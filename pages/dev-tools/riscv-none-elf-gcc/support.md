@@ -2,12 +2,12 @@
 title: How to get help for xPack GNU RISC-V Embedded GCC
 permalink: /riscv-none-elf-gcc/support/
 
-redirect_from:
-  - /riscv-none-embed-gcc/support/
-
 comments: true
 
 date: 2019-07-10 17:53:00 +0300
+
+redirect_from:
+  - /riscv-none-embed-gcc/support/
 
 ---
 

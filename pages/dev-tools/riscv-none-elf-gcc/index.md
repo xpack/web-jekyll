@@ -2,9 +2,6 @@
 title: The xPack GNU RISC-V Embedded GCC
 permalink: /riscv-none-elf-gcc/
 
-redirect_from:
-  - /riscv-none-embed-gcc/
-
 summary: "A binary distribution of GNU RISC-V Embedded GCC."
 
 comments: true
@@ -15,6 +12,9 @@ keywords:
   - embedded
 
 date: 2019-07-10 17:53:00 +0300
+
+redirect_from:
+  - /riscv-none-embed-gcc/
 
 ---
 
