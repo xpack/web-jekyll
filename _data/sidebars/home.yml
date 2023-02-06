@@ -32,20 +32,29 @@ entries:
     output: web
     folderitems:
 
-    - title: gcc
-      url: /dev-tools/gcc/
-      output: web
-    - title: clang
-      url: /dev-tools/clang/
+    - title: aarch64-none-elf-gcc
+      url: /dev-tools/aarch64-none-elf-gcc/
       output: web
     - title: arm-none-eabi-gcc
       url: /dev-tools/arm-none-eabi-gcc/
       output: web
-    - title: aarch64-none-elf-gcc
-      url: /dev-tools/aarch64-none-elf-gcc/
+    - title: clang
+      url: /dev-tools/clang/
       output: web
-    - title: riscv-none-elf-gcc
-      url: /dev-tools/riscv-none-elf-gcc/
+    - title: cmake
+      url: /dev-tools/cmake/
+      output: web
+    - title: gcc
+      url: /dev-tools/gcc/
+      output: web
+    - title: meson-build
+      url: /dev-tools/meson-build/
+      output: web
+    - title: mingw-w64-gcc
+      url: /dev-tools/mingw-w64-gcc/
+      output: web
+    - title: ninja-build
+      url: /dev-tools/ninja-build/
       output: web
     - title: openocd
       url: /dev-tools/openocd/
@@ -56,20 +65,11 @@ entries:
     - title: qemu-riscv
       url: /dev-tools/qemu-riscv/
       output: web
+    - title: riscv-none-elf-gcc
+      url: /dev-tools/riscv-none-elf-gcc/
+      output: web
     - title: windows-build-tools
       url: /dev-tools/windows-build-tools/
-      output: web
-    - title: ninja-build
-      url: /dev-tools/ninja-build/
-      output: web
-    - title: cmake
-      url: /dev-tools/cmake/
-      output: web
-    - title: meson-build
-      url: /dev-tools/meson-build/
-      output: web
-    - title: mingw-w64-gcc
-      url: /dev-tools/mingw-w64-gcc/
       output: web
 
   - title: Other 3rd Party Tools
