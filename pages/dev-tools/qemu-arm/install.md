@@ -8,7 +8,7 @@ toc: false
 comments: true
 
 version: "7.0.0"
-subversion: "1"
+xpack-subversion: "1"
 
 date: 2015-09-04 17:03:00 +0300
 
@@ -95,7 +95,7 @@ The Windows versions of **xPack QEMU Arm**
 are packed as ZIP files.
 Download the latest version named like:
 
-- `xpack-qemu-arm-{{ page.version }}-{{ page.subversion }}-win32-x64.zip`
+- `xpack-qemu-arm-{{ page.version }}-{{ page.xpack-subversion }}-win32-x64.zip`
 
 {% include note.html content="In case you wonder where the suffix comes
 from, it is exactly the Node.js `process.platform` and `process.arch`.
@@ -125,7 +125,7 @@ for the executable in this location." %}
 To check if the manually installed QEMU starts, use something like:
 
 ```doscon
-C:\>%USERPROFILE%\AppData\Roaming\xPacks\qemu-arm\xpack-qemu-arm-{{ page.version }}-{{ page.subversion }}\bin\qemu-system-gnuarmeclipse.exe" --version
+C:\>%USERPROFILE%\AppData\Roaming\xPacks\qemu-arm\xpack-qemu-arm-{{ page.version }}-{{ page.xpack-subversion }}\bin\qemu-system-gnuarmeclipse.exe" --version
 xPack QEMU emulator version {{ page.version }} (v{{ page.version }}-xpack)
 Copyright (c) 2003-2022 Fabrice Bellard and the QEMU Project developers
 ```
@@ -143,21 +143,21 @@ The macOS versions of **xPack QEMU Arm**
 are packed as `.tar.gz` archives.
 Download the latest version named like:
 
-- `xpack-qemu-arm-{{ page.version }}-{{ page.subversion }}-darwin-x64.tar.gz`
-- `xpack-qemu-arm-{{ page.version }}-{{ page.subversion }}-darwin-arm64.tar.gz`
+- `xpack-qemu-arm-{{ page.version }}-{{ page.xpack-subversion }}-darwin-x64.tar.gz`
+- `xpack-qemu-arm-{{ page.version }}-{{ page.xpack-subversion }}-darwin-arm64.tar.gz`
 
 ### Unpack
 
 To manually install the xPack QEMU Arm,
 unpack the archive and move it to
-`~/.local/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-{{ page.subversion }}`:
+`~/.local/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-{{ page.xpack-subversion }}`:
 
 ```sh
 mkdir -p ~/.local/xPacks/qemu-arm
 cd ~/.local/xPacks/qemu-arm
 
-tar xvf ~/Downloads/xpack-qemu-arm-{{ page.version }}-{{ page.subversion }}-darwin-x64.tar.gz
-chmod -R -w xpack-qemu-arm-{{ page.version }}-{{ page.subversion }}
+tar xvf ~/Downloads/xpack-qemu-arm-{{ page.version }}-{{ page.xpack-subversion }}-darwin-x64.tar.gz
+chmod -R -w xpack-qemu-arm-{{ page.version }}-{{ page.xpack-subversion }}
 ```
 
 {% include note.html content="For manual installs, the recommended
@@ -171,8 +171,8 @@ for the executable in this location." %}
 The result is a structure like:
 
 ```console
-$ tree -L 2 /Users/ilg/.local/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-{{ page.subversion }}
-/Users/ilg/.local/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-{{ page.subversion }}/
+$ tree -L 2 /Users/ilg/.local/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-{{ page.xpack-subversion }}
+/Users/ilg/.local/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-{{ page.xpack-subversion }}/
 ├── README.md
 ├── bin
 │   ├── qemu-system-aarch64
@@ -227,7 +227,7 @@ $ tree -L 2 /Users/ilg/.local/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-
 To check if the manually installed QEMU starts, use something like:
 
 ```console
-$ ~/.local/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-{{ page.subversion }}/bin/qemu-system-gnuarmeclipse --version
+$ ~/.local/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-{{ page.xpack-subversion }}/bin/qemu-system-gnuarmeclipse --version
 xPack QEMU emulator version {{ page.version }} (v{{ page.version }}-xpack)
 Copyright (c) 2003-2022 Fabrice Bellard and the QEMU Project developers
 ```
@@ -241,9 +241,9 @@ The GNU/Linux versions of **xPack QEMU Arm**
 are packed as `.tar.gz` archives.
 Download the latest version named like:
 
-- `xpack-qemu-arm-{{ page.version }}-{{ page.subversion }}-linux-x64.tar.gz`
-- `xpack-qemu-arm-{{ page.version }}-{{ page.subversion }}-linux-arm.tar.gz`
-- `xpack-qemu-arm-{{ page.version }}-{{ page.subversion }}-linux-arm64.tar.gz`
+- `xpack-qemu-arm-{{ page.version }}-{{ page.xpack-subversion }}-linux-x64.tar.gz`
+- `xpack-qemu-arm-{{ page.version }}-{{ page.xpack-subversion }}-linux-arm.tar.gz`
+- `xpack-qemu-arm-{{ page.version }}-{{ page.xpack-subversion }}-linux-arm64.tar.gz`
 
 As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
 Ubuntu, but can be executed on most recent GNU/Linux distributions.
@@ -252,14 +252,14 @@ Ubuntu, but can be executed on most recent GNU/Linux distributions.
 
 To manually install the xPack QEMU Arm,
 unpack the archive and move it to
-`~/.local/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-{{ page.subversion }}`:
+`~/.local/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-{{ page.xpack-subversion }}`:
 
 ```sh
 mkdir -p ~/.local/xPacks/qemu-arm
 cd ~/.local/xPacks/qemu-arm
 
-tar xvf ~/Downloads/xpack-qemu-arm-{{ page.version }}-{{ page.subversion }}-linux-x64.tar.gz
-chmod -R -w xpack-qemu-arm-{{ page.version }}-{{ page.subversion }}
+tar xvf ~/Downloads/xpack-qemu-arm-{{ page.version }}-{{ page.xpack-subversion }}-linux-x64.tar.gz
+chmod -R -w xpack-qemu-arm-{{ page.version }}-{{ page.xpack-subversion }}
 ```
 
 {% include note.html content="For manual installs, the recommended
@@ -275,8 +275,8 @@ for the executable in this location." %}
 The result is a structure like:
 
 ```console
-$ tree -L 2 '/home/ilg/.local/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-{{ page.subversion }}'
-/home/ilg/.local/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-{{ page.subversion }}/
+$ tree -L 2 '/home/ilg/.local/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-{{ page.xpack-subversion }}'
+/home/ilg/.local/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-{{ page.xpack-subversion }}/
 ├── bin
 │   ├── qemu-system-aarch64
 │   ├── qemu-system-arm
@@ -355,7 +355,7 @@ $ tree -L 2 '/home/ilg/.local/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-
 To check if the manually installed QEMU starts, use something like:
 
 ```console
-$ ~/.local/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-{{ page.subversion }}/bin/qemu-system-gnuarmeclipse --version
+$ ~/.local/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-{{ page.xpack-subversion }}/bin/qemu-system-gnuarmeclipse --version
 xPack QEMU emulator version {{ page.version }} (v{{ page.version }}-xpack)
 Copyright (c) 2003-2022 Fabrice Bellard and the QEMU Project developers
 ```

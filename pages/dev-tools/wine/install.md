@@ -8,7 +8,7 @@ toc: false
 comments: true
 
 version: "6.17.0"
-subversion: "1"
+xpack-subversion: "1"
 version-major-minor: "6.17"
 
 date: 2022-10-04 10:32:00 +0300
@@ -109,7 +109,7 @@ Binaries are available only for GNU/Linux.
 To check if the xpm installed WineHQ starts, use something like:
 
 ```console
-$ ~/.local/xPacks/@xpack-dev-tools/wine/{{ page.version }}-{{ page.subversion }}.1/.content/bin/wine64 --version
+$ ~/.local/xPacks/@xpack-dev-tools/wine/{{ page.version }}-{{ page.xpack-subversion }}.1/.content/bin/wine64 --version
 wine {{ page.version-major-minor }}
 ```
 
@@ -121,7 +121,7 @@ The GNU/Linux versions of **xPack WineHQ**
 are packed as `.tar.gz` archives.
 Download the latest version named like:
 
-- `xpack-wine-{{ page.version }}-{{ page.subversion }}-linux-x64.tar.gz`
+- `xpack-wine-{{ page.version }}-{{ page.xpack-subversion }}-linux-x64.tar.gz`
 
 As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
 Ubuntu, but can be executed on most recent GNU/Linux distributions.
@@ -130,14 +130,14 @@ Ubuntu, but can be executed on most recent GNU/Linux distributions.
 
 To manually install the xPack WineHQ,
 unpack the archive and move it to
-`~/.local/xPacks/wine/xpack-wine-{{ page.version }}-{{ page.subversion }}`:
+`~/.local/xPacks/wine/xpack-wine-{{ page.version }}-{{ page.xpack-subversion }}`:
 
 ```console
 mkdir -p ~/.local/xPacks/wine
 cd ~/.local/xPacks/wine
 
-tar xvf ~/Downloads/xpack-wine-{{ page.version }}-{{ page.subversion }}-linux-x64.tar.gz
-chmod -R -w xpack-wine-{{ page.version }}-{{ page.subversion }}
+tar xvf ~/Downloads/xpack-wine-{{ page.version }}-{{ page.xpack-subversion }}-linux-x64.tar.gz
+chmod -R -w xpack-wine-{{ page.version }}-{{ page.xpack-subversion }}
 ```
 
 {% include note.html content="For manual installs, the recommended
@@ -146,8 +146,8 @@ which use the scope (like `@xpack-dev-tools`) to group different tools,
 and `.content` to store the unpacked archive." %}
 
 ```console
-$ tree -L 2 '/home/ilg/.local/xPacks/wine/xpack-wine-{{ page.version }}-{{ page.subversion }}'
-/home/ilg/.local/xPacks/wine/xpack-wine-{{ page.version }}-{{ page.subversion }}/
+$ tree -L 2 '/home/ilg/.local/xPacks/wine/xpack-wine-{{ page.version }}-{{ page.xpack-subversion }}'
+/home/ilg/.local/xPacks/wine/xpack-wine-{{ page.version }}-{{ page.xpack-subversion }}/
 ├── README.md
 ├── bin
 │   ├── function_grep.pl
@@ -198,7 +198,7 @@ $ tree -L 2 '/home/ilg/.local/xPacks/wine/xpack-wine-{{ page.version }}-{{ page.
 To check if the manually installed WineHQ starts, use something like:
 
 ```console
-$ ~/.local/xPacks/wine/xpack-wine-{{ page.version }}-{{ page.subversion }}/bin/wine64 --version
+$ ~/.local/xPacks/wine/xpack-wine-{{ page.version }}-{{ page.xpack-subversion }}/bin/wine64 --version
 wine {{ page.version-major-minor }}
 ```
 

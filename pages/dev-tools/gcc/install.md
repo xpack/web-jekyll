@@ -8,7 +8,7 @@ toc: false
 comments: true
 
 version: "12.1.0"
-subversion: "1"
+xpack-subversion: "1"
 
 date: 2021-05-22 00:27:00 +0300
 
@@ -116,7 +116,7 @@ GitHub [releases](https://github.com/xpack-dev-tools/gcc-xpack/releases/) pages.
 To check if the xpm installed GCC starts, use something like:
 
 ```doscon
-C:\>%USERPROFILE%\AppData\Roaming\xPacks\@xpack-dev-tool\gcc\{{ page.version }}-{{ page.subversion }}.1\.content\bin\gcc.exe" --version
+C:\>%USERPROFILE%\AppData\Roaming\xPacks\@xpack-dev-tool\gcc\{{ page.version }}-{{ page.xpack-subversion }}.1\.content\bin\gcc.exe" --version
 gcc (xPack GCC x86_64) {{ page.version }}
 ```
 
@@ -128,7 +128,7 @@ The Windows versions of **xPack GNU Compiler Collection**
 are packed as ZIP files.
 Download the latest version named like:
 
-- `xpack-gcc-{{ page.version }}-{{ page.subversion }}-win32-x64.zip`
+- `xpack-gcc-{{ page.version }}-{{ page.xpack-subversion }}-win32-x64.zip`
 
 {% include note.html content="In case you wonder where the suffix comes
 from, it is exactly the Node.js `process.platform` and `process.arch`.
@@ -155,7 +155,7 @@ and `.content` to store the unpacked archive." %}
 To check if the manually installed GCC starts, use something like:
 
 ```doscon
-C:\>%USERPROFILE%\AppData\Roaming\xPacks\gcc\xpack-gcc-{{ page.version }}-{{ page.subversion }}\bin\gcc.exe" --version
+C:\>%USERPROFILE%\AppData\Roaming\xPacks\gcc\xpack-gcc-{{ page.version }}-{{ page.xpack-subversion }}\bin\gcc.exe" --version
 gcc (xPack GCC x86_64) {{ page.version }}
 ```
 
@@ -170,7 +170,7 @@ gcc (xPack GCC x86_64) {{ page.version }}
 To check if the xpm installed GCC starts, use something like:
 
 ```console
-$ ~/Library/xPacks/@xpack-dev-tools/gcc/{{ page.version }}-{{ page.subversion }}.1/.content/bin/gcc --version
+$ ~/Library/xPacks/@xpack-dev-tools/gcc/{{ page.version }}-{{ page.xpack-subversion }}.1/.content/bin/gcc --version
 gcc (xPack GCC x86_64) {{ page.version }}
 ```
 
@@ -182,8 +182,8 @@ The macOS versions of **xPack GNU Compiler Collection** are packed as a
 `.tar.gz` archive.
 Download the latest version named like:
 
-- `xpack-gcc-{{ page.version }}-{{ page.subversion }}-darwin-x64.tar.gz`
-- `xpack-gcc-{{ page.version }}-{{ page.subversion }}-darwin-arm64.tar.gz`
+- `xpack-gcc-{{ page.version }}-{{ page.xpack-subversion }}-darwin-x64.tar.gz`
+- `xpack-gcc-{{ page.version }}-{{ page.xpack-subversion }}-darwin-arm64.tar.gz`
 
 ### Unpack
 
@@ -195,8 +195,8 @@ unpack the archive and copy it to
 mkdir -p ~/.local/xPacks/gcc
 cd ~/.local/xPacks/gcc
 
-tar xvf ~/Downloads/xpack-gcc-{{ page.version }}-{{ page.subversion }}-darwin-x64.tar.gz
-chmod -R -w xpack-gcc-{{ page.version }}-{{ page.subversion }}
+tar xvf ~/Downloads/xpack-gcc-{{ page.version }}-{{ page.xpack-subversion }}-darwin-x64.tar.gz
+chmod -R -w xpack-gcc-{{ page.version }}-{{ page.xpack-subversion }}
 ```
 
 You may shorten the last folder name and keep only the version.
@@ -207,8 +207,8 @@ install location is different from the xpm install folders." %}
 The result is a structure like:
 
 ```console
-$ tree -L 2 /Users/ilg/.local/xPacks/gcc/xpack-gcc-{{ page.version }}-{{ page.subversion }}
-/Users/ilg/.local/xPacks/gcc/xpack-gcc-{{ page.version }}-{{ page.subversion }}
+$ tree -L 2 /Users/ilg/.local/xPacks/gcc/xpack-gcc-{{ page.version }}-{{ page.xpack-subversion }}
+/Users/ilg/.local/xPacks/gcc/xpack-gcc-{{ page.version }}-{{ page.xpack-subversion }}
 ├── README.md
 ├── bin
 │   ├── c++
@@ -311,7 +311,7 @@ $ tree -L 2 /Users/ilg/.local/xPacks/gcc/xpack-gcc-{{ page.version }}-{{ page.su
 To check if the manually installed GCC starts, use something like:
 
 ```console
-$ ~/.local/xPacks/gcc/xpack-gcc-{{ page.version }}-{{ page.subversion }}.1/bin/gcc --version
+$ ~/.local/xPacks/gcc/xpack-gcc-{{ page.version }}-{{ page.xpack-subversion }}.1/bin/gcc --version
 gcc (xPack GCC x86_64) {{ page.version }}
 ```
 
@@ -326,7 +326,7 @@ gcc (xPack GCC x86_64) {{ page.version }}
 To check if the xpm installed GCC starts, use something like:
 
 ```console
-$ ~/.local/xPacks/@xpack-dev-tools/gcc/{{ page.version }}-{{ page.subversion }}.1/.content/bin/gcc --version
+$ ~/.local/xPacks/@xpack-dev-tools/gcc/{{ page.version }}-{{ page.xpack-subversion }}.1/.content/bin/gcc --version
 gcc version {{ page.version }} (xPack GCC x86_64)
 ```
 
@@ -338,9 +338,9 @@ The GNU/Linux versions of **xPack GNU Compiler Collection** 
 are packed as `.tar.gz` archives.
 Download the latest version named like:
 
-- `xpack-gcc-{{ page.version }}-{{ page.subversion }}-linux-x64.tar.gz`
-- `xpack-gcc-{{ page.version }}-{{ page.subversion }}-linux-arm.tar.gz`
-- `xpack-gcc-{{ page.version }}-{{ page.subversion }}-linux-arm64.tar.gz`
+- `xpack-gcc-{{ page.version }}-{{ page.xpack-subversion }}-linux-x64.tar.gz`
+- `xpack-gcc-{{ page.version }}-{{ page.xpack-subversion }}-linux-arm.tar.gz`
+- `xpack-gcc-{{ page.version }}-{{ page.xpack-subversion }}-linux-arm64.tar.gz`
 
 As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
 Ubuntu, but can be executed on most recent GNU/Linux distributions.
@@ -355,8 +355,8 @@ unpack the archive and copy it to
 mkdir -p ~/.local/xPacks/gcc
 cd ~/.local/xPacks/gcc
 
-tar xvf ~/Downloads/xpack-gcc-{{ page.version }}-{{ page.subversion }}-linux-x64.tar.gz
-chmod -R -w xpack-gcc-{{ page.version }}-{{ page.subversion }}
+tar xvf ~/Downloads/xpack-gcc-{{ page.version }}-{{ page.xpack-subversion }}-linux-x64.tar.gz
+chmod -R -w xpack-gcc-{{ page.version }}-{{ page.xpack-subversion }}
 ```
 
 You may shorten the last folder name and keep only the version.
@@ -369,8 +369,8 @@ and `.content` to store the unpacked archive." %}
 The result is a structure like:
 
 ```console
-$ tree -L 2 /home/ilg/.local/xPacks/gcc/xpack-gcc-{{ page.version }}-{{ page.subversion }}
-/home/ilg/.local/xPacks/gcc/xpack-gcc-{{ page.version }}-{{ page.subversion }}
+$ tree -L 2 /home/ilg/.local/xPacks/gcc/xpack-gcc-{{ page.version }}-{{ page.xpack-subversion }}
+/home/ilg/.local/xPacks/gcc/xpack-gcc-{{ page.version }}-{{ page.xpack-subversion }}
 ── bin
 │   ├── addr2line
 │   ├── ar
@@ -548,7 +548,7 @@ $ tree -L 2 /home/ilg/.local/xPacks/gcc/xpack-gcc-{{ page.version }}-{{ page.sub
 To check if the manually installed GCC starts, use something like:
 
 ```console
-$ ~/.local/xPacks/gcc/xpack-gcc-{{ page.version }}-{{ page.subversion }}/bin/gcc --version
+$ ~/.local/xPacks/gcc/xpack-gcc-{{ page.version }}-{{ page.xpack-subversion }}/bin/gcc --version
 gcc version {{ page.version }} (xPack GCC x86_64)
 ```
 

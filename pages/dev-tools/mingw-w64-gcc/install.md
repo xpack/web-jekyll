@@ -8,7 +8,7 @@ toc: false
 comments: true
 
 version: "11.3.0"
-subversion: "1.3"
+xpack-subversion: "1.3"
 
 date: 2022-10-04 11:43:00 +0300
 
@@ -107,7 +107,7 @@ pages.
 To check if the xpm installed GCC starts, use something like:
 
 ```doscon
-C:\>%USERPROFILE%\AppData\Roaming\xPacks\@xpack-dev-tool\mingw-w64-gcc\{{ page.version }}-{{ page.subversion }}.1\.content\bin\x86_64-w64-mingw32-gcc.exe" --version
+C:\>%USERPROFILE%\AppData\Roaming\xPacks\@xpack-dev-tool\mingw-w64-gcc\{{ page.version }}-{{ page.xpack-subversion }}.1\.content\bin\x86_64-w64-mingw32-gcc.exe" --version
 x86_64-w64-mingw32-gcc.exe (xPack MinGW-w64 GCC x86_64) {{ page.version }}
 ```
 
@@ -119,7 +119,7 @@ The Windows versions of **xPack MinGW-w64 GCC**
 are packed as ZIP files.
 Download the latest version named like:
 
-- `xpack-mingw-w64-gcc-{{ page.version }}-{{ page.subversion }}-win32-x64.zip`
+- `xpack-mingw-w64-gcc-{{ page.version }}-{{ page.xpack-subversion }}-win32-x64.zip`
 
 {% include note.html content="In case you wonder where the suffix comes
 from, it is exactly the Node.js `process.platform` and `process.arch`.
@@ -146,7 +146,7 @@ and `.content` to store the unpacked archive." %}
 To check if the manually installed GCC starts, use something like:
 
 ```doscon
-C:\>%USERPROFILE%\AppData\Roaming\xPacks\mingw-w64-gcc\xpack-mingw-w64-gcc-{{ page.version }}-{{ page.subversion }}\bin\mingw-w64-gcc.exe" --version
+C:\>%USERPROFILE%\AppData\Roaming\xPacks\mingw-w64-gcc\xpack-mingw-w64-gcc-{{ page.version }}-{{ page.xpack-subversion }}\bin\mingw-w64-gcc.exe" --version
 x86_64-w64-mingw32-gcc (xPack MinGW-w64 GCC x86_64) {{ page.version }}
 ```
 
@@ -161,7 +161,7 @@ x86_64-w64-mingw32-gcc (xPack MinGW-w64 GCC x86_64) {{ page.version }}
 To check if the xpm installed GCC starts, use something like:
 
 ```console
-$ ~/.local/xPacks/@xpack-dev-tools/mingw-w64-gcc/{{ page.version }}-{{ page.subversion }}.1/.content/bin/x86_64-w64-mingw32-gcc --version
+$ ~/.local/xPacks/@xpack-dev-tools/mingw-w64-gcc/{{ page.version }}-{{ page.xpack-subversion }}.1/.content/bin/x86_64-w64-mingw32-gcc --version
 x86_64-w64-mingw32-gcc (xPack MinGW-w64 GCC x86_64) {{ page.version }}
 ```
 
@@ -173,8 +173,8 @@ The macOS versions of **xPack MinGW-w64 GCC**
 are packed as `.tar.gz` archives.
 Download the latest version named like:
 
-- `xpack-mingw-w64-gcc-{{ page.version }}-{{ page.subversion }}-darwin-x64.tar.gz`
-- `xpack-mingw-w64-gcc-{{ page.version }}-{{ page.subversion }}-darwin-arm64.tar.gz`
+- `xpack-mingw-w64-gcc-{{ page.version }}-{{ page.xpack-subversion }}-darwin-x64.tar.gz`
+- `xpack-mingw-w64-gcc-{{ page.version }}-{{ page.xpack-subversion }}-darwin-arm64.tar.gz`
 
 ### Unpack
 
@@ -186,8 +186,8 @@ unpack the archive and copy it to
 mkdir -p ~/.local/xPacks/mingw-w64-gcc
 cd ~/.local/xPacks/mingw-w64-gcc
 
-tar xvf ~/Downloads/xpack-mingw-w64-gcc-{{ page.version }}-{{ page.subversion }}-darwin-x64.tar.gz
-chmod -R -w xpack-mingw-w64-gcc-{{ page.version }}-{{ page.subversion }}
+tar xvf ~/Downloads/xpack-mingw-w64-gcc-{{ page.version }}-{{ page.xpack-subversion }}-darwin-x64.tar.gz
+chmod -R -w xpack-mingw-w64-gcc-{{ page.version }}-{{ page.xpack-subversion }}
 ```
 
 You may shorten the last folder name and keep only the version.
@@ -198,8 +198,8 @@ install location is different from the xpm install folders." %}
 The result is a structure like:
 
 ```console
-$ tree -L 2 /Users/ilg/.local/xPacks/mingw-w64-gcc/xpack-mingw-w64-gcc-{{ page.version }}-{{ page.subversion }}
-/Users/ilg/.local/xPacks/mingw-w64-gcc/xpack-mingw-w64-gcc-{{ page.version }}-{{ page.subversion }}
+$ tree -L 2 /Users/ilg/.local/xPacks/mingw-w64-gcc/xpack-mingw-w64-gcc-{{ page.version }}-{{ page.xpack-subversion }}
+/Users/ilg/.local/xPacks/mingw-w64-gcc/xpack-mingw-w64-gcc-{{ page.version }}-{{ page.xpack-subversion }}
 ├── README.md
 ├── bin
 │   ├── i686-w64-mingw32-addr2line
@@ -315,7 +315,7 @@ $ tree -L 2 /Users/ilg/.local/xPacks/mingw-w64-gcc/xpack-mingw-w64-gcc-{{ page.v
 To check if the manually installed GCC starts, use something like:
 
 ```console
-$ ~/.local/xPacks/mingw-w64-gcc/xpack-mingw-w64-gcc-{{ page.version }}-{{ page.subversion }}/bin/x86_64-w64-mingw32-gcc --version
+$ ~/.local/xPacks/mingw-w64-gcc/xpack-mingw-w64-gcc-{{ page.version }}-{{ page.xpack-subversion }}/bin/x86_64-w64-mingw32-gcc --version
 x86_64-w64-mingw32-gcc (xPack MinGW-w64 GCC, 64-bit) {{ page.version }}
 ```
 
@@ -330,7 +330,7 @@ x86_64-w64-mingw32-gcc (xPack MinGW-w64 GCC, 64-bit) {{ page.version }}
 To check if the xpm installed GCC starts, use something like:
 
 ```console
-$ ~/.local/xPacks/@xpack-dev-tools/mingw-w64-gcc/{{ page.version }}-{{ page.subversion }}.1/.content/bin/x86_64-w64-mingw32-gcc --version
+$ ~/.local/xPacks/@xpack-dev-tools/mingw-w64-gcc/{{ page.version }}-{{ page.xpack-subversion }}.1/.content/bin/x86_64-w64-mingw32-gcc --version
 x86_64-w64-mingw32-gcc (xPack MinGW-w64 GCC, 64-bit) {{ page.version }}
 ```
 
@@ -342,9 +342,9 @@ The GNU/Linux versions of **xPack MinGW-w64 GCC** 
 are packed as `.tar.gz` archives.
 Download the latest version named like:
 
-- `xpack-mingw-w64-gcc-{{ page.version }}-{{ page.subversion }}-linux-x64.tar.gz`
-- `xpack-mingw-w64-gcc-{{ page.version }}-{{ page.subversion }}-linux-arm.tar.gz`
-- `xpack-mingw-w64-gcc-{{ page.version }}-{{ page.subversion }}-linux-arm64.tar.gz`
+- `xpack-mingw-w64-gcc-{{ page.version }}-{{ page.xpack-subversion }}-linux-x64.tar.gz`
+- `xpack-mingw-w64-gcc-{{ page.version }}-{{ page.xpack-subversion }}-linux-arm.tar.gz`
+- `xpack-mingw-w64-gcc-{{ page.version }}-{{ page.xpack-subversion }}-linux-arm64.tar.gz`
 
 As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
 Ubuntu, but can be executed on most recent GNU/Linux distributions.
@@ -359,8 +359,8 @@ unpack the archive and copy it to
 mkdir -p ~/.local/xPacks/mingw-w64-gcc
 cd ~/.local/xPacks/mingw-w64-gcc
 
-tar xvf ~/Downloads/xpack-mingw-w64-gcc-{{ page.version }}-{{ page.subversion }}-linux-x64.tar.gz
-chmod -R -w xpack-mingw-w64-gcc-{{ page.version }}-{{ page.subversion }}
+tar xvf ~/Downloads/xpack-mingw-w64-gcc-{{ page.version }}-{{ page.xpack-subversion }}-linux-x64.tar.gz
+chmod -R -w xpack-mingw-w64-gcc-{{ page.version }}-{{ page.xpack-subversion }}
 ```
 
 You may shorten the last folder name and keep only the version.
@@ -373,8 +373,8 @@ and `.content` to store the unpacked archive." %}
 The result is a structure like:
 
 ```console
-$ tree -L 2 /home/ilg/.local/xPacks/mingw-w64-gcc/xpack-mingw-w64-gcc-{{ page.version }}-{{ page.subversion }}
-/home/ilg/.local/xPacks/mingw-w64-gcc/xpack-mingw-w64-gcc-{{ page.version }}-{{ page.subversion }}
+$ tree -L 2 /home/ilg/.local/xPacks/mingw-w64-gcc/xpack-mingw-w64-gcc-{{ page.version }}-{{ page.xpack-subversion }}
+/home/ilg/.local/xPacks/mingw-w64-gcc/xpack-mingw-w64-gcc-{{ page.version }}-{{ page.xpack-subversion }}
 ├── bin
 │   ├── i686-w64-mingw32-addr2line
 │   ├── i686-w64-mingw32-ar
@@ -514,7 +514,7 @@ $ tree -L 2 /home/ilg/.local/xPacks/mingw-w64-gcc/xpack-mingw-w64-gcc-{{ page.ve
 To check if the manually installed GCC starts, use something like:
 
 ```console
-$ ~/.local/xPacks/mingw-w64-gcc/xpack-mingw-w64-gcc-{{ page.version }}-{{ page.subversion }}/bin/x86_64-w64-mingw32-gcc --version
+$ ~/.local/xPacks/mingw-w64-gcc/xpack-mingw-w64-gcc-{{ page.version }}-{{ page.xpack-subversion }}/bin/x86_64-w64-mingw32-gcc --version
 x86_64-w64-mingw32-gcc (xPack MinGW-w64 GCC x86_64) {{ page.version }}
 ```
 

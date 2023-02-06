@@ -8,7 +8,7 @@ toc: false
 comments: true
 
 version: "4.0"
-subversion: "0"
+xpack-subversion: "0"
 version-major-minor: "4.0"
 
 date: 2022-10-04 10:32:00 +0300
@@ -103,7 +103,7 @@ Binaries are available only for GNU/Linux and macOS.
 To check if the xpm installed XBB Bootstrap binaries start, use something like:
 
 ```console
-$ ~/.local/xPacks/@xpack-dev-tools/xbb-bootstrap/{{ page.version }}.{{ page.subversion }}/.content/bin/pkg_config --version
+$ ~/.local/xPacks/@xpack-dev-tools/xbb-bootstrap/{{ page.version }}.{{ page.xpack-subversion }}/.content/bin/pkg_config --version
 0.29.2
 ```
 
@@ -141,8 +141,8 @@ which use the scope (like `@xpack-dev-tools`) to group different tools,
 and `.content` to store the unpacked archive." %}
 
 ```console
-$ tree -L 2 '/home/ilg/.local/xPacks/xbb-bootstrap/xpack-xbb-bootstrap-{{ page.version }}-{{ page.subversion }}'
-/home/ilg/.local/xPacks/xbb-bootstrap/xpack-xbb-bootstrap-{{ page.version }}-{{ page.subversion }}/
+$ tree -L 2 '/home/ilg/.local/xPacks/xbb-bootstrap/xpack-xbb-bootstrap-{{ page.version }}-{{ page.xpack-subversion }}'
+/home/ilg/.local/xPacks/xbb-bootstrap/xpack-xbb-bootstrap-{{ page.version }}-{{ page.xpack-subversion }}/
 ├── README.md
 ├── bin
 │   ├── 2to3-3.9
@@ -547,7 +547,7 @@ $ ~/.local/xPacks/xbb-bootstrap/xpack-xbb-bootstrap-{{ page.version }}/bin/pkg_c
 To check if the xpm installed XBB Bootstrap binaries start, use something like:
 
 ```console
-$ ~/.local/xPacks/@xpack-dev-tools/xbb-bootstrap/{{ page.version }}.{{ page.subversion }}/.content/bin/pkg_config --version
+$ ~/.local/xPacks/@xpack-dev-tools/xbb-bootstrap/{{ page.version }}.{{ page.xpack-subversion }}/.content/bin/pkg_config --version
 0.29.2
 ```
 
@@ -584,8 +584,8 @@ which use the scope (like `@xpack-dev-tools`) to group different tools,
 and `.content` to store the unpacked archive." %}
 
 ```console
-$ tree -L 2 '/home/ilg/.local/xPacks/xbb-bootstrap/xpack-xbb-bootstrap-{{ page.version }}-{{ page.subversion }}'
-/home/ilg/.local/xPacks/xbb-bootstrap/xpack-xbb-bootstrap-{{ page.version }}-{{ page.subversion }}/
+$ tree -L 2 '/home/ilg/.local/xPacks/xbb-bootstrap/xpack-xbb-bootstrap-{{ page.version }}-{{ page.xpack-subversion }}'
+/home/ilg/.local/xPacks/xbb-bootstrap/xpack-xbb-bootstrap-{{ page.version }}-{{ page.xpack-subversion }}/
 ├── bin
 │   ├── [
 │   ├── 2to3-3.9

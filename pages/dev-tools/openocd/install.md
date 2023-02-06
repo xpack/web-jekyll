@@ -8,7 +8,7 @@ toc: false
 comments: true
 
 version: "0.11.0"
-subversion: "4"
+xpack-subversion: "4"
 version-date: "2022-03-25-19:34"
 
 date: 2015-09-09 19:43:00 +0300
@@ -106,7 +106,7 @@ page.
 To check if the xpm installed OpenOCD starts, use something like:
 
 ```doscon
-C:\>%USERPROFILE%\AppData\Roaming\xPacks\@xpack-dev-tools\openocd\{{ page.version }}-{{ page.subversion }}.1\.content\bin\openocd.exe --version
+C:\>%USERPROFILE%\AppData\Roaming\xPacks\@xpack-dev-tools\openocd\{{ page.version }}-{{ page.xpack-subversion }}.1\.content\bin\openocd.exe --version
 xPack OpenOCD x86_64 Open On-Chip Debugger {{ page.version }}+dev ({{ page.version-date }})
 
 ```
@@ -119,7 +119,7 @@ The Windows versions of **xPack OpenOCD**
 are packed as ZIP files.
 Download the latest version named like:
 
-- `xpack-openocd-{{ page.version }}-{{ page.subversion }}-win32-x64.zip`
+- `xpack-openocd-{{ page.version }}-{{ page.xpack-subversion }}-win32-x64.zip`
 
 {% include note.html content="In case you wonder where the suffix comes
 from, it is exactly the Node.js `process.platform` and `process.arch`.
@@ -153,7 +153,7 @@ The result is a structure like:
 To check if the manually installed OpenOCD starts, use something like:
 
 ```doscon
-C:\>%USERPROFILE%\AppData\Roaming\xPacks\openocd\xpack-openocd-{{ page.version }}-{{ page.subversion }}\bin\openocd.exe --version
+C:\>%USERPROFILE%\AppData\Roaming\xPacks\openocd\xpack-openocd-{{ page.version }}-{{ page.xpack-subversion }}\bin\openocd.exe --version
 xPack OpenOCD x86_64 Open On-Chip Debugger {{ page.version }}+dev ({{ page.version-date }})
 ```
 
@@ -219,7 +219,7 @@ safe side, try to always use original manufacturer drivers." %}
 To check if the xpm installed OpenOCD starts, use something like:
 
 ```console
-$ ~/.local/xPacks/@xpack-dev-tools/openocd/{{ page.version }}-{{ page.subversion }}.1/.content/bin/openocd --version
+$ ~/.local/xPacks/@xpack-dev-tools/openocd/{{ page.version }}-{{ page.xpack-subversion }}.1/.content/bin/openocd --version
 xPack OpenOCD x86_64 Open On-Chip Debugger {{ page.version }}+dev ({{ page.version-date }})
 ```
 
@@ -231,8 +231,8 @@ The macOS versions of **xPack OpenOCD**
 are packed as `.tar.gz` archives.
 Download the latest version named like:
 
-- `xpack-openocd-{{ page.version }}-{{ page.subversion }}-darwin-x64.tar.gz`
-- `xpack-openocd-{{ page.version }}-{{ page.subversion }}-darwin-arm64.tar.gz`
+- `xpack-openocd-{{ page.version }}-{{ page.xpack-subversion }}-darwin-x64.tar.gz`
+- `xpack-openocd-{{ page.version }}-{{ page.xpack-subversion }}-darwin-arm64.tar.gz`
 
 ### Unpack
 
@@ -244,8 +244,8 @@ unpack the archive and copy it to
 mkdir -p ~/.local/xPacks/openocd
 cd ~/.local/xPacks/openocd
 
-tar xvf ~/Downloads/xpack-openocd-{{ page.version }}-{{ page.subversion }}-darwin-x64.tar.gz
-chmod -R -w xpack-openocd-{{ page.version }}-{{ page.subversion }}
+tar xvf ~/Downloads/xpack-openocd-{{ page.version }}-{{ page.xpack-subversion }}-darwin-x64.tar.gz
+chmod -R -w xpack-openocd-{{ page.version }}-{{ page.xpack-subversion }}
 ```
 
 {% include note.html content="For manual installs, the recommended
@@ -259,8 +259,8 @@ for the executable in this location." %}
 The result is a structure like:
 
 ```console
-$ tree -L 2 /Users/ilg/.local/xPacks/openocd/xpack-openocd-{{ page.version }}-{{ page.subversion }}
-/Users/ilg/.local/xPacks/openocd/xpack-openocd-{{ page.version }}-{{ page.subversion }}
+$ tree -L 2 /Users/ilg/.local/xPacks/openocd/xpack-openocd-{{ page.version }}-{{ page.xpack-subversion }}
+/Users/ilg/.local/xPacks/openocd/xpack-openocd-{{ page.version }}-{{ page.xpack-subversion }}
 ├── OpenULINK
 │   └── ulink_firmware.hex
 ├── README.md
@@ -305,7 +305,7 @@ $ tree -L 2 /Users/ilg/.local/xPacks/openocd/xpack-openocd-{{ page.version }}-{{
 To check if the manually installed OpenOCD starts, use something like:
 
 ```console
-$ ~/.local/xPacks/openocd/xpack-openocd-{{ page.version }}-{{ page.subversion }}/bin/openocd --version
+$ ~/.local/xPacks/openocd/xpack-openocd-{{ page.version }}-{{ page.xpack-subversion }}/bin/openocd --version
 xPack OpenOCD x86_64 Open On-Chip Debugger {{ page.version }}+dev ({{ page.version-date }})
 ```
 {% endcapture %}
@@ -319,7 +319,7 @@ xPack OpenOCD x86_64 Open On-Chip Debugger {{ page.version }}+dev ({{ page.versi
 To check if the xpm installed OpenOCD starts, use something like:
 
 ```console
-$ ~/.local/xPacks/@xpack-dev-tools/openocd/{{ page.version }}-{{ page.subversion }}.1/.content/bin/openocd --version
+$ ~/.local/xPacks/@xpack-dev-tools/openocd/{{ page.version }}-{{ page.xpack-subversion }}.1/.content/bin/openocd --version
 xPack OpenOCD x86_64 Open On-Chip Debugger {{ page.version }}+dev ({{ page.version-date }})
 ```
 
@@ -331,9 +331,9 @@ The GNU/Linux versions of **xPack OpenOCD**
 are packed as `.tar.gz` archives.
 Download the latest version named like:
 
-- `xpack-openocd-{{ page.version }}-{{ page.subversion }}-linux-x64.tar.gz`
-- `xpack-openocd-{{ page.version }}-{{ page.subversion }}-linux-arm.tar.gz`
-- `xpack-openocd-{{ page.version }}-{{ page.subversion }}-linux-arm64.tar.gz`
+- `xpack-openocd-{{ page.version }}-{{ page.xpack-subversion }}-linux-x64.tar.gz`
+- `xpack-openocd-{{ page.version }}-{{ page.xpack-subversion }}-linux-arm.tar.gz`
+- `xpack-openocd-{{ page.version }}-{{ page.xpack-subversion }}-linux-arm64.tar.gz`
 
 As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
 Ubuntu, but can be executed on most recent GNU/Linux distributions.
@@ -342,14 +342,14 @@ Ubuntu, but can be executed on most recent GNU/Linux distributions.
 
 To manually install the xPack OpenOCD,
 unpack the archive and move it to
-`~/.local/xPacks/openocd/xpack-openocd-{{ page.version }}-{{ page.subversion }}`:
+`~/.local/xPacks/openocd/xpack-openocd-{{ page.version }}-{{ page.xpack-subversion }}`:
 
 ```sh
 mkdir -p ~/.local/xPacks/openocd
 cd ~/.local/xPacks/openocd
 
-tar xvf ~/Downloads/xpack-openocd-{{ page.version }}-{{ page.subversion }}-linux-x64.tar.gz
-chmod -R -w xpack-openocd-{{ page.version }}-{{ page.subversion }}
+tar xvf ~/Downloads/xpack-openocd-{{ page.version }}-{{ page.xpack-subversion }}-linux-x64.tar.gz
+chmod -R -w xpack-openocd-{{ page.version }}-{{ page.xpack-subversion }}
 ```
 
 {% include note.html content="For manual installs, the recommended
@@ -363,8 +363,8 @@ path, since by default the Eclipse Embedded CDT debug plug-ins search
 for the executable in this location." %}
 
 ```console
-$ tree -L 2 '/home/ilg/.local/xPacks/openocd/xpack-openocd-{{ page.version }}-{{ page.subversion }}'
-/home/ilg/.local/xPacks/openocd/xpack-openocd-{{ page.version }}-{{ page.subversion }}/
+$ tree -L 2 '/home/ilg/.local/xPacks/openocd/xpack-openocd-{{ page.version }}-{{ page.xpack-subversion }}'
+/home/ilg/.local/xPacks/openocd/xpack-openocd-{{ page.version }}-{{ page.xpack-subversion }}/
 ├── bin
 │   └── openocd
 ├── contrib
@@ -414,7 +414,7 @@ $ tree -L 2 '/home/ilg/.local/xPacks/openocd/xpack-openocd-{{ page.version }}-{{
 To check if the manually installed OpenOCD starts, use something like:
 
 ```console
-$ ~/.local/xPacks/openocd/xpack-openocd-{{ page.version }}-{{ page.subversion }}/bin/openocd --version
+$ ~/.local/xPacks/openocd/xpack-openocd-{{ page.version }}-{{ page.xpack-subversion }}/bin/openocd --version
 xPack OpenOCD x86_64 Open On-Chip Debugger {{ page.version }}+dev ({{ page.version-date }})
 ```
 
@@ -427,7 +427,7 @@ supported IDs; to install it, just copy the file to `/etc/udev/rules.d`
 and eventually notify the daemon:
 
 ```sh
-sudo cp ~/.local/xPacks/openocd/xpack-openocd-{{ page.version }}-{{ page.subversion }}/contrib/60-openocd.rules /etc/udev/rules.d/
+sudo cp ~/.local/xPacks/openocd/xpack-openocd-{{ page.version }}-{{ page.xpack-subversion }}/contrib/60-openocd.rules /etc/udev/rules.d/
 sudo udevadm control --reload-rules
 ```
 
@@ -466,7 +466,7 @@ when you have a functional solution post it on the project GitHub Discussions.
 To check if the manually installed OpenOCD starts, use something like:
 
 ```console
-$ ~/.local/xPacks/openocd/xpack-openocd-{{ page.version }}-{{ page.subversion }}/bin/openocd --version
+$ ~/.local/xPacks/openocd/xpack-openocd-{{ page.version }}-{{ page.xpack-subversion }}/bin/openocd --version
 xPack OpenOCD x86_64 Open On-Chip Debugger {{ page.version }}+dev ({{ page.version-date }})
 ```
 
@@ -485,7 +485,7 @@ macOS, to test a connection via ST/LINK v2 to the STM32F4DISCOVERY board,
 you can use the sample below:
 
 ```console
-$ ~/.local/xPacks/@xpack-dev-tools/openocd/{{ page.version }}-{{ page.subversion }}.1/.content/bin/openocd -f board/stm32f4discovery.cfg
+$ ~/.local/xPacks/@xpack-dev-tools/openocd/{{ page.version }}-{{ page.xpack-subversion }}.1/.content/bin/openocd -f board/stm32f4discovery.cfg
 xPack OpenOCD x86_64 Open On-Chip Debugger {{ page.version }}+dev ({{ page.version-date }})
 Licensed under GNU GPL v2
 For bug reports, read

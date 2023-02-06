@@ -8,7 +8,7 @@ toc: false
 comments: true
 
 version: "13.0.1"
-subversion: "1"
+xpack-subversion: "1"
 version-major: "13"
 
 date: 2021-05-22 00:27:00 +0300
@@ -117,7 +117,7 @@ GitHub [releases](https://github.com/xpack-dev-tools/clang-xpack/releases/) page
 To check if the xpm installed GCC starts, use something like:
 
 ```doscon
-C:\>%USERPROFILE%\AppData\Roaming\xPacks\@xpack-dev-tool\clang\{{ page.version }}-{{ page.subversion }}.1\.content\bin\clang.exe" --version
+C:\>%USERPROFILE%\AppData\Roaming\xPacks\@xpack-dev-tool\clang\{{ page.version }}-{{ page.xpack-subversion }}.1\.content\bin\clang.exe" --version
 xPack MinGW-w64 x86_64 clang version {{ page.version }}
 Target: x86_64-w64-windows-gnu
 Thread model: posix
@@ -131,7 +131,7 @@ The Windows versions of **xPack LLVM clang**
 are packed as ZIP files.
 Download the latest version named like:
 
-- `xpack-clang-{{ page.version }}-{{ page.subversion }}-win32-x64.zip`
+- `xpack-clang-{{ page.version }}-{{ page.xpack-subversion }}-win32-x64.zip`
 
 {% include note.html content="In case you wonder where the suffix comes
 from, it is exactly the Node.js `process.platform` and `process.arch`.
@@ -158,7 +158,7 @@ and `.content` to store the unpacked archive." %}
 To check if the manually installed GCC starts, use something like:
 
 ```doscon
-C:\>%USERPROFILE%\AppData\Roaming\xPacks\clang\xpack-clang-{{ page.version }}-{{ page.subversion }}\bin\clang.exe" --version
+C:\>%USERPROFILE%\AppData\Roaming\xPacks\clang\xpack-clang-{{ page.version }}-{{ page.xpack-subversion }}\bin\clang.exe" --version
 xPack MinGW-w64 x86_64 clang version {{ page.version }}
 Target: x86_64-w64-windows-gnu
 Thread model: posix
@@ -175,7 +175,7 @@ Thread model: posix
 To check if the xpm installed GCC starts, use something like:
 
 ```console
-$ ~/Library/xPacks/@xpack-dev-tools/clang/{{ page.version }}-{{ page.subversion }}.1/.content/bin/clang --version
+$ ~/Library/xPacks/@xpack-dev-tools/clang/{{ page.version }}-{{ page.xpack-subversion }}.1/.content/bin/clang --version
 xPack x86_64 clang version {{ page.version }}
 Target: x86_64-apple-darwin21.5.0
 Thread model: posix
@@ -189,8 +189,8 @@ The macOS versions of **xPack LLVM clang** are packed as a
 `.tar.gz` archive.
 Download the latest version named like:
 
-- `xpack-clang-{{ page.version }}-{{ page.subversion }}-darwin-x64.tar.gz`
-- `xpack-clang-{{ page.version }}-{{ page.subversion }}-darwin-arm64.tar.gz`
+- `xpack-clang-{{ page.version }}-{{ page.xpack-subversion }}-darwin-x64.tar.gz`
+- `xpack-clang-{{ page.version }}-{{ page.xpack-subversion }}-darwin-arm64.tar.gz`
 
 ### Unpack
 
@@ -202,8 +202,8 @@ unpack the archive and copy it to
 mkdir -p ~/.local/xPacks/clang
 cd ~/.local/xPacks/clang
 
-tar xvf ~/Downloads/xpack-clang-{{ page.version }}-{{ page.subversion }}-darwin-x64.tar.gz
-chmod -R -w xpack-clang-{{ page.version }}-{{ page.subversion }}
+tar xvf ~/Downloads/xpack-clang-{{ page.version }}-{{ page.xpack-subversion }}-darwin-x64.tar.gz
+chmod -R -w xpack-clang-{{ page.version }}-{{ page.xpack-subversion }}
 ```
 
 You may shorten the last folder name and keep only the version.
@@ -214,8 +214,8 @@ install location is different from the xpm install folders." %}
 The result is a structure like:
 
 ```console
-$ tree -L 2 /Users/ilg/.local/xPacks/clang/xpack-clang-{{ page.version }}-{{ page.subversion }}
-/Users/ilg/.local/xPacks/clang/xpack-clang-{{ page.version }}-{{ page.subversion }}
+$ tree -L 2 /Users/ilg/.local/xPacks/clang/xpack-clang-{{ page.version }}-{{ page.xpack-subversion }}
+/Users/ilg/.local/xPacks/clang/xpack-clang-{{ page.version }}-{{ page.xpack-subversion }}
 ├── README.md
 ├── bin
 │   ├── analyze-build
@@ -342,7 +342,7 @@ $ tree -L 2 /Users/ilg/.local/xPacks/clang/xpack-clang-{{ page.version }}-{{ pag
 To check if the manually installed GCC starts, use something like:
 
 ```console
-$ ~/.local/xPacks/clang/xpack-clang-{{ page.version }}-{{ page.subversion }}.1/bin/clang --version
+$ ~/.local/xPacks/clang/xpack-clang-{{ page.version }}-{{ page.xpack-subversion }}.1/bin/clang --version
 xPack x86_64 clang version {{ page.version }}
 Target: x86_64-apple-darwin21.5.0
 Thread model: posix
@@ -359,7 +359,7 @@ Thread model: posix
 To check if the xpm installed GCC starts, use something like:
 
 ```console
-$ ~/.local/xPacks/@xpack-dev-tools/clang/{{ page.version }}-{{ page.subversion }}.1/.content/bin/clang --version
+$ ~/.local/xPacks/@xpack-dev-tools/clang/{{ page.version }}-{{ page.xpack-subversion }}.1/.content/bin/clang --version
 xPack x86_64 clang version {{ page.version }}
 Target: x86_64-pc-linux-gnu
 Thread model: posix
@@ -373,9 +373,9 @@ The GNU/Linux versions of **xPack LLVM clang** 
 are packed as `.tar.gz` archives.
 Download the latest version named like:
 
-- `xpack-clang-{{ page.version }}-{{ page.subversion }}-linux-x64.tar.gz`
-- `xpack-clang-{{ page.version }}-{{ page.subversion }}-linux-arm.tar.gz`
-- `xpack-clang-{{ page.version }}-{{ page.subversion }}-linux-arm64.tar.gz`
+- `xpack-clang-{{ page.version }}-{{ page.xpack-subversion }}-linux-x64.tar.gz`
+- `xpack-clang-{{ page.version }}-{{ page.xpack-subversion }}-linux-arm.tar.gz`
+- `xpack-clang-{{ page.version }}-{{ page.xpack-subversion }}-linux-arm64.tar.gz`
 
 As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
 Ubuntu, but can be executed on most recent GNU/Linux distributions.
@@ -390,8 +390,8 @@ unpack the archive and copy it to
 mkdir -p ~/.local/xPacks/clang
 cd ~/.local/xPacks/clang
 
-tar xvf ~/Downloads/xpack-clang-{{ page.version }}-{{ page.subversion }}-linux-x64.tar.gz
-chmod -R -w xpack-clang-{{ page.version }}-{{ page.subversion }}
+tar xvf ~/Downloads/xpack-clang-{{ page.version }}-{{ page.xpack-subversion }}-linux-x64.tar.gz
+chmod -R -w xpack-clang-{{ page.version }}-{{ page.xpack-subversion }}
 ```
 
 You may shorten the last folder name and keep only the version.
@@ -404,8 +404,8 @@ and `.content` to store the unpacked archive." %}
 The result is a structure like:
 
 ```console
-$ tree -L 2 /home/ilg/.local/xPacks/clang/xpack-clang-{{ page.version }}-{{ page.subversion }}
-/home/ilg/.local/xPacks/clang/xpack-clang-{{ page.version }}-{{ page.subversion }}
+$ tree -L 2 /home/ilg/.local/xPacks/clang/xpack-clang-{{ page.version }}-{{ page.xpack-subversion }}
+/home/ilg/.local/xPacks/clang/xpack-clang-{{ page.version }}-{{ page.xpack-subversion }}
 ├── bin
 │   ├── analyze-build
 │   ├── clang -> clang-{{ page.version-major }}
@@ -565,7 +565,7 @@ $ tree -L 2 /home/ilg/.local/xPacks/clang/xpack-clang-{{ page.version }}-{{ page
 To check if the manually installed GCC starts, use something like:
 
 ```console
-$ ~/.local/xPacks/clang/xpack-clang-{{ page.version }}-{{ page.subversion }}/bin/clang --version
+$ ~/.local/xPacks/clang/xpack-clang-{{ page.version }}-{{ page.xpack-subversion }}/bin/clang --version
 xPack x86_64 clang version {{ page.version }}
 Target: x86_64-pc-linux-gnu
 Thread model: posix

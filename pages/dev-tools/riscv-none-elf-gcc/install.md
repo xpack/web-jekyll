@@ -8,7 +8,7 @@ toc: false
 comments: true
 
 version: "12.1.0"
-subversion: "2"
+xpack-subversion: "2"
 
 date: 2019-07-10 17:53:00 +0300
 
@@ -114,7 +114,7 @@ GitHub [releases](https://github.com/xpack-dev-tools/riscv-none-elf-gcc-xpack/re
 To check if the xpm installed GCC starts, use something like:
 
 ```doscon
-C:\>%USERPROFILE%\AppData\Roaming\xPacks\@xpack-dev-tools\riscv-none-elf-gcc\{{ page.version }}-{{ page.subversion }}.1\.content\bin\riscv-none-elf-gcc.exe" --version
+C:\>%USERPROFILE%\AppData\Roaming\xPacks\@xpack-dev-tools\riscv-none-elf-gcc\{{ page.version }}-{{ page.xpack-subversion }}.1\.content\bin\riscv-none-elf-gcc.exe" --version
 riscv-none-elf-gcc.exe (xPack GNU RISC-V Embedded GCC x86_64) {{ page.version }}
 ```
 
@@ -126,7 +126,7 @@ The Windows versions of **xPack GNU RISC-V Embedded GCC**
 are packed as ZIP files.
 Download the latest version named like:
 
-- `xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}-win32-x64.zip`
+- `xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.xpack-subversion }}-win32-x64.zip`
 
 {% include note.html content="In case you wonder where the suffix comes
 from, it is exactly the Node.js `process.platform` and `process.arch`.
@@ -156,7 +156,7 @@ for the executable in this location." %}
 To check if the manually installed GCC starts, use something like:
 
 ```dos
-C:\>%USERPROFILE%\AppData\Roaming\xPacks\riscv-none-elf-gcc\xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}\bin\riscv-none-elf-gcc.exe" --version
+C:\>%USERPROFILE%\AppData\Roaming\xPacks\riscv-none-elf-gcc\xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.xpack-subversion }}\bin\riscv-none-elf-gcc.exe" --version
 riscv-none-elf-gcc.exe (xPack GNU RISC-V Embedded GCC x86_64) {{ page.version }}
 ```
 
@@ -174,7 +174,7 @@ binaries, it is recommended to also install the **Windows Build Tools**." %}
 To check if the xpm installed GCC starts, use something like:
 
 ```console
-$ ~/.local/xPacks/@xpack-dev-tools/riscv-none-elf-gcc/{{ page.version }}-{{ page.subversion }}.1/.content/bin/riscv-none-elf-gcc --version
+$ ~/.local/xPacks/@xpack-dev-tools/riscv-none-elf-gcc/{{ page.version }}-{{ page.xpack-subversion }}.1/.content/bin/riscv-none-elf-gcc --version
 riscv-none-elf-gcc (xPack GNU RISC-V Embedded GCC x86_64) {{ page.version }}
 ```
 
@@ -186,8 +186,8 @@ The macOS versions of **xPack GNU RISC-V Embedded GCC**
 are packed as `.tar.gz` archives.
 Download the latest version named like:
 
-- `xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}-darwin-x64.tar.gz`
-- `xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}-darwin-arm64.tar.gz`
+- `xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.xpack-subversion }}-darwin-x64.tar.gz`
+- `xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.xpack-subversion }}-darwin-arm64.tar.gz`
 
 ### Unpack
 
@@ -199,8 +199,8 @@ unpack the archive and copy it to
 mkdir -p ~/.local/xPacks/riscv-none-elf-gcc
 cd ~/.local/xPacks/riscv-none-elf-gcc
 
-tar xvf ~/Downloads/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}-darwin-x64.tar.gz
-chmod -R -w xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}
+tar xvf ~/Downloads/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.xpack-subversion }}-darwin-x64.tar.gz
+chmod -R -w xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.xpack-subversion }}
 ```
 
 {% include note.html content="For manual installs, the recommended
@@ -214,8 +214,8 @@ for the executable in this location." %}
 The result is a structure like:
 
 ```console
-$ tree -L 2 /Users/ilg/.local/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}
-/Users/ilg/.local/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}/
+$ tree -L 2 /Users/ilg/.local/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.xpack-subversion }}
+/Users/ilg/.local/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.xpack-subversion }}/
 ├── README.md
 ├── bin
 │   ├── riscv-none-elf-addr2line
@@ -303,7 +303,7 @@ $ tree -L 2 /Users/ilg/.local/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc
 To check if the manually installed GCC starts, use something like:
 
 ```console
-$ ~/.local/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}/bin/riscv-none-elf-gcc --version
+$ ~/.local/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.xpack-subversion }}/bin/riscv-none-elf-gcc --version
 riscv-none-elf-gcc (xPack GNU RISC-V Embedded GCC x86_64) {{ page.version }}
 ```
 
@@ -318,7 +318,7 @@ riscv-none-elf-gcc (xPack GNU RISC-V Embedded GCC x86_64) {{ page.version }}
 To check if the xpm installed GCC starts, use something like:
 
 ```console
-$ ~/.local/xPacks/@xpack-dev-tools/riscv-none-elf-gcc/{{ page.version }}-{{ page.subversion }}.1/.content/bin/riscv-none-elf-gcc --version
+$ ~/.local/xPacks/@xpack-dev-tools/riscv-none-elf-gcc/{{ page.version }}-{{ page.xpack-subversion }}.1/.content/bin/riscv-none-elf-gcc --version
 riscv-none-elf-gcc (xPack GNU RISC-V Embedded GCC x86_64) {{ page.version }}
 ```
 
@@ -330,9 +330,9 @@ The GNU/Linux versions of **xPack GNU RISC-V Embedded GCC** 
 are packed as `.tar.gz` archives.
 Download the latest version named like:
 
-- `xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}-linux-x64.tar.gz`
-- `xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}-linux-arm.tar.gz`
-- `xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}-linux-arm64.tar.gz`
+- `xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.xpack-subversion }}-linux-x64.tar.gz`
+- `xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.xpack-subversion }}-linux-arm.tar.gz`
+- `xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.xpack-subversion }}-linux-arm64.tar.gz`
 
 As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
 Ubuntu, but can be executed on most recent GNU/Linux distributions.
@@ -341,14 +341,14 @@ Ubuntu, but can be executed on most recent GNU/Linux distributions.
 
 To manually install the xPack GNU RISC-V Embedded GCC,
 unpack the archive and move it to
-`~/.local/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}`:
+`~/.local/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.xpack-subversion }}`:
 
 ```sh
 mkdir -p ~/.local/xPacks/riscv-none-elf-gcc
 cd ~/.local/xPacks/riscv-none-elf-gcc
 
-tar xvf ~/Downloads/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}-linux-x64.tar.gz
-chmod -R -w xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}
+tar xvf ~/Downloads/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.xpack-subversion }}-linux-x64.tar.gz
+chmod -R -w xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.xpack-subversion }}
 ```
 
 {% include note.html content="For manual installs, the recommended
@@ -364,8 +364,8 @@ for the executable in this location." %}
 The result is a structure like:
 
 ```console
-$ tree -L 2 /home/ilg/.local/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}/
-/home/ilg/.local/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}/
+$ tree -L 2 /home/ilg/.local/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.xpack-subversion }}/
+/home/ilg/.local/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.xpack-subversion }}/
 ├── bin
 │   ├── libgpm.so.2 -> libgpm.so.2.1.0
 │   ├── libgpm.so.2.1.0
@@ -471,7 +471,7 @@ $ tree -L 2 /home/ilg/.local/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-
 To check if the manually installed GCC starts, use something like:
 
 ```console
-$ ~/.local/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.subversion }}/bin/riscv-none-elf-gcc --version
+$ ~/.local/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.xpack-subversion }}/bin/riscv-none-elf-gcc --version
 riscv-none-elf-gcc (xPack GNU RISC-V Embedded GCC x86_64) {{ page.version }}
 ```
 
