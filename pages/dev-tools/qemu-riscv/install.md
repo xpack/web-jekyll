@@ -55,7 +55,7 @@ The install location can be configured using the
 
 {% include tip.html content=include_1 %}
 
-{% include tip.html content="The archive content is unpacked in a folder
+{% include tip.html content="The archive content is unpacked into a folder
 named `.content`. On some platforms
 this might be hidden for normal browsing, and require
 separate options (like `ls -A`) or, in file browsers, to enable

@@ -54,11 +54,6 @@ in the global xPacks store, which is a platform dependent folder
 (check the output of the `xpm` command for the actual folder used on
 your platform).
 
-The archive content is unpacked in a folder named `.content`. On some platforms
-this might be hidden for normal browsing, and require
-separate options (like `ls -A`) or, in file browsers, to enable
-configurations like **Show Hidden Files**.
-
 {% capture include_1 %}
 The install location can be configured using the
 `XPACKS_STORE_FOLDER` environment variable; for more details please check the
@@ -67,7 +62,7 @@ The install location can be configured using the
 
 {% include tip.html content=include_1 %}
 
-{% include tip.html content="The archive content is unpacked in a folder
+{% include tip.html content="The archive content is unpacked into a folder
 named `.content`. On some platforms
 this might be hidden for normal browsing, and require
 separate options (like `ls -A`) or, in file browsers, to enable
