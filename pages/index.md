@@ -29,8 +29,7 @@ The expected benefits are more efficient **code sharing** and
 
 _Did you ever face the situation when building a perfectly fine and
 functional project suddenly failed after
-upgrading the system? In other words, were you hit by the dependencies
-hell? If so, xPacks may help you._
+upgrading the system? If so, xPacks may help you._
 
 **xPacks** are general purpose versioned software projects,
 built on top of the highly successful
@@ -46,15 +45,19 @@ multiple versions, but they **can be installed in parallel**, each
 project/configuration having its own set of dependencies,
 thus upgrading the system no longer impacts the project.
 
+{% include note.html content="Nix also provides reproducible builds,
+why not use it? The short answer is... _\"because of Windows\"_." %}
+
+Although the current focus is on **C/C++**, most of the tools are
+language agnostic
+and can be used with other programming languages as well.
+
 {% include note.html content="Most of the tools are generic and do not
 mandate the use of a package manager; the binary xPacks are plain archives
 that can be extracted manually; the source xPacks can be linked to
 projects as Git submodules, etc; they all can be used in traditional
 environments too, just that this requires more work." %}
 
-Although the current focus is on **C/C++**, most of the tools are
-language agnostic
-and can be used with other programming languages as well.
 
 Based on the installed content, there are currently two
 types of xPacks: **source** and **binary**:
@@ -90,7 +93,7 @@ Planned:
 These projects are hosted in the GitHub
 [`xpack`](https://github.com/xpack/) organisation.
 
-## xPack based Development Tools
+## xPack 3rd Party Development Tools
 
 The main binary tools packed as xPacks are (in alphabetical order):
 
@@ -108,7 +111,7 @@ The main binary tools packed as xPacks are (in alphabetical order):
 - [`@xpack-dev-tools/windows-build-tools`]({{ site.baseurl }}/dev-tools/windows-build-tools/) - the **xPack Windows Build Tools**
 - [`@xpack-dev-tools/mingw-w64-gcc`]({{ site.baseurl }}/dev-tools/mingw-w64-gcc/) - the **xPack MinGW-w64 GCC** toolchain
 
-Other:
+Other tools, used for building the above:
 
 - [`@xpack-dev-tools/m4`]({{ site.baseurl }}/dev-tools/m4/) - the **xPack GNU M4**
 - [`@xpack-dev-tools/patchelf`]({{ site.baseurl }}/dev-tools/patchelf/) - the **xPack NixOS PatchELF**
