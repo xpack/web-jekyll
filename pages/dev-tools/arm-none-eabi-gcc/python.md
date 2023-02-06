@@ -22,7 +22,7 @@ are standalone and include a Python runtime, so
 these steps are no longer required." %}
 
 Starting with GDB 7, support for
-[extending GDB with Python scripting](https://sourceware.org/gdb/current/onlinedocs/gdb/Python.html)
+[extending GDB with Python scripting](https://sourceware.org/gdb/onlinedocs/gdb/Python.html)
 was added to GDB.
 
 The **xPack GNU Arm Embedded GCC** also supports this, by providing two
