@@ -318,6 +318,76 @@ defaults:
 
   -
     scope:
+      path: "pages/dev-tools/m4"
+      type: "pages"
+    values:
+      layout: "page"
+      comments: false
+      search: true
+      sidebar: m4
+      topnav: topnav
+      author: Liviu Ionescu
+      toc: true
+      github_editme: true
+
+  -
+    scope:
+      path: "pages/dev-tools/patchelf"
+      type: "pages"
+    values:
+      layout: "page"
+      comments: false
+      search: true
+      sidebar: patchelf
+      topnav: topnav
+      author: Liviu Ionescu
+      toc: true
+      github_editme: true
+
+  -
+    scope:
+      path: "pages/dev-tools/pkg-config"
+      type: "pages"
+    values:
+      layout: "page"
+      comments: false
+      search: true
+      sidebar: "pkg-config"
+      topnav: topnav
+      author: Liviu Ionescu
+      toc: true
+      github_editme: true
+
+  -
+    scope:
+      path: "pages/dev-tools/realpath"
+      type: "pages"
+    values:
+      layout: "page"
+      comments: false
+      search: true
+      sidebar: realpath
+      topnav: topnav
+      author: Liviu Ionescu
+      toc: true
+      github_editme: true
+
+  -
+    scope:
+      path: "pages/dev-tools/sed"
+      type: "pages"
+    values:
+      layout: "page"
+      comments: false
+      search: true
+      sidebar: sed
+      topnav: topnav
+      author: Liviu Ionescu
+      toc: true
+      github_editme: true
+
+  -
+    scope:
       path: "pages/dev-tools/wine"
       type: "pages"
     values:

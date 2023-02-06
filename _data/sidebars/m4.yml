@@ -1,0 +1,27 @@
+# This is the m4 sidebar TOC.
+# The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: Sidebar
+  product: GNU M4
+  # version: 1.0
+  folders:
+
+  - title: Getting Started
+    output: web
+    folderitems:
+    - title: Overview
+      url: /dev-tools/m4/
+      output: web
+    - title: Install
+      url: /dev-tools/m4/install/
+      output: web
+    - title: Support
+      url: /dev-tools/m4/support/
+      output: web
+    - title: FAQ
+      url: /dev-tools/m4/faq/
+      output: web
+    - title: Releases
+      url: /dev-tools/m4/releases/
+      output: web
