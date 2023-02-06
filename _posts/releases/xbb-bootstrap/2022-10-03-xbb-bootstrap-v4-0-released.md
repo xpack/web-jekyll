@@ -17,7 +17,7 @@ tags:
 
 ---
 
-[The xPack XBB Bootstrap](https://xpack.github.io/dev-tools/dev-tools/xbb-bootstrap/)
+[The xPack XBB Bootstrap](https://xpack.github.io/dev-tools/xbb-bootstrap/)
 is a temporary solution intended to replace the functionality
 provided by the XBB v3.4 Docker images until separate packages will
 be available with all required tools.
