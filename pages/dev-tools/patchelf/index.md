@@ -33,7 +33,7 @@ Developer & maintainer pages:
 The **xPack NixOS PatchELF** is a cross-platform binary distribution of the
 [NixOS PatchELF](https://github.com/NixOS/patchelf) project,
 an open source project hosted on
-[GitLab](https://gitlab.patchelfhq.org/).
+[GitHub](https://github.com/NixOS/patchelf).
 
 ## Benefits
 
