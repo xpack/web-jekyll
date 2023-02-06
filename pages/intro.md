@@ -37,6 +37,14 @@ by providing a simple and uniform solution of
 installing different versions of the same package in different
 folders, and managing dependencies.
 
+## Nix also provides reproducible builds, plus lots of packages, why bother with xPacks?
+
+Nix is a great project, and takes a very strict path in controlling the
+versions, down to the individual library. However, by design, it uses
+links to files, which are not available (or are not reliable) on Windows,
+thus Nix is currently available only on GNU/Linux and macOS.
+Plus that the Nix language requires quite some efforts to master.
+
 ## Why bother to manage versions when auto-configure can sort out the differences?
 
 The traditional way of dealing with different versions and variations between
@@ -141,20 +149,19 @@ for details." %}
 A more automated method is to use `xpm init`:
 
 ```console
-$ mkdir xyz
-$ cd xyz
-$ xpm init --verbose
+% mkdir xyz && cd xyz
+% xpm init --verbose
 xPack manager - create an xPack, empty or from a template
 Creating project 'xyz'...
 File 'package.json' generated.
 File 'LICENSE' generated.
 
-'xpm init' completed in 98 ms.
-$ ls -l
+'xpm init' completed in 167 ms.
+% ls -l
 total 16
--rw-r--r--  1 ilg  staff  1070 Jul  1 23:33 LICENSE
--rw-r--r--  1 ilg  staff   645 Jul  1 23:33 package.json
-$ cat package.json
+-rw-r--r--  1 ilg  staff  1070 Feb  6 19:31 LICENSE
+-rw-r--r--  1 ilg  staff   818 Feb  6 19:31 package.json
+% cat package.json
 {
   "name": "@<scope>/xyz",
   "version": "0.1.0",
@@ -165,12 +172,12 @@ $ cat package.json
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/<user-id>/xyz.git"
+    "url": "https://github.com/<user-id>/xyz.git"
   },
+  "homepage": "https://github.com/<user-id>/xyz/",
   "bugs": {
     "url": "https://github.com/<user-id>/xyz/issues/"
   },
-  "homepage": "https://github.com/<user-id>/xyz/",
   "keywords": [
     "xpack"
   ],
@@ -183,9 +190,16 @@ $ cat package.json
   "config": {},
   "dependencies": {},
   "devDependencies": {},
-  "xpack": {}
+  "xpack": {
+    "minimumXpmRequired": "0.14.8",
+    "dependencies": {},
+    "devDependencies": {},
+    "properties": {},
+    "actions": {},
+    "buildConfigurations": {}
+  }
 }
-$
+%
 ```
 
 ## Why would I convert my project to an xPack?
@@ -203,7 +217,7 @@ them, please continue to read how binary and source xPacks work.
 
 Let's assume that 'my-awesome-project' needs the `arm-none-eabi-gcc`
 toolchain to build,
-and not any version but a specific one, like `10.2.1`; it also needs
+and not any version but a specific one, like `12.2.1`; it also needs
 the latest CMake, ninja and the liquidjs npm module.
 
 For this, in the project folder, issue the following command, which
@@ -211,11 +225,11 @@ will install the required tools in a global xPacks store location, and add links
 to them.
 
 ```console
-$ xpm install @xpack-dev-tools/arm-none-eabi-gcc@10.2.1-1.1.2 @xpack-dev-tools/cmake@latest @xpack-dev-tools/ninja-build@latest liquidjs@latest --verbose
+% xpm install @xpack-dev-tools/arm-none-eabi-gcc@12.2.1-1.2.1 @xpack-dev-tools/cmake@latest @xpack-dev-tools/ninja-build@latest --verbose
 xPack manager - install package(s)
 
-Processing @xpack-dev-tools/arm-none-eabi-gcc@10.2.1-1.1.2...
-Folder 'xpacks/xpack-dev-tools-arm-none-eabi-gcc' linked to global '@xpack-dev-tools/arm-none-eabi-gcc/10.2.1-1.1.2'.
+Processing @xpack-dev-tools/arm-none-eabi-gcc@12.2.1-1.2.1...
+Folder 'xpacks/xpack-dev-tools-arm-none-eabi-gcc' linked to global '@xpack-dev-tools/arm-none-eabi-gcc/12.2.1-1.2.1'.
 File 'xpacks/.bin/arm-none-eabi-addr2line' linked to '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-addr2line'.
 File 'xpacks/.bin/arm-none-eabi-ar' linked to '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-ar'.
 ...
@@ -225,26 +239,29 @@ File 'xpacks/.bin/arm-none-eabi-gcc' linked to '../xpack-dev-tools-arm-none-eabi
 File 'xpacks/.bin/arm-none-eabi-strip' linked to '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-strip'.
 Adding '@xpack-dev-tools/arm-none-eabi-gcc' to 'devDependencies'...
 
-Processing @xpack-dev-tools/cmake@3.19.2-2.1...
-Folder 'xpacks/xpack-dev-tools-cmake' linked to global '@xpack-dev-tools/cmake/3.19.2-2.1'.
+Processing @xpack-dev-tools/cmake@3.23.5-1.1...
+Folder 'xpacks/xpack-dev-tools-cmake' linked to global '@xpack-dev-tools/cmake/3.23.5-1.1'.
 File 'xpacks/.bin/ccmake' linked to '../xpack-dev-tools-cmake/.content/bin/ccmake'.
 File 'xpacks/.bin/cmake' linked to '../xpack-dev-tools-cmake/.content/bin/cmake'.
 File 'xpacks/.bin/cpack' linked to '../xpack-dev-tools-cmake/.content/bin/cpack'.
 File 'xpacks/.bin/ctest' linked to '../xpack-dev-tools-cmake/.content/bin/ctest'.
 Adding '@xpack-dev-tools/cmake' to 'devDependencies'...
 
-Processing @xpack-dev-tools/ninja-build@1.10.2-2.1...
-Folder 'xpacks/xpack-dev-tools-ninja-build' linked to global '@xpack-dev-tools/ninja-build/1.10.2-2.1'.
+Processing @xpack-dev-tools/ninja-build@1.11.1-2.1...
+Folder 'xpacks/xpack-dev-tools-ninja-build' linked to global '@xpack-dev-tools/ninja-build/1.11.1-2.1'.
 File 'xpacks/.bin/ninja' linked to '../xpack-dev-tools-ninja-build/.content/bin/ninja'.
 Adding '@xpack-dev-tools/ninja-build' to 'devDependencies'...
 
-Processing liquidjs@9.23.3...
-Folder 'node_modules/liquidjs' linked to global 'liquidjs/9.23.3'.
-File 'node_modules/.bin/liquidjs' linked to '../liquidjs/bin/liquid.js'.
-File 'node_modules/.bin/liquid' linked to '../liquidjs/bin/liquid.js'.
-Adding 'liquidjs' to 'devDependencies'...
+'xpm install' completed in 194 ms.
+% npm install liquidjs --save-dev
 
-'xpm install' completed in 1.364 sec.
+added 1 package, and audited 2 packages in 594ms
+
+1 package is looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+%
 ```
 
 This will also update the `package.json` with details about the dependencies:
@@ -255,13 +272,21 @@ This will also update the `package.json` with details about the dependencies:
   "version": "0.1.0",
   "...": "...",
   "dependencies": {},
-  "devDependencies": {
-    "@xpack-dev-tools/arm-none-eabi-gcc": "10.2.1-1.1.2",
-    "@xpack-dev-tools/cmake": "3.19.2-2.1",
-    "@xpack-dev-tools/ninja-build": "1.10.2-2.1",
-    "liquidjs": "^9.23.3"
+  "xpack": {
+    "minimumXpmRequired": "0.14.8",
+    "dependencies": {},
+    "devDependencies": {
+      "@xpack-dev-tools/arm-none-eabi-gcc": "12.2.1-1.2.1",
+      "@xpack-dev-tools/cmake": "3.23.5-1.1",
+      "@xpack-dev-tools/ninja-build": "1.11.1-2.1"
+    },
+    "properties": {},
+    "actions": {},
+    "buildConfigurations": {}
   },
-  "xpack": {}
+  "devDependencies": {
+    "liquidjs": "^10.4.0"
+  }
 }
 ```
 
@@ -286,13 +311,22 @@ will be created (or `.cmd` stubs on Windows).
 ```console
 $ tree -a
 .
-├── .DS_Store
 ├── LICENSE
 ├── node_modules
 │   ├── .bin
 │   │   ├── liquid -> ../liquidjs/bin/liquid.js
 │   │   └── liquidjs -> ../liquidjs/bin/liquid.js
-│   └── liquidjs -> /Users/ilg/Library/xPacks/liquidjs/9.23.3
+│   ├── .package-lock.json
+│   └── liquidjs
+│       ├── CHANGELOG.md
+│       ├── LICENSE
+│       ├── README.md
+│       ├── bin
+│       │   └── liquid.js
+│       ├── dist
+│       │   └── ...
+│       └── package.json
+├── package-lock.json
 ├── package.json
 └── xpacks
     ├── .bin
@@ -315,9 +349,11 @@ $ tree -a
     │   ├── arm-none-eabi-gdb-add-index -> ../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gdb-add-index
     │   ├── arm-none-eabi-gdb-add-index-py3 -> ../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gdb-add-index-py3
     │   ├── arm-none-eabi-gdb-py3 -> ../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gdb-py3
+    │   ├── arm-none-eabi-gfortran -> ../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gfortran
     │   ├── arm-none-eabi-gprof -> ../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gprof
     │   ├── arm-none-eabi-ld -> ../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-ld
     │   ├── arm-none-eabi-ld.bfd -> ../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-ld.bfd
+    │   ├── arm-none-eabi-lto-dump -> ../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-lto-dump
     │   ├── arm-none-eabi-nm -> ../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-nm
     │   ├── arm-none-eabi-objcopy -> ../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-objcopy
     │   ├── arm-none-eabi-objdump -> ../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-objdump
@@ -331,11 +367,11 @@ $ tree -a
     │   ├── cpack -> ../xpack-dev-tools-cmake/.content/bin/cpack
     │   ├── ctest -> ../xpack-dev-tools-cmake/.content/bin/ctest
     │   └── ninja -> ../xpack-dev-tools-ninja-build/.content/bin/ninja
-    ├── xpack-dev-tools-arm-none-eabi-gcc -> /Users/ilg/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/10.2.1-1.1.2
-    ├── xpack-dev-tools-cmake -> /Users/ilg/Library/xPacks/@xpack-dev-tools/cmake/3.19.2-2.1
-    └── xpack-dev-tools-ninja-build -> /Users/ilg/Library/xPacks/@xpack-dev-tools/ninja-build/1.10.2-2.1
+    ├── xpack-dev-tools-arm-none-eabi-gcc -> /Users/ilg/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/12.2.1-1.2.1
+    ├── xpack-dev-tools-cmake -> /Users/ilg/Library/xPacks/@xpack-dev-tools/cmake/3.23.5-1.1
+    └── xpack-dev-tools-ninja-build -> /Users/ilg/Library/xPacks/@xpack-dev-tools/ninja-build/1.11.1-2.1
 
-8 directories, 40 files
+22 directories, 172 files
 ```
 
 When later running actions like `xpm run build`, the `PATH` is automatically
@@ -357,42 +393,49 @@ Even simpler. Let's assume that the 'xyz project' also needs the
 `@micro-os-plus/diag-trace`.
 
 ```console
-$ xpm install @micro-os-plus/diag-trace --verbose
+% xpm install @micro-os-plus/diag-trace --verbose
 xPack manager - install package(s)
 
-Processing @micro-os-plus/diag-trace@1.0.7...
-Folder 'xpacks/micro-os-plus-diag-trace' linked to global '@micro-os-plus/diag-trace/1.0.7'.
+Processing @micro-os-plus/diag-trace@4.2.0...
+Adding to central store '/Users/ilg/Library/xPacks/@micro-os-plus/diag-trace/4.2.0'...
+Changing permissions to read-only...
+Folder 'xpacks/micro-os-plus-diag-trace' linked to global '@micro-os-plus/diag-trace/4.2.0'.
 Adding '@micro-os-plus/diag-trace' to 'dependencies'...
 
-'xpm install' completed in 136 ms.
+'xpm install' completed in 3.693 sec.
+%
 ```
 
 This results in another link in the `xpacks` folder
 (mind the linearised package name):
 
 ```console
-$ tree xpacks
+% tree xpacks
 xpacks
-├── micro-os-plus-diag-trace -> /Users/ilg/Library/xPacks/@micro-os-plus/diag-trace/1.0.7
-├── xpack-dev-tools-arm-none-eabi-gcc -> /Users/ilg/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/10.2.1-1.1.2
-├── xpack-dev-tools-cmake -> /Users/ilg/Library/xPacks/@xpack-dev-tools/cmake/3.19.2-2.1
-└── xpack-dev-tools-ninja-build -> /Users/ilg/Library/xPacks/@xpack-dev-tools/ninja-build/1.10.2-2.1
+├── micro-os-plus-diag-trace -> /Users/ilg/Library/xPacks/@micro-os-plus/diag-trace/4.2.0
+├── xpack-dev-tools-arm-none-eabi-gcc -> /Users/ilg/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/12.2.1-1.2.1
+├── xpack-dev-tools-cmake -> /Users/ilg/Library/xPacks/@xpack-dev-tools/cmake/3.23.5-1.1
+└── xpack-dev-tools-ninja-build -> /Users/ilg/Library/xPacks/@xpack-dev-tools/ninja-build/1.11.1-2.1
 
 4 directories, 0 files
-$ tree xpacks/micro-os-plus-diag-trace
+% tree xpacks/micro-os-plus-diag-trace
 xpacks/micro-os-plus-diag-trace
 ├── CHANGELOG.md
+├── CMakeLists.txt
 ├── LICENSE
 ├── README.md
 ├── include
 │   └── micro-os-plus
 │       └── diag
 │           └── trace.h
+├── meson.build
 ├── package.json
-└── src
-    └── trace.cpp
+├── src
+│   └── trace.cpp
+└── xpack.json
 
-4 directories, 6 files
+4 directories, 9 files
+%
 ```
 
 and the addition of a new dependency in `package.json`:
@@ -402,16 +445,23 @@ and the addition of a new dependency in `package.json`:
   "name": "@<scope>/xyz",
   "version": "0.1.0",
   "...": "...",
-  "dependencies": {
-    "@micro-os-plus/diag-trace": "^1.0.7"
+  "xpack": {
+    "minimumXpmRequired": "0.14.8",
+    "dependencies": {
+      "@micro-os-plus/diag-trace": "^4.2.0"
+    },
+    "devDependencies": {
+      "@xpack-dev-tools/arm-none-eabi-gcc": "12.2.1-1.2.1",
+      "@xpack-dev-tools/cmake": "3.23.5-1.1",
+      "@xpack-dev-tools/ninja-build": "1.11.1-2.1"
+    },
+    "properties": {},
+    "actions": {},
+    "buildConfigurations": {}
   },
   "devDependencies": {
-    "@xpack-dev-tools/arm-none-eabi-gcc": "10.2.1-1.1.2",
-    "@xpack-dev-tools/cmake": "3.19.2-2.1",
-    "@xpack-dev-tools/ninja-build": "1.10.2-2.1",
-    "liquidjs": "^9.23.3"
-  },
-  "xpack": {}
+    "liquidjs": "^10.4.0"
+  }
 }
 ```
 
@@ -426,17 +476,19 @@ two source xPacks, one Node module and three binary xPacks:
   "version": "1.0.0",
   "description": "An xPack with a blinky application running on HiFive1",
   "...": "...",
-  "dependencies": {
-    "@micro-os-plus/diag-trace": "^1.0.6",
-    "@sifive/hifive1-board": "^1.0.3"
-  },
   "devDependencies": {
-    "xmake": "^0.3.9",
-    "@gnu-mcu-eclipse/riscv-none-gcc": "^7.2.0-2.1",
-    "@gnu-mcu-eclipse/openocd": "^0.10.0-7.1",
-    "@gnu-mcu-eclipse/windows-build-tools": "^2.10.1"
+    "xmake": "^0.3.9"
   },
   "xpack": {
+    "dependencies": {
+      "@micro-os-plus/diag-trace": "^1.0.6",
+      "@sifive/hifive1-board": "^1.0.3"
+    },
+    "devDependencies": {
+      "@gnu-mcu-eclipse/riscv-none-gcc": "^7.2.0-2.1",
+      "@gnu-mcu-eclipse/openocd": "^0.10.0-7.1",
+      "@gnu-mcu-eclipse/windows-build-tools": "^2.10.1"
+    }
   }
 }
 ```
@@ -523,9 +575,9 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14]
+        node-version: [14, 16, 18]
         # https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners
-        os: [ubuntu-18.04, macos-10.15, windows-2019]
+        os: [ubuntu-22.04, macos-12, windows-2022]
 
     steps:
     - name: Checkout
