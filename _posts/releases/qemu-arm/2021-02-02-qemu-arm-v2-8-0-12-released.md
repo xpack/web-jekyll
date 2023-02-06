@@ -23,7 +23,7 @@ tags:
 
 ---
 
-[The xPack QEMU Arm](https://xpack.github.io/qemu-arm/)
+[The xPack QEMU Arm](https://xpack.github.io/dev-tools/qemu-arm/)
 is the **xPack** distribution of the
 [QEMU](http://www.qemu.org), with several extensions for Arm Cortex-M
 devices.

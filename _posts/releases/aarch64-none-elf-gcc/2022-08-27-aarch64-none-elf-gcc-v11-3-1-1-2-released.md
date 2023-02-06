@@ -29,7 +29,7 @@ tags:
 
 ---
 
-[The xPack GNU AArch64 Embedded GCC](https://xpack.github.io/aarch64-none-elf-gcc/)
+[The xPack GNU AArch64 Embedded GCC](https://xpack.github.io/dev-tools/aarch64-none-elf-gcc/)
 is a standalone cross-platform binary distribution of
 [GNU AArch64 Embedded Toolchain](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain).
 

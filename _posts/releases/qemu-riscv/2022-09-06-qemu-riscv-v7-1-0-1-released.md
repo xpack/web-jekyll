@@ -28,7 +28,7 @@ tags:
 
 ---
 
-[The xPack QEMU RISC-V](https://xpack.github.io/qemu-riscv/)
+[The xPack QEMU RISC-V](https://xpack.github.io/dev-tools/qemu-riscv/)
 is a standalone cross-platform binary distribution of
 [QEMU](http://www.qemu.org).
 

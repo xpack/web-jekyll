@@ -24,7 +24,7 @@ tags:
 
 ---
 
-[The xPack GNU RISC-V Embedded GCC](https://xpack.github.io/riscv-none-embed-gcc/)
+[The xPack GNU RISC-V Embedded GCC](https://xpack.github.io/dev-tools/riscv-none-embed-gcc/)
 is the **xPack** distribution of the
 [SiFive RISC-V GCC](https://github.com/sifive/freedom-tools/releases).
 

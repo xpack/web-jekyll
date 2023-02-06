@@ -23,7 +23,7 @@ tags:
 
 ---
 
-[The xPack CMake](https://xpack.github.io/cmake/)
+[The xPack CMake](https://xpack.github.io/dev-tools/cmake/)
 is a standalone cross-platform binary distribution of
 [CMake](http://cmake.org).
 

@@ -24,7 +24,7 @@ tags:
 
 ---
 
-[The xPack Ninja Build](https://xpack.github.io/ninja-build/)
+[The xPack Ninja Build](https://xpack.github.io/dev-tools/ninja-build/)
 is the **xPack** distribution of the
 [Ninja](https://ninja-build.org) build system.
 

@@ -22,7 +22,7 @@ tags:
 
 ---
 
-[The xPack OpenOCD](https://xpack.github.io/openocd/)
+[The xPack OpenOCD](https://xpack.github.io/dev-tools/openocd/)
 is the **xPack** distribution of
 [OpenOCD](http://openocd.org).
 

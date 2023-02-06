@@ -24,7 +24,7 @@ tags:
 
 ---
 
-[The xPack GNU realpath](https://xpack.github.io/realpath/)
+[The xPack GNU realpath](https://xpack.github.io/dev-tools/realpath/)
 is a standalone cross-platform binary distribution of
 **GNU realpath**, part of
 [GNU core utilities](https://www.gnu.org/software/coreutils/).

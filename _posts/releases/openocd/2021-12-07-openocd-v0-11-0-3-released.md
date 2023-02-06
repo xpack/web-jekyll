@@ -20,7 +20,7 @@ tags:
 
 ---
 
-[The xPack OpenOCD](https://xpack.github.io/openocd/)
+[The xPack OpenOCD](https://xpack.github.io/dev-tools/openocd/)
 is a standalone cross-platform binary distribution of
 [OpenOCD](http://openocd.org).
 
