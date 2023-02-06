@@ -110,7 +110,7 @@ xpm uninstall --global @xpack-dev-tools/pkg-config
 ## Compliance
 
 The xPack pkg-config generally follows the official
-[pkg-config](http://pkg-config.org) releases.
+[pkg-config](https://pkgconfig.freedesktop.org/releases/) releases.
 
 The current version is based on:
 
