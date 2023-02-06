@@ -31,7 +31,7 @@ Developer & maintainer pages:
 ## Overview
 
 The **xPack GNU M4** is a cross-platform binary distribution of the
-[GNU M4](https://www.m4hq.org) project,
+[GNU M4](https://www.gnu.org/software/m4/) project,
 an open source project hosted on
 [Savannah](http://savannah.gnu.org/projects/m4/).
 
