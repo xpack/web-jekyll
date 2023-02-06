@@ -110,24 +110,12 @@ The main binary tools packed as xPacks are (in alphabetical order):
 
 Other:
 
+- [`@xpack-dev-tools/m4`]({{ site.baseurl }}/dev-tools/m4/) - the **xPack GNU M4**
+- [`@xpack-dev-tools/patchelf`]({{ site.baseurl }}/dev-tools/patchelf/) - the **xPack NixOS PatchELF**
+- [`@xpack-dev-tools/pkg-config`]({{ site.baseurl }}/dev-tools/pkg-config/) - the **xPack pkg-config**
+- [`@xpack-dev-tools/realpath`]({{ site.baseurl }}/dev-tools/realpath/) - the **xPack GNU realpath**
+- [`@xpack-dev-tools/sed`]({{ site.baseurl }}/dev-tools/sed/) - the **xPack GNU sed**
 - [`@xpack-dev-tools/wine`]({{ site.baseurl }}/dev-tools/wine/) - the **xPack WineHQ**
-
-Planned:
-
-- `@xpack-dev-tools/mingw-clang` - the **xPack Mingw-w64 LLVM clang**
-- `@xpack-dev-tools/coreutils` - the **xPack GNU coreutils**
-- `@xpack-dev-tools/make` - the **xPack GNU make**
-- `@xpack-dev-tools/automake` - the **xPack automake**
-- `@xpack-dev-tools/autoconfig` - the **xPack autoconfig**
-- `@xpack-dev-tools/pkg-config` - the **xPack pkg-config**
-- `@xpack-dev-tools/python` - the **xPack Python 3**
-- `@xpack-dev-tools/patchelf` - the **xPack patchelf**
-- `@xpack-dev-tools/gawk` - the **xPack GNU AWK**
-- `@xpack-dev-tools/gsed` - the **xPack GNU sed**
-- `@xpack-dev-tools/dos2unix` - the **xPack dos2unix**
-- `@xpack-dev-tools/m4` - the **xPack m4**
-- `@xpack-dev-tools/diffutils` - the **xPack GNU diffutils**
-- possibly more...
 
 These projects are hosted in the GitHub
 [`xpack-dev-tools`](https://github.com/xpack-dev-tools) group
