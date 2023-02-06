@@ -54,7 +54,7 @@ The binary files are available from GitHub [Releases]({{ page.download_url }}).
 
 The full details of installing the **xPack NixOS PatchELF** on various platforms
 are presented in the separate
-[Install]({{ site.baseurl }}/patchelf/install/) page.
+[Install]({{ site.baseurl }}/dev-tools/patchelf/install/) page.
 
 ### Easy install
 
