@@ -560,7 +560,7 @@ const alsoOk = "String contains 'single' quotes or apostrophe"
 const paramOk = `Back quotes string with ${parameter}`
 ```
 
-### Whitespaces
+### White spaces
 
 Put a single space in front of `(` for anything other than a function call
 
