@@ -80,3 +80,4 @@ allowed-tags:
   - realpath
   - sed
   - wine
+  - readlink
