@@ -94,19 +94,19 @@ These projects are hosted in the GitHub
 
 The main binary tools packed as xPacks are (in alphabetical order):
 
-- [`@xpack-dev-tools/aarch64-none-elf-gcc`]({{ site.baseurl }}/aarch64-none-elf-gcc/) - the **xPack GNU AArch64 Embedded GCC** toolchain
-- [`@xpack-dev-tools/arm-none-eabi-gcc`]({{ site.baseurl }}/arm-none-eabi-gcc/) - the **xPack GNU Arm Embedded GCC** toolchain
-- [`@xpack-dev-tools/clang`]({{ site.baseurl }}/clang/) - the **xPack LLVM clang**
-- [`@xpack-dev-tools/cmake`]({{ site.baseurl }}/cmake/) - the **xPack CMake**
-- [`@xpack-dev-tools/gcc`]({{ site.baseurl }}/gcc/) - the **xPack GNU Compiler Collection (GCC)**
-- [`@xpack-dev-tools/meson-build`]({{ site.baseurl }}/meson-build/) - the **xPack Meson Build**
-- [`@xpack-dev-tools/ninja-build`]({{ site.baseurl }}/ninja-build/) - the **xPack Ninja Build**
-- [`@xpack-dev-tools/openocd`]({{ site.baseurl }}/openocd/) - the **xPack OpenOCD**
-- [`@xpack-dev-tools/qemu-arm`]({{ site.baseurl }}/qemu-arm/) - the **xPack QEMU Arm**
-- [`@xpack-dev-tools/qemu-riscv`]({{ site.baseurl }}/qemu-riscv/) - the **xPack QEMU RISC-V**
-- [`@xpack-dev-tools/riscv-none-elf-gcc`]({{ site.baseurl }}/riscv-none-elf-gcc/) - the **xPack RISC-V Embedded GCC** toolchain
-- [`@xpack-dev-tools/windows-build-tools`]({{ site.baseurl }}/windows-build-tools/) - the **xPack Windows Build Tools**
-- [`@xpack-dev-tools/mingw-w64-gcc`]({{ site.baseurl }}/mingw-w64-gcc/) - the **xPack MinGW-w64 GCC** toolchain
+- [`@xpack-dev-tools/aarch64-none-elf-gcc`]({{ site.baseurl }}/dev-tools/aarch64-none-elf-gcc/) - the **xPack GNU AArch64 Embedded GCC** toolchain
+- [`@xpack-dev-tools/arm-none-eabi-gcc`]({{ site.baseurl }}/dev-tools/arm-none-eabi-gcc/) - the **xPack GNU Arm Embedded GCC** toolchain
+- [`@xpack-dev-tools/clang`]({{ site.baseurl }}/dev-tools/clang/) - the **xPack LLVM clang**
+- [`@xpack-dev-tools/cmake`]({{ site.baseurl }}/dev-tools/cmake/) - the **xPack CMake**
+- [`@xpack-dev-tools/gcc`]({{ site.baseurl }}/dev-tools/gcc/) - the **xPack GNU Compiler Collection (GCC)**
+- [`@xpack-dev-tools/meson-build`]({{ site.baseurl }}/dev-tools/meson-build/) - the **xPack Meson Build**
+- [`@xpack-dev-tools/ninja-build`]({{ site.baseurl }}/dev-tools/ninja-build/) - the **xPack Ninja Build**
+- [`@xpack-dev-tools/openocd`]({{ site.baseurl }}/dev-tools/openocd/) - the **xPack OpenOCD**
+- [`@xpack-dev-tools/qemu-arm`]({{ site.baseurl }}/dev-tools/qemu-arm/) - the **xPack QEMU Arm**
+- [`@xpack-dev-tools/qemu-riscv`]({{ site.baseurl }}/dev-tools/qemu-riscv/) - the **xPack QEMU RISC-V**
+- [`@xpack-dev-tools/riscv-none-elf-gcc`]({{ site.baseurl }}/dev-tools/riscv-none-elf-gcc/) - the **xPack RISC-V Embedded GCC** toolchain
+- [`@xpack-dev-tools/windows-build-tools`]({{ site.baseurl }}/dev-tools/windows-build-tools/) - the **xPack Windows Build Tools**
+- [`@xpack-dev-tools/mingw-w64-gcc`]({{ site.baseurl }}/dev-tools/mingw-w64-gcc/) - the **xPack MinGW-w64 GCC** toolchain
 
 Other:
 
