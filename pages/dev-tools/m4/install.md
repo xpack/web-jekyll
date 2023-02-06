@@ -104,7 +104,6 @@ To check if the xpm installed GNU M4 starts, use something like:
 ```console
 $ ~/Library/xPacks/@xpack-dev-tools/m4/{{ page.version }}-{{ page.xpack-subversion }}.1/.content/bin/m4 --version
 m4 (GNU M4) {{ page.version }}
-...
 ```
 
 {{ manual_install }}
@@ -176,7 +175,7 @@ m4 (GNU M4) {{ page.version }}
 To check if the xpm installed GNU M4 starts, use something like:
 
 ```console
-$ ~/.local/xPacks/@xpack-dev-tools/m4/{{ page.version }}-{{ page.xpack-subversion }}.1/.content/bin/m464 --version
+$ ~/.local/xPacks/@xpack-dev-tools/m4/{{ page.version }}-{{ page.xpack-subversion }}.1/.content/bin/m4 --version
 m4 (GNU M4) {{ page.version }}
 ```
 
@@ -237,7 +236,7 @@ $ tree -L 2 '/home/ilg/.local/xPacks/m4/xpack-m4-{{ page.version }}-{{ page.xpac
 To check if the manually installed GNU M4 starts, use something like:
 
 ```console
-$ ~/.local/xPacks/m4/xpack-m4-{{ page.version }}-{{ page.xpack-subversion }}/bin/m464 --version
+$ ~/.local/xPacks/m4/xpack-m4-{{ page.version }}-{{ page.xpack-subversion }}/bin/m4 --version
 m4 (GNU M4) {{ page.version }}
 ```
 
