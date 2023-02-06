@@ -586,6 +586,6 @@ npm install --global xpm@latest
 The official page explaining how to install **npm** in a custom folder is
 [Resolving EACCES permissions errors when installing packages globally](https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally).
 
-For less common platforms, it is also posible to install from unofficial
+For less common platforms, it is also possible to install from unofficial
 builds, or to build it from sources; for more details see the
 [downloads](https://nodejs.org/en/download/) page.
