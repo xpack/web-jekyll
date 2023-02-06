@@ -11,17 +11,17 @@ entries:
     output: web
     folderitems:
     - title: Overview
-      url: /clang/
+      url: /dev-tools/clang/
       output: web
     - title: Install
-      url: /clang/install/
+      url: /dev-tools/clang/install/
       output: web
     - title: Support
-      url: /clang/support/
+      url: /dev-tools/clang/support/
       output: web
     - title: FAQ
-      url: /clang/faq/
+      url: /dev-tools/clang/faq/
       output: web
     - title: Releases
-      url: /clang/releases/
+      url: /dev-tools/clang/releases/
       output: web

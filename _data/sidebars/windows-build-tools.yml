@@ -11,18 +11,17 @@ entries:
     output: web
     folderitems:
     - title: Overview
-      url: /windows-build-tools/
+      url: /dev-tools/windows-build-tools/
       output: web
     - title: Install
-      url: /windows-build-tools/install/
+      url: /dev-tools/windows-build-tools/install/
       output: web
     - title: Support
-      url: /windows-build-tools/support/
+      url: /dev-tools/windows-build-tools/support/
       output: web
     - title: FAQ
-      url: /windows-build-tools/faq/
+      url: /dev-tools/windows-build-tools/faq/
       output: web
     - title: Releases
-      url: /windows-build-tools/releases/
+      url: /dev-tools/windows-build-tools/releases/
       output: web
-

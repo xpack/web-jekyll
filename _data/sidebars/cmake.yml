@@ -11,18 +11,17 @@ entries:
     output: web
     folderitems:
     - title: Overview
-      url: /cmake/
+      url: /dev-tools/cmake/
       output: web
     - title: Install
-      url: /cmake/install/
+      url: /dev-tools/cmake/install/
       output: web
     - title: Support
-      url: /cmake/support/
+      url: /dev-tools/cmake/support/
       output: web
     - title: FAQ
-      url: /cmake/faq/
+      url: /dev-tools/cmake/faq/
       output: web
     - title: Releases
-      url: /cmake/releases/
+      url: /dev-tools/cmake/releases/
       output: web
-

@@ -11,17 +11,17 @@ entries:
     output: web
     folderitems:
     - title: Overview
-      url: /riscv-none-elf-gcc/
+      url: /dev-tools/riscv-none-elf-gcc/
       output: web
     - title: Install
-      url: /riscv-none-elf-gcc/install/
+      url: /dev-tools/riscv-none-elf-gcc/install/
       output: web
     - title: Support
-      url: /riscv-none-elf-gcc/support/
+      url: /dev-tools/riscv-none-elf-gcc/support/
       output: web
     - title: FAQ
-      url: /riscv-none-elf-gcc/faq/
+      url: /dev-tools/riscv-none-elf-gcc/faq/
       output: web
     - title: Releases
-      url: /riscv-none-elf-gcc/releases/
+      url: /dev-tools/riscv-none-elf-gcc/releases/
       output: web

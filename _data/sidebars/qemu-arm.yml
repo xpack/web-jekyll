@@ -11,18 +11,17 @@ entries:
     output: web
     folderitems:
     - title: Overview
-      url: /qemu-arm/
+      url: /dev-tools/qemu-arm/
       output: web
     - title: Install
-      url: /qemu-arm/install/
+      url: /dev-tools/qemu-arm/install/
       output: web
     - title: Support
-      url: /qemu-arm/support/
+      url: /dev-tools/qemu-arm/support/
       output: web
     - title: FAQ
-      url: /qemu-arm/faq/
+      url: /dev-tools/qemu-arm/faq/
       output: web
     - title: Releases
-      url: /qemu-arm/releases/
+      url: /dev-tools/qemu-arm/releases/
       output: web
-

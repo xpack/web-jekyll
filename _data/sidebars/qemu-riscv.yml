@@ -11,17 +11,17 @@ entries:
     output: web
     folderitems:
     - title: Overview
-      url: /qemu-riscv/
+      url: /dev-tools/qemu-riscv/
       output: web
     - title: Install
-      url: /qemu-riscv/install/
+      url: /dev-tools/qemu-riscv/install/
       output: web
     - title: Support
-      url: /qemu-riscv/support/
+      url: /dev-tools/qemu-riscv/support/
       output: web
     - title: FAQ
-      url: /qemu-riscv/faq/
+      url: /dev-tools/qemu-riscv/faq/
       output: web
     - title: Releases
-      url: /qemu-riscv/releases/
+      url: /dev-tools/qemu-riscv/releases/
       output: web

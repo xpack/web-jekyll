@@ -11,17 +11,17 @@ entries:
     output: web
     folderitems:
     - title: Overview
-      url: /aarch64-none-elf-gcc/
+      url: /dev-tools/aarch64-none-elf-gcc/
       output: web
     - title: Install
-      url: /aarch64-none-elf-gcc/install/
+      url: /dev-tools/aarch64-none-elf-gcc/install/
       output: web
     - title: Support
-      url: /aarch64-none-elf-gcc/support/
+      url: /dev-tools/aarch64-none-elf-gcc/support/
       output: web
     - title: FAQ
-      url: /aarch64-none-elf-gcc/faq/
+      url: /dev-tools/aarch64-none-elf-gcc/faq/
       output: web
     - title: Releases
-      url: /aarch64-none-elf-gcc/releases/
+      url: /dev-tools/aarch64-none-elf-gcc/releases/
       output: web

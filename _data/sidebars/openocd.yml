@@ -11,18 +11,17 @@ entries:
     output: web
     folderitems:
     - title: Overview
-      url: /openocd/
+      url: /dev-tools/openocd/
       output: web
     - title: Install
-      url: /openocd/install/
+      url: /dev-tools/openocd/install/
       output: web
     - title: Support
-      url: /openocd/support/
+      url: /dev-tools/openocd/support/
       output: web
     - title: FAQ
-      url: /openocd/faq/
+      url: /dev-tools/openocd/faq/
       output: web
     - title: Releases
-      url: /openocd/releases/
+      url: /dev-tools/openocd/releases/
       output: web
-

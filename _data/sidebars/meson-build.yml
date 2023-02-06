@@ -11,18 +11,17 @@ entries:
     output: web
     folderitems:
     - title: Overview
-      url: /meson-build/
+      url: /dev-tools/meson-build/
       output: web
     - title: Install
-      url: /meson-build/install/
+      url: /dev-tools/meson-build/install/
       output: web
     - title: Support
-      url: /meson-build/support/
+      url: /dev-tools/meson-build/support/
       output: web
     - title: FAQ
-      url: /meson-build/faq/
+      url: /dev-tools/meson-build/faq/
       output: web
     - title: Releases
-      url: /meson-build/releases/
+      url: /dev-tools/meson-build/releases/
       output: web
-

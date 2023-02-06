@@ -11,17 +11,17 @@ entries:
     output: web
     folderitems:
     - title: Overview
-      url: /gcc/
+      url: /dev-tools/gcc/
       output: web
     - title: Install
-      url: /gcc/install/
+      url: /dev-tools/gcc/install/
       output: web
     - title: Support
-      url: /gcc/support/
+      url: /dev-tools/gcc/support/
       output: web
     - title: FAQ
-      url: /gcc/faq/
+      url: /dev-tools/gcc/faq/
       output: web
     - title: Releases
-      url: /gcc/releases/
+      url: /dev-tools/gcc/releases/
       output: web

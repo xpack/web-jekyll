@@ -11,18 +11,17 @@ entries:
     output: web
     folderitems:
     - title: Overview
-      url: /arm-none-eabi-gcc/
+      url: /dev-tools/arm-none-eabi-gcc/
       output: web
     - title: Install
-      url: /arm-none-eabi-gcc/install/
+      url: /dev-tools/arm-none-eabi-gcc/install/
       output: web
     - title: Support
-      url: /arm-none-eabi-gcc/support/
+      url: /dev-tools/arm-none-eabi-gcc/support/
       output: web
     - title: FAQ
-      url: /arm-none-eabi-gcc/faq/
+      url: /dev-tools/arm-none-eabi-gcc/faq/
       output: web
     - title: Releases
-      url: /arm-none-eabi-gcc/releases/
+      url: /dev-tools/arm-none-eabi-gcc/releases/
       output: web
-

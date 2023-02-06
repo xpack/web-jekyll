@@ -11,18 +11,17 @@ entries:
     output: web
     folderitems:
     - title: Overview
-      url: /ninja-build/
+      url: /dev-tools/ninja-build/
       output: web
     - title: Install
-      url: /ninja-build/install/
+      url: /dev-tools/ninja-build/install/
       output: web
     - title: Support
-      url: /ninja-build/support/
+      url: /dev-tools/ninja-build/support/
       output: web
     - title: FAQ
-      url: /ninja-build/faq/
+      url: /dev-tools/ninja-build/faq/
       output: web
     - title: Releases
-      url: /ninja-build/releases/
+      url: /dev-tools/ninja-build/releases/
       output: web
-
