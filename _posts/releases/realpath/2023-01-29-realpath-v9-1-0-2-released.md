@@ -28,7 +28,8 @@ tags:
 
 [The xPack GNU realpath](https://xpack.github.io/realpath/)
 is a standalone cross-platform binary distribution of
-[GNU realpath](http://realpath.org).
+**GNU realpath**, part of
+[GNU core utilities](https://www.gnu.org/software/coreutils/).
 
 There are separate binaries for
 **macOS** (Intel 64-bit, Apple Silicon 64-bit)
@@ -113,11 +114,11 @@ xpm uninstall --global @xpack-dev-tools/realpath
 ## Compliance
 
 The xPack GNU realpath generally follows the official
-[GNU realpath](http://realpath.org) releases.
+[GNU core utilities](https://ftp.gnu.org/gnu/coreutils/) releases.
 
 The current version is based on:
 
-- GNU realpath version {{ page.coreutils_version }}
+- GNU core utilities version {{ page.coreutils_version }}
 from {{ page.coreutils_date }}.
 
 ## Changes
@@ -169,7 +170,7 @@ relative path.
 ## Documentation
 
 The original documentation is available
-[online](https://realpath.org/manual.html).
+[online](https://www.gnu.org/software/coreutils/manual/).
 
 ## Build
 
