@@ -51,7 +51,7 @@ if (stats.isSymbolicLink()) {
 
 Use `readdir()` to return an array of file names or structures.
 
-```
+```js
   static async chmodRecursive ({ inputPath, readOnly, log }) {
     assert(inputPath, 'Mandatory inputPath')
     assert(log, 'Mandatory log')
