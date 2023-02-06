@@ -1,8 +1,8 @@
 ---
-title: "wine"
-permalink: /tags/wine/
+title: "sed"
+permalink: /tags/sed/
 
-tagName: wine
+tagName: sed
 
 date: 2023-02-06 21:14:24 +0200
 last_updated: 2023-02-06 21:14:24 +0200

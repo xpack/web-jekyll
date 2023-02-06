@@ -74,3 +74,9 @@ allowed-tags:
   - mingw-w64
   - mingw
   - mingw-w64
+  - m4
+  - patchelf
+  - pkg-config
+  - realpath
+  - sed
+  - wine
