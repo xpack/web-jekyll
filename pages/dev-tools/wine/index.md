@@ -31,7 +31,7 @@ Developer & maintainer pages:
 ## Overview
 
 The **xPack WineHQ** is a cross-platform binary distribution of the
-[WineHQ](https://www.winehq.org) build system,
+[WineHQ](https://www.winehq.org) project,
 an open source project hosted on
 [GitLab](https://gitlab.winehq.org/).
 

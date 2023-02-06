@@ -7,9 +7,9 @@ summary: "The recommended method is via xpm."
 toc: false
 comments: true
 
-version: "6.17.0"
+version: "7.22.0"
 xpack-subversion: "1"
-version-major-minor: "6.17"
+short-version: "7.22"
 
 date: 2022-10-04 10:32:00 +0300
 
@@ -110,7 +110,7 @@ To check if the xpm installed WineHQ starts, use something like:
 
 ```console
 $ ~/.local/xPacks/@xpack-dev-tools/wine/{{ page.version }}-{{ page.xpack-subversion }}.1/.content/bin/wine64 --version
-wine {{ page.version-major-minor }}
+wine-{{ page.short-version }}
 ```
 
 {{ manual_install }}
@@ -150,47 +150,53 @@ $ tree -L 2 '/home/ilg/.local/xPacks/wine/xpack-wine-{{ page.version }}-{{ page.
 /home/ilg/.local/xPacks/wine/xpack-wine-{{ page.version }}-{{ page.xpack-subversion }}/
 ├── README.md
 ├── bin
-│   ├── function_grep.pl
-│   ├── msidb
-│   ├── msiexec
-│   ├── notepad
-│   ├── regedit
-│   ├── regsvr32
-│   ├── winewidl
-│   ├── wine64
-│   ├── wine64-preloader
-│   ├── wineboot
-│   ├── winebuild
-│   ├── winecfg
-│   ├── wineconsole
-│   ├── winecpp -> winegcc
-│   ├── winedbg
-│   ├── winedump
-│   ├── winefile
-│   ├── wineg++ -> winegcc
-│   ├── winegcc
-│   ├── winemaker
-│   ├── winemine
-│   ├── winepath
-│   ├── wineserver
-│   ├── wmc
-│   └── wrc
+│   ├── function_grep.pl
+│   ├── msidb
+│   ├── msiexec
+│   ├── notepad
+│   ├── regedit
+│   ├── regsvr32
+│   ├── widl
+│   ├── wine
+│   ├── wine-preloader
+│   ├── wine64
+│   ├── wine64-preloader
+│   ├── wineboot
+│   ├── winebuild
+│   ├── winecfg
+│   ├── wineconsole
+│   ├── winecpp -> winegcc
+│   ├── winedbg
+│   ├── winedump
+│   ├── winefile
+│   ├── wineg++ -> winegcc
+│   ├── winegcc
+│   ├── winemaker
+│   ├── winemine
+│   ├── winepath
+│   ├── wineserver
+│   ├── wmc
+│   └── wrc
 ├── distro-info
-│   ├── CHANGELOG.md
-│   ├── patches
-│   └── scripts
+│   ├── CHANGELOG.md
+│   ├── licenses
+│   ├── patches
+│   └── scripts
 ├── include
-│   └── wine
+│   └── wine
 ├── lib
-│   └── wine
+│   └── wine
+├── lib32
+│   └── wine
 ├── libexec
-│   ├── libresolv-2.27.so
-│   └── libresolv.so.2 -> libresolv-2.27.so
+│   ├── libgcc_s.so.1
+│   ├── libresolv-2.27.so
+│   └── libresolv.so.2 -> libresolv-2.27.so
 └── share
     ├── applications
     └── wine
 
-12 directories, 29 files
+15 directories, 32 files
 ```
 
 ### Test
@@ -199,7 +205,7 @@ To check if the manually installed WineHQ starts, use something like:
 
 ```console
 $ ~/.local/xPacks/wine/xpack-wine-{{ page.version }}-{{ page.xpack-subversion }}/bin/wine64 --version
-wine {{ page.version-major-minor }}
+wine-{{ page.short-version }}
 ```
 
 {% endcapture %}
