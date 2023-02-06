@@ -46,7 +46,7 @@ They were built with mingw-w64, and run on any reasonably
 recent **i686** and **x86_64** Windows machines.
 
 Instructions on how to install the binaries are available in the
-[How to install the Windows Build Tools?]({{ site.baseurl }}/windows-build-tools/install/)
+[How to install the Windows Build Tools?]({{ site.baseurl }}/dev-tools/windows-build-tools/install/)
 page.
 
 The build tools are also available as an

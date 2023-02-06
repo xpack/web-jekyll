@@ -1,6 +1,6 @@
 ---
 title: How to install the xPack CMake binaries
-permalink: /cmake/install/
+permalink: /dev-tools/cmake/install/
 
 summary: "The recommended method is via xpm."
 
@@ -12,6 +12,9 @@ xpack-subversion: "1"
 version-major-minor: "3.21"
 
 date: 2020-09-29 14:05:00 +0300
+
+redirect_from:
+  - /cmake/install/
 
 ---
 

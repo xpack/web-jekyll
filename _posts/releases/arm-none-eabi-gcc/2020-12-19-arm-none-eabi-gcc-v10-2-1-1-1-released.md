@@ -50,7 +50,7 @@ conventions, the names of the Intel 32-bit images are now suffixed with
 
 The full details of installing the **xPack GNU Arm Embedded GCC** on
 various platforms are presented in the separate
-[Install]({{ site.baseurl }}/arm-none-eabi-gcc/install/) page.
+[Install]({{ site.baseurl }}/dev-tools/arm-none-eabi-gcc/install/) page.
 
 ### Easy install
 

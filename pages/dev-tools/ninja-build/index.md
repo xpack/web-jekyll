@@ -1,6 +1,6 @@
 ---
 title: The xPack Ninja Build
-permalink: /ninja-build/
+permalink: /dev-tools/ninja-build/
 
 summary: "A binary distribution of Ninja Build."
 
@@ -8,6 +8,9 @@ comments: true
 keywords: ninja-build
 
 date: 2020-09-28 17:49:00 +0300
+
+redirect_from:
+  - /ninja-build/
 
 ---
 
@@ -18,9 +21,9 @@ directly skip to the desired pages.
 
 User pages:
 
-- [install]({{ site.baseurl }}/ninja-build/install/)
-- [support]({{ site.baseurl }}/ninja-build/support/)
-- [releases]({{ site.baseurl }}/ninja-build/releases/)
+- [install]({{ site.baseurl }}/dev-tools/ninja-build/install/)
+- [support]({{ site.baseurl }}/dev-tools/ninja-build/support/)
+- [releases]({{ site.baseurl }}/dev-tools/ninja-build/releases/)
 
 Developer & maintainer pages:
 
@@ -58,7 +61,7 @@ distribution.
 
 The details of installing the **xPack Ninja Build** on various platforms are
 presented in the separate
-[install]({{ site.baseurl }}/ninja-build/install/) page.
+[install]({{ site.baseurl }}/dev-tools/ninja-build/install/) page.
 
 ## Documentation
 
@@ -69,7 +72,7 @@ The original Ninja documentation is available in the installed folders:
 ## Support
 
 For the various support options, please read the separate
-[support]({{ site.baseurl }}/ninja-build/support/) page.
+[support]({{ site.baseurl }}/dev-tools/ninja-build/support/) page.
 
 ## Change log
 
@@ -88,4 +91,4 @@ folder.
 
 ## Releases
 
-See the [releases]({{ site.baseurl }}/ninja-build/releases/) pages.
+See the [releases]({{ site.baseurl }}/dev-tools/ninja-build/releases/) pages.

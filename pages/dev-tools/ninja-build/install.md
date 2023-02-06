@@ -1,6 +1,6 @@
 ---
 title: How to install the xPack Ninja Build binaries
-permalink: /ninja-build/install/
+permalink: /dev-tools/ninja-build/install/
 
 summary: "The recommended method is via xpm."
 
@@ -11,6 +11,9 @@ version: "1.11.0"
 xpack-subversion: "1"
 
 date: 2020-09-27 11:09:00 +0300
+
+redirect_from:
+  - /ninja-build/install/
 
 ---
 

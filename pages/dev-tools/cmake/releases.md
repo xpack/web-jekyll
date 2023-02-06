@@ -1,6 +1,6 @@
 ---
 title: The xPack CMake releases
-permalink: /cmake/releases/
+permalink: /dev-tools/cmake/releases/
 
 search: exclude
 toc: false
@@ -8,6 +8,9 @@ comments: false
 github_editme: false
 
 date: 2020-09-29 14:05:00 +0300
+
+redirect_from:
+  - /cmake/releases/
 
 ---
 

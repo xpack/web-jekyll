@@ -1,6 +1,6 @@
 ---
 title: How to install the xPack MinGW-w64 GCC binaries
-permalink: /mingw-w64-gcc/install/
+permalink: /dev-tools/mingw-w64-gcc/install/
 
 summary: "The recommended method is via xpm."
 
@@ -11,6 +11,9 @@ version: "11.3.0"
 xpack-subversion: "1.3"
 
 date: 2022-10-04 11:43:00 +0300
+
+redirect_from:
+  - /mingw-w64-gcc/install/
 
 ---
 

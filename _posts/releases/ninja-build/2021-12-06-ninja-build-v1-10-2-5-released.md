@@ -58,7 +58,7 @@ The binary files are available from GitHub [Releases]({{ page.download_url }}).
 
 The full details of installing the **xPack Ninja Build** on various platforms
 are presented in the separate
-[Install]({{ site.baseurl }}/ninja-build/install/) page.
+[Install]({{ site.baseurl }}/dev-tools/ninja-build/install/) page.
 
 ### Easy install
 

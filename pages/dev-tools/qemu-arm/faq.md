@@ -1,11 +1,14 @@
 ---
 title: The xPack QEMU Arm Frequently Asked Questions
-permalink: /qemu-arm/faq/
+permalink: /dev-tools/qemu-arm/faq/
 
 toc: false
 comments: true
 
 date: 2019-06-27 23:55:00 +0300
+
+redirect_from:
+  - /qemu-arm/faq/
 
 ---
 

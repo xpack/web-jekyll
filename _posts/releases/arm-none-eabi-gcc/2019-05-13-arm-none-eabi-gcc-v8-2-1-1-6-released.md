@@ -87,7 +87,7 @@ The Windows binaries were built with mingw-w64, and run on any reasonably
 recent **i686** and **x86_64** Windows machines.
 
 Instructions on how to install the binaries are available in the
-[How to install the ARM toolchain?]({{ site.baseurl }}/arm-none-eabi-gcc/install/)
+[How to install the ARM toolchain?]({{ site.baseurl }}/dev-tools/arm-none-eabi-gcc/install/)
 page.
 
 The toolchain is also available as an

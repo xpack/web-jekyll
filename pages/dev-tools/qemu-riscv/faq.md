@@ -1,11 +1,14 @@
 ---
 title: The xPack QEMU RISC-V Frequently Asked Questions
-permalink: /qemu-riscv/faq/
+permalink: /dev-tools/qemu-riscv/faq/
 
 toc: false
 comments: true
 
 date: 2019-06-27 23:55:00 +0300
+
+redirect_from:
+  - /qemu-riscv/faq/
 
 ---
 

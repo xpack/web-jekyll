@@ -1,11 +1,14 @@
 ---
 title: The xPack GNU Compiler Collection Frequently Asked Questions
-permalink: /gcc/faq/
+permalink: /dev-tools/gcc/faq/
 
 toc: false
 comments: true
 
 date: 2021-05-22 00:27:00 +0300
+
+redirect_from:
+  - /gcc/faq/
 
 ---
 

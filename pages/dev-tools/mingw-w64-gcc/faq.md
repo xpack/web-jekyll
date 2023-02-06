@@ -1,11 +1,14 @@
 ---
 title: The xPack MinGW-w64 GCC Frequently Asked Questions
-permalink: /mingw-w64-gcc/faq/
+permalink: /dev-tools/mingw-w64-gcc/faq/
 
 toc: false
 comments: true
 
 date: 2022-10-04 11:43:00 +0300
+
+redirect_from:
+  - /mingw-w64-gcc/faq/
 
 ---
 

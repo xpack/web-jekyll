@@ -1,11 +1,14 @@
 ---
 title: The xPack Windows Build Tools Frequently Asked Questions
-permalink: /windows-build-tools/faq/
+permalink: /dev-tools/windows-build-tools/faq/
 
 toc: false
 comments: true
 
 date: 2020-07-14 16:26:00 +0300
+
+redirect_from:
+  - /windows-build-tools/faq/
 
 ---
 

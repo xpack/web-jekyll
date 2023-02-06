@@ -1,6 +1,6 @@
 ---
 title: The xPack Windows Build Tools
-permalink: /windows-build-tools/
+permalink: /dev-tools/windows-build-tools/
 
 summary: "A Windows binary distribution of GNU Make, to be used with Eclipse Embedded CDT."
 
@@ -8,6 +8,9 @@ comments: true
 keywords: windows-build-tools
 
 date: 2020-07-14 16:26:00 +0300
+
+redirect_from:
+  - /windows-build-tools/
 
 ---
 
@@ -18,9 +21,9 @@ directly skip to the desired pages.
 
 User pages:
 
-- [install]({{ site.baseurl }}/windows-build-tools/install/)
-- [support]({{ site.baseurl }}/windows-build-tools/support/)
-- [releases]({{ site.baseurl }}/windows-build-tools/releases/)
+- [install]({{ site.baseurl }}/dev-tools/windows-build-tools/install/)
+- [support]({{ site.baseurl }}/dev-tools/windows-build-tools/support/)
+- [releases]({{ site.baseurl }}/dev-tools/windows-build-tools/releases/)
 
 Developer & maintainer pages:
 
@@ -90,7 +93,7 @@ specific make files might fail.
 
 The details of installing the **xPack Windows Build Tools** on various
 platforms are presented in the separate
-[install]({{ site.baseurl }}/windows-build-tools/install/) page.
+[install]({{ site.baseurl }}/dev-tools/windows-build-tools/install/) page.
 
 ## Documentation
 
@@ -99,7 +102,7 @@ platforms are presented in the separate
 ## Support
 
 For the various support options, please read the separate
-[support]({{ site.baseurl }}/windows-build-tools/support/) page.
+[support]({{ site.baseurl }}/dev-tools/windows-build-tools/support/) page.
 
 ## Change log
 
@@ -118,4 +121,4 @@ folder.
 
 ## Releases
 
-See the [releases]({{ site.baseurl }}/windows-build-tools/releases/) pages.
+See the [releases]({{ site.baseurl }}/dev-tools/windows-build-tools/releases/) pages.

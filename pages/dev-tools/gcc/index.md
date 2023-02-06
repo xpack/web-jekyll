@@ -1,6 +1,6 @@
 ---
 title: The xPack GNU Compiler Collection (GCC)
-permalink: /gcc/
+permalink: /dev-tools/gcc/
 
 summary: "A binary distribution of the GNU Compiler Collection."
 comments: true
@@ -11,6 +11,9 @@ keywords:
 
 date: 2021-05-22 00:27:00 +0300
 
+redirect_from:
+  - /gcc/
+
 ---
 
 ## Quicklinks
@@ -20,9 +23,9 @@ directly skip to the desired pages.
 
 User pages:
 
-- [install]({{ site.baseurl }}/gcc/install/)
-- [support]({{ site.baseurl }}/gcc/support/)
-- [releases]({{ site.baseurl }}/gcc/releases/)
+- [install]({{ site.baseurl }}/dev-tools/gcc/install/)
+- [support]({{ site.baseurl }}/dev-tools/gcc/support/)
+- [releases]({{ site.baseurl }}/dev-tools/gcc/releases/)
 
 Developer & maintainer pages:
 
@@ -61,7 +64,7 @@ original GNU releases.
 
 The details of installing the **xPack GNU Compiler Collection** on various
 platforms are presented in the separate
-[install]({{ site.baseurl }}/gcc/install/) page.
+[install]({{ site.baseurl }}/dev-tools/gcc/install/) page.
 
 ## Documentation
 
@@ -71,12 +74,12 @@ To save space and bandwidth, the original documentation is available
 ## Predefined macros
 
 The list of build-in macros is available in a
-[separate page]({{ site.baseurl }}/gcc/predefined-macros/).
+[separate page]({{ site.baseurl }}/dev-tools/gcc/predefined-macros/).
 
 ## Support
 
 For the various support options, please read the separate
-[support]({{ site.baseurl }}/gcc/support/) page.
+[support]({{ site.baseurl }}/dev-tools/gcc/support/) page.
 
 ## Change log
 
@@ -95,4 +98,4 @@ folder.
 
 ## Releases
 
-See the [releases]({{ site.baseurl }}/gcc/releases/) pages.
+See the [releases]({{ site.baseurl }}/dev-tools/gcc/releases/) pages.

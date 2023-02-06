@@ -1,10 +1,13 @@
 ---
 title: How to get help for xPack QEMU RISC-V
-permalink: /qemu-riscv/support/
+permalink: /dev-tools/qemu-riscv/support/
 
 comments: true
 
 date: 2019-06-21 11:08:00 +0300
+
+redirect_from:
+  - /qemu-riscv/support/
 
 ---
 
@@ -22,7 +25,7 @@ installed folders:
 
 ## Check the FAQ
 
-Check the [FAQ]({{ site.baseurl }}/qemu-riscv/faq/)
+Check the [FAQ]({{ site.baseurl }}/dev-tools/qemu-riscv/faq/)
 for similar problems.
 
 ## Check the GitHub Discussions

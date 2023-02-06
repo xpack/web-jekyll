@@ -1,6 +1,6 @@
 ---
 title: The xPack Meson Build
-permalink: /meson-build/
+permalink: /dev-tools/meson-build/
 
 summary: "A binary distribution of Meson Build."
 
@@ -8,6 +8,9 @@ comments: true
 keywords: meson-build
 
 date: 2020-09-27 10:58:00 +0300
+
+redirect_from:
+  - /meson-build/
 
 ---
 
@@ -18,9 +21,9 @@ directly skip to the desired pages.
 
 User pages:
 
-- [install]({{ site.baseurl }}/meson-build/install/)
-- [support]({{ site.baseurl }}/meson-build/support/)
-- [releases]({{ site.baseurl }}/meson-build/releases/)
+- [install]({{ site.baseurl }}/dev-tools/meson-build/install/)
+- [support]({{ site.baseurl }}/dev-tools/meson-build/support/)
+- [releases]({{ site.baseurl }}/dev-tools/meson-build/releases/)
 
 Developer & maintainer pages:
 
@@ -61,7 +64,7 @@ distribution.
 
 The details of installing the **xPack Meson Build** on various platforms are
 presented in the separate
-[install]({{ site.baseurl }}/meson-build/install/) page.
+[install]({{ site.baseurl }}/dev-tools/meson-build/install/) page.
 
 ## Documentation
 
@@ -72,7 +75,7 @@ The original Meson documentation is available online:
 ## Support
 
 For the various support options, please read the separate
-[support]({{ site.baseurl }}/meson-build/support/) page.
+[support]({{ site.baseurl }}/dev-tools/meson-build/support/) page.
 
 ## Change log
 
@@ -91,4 +94,4 @@ folder.
 
 ## Releases
 
-See the [releases]({{ site.baseurl }}/meson-build/releases/) pages.
+See the [releases]({{ site.baseurl }}/dev-tools/meson-build/releases/) pages.

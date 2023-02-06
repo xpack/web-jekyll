@@ -1,6 +1,6 @@
 ---
 title: The xPack GNU AArch64 Embedded GCC
-permalink: /aarch64-none-elf-gcc/
+permalink: /dev-tools/aarch64-none-elf-gcc/
 
 summary: "A binary distribution of GNU AArch64 Embedded GCC."
 comments: true
@@ -12,6 +12,9 @@ keywords:
 
 date: 2019-07-10 17:53:00 +0300
 
+redirect_from:
+  - /aarch64-none-elf-gcc/
+
 ---
 
 ## Quicklinks
@@ -21,9 +24,9 @@ directly skip to the desired pages.
 
 User pages:
 
-- [install]({{ site.baseurl }}/aarch64-none-elf-gcc/install/)
-- [support]({{ site.baseurl }}/aarch64-none-elf-gcc/support/)
-- [releases]({{ site.baseurl }}/aarch64-none-elf-gcc/releases/)
+- [install]({{ site.baseurl }}/dev-tools/aarch64-none-elf-gcc/install/)
+- [support]({{ site.baseurl }}/dev-tools/aarch64-none-elf-gcc/support/)
+- [releases]({{ site.baseurl }}/dev-tools/aarch64-none-elf-gcc/releases/)
 
 Developer & maintainer pages:
 
@@ -67,7 +70,7 @@ moves ahead of Arm and uses more recent tools versions that fix the bugs.
 
 The details of installing the **xPack GNU AArch64 Embedded GCC** on various
 platforms are presented in the separate
-[install]({{ site.baseurl }}/aarch64-none-elf-gcc/install/) page.
+[install]({{ site.baseurl }}/dev-tools/aarch64-none-elf-gcc/install/) page.
 
 ## Documentation
 
@@ -77,7 +80,7 @@ The original GNU GCC documentation is available
 ## Support
 
 For the various support options, please read the separate
-[support]({{ site.baseurl }}/aarch64-none-elf-gcc/support/) page.
+[support]({{ site.baseurl }}/dev-tools/aarch64-none-elf-gcc/support/) page.
 
 ## Change log
 
@@ -96,4 +99,4 @@ folder.
 
 ## Releases
 
-See the [releases]({{ site.baseurl }}/aarch64-none-elf-gcc/releases/) pages.
+See the [releases]({{ site.baseurl }}/dev-tools/aarch64-none-elf-gcc/releases/) pages.

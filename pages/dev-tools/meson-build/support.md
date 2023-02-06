@@ -1,10 +1,13 @@
 ---
 title: How to get help for xPack Meson Build
-permalink: /meson-build/support/
+permalink: /dev-tools/meson-build/support/
 
 comments: true
 
 date: 2020-09-30 11:44:00 +0300
+
+redirect_from:
+  - /meson-build/support/
 
 ---
 
@@ -21,7 +24,7 @@ The original documentation is available from:
 
 ## Check the FAQ
 
-Check the [FAQ]({{ site.baseurl }}/meson-build/faq/)
+Check the [FAQ]({{ site.baseurl }}/dev-tools/meson-build/faq/)
 for similar problems.
 
 ## Check the GitHub Discussions

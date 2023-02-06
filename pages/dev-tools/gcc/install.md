@@ -1,6 +1,6 @@
 ---
 title: How to install the xPack GNU Compiler Collection binaries
-permalink: /gcc/install/
+permalink: /dev-tools/gcc/install/
 
 summary: "The recommended method is via xpm."
 
@@ -11,6 +11,9 @@ version: "12.1.0"
 xpack-subversion: "1"
 
 date: 2021-05-22 00:27:00 +0300
+
+redirect_from:
+  - /gcc/install/
 
 ---
 

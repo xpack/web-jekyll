@@ -1,6 +1,6 @@
 ---
 title: How to get help for xPack GNU RISC-V Embedded GCC
-permalink: /riscv-none-elf-gcc/support/
+permalink: /dev-tools/riscv-none-elf-gcc/support/
 
 comments: true
 
@@ -8,6 +8,7 @@ date: 2019-07-10 17:53:00 +0300
 
 redirect_from:
   - /riscv-none-embed-gcc/support/
+  - /riscv-none-elf-gcc/support/
 
 ---
 
@@ -23,7 +24,7 @@ The original documentation is available
 
 ## Check the FAQ
 
-Check the [FAQ]({{ site.baseurl }}/riscv-none-elf-gcc/faq/)
+Check the [FAQ]({{ site.baseurl }}/dev-tools/riscv-none-elf-gcc/faq/)
 for similar problems.
 
 ## Check the GitHub Discussions

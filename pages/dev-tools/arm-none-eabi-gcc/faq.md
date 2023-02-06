@@ -1,11 +1,14 @@
 ---
 title: The xPack GNU Arm Embedded GCC Frequently Asked Questions
-permalink: /arm-none-eabi-gcc/faq/
+permalink: /dev-tools/arm-none-eabi-gcc/faq/
 
 toc: false
 comments: true
 
 date: 2019-07-10 17:53:00 +0300
+
+redirect_from:
+  - /arm-none-eabi-gcc/faq/
 
 ---
 

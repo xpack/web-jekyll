@@ -1,6 +1,6 @@
 ---
 title: The GNU MCU Eclipse QEMU command line options
-permalink: /qemu-arm/options/
+permalink: /dev-tools/qemu-arm/options/
 
 summary: "DEPRECATED: The  GNU MCU Eclipse QEMU command line options allow to start standalone graphical or non-graphical emulation sessions, or to run as a GBD server in connection to a GDB client."
 
@@ -8,6 +8,9 @@ toc: true
 comments: true
 
 date: 2015-11-10 19:27:00 +0300
+
+redirect_from:
+  - /qemu-arm/options/
 
 ---
 

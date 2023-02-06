@@ -1,6 +1,6 @@
 ---
 title: How to install the xPack GNU RISC-V Embedded GCC binaries
-permalink: /riscv-none-elf-gcc/install/
+permalink: /dev-tools/riscv-none-elf-gcc/install/
 
 summary: "The recommended method is via xpm."
 
@@ -14,6 +14,7 @@ date: 2019-07-10 17:53:00 +0300
 
 redirect_from:
   - /riscv-none-embed-gcc/install/
+  - /riscv-none-elf-gcc/install/
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: How to install the xPack GNU Arm Embedded GCC binaries
-permalink: /arm-none-eabi-gcc/install/
+permalink: /dev-tools/arm-none-eabi-gcc/install/
 
 summary: "The recommended method is via xpm."
 
@@ -12,6 +12,9 @@ xpack-subversion: "1.2"
 version-timestamp: "20220111"
 
 date: 2019-07-10 17:53:00 +0300
+
+redirect_from:
+  - /arm-none-eabi-gcc/install/
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "DEPRECATED: The GNU MCU Eclipse QEMU"
-permalink: /qemu-arm/gnuarmeclipse/
+permalink: /dev-tools/qemu-arm/gnuarmeclipse/
 
 summary: "The initial custom QEMU used with Eclipse."
 
@@ -12,6 +12,9 @@ keywords:
   - graphic
 
 date: 2015-09-07 21:31:00 +0300
+
+redirect_from:
+  - /qemu-arm/gnuarmeclipse/
 
 ---
 
@@ -140,7 +143,7 @@ for now." %}
 ## Command line options
 
 The custom command line options are documented in the separate
-[options]({{ site.baseurl }}/qemu-arm/options/) page.
+[options]({{ site.baseurl }}/dev-tools/qemu-arm/options/) page.
 
 ## Future development
 

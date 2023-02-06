@@ -1,6 +1,6 @@
 ---
 title: The xPack MinGW-w64 GCC releases
-permalink: /mingw-w64-gcc/releases/
+permalink: /dev-tools/mingw-w64-gcc/releases/
 
 search: exclude
 toc: false
@@ -8,6 +8,9 @@ comments: false
 github_editme: false
 
 date: 2022-10-04 11:43:00 +0300
+
+redirect_from:
+  - /mingw-w64-gcc/releases/
 
 ---
 

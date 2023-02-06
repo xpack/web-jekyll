@@ -1,11 +1,14 @@
 ---
 title: The xPack CMake Frequently Asked Questions
-permalink: /cmake/faq/
+permalink: /dev-tools/cmake/faq/
 
 toc: false
 comments: true
 
 date: 2020-09-29 14:05:00 +0300
+
+redirect_from:
+  - /cmake/faq/
 
 ---
 

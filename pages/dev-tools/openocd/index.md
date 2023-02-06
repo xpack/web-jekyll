@@ -1,6 +1,6 @@
 ---
 title: The xPack OpenOCD
-permalink: /openocd/
+permalink: /dev-tools/openocd/
 
 summary: "A binary distribution of OpenOCD."
 
@@ -8,6 +8,9 @@ comments: true
 keywords: openocd
 
 date: 2015-09-04 17:02:00 +0300
+
+redirect_from:
+  - /openocd/
 
 ---
 
@@ -18,9 +21,9 @@ directly skip to the desired pages.
 
 User pages:
 
-- [install]({{ site.baseurl }}/openocd/install/)
-- [support]({{ site.baseurl }}/openocd/support/)
-- [releases]({{ site.baseurl }}/openocd/releases/)
+- [install]({{ site.baseurl }}/dev-tools/openocd/install/)
+- [support]({{ site.baseurl }}/dev-tools/openocd/support/)
+- [releases]({{ site.baseurl }}/dev-tools/openocd/releases/)
 
 Developer & maintainer pages:
 
@@ -80,7 +83,7 @@ distribution.
 
 The details of installing the **xPack OpenOCD** on various platforms are
 presented in the separate
-[install]({{ site.baseurl }}/openocd/install/) page.
+[install]({{ site.baseurl }}/dev-tools/openocd/install/) page.
 
 ## Documentation
 
@@ -91,7 +94,7 @@ The original OpenOCD documentation is available in the installed folders:
 ## Support
 
 For the various support options, please read the separate
-[support]({{ site.baseurl }}/openocd/support/) page.
+[support]({{ site.baseurl }}/dev-tools/openocd/support/) page.
 
 ## Change log
 
@@ -110,4 +113,4 @@ folder.
 
 ## Releases
 
-See the [releases]({{ site.baseurl }}/openocd/releases/) pages.
+See the [releases]({{ site.baseurl }}/dev-tools/openocd/releases/) pages.

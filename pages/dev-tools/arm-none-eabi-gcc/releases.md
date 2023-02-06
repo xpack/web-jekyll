@@ -1,6 +1,6 @@
 ---
 title: The xPack GNU Arm Embedded GCC releases
-permalink: /arm-none-eabi-gcc/releases/
+permalink: /dev-tools/arm-none-eabi-gcc/releases/
 
 search: exclude
 toc: false
@@ -8,6 +8,9 @@ comments: false
 github_editme: false
 
 date: 2019-07-10 17:53:00 +0300
+
+redirect_from:
+  - /arm-none-eabi-gcc/releases/
 
 ---
 

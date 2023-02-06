@@ -38,7 +38,7 @@ The binary files are available from GitHub [releases]({{ page.download_url }}).
 
 The full details of installing the **xPack Windows Build Tools** on various platforms
 are presented in the separate
-[Install]({{ site.baseurl }}/windows-build-tools/install/) page.
+[Install]({{ site.baseurl }}/dev-tools/windows-build-tools/install/) page.
 
 ### Easy install
 

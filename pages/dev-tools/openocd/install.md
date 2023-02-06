@@ -1,6 +1,6 @@
 ---
 title: How to install the xPack OpenOCD binaries
-permalink: /openocd/install/
+permalink: /dev-tools/openocd/install/
 
 summary: "The recommended method is via xpm."
 
@@ -12,6 +12,9 @@ xpack-subversion: "4"
 version-date: "2022-03-25-19:34"
 
 date: 2015-09-09 19:43:00 +0300
+
+redirect_from:
+  - /openocd/install/
 
 ---
 

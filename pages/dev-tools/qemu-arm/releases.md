@@ -1,6 +1,6 @@
 ---
 title: The xPack QEMU Arm releases
-permalink: /qemu-arm/releases/
+permalink: /dev-tools/qemu-arm/releases/
 
 search: exclude
 toc: false
@@ -8,6 +8,9 @@ comments: false
 github_editme: false
 
 date: 2015-09-10 09:08:00 +0300
+
+redirect_from:
+  - /qemu-arm/releases/
 
 ---
 

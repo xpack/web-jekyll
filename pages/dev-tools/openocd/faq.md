@@ -1,11 +1,14 @@
 ---
 title: The xPack OpenOCD Frequently Asked Questions
-permalink: /openocd/faq/
+permalink: /dev-tools/openocd/faq/
 
 toc: false
 comments: true
 
 date: 2019-06-24 14:08:00 +0300
+
+redirect_from:
+  - /openocd/faq/
 
 ---
 

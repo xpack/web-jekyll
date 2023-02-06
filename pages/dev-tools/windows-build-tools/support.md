@@ -1,10 +1,13 @@
 ---
 title: How to get help for xPack Windows Build Tools
-permalink: /windows-build-tools/support/
+permalink: /dev-tools/windows-build-tools/support/
 
 comments: true
 
 date: 2020-07-14 16:26:00 +0300
+
+redirect_from:
+  - /windows-build-tools/support/
 
 ---
 
@@ -31,7 +34,7 @@ use the official [support channels](http://savannah.gnu.org/projects/make/).
 
 ## Check the FAQ
 
-Check the [FAQ]({{ site.baseurl }}/windows-build-tools/faq/)
+Check the [FAQ]({{ site.baseurl }}/dev-tools/windows-build-tools/faq/)
 for similar problems.
 
 ## Check the GitHub Discussions

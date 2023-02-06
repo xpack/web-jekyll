@@ -1,10 +1,13 @@
 ---
 title: How to get help for xPack CMake
-permalink: /cmake/support/
+permalink: /dev-tools/cmake/support/
 
 comments: true
 
 date: 2020-09-29 14:05:00 +0300
+
+redirect_from:
+  - /cmake/support/
 
 ---
 
@@ -21,7 +24,7 @@ The current version specific CMake documentation is available online from:
 
 ## Check the FAQ
 
-Check the [FAQ]({{ site.baseurl }}/cmake/faq/)
+Check the [FAQ]({{ site.baseurl }}/dev-tools/cmake/faq/)
 for similar problems.
 
 ## Check the GitHub Discussions

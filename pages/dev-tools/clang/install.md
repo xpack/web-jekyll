@@ -1,6 +1,6 @@
 ---
 title: How to install the xPack LLVM clang binaries
-permalink: /clang/install/
+permalink: /dev-tools/clang/install/
 
 summary: "The recommended method is via xpm."
 
@@ -12,6 +12,9 @@ xpack-subversion: "1"
 version-major: "13"
 
 date: 2021-05-22 00:27:00 +0300
+
+redirect_from:
+  - /clang/install/
 
 ---
 

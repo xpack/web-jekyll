@@ -1,11 +1,14 @@
 ---
 title: The xPack Ninja Build Frequently Asked Questions
-permalink: /ninja-build/faq/
+permalink: /dev-tools/ninja-build/faq/
 
 toc: false
 comments: true
 
 date: 2020-09-28 17:49:00 +0300
+
+redirect_from:
+  - /ninja-build/faq/
 
 ---
 

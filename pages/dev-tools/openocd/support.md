@@ -1,10 +1,13 @@
 ---
 title: How to get help for xPack OpenOCD?
-permalink: /openocd/support/
+permalink: /dev-tools/openocd/support/
 
 comments: true
 
 date: 2019-06-21 11:08:00 +0300
+
+redirect_from:
+  - /openocd/support/
 
 ---
 
@@ -31,7 +34,7 @@ use the official OpenOCD [support channels](https://openocd.org/pages/discussion
 
 ## Check the FAQ
 
-Check the [FAQ]({{ site.baseurl }}/openocd/faq/)
+Check the [FAQ]({{ site.baseurl }}/dev-tools/openocd/faq/)
 for similar problems.
 
 ## Check the GitHub Discussions

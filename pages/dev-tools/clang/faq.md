@@ -1,11 +1,14 @@
 ---
 title: The LLVM clang Frequently Asked Questions
-permalink: /clang/faq/
+permalink: /dev-tools/clang/faq/
 
 toc: false
 comments: true
 
 date: 2021-05-22 00:27:00 +0300
+
+redirect_from:
+  - /clang/faq/
 
 ---
 

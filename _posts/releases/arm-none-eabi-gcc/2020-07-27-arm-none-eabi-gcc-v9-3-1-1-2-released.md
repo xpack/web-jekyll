@@ -45,7 +45,7 @@ The binary files are available from GitHub [releases]({{ page.download_url }}).
 
 The full details of installing the **xPack GNU Arm Embedded GCC** on
 various platforms are presented in the separate
-[Install]({{ site.baseurl }}/arm-none-eabi-gcc/install/) page.
+[Install]({{ site.baseurl }}/dev-tools/arm-none-eabi-gcc/install/) page.
 
 ### Easy install
 

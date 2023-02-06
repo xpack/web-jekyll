@@ -1,6 +1,6 @@
 ---
 title: The LLVM clang
-permalink: /clang/
+permalink: /dev-tools/clang/
 
 summary: "A binary distribution of the LLVM clang."
 comments: true
@@ -11,6 +11,9 @@ keywords:
 
 date: 2021-05-22 00:27:00 +0300
 
+redirect_from:
+  - /clang/
+
 ---
 
 ## Quicklinks
@@ -20,9 +23,9 @@ directly skip to the desired pages.
 
 User pages:
 
-- [install]({{ site.baseurl }}/clang/install/)
-- [support]({{ site.baseurl }}/clang/support/)
-- [releases]({{ site.baseurl }}/clang/releases/)
+- [install]({{ site.baseurl }}/dev-tools/clang/install/)
+- [support]({{ site.baseurl }}/dev-tools/clang/support/)
+- [releases]({{ site.baseurl }}/dev-tools/clang/releases/)
 
 Developer & maintainer pages:
 
@@ -61,7 +64,7 @@ original LLVM releases.
 
 The details of installing the **xPack LLVM clang** on various
 platforms are presented in the separate
-[install]({{ site.baseurl }}/clang/install/) page.
+[install]({{ site.baseurl }}/dev-tools/clang/install/) page.
 
 ## Documentation
 
@@ -71,12 +74,12 @@ To save space and bandwidth, the original documentation is available
 ## Predefined macros
 
 The list of build-in macros is available in a
-[separate page]({{ site.baseurl }}/clang/predefined-macros/).
+[separate page]({{ site.baseurl }}/dev-tools/clang/predefined-macros/).
 
 ## Support
 
 For the various support options, please read the separate
-[support]({{ site.baseurl }}/clang/support/) page.
+[support]({{ site.baseurl }}/dev-tools/clang/support/) page.
 
 ## Change log
 
@@ -95,4 +98,4 @@ folder.
 
 ## Releases
 
-See the [releases]({{ site.baseurl }}/clang/releases/) pages.
+See the [releases]({{ site.baseurl }}/dev-tools/clang/releases/) pages.

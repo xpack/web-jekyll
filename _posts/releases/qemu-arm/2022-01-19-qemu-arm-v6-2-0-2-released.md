@@ -63,7 +63,7 @@ distributions they must be installed explicitly.
 
 The full details of installing the **xPack QEMU Arm** on various platforms
 are presented in the separate
-[Install]({{ site.baseurl }}/qemu-arm/install/) page.
+[Install]({{ site.baseurl }}/dev-tools/qemu-arm/install/) page.
 
 ### Easy install
 

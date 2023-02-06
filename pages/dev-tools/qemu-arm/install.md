@@ -1,6 +1,6 @@
 ---
 title: How to install the xPack QEMU Arm binaries
-permalink: /qemu-arm/install/
+permalink: /dev-tools/qemu-arm/install/
 
 summary: "The recommended method is via xpm."
 
@@ -11,6 +11,9 @@ version: "7.0.0"
 xpack-subversion: "1"
 
 date: 2015-09-04 17:03:00 +0300
+
+redirect_from:
+  - /qemu-arm/install/
 
 ---
 

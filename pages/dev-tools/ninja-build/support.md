@@ -1,10 +1,13 @@
 ---
 title: How to get help for xPack Ninja Build
-permalink: /ninja-build/support/
+permalink: /dev-tools/ninja-build/support/
 
 comments: true
 
 date: 2020-09-28 17:54:00 +0300
+
+redirect_from:
+  - /ninja-build/support/
 
 ---
 
@@ -21,7 +24,7 @@ The original documentation is available from:
 
 ## Check the FAQ
 
-Check the [FAQ]({{ site.baseurl }}/ninja-build/faq/)
+Check the [FAQ]({{ site.baseurl }}/dev-tools/ninja-build/faq/)
 for similar problems.
 
 ## Check the GitHub Discussions

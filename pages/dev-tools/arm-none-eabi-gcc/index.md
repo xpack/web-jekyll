@@ -1,6 +1,6 @@
 ---
 title: The xPack GNU Arm Embedded GCC
-permalink: /arm-none-eabi-gcc/
+permalink: /dev-tools/arm-none-eabi-gcc/
 
 summary: "A binary distribution of GNU Arm Embedded GCC."
 comments: true
@@ -12,6 +12,9 @@ keywords:
 
 date: 2019-07-10 17:53:00 +0300
 
+redirect_from:
+  - /arm-none-eabi-gcc/
+
 ---
 
 ## Quicklinks
@@ -21,9 +24,9 @@ directly skip to the desired pages.
 
 User pages:
 
-- [install]({{ site.baseurl }}/arm-none-eabi-gcc/install/)
-- [support]({{ site.baseurl }}/arm-none-eabi-gcc/support/)
-- [releases]({{ site.baseurl }}/arm-none-eabi-gcc/releases/)
+- [install]({{ site.baseurl }}/dev-tools/arm-none-eabi-gcc/install/)
+- [support]({{ site.baseurl }}/dev-tools/arm-none-eabi-gcc/support/)
+- [releases]({{ site.baseurl }}/dev-tools/arm-none-eabi-gcc/releases/)
 
 Developer & maintainer pages:
 
@@ -67,7 +70,7 @@ moves ahead of Arm and uses more recent tools versions that fix the bugs.
 
 The details of installing the **xPack GNU Arm Embedded GCC** on various
 platforms are presented in the separate
-[install]({{ site.baseurl }}/arm-none-eabi-gcc/install/) page.
+[install]({{ site.baseurl }}/dev-tools/arm-none-eabi-gcc/install/) page.
 
 ## Documentation
 
@@ -77,11 +80,11 @@ To save space and bandwidth, the original GNU GCC documentation is available
 ## Support
 
 For the various support options, please read the separate
-[support]({{ site.baseurl }}/arm-none-eabi-gcc/support/) page.
+[support]({{ site.baseurl }}/dev-tools/arm-none-eabi-gcc/support/) page.
 
 In early releases, Python support in `gdb` was tricky and required
 the same versions of
-[Python]({{ site.baseurl }}/arm-none-eabi-gcc/python/) to be installed.
+[Python]({{ site.baseurl }}/dev-tools/arm-none-eabi-gcc/python/) to be installed.
 
 ## Change log
 
@@ -100,4 +103,4 @@ folder.
 
 ## Releases
 
-See the [releases]({{ site.baseurl }}/arm-none-eabi-gcc/releases/) pages.
+See the [releases]({{ site.baseurl }}/dev-tools/arm-none-eabi-gcc/releases/) pages.

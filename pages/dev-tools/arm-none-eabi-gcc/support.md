@@ -1,10 +1,13 @@
 ---
 title: How to get help for xPack GNU Arm Embedded GCC
-permalink: /arm-none-eabi-gcc/support/
+permalink: /dev-tools/arm-none-eabi-gcc/support/
 
 comments: true
 
 date: 2019-07-10 17:53:00 +0300
+
+redirect_from:
+  - /arm-none-eabi-gcc/support/
 
 ---
 
@@ -20,7 +23,7 @@ The original GNU GCC documentation is available
 
 ## Check the FAQ
 
-Check the [FAQ]({{ site.baseurl }}/arm-none-eabi-gcc/faq/)
+Check the [FAQ]({{ site.baseurl }}/dev-tools/arm-none-eabi-gcc/faq/)
 for similar problems.
 
 ## Check the GitHub Discussions

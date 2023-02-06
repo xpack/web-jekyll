@@ -1,10 +1,13 @@
 ---
 title: How to get help for xPack LLVM clang
-permalink: /clang/support/
+permalink: /dev-tools/clang/support/
 
 comments: true
 
 date: 2021-05-22 00:27:00 +0300
+
+redirect_from:
+  - /clang/support/
 
 ---
 
@@ -20,7 +23,7 @@ To save space and bandwidth, the original documentation is available
 
 ## Check the FAQ
 
-Check the [FAQ]({{ site.baseurl }}/clang/faq/)
+Check the [FAQ]({{ site.baseurl }}/dev-tools/clang/faq/)
 for similar problems.
 
 ## Check the GitHub Discussions

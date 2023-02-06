@@ -51,7 +51,7 @@ If needed, you can completely remove the package from your system by running the
 
 ## More details
 
-For more details please read the [Build Tools for Windows]({{ site.baseurl }}/windows-build-tools/) page.
+For more details please read the [Build Tools for Windows]({{ site.baseurl }}/dev-tools/windows-build-tools/) page.
 
 
 ## Known problems

@@ -1,6 +1,6 @@
 ---
 title: How to install the xPack GNU AArch64 Embedded GCC binaries
-permalink: /aarch64-none-elf-gcc/install/
+permalink: /dev-tools/aarch64-none-elf-gcc/install/
 
 summary: "The recommended method is via xpm."
 
@@ -12,6 +12,9 @@ xpack-subversion: "1.2"
 version-timestamp: "20220111"
 
 date: 2019-07-10 17:53:00 +0300
+
+redirect_from:
+  - /aarch64-none-elf-gcc/install/
 
 ---
 

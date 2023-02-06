@@ -1,6 +1,6 @@
 ---
 title: The xPack Ninja Build releases
-permalink: /ninja-build/releases/
+permalink: /dev-tools/ninja-build/releases/
 
 search: exclude
 toc: false
@@ -8,6 +8,9 @@ comments: false
 github_editme: false
 
 date: 2020-09-28 17:53:00 +0300
+
+redirect_from:
+  - /ninja-build/releases/
 
 ---
 

@@ -43,7 +43,7 @@ The binary files are available from GitHub [releases]({{ page.download_url }}).
 
 The full details of installing the **xPack Meson Build** on various platforms
 are presented in the separate
-[Install]({{ site.baseurl }}/meson-build/install/) page.
+[Install]({{ site.baseurl }}/dev-tools/meson-build/install/) page.
 
 ### Easy install
 

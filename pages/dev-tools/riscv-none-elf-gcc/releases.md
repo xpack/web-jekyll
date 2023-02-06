@@ -1,6 +1,6 @@
 ---
 title: The xPack GNU RISC-V Embedded GCC releases
-permalink: /riscv-none-elf-gcc/releases/
+permalink: /dev-tools/riscv-none-elf-gcc/releases/
 
 search: exclude
 toc: false
@@ -11,6 +11,7 @@ date: 2019-07-10 17:53:00 +0300
 
 redirect_from:
   - /riscv-none-embed-gcc/releases/
+  - /riscv-none-elf-gcc/releases/
 
 ---
 

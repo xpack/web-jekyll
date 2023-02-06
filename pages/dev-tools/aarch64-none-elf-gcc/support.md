@@ -1,10 +1,13 @@
 ---
 title: How to get help for xPack GNU AArch64 Embedded GCC
-permalink: /aarch64-none-elf-gcc/support/
+permalink: /dev-tools/aarch64-none-elf-gcc/support/
 
 comments: true
 
 date: 2019-07-10 17:53:00 +0300
+
+redirect_from:
+  - /aarch64-none-elf-gcc/support/
 
 ---
 
@@ -20,7 +23,7 @@ The original GNU GCC documentation is available
 
 ## Check the FAQ
 
-Check the [FAQ]({{ site.baseurl }}/aarch64-none-elf-gcc/faq/)
+Check the [FAQ]({{ site.baseurl }}/dev-tools/aarch64-none-elf-gcc/faq/)
 for similar problems.
 
 ## Check the GitHub Discussions

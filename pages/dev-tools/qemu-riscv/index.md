@@ -1,6 +1,6 @@
 ---
 title: The xPack QEMU RISC-V
-permalink: /qemu-riscv/
+permalink: /dev-tools/qemu-riscv/
 
 summary: "A binary distribution of QEMU RISC-V."
 
@@ -11,6 +11,9 @@ keywords:
 
 date: 2015-09-07 21:31:00 +0300
 
+redirect_from:
+  - /qemu-riscv/
+
 ---
 
 ## Quicklinks
@@ -20,9 +23,9 @@ directly skip to the desired pages.
 
 User pages:
 
-- [install]({{ site.baseurl }}/qemu-riscv/install/)
-- [support]({{ site.baseurl }}/qemu-riscv/support/)
-- [releases]({{ site.baseurl }}/qemu-riscv/releases/)
+- [install]({{ site.baseurl }}/dev-tools/qemu-riscv/install/)
+- [support]({{ site.baseurl }}/dev-tools/qemu-riscv/support/)
+- [releases]({{ site.baseurl }}/dev-tools/qemu-riscv/releases/)
 
 Developer & maintainer pages:
 
@@ -92,7 +95,7 @@ The official QEMU documentation is available
 
 The details of installing the **xPack QEMU RISC-V** on various platforms are
 presented in a dedicated
-[install]({{ site.baseurl }}/qemu-riscv/install) page.
+[install]({{ site.baseurl }}/dev-tools/qemu-riscv/install) page.
 
 ## Testing
 
@@ -102,7 +105,7 @@ plug-in; create a test project using the _Hello World_ project template.
 ## Support
 
 For the various support options, please read the separate
-[support]({{ site.baseurl }}/qemu-riscv/support/) page.
+[support]({{ site.baseurl }}/dev-tools/qemu-riscv/support/) page.
 
 ## Change log
 
@@ -122,7 +125,7 @@ folder.
 
 ## Releases
 
-See the [releases]({{ site.baseurl }}/qemu-riscv/releases) pages.
+See the [releases]({{ site.baseurl }}/dev-tools/qemu-riscv/releases) pages.
 
 ## Other links
 

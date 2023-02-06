@@ -1,6 +1,6 @@
 ---
 title: The xPack LLVM clang releases
-permalink: /clang/releases/
+permalink: /dev-tools/clang/releases/
 
 search: exclude
 toc: false
@@ -8,6 +8,9 @@ comments: false
 github_editme: false
 
 date: 2021-05-22 00:27:00 +0300
+
+redirect_from:
+  - /clang/releases/
 
 ---
 

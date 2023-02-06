@@ -1,6 +1,6 @@
 ---
 title: How to install the xPack Meson Build binaries
-permalink: /meson-build/install/
+permalink: /dev-tools/meson-build/install/
 
 summary: "The recommended method is via xpm."
 
@@ -11,6 +11,9 @@ version: "0.60.3"
 xpack-subversion: "1"
 
 date: 2020-09-27 11:09:00 +0300
+
+redirect_from:
+  - /meson-build/install/
 
 ---
 

@@ -60,7 +60,7 @@ distributions they must be installed explicitly.
 
 The full details of installing the **xPack QEMU RISC-V** on various platforms
 are presented in the separate
-[Install]({{ site.baseurl }}/qemu-riscv/install/) page.
+[Install]({{ site.baseurl }}/dev-tools/qemu-riscv/install/) page.
 
 ### Easy install
 

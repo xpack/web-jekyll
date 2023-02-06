@@ -1,6 +1,6 @@
 ---
 title: The xPack CMake
-permalink: /cmake/
+permalink: /dev-tools/cmake/
 
 summary: "A binary distribution of CMake."
 
@@ -8,6 +8,9 @@ comments: true
 keywords: cmake
 
 date: 2020-09-29 14:05:00 +0300
+
+redirect_from:
+  - /cmake/
 
 ---
 
@@ -18,9 +21,9 @@ directly skip to the desired pages.
 
 User pages:
 
-- [install]({{ site.baseurl }}/cmake/install/)
-- [support]({{ site.baseurl }}/cmake/support/)
-- [releases]({{ site.baseurl }}/cmake/releases/)
+- [install]({{ site.baseurl }}/dev-tools/cmake/install/)
+- [support]({{ site.baseurl }}/dev-tools/cmake/support/)
+- [releases]({{ site.baseurl }}/dev-tools/cmake/releases/)
 
 Developer & maintainer pages:
 
@@ -58,7 +61,7 @@ distribution.
 
 The details of installing the **xPack CMake** on various platforms are
 presented in the separate
-[install]({{ site.baseurl }}/cmake/install/) page.
+[install]({{ site.baseurl }}/dev-tools/cmake/install/) page.
 
 ## Documentation
 
@@ -69,7 +72,7 @@ The current version specific CMake documentation is available online from:
 ## Support
 
 For the various support options, please read the separate
-[support]({{ site.baseurl }}/cmake/support/) page.
+[support]({{ site.baseurl }}/dev-tools/cmake/support/) page.
 
 ## Change log
 
@@ -88,4 +91,4 @@ folder.
 
 ## Releases
 
-See the [releases]({{ site.baseurl }}/cmake/releases/) pages.
+See the [releases]({{ site.baseurl }}/dev-tools/cmake/releases/) pages.

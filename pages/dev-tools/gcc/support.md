@@ -1,10 +1,13 @@
 ---
 title: How to get help for xPack GNU Compiler Collection
-permalink: /gcc/support/
+permalink: /dev-tools/gcc/support/
 
 comments: true
 
 date: 2021-05-22 00:27:00 +0300
+
+redirect_from:
+  - /gcc/support/
 
 ---
 
@@ -20,7 +23,7 @@ The original GNU GCC documentation is available
 
 ## Check the FAQ
 
-Check the [FAQ]({{ site.baseurl }}/gcc/faq/)
+Check the [FAQ]({{ site.baseurl }}/dev-tools/gcc/faq/)
 for similar problems.
 
 ## Check the GitHub Discussions

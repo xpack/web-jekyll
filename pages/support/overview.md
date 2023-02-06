@@ -11,10 +11,10 @@ date: 2015-09-12 13:43:00 +0300
 ## Quicklinks
 
 - [xpm support]({{ site.baseurl }}/xpm/support/)
-- [Arm toolchain support]({{ site.baseurl }}/arm-none-eabi-gcc/support/)
-- [RISC-V toolchain support]({{ site.baseurl }}/riscv-none-elf-gcc/support/)
-- [OpenOCD support]({{ site.baseurl }}/openocd/support/)
-- [QEMU Arm support]({{ site.baseurl }}/qemu-arm/support/)
+- [Arm toolchain support]({{ site.baseurl }}/dev-tools/arm-none-eabi-gcc/support/)
+- [RISC-V toolchain support]({{ site.baseurl }}/dev-tools/riscv-none-elf-gcc/support/)
+- [OpenOCD support]({{ site.baseurl }}/dev-tools/openocd/support/)
+- [QEMU Arm support]({{ site.baseurl }}/dev-tools/qemu-arm/support/)
 - [xPack chatroom](https://gitter.im/xpack/) - a place for users to chat
 
 ## Tools issues

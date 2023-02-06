@@ -21,7 +21,7 @@ tags:
 
 ---
 
-For your convenience, the [Windows Build Tools]({{ site.baseurl }}/windows-build-tools/) were repacked as a Windows setup.
+For your convenience, the [Windows Build Tools]({{ site.baseurl }}/dev-tools/windows-build-tools/) were repacked as a Windows setup.
 
 [Binary files »]({{ page.download_url }})
 
@@ -31,7 +31,7 @@ Please note that the setup does not install any components outside the selected 
 
 The repacking also corrected a problem with the previous archive (the missing DLLs were added), so the previous archive (Cross Build Tools.zip) is now considered DEPRECATE.
 
-For more information, please read the [dedicated page]({{ site.baseurl }}/windows-build-tools/).
+For more information, please read the [dedicated page]({{ site.baseurl }}/dev-tools/windows-build-tools/).
 
 ## Download
 

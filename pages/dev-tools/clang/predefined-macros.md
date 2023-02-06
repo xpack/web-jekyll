@@ -1,6 +1,6 @@
 ---
 title: GNU predefined macros
-permalink: /clang/predefined-macros/
+permalink: /dev-tools/clang/predefined-macros/
 
 summary: "The preprocessosr built-in macros."
 comments: true
@@ -11,6 +11,9 @@ keywords:
   - macros
 
 date: 2022-02-10 18:27:00 +0200
+
+redirect_from:
+  - /clang/predefined-macros/
 
 ---
 

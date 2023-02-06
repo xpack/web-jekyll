@@ -1,6 +1,6 @@
 ---
 title: The xPack QEMU Arm
-permalink: /qemu-arm/
+permalink: /dev-tools/qemu-arm/
 
 summary: "A binary distribution of QEMU Arm."
 
@@ -13,6 +13,9 @@ keywords:
 
 date: 2015-09-07 21:31:00 +0300
 
+redirect_from:
+  - /qemu-arm/
+
 ---
 
 ## Quicklinks
@@ -22,9 +25,9 @@ directly skip to the desired pages.
 
 User pages:
 
-- [install]({{ site.baseurl }}/qemu-arm/install/)
-- [support]({{ site.baseurl }}/qemu-arm/support/)
-- [releases]({{ site.baseurl }}/qemu-arm/releases/)
+- [install]({{ site.baseurl }}/dev-tools/qemu-arm/install/)
+- [support]({{ site.baseurl }}/dev-tools/qemu-arm/support/)
+- [releases]({{ site.baseurl }}/dev-tools/qemu-arm/releases/)
 
 Developer & maintainer pages:
 
@@ -37,7 +40,7 @@ Developer & maintainer pages:
 
 Starting with 2022, the custom QEMU known as `qemu-system-gnuarmeclipse`,
 used initially with Eclipse, was
-[deprecated]({{ site.baseurl }}/qemu-arm/gnuarmeclipse/),
+[deprecated]({{ site.baseurl }}/dev-tools/qemu-arm/gnuarmeclipse/),
 and the project was updated to use the current upstream sources.
 
 For compatibility reasons, `qemu-system-gnuarmeclipse` will still be
@@ -104,7 +107,7 @@ The official QEMU documentation is available
 
 The details of installing the **xPack QEMU Arm** on various platforms are
 presented in a dedicated
-[install]({{ site.baseurl }}/qemu-arm/install) page.
+[install]({{ site.baseurl }}/dev-tools/qemu-arm/install) page.
 
 ## Testing
 
@@ -114,7 +117,7 @@ plug-in; create a test project using the _Hello World_ project template.
 ## Support
 
 For the various support options, please read the separate
-[support]({{ site.baseurl }}/qemu-arm/support/) page.
+[support]({{ site.baseurl }}/dev-tools/qemu-arm/support/) page.
 
 ## Change log
 
@@ -134,7 +137,7 @@ folder.
 
 ## Releases
 
-See the [releases]({{ site.baseurl }}/qemu-arm/releases) pages.
+See the [releases]({{ site.baseurl }}/dev-tools/qemu-arm/releases) pages.
 
 ## Other links
 

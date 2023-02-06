@@ -1,10 +1,13 @@
 ---
 title: How to get help for xPack MinGW-w64 GCC
-permalink: /mingw-w64-gcc/support/
+permalink: /dev-tools/mingw-w64-gcc/support/
 
 comments: true
 
 date: 2022-10-04 11:43:00 +0300
+
+redirect_from:
+  - /mingw-w64-gcc/support/
 
 ---
 
@@ -22,7 +25,7 @@ The original GNU GCC documentation is available online:
 
 ## Check the FAQ
 
-Check the [FAQ]({{ site.baseurl }}/mingw-w64-gcc/faq/)
+Check the [FAQ]({{ site.baseurl }}/dev-tools/mingw-w64-gcc/faq/)
 for similar problems.
 
 ## Check the GitHub Discussions

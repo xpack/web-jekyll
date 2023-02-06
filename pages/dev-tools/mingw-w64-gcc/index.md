@@ -1,6 +1,6 @@
 ---
 title: The xPack MinGW-w64 GCC
-permalink: /mingw-w64-gcc/
+permalink: /dev-tools/mingw-w64-gcc/
 
 summary: "A binary distribution of MinGW-w64 GCC."
 comments: true
@@ -12,6 +12,9 @@ keywords:
 
 date: 2022-10-04 11:43:00 +0300
 
+redirect_from:
+  - /mingw-w64-gcc/
+
 ---
 
 ## Quicklinks
@@ -21,9 +24,9 @@ directly skip to the desired pages.
 
 User pages:
 
-- [install]({{ site.baseurl }}/mingw-w64-gcc/install/)
-- [support]({{ site.baseurl }}/mingw-w64-gcc/support/)
-- [releases]({{ site.baseurl }}/mingw-w64-gcc/releases/)
+- [install]({{ site.baseurl }}/dev-tools/mingw-w64-gcc/install/)
+- [support]({{ site.baseurl }}/dev-tools/mingw-w64-gcc/support/)
+- [releases]({{ site.baseurl }}/dev-tools/mingw-w64-gcc/releases/)
 
 Developer & maintainer pages:
 
@@ -63,7 +66,7 @@ original GNU Compiler Collection (GCC) and generates Windows binaries.
 
 The details of installing the **xPack MinGW-w64 GCC** on various
 platforms are presented in the separate
-[install]({{ site.baseurl }}/mingw-w64-gcc/install/) page.
+[install]({{ site.baseurl }}/dev-tools/mingw-w64-gcc/install/) page.
 
 ## Documentation
 
@@ -75,7 +78,7 @@ The original GNU GCC documentation is available online:
 ## Support
 
 For the various support options, please read the separate
-[support]({{ site.baseurl }}/mingw-w64-gcc/support/) page.
+[support]({{ site.baseurl }}/dev-tools/mingw-w64-gcc/support/) page.
 
 ## Change log
 
@@ -94,4 +97,4 @@ folder.
 
 ## Releases
 
-See the [releases]({{ site.baseurl }}/mingw-w64-gcc/releases/) pages.
+See the [releases]({{ site.baseurl }}/dev-tools/mingw-w64-gcc/releases/) pages.

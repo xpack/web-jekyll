@@ -1,11 +1,14 @@
 ---
 title: The xPack Meson Build Frequently Asked Questions
-permalink: /meson-build/faq/
+permalink: /dev-tools/meson-build/faq/
 
 toc: false
 comments: true
 
 date: 2020-09-30 11:47:00 +0300
+
+redirect_from:
+  - /meson-build/faq/
 
 ---
 
