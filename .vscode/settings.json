@@ -82,6 +82,7 @@
     "Werror",
     "Wmissing",
     "Wreturn",
+    "Writable",
     "Wunused",
     "XACT",
     "Yocto",
