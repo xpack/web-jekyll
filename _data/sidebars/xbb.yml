@@ -1,0 +1,24 @@
+# This is the xbb sidebar TOC.
+# The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: Sidebar
+  product: xPack Build Box
+  # version: 1.0
+  folders:
+
+  - title: Getting Started
+    output: web
+    folderitems:
+    - title: Overview
+      url: /xbb/
+      output: web
+    - title: Prerequisites
+      url: /xbb/prerequisites/
+      output: web
+    - title: Linux distro versions
+      url: /xbb/end-of-support/
+      output: web
+    - title: Releases
+      url: /xbb/releases/
+      output: web
