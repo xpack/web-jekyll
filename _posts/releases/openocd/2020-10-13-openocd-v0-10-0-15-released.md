@@ -23,7 +23,7 @@ tags:
 
 [The xPack OpenOCD](https://xpack.github.io/dev-tools/openocd/)
 is the **xPack** distribution of
-[OpenOCD](http://openocd.org).
+[OpenOCD](https://openocd.org).
 
 There are separate binaries for **Windows** (Intel 32/64-bit),
 **macOS** (Intel 64-bit) and **GNU/Linux** (Intel 32/64-bit, Arm 32/64-bit).
@@ -65,7 +65,7 @@ xpm install --global @xpack-dev-tools/openocd@{{ page.version }}.{{ page.npm_sub
 ## Compliance
 
 The xPack OpenOCD generally follows the official
-[OpenOCD](http://openocd.org) releases.
+[OpenOCD](https://openocd.org) releases.
 
 The current version is based on:
 

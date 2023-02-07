@@ -55,7 +55,7 @@ xpm install --global @xpack-dev-tools/qemu-arm@{{ page.version }}.{{ page.npm_su
 
 ## Compliance
 
-xPack QEMU Arm currently is based on the official [QEMU](http://www.qemu.org),
+xPack QEMU Arm currently is based on the official [QEMU](https://www.qemu.org),
 with major changes.
 
 The current version is based on:

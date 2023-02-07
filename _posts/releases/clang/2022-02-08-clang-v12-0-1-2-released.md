@@ -23,7 +23,7 @@ tags:
 
 [The xPack LLVM clang](https://xpack.github.io/dev-tools/clang/)
 is a standalone cross-platform binary distribution of
-[LLVM clang](http://clang.org).
+[LLVM clang](https://clang.llvm.org).
 
 There are separate binaries for **Windows** (Intel 64-bit),
 **macOS** (Intel 64-bit, Apple Silicon 64-bit)
@@ -110,7 +110,7 @@ xpm uninstall --global @xpack-dev-tools/clang
 ## Compliance
 
 The xPack LLVM clang generally follows the official
-[LLVM clang](http://clang.org) releases.
+[LLVM clang](https://clang.llvm.org) releases.
 
 The current version is based on:
 

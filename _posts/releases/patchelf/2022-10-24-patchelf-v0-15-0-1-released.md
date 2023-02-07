@@ -110,7 +110,7 @@ xpm uninstall --global @xpack-dev-tools/patchelf
 ## Compliance
 
 The xPack NixOS PatchELF generally follows the official
-[NixOS PatchELF](http://patchelf.org) releases.
+[NixOS PatchELF](https://patchelf.org) releases.
 
 The current version is based on:
 

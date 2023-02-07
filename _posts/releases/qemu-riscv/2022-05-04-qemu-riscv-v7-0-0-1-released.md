@@ -24,7 +24,7 @@ tags:
 
 [The xPack QEMU RISC-V](https://xpack.github.io/dev-tools/qemu-riscv/)
 is a standalone cross-platform binary distribution of
-[QEMU](http://www.qemu.org).
+[QEMU](https://www.qemu.org).
 
 There are separate binaries for **Windows** (Intel 64-bit),
 **macOS** (Intel 64-bit, Apple Silicon 64-bit)
@@ -118,7 +118,7 @@ xpm uninstall --global @xpack-dev-tools/qemu-riscv
 
 ## Compliance
 
-The xPack QEMU RISC-V currently is based on the official [QEMU](http://www.qemu.org),
+The xPack QEMU RISC-V currently is based on the official [QEMU](https://www.qemu.org),
 with no major changes.
 
 The current version is based on:

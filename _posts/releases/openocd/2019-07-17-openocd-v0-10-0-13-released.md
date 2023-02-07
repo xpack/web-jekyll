@@ -54,7 +54,7 @@ xpm install --global @xpack-dev-tools/openocd@{{ page.version }}.{{ page.npm_sub
 ## Compliance
 
 The xPack OpenOCD generally follows the official
-[OpenOCD](http://openocd.org) releases.
+[OpenOCD](https://openocd.org) releases.
 
 The current version is based on:
 

@@ -189,8 +189,8 @@ possible, prefer the manufacturer drivers." %}
 ### ST-LINK/V2
 
 One example of compatible drivers are the ST-LINK/V2 USB drivers, from ST,
-available as part number 
-[STSW-LINK009](http://www.st.com/web/en/catalog/tools/FM147/SC1887/PF260219).
+available as part number
+[STSW-LINK009](https://www.st.com/web/en/catalog/tools/FM147/SC1887/PF260219).
 Download the `stsw-link009.zip` archive, extract its content into a separate
 folder, and run the `dpinst_amd64.exe` (or `dpinst_x86.exe`) with
 administrative privileges.

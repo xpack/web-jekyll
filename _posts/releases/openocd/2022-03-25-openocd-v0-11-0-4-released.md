@@ -26,7 +26,7 @@ tags:
 
 [The xPack OpenOCD](https://xpack.github.io/dev-tools/openocd/)
 is a standalone cross-platform binary distribution of
-[OpenOCD](http://openocd.org).
+[OpenOCD](https://openocd.org).
 
 There are separate binaries for **Windows** (Intel 64-bit),
 **macOS** (Intel 64-bit, Apple Silicon 64-bit)
@@ -116,7 +116,7 @@ xpm uninstall --global @xpack-dev-tools/openocd
 ## Compliance
 
 The xPack OpenOCD generally follows the official
-[OpenOCD](http://openocd.org) releases.
+[OpenOCD](https://openocd.org) releases.
 
 The current version is based on:
 

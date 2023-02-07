@@ -24,7 +24,7 @@ tags:
 
 [The xPack CMake](https://xpack.github.io/dev-tools/cmake/)
 is a standalone cross-platform binary distribution of
-[CMake](http://cmake.org).
+[CMake](https://cmake.org).
 
 There are separate binaries for **Windows** (Intel 64-bit),
 **macOS** (Intel 64-bit, Apple Silicon 64-bit)

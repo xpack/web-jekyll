@@ -14,7 +14,7 @@ redirect_from:
 ## Overview
 
 The **XSVD** format is a rework of the Arm
-[CMSIS SVD](http://www.keil.com/cmsis/svd), but cleaned, extended and
+[CMSIS SVD](https://www.keil.com/cmsis/svd), but cleaned, extended and
 rewritten in JSON instead of XML.
 
 ## File conventions
@@ -591,7 +591,7 @@ Example
 
 ## Revision history
 
-The format version is reflected in the `schemaVersion` property, present in the root object. The value of this property follows the semantic versioning requirements ([semver](http://semver.org)).
+The format version is reflected in the `schemaVersion` property, present in the root object. The value of this property follows the semantic versioning requirements ([semver](https://semver.org)).
 
 Versions are listed in reverse chronological order.
 

@@ -111,7 +111,7 @@ The xPack Windows Build Tools uses programs from other projects.
 
 The current version is based on:
 
-- [GNU make](http://ftpmirror.gnu.org/make/) version 4.2.1
+- [GNU make](https://ftpmirror.gnu.org/make/) version 4.2.1
 - [Busybox](https://github.com/rmyorston/busybox-w32), the d239d2d5
 commit from Oct 17, 2021.
 

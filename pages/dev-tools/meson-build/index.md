@@ -34,7 +34,7 @@ Developer & maintainer pages:
 ## Overview
 
 The **xPack Meson Build** is a cross-platform binary distribution of
-[Meson](http://mesonbuild.com), **The Meson Build system**,
+[Meson](https://mesonbuild.com), **The Meson Build system**,
 an open source project hosted on
 [GitHub](https://github.com/mesonbuild/meson/).
 

@@ -56,7 +56,7 @@ The syntax remains relatively easy to read, but the Liquid tags still introduce 
 
 ### Jinja2
 
-The default syntax of [Jinja2](http://jinja.pocoo.org/docs/dev/) matches Django syntax in many ways, and it also very similar to the syntax of [Liquid](https://shopify.github.io/liquid/) metadata, so it will not be repeated here.
+The default syntax of [Jinja2](https://jinja.pocoo.org/docs/dev/) matches Django syntax in many ways, and it also very similar to the syntax of [Liquid](https://shopify.github.io/liquid/) metadata, so it will not be repeated here.
 
 ### ST CubeMX
 
@@ -91,7 +91,7 @@ The syntax controls the details of the expansion to the latest details, includin
 
 ### Infineon DAVE
 
-In DAVE 4 templates are stored as `.tmpl` files and use full [Groovy](http://www.groovy-lang.org) scripts (which look very familiar to Java programmers).
+In DAVE 4 templates are stored as `.tmpl` files and use full [Groovy](https://www.groovy-lang.org) scripts (which look very familiar to Java programmers).
 
 ```.java
 package Model.Common;
@@ -263,11 +263,11 @@ Like most other things in Eclipse, the definitions reside in a very verbose xml 
 
 ### Apache FreeMarker
 
-[FreeMarker](http://freemarker.org) is another nice Apache Java project.
+[FreeMarker](https://freemarker.org) is another nice Apache Java project.
 
 The templates are written in FTL (FreeMarket Template Language), which has an XML-like syntax, for example:
 
-```
+```xml
 <#if animals.python.protected>
   Pythons are protected animals!
 </#if>

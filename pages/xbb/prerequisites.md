@@ -20,7 +20,7 @@ an Arm machine. A Raspberry Pi 4 8GB equipped with a SanDisk Extreme
 USB 3 SSD are a good solution." %}
 
 The Windows binaries are generated on the same Docker Intel GNU/Linux
-container, using [mingw-w64](http://mingw-w64.org).
+container, using [mingw-w64](https://mingw-w64.org).
 
 ### GNU/Linux
 

@@ -28,7 +28,7 @@ tags:
 
 [The xPack OpenOCD](https://xpack.github.io/dev-tools/openocd/)
 is a standalone cross-platform binary distribution of
-[OpenOCD](http://openocd.org).
+[OpenOCD](https://openocd.org).
 
 There are separate binaries for **Windows** (Intel 32/64-bit),
 **macOS** (Intel 64-bit) and **GNU/Linux** (Intel 32/64-bit, Arm 32/64-bit).
@@ -117,7 +117,7 @@ xpm uninstall --global @xpack-dev-tools/openocd
 ## Compliance
 
 The xPack OpenOCD generally follows the official
-[OpenOCD](http://openocd.org) releases.
+[OpenOCD](https://openocd.org) releases.
 
 The current version is based on:
 
@@ -220,7 +220,7 @@ only to identify the STM32F4DISCOVERY board.
 xPack OpenOCD x86_64 Open On-Chip Debugger 0.11.0+dev (2021-10-17-00:10)
 Licensed under GNU GPL v2
 For bug reports, read
-	http://openocd.org/doc/doxygen/bugs.html
+	https://openocd.org/doc/doxygen/bugs.html
 Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
 srst_only separate srst_nogate srst_open_drain connect_deassert_srst
 

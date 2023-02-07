@@ -75,7 +75,7 @@ feedback_disable: true
 
 # If you uncomment the previous line, it changes where the feedback
 # link points to.
-# feedback_link: "http://helpy.io/"
+# feedback_link: "https://helpy.io/"
 
 # Library used for syntax highlighting.
 highlighter: rouge
@@ -580,7 +580,7 @@ sidebars:
 description: "Tools to manage, configure and build complex, package based, multi-target, C/C++ projects."
 
 # needed for sitemap.xml file only
-# url: http://idratherbewriting.com
+# url: https://idratherbewriting.com
 # baseurl: /documentation-theme-jekyll
 
 github: [metadata]

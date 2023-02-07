@@ -24,8 +24,8 @@ In the xPack project, currently the following JSON schemas are available:
 
 Other schema resources:
 
-- [json-schema.org](http://json-schema.org) - the specifications
+- [json-schema.org](https://json-schema.org) - the specifications
 - [JSON schema & payload validator](https://www.jsonschemavalidator.net)
 - [JSON buddy schema linter](https://www.json-schema-linter.com) - online JSON validator using schema, but limited to 5K
-- [JSON Schema Lint](http://jsonschemalint.com/) - online JSON validator using schema, up to v7
-- [JSONSchema.net](http://jsonschema.net/#/) - schema generator
+- [JSON Schema Lint](https://jsonschemalint.com/) - online JSON validator using schema, up to v7
+- [JSONSchema.net](https://jsonschema.net/#/) - schema generator

@@ -49,10 +49,10 @@ The toolchains and other general purpose tools used by XCDL during the build pro
 
 ### References
 
-- [eCos](http://ecos.sourceware.org/) - *The embedded configurable operating system* by Cygnus Solutions ([Wikipedia](http://en.wikipedia.org/wiki/ECos))
-- Manual: *The eCos Component Writer’s Guide*, by Bart Veer and John Dallaway, published in 2001, available from [eCos Documentation](http://ecos.sourceware.org/docs-3.0/).
-- Book: *Embedded software development with eCos*, by Anthony J. Massa, published in 2003 at Prentice Hall, available from [Amazon](http://www.amazon.com/Embedded-Software-Development-Anthony-Massa/dp/0130354732)
-- Book: *Software Build Systems: Principles and Experience*, by Peter Smith, published in 2011 at Addison Wesley, available from [Amazon](http://www.amazon.com/Software-Build-Systems-Principles-Experience/dp/0321717287)
+- [eCos](https://ecos.sourceware.org/) - *The embedded configurable operating system* by Cygnus Solutions ([Wikipedia](https://en.wikipedia.org/wiki/ECos))
+- Manual: *The eCos Component Writer’s Guide*, by Bart Veer and John Dallaway, published in 2001, available from [eCos Documentation](https://ecos.sourceware.org/docs-3.0/).
+- Book: *Embedded software development with eCos*, by Anthony J. Massa, published in 2003 at Prentice Hall, available from [Amazon](https://www.amazon.com/Embedded-Software-Development-Anthony-Massa/dp/0130354732)
+- Book: *Software Build Systems: Principles and Experience*, by Peter Smith, published in 2011 at Addison Wesley, available from [Amazon](https://www.amazon.com/Software-Build-Systems-Principles-Experience/dp/0321717287)
 - IEEE Std 830-1998: *IEEE Recommended Practice for Software Requirements Specifications*, published in 1998
 
 ### Overview

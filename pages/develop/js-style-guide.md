@@ -731,11 +731,11 @@ Preferred:
 
 Other links:
 
-- [10 Best JavaScript Style Guides](http://noeticforce.com/best-javascript-style-guide-for-maintainable-code)
+- [10 Best JavaScript Style Guides](https://noeticforce.com/best-javascript-style-guide-for-maintainable-code)
 - [airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
 - [Idiomatic.js JavaScript Style Guide](https://github.com/rwaldron/idiomatic.js/)
 - [Google ES6 Style Guide](https://google.github.io/styleguide/jsguide.html)
-- [Crockford Code Conventions for the JavaScript Programming Language](http://javascript.crockford.com/code.html)
+- [Crockford Code Conventions for the JavaScript Programming Language](https://javascript.crockford.com/code.html)
 - [felixge/node-style-guide](https://github.com/felixge/node-style-guide)
 - [RisingStack/node-style-guide](https://github.com/RisingStack/node-style-guide)
 - [kettanaito/naming-cheatsheet](https://github.com/kettanaito/naming-cheatsheet)
@@ -744,9 +744,9 @@ Other links:
 
 Preferred (used automatically by Standard):
 
-- [ESLint](http://eslint.org/), but indirectly via the 'Standard JS' tools.
+- [ESLint](https://eslint.org/), but indirectly via the 'Standard JS' tools.
 
 Other links:
 
 - [A Comparison of JavaScript Linting Tools](https://www.sitepoint.com/comparison-javascript-linting-tools/)
-- [JSHint](http://www.jshint.com/)
+- [JSHint](https://www.jshint.com/)

@@ -30,7 +30,7 @@ GNU Make, and does not intend to add new functionality, or to fix existing
 problems.
 
 If you have problems related to the current GNU Make functionality, please
-use the official [support channels](http://savannah.gnu.org/projects/make/).
+use the official [support channels](https://savannah.gnu.org/projects/make/).
 
 ## Check the FAQ
 

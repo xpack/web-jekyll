@@ -30,7 +30,7 @@ tags:
 
 [The xPack Meson Build](https://xpack.github.io/dev-tools/meson-build/)
 is a standalone cross-platform binary distribution of
-[Meson Build](http://mesonbuild.org).
+[Meson Build](https://mesonbuild.org).
 
 There are separate binaries for **Windows** (Intel 32/64-bit),
 **macOS** (Intel 64-bit, Apple Silicon 64-bit)
@@ -118,7 +118,7 @@ xpm uninstall --global @xpack-dev-tools/meson-build
 ## Compliance
 
 The xPack Meson Build generally follows the official
-[Meson Build](http://mesonbuild.org) releases.
+[Meson Build](https://mesonbuild.org) releases.
 
 The current version is based on:
 

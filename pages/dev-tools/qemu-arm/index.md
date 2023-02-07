@@ -101,7 +101,7 @@ semihosting.
 ## Documentation
 
 The official QEMU documentation is available
-[online](http://wiki.qemu.org/Manual).
+[online](https://wiki.qemu.org/Manual).
 
 ## Install
 
@@ -141,5 +141,5 @@ See the [releases]({{ site.baseurl }}/dev-tools/qemu-arm/releases) pages.
 
 ## Other links
 
-- [QEMU wiki](http://wiki.qemu.org/)
-- the original [QEMU Windows build page](http://wiki.qemu.org/Hosts/W32)
+- [QEMU wiki](https://wiki.qemu.org/)
+- the original [QEMU Windows build page](https://wiki.qemu.org/Hosts/W32)

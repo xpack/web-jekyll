@@ -180,7 +180,7 @@ Packages should normally come with one or more test cases. This allows applicati
 
 XCDL itself does not include a specific testing infrastructure and tests may use any C/C++ testing infrastructure.
 
-µOS++ fully supports the [Google Test](http://code.google.com/p/googletest/) testing infrastructure, and XCDL should be able to configure the environment required to run these tests.
+µOS++ fully supports the [Google Test](https://code.google.com/p/googletest/) testing infrastructure, and XCDL should be able to configure the environment required to run these tests.
 
 #### Running tests on the host
 
@@ -188,7 +188,7 @@ If possible, tests should be written highly portable, and should be able to run 
 
 #### Continuous integration
 
-XCDL should provide support to collect information about all tests contributed by all packages available in a configuration and run all of them from a scriptable environment, in order to facilitate integration into continuous integration tools like [Hudson](http://en.wikipedia.org/wiki/Hudson_(software)).
+XCDL should provide support to collect information about all tests contributed by all packages available in a configuration and run all of them from a scriptable environment, in order to facilitate integration into continuous integration tools like [Hudson](https://en.wikipedia.org/wiki/Hudson_(software)).
 
 #### Semihosted tests
 

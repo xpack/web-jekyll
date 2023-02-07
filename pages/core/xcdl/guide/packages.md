@@ -65,9 +65,9 @@ To facilitate versioning and validation, all XCDL .json files are fully defined 
 
 The current schema for the `.xpack.json` file is:
 
-    "$schema": "http://xcdl.github.io/schemas/xpack-1-1.json",
+    "$schema": "https://xcdl.github.io/schemas/xpack-1-1.json",
 
-The full and up-to-date definition of this schema is available from the separate [Schemas](http://xcdl.github.io/schemas/) repository.
+The full and up-to-date definition of this schema is available from the separate [Schemas](https://xcdl.github.io/schemas/) repository.
 
 ### `name`
 

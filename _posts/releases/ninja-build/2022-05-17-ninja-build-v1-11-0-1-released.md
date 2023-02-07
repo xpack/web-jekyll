@@ -28,7 +28,7 @@ tags:
 
 [The xPack Ninja Build](https://xpack.github.io/dev-tools/ninja-build/)
 is a standalone cross-platform binary distribution of
-[Ninja Build](http://ninja-build.org).
+[Ninja Build](https://ninja-build.org).
 
 There are separate binaries for **Windows** (Intel 64-bit),
 **macOS** (Intel 64-bit, Apple Silicon 64-bit)
@@ -116,7 +116,7 @@ xpm uninstall --global @xpack-dev-tools/ninja-build
 ## Compliance
 
 The xPack Ninja Build generally follows the official
-[Ninja Build](http://ninja-build.org) releases.
+[Ninja Build](https://ninja-build.org) releases.
 
 The current version is based on:
 

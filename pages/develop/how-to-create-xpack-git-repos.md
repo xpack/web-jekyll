@@ -421,7 +421,7 @@ Open `package.json` with VS Code:
   `@xpack-3rd-party/arm-cmsis-core`)
 - as **version**, enter `0.1.0` if the project is in early development,
   or accept 1.0.0 for the first stable release; generally use the
-  [semver](http://semver.org) conventions
+  [semver](https://semver.org) conventions
 - as **description**, use the same string as the GitHub project description
 - in **scripts**, check and possibly remove a trailing comma,
 - as **url** and **homepage**, use the actual project Git URL

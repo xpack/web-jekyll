@@ -30,7 +30,7 @@ tags:
 
 [The xPack QEMU Arm](https://xpack.github.io/dev-tools/qemu-arm/)
 is a standalone cross-platform binary distribution of
-[QEMU](http://www.qemu.org), with several extensions for Arm Cortex-M
+[QEMU](https://www.qemu.org), with several extensions for Arm Cortex-M
 devices.
 
 There are separate binaries for **Windows** (64-bit),
@@ -129,7 +129,7 @@ xpm uninstall --global @xpack-dev-tools/qemu-arm
 
 ## Compliance
 
-The xPack QEMU Arm currently is based on the official [QEMU](http://www.qemu.org),
+The xPack QEMU Arm currently is based on the official [QEMU](https://www.qemu.org),
 with some changes.
 
 There are two sets of binaries:
