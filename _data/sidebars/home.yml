@@ -24,6 +24,9 @@ entries:
     output: web
     folderitems:
 
+    - title: Overview
+      url: /core/
+      output: web
     - title: xpm
       url: /xpm/
       output: web
@@ -32,6 +35,9 @@ entries:
     output: web
     folderitems:
 
+    - title: Overview
+      url: /dev-tools/
+      output: web
     - title: aarch64-none-elf-gcc
       url: /dev-tools/aarch64-none-elf-gcc/
       output: web

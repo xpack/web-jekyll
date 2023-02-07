@@ -58,7 +58,6 @@ that can be extracted manually; the source xPacks can be linked to
 projects as Git submodules, etc; they all can be used in traditional
 environments too, just that this requires more work." %}
 
-
 Based on the installed content, there are currently two
 types of xPacks: **source** and **binary**:
 
