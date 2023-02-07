@@ -34,7 +34,7 @@ more elaborated theme, [Jekyll Doc Theme 6.0](https://idratherbewriting.com/docu
 
 ## The author
 
-This project is currently maintained by **Liviu Ionescu**, a senior IT
+This project is currently maintained by **Liviu Ionescu**, a senior computer
 engineer, with expertise in operating systems, compilers, embedded
 systems, RTOSes, build tools and Internet technologies.
 
