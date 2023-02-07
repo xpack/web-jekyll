@@ -91,7 +91,7 @@ Planned:
 - `@xpack/xpninja` - the **xPack Build Runner**
 
 These projects are hosted in the GitHub
-[`xpack`](https://github.com/xpack/) organisation.
+[`xpack`](https://github.com/xpack/) organization.
 
 ## xPack 3rd Party Development Tools
 
@@ -121,8 +121,7 @@ Other tools, used for building the above:
 - [`@xpack-dev-tools/wine`]({{ site.baseurl }}/dev-tools/wine/) - the **xPack WineHQ**
 
 These projects are hosted in the GitHub
-[`xpack-dev-tools`](https://github.com/xpack-dev-tools) group
-(_organization_ in GitHub parlance).
+[`xpack-dev-tools`](https://github.com/xpack-dev-tools) organization.
 
 ## Source xPacks
 
