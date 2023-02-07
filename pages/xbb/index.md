@@ -2,37 +2,39 @@
 title: The xPack Build Box
 permalink: /xbb/
 
-summary: An elaborated environment for building binary xPacks.
+summary: A reproducible environment for building binary xPacks.
 comments: true
 
 date: 2016-03-09 12:04:00 +0300
 
 ---
 
-The xPack Build Box is an elaborated build environment focused on
-obtaining **reproducible builds** while building **cross-platform standalone
+The **xPack Build Box** (XBB) is an elaborated build environment focused on
+obtaining **reproducible** runs while building **cross-platform standalone
 binaries** for GNU/Linux, macOS and Windows.
 
 ## How it works?
 
-XBB achieves repeatability and consistency by compiling all dependencies
-from sources.
+XBB achieves repeatability and consistency by:
 
-This applies both to the development environment and to the final
-application binaries.
+- controlling the versions of the tools used during the build
+- compiling most dependencies from sources.
 
 By strictly controlling the versions of the compiled sources and tools, it is
 possible to create build environments that use about the same tools
 on both GNU/Linux (Intel and Arm) and macOS, helping to obtain
 consistent results.
 
-On GNU/Linux, to allow the builds to run on any distribution,
-the actual development tools are packed as Docker images
+On GNU/Linux, to allow the builds to be performed on any distribution,
+the actual builds run inside Docker containers
 (Intel/Arm, 32/64-bit).
+
+On macOS, the builds run on standard systems, without the need for
+custom tools.
 
 ## Types of builds
 
-There are two types of builds:
+From the point of view of the desired result, there are two types of builds:
 
 - local/native builds, intended for development and running on the local
   machine
@@ -41,6 +43,94 @@ There are two types of builds:
 
 The main use cases of XBBs are distribution builds, but they can be used
 for native builds as well.
+
+## XBB v5.0
+
+The latest release, v5.0 from early 2023 represents a major milestone
+for the xPack project, since it is the first self-sustained release,
+which allows to build new binary xPacks using previous xPacks,
+and does not require any custom Docker images, or other compiled tools.
+
+For convenience, the new build scripts are xPacks, with
+multiple build configurations, for all supported platforms,
+and all actions are defined uniformly as xPack actions.
+
+There are three choices to build a binary.
+
+### Native builds with all tools from the host machine
+
+In this case all build tools are expected to be available on the
+host machine.
+
+```sh
+xpm run install
+xpm run build-native
+```
+
+The first command is used to install the helper project, which is a
+source xPack (`@xpack-dev-tools/xbb-helper`).
+
+The second command runs the build.
+
+These commands run the same on both GNU/Linux and macOS.
+
+To generate the Windows binaries on GNU/Linux, use the separate action:
+
+```sh
+xpm run install
+xpm run build-native-win
+```
+
+### Native builds with the major tools coming from xPacks
+
+Sometimes the native tools available on the host machine may be too old
+for building modern packages.
+
+A simple solution is to install the main tools as binary xPacks. The
+selection of tools depends on the target platform.
+
+The existing projects include separate build configurations for
+multiple platforms (darwin-x64, darwin-arm64, linux-x64, linux-arm64,
+linux-arm, win32-x64).
+
+For example, to build the Intel GNU/Linux binaries, use:
+
+```sh
+xpm run install
+xpm run install --config linux-x64
+xpm run build --config linux-x64
+```
+
+### Docker builds with tools coming from xPacks
+
+An even more reproducible configuration can be achieved by using
+Docker containers, with the base system tools.
+
+```sh
+xpm run install
+xpm run docker-prepare --config linux-x64
+xpm run docker-build --config linux-x64
+```
+
+### Writable helper scripts
+
+For normal builds, the helper project, which is a source xPack,
+is downloaded and marked as read-only, to prevent damaging it.
+
+For development purposes it might be necessary to update it; the
+xPack solution (inspired by the npm solution) is to download the
+helper repository into a separate location, and link it to the
+current project.
+
+This is done in two steps, first a link from the central store to the
+helper repo is created. This ensures that multiple projects can
+conveniently use the writable helper.
+
+In the second step, a link from the build project to the central store
+is created.
+
+For details on the actual usage, please check the
+build projects.
 
 ## Supported platforms
 
@@ -94,67 +184,31 @@ drwxr-xr-x  12 root root       384 Oct 30 19:00 riscv-none-embed-gcc-8.3.0-1.1
 ```
 
 In this simple configuration, the builds run with root permissions; with
-more elaborate configurations it is possible to start the Docker images
+more elaborate configurations it is possible to start the Docker containers
 with user rights, but they are beyond the scope of this document.
 
 ## How to use the XBB tools
 
-Both on GNU/Linux and macOS, the XBB tools are installed in separate
-folders, and are fully distinct from the system tools.
+Both on GNU/Linux and macOS, the XBB tools are installed as binary
+xPack dependencies in `xpacks/.bin` and are fully distinct from
+the system tools.
 
 To access them, the application should update the `PATH` to prefer
-the newer XBB tools.
+the `xpacks/.bin` path.
 
-Scripts defining some helper functions are available.
+### Common scripts
 
-### GNU/Linux
+For consistency between projects, common scripts were grouped in the
+helper project.
 
-The `xbb_activate` function can be called either for the entire lifespan
-of the script, or, for a better isolation, in inner shells when the new
-tools are really needed.
+After installing it with `xpm install`, the scripts are available
+from `xpacks/xpack-dev-tools-xbb-helper`.
 
-```bash
-source "/opt/xbb/xbb-source.sh"
-...
-(
-  xbb_activate
+There are many scripts in this location; the main ones are in the
+`scripts` folder. The scripts to build various dependencies are in
+the `dependencies` folder.
 
-  ...
-  ./configure
-  make
-)
-```
-
-### macOS
-
-For macOS the recommended use case is similar, except the XBB tools
-are installed in the user HOME folder:
-
-```bash
-source "${HOME}/.local/xbb/xbb-source.sh"
-...
-(
-  xbb_activate
-
-  ...
-)
-```
-
-## The `xbb-source.sh` script
-
-The build environment includes a helper script, `xbb-source.sh`,
-which should be included
-with `source` by the build scripts, to define more bash functions to
-the shell.
-
-These functions are used to extend the environment with resources available
-in the XBB folders.
-
-The `xbb_activate` function is used to extend the `PATH` with folders
-in the XBB folders, in front of existing
-folders, so that **the XBB executables are preferred over the system ones**.
-
-## The `pkg-config-verbose` script
+### The `pkg-config-verbose` script
 
 While running the configuration step, it is sometimes useful to trace
 how `pkg-config` identifies resources to be used during the build.
@@ -174,29 +228,35 @@ chmod +x /opt/xbb/bin/pkg-config-verbose
 export PKG_CONFIG=pkg-config-verbose
 ```
 
-## TeX
+## No more TeX
 
-All images include the TeX tools; on GNU/Linux, they are
-installed either in the system folders or in a custom global folder
-(like `/opt/texlive`); on on macOS they are installed in a custom local
-folder (like `${HOME}/.local/texlive`).
+Starting with v3.4, support for building the manuals was dropped,
+and the TeX tools are no longer needed.
 
 ## Maintainer info
 
 - [README-MAINTAINER](https://github.com/xpack/xpack-build-box/blob/master/README-MAINTAINER.md)
 
-## Future plans
+## End of support for Linux distributions
 
-The current XBB got extremely complex due to the initial requirement to
-also support RedHat Enterprise systems.
+To help decide what base version to use, and how long to keep support for it,
+a list of main Linux distributions was compiled, with the GLIBC versions:
+
+- [end of support]({{ site.baseurl }}/xbb/end-of-support/)
+
+## Upgrade plans
 
 RedHat maintenance support 1 for RHEL 7 ended in Aug. 2020, with
 maintenance support 2 to last until June. 2024. However XBB support
 for RHEL 7 is a tough requirement, and was discontinued starting with 2022.
 
 Compatibility was moved up to
-Ubuntu 18 (GLIBC 2.27). This also provides compatibility with
+**Ubuntu 18 LTS** (**GLIBC 2.27**), which also provides compatibility with
 RedHat 8 / Debian 10, which both use GLIBC 2.28.
+
+The next upgrade step will be taken when the minimum Node.js becomes 18.x,
+which requires GLIBC 2.28, when the base system will most probably be
+**Debian 10**.
 
 ## Credits
 
@@ -206,6 +266,5 @@ The xPack Build Box is inspired by the
 ## Links
 
 - [prerequisites]({{ site.baseurl }}/xbb/prerequisites/) for using XBB
-- [end-of-support]({{ site.baseurl }}/xbb/end-of-support/) considerations for GNU/Linux distributions
 - [releases]({{ site.baseurl }}/xbb/releases/)
-- [GitHub](https://github.com/xpack/xpack-build-box)
+- [GitHub](https://github.com/xpack/xpack-build-box/)

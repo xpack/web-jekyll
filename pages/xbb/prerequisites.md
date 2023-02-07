@@ -13,11 +13,14 @@ containers (separate 32/64-bit containers) based on older
 and more conservative distributions, to avoid problems when
 attempting to run the executables on older versions.
 
-The XBB v3.4 uses Ubuntu 18 for both Intel and Arm GNU/Linux.
+The XBB v5.0.0 uses Ubuntu 18 LTS for both Intel and Arm GNU/Linux.
 
 {% include note.html content="Building Arm binaries requires
-an Arm machine. A Raspberry Pi 4 8GB equipped with a SanDisk Extreme
-USB 3 SSD are a good solution." %}
+an Arm machine. A Raspberry Pi 4 8GB equipped with a Samsung Portable T7
+USB 3 SSD is a good solution." %}
+
+{% include note.html content="Although Arm 32 binaries can be build
+inside Docker containers running on AArch64 machines." %}
 
 The Windows binaries are generated on the same Docker Intel GNU/Linux
 container, using [mingw-w64](https://mingw-w64.org).
@@ -31,8 +34,9 @@ perfectly fine. For better results, dedicate 3-4 cores and 8-12 GB of RAM.
 The procedure was tested on:
 
 - Ubuntu 18.04 LTS, running on an Intel NUC NUC8i7BEH with 32 GB of RAM
-- Debian 10 (buster), running on an Intel NUC NUC8i7BEH with 32 GB of RAM
-- Raspberry Pi OS 64-bit, running on a Raspberry Pi 4 with 4 or 8 GB of RAM
+- Debian 10 (buster), running on an AMD Ryzen 5600G with 32 GB of RAM
+- Raspberry Pi OS 64-bit, running on a Raspberry Pi 4 with 8 GB of RAM
+- Raspberry Pi OS 32-bit, running on a Raspberry Pi 4 with 4 GB of RAM
 
 The build scripts do most of the actual work in the Docker container, and,
 apart from Docker, the host machine has no other special requirements.
@@ -115,7 +119,7 @@ Hello from Docker!
 ### macOS
 
 For development build, the procedure is executed on a recent macOS
-version (currently 11.6).
+version (currently 12.6).
 
 For production builds it is recommended to use a slightly older version.
 macOS 10.13 is a good compromise.
@@ -172,9 +176,6 @@ the Dockerfiles available from
 [XBB (xPack Build Box)](https://github.com/xpack/xpack-build-box/tree/master/).
 
 If not already loaded, Docker will load the images at first usage.
-The images are relatively large, around 5 GB.
-
-It is possible to separately load the Docker images, using the
-script `preload-images` command of each script.
+The images are reasonably large, currently below 1 GB.
 
 More details in each script documentation page.
