@@ -21,11 +21,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - uses: actions/setup-ruby@v1
+    - uses: ruby/setup-ruby@v1
       with:
         # Version range or exact version of a Ruby version to use, using semver version range syntax.
         # https://www.ruby-lang.org/en/downloads/releases/
-        # https://bundler.io
+        # https://rubygems.org/gems/bundler
         ruby-version: '3.2'
     - uses: actions/cache@v2
       with:
