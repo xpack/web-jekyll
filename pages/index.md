@@ -103,13 +103,13 @@ The main binary tools packed as xPacks are (in alphabetical order):
 - [`@xpack-dev-tools/cmake`]({{ site.baseurl }}/dev-tools/cmake/) - the **xPack CMake**
 - [`@xpack-dev-tools/gcc`]({{ site.baseurl }}/dev-tools/gcc/) - the **xPack GNU Compiler Collection (GCC)**
 - [`@xpack-dev-tools/meson-build`]({{ site.baseurl }}/dev-tools/meson-build/) - the **xPack Meson Build**
+- [`@xpack-dev-tools/mingw-w64-gcc`]({{ site.baseurl }}/dev-tools/mingw-w64-gcc/) - the **xPack MinGW-w64 GCC** toolchain
 - [`@xpack-dev-tools/ninja-build`]({{ site.baseurl }}/dev-tools/ninja-build/) - the **xPack Ninja Build**
 - [`@xpack-dev-tools/openocd`]({{ site.baseurl }}/dev-tools/openocd/) - the **xPack OpenOCD**
 - [`@xpack-dev-tools/qemu-arm`]({{ site.baseurl }}/dev-tools/qemu-arm/) - the **xPack QEMU Arm**
 - [`@xpack-dev-tools/qemu-riscv`]({{ site.baseurl }}/dev-tools/qemu-riscv/) - the **xPack QEMU RISC-V**
 - [`@xpack-dev-tools/riscv-none-elf-gcc`]({{ site.baseurl }}/dev-tools/riscv-none-elf-gcc/) - the **xPack RISC-V Embedded GCC** toolchain
 - [`@xpack-dev-tools/windows-build-tools`]({{ site.baseurl }}/dev-tools/windows-build-tools/) - the **xPack Windows Build Tools**
-- [`@xpack-dev-tools/mingw-w64-gcc`]({{ site.baseurl }}/dev-tools/mingw-w64-gcc/) - the **xPack MinGW-w64 GCC** toolchain
 
 Other tools, used for building the above:
 
