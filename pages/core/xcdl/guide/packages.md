@@ -232,9 +232,9 @@ Syntax (string):
 
     "license": "string"
 
-The license is identified by a short ID, selected from the list of [SPDX license IDs](https://spdx.org/licenses/), ideally one that is [OSI](http://opensource.org/licenses/alphabetical) approved.
+The license is identified by a short ID, selected from the list of [SPDX license IDs](https://spdx.org/licenses/), ideally one that is [OSI](https://opensource.org/licenses/alphabetical) approved.
 
-If the package is licensed under multiple common licenses, use an [SPDX license expression syntax version 2.0](http://npmjs.com/package/spdx) string, like this:
+If the package is licensed under multiple common licenses, use an [SPDX license expression syntax version 2.0](https://npmjs.com/package/spdx) string, like this:
 
     "license": "(ISC OR GPL-3.0)"
 
@@ -268,7 +268,7 @@ Example:
         {
             "name": "Liviu Ionescu",
             "email": "ilg@livius.net",
-            "url": "http://liviusdotnet.worldpress.com"
+            "url": "https://github.com/ilg-ul/"
         }
     ],
 
@@ -296,7 +296,7 @@ Example:
         {
             "name": "Liviu Ionescu",
             "email": "ilg@livius.net",
-            "url": "http://liviusdotnet.worldpress.com"
+            "url": "https://github.com/ilg-ul/"
         }
     ],
 
@@ -315,7 +315,7 @@ Syntax (array of objects):
       ...
     ]
 
-The syntax for the version string is based on [semver](http://semver.org/), with the following expressions (inspired from NPM):
+The syntax for the version string is based on [semver](https://semver.org/), with the following expressions (inspired from NPM):
 
 * `version` Must match version exactly
 * `>version` Must be greater than version
@@ -332,7 +332,7 @@ The syntax for the version string is based on [semver](http://semver.org/), with
 
 Future versions may also support:
 
-* http://.../file.tgz
+* https://.../file.tgz
 * git://...
 * github://user/repo
 * tag
