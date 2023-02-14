@@ -4,11 +4,11 @@ permalink: /dev-tools/m4/install/
 
 summary: "The recommended method is via xpm."
 
-toc: false
-comments: true
-
 version: "1.4.19"
 xpack-subversion: "2"
+
+comments: true
+toc: false
 
 date: 2022-10-04 10:32:00 +0300
 

@@ -4,11 +4,11 @@ permalink: /dev-tools/ninja-build/install/
 
 summary: "The recommended method is via xpm."
 
-toc: false
-comments: true
-
 version: "1.11.0"
 xpack-subversion: "1"
+
+comments: true
+toc: false
 
 date: 2020-09-27 11:09:00 +0300
 

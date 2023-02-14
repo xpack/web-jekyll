@@ -2,6 +2,8 @@
 title: CMSIS Pack remarks and criticism (outdated)
 permalink: /xcdl/criticism/cmsis/
 
+comments: true
+
 date: 2015-10-25 12:00:00 +0200
 
 ---

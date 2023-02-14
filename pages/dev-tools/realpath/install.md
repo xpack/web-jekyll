@@ -4,12 +4,12 @@ permalink: /dev-tools/realpath/install/
 
 summary: "The recommended method is via xpm."
 
-toc: false
-comments: true
-
 version: "9.1.0"
 xpack-subversion: "2"
 short-version: "9.1"
+
+comments: true
+toc: false
 
 date: 2022-10-04 10:32:00 +0300
 

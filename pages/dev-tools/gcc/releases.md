@@ -3,9 +3,10 @@ title: The xPack GNU Compiler Collection releases
 permalink: /dev-tools/gcc/releases/
 
 search: exclude
-toc: false
-comments: false
 github_editme: false
+
+comments: false
+toc: false
 
 date: 2021-05-22 00:27:00 +0300
 

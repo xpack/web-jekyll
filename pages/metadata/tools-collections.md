@@ -4,6 +4,8 @@ permalink: /metadata/tools-collections/
 
 summary: The metadata used to define build tools collections, like toolchains.
 
+comments: true
+
 date: 2020-11-31 16:50:00 +0300
 
 ---

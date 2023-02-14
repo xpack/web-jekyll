@@ -4,8 +4,9 @@ permalink: /dev-tools/patchelf/
 
 summary: "A binary distribution of NixOS PatchELF."
 
-comments: true
 keywords: patchelf
+
+comments: true
 
 date: 2022-10-04 10:32:00 +0300
 

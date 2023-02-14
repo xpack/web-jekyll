@@ -4,12 +4,13 @@ permalink: /dev-tools/qemu-arm/
 
 summary: "A binary distribution of QEMU Arm."
 
-comments: true
 keywords:
   - qemu
   - arm
   - cortex-m
   - graphic
+
+comments: true
 
 date: 2015-09-07 21:31:00 +0300
 

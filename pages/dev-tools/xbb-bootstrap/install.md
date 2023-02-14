@@ -4,12 +4,12 @@ permalink: /dev-tools/xbb-bootstrap/install/
 
 summary: "The recommended method is via xpm."
 
-toc: false
-comments: true
-
 version: "4.0"
 xpack-subversion: "0"
 version-major-minor: "4.0"
+
+comments: true
+toc: false
 
 date: 2022-10-04 10:32:00 +0300
 

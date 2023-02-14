@@ -4,8 +4,9 @@ permalink: /dev-tools/cmake/
 
 summary: "A binary distribution of CMake."
 
-comments: true
 keywords: cmake
+
+comments: true
 
 date: 2020-09-29 14:05:00 +0300
 

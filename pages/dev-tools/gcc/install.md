@@ -4,11 +4,11 @@ permalink: /dev-tools/gcc/install/
 
 summary: "The recommended method is via xpm."
 
-toc: false
-comments: true
-
 version: "12.1.0"
 xpack-subversion: "1"
+
+comments: true
+toc: false
 
 date: 2021-05-22 00:27:00 +0300
 

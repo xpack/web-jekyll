@@ -3,11 +3,12 @@ title: The LLVM clang
 permalink: /dev-tools/clang/
 
 summary: "A binary distribution of the LLVM clang."
-comments: true
 keywords:
   - LLVM
   - clang
   - c++
+
+comments: true
 
 date: 2021-05-22 00:27:00 +0300
 

@@ -2,13 +2,13 @@
 title: How to install xpbuild
 permalink: /xpbuild/install/
 
-toc: false
-comments: true
 keywords:
   - xpbuild
   - xpack
   - install
 
+comments: true
+toc: false
 
 date: 2019-07-04 16:49:00 +0300
 

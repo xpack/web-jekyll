@@ -4,8 +4,8 @@ permalink: /dev-tools/wine/install/
 
 summary: "The recommended method is via xpm."
 
-toc: false
 comments: true
+toc: false
 
 version: "7.22.0"
 xpack-subversion: "1"

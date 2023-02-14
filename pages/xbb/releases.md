@@ -3,9 +3,10 @@ title: The xPack Build Box releases
 permalink: /xbb/releases/
 
 search: exclude
-toc: false
-comments: false
 github_editme: false
+
+comments: false
+toc: false
 
 date: 2021-10-13 12:33:00 +0300
 

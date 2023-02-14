@@ -4,6 +4,8 @@ permalink: /metadata/
 
 summary: The metadata used by xPack tools.
 
+comments: true
+
 date: 2020-12-29 15:17:00 +0300
 
 ---

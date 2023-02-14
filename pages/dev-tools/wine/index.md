@@ -4,8 +4,9 @@ permalink: /dev-tools/wine/
 
 summary: "A binary distribution of WineHQ."
 
-comments: true
 keywords: wine
+
+comments: true
 
 date: 2022-10-04 10:32:00 +0300
 

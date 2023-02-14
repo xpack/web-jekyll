@@ -2,8 +2,8 @@
 title: FAQ
 permalink: /xpbuild/faq/
 
-toc: false
 comments: true
+toc: false
 
 date: 2019-07-04 16:56:00 +0300
 

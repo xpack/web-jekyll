@@ -2,14 +2,14 @@
 title: How to install xpm
 permalink: /xpm/install/
 
-toc: false
-comments: true
 keywords:
   - xpm
   - npm
   - xpack
   - install
 
+comments: true
+toc: false
 
 date: 2017-10-09 14:14:00 +0300
 

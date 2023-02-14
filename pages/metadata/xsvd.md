@@ -4,6 +4,8 @@ permalink: /metadata/xsvd/
 
 summary: The metadata used to describe peripheral registers.
 
+comments: true
+
 date: 2017-10-10 20:00:00 +0300
 
 redirect_from:

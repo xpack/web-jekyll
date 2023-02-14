@@ -4,8 +4,9 @@ permalink: /dev-tools/pkg-config/
 
 summary: "A binary distribution of pkg-config."
 
-comments: true
 keywords: pkg-config
+
+comments: true
 
 date: 2022-10-04 10:32:00 +0300
 

@@ -3,12 +3,14 @@ title: The xPack GNU AArch64 Embedded GCC
 permalink: /dev-tools/aarch64-none-elf-gcc/
 
 summary: "A binary distribution of GNU AArch64 Embedded GCC."
-comments: true
+
 keywords:
   - aarch64-none-elf-gcc
   - arm
   - gcc
   - embedded
+
+comments: true
 
 date: 2019-07-10 17:53:00 +0300
 

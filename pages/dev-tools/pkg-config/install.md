@@ -4,11 +4,11 @@ permalink: /dev-tools/pkg-config/install/
 
 summary: "The recommended method is via xpm."
 
-toc: false
-comments: true
-
 version: "0.29.2"
 xpack-subversion: "2"
+
+comments: true
+toc: false
 
 date: 2022-10-04 10:32:00 +0300
 

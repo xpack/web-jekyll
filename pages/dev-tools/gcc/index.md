@@ -3,11 +3,12 @@ title: The xPack GNU Compiler Collection (GCC)
 permalink: /dev-tools/gcc/
 
 summary: "A binary distribution of the GNU Compiler Collection."
-comments: true
 keywords:
   - gnu
   - gcc
   - c++
+
+comments: true
 
 date: 2021-05-22 00:27:00 +0300
 

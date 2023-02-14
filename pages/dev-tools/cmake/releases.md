@@ -3,9 +3,10 @@ title: The xPack CMake releases
 permalink: /dev-tools/cmake/releases/
 
 search: exclude
-toc: false
-comments: false
 github_editme: false
+
+comments: false
+toc: false
 
 date: 2020-09-29 14:05:00 +0300
 

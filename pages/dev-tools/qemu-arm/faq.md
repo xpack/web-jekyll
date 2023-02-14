@@ -2,8 +2,8 @@
 title: The xPack QEMU Arm Frequently Asked Questions
 permalink: /dev-tools/qemu-arm/faq/
 
-toc: false
 comments: true
+toc: false
 
 date: 2019-06-27 23:55:00 +0300
 

@@ -6,6 +6,8 @@ keywords: packages, code sharing, reusing, libraries, applications, c/c++, embed
 toc: false
 summary: Tools to manage, configure and build complex, package based, multi-target projects, in a reproducible way.
 
+comments: true
+
 date: 2019-06-20 23:11:00 +0300
 
 ---

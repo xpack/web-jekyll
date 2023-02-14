@@ -4,10 +4,11 @@ permalink: /dev-tools/qemu-riscv/
 
 summary: "A binary distribution of QEMU RISC-V."
 
-comments: true
 keywords:
   - qemu
   - riscv
+
+comments: true
 
 date: 2015-09-07 21:31:00 +0300
 

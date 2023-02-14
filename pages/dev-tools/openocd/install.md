@@ -4,12 +4,12 @@ permalink: /dev-tools/openocd/install/
 
 summary: "The recommended method is via xpm."
 
-toc: false
-comments: true
-
 version: "0.11.0"
 xpack-subversion: "4"
 version-date: "2022-03-25-19:34"
+
+comments: true
+toc: false
 
 date: 2015-09-09 19:43:00 +0300
 

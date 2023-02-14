@@ -2,13 +2,13 @@
 title: How to install the VS Code xPack Extension
 permalink: /vscode/install/
 
-toc: false
-comments: true
 keywords:
   - vscode
   - xpack
   - install
 
+comments: true
+toc: false
 
 date: 2021-04-22 23:04:00 +0300
 

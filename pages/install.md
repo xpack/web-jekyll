@@ -2,8 +2,6 @@
 title: How to install the xPack prerequisites
 permalink: /install/
 
-toc: false
-comments: true
 keywords:
   - npm
   - xpack
@@ -11,6 +9,9 @@ keywords:
 
 node_version: 16.14.2
 npm_version: 8.6.0
+
+comments: true
+toc: false
 
 date: 2017-10-09 14:14:00 +0300
 

@@ -4,12 +4,13 @@ permalink: /dev-tools/riscv-none-elf-gcc/
 
 summary: "A binary distribution of GNU RISC-V Embedded GCC."
 
-comments: true
 keywords:
   - riscv-none-elf-gcc
   - riscv
   - gcc
   - embedded
+
+comments: true
 
 date: 2019-07-10 17:53:00 +0300
 

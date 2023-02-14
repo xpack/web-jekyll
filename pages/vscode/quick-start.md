@@ -3,7 +3,8 @@ title: Quick Start - Hello World
 permalink: /vscode/quick-start/
 
 summary: Create a simple Hello World project.
-comments: false
+
+comments: true
 
 date: 2021-04-24 24:25:00 +0300
 

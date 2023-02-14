@@ -2,8 +2,8 @@
 title: The LLVM clang Frequently Asked Questions
 permalink: /dev-tools/clang/faq/
 
-toc: false
 comments: true
+toc: false
 
 date: 2021-05-22 00:27:00 +0300
 

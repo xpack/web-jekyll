@@ -2,8 +2,8 @@
 title: The xPack XBB Bootstrap Frequently Asked Questions
 permalink: /dev-tools/xbb-bootstrap/faq/
 
-toc: false
 comments: true
+toc: false
 
 date: 2022-10-04 10:32:00 +0300
 

@@ -3,6 +3,7 @@ title: JavaScript Style Guide
 permalink: /develop/js-style-guide/
 
 summary: For consistency, use the Standard JS/TS validation tools.
+
 comments: true
 
 date: 2017-10-09 02:47:00 +0300

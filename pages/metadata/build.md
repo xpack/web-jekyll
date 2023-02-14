@@ -4,6 +4,8 @@ permalink: /metadata/build/
 
 summary: The metadata used by the build tools.
 
+comments: true
+
 date: 2017-10-09 16:46:00 +0300
 
 ---

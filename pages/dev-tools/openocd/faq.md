@@ -2,8 +2,8 @@
 title: The xPack OpenOCD Frequently Asked Questions
 permalink: /dev-tools/openocd/faq/
 
-toc: false
 comments: true
+toc: false
 
 date: 2019-06-24 14:08:00 +0300
 

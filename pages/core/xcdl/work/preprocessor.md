@@ -2,6 +2,8 @@
 title: XCDL templates preprocessor syntax proposal (outdated)
 permalink: /xcdl/work/preprocessor/
 
+comments: true
+
 date: 2015-10-25 12:00:00 +0200
 
 ---

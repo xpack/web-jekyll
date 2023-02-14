@@ -4,6 +4,8 @@ permalink: /metadata/devices/
 
 summary: The metadata used to describe devices.
 
+comments: true
+
 date: 2017-10-10 19:59:00 +0300
 
 ---

@@ -3,9 +3,10 @@ title: The VS Code xPack Extension releases
 permalink: /vscode/releases/
 
 search: exclude
-toc: false
-comments: false
 github_editme: false
+
+comments: false
+toc: false
 
 date: 2021-04-22 23:04:00 +0300
 

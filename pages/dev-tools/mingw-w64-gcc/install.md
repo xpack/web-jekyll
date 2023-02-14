@@ -4,11 +4,11 @@ permalink: /dev-tools/mingw-w64-gcc/install/
 
 summary: "The recommended method is via xpm."
 
-toc: false
-comments: true
-
 version: "11.3.0"
 xpack-subversion: "1.3"
+
+comments: true
+toc: false
 
 date: 2022-10-04 11:43:00 +0300
 

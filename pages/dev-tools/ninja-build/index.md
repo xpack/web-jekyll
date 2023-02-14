@@ -4,8 +4,9 @@ permalink: /dev-tools/ninja-build/
 
 summary: "A binary distribution of Ninja Build."
 
-comments: true
 keywords: ninja-build
+
+comments: true
 
 date: 2020-09-28 17:49:00 +0300
 

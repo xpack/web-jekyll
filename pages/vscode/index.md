@@ -3,7 +3,8 @@ title: Visual Studio Code xPack C/C++ Managed Build Extension
 permalink: /vscode/
 
 summary: Use VS Code to manage and build C/C++ projects using the xPack tools.
-comments: false
+
+comments: true
 
 date: 2021-04-22 22:25:00 +0300
 

@@ -4,12 +4,12 @@ permalink: /dev-tools/sed/install/
 
 summary: "The recommended method is via xpm."
 
-toc: false
-comments: true
-
 version: "4.9.0"
 xpack-subversion: "2"
 short-version: "4.9"
+
+comments: true
+toc: false
 
 date: 2022-10-04 10:32:00 +0300
 

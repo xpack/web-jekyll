@@ -3,8 +3,9 @@ title: GDB with Python support
 permalink: /dev-tools/arm-none-eabi-gcc/python/
 
 summary: "Support for Python 2 and 3 is available in GDB."
-toc: false
+
 comments: true
+toc: false
 
 date: 2020-01-28 19:18:00 +0200
 

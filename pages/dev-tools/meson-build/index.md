@@ -4,8 +4,9 @@ permalink: /dev-tools/meson-build/
 
 summary: "A binary distribution of Meson Build."
 
-comments: true
 keywords: meson-build
+
+comments: true
 
 date: 2020-09-27 10:58:00 +0300
 

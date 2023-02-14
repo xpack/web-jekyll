@@ -4,11 +4,11 @@ permalink: /dev-tools/riscv-none-elf-gcc/install/
 
 summary: "The recommended method is via xpm."
 
-toc: false
-comments: true
-
 version: "12.1.0"
 xpack-subversion: "2"
+
+comments: true
+toc: false
 
 date: 2019-07-10 17:53:00 +0300
 

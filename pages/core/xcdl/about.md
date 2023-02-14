@@ -2,6 +2,8 @@
 title: About (outdated)
 permalink: /xcdl/about/
 
+comments: true
+
 date: 2015-09-30 17:13:00 +0000
 
 ---

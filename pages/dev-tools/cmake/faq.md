@@ -2,8 +2,8 @@
 title: The xPack CMake Frequently Asked Questions
 permalink: /dev-tools/cmake/faq/
 
-toc: false
 comments: true
+toc: false
 
 date: 2020-09-29 14:05:00 +0300
 

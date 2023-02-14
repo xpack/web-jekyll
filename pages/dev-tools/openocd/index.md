@@ -4,8 +4,9 @@ permalink: /dev-tools/openocd/
 
 summary: "A binary distribution of OpenOCD."
 
-comments: true
 keywords: openocd
+
+comments: true
 
 date: 2015-09-04 17:02:00 +0300
 

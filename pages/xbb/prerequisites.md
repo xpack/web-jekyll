@@ -2,6 +2,8 @@
 title: Prerequisites for building xPack binaries
 permalink: /xbb/prerequisites/
 
+comments: true
+
 date: 2017-07-06 20:55:00 +0300
 
 ---

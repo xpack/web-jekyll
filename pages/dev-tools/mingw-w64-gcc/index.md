@@ -3,12 +3,13 @@ title: The xPack MinGW-w64 GCC
 permalink: /dev-tools/mingw-w64-gcc/
 
 summary: "A binary distribution of MinGW-w64 GCC."
-comments: true
 keywords:
   - mingw-w64-gcc
   - mingw-w64
   - mingw
   - gcc
+
+comments: true
 
 date: 2022-10-04 11:43:00 +0300
 

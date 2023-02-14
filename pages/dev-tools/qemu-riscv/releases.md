@@ -3,9 +3,10 @@ title: The xPack QEMU RISC-V releases
 permalink: /dev-tools/qemu-riscv/releases/
 
 search: exclude
-toc: false
-comments: false
 github_editme: false
+
+comments: false
+toc: false
 
 date: 2015-09-10 09:08:00 +0300
 

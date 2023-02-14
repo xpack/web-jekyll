@@ -4,12 +4,13 @@ permalink: /dev-tools/qemu-arm/gnuarmeclipse/
 
 summary: "The initial custom QEMU used with Eclipse."
 
-comments: true
 keywords:
   - qemu
   - arm
   - cortex-m
   - graphic
+
+comments: true
 
 date: 2015-09-07 21:31:00 +0300
 

@@ -2,6 +2,8 @@
 title: End-of-support schedule
 permalink: /xbb/end-of-support/
 
+comments: true
+
 date: 2021-10-13 15:15:00 +0300
 
 ---

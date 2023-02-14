@@ -2,8 +2,8 @@
 title: The xPack GNU M4 Frequently Asked Questions
 permalink: /dev-tools/m4/faq/
 
-toc: false
 comments: true
+toc: false
 
 date: 2022-10-04 10:32:00 +0300
 

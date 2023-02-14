@@ -4,11 +4,11 @@ permalink: /dev-tools/patchelf/install/
 
 summary: "The recommended method is via xpm."
 
-toc: false
-comments: true
-
 version: "0.17.2"
 xpack-subversion: "1"
+
+comments: true
+toc: false
 
 date: 2022-10-04 10:32:00 +0300
 

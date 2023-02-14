@@ -2,8 +2,8 @@
 title: The xPack NixOS PatchELF Frequently Asked Questions
 permalink: /dev-tools/patchelf/faq/
 
-toc: false
 comments: true
+toc: false
 
 date: 2022-10-04 10:32:00 +0300
 

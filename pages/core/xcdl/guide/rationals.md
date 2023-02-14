@@ -2,6 +2,8 @@
 title: XCDL rationals (outdated)
 permalink: /xcdl/guide/rationals/
 
+comments: true
+
 date: 2015-11-16 12:00:00 +0200
 
 ---

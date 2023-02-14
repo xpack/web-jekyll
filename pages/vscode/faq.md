@@ -2,8 +2,8 @@
 title: FAQ
 permalink: /vscode/faq/
 
-toc: false
 comments: true
+toc: false
 
 date: 2021-04-22 23:09:00 +0300
 

@@ -3,9 +3,10 @@ title: The xPack Windows Build Tools releases
 permalink: /dev-tools/windows-build-tools/releases/
 
 search: exclude
-toc: false
-comments: false
 github_editme: false
+
+comments: false
+toc: false
 
 date: 2020-07-14 16:26:00 +0300
 

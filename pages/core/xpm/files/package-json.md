@@ -2,6 +2,8 @@
 title: package.json
 permalink: /xpm/files/package.json/
 
+comments: true
+
 date: 2019-07-02 00:36:00 +0300
 
 ---

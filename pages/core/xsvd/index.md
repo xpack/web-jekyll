@@ -2,6 +2,8 @@
 title: xsvd
 permalink: /xsvd/
 
+comments: true
+
 date: 2017-10-11 14:25:00 +0300
 
 ---

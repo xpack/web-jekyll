@@ -3,9 +3,10 @@ title: The xPack OpenOCD releases
 permalink: /dev-tools/openocd/releases/
 
 search: exclude
-toc: false
-comments: false
 github_editme: false
+
+comments: false
+toc: false
 
 date: 2015-09-10 09:08:00 +0300
 

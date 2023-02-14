@@ -3,6 +3,7 @@ title: Maintainer info
 permalink: /maintain/
 
 summary: Resources for the xPack projects maintainers.
+
 comments: false
 
 date: 2019-07-10 10:00:00 +0300

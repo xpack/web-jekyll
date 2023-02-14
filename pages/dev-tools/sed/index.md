@@ -4,8 +4,9 @@ permalink: /dev-tools/sed/
 
 summary: "A binary distribution of GNU sed."
 
-comments: true
 keywords: sed
+
+comments: true
 
 date: 2022-10-04 10:32:00 +0300
 

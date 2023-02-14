@@ -2,8 +2,8 @@
 title: The xPack pkg-config Frequently Asked Questions
 permalink: /dev-tools/pkg-config/faq/
 
-toc: false
 comments: true
+toc: false
 
 date: 2022-10-04 10:32:00 +0300
 

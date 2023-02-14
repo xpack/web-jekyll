@@ -3,7 +3,10 @@ title: The xPack Build Configurator
 permalink: /xpcdl/
 
 summary: A tool to manage project configurations, inspired by eCos CDL, but with the configuration files in JSON (in design phase).
+
 keywords: make
+
+comments: true
 toc: false
 
 date: 2019-07-01 11:14:00 +0300

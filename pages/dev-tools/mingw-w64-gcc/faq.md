@@ -2,8 +2,8 @@
 title: The xPack MinGW-w64 GCC Frequently Asked Questions
 permalink: /dev-tools/mingw-w64-gcc/faq/
 
-toc: false
 comments: true
+toc: false
 
 date: 2022-10-04 11:43:00 +0300
 

@@ -3,6 +3,8 @@ title: The xPack Basic Project Builder
 permalink: /xpbuild/
 
 summary: A tool to build day to day projects without having to manually write make files, with an emphasis on C/C++ and embedded applications, inspired by Eclipse CDT managed builder (work in progress).
+
+comments: true
 toc: false
 
 date: 2019-07-04 17:02:00 +0300
@@ -30,4 +32,3 @@ using the code of xpninja, and to make it public when ready.
 ## Configuring xpbuild
 
 - [`xpbuild.json`]({{ site.baseurl }}/metadata/build/)
-

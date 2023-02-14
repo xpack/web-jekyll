@@ -3,9 +3,10 @@ title: The xPack xpm releases
 permalink: /xpm/releases/
 
 search: exclude
-toc: false
-comments: false
 github_editme: false
+
+comments: false
+toc: false
 
 date: 2021-01-27 21:51:00 +0300
 

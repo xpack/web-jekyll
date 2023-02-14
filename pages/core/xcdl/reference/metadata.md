@@ -2,6 +2,8 @@
 title: The XCDL metadata reference (outdated)
 permalink: /xcdl/reference/metadata/
 
+comments: true
+
 date: 2015-11-15 12:00:00 +0200
 
 tocLevels: 1

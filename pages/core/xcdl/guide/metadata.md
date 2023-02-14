@@ -2,6 +2,8 @@
 title: The XCDL metadata (outdated)
 permalink: /xcdl/guide/metadata/
 
+comments: true
+
 date: 2015-11-15 12:00:00 +0200
 
 ---

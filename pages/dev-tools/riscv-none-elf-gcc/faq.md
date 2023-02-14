@@ -2,8 +2,8 @@
 title: The xPack GNU RISC-V Embedded GCC Frequently Asked Questions
 permalink: /dev-tools/riscv-none-elf-gcc/faq/
 
-toc: false
 comments: true
+toc: false
 
 date: 2019-07-10 17:53:00 +0300
 

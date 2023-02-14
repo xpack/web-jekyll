@@ -2,6 +2,8 @@
 title: XCDL build (outdated)
 permalink: /xcdl/guide/build/
 
+comments: true
+
 date: 2015-11-16 12:00:00 +0200
 
 ---

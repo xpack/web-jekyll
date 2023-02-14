@@ -3,6 +3,7 @@ title: xPack Developer info
 permalink: /develop/
 
 summary: Resources for xPack developers.
+
 comments: true
 
 date: 2016-03-09 12:04:00 +0300

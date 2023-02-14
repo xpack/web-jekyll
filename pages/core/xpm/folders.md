@@ -2,6 +2,8 @@
 title: xpm folders
 permalink: /xpm/folders/
 
+comments: true
+
 date: 2017-10-09 14:14:00 +0300
 
 redirect_from:

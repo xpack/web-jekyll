@@ -4,8 +4,9 @@ permalink: /dev-tools/xbb-bootstrap/
 
 summary: "A binary distribution of XBB Bootstrap."
 
-comments: true
 keywords: xbb-bootstrap
+
+comments: true
 
 date: 2022-10-04 10:32:00 +0300
 

@@ -3,9 +3,10 @@ title: The xPack GNU RISC-V Embedded GCC releases
 permalink: /dev-tools/riscv-none-elf-gcc/releases/
 
 search: exclude
-toc: false
-comments: false
 github_editme: false
+
+comments: false
+toc: false
 
 date: 2019-07-10 17:53:00 +0300
 

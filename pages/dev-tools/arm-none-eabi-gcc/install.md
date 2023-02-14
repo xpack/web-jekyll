@@ -4,12 +4,12 @@ permalink: /dev-tools/arm-none-eabi-gcc/install/
 
 summary: "The recommended method is via xpm."
 
-toc: false
-comments: true
-
 version: "11.2.1"
 xpack-subversion: "1.2"
 version-timestamp: "20220111"
+
+comments: true
+toc: false
 
 date: 2019-07-10 17:53:00 +0300
 

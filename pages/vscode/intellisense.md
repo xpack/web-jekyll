@@ -3,7 +3,8 @@ title: IntelliSense (the project indexer)
 permalink: /vscode/intellisense/
 
 summary: "IntelliSense is a general term for various code editing features including: code completion, parameter info, quick info, and member lists."
-comments: false
+
+comments: true
 
 date: 2021-04-25 14:34:00 +0300
 

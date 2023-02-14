@@ -3,12 +3,14 @@ title: The xPack GNU Arm Embedded GCC
 permalink: /dev-tools/arm-none-eabi-gcc/
 
 summary: "A binary distribution of GNU Arm Embedded GCC."
-comments: true
+
 keywords:
   - arm-none-eabi-gcc
   - arm
   - gcc
   - embedded
+
+comments: true
 
 date: 2019-07-10 17:53:00 +0300
 

@@ -2,8 +2,8 @@
 title: FAQ
 permalink: /xpm/faq/
 
-toc: false
 comments: true
+toc: false
 
 date: 2019-06-28 11:03:00 +0300
 

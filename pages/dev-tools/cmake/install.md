@@ -4,12 +4,12 @@ permalink: /dev-tools/cmake/install/
 
 summary: "The recommended method is via xpm."
 
-toc: false
-comments: true
-
 version: "3.21.6"
 xpack-subversion: "1"
 version-major-minor: "3.21"
+
+comments: true
+toc: false
 
 date: 2020-09-29 14:05:00 +0300
 

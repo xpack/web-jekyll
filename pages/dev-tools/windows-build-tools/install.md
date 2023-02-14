@@ -3,11 +3,12 @@ title: How to install the xPack Windows Build Tools binaries
 permalink: /dev-tools/windows-build-tools/install/
 
 summary: "The recommended method is via xpm."
-toc: false
-comments: true
 
 version: "4.3.0"
 version-make: "4.3.90"
+
+comments: true
+toc: false
 
 date: 2020-07-14 16:26:00 +0300
 

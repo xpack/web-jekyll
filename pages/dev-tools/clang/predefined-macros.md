@@ -3,12 +3,13 @@ title: GNU predefined macros
 permalink: /dev-tools/clang/predefined-macros/
 
 summary: "The preprocessosr built-in macros."
-comments: true
 keywords:
   - clang
   - c++
   - preprocessor
   - macros
+
+comments: true
 
 date: 2022-02-10 18:27:00 +0200
 

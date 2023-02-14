@@ -3,9 +3,10 @@ title: The xPack WineHQ releases
 permalink: /dev-tools/wine/releases/
 
 search: exclude
-toc: false
-comments: false
 github_editme: false
+
+comments: false
+toc: false
 
 date: 2022-10-04 10:32:00 +0300
 

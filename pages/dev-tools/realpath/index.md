@@ -4,8 +4,9 @@ permalink: /dev-tools/realpath/
 
 summary: "A binary distribution of GNU realpath."
 
-comments: true
 keywords: realpath
+
+comments: true
 
 date: 2022-10-04 10:32:00 +0300
 
