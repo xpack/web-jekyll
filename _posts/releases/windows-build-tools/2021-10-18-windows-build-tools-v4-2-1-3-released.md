@@ -185,7 +185,7 @@ A more elaborate test would be to run an Eclipse build.
 
 The SHA-256 hashes for the files are:
 
-```console
+```txt
 939edfd488642693fadf564e5285cbb388bad2bd550b6b061a4b54daf58eca47
 xpack-windows-build-tools-4.2.1-3-win32-ia32.zip
 

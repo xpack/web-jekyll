@@ -201,7 +201,7 @@ TBD
 
 The SHA-256 hashes for the files are:
 
-```console
+```txt
 aa2f1310f65fd544f9c99da6618b3cefe8d63aaf7fd583de7fd8c8fe490bfa23
 xpack-patchelf-0.17.2-1-darwin-arm64.tar.gz
 

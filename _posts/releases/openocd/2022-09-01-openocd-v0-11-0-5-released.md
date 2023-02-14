@@ -234,7 +234,7 @@ available in the **xPack GNU Arm Embedded GCC** project.
 
 The SHA-256 hashes for the files are:
 
-```console
+```txt
 49ebc4bfbeb191dcb29f0a3ff03e2d4a1b9588b68093dc0159beeff6ab2a22be
 xpack-openocd-0.11.0-5-darwin-arm64.tar.gz
 

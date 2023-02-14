@@ -71,7 +71,7 @@ project.
 
 The SHA-256 hashes for the files are:
 
-```console
+```txt
 fb4c6a3a3a93f7ac5dbd88879b782b9b1c31c4b51273dc6c8c4299c23b3c4d98
 gnu-mcu-eclipse-windows-build-tools-2.12-20190422-1053-win32.zip
 

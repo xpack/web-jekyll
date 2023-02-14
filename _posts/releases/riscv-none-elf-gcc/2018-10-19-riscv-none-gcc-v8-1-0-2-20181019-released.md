@@ -101,7 +101,7 @@ project.
 
 The SHA-256 hashes for the files are:
 
-```console
+```txt
 9938d66410f1eaf797fc717d678bfca219e0fbc53589f05e7d9339d1ebf150ea ?
 gnu-mcu-eclipse-riscv-none-gcc-8.1.0-2-20181019-0952-centos32.tgz
 

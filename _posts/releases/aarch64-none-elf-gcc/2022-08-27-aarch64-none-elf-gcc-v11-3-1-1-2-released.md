@@ -261,7 +261,7 @@ build, not the compiler functionality.
 
 The SHA-256 hashes for the files are:
 
-```console
+```txt
 368d0d09f806db9c4e44671047502d0185a20534997bee617b2468586bcef6ec
 xpack-aarch64-none-elf-gcc-11.3.1-1.2-darwin-arm64.tar.gz
 

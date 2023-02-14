@@ -172,7 +172,7 @@ TBD
 
 The SHA-256 hashes for the files are:
 
-```
+```txt
 037bffd8c10769944e8754d637b8999ec4993c4666449e633969b4561c350321
 xpack-cmake-3.18.3-1-darwin-x64.tar.gz
 

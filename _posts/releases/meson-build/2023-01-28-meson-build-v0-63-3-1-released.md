@@ -236,7 +236,7 @@ set of platforms. The results are available from:
 
 The SHA-256 hashes for the files are:
 
-```console
+```txt
 60225b923543ceabd61b65e0a1b046f059b6d21d03d1e4d3363e5110b22a46f8
 xpack-meson-build-0.63.3-1-darwin-arm64.tar.gz
 

@@ -59,7 +59,7 @@ For better control and repeatability, the build scripts use Docker containers; a
 
 The SHA-256 hashes for the files are:
 
-```console
+```txt
 1d9f4bfcae98681c13791781a3c30272fecf316d0e63dd560f9df437bde34a55 ?
 gnu-mcu-eclipse-arm-none-eabi-gcc-7.2.1-1.1-20180401-0515-centos32.tgz
 

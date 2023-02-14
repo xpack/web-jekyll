@@ -105,7 +105,7 @@ locale.c:(.text.__locale_ctype_ptr+0x8): relocation truncated to fit: R_RISCV_HI
 
 The SHA-256 hashes for the files are:
 
-```console
+```txt
 fdb6ab5badd0820e0562c288b1ec88566f8589f5fa26d81a0f57a2b95213d0cc ?
 gnu-mcu-eclipse-riscv-none-gcc-7.2.0-3-20180506-1300-centos32.tgz
 

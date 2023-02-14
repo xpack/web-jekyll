@@ -80,7 +80,7 @@ override `arm-none-eabi-objdump` with an older binary.
 
 The SHA-256 hashes for the files are:
 
-```console
+```txt
 aa15729b8cd8e44a528e16b2119a6ad26c8dd55aa88c514570ecbb38bfcb0f9e ?
 gnu-mcu-eclipse-arm-none-eabi-gcc-8.2.1-1.1-20190102-1122-centos32.tgz
 

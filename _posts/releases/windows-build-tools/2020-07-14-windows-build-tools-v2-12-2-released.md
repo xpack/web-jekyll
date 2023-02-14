@@ -130,7 +130,7 @@ in Eclipse.
 
 The SHA-256 hashes for the files are:
 
-```
+```txt
 0076cf109d08f7a176267c12aa3f8df9bce9a02b386379ad199f169b98193897
 xpack-windows-build-tools-2.12.2-win32-x32.zip
 

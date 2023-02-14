@@ -129,7 +129,7 @@ executed again.
 
 The SHA-256 hashes for the files are:
 
-```console
+```txt
 c832d4b8d7b91b6702f7188f0be30643b41991ce9ec91f4e67d821628898b564
 gnu-mcu-eclipse-arm-none-eabi-gcc-8.2.1-1.7-20190524-0603-centos32.tgz
 

@@ -210,7 +210,7 @@ build, not the compiler functionality.
 
 The SHA-256 hashes for the files are:
 
-```console
+```txt
 0df12ef605a4c8928ad962113aebd25d22a932b2187bfa7b8d111160aa5a05f0
 xpack-clang-14.0.6-2-darwin-arm64.tar.gz
 

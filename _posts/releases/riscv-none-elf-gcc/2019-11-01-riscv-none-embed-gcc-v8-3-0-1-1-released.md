@@ -246,7 +246,7 @@ executed again.
 
 The SHA-256 hashes for the files are:
 
-```
+```txt
 532f719c11f7311a0103eac6ddd7dd012716a2c3030dd1ee7e64374b1af41d34
 xpack-riscv-none-embed-gcc-8.3.0-1.1-darwin-x64.tgz
 

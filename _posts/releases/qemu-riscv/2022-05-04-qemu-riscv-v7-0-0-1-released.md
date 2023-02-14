@@ -247,7 +247,7 @@ TBD
 
 The SHA-256 hashes for the files are:
 
-```console
+```txt
 96dcff3cdae3955c6d102e090857c5235746fa8aad3faa2db7b613efba525801
 xpack-qemu-riscv-7.0.0-1-darwin-arm64.tar.gz
 

@@ -314,7 +314,7 @@ executed again.
 
 The SHA-256 hashes for the files are:
 
-```
+```txt
 2009f256e59291e1025cc099e4300d7662dda040b304fe3462b4cb7c35c71378
 xpack-riscv-none-embed-gcc-8.3.0-1.2-darwin-x64.tar.gz
 

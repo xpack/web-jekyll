@@ -210,7 +210,7 @@ TBD
 
 The SHA-256 hashes for the files are:
 
-```console
+```txt
 80cfe688c6290a2eb527b5de19ed60848cc7d423dc643fa7152eedbf4c336a85
 xpack-cmake-3.20.6-2-darwin-arm64.tar.gz
 

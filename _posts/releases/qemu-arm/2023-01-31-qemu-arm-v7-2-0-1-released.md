@@ -498,7 +498,7 @@ missing driver. To be further investigated.
 
 The SHA-256 hashes for the files are:
 
-```console
+```txt
 7196b37d8921d6c13c5d7e28fe35284c9b0ab7a051238b095f0838d1040eb9c7
 xpack-qemu-arm-7.2.0-1-darwin-arm64.tar.gz
 

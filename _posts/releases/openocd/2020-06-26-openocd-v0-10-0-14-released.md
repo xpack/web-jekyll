@@ -78,7 +78,7 @@ from June 23, 2020
 To get a list of changes since the previous release, use `git log` in the
 `xpack-dev-tools/openocd` project
 
-```
+```sh
 git log --pretty='%cd * %h %s' --date=short 'v0.10.0-13'..'v0.10.0-14'
 ```
 
@@ -151,7 +151,7 @@ available in the **xPack GNU Arm Embedded GCC** project.
 On Arm platforms, where Eclipse is not yet available, the binaries were
 tested on Raspberry Pi OS 10 (buster) 32/64-bit only to identify the STM32F4DISCOVERY board.
 
-```
+```sh
 .../xpack-openocd-0.10.0-14/bin/openocd -f board/stm32f4discovery.cfg
 ```
 
@@ -162,7 +162,7 @@ in Eclipse or run manually from there.
 
 The SHA-256 hashes for the files are:
 
-```
+```txt
 30917a5c6f60fcd7df82b41dcec8ab7d86f0cea3caeaf98b965b901c10a60b39
 xpack-openocd-0.10.0-14-darwin-x64.tar.gz
 

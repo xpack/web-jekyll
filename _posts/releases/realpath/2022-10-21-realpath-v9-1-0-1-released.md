@@ -203,7 +203,7 @@ TBD
 
 The SHA-256 hashes for the files are:
 
-```console
+```txt
 a891fe75298e141b85fd2a8d8351b13fddc0fc44ce80ecd4a938f5e35c4d6ffa
 xpack-realpath-9.1.0-1-darwin-arm64.tar.gz
 

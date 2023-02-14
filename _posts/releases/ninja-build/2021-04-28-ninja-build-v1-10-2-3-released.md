@@ -179,7 +179,7 @@ TBD
 
 The SHA-256 hashes for the files are:
 
-```console
+```txt
 
 bab7c9f80775d71c28bbf0c7322e9209059ca435276df221506c6a84d501e822
 xpack-ninja-build-1.10.2-3-darwin-x64.tar.gz

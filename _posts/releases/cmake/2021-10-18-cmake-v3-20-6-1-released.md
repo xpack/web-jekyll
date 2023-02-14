@@ -211,7 +211,7 @@ TBD
 
 The SHA-256 hashes for the files are:
 
-```console
+```txt
 21b1f7e0728bede25794e84b4ebc9a83af789fc883e67e192cb2e86e8a31eb7c
 xpack-cmake-3.20.6-1-darwin-x64.tar.gz
 

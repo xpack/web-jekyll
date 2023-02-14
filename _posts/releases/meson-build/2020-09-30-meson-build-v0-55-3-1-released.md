@@ -194,7 +194,7 @@ TBD
 
 The SHA-256 hashes for the files are:
 
-```
+```txt
 f0b31f8ecbc90de4e8bff675d2e48527fefd5f44b17b34e9fd356fd1ab111e71
 xpack-meson-build-0.55.3-1-darwin-x64.tar.gz
 

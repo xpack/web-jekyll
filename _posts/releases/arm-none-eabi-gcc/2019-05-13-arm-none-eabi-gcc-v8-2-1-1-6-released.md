@@ -135,7 +135,7 @@ release to fix this issue will be available soon.
 
 The SHA-256 hashes for the files are:
 
-```console
+```txt
 a4fc37f897ff50a3e3807e87db60ccb0844f37eb618f0935ece94a581fd98eec
 gnu-mcu-eclipse-arm-none-eabi-gcc-8.2.1-1.6-20190510-1829-centos32.tgz
 

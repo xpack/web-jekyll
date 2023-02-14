@@ -178,7 +178,7 @@ Install the package with xpm.
 The simple test, consists in starting the binaries
 only to identify the STM32F4DISCOVERY board.
 
-```
+```sh
 .../xpack-openocd-0.10.0-15/bin/openocd -f board/stm32f4discovery.cfg
 ```
 
@@ -192,7 +192,7 @@ available in the **xPack GNU Arm Embedded GCC** project.
 
 The SHA-256 hashes for the files are:
 
-```
+```txt
 370915b252ff3096b46663943fa040296d75991431228c5cfe315082cff10cab
 xpack-openocd-0.10.0-15-darwin-x64.tar.gz
 

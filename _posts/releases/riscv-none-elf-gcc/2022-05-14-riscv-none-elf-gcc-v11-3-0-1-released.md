@@ -327,7 +327,7 @@ build, not the compiler functionality.
 
 The SHA-256 hashes for the files are:
 
-```console
+```txt
 e3fda6401ea1a055a90bfe3116f4d46fdc9201280df7c3991bb964f4bad18886
 xpack-riscv-none-elf-gcc-11.3.0-1-darwin-arm64.tar.gz
 

@@ -285,7 +285,7 @@ executed again.
 
 The SHA-256 hashes for the files are:
 
-```
+```txt
 f22f0d49c27f844dcfe629a6a33878d767b6945acd7508d9578b20b17b106f4c
 xpack-arm-none-eabi-gcc-9.3.1-1.3-darwin-x64.tar.gz
 

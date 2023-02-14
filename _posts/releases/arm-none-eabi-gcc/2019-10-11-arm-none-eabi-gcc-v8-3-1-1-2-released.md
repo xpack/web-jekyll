@@ -114,7 +114,7 @@ a link to the `liblto_plugin.so` library (a file copy on Windows).
 This allows the use of traditional program names, like `arm-none-eabi-ar`
 instead of the new `arm-none-eabi-gcc-ar`, without getting errors like:
 
-```
+```sh
 arm-none-eabi-ar -r  "libarm-static-lib.a"  ./lib.o
 arm-none-eabi-ar: creating libarm-static-lib.a
 arm-none-eabi-ar: ./lib.o: plugin needed to handle lto object <---
@@ -170,7 +170,7 @@ executed again.
 
 The SHA-256 hashes for the files are:
 
-```
+```txt
 f0192ac5ec9bb5ac0c2e8590c110b0265e81ee92f8912961827cccc693827d13
 xpack-arm-none-eabi-gcc-8.3.1-1.2-darwin-x64.tgz
 

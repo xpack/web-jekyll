@@ -72,7 +72,7 @@ For better control and repeatability, the build scripts use Docker containers; a
 
 The SHA-256 hashes for the files are:
 
-```console
+```txt
 dd4dddb50bed32d17962fec44e8c4a5d6f038f28bc967263ce3d2da84ee86412 ?
 gnu-mcu-eclipse-riscv-none-gcc-7.2.0-2-20180111-2230-centos32.tgz
 

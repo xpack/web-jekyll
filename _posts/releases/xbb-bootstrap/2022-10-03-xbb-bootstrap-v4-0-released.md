@@ -232,7 +232,7 @@ LTS 64-bit and macOS 10.13 / 11.6.
 
 The SHA-256 hashes for the files are:
 
-```console
+```txt
 ee1a9b3d5df6e6d9d5c6215d66bd1b80c81ea19724984b7386f05bd8a5fb9f45
 xpack-xbb-bootstrap-4.0-darwin-arm64.tar.gz
 

@@ -51,7 +51,7 @@ The supported ABIs (`-mabi=`) are:
 
 The supported libraries are:
 
-```
+```console
 march=rv32i/mabi=ilp32
 march=rv32im/mabi=ilp32
 march=rv32iac/mabi=ilp32
@@ -100,7 +100,7 @@ Both problems were fixed in the [v7.1.1-2-20170912]({{ site.baseurl }}/blog/2017
 
 The SHA-256 hashes for the files are:
 
-```console
+```txt
 a723d8c6870d1808882ea2eaa630a8c60c5cb6bd25dc238091d2f9738298c44a ?
 gnu-mcu-eclipse-riscv-none-gcc-7.1.1-1-20170702-0625-debian32.tgz
 

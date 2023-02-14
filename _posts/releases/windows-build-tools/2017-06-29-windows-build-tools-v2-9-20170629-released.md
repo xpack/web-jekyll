@@ -51,7 +51,7 @@ Separate setup and archive files are provided for Windows 32/64-bit systems.
 
 The SHA-256 hashes for the files are:
 
-```
+```txt
 83369ff3ec687850e265195a96d043aecc47230499597ecf0e1a76d6adeab44d ?
 gnu-mcu-eclipse-build-tools-2.9-20170629-1013-win32-setup.exe
 

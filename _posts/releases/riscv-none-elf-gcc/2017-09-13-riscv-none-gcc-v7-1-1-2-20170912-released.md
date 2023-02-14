@@ -53,7 +53,7 @@ The supported ABIs (`-mabi=`) are:
 
 The supported libraries are (in parenthesis are combinations that reuse simpler libraries):
 
-```
+```console
 march=rv32i/mabi=ilp32 (march.rv32ic/mabi.ilp32)
 march=rv32im/mabi=ilp32 (march.rv32imc/mabi.ilp32)
 march=rv32iac/mabi=ilp32
@@ -116,7 +116,7 @@ For better control and repeatability, the build scripts use Docker containers; a
 
 The SHA-256 hashes for the files are:
 
-```console
+```txt
 424a4b7bbef59c4fa59e2103760ffc7e809f2d0fff44af80719a98c20d1cf874 ?
 gnu-mcu-eclipse-riscv-none-gcc-7.1.1-2-20170912-2255-debian32.tgz
 

@@ -273,7 +273,7 @@ build, not the compiler functionality.
 
 The SHA-256 hashes for the files are:
 
-```console
+```txt
 703dcbbbeaf6f2577cb7b3677072fa176b9d7e55256735e0b770b90952c626d9
 xpack-arm-none-eabi-gcc-10.3.1-2.1-darwin-x64.tar.gz
 

@@ -176,7 +176,7 @@ TBD
 
 The SHA-256 hashes for the files are:
 
-```
+```txt
 0a2a2550ec99b908c92811f8dbfde200956a22ab3d9af1c92ce9926bf8feddf9
 xpack-cmake-3.19.1-1-darwin-x64.tar.gz
 

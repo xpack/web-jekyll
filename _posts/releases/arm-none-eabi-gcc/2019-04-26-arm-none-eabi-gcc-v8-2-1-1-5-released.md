@@ -119,7 +119,7 @@ Temporarily move the toolchain to paths which do not use spaces, or, even better
 
 The SHA-256 hashes for the files are:
 
-```console
+```txt
 63f959858a1a1907797ea7f17e20048d559281f77c3742015617ebff2e71a501
 gnu-mcu-eclipse-arm-none-eabi-gcc-8.2.1-1.5-20190426-0353-centos32.tgz
 

@@ -201,7 +201,7 @@ TBD
 
 The SHA-256 hashes for the files are:
 
-```console
+```txt
 64e411380f9b51271015573f32191657e5fec92106c84cbd08227b497a483882
 xpack-pkg-config-0.29.2-1-darwin-arm64.tar.gz
 

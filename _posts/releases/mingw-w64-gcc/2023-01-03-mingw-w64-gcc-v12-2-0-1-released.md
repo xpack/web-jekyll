@@ -240,7 +240,7 @@ build, not the compiler functionality.
 
 The SHA-256 hashes for the files are:
 
-```console
+```txt
 664e753fcd9686e5bdfb73990a7815654c4dbf232877c92bab8a0e8e94a8d211
 xpack-mingw-w64-gcc-12.2.0-1-darwin-arm64.tar.gz
 

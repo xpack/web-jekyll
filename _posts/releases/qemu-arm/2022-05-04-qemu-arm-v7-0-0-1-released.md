@@ -639,7 +639,7 @@ missing driver. To be further investigated.
 
 The SHA-256 hashes for the files are:
 
-```console
+```txt
 24f235133567716f214603a32289dca38d0841eac860e5e36ab6f7d3225012c5
 xpack-qemu-arm-7.0.0-1-darwin-arm64.tar.gz
 

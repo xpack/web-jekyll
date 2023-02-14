@@ -53,7 +53,7 @@ only portable archives are provided; Windows setups are no longer supported." %}
 
 The SHA-256 hashes for the files are:
 
-```console
+```txt
 25b495b340d84b971736a5dfc2a639608c19b5d9d30d14e86e870c1ce461b855 ?
 gnu-mcu-eclipse-build-tools-2.10-20180103-1919-win32.zip
 

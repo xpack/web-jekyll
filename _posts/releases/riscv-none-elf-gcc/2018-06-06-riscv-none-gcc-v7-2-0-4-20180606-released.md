@@ -95,7 +95,7 @@ project.
 
 The SHA-256 hashes for the files are:
 
-```console
+```txt
 82282c9e855b4c24c3c4c8df688f31d2745c50cc20471811c14409c231248d31 ?
 gnu-mcu-eclipse-riscv-none-gcc-7.2.0-4-20180606-1631-centos32.tgz
 

@@ -155,7 +155,7 @@ available in the **xPack GNU Arm Embedded GCC** project.
 
 The SHA-256 hashes for the files are:
 
-```
+```txt
 6b8439660287505725967d6d90e4379bc065e97fb38e2440941e5d328dabc5fa
 xpack-qemu-arm-2.8.0-8-darwin-x64.tgz
 

@@ -269,7 +269,7 @@ build, not the compiler functionality.
 
 The SHA-256 hashes for the files are:
 
-```console
+```txt
 b69805483983cf5d3f2f54e8417b29b7eb95dc0981b26bff50cedfa75a7f1d03
 xpack-riscv-none-embed-gcc-10.1.0-1.2-darwin-x64.tar.gz
 

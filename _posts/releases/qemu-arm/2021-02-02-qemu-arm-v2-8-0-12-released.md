@@ -223,7 +223,7 @@ On platforms where Eclipse is not available, the binaries were
 tested by manually starting the
 blinky test on the emulated STM32F4DISCOVERY board.
 
-```
+```console
 ~/.local/xPacks/@xpack-dev-tools/qemu-arm/2.8.0-12.1/.content/bin/qemu-system-gnuarmeclipse --version
 
 mkdir -p ~/Downloads
@@ -244,7 +244,6 @@ DISPLAY=:1.0 ~/opt/xPacks/@xpack-dev-tools/qemu-arm/2.8.0-12.1/.content/bin/qemu
 --image ~/Downloads/f407-disc-blink-tutorial.elf \
 --semihosting-config enable=on,target=native \
 --semihosting-cmdline test 6
-
 ```
 
 On Raspberry Pi OS 10 (buster) 64-bit the program was able to run in non
@@ -255,7 +254,7 @@ missing driver. To be further investigated.
 
 The SHA-256 hashes for the files are:
 
-```
+```txt
 1269339202b04fc765a7b1c37e0f46b0ecba5b880f26a43c7aa6a29f905e2edf
 xpack-qemu-arm-2.8.0-12-darwin-x64.tar.gz
 

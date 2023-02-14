@@ -202,7 +202,7 @@ TBD
 
 The SHA-256 hashes for the files are:
 
-```
+```txt
 888a4c3bde5510c46c45c5d01fc27af761e41af90c3448ddd2f9ee8e6f1da7ea
 xpack-meson-build-0.55.3-2-darwin-x64.tar.gz
 

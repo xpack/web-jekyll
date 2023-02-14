@@ -238,7 +238,6 @@ Info : Listening on port 3333 for gdb connections
 target halted due to breakpoint, current mode: Thread
 xPSR: 0x21000000 pc: 0x0800113c msp: 0x2001ff78
 ^Cshutdown command invoked
-
 ```
 
 A more complex test consist in programming and debugging a simple blinky
@@ -251,7 +250,7 @@ available in the **xPack GNU Arm Embedded GCC** project.
 
 The SHA-256 hashes for the files are:
 
-```console
+```txt
 1c02a4dbf4611b934d7a821d621d12ab8cb4ceaad4974c61a2c8bf62a9f1fa91
 xpack-openocd-0.11.0-2-darwin-x64.tar.gz
 

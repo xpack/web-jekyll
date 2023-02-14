@@ -208,7 +208,7 @@ TBD
 
 The SHA-256 hashes for the files are:
 
-```console
+```txt
 347f01fe91f181bef77fed4b4465af8fca08817ae320bfec202a3980f48d48c3
 xpack-ninja-build-1.11.1-1-darwin-arm64.tar.gz
 

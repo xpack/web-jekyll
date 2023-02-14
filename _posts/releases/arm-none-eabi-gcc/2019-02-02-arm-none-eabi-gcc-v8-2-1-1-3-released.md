@@ -109,7 +109,7 @@ the link step fails for builds using LTO.
 
 The SHA-256 hashes for the files are:
 
-```console
+```txt
 b4dee573ac6ba0774da4d25a8478707c5ed49b64ebb20ef3ee057a2371b89e4b ?
 gnu-mcu-eclipse-arm-none-eabi-gcc-8.2.1-1.3-20190202-1016-centos32.tgz
 

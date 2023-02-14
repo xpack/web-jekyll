@@ -102,7 +102,7 @@ project.
 
 The SHA-256 hashes for the files are:
 
-```console
+```txt
 4d45ca08ba613f0f7d3ffe908adf3374c284216d39b31cb91fd9248a3f0f26e1 ?
 gnu-mcu-eclipse-arm-none-eabi-gcc-8.2.1-1.4-20190214-0604-centos32.tgz
 
