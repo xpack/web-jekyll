@@ -47,7 +47,10 @@ With xpm available, installing
 the latest version of the package is quite easy:
 
 ```sh
-xpm install --global @xpack-dev-tools/arm-none-eabi-gcc@latest --verbose
+cd my-project
+xpm init # Only at first use.
+
+xpm install @xpack-dev-tools/arm-none-eabi-gcc@latest --verbose
 ```
 
 This command will always install the latest available version,
@@ -89,7 +92,15 @@ as npm does.
 
 ### Uninstall
 
-To remove the installed xPack, the command is similar:
+To remove the links from the current project:
+
+```sh
+cd my-project
+
+xpm uninstall @xpack-dev-tools/arm-none-eabi-gcc
+```
+
+To completely remove the package from the global store:
 
 ```sh
 xpm uninstall --global @xpack-dev-tools/arm-none-eabi-gcc --verbose

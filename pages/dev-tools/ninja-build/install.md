@@ -45,7 +45,10 @@ With xpm available, installing
 the latest version of the package is quite easy:
 
 ```sh
-xpm install --global @xpack-dev-tools/ninja-build@latest --verbose
+cd my-project
+xpm init # Only at first use.
+
+xpm install @xpack-dev-tools/ninja-build@latest --verbose
 ```
 
 This command will always install the latest available version,
@@ -69,7 +72,15 @@ settings like **Show Hidden Files**." %}
 
 ### Uninstall
 
-To remove the installed xPack, the command is similar:
+To remove the links from the current project:
+
+```sh
+cd my-project
+
+xpm uninstall @xpack-dev-tools/ninja-build
+```
+
+To completely remove the package from the global store:
 
 ```sh
 xpm uninstall --global @xpack-dev-tools/ninja-build --verbose

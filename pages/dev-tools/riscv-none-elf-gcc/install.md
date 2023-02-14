@@ -47,7 +47,10 @@ With xpm available, installing
 the latest version of the package is quite easy:
 
 ```sh
-xpm install --global @xpack-dev-tools/riscv-none-elf-gcc@latest --verbose
+cd my-project
+xpm init # Only at first use.
+
+xpm install @xpack-dev-tools/riscv-none-elf-gcc@latest --verbose
 ```
 
 This command will always install the latest available version,
@@ -80,7 +83,15 @@ older versions or configure the path manually." %}
 
 ### Uninstall
 
-To remove the installed xPack, the command is similar:
+To remove the links from the current project:
+
+```sh
+cd my-project
+
+xpm uninstall @xpack-dev-tools/riscv-none-elf-gcc
+```
+
+To completely remove the package from the global store:
 
 ```sh
 xpm uninstall --global @xpack-dev-tools/riscv-none-elf-gcc --verbose

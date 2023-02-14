@@ -48,6 +48,9 @@ With xpm available, installing
 the latest version of the package is quite easy:
 
 ```sh
+cd my-project
+xpm init # Only at first use.
+
 xpm install @xpack-dev-tools/aarch64-none-elf-gcc@latest --verbose
 ```
 
@@ -90,7 +93,15 @@ as npm does.
 
 ### Uninstall
 
-To remove the installed xPack, the command is similar:
+To remove the links from the current project:
+
+```sh
+cd my-project
+
+xpm uninstall @xpack-dev-tools/aarch64-none-elf-gcc
+```
+
+To completely remove the package from the global store:
 
 ```sh
 xpm uninstall --global @xpack-dev-tools/aarch64-none-elf-gcc --verbose
