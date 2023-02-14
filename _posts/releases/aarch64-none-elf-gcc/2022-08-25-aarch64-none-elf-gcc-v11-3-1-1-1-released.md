@@ -96,7 +96,7 @@ For xPacks aware tools, like the **Eclipse Embedded C/C++ plug-ins**,
 it is also possible to install Arm Embedded GCC globally, in the user home folder.
 
 ```sh
-xpm install --global @xpack-dev-tools/aarch64-none-elf-gcc@latest
+xpm install --global @xpack-dev-tools/aarch64-none-elf-gcc@latest --verbose
 ```
 
 Eclipse will automatically

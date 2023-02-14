@@ -58,7 +58,7 @@ from the [`npmjs.com`](https://www.npmjs.com) registry.
 To install the latest version available, use:
 
 ```sh
-xpm install --global @xpack-dev-tools/qemu-arm@latest
+xpm install --global @xpack-dev-tools/qemu-arm@latest --verbose
 ```
 
 To install this specific version, use:

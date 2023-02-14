@@ -58,7 +58,7 @@ terminal:
 ```sh
 mkdir ~/tmp/hello
 cd ~/tmp/hello
-xpm init --template @xpack/hello-world-template@latest
+xpm init --template @xpack/hello-world-template@latest --verbose
 ```
 
 ## xPack Actions

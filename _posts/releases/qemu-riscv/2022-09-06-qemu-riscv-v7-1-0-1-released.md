@@ -101,7 +101,7 @@ For xPacks aware tools, like the **Eclipse Embedded C/C++ plug-ins**,
 it is also possible to install QEMU RISC-V globally, in the user home folder.
 
 ```sh
-xpm install --global @xpack-dev-tools/qemu-riscv@latest
+xpm install --global @xpack-dev-tools/qemu-riscv@latest --verbose
 ```
 
 Eclipse will automatically

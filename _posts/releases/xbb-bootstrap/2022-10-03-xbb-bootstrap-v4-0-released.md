@@ -84,7 +84,7 @@ For xPacks aware tools,
 it is also possible to install XBB Bootstrap globally, in the user home folder.
 
 ```sh
-xpm install --global @xpack-dev-tools/xbb-bootstrap@latest
+xpm install --global @xpack-dev-tools/xbb-bootstrap@latest --verbose
 ```
 
 ### Uninstall

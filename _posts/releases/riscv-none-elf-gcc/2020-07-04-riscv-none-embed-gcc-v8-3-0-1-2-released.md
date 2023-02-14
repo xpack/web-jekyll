@@ -55,7 +55,7 @@ from the [`npmjs.com`](https://www.npmjs.com) registry.
 To install the latest version available, use:
 
 ```sh
-xpm install --global @xpack-dev-tools/riscv-none-embed-gcc@latest
+xpm install --global @xpack-dev-tools/riscv-none-embed-gcc@latest --verbose
 ```
 
 To install this specific version, use:

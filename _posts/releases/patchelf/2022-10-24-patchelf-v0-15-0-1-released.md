@@ -90,7 +90,7 @@ but this requires xPack aware tools to automatically identify them and
 manage paths.
 
 ```sh
-xpm install --global @xpack-dev-tools/patchelf@latest
+xpm install --global @xpack-dev-tools/patchelf@latest --verbose
 ```
 
 ### Uninstall

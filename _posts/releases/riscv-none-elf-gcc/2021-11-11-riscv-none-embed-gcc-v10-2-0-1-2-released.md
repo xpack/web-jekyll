@@ -95,7 +95,7 @@ For xPacks aware tools, like the **Eclipse Embedded C/C++ plug-ins**,
 it is also possible to install GNU RISC-V Embedded GCC globally, in the user home folder.
 
 ```sh
-xpm install --global @xpack-dev-tools/riscv-none-embed-gcc@latest
+xpm install --global @xpack-dev-tools/riscv-none-embed-gcc@latest --verbose
 ```
 
 Eclipse will automatically

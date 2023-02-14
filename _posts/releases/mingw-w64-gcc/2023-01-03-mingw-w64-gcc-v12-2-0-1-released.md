@@ -100,7 +100,7 @@ but this requires xPack aware tools to automatically identify them and
 manage paths.
 
 ```sh
-xpm install --global @xpack-dev-tools/mingw-w64-gcc@latest
+xpm install --global @xpack-dev-tools/mingw-w64-gcc@latest --verbose
 ```
 
 ### Uninstall

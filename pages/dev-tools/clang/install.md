@@ -50,7 +50,7 @@ the latest version of the package is quite easy:
 cd my-project
 xpm init # Only at first use.
 
-xpm install @xpack-dev-tools/clang@latest
+xpm install @xpack-dev-tools/clang@latest --verbose
 ```
 
 This command will always install the latest available version,

@@ -101,7 +101,7 @@ but this requires xPack aware tools to automatically identify them and
 manage paths.
 
 ```sh
-xpm install --global @xpack-dev-tools/meson-build@latest
+xpm install --global @xpack-dev-tools/meson-build@latest --verbose
 ```
 
 ### Uninstall
