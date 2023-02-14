@@ -92,13 +92,13 @@ PDSC schema oddities
 
 Although the specs allow the use of standard POSIX paths (and, as far as I was told, MDK accepts them), all Keil packages, and all Keil documentation pages, do not miss the opportunity to show their Microsoft-ish origin, and represent all paths using the Windows back-slash separator:
 
-```
+```xml
 <compile header="Device\Include\stm32f4xx.h"  define="STM32F40_41xxx"/>
 ```
 
 Perhaps a more visually pleasant solution would have been to use the standard POSIX slash separator:
 
-```
+```xml
 <compile header="Device/Include/stm32f4xx.h"  define="STM32F40_41xxx"/>
 ```
 
@@ -134,18 +134,18 @@ Perhaps a more appropriate definitions would have been:
 
 The **name** attribute does not define any name, but a special .FLM file:
 
-```
+```xml
 <algorithm  name="Flash\STM32F4xx_1024.FLM" start="0x08000000" size="0x100000" default="1"/>
 ```
 
 To be consistent with <debug>:
 
-```
+```xml
 <debug      svd="SVD\STM32F41x.svd"/>
 ```
 
 perhaps a **flm** attribute would have been more appropriate, or at least a generic **file** attribute.
 
-```
+```xml
 <algorithm  flm="Flash\STM32F4xx_1024.FLM" start="0x08000000" size="0x100000" default="1"/>
 ```

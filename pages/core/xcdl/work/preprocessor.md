@@ -38,7 +38,7 @@ Although there are many other similar solutions, none that I know meets the abov
 
 The [Jekyll](https://jekyllrb.com) static web generator uses the [Liquid](https://shopify.github.io/liquid/) metadata, which comes in two types: tags (for flow control) and object/filters (for inserting content).
 
-```
+```txt
 {% raw  %}{% if user %}
   hello("{{ user.name }}!");
 {% endif %}
@@ -47,7 +47,7 @@ The [Jekyll](https://jekyllrb.com) static web generator uses the [Liquid](https:
 
 Embedding this metadata into C/C++ comments would look like this:
 
-```
+```txt
 {% raw  %}//@XCDL {% if user %}
   hello("{{ user.name }}!");
 //@XCDL {% endif %}
@@ -64,7 +64,7 @@ The default syntax of [Jinja2](https://jinja.pocoo.org/docs/dev/) matches Django
 
 CubeMX uses `.ftl` files with a complex script syntax, somehow inspired by xml; tags may come in pairs (`[if]`, `[/if]`), and substitutions are encoded like macros (`${argument.name}`).
 
-```
+```txt
 [#ftl]
 [#-- macro generateConfigModelCode --]
 
@@ -173,7 +173,7 @@ There are many XML file with lots of definitions.
 
 The templates are `.drv` files, and the syntax looks like:
 
-```
+```txt
 %-
 %INTERFACE
 %define! Settings Common\FAT_FileSystemSettings.Inc
@@ -312,7 +312,7 @@ With the choice for JavaScript and this simple syntax, the process to convert th
 
 For example:
 
-```
+```txt
 //@XCDL if (variable==="value") {
 ... C/C++ lines ...
 //@XCDL }
@@ -329,13 +329,13 @@ where `o(str)` is a function that outputs the string to the destination file.
 
 Substitutions are can be identified and processed by the JavaScript, or can be optimised by generating a JavaScript code that converts the values to strings and outputs them.
 
-```
+```txt
 #define VARIABLE ($(value+1))
 ```
 
 can be translated to:
 
-```
+```txt
 o("#define VARIABLE (");o(String(value+1));o(")\n");
 ```
 
@@ -343,7 +343,7 @@ o("#define VARIABLE (");o(String(value+1));o(")\n");
 
 With these conventions, the first sample would look like:
 
-```
+```txt
 //@XCDL if (defined('user')) {
 hello ("$(user.name)!");
 //@XCDL }

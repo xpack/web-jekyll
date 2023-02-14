@@ -202,7 +202,6 @@ the `README.md` file; keep the header line and replace the content with:
 ```text
 This project does not use the `master` branch, please
 switch to the `xpack` branch to get the project files.
-
 ```
 
 With VS Code, Fork or Git:
@@ -297,7 +296,6 @@ Thumbs.db
 .DS_Store
 
 # end
-
 ```
 
 - for Eclipse C/C++ projects you can include:
@@ -307,7 +305,6 @@ Thumbs.db
 .settings/
 Debug/
 Release/
-
 ```
 
 With VS Code, Fork or Git:
@@ -348,7 +345,6 @@ node_modules/
 README-*
 LICENSE-*
 CONTRIBUTING**
-
 ```
 
 - update the content until `npm pack` shows only the desired content

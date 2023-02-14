@@ -37,18 +37,18 @@ Embedded CDT plug-ins for the typical blinky project:
 
 The C++ compile:
 
-```
+```sh
 arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wunused -Wuninitialized -Wall -Wextra -Wmissing-declarations -Wconversion -Wpointer-arith -Wshadow -Wlogical-op -Waggregate-return -Wfloat-equal -g3 -DDEBUG -DUSE_FULL_ASSERT -DOS_USE_SEMIHOSTING -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F407xx -DUSE_HAL_DRIVER -DHSE_VALUE=8000000 -I../include -I../system/include -I../system/include/cmsis -I../system/include/stm32f4-hal -std=gnu++11 -fabi-version=0 -fno-exceptions -fno-rtti -fno-use-cxa-atexit -fno-threadsafe-statics -Wctor-dtor-privacy -Wnoexcept -Wnon-virtual-dtor -Wstrict-null-sentinel -Wsign-promo -c -o src/main.o ../src/main.cpp
 ```
 
 The C compile:
 
-```
+```sh
 arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wunused -Wuninitialized -Wall -Wextra -Wmissing-declarations -Wconversion -Wpointer-arith -Wshadow -Wlogical-op -Waggregate-return -Wfloat-equal -g3 -DDEBUG -DUSE_FULL_ASSERT -DOS_USE_SEMIHOSTING -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F407xx -DUSE_HAL_DRIVER -DHSE_VALUE=8000000 -I../include -I../system/include -I../system/include/cmsis -I../system/include/stm32f4-hal -std=gnu11 -Wmissing-prototypes -Wstrict-prototypes -Wbad-function-cast -c -o src/write.o ../src/write.c
 ```
 
 The C++ link:
 
-```
+```sh
 arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -fno-move-loop-invariants -Wunused -Wuninitialized -Wall -Wextra -Wmissing-declarations -Wconversion -Wpointer-arith -Wshadow -Wlogical-op -Waggregate-return -Wfloat-equal  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"f4b.map" --specs=nano.specs -o "f4b.elf"  ./system/src/stm32f4-hal/stm32f4xx_hal.o ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o ./system/src/stm32f4-hal/stm32f4xx_hal_flash.o ./system/src/stm32f4-hal/stm32f4xx_hal_flash_ex.o ./system/src/stm32f4-hal/stm32f4xx_hal_flash_ramfunc.o ./system/src/stm32f4-hal/stm32f4xx_hal_gpio.o ./system/src/stm32f4-hal/stm32f4xx_hal_iwdg.o ./system/src/stm32f4-hal/stm32f4xx_hal_pwr.o ./system/src/stm32f4-hal/stm32f4xx_hal_rcc.o  ./system/src/newlib/assert.o ./system/src/newlib/cxx.o ./system/src/newlib/exit.o ./system/src/newlib/sbrk.o ./system/src/newlib/startup.o ./system/src/newlib/syscalls.o  ./system/src/diag/trace-impl.o ./system/src/diag/trace.o  ./system/src/cortexm/exception-handlers.o ./system/src/cortexm/initialize-hardware.o ./system/src/cortexm/reset-hardware.o  ./system/src/cmsis/system_stm32f4xx.o ./system/src/cmsis/vectors_stm32f407xx.o  ./src/initialize-hardware.o ./src/led.o ./src/main.o ./src/stm32f4xx_hal_msp.o ./src/timer.o ./src/write.o
 ```

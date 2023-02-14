@@ -136,7 +136,7 @@ Similar to `npm stars`.
 
 Manage targets.
 
-```
+```sh
 xpack target <name>
 xpack target
 ```
@@ -145,7 +145,7 @@ xpack target
 
 Run a specific test, or all tests.
 
-```
+```sh
 xpack test <name> [--target <name>] [--toolchain <name>] [--profile <name>]
 xpack test
 ```

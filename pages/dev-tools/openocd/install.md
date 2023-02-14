@@ -111,7 +111,6 @@ To check if the xpm installed OpenOCD starts, use something like:
 ```doscon
 C:\>%USERPROFILE%\AppData\Roaming\xPacks\@xpack-dev-tools\openocd\{{ page.version }}-{{ page.xpack-subversion }}.1\.content\bin\openocd.exe --version
 xPack OpenOCD x86_64 Open On-Chip Debugger {{ page.version }}+dev ({{ page.version-date }})
-
 ```
 
 {{ manual_install }}

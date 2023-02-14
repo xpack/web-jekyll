@@ -49,10 +49,11 @@ Another list:
 
 More text.
 
-```
+```txt
 Code line 1
 Code line 2
 ```
+
 More text.
 
     Code line 3

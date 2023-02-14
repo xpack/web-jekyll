@@ -49,13 +49,13 @@ The common ones are presented below.
 
 A string that defines the name of the board to be emulated:
 
-```
+```txt
 --board STM32F4-Discovery
 ```
 
 To get a list of supported boards, use `?` or `help`:
 
-```
+```txt
 --board ?
 ```
 
@@ -65,13 +65,13 @@ Each board has a MCU type, hardcoded in the board definitions.
 
 However it is possible to pretend the board has a different MCU, by explicitly specifying a MCU name:
 
-```
+```txt
 --mcu STM32F407VG
 ```
 
 To get a list of supported MCUs, use `?` or `help`:
 
-```
+```txt
 --mcu ?
 ```
 
@@ -81,7 +81,7 @@ The emulator currently does not preserve a persistent state of the flash memory 
 
 For debug sessions, this can be done via the GDB protocol. For standalone sessions, QEMU needs to know the name of the ELF file:
 
-```
+```txt
 --image blinky.elf
 ```
 
@@ -91,7 +91,7 @@ When used with a debugger, QEMU must implement the GDB server protocol, for the 
 
 The default QEMU port is `1234`; the option to start QEMU in server mode and listen on the TCP port 1234 is:
 
-```
+```txt
 --gdb tcp::1234
 ```
 
@@ -103,7 +103,7 @@ By default, the GNU MCU Eclipse QEMU will try to start in graphical mode, by dis
 
 For running unit tests this is generally not needed, and QEMU can be started with graphics support disabled:
 
-```
+```txt
 --nographic
 ```
 
@@ -113,7 +113,7 @@ By default, `qemu` is very quiet, it barely complains for errors.
 
 To make it minimally social, add one `--verbose`, and it'll tell what is going on:
 
-```
+```console
 xPack 64-bit QEMU emulator version 2.8.0-9 (v2.8.0-7-3-ge221f2b601-dirty)
 Board: 'STM32F4-Discovery' (ST Discovery kit for STM32F407/417 lines).
 Device: 'STM32F407VG' (Cortex-M4 r0p0, MPU), Flash: 1024 kB, RAM: 128 kB.
@@ -170,7 +170,7 @@ To make QEMU inform the user about these problems, the `-d` options can be used 
 
 There are many such options available, but the ones the plug-in uses are:
 
-```
+```txt
 -d unimp,guest_errors
 ```
 
@@ -178,7 +178,7 @@ There are many such options available, but the ones the plug-in uses are:
 
 QEMU fully implements the ARM semihosting protocol. To enable it, use the following complicated option:
 
-```
+```txt
 --semihosting-config enable=on,target=native
 ```
 
@@ -190,7 +190,7 @@ Any number of options can be used, but generally it is recommended to keep this 
 
 This option **must be the last one**, and all following options will be passed to the application:
 
-```
+```txt
 --semihosting-cmdline test 1 2 3
 ```
 

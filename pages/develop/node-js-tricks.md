@@ -27,7 +27,7 @@ console.log(util.inspect(something))
 
 Use `stat()`.
 
-```
+```js
     try {
       await fsPromises.stat(aPath)
       // It does.

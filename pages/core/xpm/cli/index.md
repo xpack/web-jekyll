@@ -10,7 +10,7 @@ date: 2017-10-09 12:50:00 +0300
 
 ## Synopsis
 
-```
+```sh
 xpm <command> [<subcommand>...] [<options> ...] [<args>...]
 ```
 
@@ -36,7 +36,7 @@ command, or set of command and subcommands.
 
 To get an initial glimpse on the program, ask for help:
 
-```
+```console
 $ xpm --help
 
 The xPack package manager command line tool
@@ -76,7 +76,7 @@ amount of messages.
 This can be changed, from not displaying any messages at all (`--silent`)
 to displaying lots of debugging trace messages (`--trace`).
 
-```
+```console
   --loglevel <level>     Set log level (silent|warn|info|verbose|debug|trace)
   -s|--silent            Disable all messages (--loglevel silent)
   -q|--quiet             Mostly quiet, warnings and errors (--loglevel warn)
