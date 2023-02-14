@@ -10,6 +10,8 @@ download_url: https://github.com/xpack-dev-tools/qemu-arm-xpack/releases/tag/v2.
 
 date:   2021-10-17 18:19:18 +0300
 
+comments: true
+
 categories:
   - releases
   - qemu

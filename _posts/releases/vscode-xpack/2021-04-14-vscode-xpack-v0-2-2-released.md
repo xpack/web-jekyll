@@ -8,6 +8,8 @@ version: 0.2.2
 
 date:   2021-04-14 23:40:00 +0300
 
+comments: true
+
 categories:
   - releases
   - vscode-xpack

@@ -7,6 +7,8 @@ download_url: https://github.com/xpack-dev-tools/xbb-bootstrap-xpack/releases/ta
 
 date:   2022-10-03 21:05:43 +0300
 
+comments: true
+
 categories:
   - releases
   - xbb-bootstrap

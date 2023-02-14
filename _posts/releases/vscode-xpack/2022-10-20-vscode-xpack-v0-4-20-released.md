@@ -8,6 +8,8 @@ version: 0.4.20
 
 date:   2022-10-20 10:48:00 +0300
 
+comments: true
+
 categories:
   - releases
   - vscode-xpack

@@ -11,6 +11,8 @@ redirect_from:
 
 date:   2021-01-30 21:49:00 +0200
 
+comments: true
+
 categories:
   - releases
   - xpm

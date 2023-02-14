@@ -10,6 +10,8 @@ download_url: https://github.com/xpack-dev-tools/ninja-build-xpack/releases/tag/
 
 date:   2020-12-19 12:14:00 +0200
 
+comments: true
+
 categories:
   - releases
   - ninja-build

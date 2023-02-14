@@ -25,6 +25,8 @@ date:   2023-02-05 05:17:34 +0200
 redirect_from:
   - /blog/2023/02/04/arm-none-eabi-gcc-v12-2-1-1-1-released/
 
+comments: true
+
 categories:
   - releases
   - arm-none-eabi-gcc

@@ -11,6 +11,8 @@ date:   2021-05-05 19:47:00 +0300
 redirect_from:
   - /blog/2021/05/05/vscode-xpack-v0-4-11-released/
 
+comments: true
+
 categories:
   - releases
   - vscode-xpack

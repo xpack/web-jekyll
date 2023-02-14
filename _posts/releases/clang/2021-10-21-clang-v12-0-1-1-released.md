@@ -13,6 +13,8 @@ date:   2021-10-22 00:51:58 +0300
 redirect_from:
   - /blog/2021/10/22/clang-v12-0-1-1-released/
 
+comments: true
+
 categories:
   - releases
   - clang

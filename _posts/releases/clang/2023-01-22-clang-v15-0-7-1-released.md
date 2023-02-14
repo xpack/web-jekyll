@@ -11,6 +11,8 @@ download_url: https://github.com/xpack-dev-tools/clang-xpack/releases/tag/v15.0.
 
 date:   2023-01-22 18:41:30 +0200
 
+comments: true
+
 categories:
   - releases
   - clang

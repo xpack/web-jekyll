@@ -12,6 +12,8 @@ download_url: https://github.com/xpack-dev-tools/patchelf-xpack/releases/tag/v0.
 date:   2023-01-23 20:33:25 +0200
 
 # For Jekyll releases selection.
+comments: true
+
 categories:
   - releases
   - patchelf

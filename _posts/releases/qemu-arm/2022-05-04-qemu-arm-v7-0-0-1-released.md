@@ -13,6 +13,8 @@ date:   2022-05-05 01:26:07 +0300
 redirect_from:
   - /blog/2022/05/05/qemu-arm-v7-0-0-1-released/
 
+comments: true
+
 categories:
   - releases
   - qemu

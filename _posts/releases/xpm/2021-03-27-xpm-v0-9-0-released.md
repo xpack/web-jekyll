@@ -8,6 +8,8 @@ version: 0.9.0
 
 date:   2021-03-27 13:25:00 +0200
 
+comments: true
+
 categories:
   - releases
   - xpm

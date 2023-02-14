@@ -10,6 +10,8 @@ download_url: https://github.com/xpack-dev-tools/cmake-xpack/releases/tag/v3.19.
 
 date:   2020-12-15 19:08:00 +0200
 
+comments: true
+
 categories:
   - releases
   - cmake

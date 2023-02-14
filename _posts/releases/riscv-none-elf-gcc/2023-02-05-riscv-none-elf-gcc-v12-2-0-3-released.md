@@ -19,6 +19,8 @@ date:   2023-02-05 23:47:30 +0200
 redirect_from:
   - /blog/2023/02/02/riscv-none-elf-gcc-v12-2-0-2-released/
 
+comments: true
+
 categories:
   - releases
   - riscv-none-elf-gcc

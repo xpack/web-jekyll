@@ -14,6 +14,8 @@ download_url: https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/release
 
 date:   2020-07-03 10:19:00 +0300
 
+comments: true
+
 categories:
   - releases
   - arm-none-eabi-gcc

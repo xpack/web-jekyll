@@ -14,6 +14,8 @@ download_url: https://github.com/xpack-dev-tools/meson-build-xpack/releases/tag/
 
 date:   2021-12-06 21:45:29 +0200
 
+comments: true
+
 categories:
   - releases
   - meson-build

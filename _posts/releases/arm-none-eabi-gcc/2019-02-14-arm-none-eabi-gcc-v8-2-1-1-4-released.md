@@ -6,6 +6,8 @@ download_url: https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc/releases/tag/
 
 date:   2019-02-14 10:48:00 +0300
 
+comments: true
+
 categories:
   - releases
   - arm-none-eabi-gcc

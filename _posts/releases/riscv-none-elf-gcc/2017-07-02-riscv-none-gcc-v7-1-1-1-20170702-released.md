@@ -6,6 +6,8 @@ download_url: https://github.com/gnu-mcu-eclipse/riscv-none-gcc/releases/tag/v7.
 
 date:   2017-07-02 22:38:00 +0300
 
+comments: true
+
 categories:
   - releases
   - riscv-none-embed-gcc

@@ -12,6 +12,8 @@ download_url: https://github.com/xpack-dev-tools/riscv-none-embed-gcc-xpack/rele
 
 date:   2021-11-11 11:37:02 +0200
 
+comments: true
+
 categories:
   - releases
   - riscv-none-embed-gcc

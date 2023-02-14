@@ -16,6 +16,8 @@ date:   2021-10-17 01:27:46 +0300
 redirect_from:
   - /blog/2021/10/17/openocd-v0-11-0-2-released/
 
+comments: true
+
 categories:
   - releases
   - openocd

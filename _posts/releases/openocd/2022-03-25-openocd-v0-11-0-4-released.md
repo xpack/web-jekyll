@@ -14,6 +14,8 @@ download_url: https://github.com/xpack-dev-tools/openocd-xpack/releases/tag/v0.1
 
 date:   2022-03-25 20:16:20 +0200
 
+comments: true
+
 categories:
   - releases
   - openocd

@@ -12,6 +12,8 @@ download_url: https://github.com/xpack-dev-tools/realpath-xpack/releases/tag/v9.
 date:   2022-10-21 19:58:24 +0300
 
 # For Jekyll releases selection.
+comments: true
+
 categories:
   - releases
   - realpath

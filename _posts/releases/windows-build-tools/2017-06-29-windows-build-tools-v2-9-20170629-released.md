@@ -6,6 +6,8 @@ download_url: https://github.com/gnu-mcu-eclipse/windows-build-tools/releases/ta
 
 date:   2017-06-29 21:20:00 +0300
 
+comments: true
+
 categories:
   - releases
   - windows-build-tools

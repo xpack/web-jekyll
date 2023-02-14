@@ -9,6 +9,8 @@ download_url: https://github.com/xpack-dev-tools/windows-build-tools-xpack/relea
 
 date:   2023-01-29 18:39:37 +0200
 
+comments: true
+
 categories:
   - releases
   - windows-build-tools

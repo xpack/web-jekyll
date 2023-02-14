@@ -11,6 +11,8 @@ download_url: https://github.com/xpack-dev-tools/cmake-xpack/releases/tag/v3.22.
 
 date:   2022-09-01 11:44:13 +0300
 
+comments: true
+
 categories:
   - releases
   - cmake

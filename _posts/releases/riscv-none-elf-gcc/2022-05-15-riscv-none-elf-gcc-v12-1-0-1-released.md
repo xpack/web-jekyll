@@ -10,6 +10,8 @@ download_url: https://github.com/xpack-dev-tools/riscv-none-elf-gcc-xpack/releas
 
 date:   2022-05-15 06:50:50 +0300
 
+comments: true
+
 categories:
   - releases
   - riscv-none-elf-gcc

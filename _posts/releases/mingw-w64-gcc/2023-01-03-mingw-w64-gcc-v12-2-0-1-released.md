@@ -17,6 +17,8 @@ download_url: https://github.com/xpack-dev-tools/mingw-w64-gcc-xpack/releases/ta
 
 date:   2023-01-03 12:45:35 +0200
 
+comments: true
+
 categories:
   - releases
   - mingw-w64-gcc

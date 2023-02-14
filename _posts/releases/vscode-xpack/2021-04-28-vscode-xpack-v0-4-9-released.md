@@ -12,6 +12,8 @@ redirect_from:
   - /blog/2021/04/27/vscode-xpack-v0-4-8-released/
   - /blog/2021/04/28/vscode-xpack-v0-4-9-released/
 
+comments: true
+
 categories:
   - releases
   - vscode-xpack
