@@ -33,9 +33,7 @@ User pages:
 Developer & maintainer pages:
 
 - [GitHub](https://github.com/xpack-dev-tools/qemu-arm-xpack/)
-- [How to build](https://github.com/xpack-dev-tools/qemu-arm-xpack/blob/xpack/README-BUILD.md)
-- [How to release](https://github.com/xpack-dev-tools/qemu-arm-xpack/blob/xpack/README-RELEASE.md)
-- [Developer info](https://github.com/xpack-dev-tools/qemu-arm-xpack/blob/xpack/README-DEVELOP.md)
+- [README-MAINTAINER](https://github.com/xpack-dev-tools/qemu-arm-xpack/blob/xpack/README-MAINTAINER.md)
 
 ## Deprecated qemu-system-gnuarmeclipse
 
@@ -129,7 +127,7 @@ The release and change log is available in the repository
 
 For those interested on the procedure used to build these packages,
 please read the
-[How to build](https://github.com/xpack-dev-tools/qemu-arm-xpack/blob/xpack/README-BUILD.md)
+[README-MAINTAINER](https://github.com/xpack-dev-tools/qemu-arm-xpack/blob/xpack/README-MAINTAINER.md)
 page.
 However, the ultimate source for details are the build scripts
 themselves, all available from the 

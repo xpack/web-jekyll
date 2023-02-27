@@ -26,8 +26,7 @@ User pages:
 Developer & maintainer pages:
 
 - [GitHub](https://github.com/xpack-dev-tools/pkg-config-xpack/)
-- [How to build](https://github.com/xpack-dev-tools/pkg-config-xpack/blob/xpack/README-BUILD.md)
-- [How to publish](https://github.com/xpack-dev-tools/pkg-config-xpack/blob/xpack/README-RELEASE.md)
+- [README-MAINTAINER](https://github.com/xpack-dev-tools/pkg-config-xpack/blob/xpack/README-MAINTAINER.md)
 
 ## Overview
 
@@ -77,7 +76,7 @@ The release and change log is available in the repository
 ## Build details
 
 For those interested in building the binaries, please read the
-[How to build](https://github.com/xpack-dev-tools/pkg-config-xpack/blob/xpack/README-BUILD.md)
+[README-MAINTAINER](https://github.com/xpack-dev-tools/pkg-config-xpack/blob/xpack/README-MAINTAINER.md)
 page.
 However, the ultimate source for details are the build scripts themselves,
 all available from the
