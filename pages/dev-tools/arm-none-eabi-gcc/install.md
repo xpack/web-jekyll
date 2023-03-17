@@ -146,7 +146,7 @@ Download the latest version named like:
 
 {% include note.html content="In case you wonder where the suffix comes
 from, it is exactly the Node.js `process.platform` and `process.arch`.
-The `win32` part is confusing, but we have to leave with it." %}
+The `win32` part is confusing, but we have to live with it." %}
 
 ### Unpack
 
