@@ -22,7 +22,8 @@ date: 2017-10-09 14:14:00 +0300
 All xPack Core Tools are [Node.js](https://nodejs.org) CLI application
 available from the
 [npmjs.com](https://www.npmjs.com) public repository and are installed
-via **npm** which uses Node.
+via `npm` which runs on top of `node`, which is the **Node.js**
+(or Node in short) executable.
 
 ## Prerequisites
 
@@ -43,9 +44,12 @@ there are two Node versions, **LTS** (**Long Term Service**) and
 
 ![The Node Download page]({{ site.baseurl }}/assets/images/2019/nodejs-org.png)
 
-The general procedure is to download the package suitable for your
-platform and install it as usual. For GNU/Linux and macOS, it is
+For Windows, the general procedure is to download the package
+and install it as usual.
+
+For GNU/Linux and macOS, it is
 **highly recommended** to **use a version manager** (see below).
+
 The result is a binary program named `node` (that can be used to execute
 JavaScript code from the terminal), and a symbolic link named `npm`, pointing to
 the `npm-cli.js` script, which is part of the Node module that implements
