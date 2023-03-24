@@ -224,7 +224,7 @@ npm uninstall --global xpm
 ## Miscellaneous
 
 The official page explaining how to install npm in a custom
-folder is [How to Prevent Permissions Errors](https://docs.npmjs.com/getting-started/fixing-npm-permissions#option-two-change-npms-default-directory).
+folder is [Resolving EACCES permissions errors when installing packages globally](https://docs.npmjs.com/getting-started/fixing-npm-permissions).
 
 ## `npx`
 
