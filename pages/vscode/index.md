@@ -16,10 +16,16 @@ Manage typical **multi-configuration projects** (like _Debug/Release_), but
 also complex, **multi-platform**, **multi-architecture**, **multi-toolchain**
 projects, with an emphasis on **modern C/C++** and **embedded** applications.
 
-This sub-project is part of [The xPack Project](https://github.com/xpack/).
+This open source project is available on
+[GitHub](https://github.com/xpack/vscode-xpack-extension-ts/)
+and is part of [The xPack Project](https://github.com/xpack/).
 
-It is intended as a replacement for the managed build system available
-in [Eclipse Embedded CDT](https://projects.eclipse.org/projects/iot.embed-cdt/).
+In VS Code it can be directly installed from the
+[Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=ilg-vscode.xpack)
+
+This extension is intended as a future replacement for the managed build
+system available in
+[Eclipse Embedded CDT](https://projects.eclipse.org/projects/iot.embed-cdt/).
 
 ## Requirements
 
