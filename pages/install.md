@@ -45,28 +45,18 @@ there are two Node versions, **LTS** (**Long Term Service**) and
 ![The Node Download page]({{ site.baseurl }}/assets/images/2019/nodejs-org.png)
 
 For Windows, the general procedure is to download the package
-and install it as usual.
+and install it as usual (see below for details).
 
 For GNU/Linux and macOS, it is
 **highly recommended** to **use a version manager** (see below).
 
-The result is a binary program named `node` (that can be used to execute
-JavaScript code from the terminal), and a symbolic link named `npm`, pointing to
-the `npm-cli.js` script, which is part of the Node module that implements
+The result is a binary program named `node` (or `node.exe` on Windows),
+that can be used to execute
+JavaScript code from the terminal, and a symbolic link named `npm`, pointing to
+the `npm-cli.js` script, which is part of the Node.js module that implements
 the npm functionality (on Windows, where symbolic links are problematic,
 `.cmd` stubs are used).
 
-{% include warning.html content="Due to a misconception, some
-distributions offer to install Node with administrative rights;
-this is not a problem
-for Node itself, but will also require administrative rights for using
-npm and xpm, and these tools fail in various ways when installed
-with administrative rights (mostly with problems related to permissions);
-to simplify maintenance, the highly recommended method is to install Node.js/npm
-in a custom location in the home folder, using a version
-manager or by directly unpacking the archive distributions.
-Regardless how and where it is installed, the `node`
-executable must be in the current path." %}
 
 {% capture version_manager %}
 
@@ -155,7 +145,7 @@ v{{ page.node_version }}
 
 {{ npm_update }}
 
-A version of **npm**, usually a bit older, comes packed with Node.
+A version of **npm**, usually a bit older, comes packed with Node.js.
 
 ```doscon
 C:\>where npm.cmd
@@ -261,7 +251,22 @@ For more details please read the Microsoft
 
 {% endcapture %}
 
+{% capture node_warning %}
+
+{% include warning.html content="Due to a misconception, some
+tutorials suggest to install Node.js with administrative rights;
+this is not a problem
+for `node` itself, but will also require administrative rights for using
+`npm` and `xpm`, and these tools fail in various ways when installed
+with administrative rights (mostly with problems related to permissions);
+to simplify maintenance, the highly recommended method is to install
+Node.js/npm in the home folder, using a version manager." %}
+
+{% endcapture %}
+
 {% capture macos %}
+
+{{ node_warning }}
 
 ## TL;DR
 
@@ -447,6 +452,8 @@ use `nvm use <version>` & `nvm alias default <version>`.
 {% endcapture %}
 
 {% capture linux %}
+
+{{ node_warning }}
 
 ## TL;DR
 
