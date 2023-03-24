@@ -121,7 +121,29 @@ npm install --global xpm@latest
 
 {% endcapture %}
 
+{% capture use_nvm %}
+
+For Unix-like systems, it is
+**highly recommended** to **use a version manager** (see below).
+
+The result is a binary program named `node`,
+that can be used to execute
+JavaScript code from the terminal, and a symbolic link named `npm`, pointing to
+the `npm-cli.js` script, which is part of the Node.js module that implements
+the npm functionality.
+
+{% endcapture %}
+
 {% capture windows %}
+
+For Windows, the general procedure is to download the package
+and install it as usual (see below for details).
+
+The result is a binary program named `node.exe`,
+that can be used to execute
+JavaScript code from the terminal, and a stub named `npm.cmd`, executing to
+the `npm-cli.js` script, which is part of the Node.js module that implements
+the npm functionality.
 
 {{ manual_install }}
 
@@ -265,6 +287,8 @@ Node.js/npm in the home folder, using a version manager." %}
 {% endcapture %}
 
 {% capture macos %}
+
+{{ use_nvm }}
 
 {{ node_warning }}
 
@@ -452,6 +476,8 @@ use `nvm use <version>` & `nvm alias default <version>`.
 {% endcapture %}
 
 {% capture linux %}
+
+{{ use_nvm }}
 
 {{ node_warning }}
 
