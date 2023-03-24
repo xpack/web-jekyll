@@ -33,7 +33,20 @@ container, using [mingw-w64](https://mingw-w64.org).
 
 The build scripts run on GNU/Linux and macOS.
 
-### GNU/Linux prerequisites
+### GNU/Linux
+
+Any GNU/Linux distribution that is able to run Docker should be ok; it
+is not necessary to have a physical machine, virtual machines are
+perfectly fine. For better results, dedicate 3-4 cores and 8-12 GB of RAM.
+
+The build scripts were tested on:
+
+- Ubuntu 18.04 LTS, running on an Intel NUC NUC8i7BEH with 32 GB of RAM
+- Debian 10 (buster), running on an AMD Ryzen 5600G with 32 GB of RAM
+- Raspberry Pi OS 64-bit, running on a Raspberry Pi 4 with 8 GB of RAM
+- Raspberry Pi OS 32-bit, running on a Raspberry Pi 4 with 4 GB of RAM
+
+The prerequisites are:
 
 - `docker`
 - `git` (installed via the system package manager)
@@ -44,17 +57,25 @@ The build scripts do most of the actual work in the Docker container, and,
 apart from `docker`, `git` and `xpm`, the host machine has no other special
 requirements.
 
-### macOS prerequisites
-
-- the Command Line Tools
-- `npm` (shipped with Node.js; installed via nvm)
-- `xpm` (installed via `npm`)
+### macOS
 
 With a container solution similar to Docker not available to run macOS
 containers, the macOS builds run natively on Intel and Apple Silicon
 machines, and, apart from the usual Command Line Tools (provided by
 Apple) and `xpm`, the host machine has no other special
 requirements.
+
+The build scripts were tested on:
+
+- macOS 12.6.3, running on an Intel MacMini
+- macOS 10.13, running inside a Parallels virtual machine
+- macOS 11.7.4, running on an Apple Silicon MacMini
+
+The prerequisites are:
+
+- the Command Line Tools
+- `npm` (shipped with Node.js; installed via nvm)
+- `xpm` (installed via `npm`)
 
 Some build scripts may require **Python 3**. If not already available in the
 standard Apple distribution, install it from Python
