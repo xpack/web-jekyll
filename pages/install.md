@@ -37,26 +37,12 @@ v{{ page.node_version }}
 ```
 
 If this is your first encounter with **npm**, you need to install the
-[Node.js](https://nodejs.org) JavaScript run-time. The process is
+[Node.js](https://nodejs.org) ECMAScript (JavaScript) run-time. The process is
 straightforward and does not pollute the system locations significantly;
 there are two Node versions, **LTS** (**Long Term Service**) and
-**Current**; generally it is safer to use LTS, especially on Windows.
+**Current**; generally it is safer to use **LTS**, especially on Windows.
 
 ![The Node Download page]({{ site.baseurl }}/assets/images/2019/nodejs-org.png)
-
-For Windows, the general procedure is to download the package
-and install it as usual (see below for details).
-
-For GNU/Linux and macOS, it is
-**highly recommended** to **use a version manager** (see below).
-
-The result is a binary program named `node` (or `node.exe` on Windows),
-that can be used to execute
-JavaScript code from the terminal, and a symbolic link named `npm`, pointing to
-the `npm-cli.js` script, which is part of the Node.js module that implements
-the npm functionality (on Windows, where symbolic links are problematic,
-`.cmd` stubs are used).
-
 
 {% capture version_manager %}
 
