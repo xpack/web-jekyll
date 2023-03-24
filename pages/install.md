@@ -96,6 +96,37 @@ page.
 
 {% endcapture %}
 
+{% capture xpm_install %}
+
+## Install xpm
+
+Follow the step in the
+[xpm install]({{ site.baseurl }}/xpm/install/) page.
+
+If you followed the TL;DR steps, it was already installed. Otherwise,
+if you already know what this is all about, issue the following command:
+
+```sh
+npm install --global xpm@latest
+```
+
+{% endcapture %}
+
+{% capture xpm_install_windows %}
+
+## Install xpm
+
+Follow the step in the
+[xpm install]({{ site.baseurl }}/xpm/install/) page.
+
+If you already know what this is all about, issue the following command:
+
+```sh
+npm install --global xpm@latest
+```
+
+{% endcapture %}
+
 {% capture windows %}
 
 {{ manual_install }}
@@ -221,6 +252,8 @@ Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser
 
 For more details please read the Microsoft
 [about_Execution_Policies](https://docs.microsoft.com/en-gb/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.1) page.
+
+{{ xpm_install_windows }}
 
 {% endcapture %}
 
@@ -405,6 +438,8 @@ $ which npm
 At any time, to switch between any of the installed versions,
 use `nvm use <version>` & `nvm alias default <version>`.
 
+{{ xpm_install }}
+
 {% endcapture %}
 
 {% capture linux %}
@@ -566,21 +601,11 @@ system C/C++ headers and libraries will be needed.
 
 Install them according to the distribution specifics.
 
+{{ xpm_install }}
+
 {% endcapture %}
 
 {% include platform-tabs.html %}
-
-## Install xpm
-
-The next step is to install the
-[xPack Project Manager]({{ site.baseurl }}/xpm/install/).
-
-If you followed the TL;DR steps, it was already installed. Otherwise,
-if you already know what this is all about, issue the following command:
-
-```sh
-npm install --global xpm@latest
-```
 
 ## Miscellaneous
 
