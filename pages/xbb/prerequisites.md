@@ -22,10 +22,57 @@ an Arm machine. A Raspberry Pi 4 8GB equipped with a Samsung Portable T7
 USB 3 SSD is a good solution." %}
 
 {% include note.html content="Although Arm 32 binaries can be build
-inside Docker containers running on AArch64 machines." %}
+inside Docker containers running on AArch64 machines,
+it is still recommended to use a 32-bit OS, to avoid issues caused
+by the differences between armv7 and armv8." %}
 
 The Windows binaries are generated on the same Docker Intel GNU/Linux
 container, using [mingw-w64](https://mingw-w64.org).
+
+## Prerequisites
+
+The build scripts run on GNU/Linux and macOS.
+
+### GNU/Linux prerequisites
+
+- `docker`
+- `git` (installed via the system package manager)
+- `npm` (shipped with Node.js; installed via nvm, not the system package manager)
+- `xpm` (installed via `npm`)
+
+The build scripts do most of the actual work in the Docker container, and,
+apart from `docker`, `git` and `xpm`, the host machine has no other special
+requirements.
+
+### macOS prerequisites
+
+- the Command Line Tools
+- `npm` (shipped with Node.js; installed via nvm)
+- `xpm` (installed via `npm`)
+
+With a container solution similar to Docker not available to run macOS
+containers, the macOS builds run natively on Intel and Apple Silicon
+machines, and, apart from the usual Command Line Tools (provided by
+Apple) and `xpm`, the host machine has no other special
+requirements.
+
+Some build scripts may require **Python 3**. If not already available in the
+standard Apple distribution, install it from Python
+[downloads](https://www.python.org/downloads/macos/).
+
+## npm
+
+`npm` is shipped with Node.js, and is required to install `xpm`.
+
+For details on installing Node.js, please see the
+[xPack prerequisites]({{ site.baseurl }}/install/) page.
+
+{% include warning.html content="Be sure you **do not** install npm
+with administrative rights, like via a system package manager;
+use `nvm` instead, as instructed, otherwise you will run into
+troubles caused by permissions." %}
+
+## Docker
 
 ### GNU/Linux
 
@@ -40,15 +87,12 @@ The procedure was tested on:
 - Raspberry Pi OS 64-bit, running on a Raspberry Pi 4 with 8 GB of RAM
 - Raspberry Pi OS 32-bit, running on a Raspberry Pi 4 with 4 GB of RAM
 
-The build scripts do most of the actual work in the Docker container, and,
-apart from Docker, the host machine has no other special requirements.
-
 #### Install Docker
 
 For any GNU/Linux distribution, follow the
 [specific instructions](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/#install-using-the-repository).
 
-For example, the steps to install Docker on a modern 64-bit Ubuntu system are basically:
+For example, the steps to install Docker on a modern Ubuntu system are basically:
 
 ```sh
 sudo apt-get update
@@ -120,7 +164,7 @@ Hello from Docker!
 
 ### macOS
 
-For development build, the procedure is executed on a recent macOS
+For development builds, the procedure is executed on a recent macOS
 version (currently 12.6).
 
 For production builds it is recommended to use a slightly older version.
@@ -159,7 +203,7 @@ in the Xcode.app folder, which may very in different versions;
 for a stable configuration it is
 required to install the CommandLineTools package." %}
 
-#### macOS Docker
+#### No macOS Docker
 
 Due to the specifics of macOS, Docker cannot run natively; instead,
 it uses a GNU/Linux virtual machine running in Apple HyperKit
