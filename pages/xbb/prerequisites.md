@@ -15,16 +15,7 @@ containers (separate 32/64-bit containers) based on older
 and more conservative distributions, to avoid problems when
 attempting to run the executables on older versions.
 
-The XBB v5.0.0 uses Ubuntu 18 LTS for both Intel and Arm GNU/Linux.
-
-{% include note.html content="Building Arm binaries requires
-an Arm machine. A Raspberry Pi 4 8GB equipped with a Samsung Portable T7
-USB 3 SSD is a good solution." %}
-
-{% include note.html content="Although Arm 32 binaries can be build
-inside Docker containers running on AArch64 machines,
-it is still recommended to use a 32-bit OS, to avoid issues caused
-by the differences between armv7 and armv8." %}
+The build scripts run on GNU/Linux and macOS.
 
 The Windows binaries are generated on the same Docker Intel GNU/Linux
 container, using [mingw-w64](https://mingw-w64.org).
@@ -38,6 +29,17 @@ The build scripts run on GNU/Linux and macOS.
 Any GNU/Linux distribution that is able to run Docker should be ok; it
 is not necessary to have a physical machine, virtual machines are
 perfectly fine. For better results, dedicate 3-4 cores and 8-12 GB of RAM.
+
+The XBB v5.0.0 uses Ubuntu 18 LTS for both Intel and Arm GNU/Linux.
+
+{% include note.html content="Building Arm binaries requires
+an Arm machine. A Raspberry Pi 4 8GB equipped with a Samsung Portable T7
+USB 3 SSD is a good solution." %}
+
+{% include note.html content="Although Arm 32 binaries can be build
+inside Docker containers running on AArch64 machines,
+it is still recommended to use a 32-bit OS, to avoid issues caused
+by the differences between armv7 and armv8." %}
 
 The build scripts were tested on:
 
@@ -95,7 +97,7 @@ troubles caused by permissions." %}
 
 ## xpm
 
-[xpm](https://xpack.github.io/xpm/) is a portable
+[`xpm`](https://xpack.github.io/xpm/) is a portable
 [Node.js](https://nodejs.org/) command line application.
 
 To install it, follow the steps in the
