@@ -124,6 +124,11 @@ Other tools, used for building the above:
 These projects are hosted in the GitHub
 [`xpack-dev-tools`](https://github.com/xpack-dev-tools) organization.
 
+## Visual Studio Code
+
+Support for VS Code is provided via the
+[xPack extension]({{ site.baseurl }}/vscode/).
+
 ## Source xPacks
 
 ### µOS++
