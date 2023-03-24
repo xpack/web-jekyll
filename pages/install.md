@@ -116,7 +116,7 @@ The result is a binary program named `node`,
 that can be used to execute
 JavaScript code from the terminal, and a symbolic link named `npm`, pointing to
 the `npm-cli.js` script, which is part of the Node.js module that implements
-the npm functionality.
+the `npm` functionality.
 
 {% endcapture %}
 
@@ -127,9 +127,9 @@ and install it as usual (see below for details).
 
 The result is a binary program named `node.exe`,
 that can be used to execute
-JavaScript code from the terminal, and a stub named `npm.cmd`, executing to
+JavaScript code from the terminal, and a stub named `npm.cmd`, executing
 the `npm-cli.js` script, which is part of the Node.js module that implements
-the npm functionality.
+the `npm` functionality.
 
 {{ manual_install }}
 
@@ -311,8 +311,9 @@ are also part of Xcode, their location is not fixed, hence the Command
 Line Tools package must still be installed, for the xPack toolchains to
 find them in the expected location." %}
 
-If the `install-nvm-node-npm-xpm.sh` script was successful,
-the rest of this page is only informative and can be skipped.
+{% include note.html content="If the `install-nvm-node-npm-xpm.sh`
+script was successful,
+the rest of this page is only informative and can be skipped." %}
 
 {{ version_manager }}
 
@@ -478,11 +479,12 @@ curl -o- https://raw.githubusercontent.com/xpack/assets/master/scripts/install-n
 exit
 ```
 
-{% include note.html content="Arm platforms, like the Raspberry Pi,
+{% include callout.html content="Arm platforms, like the Raspberry Pi,
 are supported, currently in both 32/64-bit variants." %}
 
-If the `install-nvm-node-npm-xpm.sh` script was successful,
-the rest of this page is only informative and can be skipped.
+{% include note.html content="If the `install-nvm-node-npm-xpm.sh`
+script was successful,
+the rest of this page is only informative and can be skipped." %}
 
 {{ version_manager }}
 
@@ -611,7 +613,7 @@ $ which npm
 At any time, to switch between any of the installed versions,
 use `nvm use <version>`.
 
-{% include note.html content="These commands were tested with `bash` on
+{% include callout.html content="These commands were tested with `bash` on
 Ubuntu 18 LTS and Manjaro 18; for other shells they may need small
 adjustments." %}
 
