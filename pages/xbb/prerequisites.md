@@ -72,6 +72,14 @@ with administrative rights, like via a system package manager;
 use `nvm` instead, as instructed, otherwise you will run into
 troubles caused by permissions." %}
 
+## xpm
+
+[xpm](https://xpack.github.io/xpm/) is a portable
+[Node.js](https://nodejs.org/) command line application.
+
+To install it, follow the steps in the
+[xpm install]({{ site.baseurl }}/xpm/install/) page.
+
 ## Docker
 
 ### GNU/Linux
@@ -225,3 +233,10 @@ If not already loaded, Docker will load the images at first usage.
 The images are reasonably large, currently below 1 GB.
 
 More details in each script documentation page.
+
+## Visual Studio Code
+
+Although not mandatory, VS Code is a nice addition to the development
+environment, and with the
+[xPack extension](https://marketplace.visualstudio.com/items?itemName=ilg-vscode.xpack),
+some of the actions are only at a mouse click distance.
