@@ -26,7 +26,7 @@ via **npm** which uses Node.
 
 ## Prerequisites
 
-A recent [Node.js](https://nodejs.org) (>=**12.x**), since
+A recent [Node.js](https://nodejs.org) (>=**16.14**), since
 some dependencies require new features. Detailed instructions
 for each supported platform are available in the next section.
 
@@ -52,13 +52,13 @@ the `npm-cli.js` script, which is part of the Node module that implements
 the npm functionality (on Windows, where symbolic links are problematic,
 `.cmd` stubs are used).
 
-{% include tip.html content="Due to a misconception, some
+{% include warning.html content="Due to a misconception, some
 distributions offer to install Node with administrative rights;
 this is not a problem
 for Node itself, but will also require administrative rights for using
 npm and xpm, and these tools fail in various ways when installed
-with administrative rights;
-to simplify maintenance, the preferred method is to install Node/npm
+with administrative rights (mostly with problems related to permissions);
+to simplify maintenance, the highly recommended method is to install Node.js/npm
 in a custom location in the home folder, using a version
 manager or by directly unpacking the archive distributions.
 Regardless how and where it is installed, the `node`
