@@ -120,6 +120,25 @@ the `npm` functionality.
 
 {% endcapture %}
 
+{% capture tldr %}
+
+## TL;DR
+
+If you prefer a shortcut, copy/paste the following
+[script](https://github.com/xpack/assets/blob/master/scripts/install-nvm-node-npm-xpm.sh) into a terminal:
+
+```sh
+curl -o- https://raw.githubusercontent.com/xpack/assets/master/scripts/install-nvm-node-npm-xpm.sh | bash
+
+exit
+```
+
+This script will install nvm (the Node Version Manager), node,
+npm and xpm. To activate nvm automatically, it adds several lines
+to the shell initialisation script.
+
+{% endcapture %}
+
 {% capture windows %}
 
 For Windows, the general procedure is to download the package
@@ -278,16 +297,7 @@ Node.js/npm in the home folder, using a version manager." %}
 
 {{ node_warning }}
 
-## TL;DR
-
-If you prefer a shortcut, copy/paste the following
-[script](https://github.com/xpack/assets/blob/master/scripts/install-nvm-node-npm-xpm.sh) into a terminal:
-
-```sh
-curl -o- https://raw.githubusercontent.com/xpack/assets/master/scripts/install-nvm-node-npm-xpm.sh | bash
-
-exit
-```
+{{ tldr }}
 
 ## Command Line Tools
 
@@ -468,16 +478,7 @@ use `nvm use <version>` & `nvm alias default <version>`.
 
 {{ node_warning }}
 
-## TL;DR
-
-If you prefer a shortcut, copy/paste the following
-[script](https://github.com/xpack/assets/blob/master/scripts/install-nvm-node-npm-xpm.sh) into a terminal:
-
-```sh
-curl -o- https://raw.githubusercontent.com/xpack/assets/master/scripts/install-nvm-node-npm-xpm.sh | bash
-
-exit
-```
+{{ tldr }}
 
 {% include callout.html content="Arm platforms, like the Raspberry Pi,
 are supported, currently in both 32/64-bit variants." %}
