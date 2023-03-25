@@ -41,23 +41,23 @@ inside Docker containers running on AArch64 machines,
 it is still recommended to use a 32-bit OS, to avoid issues caused
 by the differences between armv7 and armv8." %}
 
+The prerequisites are:
+
+- `npm` (shipped with Node.js; installed via nvm, not the system package manager)
+- `xpm` (installed via `npm`)
+- `docker`
+- `git` (installed via the system package manager)
+
+The build scripts do most of the actual work in the Docker container, and,
+apart from `docker`, `git` and `xpm`, the host machine has no other special
+requirements.
+
 The build scripts were tested on:
 
 - Ubuntu 18.04 LTS, running on an Intel NUC NUC8i7BEH with 32 GB of RAM
 - Debian 10 (buster), running on an AMD Ryzen 5600G with 32 GB of RAM
 - Raspberry Pi OS 64-bit, running on a Raspberry Pi 4 with 8 GB of RAM
 - Raspberry Pi OS 32-bit, running on a Raspberry Pi 4 with 4 GB of RAM
-
-The prerequisites are:
-
-- `docker`
-- `git` (installed via the system package manager)
-- `npm` (shipped with Node.js; installed via nvm, not the system package manager)
-- `xpm` (installed via `npm`)
-
-The build scripts do most of the actual work in the Docker container, and,
-apart from `docker`, `git` and `xpm`, the host machine has no other special
-requirements.
 
 ### macOS
 
@@ -67,25 +67,45 @@ machines, and, apart from the usual Command Line Tools (provided by
 Apple) and `xpm`, the host machine has no other special
 requirements.
 
+The prerequisites are:
+
+- `npm` (shipped with Node.js; installed via nvm)
+- `xpm` (installed via `npm`)
+- the Command Line Tools from Apple
+
+Some build scripts may require **Python 3**. If not already available in the
+standard Apple distribution, install it from Python
+[downloads](https://www.python.org/downloads/macos/).
+
 The build scripts were tested on:
 
 - macOS 12.6.3, running on an Intel MacMini
 - macOS 10.13, running inside a Parallels virtual machine
 - macOS 11.7.4, running on an Apple Silicon MacMini
 
-The prerequisites are:
-
-- the Command Line Tools
-- `npm` (shipped with Node.js; installed via nvm)
-- `xpm` (installed via `npm`)
-
-Some build scripts may require **Python 3**. If not already available in the
-standard Apple distribution, install it from Python
-[downloads](https://www.python.org/downloads/macos/).
-
-## npm
+## npm/xpm
 
 `npm` is shipped with Node.js, and is required to install `xpm`.
+
+### TL;DR
+
+If you prefer a shortcut, copy/paste the following
+[script](https://github.com/xpack/assets/blob/master/scripts/install-nvm-node-npm-xpm.sh) into a terminal:
+
+```sh
+curl -o- https://raw.githubusercontent.com/xpack/assets/master/scripts/install-nvm-node-npm-xpm.sh | bash
+
+exit
+```
+
+This script will install nvm (the Node Version Manager), node,
+npm and xpm. To activate nvm automatically, it adds several lines
+to the shell initialisation script.
+
+{% include note.html content="On macOS this script also installs
+the Command Line Tools." %}
+
+### Install details
 
 For details on installing Node.js, please see the
 [xPack prerequisites]({{ site.baseurl }}/install/) page.
@@ -95,12 +115,14 @@ with administrative rights, like via a system package manager;
 use `nvm` instead, as instructed, otherwise you will run into
 troubles caused by permissions." %}
 
-## xpm
+### xpm
 
 [`xpm`](https://xpack.github.io/xpm/) is a portable
 [Node.js](https://nodejs.org/) command line application.
 
-To install it, follow the steps in the
+If you used the TL;DR script, it is already installed.
+
+Otherwise, to install it, follow the steps in the
 [xpm install]({{ site.baseurl }}/xpm/install/) page.
 
 ## Docker
@@ -195,11 +217,11 @@ Hello from Docker!
 
 ### macOS
 
-For development builds, the procedure is executed on a recent macOS
+For development builds, the procedure can be executed on a recent macOS
 version (currently 12.6).
 
-For production builds it is recommended to use a slightly older version.
-macOS 10.13 is a good compromise.
+For production builds it is recommended to use a slightly older version,
+for example macOS 10.13 is a good compromise.
 
 It is not mandatory to have a physical macOS 10.13 machine, a virtual
 machine is also perfectly fine. Both Parallels and VirtualBox were
@@ -257,9 +279,13 @@ The images are reasonably large, currently below 1 GB.
 
 More details in each script documentation page.
 
+## Git
+
+Install `git` using the system package manager.
+
 ## Visual Studio Code
 
 Although not mandatory, VS Code is a nice addition to the development
 environment, and with the
 [xPack extension](https://marketplace.visualstudio.com/items?itemName=ilg-vscode.xpack),
-some of the actions are only at a mouse click distance.
+some of the actions are only at a mouse click away.
