@@ -206,25 +206,19 @@ For example, the steps to install Docker on a modern Ubuntu system are basically
 ```sh
 sudo apt-get update && \
 \
-sudo apt-get install apt-transport-https ca-certificates  curl  software-properties-common && \
+sudo apt-get install ca-certificates curl gnupg && \
 \
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - && \
+sudo mkdir -m 0755 -p /etc/apt/keyrings && \
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg && \
 \
-version_name=$(lsb_release -cs) && \
-sudo add-apt-repository  "deb [arch=amd64] https://download.docker.com/linux/ubuntu  ${version_name} stable" && \
+echo \
+  "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+  "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null && \
 \
 sudo apt-get update && \
-sudo apt-get install --yes docker-ce
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
-
-{% include warning.html content="Please note that the above lines get the
-current version name via `lsb_release` and assumes that a folder with that
-name is available at https://download.docker.com/linux/ubuntu/dists/.
-This is true for most versions, except the very latest one, which might not
-yet be made available by the Docker team. In this case set the
-`version_name` manually to the previous version.
-You can also do this by
-manually editing the `/etc/apt/sources.list` file." %}
 
 To check if the install is functional, run the _Hello World_ image,
 for the moment as `sudo`:
