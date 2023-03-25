@@ -1,0 +1,17 @@
+{% if include.index and include.index != "" and include.index != nil %}
+{% assign suffix = include.index %}
+{% else %}
+{% assign suffix = "1" }} %}
+{% endif %}
+<ul id="profileTabs_{{ suffix }}" class="nav nav-tabs">
+    <li class="active"><a href="#macos_{{ suffix }}" data-toggle="tab">macOS</a></li>
+    <li><a href="#linux_{{ suffix }}" data-toggle="tab">GNU/Linux</a></li>
+</ul>
+<div class="tab-content">
+	<div role="tabpanel" class="tab-pane active" id="macos_{{ suffix }}">
+		{{ macos | markdownify }}
+	</div>
+	<div role="tabpanel" class="tab-pane" id="linux_{{ suffix }}">
+		{{ linux | markdownify }}
+	</div>
+</div>
