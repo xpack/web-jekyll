@@ -34,18 +34,6 @@ On macOS, the builds run on standard systems, without the need for
 custom tools, but expecting to be pristine, without additional tools
 installed via alternate package managers (like HomeBrew or MacPorts).
 
-## Types of builds
-
-From the point of view of the desired result, there are two types of builds:
-
-- local/native builds, intended for development and running on the local
-  machine
-- distribution builds, intended for xPack binary distributions and running
-  on most modern machines
-
-The main use cases of XBBs are distribution builds, but they can be used
-for native builds as well.
-
 ## XBB v5.0.0
 
 The latest release, v5.0.0 from early 2023 represents a major milestone
@@ -53,7 +41,7 @@ for the xPack project, since it is the first self-sustained release,
 which allows to build new binary xPacks using previous xPacks,
 without requiring any custom Docker images, or other compiled tools.
 
-### `xbb run`
+## `xpm run`
 
 For convenience, the new build scripts are xPacks, with
 multiple build configurations, for all supported platforms,
@@ -91,14 +79,14 @@ For example:
 
 To invoke these actions, the `xpm run` command is used.
 
-### The helper project
+## The helper project
 
 Since there are lots of common files between projects, they were collected
 into a helper project.
 
 The helper project is a
 source xPack (`@xpack-dev-tools/xbb-helper`), which can be installed
-as a dependency with
+as a dependency with:
 
 ```sh
 cd ~/Work/xpacks/<project>-xpack.git
@@ -133,6 +121,18 @@ xpacks/
 
 There are many files in the helper, for various use cases. The build scripts
 directly include files from the `scripts` and `dependencies` folders.
+
+## Types of builds
+
+From the point of view of the desired result, there are two types of builds:
+
+- local/native builds, intended for development and running on the local
+  machine
+- distribution builds, intended for xPack binary distributions and running
+  on most modern machines
+
+The main use cases of XBBs are distribution builds, but they can be used
+for native builds as well.
 
 ### Native builds with all tools from the host machine
 
