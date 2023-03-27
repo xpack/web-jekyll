@@ -38,7 +38,7 @@ v{{ page.node_version }}
 
 If this is your first encounter with **npm**, you need to install the
 [Node.js](https://nodejs.org) ECMAScript (JavaScript) run-time. The process is
-straightforward and does not pollute the system locations significantly;
+straightforward and does not pollute the system locations;
 there are two Node versions, **LTS** (**Long Term Service**) and
 **Current**; generally it is safer to use **LTS**, especially on Windows.
 
@@ -124,18 +124,29 @@ the `npm` functionality.
 
 ## TL;DR
 
-If you prefer a shortcut, copy/paste the following
-[script](https://github.com/xpack/assets/blob/master/scripts/install-nvm-node-npm-xpm.sh) into a terminal:
+If you know what you're doing and prefer a shortcut, copy/paste the following
+[script](https://github.com/xpack/assets/blob/master/scripts/install-nvm-node-npm-xpm.sh)
+into a terminal (otherwise perform the steps one by one).
+
+{% include warning.html content="For security reasons, conscientious users
+should first check the content of the file before executing it." %}
 
 ```sh
-curl -o- https://raw.githubusercontent.com/xpack/assets/master/scripts/install-nvm-node-npm-xpm.sh | bash
+mkdir -pv "${HOME}/Downloads/"
+curl --output "${HOME}/Downloads/install-nvm-node-npm-xpm.sh" https://raw.githubusercontent.com/xpack/assets/master/scripts/install-nvm-node-npm-xpm.sh
+cat "${HOME}/Downloads/install-nvm-node-npm-xpm.sh"
+
+bash "${HOME}/Download/install-nvm-node-npm-xpm.sh"
 
 exit
 ```
 
-This script will install nvm (the Node Version Manager), node,
-npm and xpm. To activate nvm automatically, it adds several lines
-to the shell initialisation script.
+This script will install `nvm` (the Node Version Manager), `node`,
+`npm` and `xpm`.
+
+{% include note.html content="To activate `nvm` automatically,
+the script adds several lines
+to the shell initialisation script." %}
 
 {% endcapture %}
 
