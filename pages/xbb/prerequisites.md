@@ -34,6 +34,7 @@ should first check the content of the file before executing it." %}
 mkdir -pv "${HOME}/Downloads/"
 curl --output "${HOME}/Downloads/install-nvm-node-npm-xpm.sh" https://raw.githubusercontent.com/xpack/assets/master/scripts/install-nvm-node-npm-xpm.sh
 cat "${HOME}/Downloads/install-nvm-node-npm-xpm.sh"
+
 bash "${HOME}/Download/install-nvm-node-npm-xpm.sh"
 
 exit
@@ -187,8 +188,9 @@ The prerequisites are:
 
 - `curl` (installed via the system package manager)
 - `git` (installed via the system package manager)
-- `docker` (preferably a recent one, installed from docker.com)
-- `npm` (shipped with Node.js; installed via nvm, not the system package manager)
+- `docker` (preferably a recent one, installed from **docker.com**)
+- `npm` (shipped with Node.js; installed via **nvm**,
+  **not** the system package manager)
 - `xpm` (installed via `npm`)
 
 The build scripts do most of the actual work in a Docker container, and,
