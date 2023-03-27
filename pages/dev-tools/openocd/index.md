@@ -28,8 +28,11 @@ User pages:
 
 Developer & maintainer pages:
 
-- [GitHub](https://github.com/xpack-dev-tools/openocd-xpack/)
-- [README-MAINTAINER](https://github.com/xpack-dev-tools/openocd-xpack/blob/xpack/README-MAINTAINER.md)
+- [GitHub](https://github.com/xpack-dev-tools/openocd-xpack/) - the project repo
+- [README-DEVELOPER](https://github.com/xpack-dev-tools/openocd-xpack/blob/xpack/README-DEVELOPER.md) -
+  for information on how to build the binaries
+- [README-MAINTAINER](https://github.com/xpack-dev-tools/openocd-xpack/blob/xpack/README-MAINTAINER.md) -
+  for information on the workflow used to make releases
 
 ## Overview
 
@@ -87,9 +90,9 @@ presented in the separate
 
 ## Documentation
 
-The original OpenOCD documentation is available in the installed folders:
+The original OpenOCD documentation is available online:
 
-- `share/doc/pdf/openocd.pdf`
+- <https://openocd.org/pages/documentation.html>
 
 ## Support
 
@@ -104,7 +107,7 @@ The release and change log is available in the repository
 ## Build details
 
 For those interested in building the binaries, please read the
-[README-MAINTAINER](https://github.com/xpack-dev-tools/openocd-xpack/blob/xpack/README-MAINTAINER.md)
+[README-DEVELOPER](https://github.com/xpack-dev-tools/openocd-xpack/blob/xpack/README-DEVELOPER.md)
 page.
 However, the ultimate source for details are the build scripts themselves,
 all available from the 
