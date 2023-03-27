@@ -24,10 +24,17 @@ using [mingw-w64](https://mingw-w64.org).
 ### TL;DR
 
 If you know what you're doing and prefer a shortcut, copy/paste the following
-[script](https://github.com/xpack/assets/blob/master/scripts/install-nvm-node-npm-xpm.sh) into a terminal:
+[script](https://github.com/xpack/assets/blob/master/scripts/install-nvm-node-npm-xpm.sh)
+into a terminal (otherwise perform the steps one by one).
+
+{% include warning.html content="For security reasons, conscientious users
+should first check the content of the file before executing it." %}
 
 ```sh
-curl -o- https://raw.githubusercontent.com/xpack/assets/master/scripts/install-nvm-node-npm-xpm.sh | bash
+mkdir -pv "${HOME}/Downloads/"
+curl --output "${HOME}/Downloads/install-nvm-node-npm-xpm.sh" https://raw.githubusercontent.com/xpack/assets/master/scripts/install-nvm-node-npm-xpm.sh
+cat "${HOME}/Downloads/install-nvm-node-npm-xpm.sh"
+bash "${HOME}/Download/install-nvm-node-npm-xpm.sh"
 
 exit
 ```
@@ -103,7 +110,7 @@ The build scripts were tested on:
 
 {{ npm_xpm_tldr }}
 
-{% include note.html content="On macOS this script also installs
+{% include note.html content="When running on macOS this script also installs
 the Command Line Tools." %}
 
 {{ npm_xpm_details }}
@@ -159,11 +166,13 @@ images based on older
 and more conservative distributions, to avoid problems when
 attempting to run the executables on older systems.
 
-Any GNU/Linux distribution that is able to run Docker should be ok; it
+**Any x86_64 GNU/Linux distribution that is able to run Docker should be fine**; it
 is not necessary to have a physical machine, virtual machines are
 perfectly fine. For better results, dedicate 3-4 cores and 8-12 GB of RAM.
 
-XBB v5.0.0 uses **Ubuntu 18 LTS** for both Intel and Arm GNU/Linux.
+The XBB v5.0.0 Docker images are built on top of **Ubuntu 18 LTS** for both
+Intel and Arm GNU/Linux, which should allow the resulting binaries to
+run on any system based on **GLIBC >= 2.27**.
 
 {% include note.html content="Building Arm binaries requires
 an Arm machine. A Raspberry Pi 4 8GB equipped with a Samsung Portable T7
@@ -176,32 +185,44 @@ by the differences between armv7 and armv8." %}
 
 The prerequisites are:
 
+- `curl` (installed via the system package manager)
+- `git` (installed via the system package manager)
+- `docker` (preferably a recent one, installed from docker.com)
 - `npm` (shipped with Node.js; installed via nvm, not the system package manager)
 - `xpm` (installed via `npm`)
-- `docker`
-- `git` (installed via the system package manager)
 
 The build scripts do most of the actual work in a Docker container, and,
-apart from `docker`, `git` and `xpm`, the host machine has no other special
-requirements.
+apart from `curl`, `git` `docker` and `xpm`, the host machine has no other
+special requirements.
 
 The build scripts were tested on:
 
-- Ubuntu 18.04 LTS, running on an Intel NUC NUC8i7BEH with 32 GB of RAM
+- Ubuntu 18.04 LTS, running on an Intel NUC NUC8i7BEH (i7) with 32 GB of RAM
 - Debian 10 (buster), running on an AMD Ryzen 5600G with 32 GB of RAM
 - Raspberry Pi OS 64-bit, running on a Raspberry Pi 4 with 8 GB of RAM
 - Raspberry Pi OS 32-bit, running on a Raspberry Pi 4 with 4 GB of RAM
 
-{{ npm_xpm_tldr }}
+## curl & git
 
-{{ npm_xpm_details }}
+Install `curl` & `git` using the system package manager.
+
+For example on Ubuntu and Debian derived distributions, use:
+
+```sh
+sudo apt-get install --yes curl git
+```
 
 ## Docker
 
-For any GNU/Linux distribution, follow the
+A **recent Docker** is necessary. If your distribution has one, it can be used,
+but generally it is recommended to update to the latest stable available
+directly from Docker.
+
+For **any GNU/Linux** distribution, follow the
 [specific instructions](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/#install-using-the-repository).
 
-For example, the steps to install Docker on a modern Ubuntu system are basically:
+For example, the steps to install Docker on a modern **Ubuntu** system
+are basically:
 
 ```sh
 sudo apt-get update && \
@@ -277,15 +298,9 @@ The images are reasonably large, currently below 1 GB.
 
 More details in each script documentation page.
 
-## Git
+{{ npm_xpm_tldr }}
 
-Install `git` using the system package manager.
-
-For example on Ubuntu and Debian derived distributions, use:
-
-```sh
-sudo apt-get install --yes git
-```
+{{ npm_xpm_details }}
 
 {% endcapture %}
 
