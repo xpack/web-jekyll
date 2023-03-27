@@ -18,6 +18,7 @@ date: 2016-03-09 12:04:00 +0300
 - [VS Code settings]({{ site.baseurl }}/develop/vs-code-settings/)
 - [schemas]({{ site.baseurl }}/develop/schemas/)
 - [metadata]({{ site.baseurl }}/metadata/)
+- [XBB]({{ site.baseurl }}/xbb/)
 
 ## Possibly other projects
 
