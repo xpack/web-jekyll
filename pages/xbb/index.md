@@ -19,7 +19,7 @@ binaries** for GNU/Linux, macOS and Windows.
 XBB achieves repeatability and consistency by:
 
 - controlling the versions of the tools used during the build
-- compiling most dependencies from sources.
+- compiling most dependencies (libraries) from sources.
 
 By strictly controlling the versions of the compiled sources and tools, it is
 possible to create build environments that use about the same tools
@@ -31,7 +31,8 @@ the actual builds run inside Docker containers
 (Intel/Arm, 32/64-bit).
 
 On macOS, the builds run on standard systems, without the need for
-custom tools.
+custom tools, but expecting to be pristine, without additional tools
+installed via alternate package managers (like HomeBrew or MacPorts).
 
 ## Types of builds
 
@@ -45,37 +46,113 @@ From the point of view of the desired result, there are two types of builds:
 The main use cases of XBBs are distribution builds, but they can be used
 for native builds as well.
 
-## XBB v5.0
+## XBB v5.0.0
 
-The latest release, v5.0 from early 2023 represents a major milestone
+The latest release, v5.0.0 from early 2023 represents a major milestone
 for the xPack project, since it is the first self-sustained release,
 which allows to build new binary xPacks using previous xPacks,
-and does not require any custom Docker images, or other compiled tools.
+without requiring any custom Docker images, or other compiled tools.
+
+### `xbb run`
 
 For convenience, the new build scripts are xPacks, with
 multiple build configurations, for all supported platforms,
-and all actions are defined uniformly as xPack actions.
+and all actions are defined uniformly as **xPack actions**.
 
-There are three choices to build a binary.
+xPack actions are named sequences of shell commands, that are executed
+in order when the action is invoked.
+
+For example:
+
+```json
+    "actions": {
+      "deep-clean": [
+        "rm -rf build xpacks node_modules package-lock.json",
+        "rm -rf ${HOME}/Work/{{ properties.appLcName }}-[0-9]*-*"
+      ],
+      "install": [
+        "npm install",
+        "xpm install"
+      ],
+      "link-deps": [
+        "xpm link @xpack-dev-tools/xbb-helper"
+      ],
+      "git-pull-helper": [
+        "git -C ${HOME}/Work/xpacks/xbb-helper-xpack.git pull"
+      ],
+      "git-log": "git log --pretty='%cd * %h %s' --date=short",
+      "test-xpm": "bash {{ properties.dbg }} scripts/test.sh --xpm",
+      "build-native": "bash {{ properties.dbg }} scripts/build.sh",
+      "build-native-develop": "bash {{ properties.dbg }} scripts/build.sh --develop",
+      "build-native-win": "bash {{ properties.dbg }} scripts/build.sh --windows",
+      "build-native-win-develop": "bash {{ properties.dbg }} scripts/build.sh --develop --windows"
+    },
+```
+
+To invoke these actions, the `xpm run` command is used.
+
+### The helper project
+
+Since there are lots of common files between projects, they were collected
+into a helper project.
+
+The helper project is a
+source xPack (`@xpack-dev-tools/xbb-helper`), which can be installed
+as a dependency with
+
+```sh
+cd ~/Work/xpacks/<project>-xpack.git
+xpm install --save-dev @xpack-dev-tools/xbb-helper@latest
+```
+
+The result is a folder like:
+
+```console
+$ tree -l -L 2 xpacks/
+xpacks/
+└── xpack-dev-tools-xbb-helper -> /home/ilg/.local/xPacks/@xpack-dev-tools/xbb-helper/1.4.7
+    ├── CHANGELOG.md
+    ├── config
+    ├── dependencies
+    ├── developer
+    ├── extras
+    ├── github-actions
+    ├── LICENSE
+    ├── maintainer
+    ├── package.json
+    ├── patches
+    ├── pkgconfig
+    ├── README.md
+    ├── scripts
+    ├── templates
+    ├── tests
+    └── travis
+
+13 directories, 4 files
+```
+
+There are many files in the helper, for various use cases. The build scripts
+directly include files from the `scripts` and `dependencies` folders.
 
 ### Native builds with all tools from the host machine
 
 In this case all build tools are expected to be available on the
-host machine.
+host machine. The list of these dependency depends on the distribution
+and is outside the scope of this project, which recommends the next
+use Docker use case, presented below.
 
 ```sh
 xpm run install
 xpm run build-native
 ```
 
-The first command is used to install the helper project, which is a
-source xPack (`@xpack-dev-tools/xbb-helper`).
-
-The second command runs the build.
+The first command is used to install the helper project;
+the second command runs the build.
 
 These commands run the same on both GNU/Linux and macOS.
 
-To generate the Windows binaries on GNU/Linux, use the separate action:
+To generate the Windows binaries on GNU/Linux, there is a
+separate build action:
 
 ```sh
 xpm run install
@@ -127,8 +204,40 @@ This is done in two steps, first a link from the central store to the
 helper repo is created. This ensures that multiple projects can
 conveniently use the writable helper.
 
+```sh
+rm -rf ~/Work/xpacks/xbb-helper-xpack.git && \
+mkdir -p ~/Work/xpacks && \
+git clone \
+  --branch xpack-develop \
+  https://github.com/xpack-dev-tools/xbb-helper-xpack.git \
+  ~/Work/xpacks/xbb-helper-xpack.git && \
+xpm link -C ~/Work/xpacks/xbb-helper-xpack.git
+```
+
+The result is a link like:
+
+```console
+$ ls -lA .local/xPacks/@xpack-dev-tools/xbb-helper/.link
+lrwxrwxrwx 1 ilg ilg 42 Mar 27 17:16 .local/xPacks/@xpack-dev-tools/xbb-helper/.link -> /home/ilg/Work/xpacks/xbb-helper-xpack.git
+```
+
 In the second step, a link from the build project to the central store
 is created.
+
+```sh
+xpm link @xpack-dev-tools/xbb-helper -C ~/Work/xpacks/<project>-xpack.git
+```
+
+The result is a link like:
+
+```console
+$ cd ~/Work/xpacks/<project>-xpack.git
+$ ls -l xpacks/xpack-dev-tools-xbb-helper
+lrwxrwxrwx 1 ilg ilg 57 Mar 27 17:21 xpacks/xpack-dev-tools-xbb-helper -> /home/ilg/.local/xPacks/@xpack-dev-tools/xbb-helper/.link
+```
+
+This double link mechanism allows multiple projects to use the writable
+folder where the helper was cloned (`xbb-helper-xpack.git`).
 
 For details on the actual usage, please check the
 build projects.
@@ -175,13 +284,11 @@ To pass the folder with the build scripts in and the results out,
 it is usual to use a `Work` folder, for example:
 
 ```console
-$ docker run -it --volume "${HOME}/Work:/Host/Work" ilegeul/ubuntu:amd64-18.04-xbb-v3.4
-root@831bc35faf9f:/# ls -l /Host/Work
-total 175320
-drwxr-xr-x  14 root root       448 Mar  7 19:47 arm-none-eabi-gcc-9.2.1-1.2
-drwxr-xr-x 144 root root      4608 Mar  9 13:15 cache
-drwxr-xr-x  34 root root      1088 Mar 26 11:22 openocd-0.10.0-14
-drwxr-xr-x  12 root root       384 Oct 30 19:00 riscv-none-embed-gcc-8.3.0-1.1
+$ docker run -it --volume "${HOME}/Work:/Host/Work" ilegeul/ubuntu:amd64-18.04-xbb-v5.0.0
+root@bc7071f2c78a:/# ls -l Host/Work/xpacks
+total 8
+drwxrwxr-x 11 node node 4096 Mar 24 15:39 openocd-xpack.git
+drwxrwxr-x 17 node node 4096 Mar 27 14:15 xbb-helper-xpack.git
 ```
 
 In this simple configuration, the builds run with root permissions; with

@@ -9,12 +9,14 @@ date: 2017-07-06 20:55:00 +0300
 
 ---
 
-The latest generation of the build scripts use the
+The scripts used to build the
+[xPack 3rd Party Development Tools](https://github.com/xpack-dev-tools/)
+are based on the
 [xPack Build Box (XBB)](https://github.com/xpack/xpack-build-box) v5.0.0.
 
-The build scripts run on GNU/Linux and macOS.
+The build scripts run on **GNU/Linux** and **macOS**.
 
-The Windows binaries are generated on Intel GNU/Linux,
+The **Windows** binaries are generated on Intel GNU/Linux,
 using [mingw-w64](https://mingw-w64.org).
 
 {% capture npm_xpm_tldr %}
@@ -55,7 +57,7 @@ to the shell initialisation script." %}
 
 `npm` is shipped with Node.js, and is required to install `xpm`.
 
-For details on installing Node.js, please see the
+For full details on installing Node.js, please see the
 [xPack prerequisites]({{ site.baseurl }}/install/) page.
 
 {% include warning.html content="Be sure you **do not** install npm
@@ -93,7 +95,7 @@ standard Apple distribution, install it from Python
 [downloads](https://www.python.org/downloads/macos/).
 
 For development builds, the procedure can be executed on a recent macOS
-version (currently 12.6).
+version (currently tested up to 12.6).
 
 For production builds it is recommended to use a slightly older version,
 for example **macOS 10.13** is a good compromise.
@@ -142,7 +144,7 @@ InstalledDir: /Library/Developer/CommandLineTools/usr/bin
 ```
 
 {% include note.html content="Xcode alone includes the compiler
-in the Xcode.app folder, which may very in different versions;
+in the Xcode.app folder, which may vary in different versions;
 for a stable configuration it is
 required to install the CommandLineTools package." %}
 
@@ -167,7 +169,8 @@ images based on older
 and more conservative distributions, to avoid problems when
 attempting to run the executables on older systems.
 
-**Any x86_64/aarch64/arm GNU/Linux distribution that is able to run Docker should be fine**; it
+**Any x86_64/aarch64/armhf GNU/Linux distribution that is
+able to run Docker should be fine**; it
 is not necessary to have a physical machine, virtual machines are
 perfectly fine. For better results, dedicate 3-4 cores and 8-12 GB of RAM.
 
@@ -216,9 +219,10 @@ sudo apt-get install --yes curl git
 
 ## Docker
 
-A **recent Docker** is necessary. If your distribution has one, it can be used,
+A **recent Docker** is necessary. If your distribution has one,
+probably it can be used,
 but generally it is recommended to update to the latest stable available
-directly from Docker.
+directly from docker.com.
 
 For **any GNU/Linux** distribution, follow the
 [specific instructions](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/#install-using-the-repository).
