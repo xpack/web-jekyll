@@ -167,7 +167,7 @@ images based on older
 and more conservative distributions, to avoid problems when
 attempting to run the executables on older systems.
 
-**Any x86_64 GNU/Linux distribution that is able to run Docker should be fine**; it
+**Any x86_64/aarch64/arm GNU/Linux distribution that is able to run Docker should be fine**; it
 is not necessary to have a physical machine, virtual machines are
 perfectly fine. For better results, dedicate 3-4 cores and 8-12 GB of RAM.
 
