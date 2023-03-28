@@ -47,7 +47,7 @@ multiple versions, but they **can be installed in parallel**, each
 project/configuration having its own set of dependencies,
 thus upgrading the system no longer impacts the project.
 
-{% include note.html content="Nix also provides reproducible builds,
+{% include note.html content="[Nix](https://nixos.org) also provides reproducible builds,
 why not use it? The short answer is... _\"because of Windows\"_." %}
 
 Although the current focus is on **C/C++**, most of the tools are
