@@ -40,7 +40,8 @@ folders, and managing dependencies.
 
 ## Nix also provides reproducible builds, plus lots of packages, why bother with xPacks?
 
-Nix is a great project, and takes a very strict path in controlling the
+[Nix](https://nixos.org) is a great project, and takes a very strict path
+in controlling the
 versions, down to the individual library. However, by design, it uses
 links to files, which are not available (or are not reliable) on Windows,
 thus Nix is currently available only on GNU/Linux and macOS.
