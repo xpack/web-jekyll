@@ -14,44 +14,62 @@ redirect_from:
 ## Synopsis
 
 ```sh
-xpm run [options...] [<command>] [-- <script args>]
+xpm run [options...] [<action>] [-- <script args>]
 ```
 
 Aliases:
 
 - `run-action`
-- `run-script`
 - `rum`,
 - `ru`
 
 ## Description
 
-This runs an arbitrary command listed in the `scripts` object
+This runs an _action_ which is named sequence of shell commands,
+defined in the `actions` object
 in `package.json`.
 
 ```json
 {
   "name": "h1b",
   "version": "1.0.0",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "xmake build -- all",
-    "clean": "xmake build -- clean"
+  "...": "...",
+  "xpack": {
+    "actions": {
+      "deep-clean": [
+        "rm -rf build xpacks node_modules package-lock.json",
+        "rm -rf ${HOME}/Work/{{ properties.appLcName }}-[0-9]*-*"
+      ],
+      "install": [
+        "npm install",
+        "xpm install"
+      ],
+      "link-deps": [
+        "xpm link @xpack-dev-tools/xbb-helper"
+      ]
+    }
   },
   "...": "..."
 }
 ```
 
 Options passed after the double dash separator are not processed
-but appended _as is_ at the end of the command string.
+but appended _as is_ at the end of the command string, if
+there is only one command.
+
+## PATH
 
 Before creating new processes to run the command, `xpm run` prepends
 `xpacks/.bin:node_modules/.bin` to the environment `PATH`.
 
-{% include important.html content="This has the effect that all
+{% include important.html content="The immediate effect is that all
 binaries provided by locally-installed
 dependencies will take precedence to any other similar binaries
 present in the PATH." %}
+
+For configuration specific actions, the `build/<config>/xpacks/.bin`
+is also prepended to PATH, giving priority to configuration
+dependencies.
 
 ## Options
 
