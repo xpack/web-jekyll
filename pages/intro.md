@@ -47,6 +47,16 @@ links to files, which are not available (or are not reliable) on Windows,
 thus Nix is currently available only on GNU/Linux and macOS.
 Plus that the Nix language requires quite some efforts to master.
 
+## Why could npm not be used as-is and why exactly was it necessary to invent xpm?
+
+Because each package manager implements a strategy for managing dependencies.
+npm/yarn/pnpm all implement various strategies specific to ECMAScript
+dependencies.
+
+Unfortunately these strategies do not work for other languages, like C/C++;
+plus that it would be very difficult and require ugly hacks to accommodate
+development dependencies to binary archives (for tools like compilers).
+
 ## Why bother to manage versions when auto-configure can sort out the differences?
 
 The traditional way of dealing with different versions and variations between
