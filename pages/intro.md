@@ -86,7 +86,7 @@ depend on other shared libraries or tools.
 
 ## Where does the name come from?
 
-**xPack**, pronounced _**ɛks-pak**_, can be understood as _Universal Package_,
+**xPack**, pronounced _**ɛks-pæk**_, can be understood as _Universal Package_,
 or _Any Type Package_, and tries to suggest that, when compared to
 npm packages (which are basically JavaScript packages), xPacks are more
 general, and not linked/limited to a specific programming language.
