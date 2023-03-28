@@ -217,9 +217,15 @@ xpm link -C ~/Work/xpacks/xbb-helper-xpack.git
 The result is a link like:
 
 ```console
-$ ls -lA .local/xPacks/@xpack-dev-tools/xbb-helper/.link
-lrwxrwxrwx 1 ilg ilg 42 Mar 27 17:16 .local/xPacks/@xpack-dev-tools/xbb-helper/.link -> /home/ilg/Work/xpacks/xbb-helper-xpack.git
+$ ls -lA ~/.local/xPacks/@xpack-dev-tools/xbb-helper
+total 4
+dr-xr-xr-x 14 ilg ilg 4096 Mar 24 17:38 1.4.7
+lrwxrwxrwx  1 ilg ilg   42 Mar 27 17:16 .link -> /home/ilg/Work/xpacks/xbb-helper-xpack.git
 ```
+
+In other words, in the folder where versioned releases are installed,
+a special hidden symbolic link is created, pointing to the location where
+the repo was cloned.
 
 In the second step, a link from the build project to the central store
 is created.
@@ -232,12 +238,18 @@ The result is a link like:
 
 ```console
 $ cd ~/Work/xpacks/<project>-xpack.git
-$ ls -l xpacks/xpack-dev-tools-xbb-helper
-lrwxrwxrwx 1 ilg ilg 57 Mar 27 17:21 xpacks/xpack-dev-tools-xbb-helper -> /home/ilg/.local/xPacks/@xpack-dev-tools/xbb-helper/.link
+$ ls -l xpacks/
+total 0
+lrwxrwxrwx 1 ilg ilg 57 Mar 27 17:21 xpack-dev-tools-xbb-helper -> /home/ilg/.local/xPacks/@xpack-dev-tools/xbb-helper/.link
 ```
 
-This double link mechanism allows multiple projects to use the writable
-folder where the helper was cloned (`xbb-helper-xpack.git`).
+In other words, the `xpack-dev-tools-xbb-helper` link, instead of pointing
+to a version, like `/home/ilg/.local/xPacks/@xpack-dev-tools/xbb-helper/1.4.7`,
+now points to the `.link`, which points to the cloned repo.
+
+This double link mechanism allows multiple projects to refer to the writable
+folder, and allow this folder to be easily moved to another location
+without having to update all projects that reference it.
 
 For details on the actual usage, please check the
 build projects.
