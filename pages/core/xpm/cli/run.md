@@ -20,7 +20,7 @@ xpm run [options...] [<action>] [-- <script args>]
 Aliases:
 
 - `run-action`
-- `rum`,
+- `rum`
 - `ru`
 
 ## Description
