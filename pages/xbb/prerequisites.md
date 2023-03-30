@@ -37,7 +37,7 @@ mkdir -pv "${HOME}/Downloads/"
 curl --output "${HOME}/Downloads/install-nvm-node-npm-xpm.sh" https://raw.githubusercontent.com/xpack/assets/master/scripts/install-nvm-node-npm-xpm.sh
 cat "${HOME}/Downloads/install-nvm-node-npm-xpm.sh"
 
-bash "${HOME}/Download/install-nvm-node-npm-xpm.sh"
+bash "${HOME}/Downloads/install-nvm-node-npm-xpm.sh"
 
 exit
 ```
