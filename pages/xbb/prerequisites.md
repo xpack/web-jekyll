@@ -23,7 +23,7 @@ using [mingw-w64](https://mingw-w64.org).
 
 ## npm/xpm
 
-### TL;DR
+### Quick instructions
 
 If you know what you're doing and prefer a shortcut, copy/paste the following
 [script](https://github.com/xpack/assets/blob/master/scripts/install-nvm-node-npm-xpm.sh)
@@ -70,10 +70,17 @@ troubles caused by permissions." %}
 [`xpm`](https://xpack.github.io/xpm/) is a portable
 [Node.js](https://nodejs.org/) command line application.
 
-If you used the TL;DR script, it is already installed.
+If you followed the _Quick instructions_, it is already installed.
 
 Otherwise, to install it, follow the steps in the
 [xpm install]({{ site.baseurl }}/xpm/install/) page.
+
+If you know what you're doing and prefer a shortcut,
+issue the following command:
+
+```sh
+npm install --global xpm@latest
+```
 
 {% endcapture %}
 
@@ -126,7 +133,7 @@ separate Xcode add-on. The best place to get it is from the
 although this might require enrolling to the developer program
 (free of charge).
 
-If you used the TL;DR script, it is already installed.
+If you followed the _Quick instructions_, it is already installed.
 
 Otherwise, the recommended way is to install the Command Line Tools separately
 via a command line:

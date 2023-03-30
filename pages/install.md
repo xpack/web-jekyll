@@ -80,11 +80,16 @@ page.
 
 ## Install xpm
 
-Follow the step in the
+[`xpm`](https://xpack.github.io/xpm/) is a portable
+[Node.js](https://nodejs.org/) command line application.
+
+If you followed the _Quick instructions_, it was already installed.
+
+Otherwise, to install it, follow the steps in the
 [xpm install]({{ site.baseurl }}/xpm/install/) page.
 
-If you followed the TL;DR steps, it was already installed. Otherwise,
-if you already know what this is all about, issue the following command:
+If you know what you're doing and prefer a shortcut,
+issue the following command:
 
 ```sh
 npm install --global xpm@latest
@@ -122,7 +127,7 @@ the `npm` functionality.
 
 {% capture tldr %}
 
-## TL;DR
+## Quick instructions
 
 If you know what you're doing and prefer a shortcut, copy/paste the following
 [script](https://github.com/xpack/assets/blob/master/scripts/install-nvm-node-npm-xpm.sh)
@@ -316,7 +321,7 @@ The system C/C++ headers and most development tools are not in the
 standard macOS distribution, and need to be installed separately;
 they are provided by Apple as the separate Command Line Tools package.
 
-If you followed the TL;DR steps, it was already installed. Otherwise,
+If you followed the _Quick instructions_, it was already installed. Otherwise,
 to install the Command Line Tools only if they are not already in the
 expected location, use:
 
