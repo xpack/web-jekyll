@@ -42,7 +42,7 @@ straightforward and does not pollute the system locations;
 there are two Node versions, **LTS** (**Long Term Service**) and
 **Current**; generally it is safer to use **LTS**, especially on Windows.
 
-![The Node Download page]({{ site.baseurl }}/assets/images/2019/nodejs-org.png)
+![The Node Download page]({{ site.baseurl }}/assets/images/2023/nodejs-org.png)
 
 {% capture version_manager %}
 
@@ -634,14 +634,36 @@ use `nvm use <version>`.
 Ubuntu 18 LTS and Manjaro 18; for other shells they may need small
 adjustments." %}
 
-## The GCC development headers and libraries
+## git & curl
 
-Although not a requirement for the node/npm/xpm tools themselves, if the
-xPack toolchains
-are used for software development, including for running tests, the
-system C/C++ headers and libraries will be needed.
+Although not a requirement for the node/npm/xpm tools themselves,
+it is recommended to have these tools installed, especially `git`,
+since all examples start with cloning projects.
 
 Install them according to the distribution specifics.
+
+For example on Ubuntu and Debian derived distributions, use:
+
+```sh
+sudo apt-get install --yes git curl
+```
+
+## The GCC development headers and libraries
+
+Also not a requirement for the node/npm/xpm tools themselves, if the
+xPack toolchains
+are used for software development, including for running tests, **the
+system C/C++ headers and libraries** will be needed.
+
+Install them according to the distribution specifics.
+
+For example on Ubuntu and Debian derived distributions, use:
+
+```sh
+sudo apt-get install --yes \
+g++ libc6-dev libstdc++6 g++-multilib \
+libatomic1 linux-headers-generic
+```
 
 {{ xpm_install }}
 
