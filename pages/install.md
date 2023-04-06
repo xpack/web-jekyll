@@ -660,9 +660,20 @@ Install them according to the distribution specifics.
 For example on Ubuntu and Debian derived distributions, use:
 
 ```sh
-sudo apt-get install --yes \
-g++ libc6-dev libstdc++6 g++-multilib \
-libatomic1 linux-headers-generic
+sudo apt-get install --yes g++ libc6-dev libstdc++6
+```
+
+To compile 32-bit application on 64-bit Intel systems, the **multilib**
+package is necessary:
+
+```sh
+sudo apt-get install --yes g++-multilib
+```
+
+For some applications, the kernel headers are also necessary:
+
+```sh
+sudo apt-get install --yes linux-headers-generic
 ```
 
 {{ xpm_install }}
