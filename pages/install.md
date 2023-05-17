@@ -7,8 +7,9 @@ keywords:
   - xpack
   - install
 
-node_version: 16.14.2
-npm_version: 8.6.0
+node_version: 18.16.0
+npm_version: 9.6.0
+npm_latest_version: 9.6.6
 
 comments: true
 toc: false
@@ -194,17 +195,17 @@ A version of **npm**, usually a bit older, comes packed with Node.js.
 C:\>where npm.cmd
 C:\Program Files\nodejs\npm.cmd
 C:\>npm --version
-{{ page.node_version }}
+{{ page.npm_version }}
 ```
 
 It is recommended to update it to the latest version:
 
 ```doscon
 C:\>npm install --global npm@latest
-C:\Users\ilg\AppData\Roaming\npm\npm -> C:\Users\ilg\AppData\Roaming\npm\node_modules\npm\bin\npm-cli.js
-C:\Users\ilg\AppData\Roaming\npm\npx -> C:\Users\ilg\AppData\Roaming\npm\node_modules\npm\bin\npx-cli.js
-+ npm@{{ page.npm_version }}
-added 435 packages from 816 contributors in 72.64s
+removed 1 package, and changed 60 packages in 5s
+
+27 packages are looking for funding
+  run `npm fund` for details
 ```
 
 Surprisingly, checking the version usually shows the old version:
@@ -249,7 +250,7 @@ After this, the new version of the program should be visible:
 
 ```doscon
 C:\>npm --version
-{{ page.npm_version }}
+{{ page.npm_latest_version }}
 ```
 
 ## Git
