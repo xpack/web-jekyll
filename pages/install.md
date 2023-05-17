@@ -214,7 +214,7 @@ Surprisingly, checking the version usually shows the old version:
 C:\>where npm.cmd
 C:\Program Files\nodejs\npm.cmd
 C:\>npm --version
-{{ page.node_version }}
+{{ page.npm_version }}
 ```
 
 This is because on Windows, by default, global node packages are
