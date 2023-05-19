@@ -47,7 +47,7 @@ fi
 commit_message=$(git log -1 --pretty=format:"%s")
 
 # Temporarily disable it if needed. Anyway htmlproofer failures are ignored.
-do_htmlproof="y"
+do_htmlproof="n" # "y"
 
 # -----------------------------------------------------------------------------
 
