@@ -127,16 +127,19 @@ These projects are hosted in the GitHub
 ## Visual Studio Code
 
 Support for VS Code is provided via the
-[xPack extension]({{ site.baseurl }}/vscode/).
+[xPack extension]({{ site.baseurl }}/vscode/). This extension allows to
+navigate through the project **xPack actions**, and run them with a click of
+the mouse; it can also create new projects using the
+**xPack pproject templates**.
 
 ## Eclipse
 
 [Eclipse Embedded CDT](https://eclipse-embed-cdt.github.io)
 can be configured to use the
-[xPack binary tools](https://github.com/xpack-dev-tools/) during builds
-(the Arm & RISC-V embedded toolchains) and during the debug sessions
+[xPack binary tools](https://github.com/xpack-dev-tools/) during **builds**
+(the Arm & RISC-V embedded toolchains) and during the **debug sessions**
 (OpenOCD and QEMU);
-it also uses some xPack project templates to create Eclipse
+it also uses some **xPack project templates** to create Eclipse
 [projects](https://eclipse-embed-cdt.github.io/templates/hello-world-qemu-xpack/).
 
 ## Source xPacks
@@ -145,68 +148,68 @@ it also uses some xPack project templates to create Eclipse
 
 Packages part of the µOS++ framework:
 
-- [@micro-os-plus/architecture-aarch32](https://github.com/micro-os-plus/architecture-aarch32-xpack/)
+- [@micro-os-plus/architecture-aarch32](https://github.com/micro-os-plus/architecture-aarch32-xpack/) -
   A source xPack with the µOS++ AArch32 architecture port
-- [@micro-os-plus/architecture-aarch64](https://github.com/micro-os-plus/architecture-aarch64-xpack/)
+- [@micro-os-plus/architecture-aarch64](https://github.com/micro-os-plus/architecture-aarch64-xpack/) -
   A source xPack with the µOS++ AArch64 architecture port
-- [@micro-os-plus/architecture-cortexm](https://github.com/micro-os-plus/architecture-cortexm-xpack/)
+- [@micro-os-plus/architecture-cortexm](https://github.com/micro-os-plus/architecture-cortexm-xpack/) -
   A source xPack with the µOS++ Arm Cortex-M architecture port
-- [@micro-os-plus/architecture-riscv](https://github.com/micro-os-plus/architecture-riscv-xpack/)
+- [@micro-os-plus/architecture-riscv](https://github.com/micro-os-plus/architecture-riscv-xpack/) -
   A source xPack with the µOS++ RISC-V architecture port
-- [@micro-os-plus/architecture-synthetic-posix](https://github.com/micro-os-plus/architecture-synthetic-posix-xpack/)
+- [@micro-os-plus/architecture-synthetic-posix](https://github.com/micro-os-plus/architecture-synthetic-posix-xpack/) -
   A source xPack with the µOS++ synthetic POSIX architecture port
-- [@micro-os-plus/build-helper](https://github.com/micro-os-plus/build-helper-xpack/)
+- [@micro-os-plus/build-helper](https://github.com/micro-os-plus/build-helper-xpack/) -
   A source xPack to assist the µOS++ builds
-- [@micro-os-plus/cmsis-os](https://github.com/micro-os-plus/cmsis-os-xpack/)
+- [@micro-os-plus/cmsis-os](https://github.com/micro-os-plus/cmsis-os-xpack/) -
   A source xPack with the µOS++ CMSIS RTOS compatibility layer
-- [@micro-os-plus/devices-qemu-aarch32](https://github.com/micro-os-plus/devices-qemu-aarch32-xpack/)
+- [@micro-os-plus/devices-qemu-aarch32](https://github.com/micro-os-plus/devices-qemu-aarch32-xpack/) -
   A source xPack with µOS++ QEMU AArch32 devices files
-- [@micro-os-plus/devices-qemu-aarch64](https://github.com/micro-os-plus/devices-qemu-aarch64-xpack/)
+- [@micro-os-plus/devices-qemu-aarch64](https://github.com/micro-os-plus/devices-qemu-aarch64-xpack/) -
   A source xPack with µOS++ QEMU AArch64 devices files
-- [@micro-os-plus/devices-qemu-cortexm](https://github.com/micro-os-plus/devices-qemu-cortexm-xpack/)
+- [@micro-os-plus/devices-qemu-cortexm](https://github.com/micro-os-plus/devices-qemu-cortexm-xpack/) -
   A source xPack with µOS++ QEMU Cortex-M devices files
-- [@micro-os-plus/devices-qemu-riscv](https://github.com/micro-os-plus/devices-qemu-riscv-xpack/)
+- [@micro-os-plus/devices-qemu-riscv](https://github.com/micro-os-plus/devices-qemu-riscv-xpack/) -
   A source xPack with µOS++ QEMU RISC-V devices files
-- [@micro-os-plus/devices-stm32f0-extras](https://github.com/micro-os-plus/devices-stm32f0-extras-xpack/)
+- [@micro-os-plus/devices-stm32f0-extras](https://github.com/micro-os-plus/devices-stm32f0-extras-xpack/) -
   A source xPack with µOS++ complementary STM32F0 files
-- [@micro-os-plus/devices-stm32f4-extras](https://github.com/micro-os-plus/devices-stm32f4-extras-xpack/)
+- [@micro-os-plus/devices-stm32f4-extras](https://github.com/micro-os-plus/devices-stm32f4-extras-xpack/) -
   A source xPack with µOS++ complementary STM32F4 files
-- [@micro-os-plus/diag-trace](https://github.com/micro-os-plus/diag-trace-xpack/)
+- [@micro-os-plus/diag-trace](https://github.com/micro-os-plus/diag-trace-xpack/) -
   A source xPack with the µOS++ trace::printf() tracing infrastructure
-- [@micro-os-plus/libs-c](https://github.com/micro-os-plus/libs-c-xpack/)
+- [@micro-os-plus/libs-c](https://github.com/micro-os-plus/libs-c-xpack/) -
   A source xPack with µOS++ complementary C library functions
-- [@micro-os-plus/libs-cpp](https://github.com/micro-os-plus/libs-cpp-xpack/)
+- [@micro-os-plus/libs-cpp](https://github.com/micro-os-plus/libs-cpp-xpack/) -
   A source xPack with complementary C++ library functions
-- [@micro-os-plus/libs-cpp-estd](https://github.com/micro-os-plus/libs-cpp-estd-xpack/)
+- [@micro-os-plus/libs-cpp-estd](https://github.com/micro-os-plus/libs-cpp-estd-xpack/) -
   A source xPack with µOS++ embedded std:: support
-- [@micro-os-plus/memory-allocators](https://github.com/micro-os-plus/memory-allocators-xpack/)
+- [@micro-os-plus/memory-allocators](https://github.com/micro-os-plus/memory-allocators-xpack/) -
   A source xPack with µOS++ memory allocators
-- [@micro-os-plus/micro-test-plus](https://github.com/micro-os-plus/micro-test-plus/)
+- [@micro-os-plus/micro-test-plus](https://github.com/micro-os-plus/micro-test-plus/) -
   A source xPack with µTest++ testing framework
-- [@micro-os-plus/posix-io](https://github.com/micro-os-plus/posix-io-xpack/)
+- [@micro-os-plus/posix-io](https://github.com/micro-os-plus/posix-io-xpack/) -
   A source xPack with POSIX I/O
-- [@micro-os-plus/rtos](https://github.com/micro-os-plus/rtos-xpack/)
+- [@micro-os-plus/rtos](https://github.com/micro-os-plus/rtos-xpack/) -
   A source xPack with the µOS++ RTOS
-- [@micro-os-plus/semihosting](https://github.com/micro-os-plus/semihosting-xpack/)
+- [@micro-os-plus/semihosting](https://github.com/micro-os-plus/semihosting-xpack/) -
   A source xPack with the portable semihosting definitions
-- [@micro-os-plus/startup](https://github.com/micro-os-plus/startup-xpack/)
+- [@micro-os-plus/startup](https://github.com/micro-os-plus/startup-xpack/) -
   A source xPack with the µOS++ startup code for bare-metal platforms
-- [@micro-os-plus/utils-lists](https://github.com/micro-os-plus/utils-lists-xpack/)
+- [@micro-os-plus/utils-lists](https://github.com/micro-os-plus/utils-lists-xpack/) -
   A source xPack with C++ lists support for µOS++
-- [@micro-os-plus/version](https://github.com/micro-os-plus/version-xpack/)
+- [@micro-os-plus/version](https://github.com/micro-os-plus/version-xpack/) -
   A source xPack with the µOS++ version definitions
 
 ### 3rd Party
 
 Packages with 3rd party content:
 
-- [@xpack-3rd-party/arm-cmsis-core](https://github.com/xpack-3rd-party/arm-cmsis-core/)
+- [@xpack-3rd-party/arm-cmsis-core](https://github.com/xpack-3rd-party/arm-cmsis-core/) -
   A source xPack with Arm CMSIS Core-M and Core-A files
-- [@xpack-3rd-party/boost-ut](https://github.com/xpack-3rd-party/boost-ut/)
+- [@xpack-3rd-party/boost-ut](https://github.com/xpack-3rd-party/boost-ut/) -
   A source xPack with Boost-UT files
-- [@xpack-3rd-party/catch2](https://github.com/xpack-3rd-party/catch2/)
+- [@xpack-3rd-party/catch2](https://github.com/xpack-3rd-party/catch2/) -
   A source xPack with Catch2 files
-- [@xpack-3rd-party/googletest](https://github.com/xpack-3rd-party/googletest/)
+- [@xpack-3rd-party/googletest](https://github.com/xpack-3rd-party/googletest/) -
   A source xPack with Google Test files
 
 Planned:
