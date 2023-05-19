@@ -132,8 +132,10 @@ Support for VS Code is provided via the
 ## Eclipse
 
 [Eclipse Embedded CDT](https://eclipse-embed-cdt.github.io)
-can be configured to use the xPack binary tools during builds
-(embedded toolchains) and debug sessions (OpenOCD and QEMU);
+can be configured to use the
+[xPack binary tools](https://github.com/xpack-dev-tools/) during builds
+(the Arm & RISC-V embedded toolchains) and during the debug sessions
+(OpenOCD and QEMU);
 it also uses some xPack project templates to create Eclipse
 [projects](https://eclipse-embed-cdt.github.io/templates/hello-world-qemu-xpack/).
 
