@@ -130,7 +130,7 @@ Support for VS Code is provided via the
 [xPack extension]({{ site.baseurl }}/vscode/). This extension allows to
 navigate through the project **xPack actions**, and run them with a click of
 the mouse; it can also create new projects using the
-**xPack pproject templates**.
+**xPack project templates**.
 
 ## Eclipse
 
