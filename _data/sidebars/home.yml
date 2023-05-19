@@ -109,6 +109,14 @@ entries:
       url: /vscode/
       output: web
 
+  - title: Eclipse
+    output: web
+    folderitems:
+
+    - title: Eclipse Embedded CDT
+      output: web
+      external_url: https://eclipse-embed-cdt.github.io
+
   - title: Support
     output: web
     folderitems:

@@ -129,6 +129,12 @@ These projects are hosted in the GitHub
 Support for VS Code is provided via the
 [xPack extension]({{ site.baseurl }}/vscode/).
 
+## Eclipse
+
+[Eclipse Embedded CDT](https://eclipse-embed-cdt.github.io)
+has integrated support for the xPack binary tools and uses some
+xPack project templates.
+
 ## Source xPacks
 
 ### µOS++
@@ -234,7 +240,7 @@ are provided **free of charge** under the terms of the
 
 Special thanks to **MacStadium**, for providing the Apple Silicon
 development infrastructure as part of their
-[Open Source Program](https://www.macstadium.com/opensource).
+[Open Source Program](https://www.macstadium.com/opensource/members).
 
 ## Let us know if you enjoyed using this project
 
