@@ -204,7 +204,8 @@ available from a terminal and a plain text editor.
 ### Conclusion
 
 As it can be seen, the xPack project started as a way to automate
-my work, more specifically running multiple tests for embedded
+the workflow for existing open source projects,
+more specifically running multiple tests for embedded
 projects, which are usually more complicated than the projects themselves.
 
 ### To be continued
