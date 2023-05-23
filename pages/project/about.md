@@ -1,5 +1,5 @@
 ---
-permalink: /about/
+permalink: /project/about/
 title: About
 
 summary: Perfekt ist nicht gut genug.
