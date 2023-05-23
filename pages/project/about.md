@@ -7,6 +7,9 @@ comments: true
 
 date: 2016-03-03 22:45:00 +0300
 
+redirect_from:
+  - /about/
+
 ---
 
 ## Motto

@@ -154,9 +154,9 @@ entries:
     output: web
     folderitems:
 
+    - title: About
+      output: web
+      url: /project/about/
     - title: License (MIT)
       output: web
       external_url: https://opensource.org/licenses/MIT
-    - title: About
-      output: web
-      url: /about/
