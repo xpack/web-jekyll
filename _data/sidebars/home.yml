@@ -157,6 +157,9 @@ entries:
     - title: About
       output: web
       url: /project/about/
+    - title: History
+      output: web
+      url: /project/history/
     - title: License (MIT)
       output: web
       external_url: https://opensource.org/licenses/MIT
