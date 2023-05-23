@@ -2,7 +2,7 @@
 title: The xPack Project Manager
 permalink: /xpm/
 
-summary: A tool to orchestrate builds and manage dependencies for language neutral, multi-version projects, inspired by npm.
+summary: A tool to automate builds and manage dependencies for language neutral, multi-version projects, inspired by npm.
 keywords:
   - xPack
   - package
@@ -73,7 +73,7 @@ Please read the [xPacks Overview]({{ site.baseurl }}/) and
 
 ## Purpose
 
-The main purpose of the `xpm` CLI tool is to orchestrate builds, including
+The main purpose of the `xpm` CLI tool is to automate builds, including
 to install dependencies, and to easily update them when new versions are
 released.
 
