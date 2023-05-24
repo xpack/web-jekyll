@@ -206,10 +206,10 @@ building the project.
 
 This file, together with all other similar files from the packages
 that are part of the project, will provide the input data for a tree
-of **components**, that can be rendered in a graphical tool like VS Code,
+of **components**, that can be rendered in a graphical tool like **VS Code**,
 thus allowing to configure a project in a way similar,
 possibly even more advanced, than
-the Eclipse CDT settings, since the hierarchical components reflect
+the **Eclipse CDT** settings, since the hierarchical components reflect
 the logical structure of the application, and allow to automatically
 manage dependencies between components, and between configuration
 options.
