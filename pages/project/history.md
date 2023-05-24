@@ -8,7 +8,7 @@ date: 2023-05-20 06:22:00 +0300
 
 ---
 
-## The early years and the tight relation with µOS++
+## The early years and the tight relation to µOS++
 
 The history of the **xPack** project was deeply intertwined with
 [the history of µOS++](http://micro-os-plus.github.io/project/history/),
