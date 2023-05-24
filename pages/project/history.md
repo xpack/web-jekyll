@@ -191,15 +191,16 @@ the multiple build configurations automated by **xpm**, and so
 have everything fully tested in µOS++.
 
 With the experience from this step, the next step is to finalise the
-specs for the tool that will perform the builds and project
-configurations.
+specs for the **xPack Project Builder** that will perform the
+builds and manage the project configurations.
 
-The tool will probably be called `xpmake`, and it'll us json files,
-like this one:
+The tool will probably be called **xpmake**,
+and it'll use json files, like this one:
 
-- <https://github.com/micro-os-plus/utils-lists-xpack/blob/xpack/xpack.json>
+- [xpack.json](https://github.com/micro-os-plus/utils-lists-xpack/blob/xpack/xpack.json)
 
-This file defines the include folders, the source files, and some
+As it can be seen, this file defines the include folders,
+the source files, and some
 preprocessor definitions that might be enabled while building the project.
 
 This file, together with all other similar files from the packages
