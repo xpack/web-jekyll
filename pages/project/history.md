@@ -26,7 +26,7 @@ before continuing; the brief list of the important events is:
   was encountered; it was the inspiration for a component based design
 - in 2013, the **GNU ARM Eclipse plug-ins** (later rebranded as the
   [Eclipse Embedded CDT](https://eclipse-embed-cdt.github.io))
-  was the first attempt to find a solution that avoids generating _make_
+  was the first attempt to find a solution that avoids generating **make**
   files by hand, but this prevented building and running unit tests in
   a scriptable environment
 - in 2013, the experimental [XCDL](http://xcdl.github.io)
@@ -38,11 +38,12 @@ before continuing; the brief list of the important events is:
   **it could be edited only manually**, and not via a GUI based
   IDE (compared, for example, to the C/C++ settings in Eclipse CDT,
   which writes back the XML configuration file)" %}
-- in 2014, the CMSIS Packs solution was evaluated, and an Eclipse plug-in was
+- in 2014, the **CMSIS Packs** solution was evaluated, and an
+  Eclipse plug-in was
   created to manage them, but the solution was later found to have
   too many design issues, and was abandoned
 - in 2015, the [yotta](https://github.com/ARMmbed/yotta) solution was
-  considered, and the first XCDL packs format based on yotta were tested;
+  considered, and the first XCDL packs based on yotta were tested;
   for various reasons, **yotta** was later abandoned by Arm
   {% include note.html content="As yotta was
   strongly influenced by **npm**, the npm ecosystem was considered
@@ -67,14 +68,15 @@ before continuing; the brief list of the important events is:
 ## The xPack project goals
 
 The project came to life as a practical need to find a replacement for the
-Eclipse CDT managed build, that can also be used to run unit tests in a
-scriptable environment.
+Eclipse CDT managed build, with the additional requirement
+to be able to run unit tests in a scriptable environment.
 
-In the beginning it looked easy, but later it proved to be quite a challenge,
-and required defining sub-goals and achieving them in sequence.
+{% include note.html content="In the beginning it looked easy,
+but later it proved to be quite a challenge,
+and required defining sub-goals and achieving them in sequence." %}
 
 By trial and error, the main aspects that need to be
-addressed by such a solution were identified:
+addressed by such a solution were identified as:
 
 - the **build** (defining which files that enter the build, the compiler/linker
   options, etc)
