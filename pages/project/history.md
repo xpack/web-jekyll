@@ -76,11 +76,11 @@ and required defining sub-goals and achieving them in sequence.
 By trial and error, the main aspects that need to be
 addressed by such a solution were identified:
 
-- the build (defining which files that enter the build, the compiler/linker
+- the **build** (defining which files that enter the build, the compiler/linker
   options, etc)
-- the project configuration (simply said managing the values of the #define
+- the **project configuration** (simply said managing the values of the #define
   in a consistent way)
-- the tools (toolchains, debuggers, emulators, etc)
+- the **tools** (toolchains, debuggers, emulators, etc)
 
 ## The XCDL experimental version
 
@@ -92,7 +92,7 @@ functionality was implemented in Python.
 
 The result looked like this:
 
-- https://github.com/micro-os-plus/micro-os-plus-ii/blob/master/packages/portable/core/meta/xcdl.py
+- [meta/xcdl.py](https://github.com/micro-os-plus/micro-os-plus-ii/blob/master/packages/portable/core/meta/xcdl.py)
 
 The implementation was quite easy, and worked pretty well.
 
@@ -184,7 +184,9 @@ and run the tests.
 At this moment (mid 2023), the project is pretty advanced, but
 it is not yet complete.
 
-In the next period all the µOS++ projects will be updated to use
+In the next period all the
+[µOS++ projects](https://github.com/micro-os-plus)
+will be updated to use
 the multiple build configurations automated by **xpm**, and so
 have everything fully tested in µOS++.
 
@@ -220,8 +222,8 @@ available from a terminal and a plain text editor.
 
 ### Conclusion
 
-As it can be seen, the xPack project started as a way to automate
-the workflow for existing open source projects,
+As it can be seen, **the xPack project started as a way to automate
+the workflow for existing open source projects**,
 more specifically running multiple tests for embedded
 projects, which are usually more complicated than the projects themselves.
 
