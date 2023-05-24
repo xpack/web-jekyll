@@ -7,7 +7,7 @@ site="../web-html/docs"
 rm -rf "${site}"
 mkdir -p "${site}"
 
-export PATH="$HOME/opt/homebrew/jekyll/bin":$PATH
+export PATH="$HOME/.local/homebrew/jekyll/bin":$PATH
 bundle exec jekyll build --destination "${site}" --baseurl ""
 
 export NOKOGIRI_USE_SYSTEM_LIBRARIES=true
