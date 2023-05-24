@@ -181,7 +181,7 @@ and run the tests.
 
 ## Future plans
 
-At thw moment of writing this (mid 2023), the project is pretty advanced,
+At the moment of writing this (mid 2023), the project is pretty advanced,
 but it is not yet complete.
 
 In the next period all the
@@ -215,7 +215,7 @@ manage dependencies between components, and between configuration
 options.
 
 Additions to the **VS Code xPack extension** are planned,
-to edit the xpmake tree of components, and run
+to edit the xPack tree of CDL components, and run
 the builds directly, without CMake/meson; this will
 be a true xPack enabled tool, and will be an alternate solution to
 Eclipse Embedded CDT.
