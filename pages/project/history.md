@@ -227,13 +227,12 @@ But the use of this tool should be **optional**, the whole functionality
 should also be
 available from a terminal and a plain text editor.
 
-### Conclusion
+## Conclusions
 
-As it can be seen, the xPack project started as **a way to automate
+As it can be seen, the xPack project originated from **the need to automate
 the workflow for existing open source projects**,
-more specifically running multiple tests for embedded
-projects, which are usually more complicated than the projects themselves.
+especially the execution of multiple tests for embedded
+projects, which often poses more challenges than developing
+the projects themselves.
 
-### To be continued
-
-...
+## To be continued...
