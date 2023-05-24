@@ -171,7 +171,8 @@ like **CMake** and **meson**, with several advantages:
   into their existing projects built with CMake/meson.
 
 To manage the multi-platform, multi-architecture, multi-version,
-multi-etc tests, a tool to manage multiple build configurations was needed,
+multi-etc tests, a tool to manage **multiple build configurations**
+was needed,
 and since each configuration needs its own tools, with different
 versions, it became clear that the build configurations must be
 managed by the same tool, so **xpm** was extended to handle multiple
@@ -215,7 +216,7 @@ manage dependencies between components, and between configuration
 options.
 
 Additions to the **VS Code xPack extension** are planned,
-to edit the xPack tree of CDL components, and run
+to edit the tree of xPack CDL components, and run
 the builds directly, without CMake/meson; this will
 be a true xPack enabled tool, and will be an alternate solution to
 Eclipse Embedded CDT.
