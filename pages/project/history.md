@@ -181,8 +181,8 @@ and run the tests.
 
 ## Future plans
 
-At this moment (mid 2023), the project is pretty advanced, but
-it is not yet complete.
+At thw moment of writing this (mid 2023), the project is pretty advanced,
+but it is not yet complete.
 
 In the next period all the
 [µOS++ projects](https://github.com/micro-os-plus)
@@ -195,13 +195,14 @@ specs for the **xPack Project Builder** that will perform the
 builds and manage the project configurations.
 
 The tool will probably be called **xpmake**,
-and it'll use json files, like this one:
+and will use json files, with a content similar to this one:
 
 - [xpack.json](https://github.com/micro-os-plus/utils-lists-xpack/blob/xpack/xpack.json)
 
-As it can be seen, this file defines the include folders,
-the source files, and some
-preprocessor definitions that might be enabled while building the project.
+As it can be seen, this file defines the **include folders**,
+the **source files**, and some
+**preprocessor definitions** that might be enabled while
+building the project.
 
 This file, together with all other similar files from the packages
 that are part of the project, will provide the input data for a tree
@@ -213,17 +214,19 @@ the logical structure of the application, and allow to automatically
 manage dependencies between components, and between configuration
 options.
 
-A **VS Code extension** to edit the xpmake tree of components, and run
-the builds directly, without CMake/meson, is planned, and this will
+Additions to the **VS Code xPack extension** are planned,
+to edit the xpmake tree of components, and run
+the builds directly, without CMake/meson; this will
 be a true xPack enabled tool, and will be an alternate solution to
 Eclipse Embedded CDT.
 
-But this tool should be optional, the whole functionality should also be
+But the use of this tool should be **optional**, the whole functionality
+should also be
 available from a terminal and a plain text editor.
 
 ### Conclusion
 
-As it can be seen, **the xPack project started as a way to automate
+As it can be seen, the xPack project started as **a way to automate
 the workflow for existing open source projects**,
 more specifically running multiple tests for embedded
 projects, which are usually more complicated than the projects themselves.
