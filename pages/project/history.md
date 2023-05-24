@@ -14,34 +14,37 @@ The history of the xPack project was deeply intertwined with
 [the history of µOS++](http://micro-os-plus.github.io/project/history/)
 as it was initially intended to automate building and running
 multi-platform unit tests for [µOS++](http://micro-os-plus.github.io).
+Later it was also used to build the binary xPacks, which validated the
+concept once more.
 
 To avoid redundancy, the text will not be replicated here, so please
 read [the history of µOS++](http://micro-os-plus.github.io/project/history/)
-from there; here only some of the important event will be listed
-briefly:
+from there; here will be listed
+briefly only some of the important events:
 
-- [eCos CDL](http://ecos.sourceware.org/docs-1.3.1/cdl/language.html)
+- the [eCos CDL](http://ecos.sourceware.org/docs-1.3.1/cdl/language.html),
+  encountered in the early 200s,
   was the inspiration for a component based design
-- GNU ARM Eclipse plug-ins (later rebranded as the
+- in 2013, the **GNU ARM Eclipse plug-ins** (later rebranded as the
   [Eclipse Embedded CDT](https://eclipse-embed-cdt.github.io))
   was the first attempt to avoid generating make files
   by hand, but this prevented building and running unit tests in a
   scriptable environment
-- the experimental [XCDL](http://xcdl.github.io)
+- in 2013, the experimental [XCDL](http://xcdl.github.io)
   (eXtended Components Definition Language) project, inspired by
-  eCos CDL, but implemented in Python, validated the concept
-- the major weakness was the limitation introduced by
+  eCos CDL, implemented in Python, validated the concept
+- the major weakness of XCDL was the limitation introduced by
   having the build configuration metadata as a Python code:
   it could be edited only manually, and not via a GUI based
   IDE (compared, for example, to the C/C++ settings in Eclipse CDT,
   which writes back the XML configuration file)
-- the CMSIS Packs solution was evaluated, and an Eclipse plug-in was
+- in 2014, the CMSIS Packs solution was evaluated, and an Eclipse plug-in was
   created to manage them, but the solution was later found to have
   too many design issues, and was abandoned
 - the [yotta](https://github.com/ARMmbed/yotta) solution was considered,
   and in late 2015 the first XCDL packs format based on yotta was tested;
   unfortunately yotta was later abandoned by Arm
-- in 2017 the first release of **xpm** was available, and packages
+- in 2017, the first release of **xpm** was available, and packages
   managed by it were named **xPacks**; **xpm** complements
   [npm](https://en.wikipedia.org/wiki/Npm_(software)) as the industry
   standard package manager for JavaScript packages, and uses the same
@@ -50,13 +53,12 @@ briefly:
 - **xpm** was extended to also support
   installing binary packages, and a new class of tools was created as
   [xPack 3rd Party Development Tools](https://github.com/xpack-dev-tools/)
-- **xpm** was used to build the binary packages; this proved that
+- in 2022, **xpm** was used to build the binary packages; this proved that
   **the technology is standalone** with the newer versions of the tools
   being built with existing xPacks
-- with most of the tools in place, a first C/C++ project
+- in 2023, with most of the tools in place, a first C/C++ project
   ([@micro-os-plus/utils-lists](https://github.com/micro-os-plus/utils-lists-xpack/))
   was fully tested via **xpm**, validating again the whole concept
-
 
 ## The xPack project goals
 
