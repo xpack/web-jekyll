@@ -10,34 +10,38 @@ date: 2023-05-20 06:22:00 +0300
 
 ## The early years and the tight relation with µOS++
 
-The history of the xPack project was deeply intertwined with
+The history of the **xPack** project was deeply intertwined with
 [the history of µOS++](http://micro-os-plus.github.io/project/history/)
 as it was initially intended to automate building and running
 multi-platform unit tests for [µOS++](http://micro-os-plus.github.io).
 Later it was also used to build the binary xPacks, which validated the
 concept once more.
 
-To avoid redundancy, the text will not be replicated here, so please
+To avoid redundancy, the full story will not be replicated here, so please
 read [the history of µOS++](http://micro-os-plus.github.io/project/history/)
-from there; here will be listed
-briefly only some of the important events:
+before continuing; the important events are briefly listed here:
 
-- the [eCos CDL](http://ecos.sourceware.org/docs-1.3.1/cdl/language.html),
-  encountered in the early 200s,
-  was the inspiration for a component based design
+- in the early 200s, the
+  [eCos CDL](http://ecos.sourceware.org/docs-1.3.1/cdl/language.html)
+  was encountered; it was the inspiration for a component based design
 - in 2013, the **GNU ARM Eclipse plug-ins** (later rebranded as the
   [Eclipse Embedded CDT](https://eclipse-embed-cdt.github.io))
-  was the first attempt to avoid generating make files
-  by hand, but this prevented building and running unit tests in a
-  scriptable environment
+  was the first attempt to find a solution that avoids generating _make_
+  files by hand, but this prevented building and running unit tests in
+  a scriptable environment
 - in 2013, the experimental [XCDL](http://xcdl.github.io)
   (eXtended Components Definition Language) project, inspired by
   eCos CDL, implemented in Python, validated the concept
 - the major weakness of XCDL was the limitation introduced by
   having the build configuration metadata as a Python code:
-  it could be edited only manually, and not via a GUI based
+  **it could be edited only manually**, and not via a GUI based
   IDE (compared, for example, to the C/C++ settings in Eclipse CDT,
   which writes back the XML configuration file)
+  {% include note.html content="The major weakness of XCDL was the limitation introduced by
+  having the build configuration metadata as a Python code:
+  **it could be edited only manually**, and not via a GUI based
+  IDE (compared, for example, to the C/C++ settings in Eclipse CDT,
+  which writes back the XML configuration file)" %}
 - in 2014, the CMSIS Packs solution was evaluated, and an Eclipse plug-in was
   created to manage them, but the solution was later found to have
   too many design issues, and was abandoned
