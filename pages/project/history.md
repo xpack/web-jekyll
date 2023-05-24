@@ -11,17 +11,17 @@ date: 2023-05-20 06:22:00 +0300
 ## The early years and the tight relation with µOS++
 
 The history of the **xPack** project was deeply intertwined with
-[the history of µOS++](http://micro-os-plus.github.io/project/history/)
-as it was initially intended to automate building and running
-multi-platform unit tests for [µOS++](http://micro-os-plus.github.io).
+[the history of µOS++](http://micro-os-plus.github.io/project/history/),
+as it was initially intended to **automate building** and running
+**multi-platform unit tests** for [µOS++](http://micro-os-plus.github.io).
 Later it was also used to build the binary xPacks, which validated the
 concept once more.
 
-To avoid redundancy, the full story will not be replicated here, so please
+To avoid redundancy, the full story is not replicated here, so please
 read [the history of µOS++](http://micro-os-plus.github.io/project/history/)
-before continuing; the important events are briefly listed here:
+before continuing; the brief list of the important events is:
 
-- in the early 200s, the
+- in the early 2000s, the
   [eCos CDL](http://ecos.sourceware.org/docs-1.3.1/cdl/language.html)
   was encountered; it was the inspiration for a component based design
 - in 2013, the **GNU ARM Eclipse plug-ins** (later rebranded as the
@@ -102,12 +102,12 @@ However several issues were identified:
   convenient, but it had a major drawback: since parsing Python
   is not trivial, it prevented the configuration
   being edited with a GUI tool (similar to the Eclipse settings pages);
-  in other words, the configuration
-  files must be in a structured format, otherwise editing them by a
+  in other words, **the configuration
+  files must be in a structured format**, otherwise editing them by a
   machine is problematic
 - although the µOS++ SE was more or less modular, the project was
-  basically a mono-repo, and writing unit tests for each module was
-  difficult
+  basically a **mono-repo**, and **writing unit tests for each module was
+  difficult**
 - running unit tests with several toolchains, not to
   mention with different versions of the same toolchain, proved
   extremely difficult, and doing this on multiple platforms
