@@ -14,16 +14,15 @@ The history of the **xPack** project was deeply intertwined with
 [the history of µOS++](http://micro-os-plus.github.io/project/history/),
 as it was initially intended to **automate building** and running
 **multi-platform unit tests** for [µOS++](http://micro-os-plus.github.io).
-Later it was also used to build the binary xPacks, which validated the
-concept once more.
+Later it was also used to build the binary xPacks, which further
+validated the concept.
 
 To avoid redundancy, the full story is not replicated here, so please
 read [the history of µOS++](http://micro-os-plus.github.io/project/history/)
 before continuing; the brief list of the important events is:
 
-- in the early 2000s, the
-  [eCos CDL](http://ecos.sourceware.org/docs-1.3.1/cdl/language.html)
-  was encountered; it was the inspiration for a component based design
+- [eCos CDL](http://ecos.sourceware.org/docs-1.3.1/cdl/language.html)
+  was the inspiration for a component based design (early 2000s)
 - in 2013, the **GNU ARM Eclipse plug-ins** (later rebranded as the
   [Eclipse Embedded CDT](https://eclipse-embed-cdt.github.io))
   was the first attempt to find a solution that avoids generating **make**
@@ -78,9 +77,9 @@ and required defining sub-goals and achieving them in sequence." %}
 By trial and error, the main aspects that need to be
 addressed by such a solution were identified as:
 
-- the **build** (defining which files that enter the build, the compiler/linker
+- the **build** (defining which files enter the build, the compiler/linker
   options, etc)
-- the **project configuration** (simply said managing the values of the #define
+- the **project configuration** (e.g. managing the values of the #define
   in a consistent way)
 - the **tools** (toolchains, debuggers, emulators, etc)
 
@@ -118,8 +117,8 @@ However several issues were identified:
 The lessons learned from this experiment were:
 
 - if a configuration needs to be edited by a machine,
-  it must written in a **structured format**;
-  the favourite format is **JSON**
+  it must be written in a **structured format**,
+  **JSON** being the favourite
 - if each module is expected to be tested, it is better
   to use **multiple small repositories**, each with its CI tests
 - if the project is split into multiple packages, a tool to automate
@@ -187,7 +186,7 @@ and run the tests.
 At the moment of writing this (mid 2023), the project is pretty advanced,
 but it is not yet complete.
 
-In the next period all the
+Soon all the
 [µOS++ projects](https://github.com/micro-os-plus)
 will be updated to use
 the multiple build configurations automated by **xpm**, and so
