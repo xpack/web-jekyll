@@ -77,7 +77,7 @@ cd my-project
 xpm uninstall @xpack-dev-tools/m4
 ```
 
-To completely remove the package from the global store:
+To completely remove the package from the central xPacks store:
 
 ```sh
 xpm uninstall --global @xpack-dev-tools/m4 --verbose

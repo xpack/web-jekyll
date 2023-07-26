@@ -81,11 +81,11 @@ is generally compatible with previous 0.7.x releases.
 - [#78] installing dependencies proved quite slow; to make things
   faster, dependencies are downloaded in parallel
 - [#13] the command `uninstall` was added; it can remove packages
-  from the local project or from the global store (`-g`)
+  from the local project or from the central xPacks store (`-g`)
 - [#76] the command `list` was added; it can list packages
-  installed in the local project or in the global store (`-g`)
-- [#73] with folders from the global store linked to the local
-  project, it was possible to change the content in the global store,
+  installed in the local project or in the central xPacks store (`-g`)
+- [#73] with folders from the central xPacks store linked to the local
+  project, it was possible to change the content in the central xPacks store,
   thus damaging the packages; to prevent this, now all installed
   packages are changed to read-only, and changed back to read-write
   only before uninstall

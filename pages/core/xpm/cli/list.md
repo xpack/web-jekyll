@@ -67,7 +67,7 @@ Bug reports: <https://github.com/xpack/xpm-js/issues/>
 
 ### List global packages (`-g|--global`)
 
-List the packages installed in the global store.
+List the packages installed in the central xPacks store.
 
 ### List system packages (`-sy|--system`)
 
