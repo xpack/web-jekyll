@@ -138,6 +138,9 @@ added to the header search path.
   the compiled binaries to take care of the path to them, otherwise it is
   very likely that the system libraries will be used; thus it is
   recommended to avoid such use cases.
+- on macOS, the `/Library/Developer/CommandLineTools/usr/include/c++/v1`
+  was added to the include path; unfortunately this may crash some builds;
+  removed in 15.0.7-3
 
 ## Shared libraries
 

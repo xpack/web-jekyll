@@ -167,7 +167,14 @@ Compared to the upstream, there are no functional changes.
 
 ## Known problems
 
-- in certain conditions, the binaries compiled with `-flto` fail.
+- on macOS, the `/Library/Developer/CommandLineTools/usr/include/c++/v1`
+  was added to the include path; unfortunately this may crash some builds;
+  removed in 15.0.7-3
+- on GNU/Linux, for consistency with macOS and Windows, in 15.9.7-[12]
+  the defaults were changed from GNU libstdc++ to clang libc++; unfortunately
+  this breaks some tools that probe various compiler capabilities (like meson);
+  the defaults on GNU/Linux were reverted to libstdc++ in 15.0.7-3
+- in certain conditions, the binaries compiled with `-flto` may fail
 
 ## Shared libraries
 

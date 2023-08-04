@@ -133,7 +133,9 @@ Compared to the upstream, there are no functional changes.
 
 ## Known problems
 
-- none
+- on macOS, the `/Library/Developer/CommandLineTools/usr/include/c++/v1`
+  was added to the include path; unfortunately this may crash some builds;
+  removed in 15.0.7-3
 
 ## Shared libraries
 
