@@ -176,6 +176,9 @@ Compared to the upstream, there are no functional changes.
 
 ## Known problems
 
+- when clang is invoked via a link from a different folder, the `InstalledDir`
+  does not reflect the correct install folder, and the new clang system headers
+  are either not found or the host system headers are used; fixed in 15.0.7-4
 - in certain conditions, the binaries compiled with `-flto` may fail.
 
 ## Shared libraries

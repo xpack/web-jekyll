@@ -141,6 +141,9 @@ added to the header search path.
 - on macOS, the `/Library/Developer/CommandLineTools/usr/include/c++/v1`
   was added to the include path; unfortunately this may crash some builds;
   removed in 15.0.7-3
+- when clang is invoked via a link from a different folder, the `InstalledDir`
+  does not reflect the correct install folder, and the new clang system headers
+  are either not found or the host system headers are used; fixed in 15.0.7-4
 
 ## Shared libraries
 
