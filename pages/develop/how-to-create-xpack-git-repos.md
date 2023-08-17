@@ -283,11 +283,10 @@ With VS Code:
 .vscode/c_cpp_properties.json
 
 # xpm
-node_modules/
 xpacks/
-build/
+build*/
 
-*.tgz
+/*.tgz
 
 # Windows
 Thumbs.db
@@ -332,7 +331,7 @@ patches/
 pkgconfig/
 scripts/
 test*/
-build/
+build*/
 ci/
 docs/
 example*/
@@ -340,7 +339,7 @@ example*/
 xpacks/
 node_modules/
 
-*.tgz
+/*.tgz
 
 README-*
 LICENSE-*
