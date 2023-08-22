@@ -1,7 +1,7 @@
 ---
 title:  xPack GNU texinfo v7.0.3-1 released
 
-summary: "Version **7.0.3-1** is the first release."
+summary: "Version **7.0.3-1** is the first release of the **xPack GNU texinfo** package."
 
 texinfo_version: "7.0.3"
 texinfo_date: "2023-03-26"
