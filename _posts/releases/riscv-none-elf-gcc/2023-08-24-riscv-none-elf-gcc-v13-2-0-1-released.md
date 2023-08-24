@@ -10,7 +10,7 @@ gdb_version: "13.2"
 python_version: "3.11.4"
 
 version: "13.2.0-1"
-npm_subversion: "1"
+npm_subversion: "2"
 
 download_url: https://github.com/xpack-dev-tools/riscv-none-elf-gcc-xpack/releases/tag/v13.2.0-1/
 
