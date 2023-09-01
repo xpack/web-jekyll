@@ -1,11 +1,6 @@
 ---
 title:  xPack MinGW-w64 GCC v12.3.0-1 released
 
-TODO: select one summary
-
-summary: "Version **12.3.0-1** is a maintenance release; it updates to
-the latest upstream master."
-
 summary: "Version **12.3.0-1** is a new release; it follows the official GNU GCC release."
 
 gcc_version: "12.3.0"
