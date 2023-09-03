@@ -15,7 +15,7 @@ comments: true
 
 categories:
   - releases
-  - qemu
+  - qemu-arm
 
 tags:
   - releases

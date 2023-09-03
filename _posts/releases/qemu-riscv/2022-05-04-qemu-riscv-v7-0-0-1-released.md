@@ -14,7 +14,7 @@ comments: true
 
 categories:
   - releases
-  - qemu
+  - qemu-riscv
 
 tags:
   - releases

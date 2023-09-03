@@ -19,7 +19,7 @@ date:   2023-09-03 09:04:10 +0300
 
 categories:
   - releases
-  - qemu
+  - qemu-arm
 
 tags:
   - releases

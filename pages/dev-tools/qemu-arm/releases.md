@@ -16,5 +16,5 @@ redirect_from:
 ---
 
 ___
-{% for post in site.posts %}{% if post.categories contains "releases" %}{% if post.categories contains "qemu" %}
+{% for post in site.posts %}{% if post.categories contains "releases" %}{% if post.categories contains "qemu-arm" %}
 * [{{ post.title }}]({{ site.baseurl }}{{ post.url }}) [(download)]({{ post.download_url }}){% endif %}{% endif %}{% endfor %}

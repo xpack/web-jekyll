@@ -19,7 +19,7 @@ date:   2023-09-03 11:30:57 +0300
 
 categories:
   - releases
-  - qemu
+  - qemu-riscv
 
 tags:
   - releases
