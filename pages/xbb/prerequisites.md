@@ -12,7 +12,7 @@ date: 2017-07-06 20:55:00 +0300
 The scripts used to build the
 [xPack 3rd Party Development Tools](https://github.com/xpack-dev-tools/)
 are based on the
-[xPack Build Box (XBB)](https://github.com/xpack/xpack-build-box) v5.0.0.
+[xPack Build Box (XBB)](https://github.com/xpack/xpack-build-box) v5.1.0.
 
 The build scripts run on **GNU/Linux** and **macOS**.
 
@@ -114,7 +114,8 @@ as Parallels).
 
 The build scripts were tested on:
 
-- macOS 12.6.3, running on an Intel MacMini
+- macOS 12.6.8, running on an Intel MacMini
+- macOS 10.14, running on a Intel NUC NUC8i7BEH
 - macOS 10.13, running inside a Parallels virtual machine
 - macOS 11.7.4, running on an Apple Silicon MacMini
 
