@@ -1,12 +1,8 @@
 ---
 title:  xPack OpenOCD v0.12.0-2 released
 
-TODO: select one summary
-
 summary: "Version **0.12.0-2** is a maintenance release; it updates to
 the latest upstream master."
-
-summary: "Version **0.12.0-2** is a new release; it follows the upstream release."
 
 upstream_version: "0.12.0"
 upstream_commit: "18281b0"
