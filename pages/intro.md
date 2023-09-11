@@ -582,7 +582,7 @@ and the addition of a new dependency in `package.json`:
 A real example is an embedded Cortex-M7 project that prints a _Hello World_
 message via semihosting:
 
-```console
+```text
 ilg@wksi tmp % mkdir -p my-project && cd my-project
 ilg@wksi my-project % xpm init --template @micro-os-plus/hello-world-qemu-template@latest --property target=cortex-m7f
 
@@ -728,7 +728,7 @@ The resulting project has the following `package.json`:
 
 The next step is to install dependencies:
 
-```console
+```text
 ilg@wksi my-project % xpm install
 @my-scope/my-project...
 + @micro-os-plus/startup@5.2.0
