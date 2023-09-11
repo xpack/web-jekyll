@@ -583,11 +583,11 @@ jobs:
   ci-test:
     name: 'CI tests'
 
-    runs-on: ${{ matrix.os }}
+    runs-on: {% raw %}${{ matrix.os }}{% endraw %}
 
     strategy:
       matrix:
-        node-version: [14, 16, 18]
+        node-version: [16, 18, 20]
         # https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners
         os: [ubuntu-22.04, macos-12, windows-2022]
 
@@ -597,11 +597,11 @@ jobs:
       with:
         fetch-depth: 3
 
-    - name: Setup Node.js ${{ matrix.node-version }} on ${{ matrix.os }}
+    - name: Setup Node.js {% raw %}${{ matrix.node-version }} on ${{ matrix.os }}{% endraw %}
       # https://github.com/actions/setup-node
       uses: actions/setup-node@v2
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: {% raw %}${{ matrix.node-version }}{% endraw %}
 
     - name: Install xpm on Linux/macOS
       if: runner.os != 'Windows'
