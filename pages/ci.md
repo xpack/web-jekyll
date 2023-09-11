@@ -130,5 +130,5 @@ jobs:
 ```
 
 {% include note.html content="Please note that the `PATH` was explicitly
-adjusted to the `xpacks/.bin` folder, where **xpm** installs links to
+adjusted to prefer the `xpacks/.bin` folder, where **xpm** installs links to
 the binaries." %}
