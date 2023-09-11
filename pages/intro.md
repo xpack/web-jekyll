@@ -579,86 +579,452 @@ and the addition of a new dependency in `package.json`:
 
 ## Example
 
-A real example is an embedded project that lists as dependencies
-two source xPacks, one Node module and three binary xPacks:
+A real example is an embedded Cortex-M7 project that prints a _Hello World_
+message via semihosting:
+
+```console
+ilg@wksi tmp % mkdir -p my-project && cd my-project
+ilg@wksi my-project % xpm init --template @micro-os-plus/hello-world-qemu-template@latest --property target=cortex-m7f
+
+Checking package @micro-os-plus/hello-world-qemu-template@latest metadata...
+Processing @micro-os-plus/hello-world-qemu-template@1.4.1...
+
+Creating the C++ project 'my-project'...
+- target=cortex-m7f
+- buildGenerator=cmake
+
+Folder 'cmake' copied.
+File 'CMakeLists.txt' generated.
+File 'src/main.cpp' generated.
+Folder 'include' copied.
+Folder 'platform-qemu-cortex-m7f' copied.
+File '.vscode/tasks.json' copied.
+File '.vscode/settings.json' copied.
+File '.clang-format' copied.
+File 'README.md' generated.
+File 'LICENSE' generated.
+File 'package.json' generated.
+ilg@wksi my-project %
+```
+
+The resulting project has the following `package.json`:
 
 ```json
 {
-  "name": "h1b",
-  "version": "1.0.0",
-  "description": "An xPack with a blinky application running on HiFive1",
-  "...": "...",
-  "devDependencies": {
-    "xmake": "^0.3.9"
+  "name": "@my-scope/my-project",
+  "version": "0.1.0",
+  "description": "A source xPack with a semihosted Hello World application running on QEMU",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ilg-ul/my-project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ilg-ul/my-project/issues/"
+  },
+  "homepage": "https://github.com/ilg-ul/my-project/",
+  "keywords": [
+    "xpack"
+  ],
+  "author": {
+    "name": "Liviu Ionescu",
+    "email": "ilg@livius.net",
+    "url": "https://github.com/ilg-ul/"
+  },
+  "license": "MIT",
+  "config": {},
+  "dependencies": {},
+  "bundledDependencies": [],
+  "devDependencies": {},
   "xpack": {
+    "minimumXpmRequired": "0.14.0",
     "dependencies": {
-      "@micro-os-plus/diag-trace": "^1.0.6",
-      "@sifive/hifive1-board": "^1.0.3"
+      "@micro-os-plus/architecture-cortexm": "^6.2.0",
+      "@micro-os-plus/devices-qemu-cortexm": "^4.1.1",
+      "@xpack-3rd-party/arm-cmsis-core": "5.4.0-6",
+      "@micro-os-plus/build-helper": "^2.11.0",
+      "@micro-os-plus/diag-trace": "^4.1.1",
+      "@micro-os-plus/semihosting": "^8.0.0",
+      "@micro-os-plus/startup": "^5.2.0"
     },
     "devDependencies": {
-      "@gnu-mcu-eclipse/riscv-none-gcc": "^7.2.0-2.1",
-      "@gnu-mcu-eclipse/openocd": "^0.10.0-7.1",
-      "@gnu-mcu-eclipse/windows-build-tools": "^2.10.1"
+      "@xpack-dev-tools/cmake": "3.21.6-1.1",
+      "@xpack-dev-tools/ninja-build": "1.11.0-1.1",
+      "@xpack-dev-tools/arm-none-eabi-gcc": "11.2.1-1.2.2",
+      "@xpack-dev-tools/qemu-arm": "7.0.0-1.1"
+    },
+    "properties": {
+    "buildFolderRelativePath": "{{ 'build' | path_join: configuration.name | to_filename | downcase }}",
+      "buildFolderRelativePathPosix": "{{ 'build' | path_posix_join: configuration.name | downcase }}",
+    "commandCMakePrepare": "{{ properties.commandCMakeReconfigure }} --log-level=VERBOSE",
+      "commandCMakePrepareWithToolchain": "{{ properties.commandCMakePrepare }} -D CMAKE_TOOLCHAIN_FILE=xpacks/micro-os-plus-build-helper/cmake/toolchains/{{ properties.toolchainFileName }}",
+      "commandCMakeReconfigure": "cmake -S . -B {{ properties.buildFolderRelativePathPosix }} -G Ninja -D CMAKE_BUILD_TYPE={{ properties.buildType }} -D PLATFORM_NAME={{ properties.platformName }} -D CMAKE_EXPORT_COMPILE_COMMANDS=ON",
+      "commandCMakeBuild": "cmake --build {{ properties.buildFolderRelativePathPosix }}",
+      "commandCMakeBuildVerbose": "cmake --build {{ properties.buildFolderRelativePathPosix }} --verbose",
+      "commandCMakeClean": "cmake --build {{ properties.buildFolderRelativePathPosix }} --target clean",
+      "commandCMakePerformTests": "cd {{ properties.buildFolderRelativePath }} && ctest -V"
+    },
+    "actions": {
+      "test-qemu-cortex-m7f-cmake-debug": [
+        "xpm run prepare --config qemu-cortex-m7f-cmake-debug",
+        "xpm run build --config qemu-cortex-m7f-cmake-debug",
+        "xpm run test --config qemu-cortex-m7f-cmake-debug"
+      ],
+      "test-qemu-cortex-m7f-cmake-release": [
+        "xpm run prepare --config qemu-cortex-m7f-cmake-release",
+        "xpm run build --config qemu-cortex-m7f-cmake-release",
+        "xpm run test --config qemu-cortex-m7f-cmake-release"
+      ],
+      "test-all": [
+        "xpm run test-qemu-cortex-m7f-cmake-debug",
+        "xpm run test-qemu-cortex-m7f-cmake-release"
+      ],
+      "clean-all": [
+        "xpm run clean --config qemu-cortex-m7f-cmake-debug",
+        "xpm run clean --config qemu-cortex-m7f-cmake-release"
+      ],
+      "link-deps": [
+        "xpm link @xpack-3rd-party/arm-cmsis-core --quiet",
+        "xpm link @micro-os-plus/architecture-cortexm --quiet",
+        "xpm link @micro-os-plus/devices-qemu-cortexm --quiet",
+        "xpm link @micro-os-plus/startup --quiet",
+        "xpm link @micro-os-plus/build-helper --quiet",
+        "xpm link @micro-os-plus/diag-trace --quiet",
+        "xpm link @micro-os-plus/semihosting --quiet"
+      ]
+    },
+    "buildConfigurations": {
+      "qemu-cortex-m7f-cmake-debug": {
+        "properties": {
+          "buildType": "Debug",
+          "platformName": "qemu-cortex-m7f",
+          "toolchainFileName": "arm-none-eabi-gcc.cmake"
+        },
+        "actions": {
+        "prepare": "{{ properties.commandCMakePrepareWithToolchain }}",
+          "build": [
+            "{{ properties.commandCMakeReconfigure }}",
+            "{{ properties.commandCMakeBuild }}"
+          ],
+          "test": "{{ properties.commandCMakePerformTests }}",
+          "clean": "{{ properties.commandCMakeClean }}"
+        }
+      },
+      "qemu-cortex-m7f-cmake-release": {
+        "inherit": [
+          "qemu-cortex-m7f-cmake-debug"
+        ],
+        "properties": {
+          "buildType": "Release"
+        }
+      }
     }
   }
 }
 ```
 
-The two source xPacks actually pull in six source xPacks, and the binary
-xPacks contribute a lot of links to `xpacks/.bin`:
+The next step is to install dependencies:
 
 ```console
-$ cd /tmp/hifive1-blinky-cpp
-$ xpm install --verbose
-xPack manager - install package(s)
-
-Installing dependencies for 'hifive1-blinky-cpp'...
-Folder 'micro-os-plus-diag-trace' linked to '@micro-os-plus/diag-trace/1.0.6'.
-Folder 'sifive-hifive1-board' linked to '@sifive/hifive1-board/1.0.3'.
-Folder 'sifive-devices' linked to '@sifive/devices/1.0.2'.
-Folder 'micro-os-plus-riscv-arch' linked to '@micro-os-plus/riscv-arch/1.0.2'.
-Folder 'micro-os-plus-startup' linked to '@micro-os-plus/startup/1.0.7'.
-Folder 'micro-os-plus-c-libs' linked to '@micro-os-plus/c-libs/1.0.6'.
-Folder 'micro-os-plus-cpp-libs' linked to '@micro-os-plus/cpp-libs/1.0.4'.
-Folder 'xmake' linked to 'xmake/0.3.8'.
-File 'xmake' linked to 'xmake/bin/xmake.js'
-Folder 'gnu-mcu-eclipse-riscv-none-gcc' linked to '@gnu-mcu-eclipse/riscv-none-gcc/7.2.0-2.1'.
-File 'riscv-none-embed-addr2line' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-addr2line'
-File 'riscv-none-embed-ar' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-ar'
-File 'riscv-none-embed-as' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-as'
-File 'riscv-none-embed-c++' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-c++'
-File 'riscv-none-embed-c++filt' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-c++filt'
-File 'riscv-none-embed-cpp' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-cpp'
-File 'riscv-none-embed-elfedit' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-elfedit'
-File 'riscv-none-embed-g++' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-g++'
-File 'riscv-none-embed-gcc' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-gcc'
-File 'riscv-none-embed-gcc-7.2.0' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-gcc-7.2.0'
-File 'riscv-none-embed-gcc-ar' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-gcc-ar'
-File 'riscv-none-embed-gcc-nm' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-gcc-nm'
-File 'riscv-none-embed-gcc-ranlib' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-gcc-ranlib'
-File 'riscv-none-embed-gcov' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-gcov'
-File 'riscv-none-embed-gcov-dump' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-gcov-dump'
-File 'riscv-none-embed-gcov-tool' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-gcov-tool'
-File 'riscv-none-embed-gdb' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-gdb'
-File 'riscv-none-embed-gprof' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-gprof'
-File 'riscv-none-embed-ld' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-ld'
-File 'riscv-none-embed-ld.bfd' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-ld.bfd'
-File 'riscv-none-embed-nm' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-nm'
-File 'riscv-none-embed-objcopy' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-objcopy'
-File 'riscv-none-embed-objdump' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-objdump'
-File 'riscv-none-embed-ranlib' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-ranlib'
-File 'riscv-none-embed-readelf' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-readelf'
-File 'riscv-none-embed-run' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-run'
-File 'riscv-none-embed-size' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-size'
-File 'riscv-none-embed-strings' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-strings'
-File 'riscv-none-embed-strip' linked to 'gnu-mcu-eclipse-riscv-none-gcc/.content/bin/riscv-none-embed-strip'
-Folder 'gnu-mcu-eclipse-openocd' linked to '@gnu-mcu-eclipse/openocd/0.10.0-7.1'.
-File 'openocd' linked to 'gnu-mcu-eclipse-openocd/.content/bin/openocd'
-Folder 'gnu-mcu-eclipse-windows-build-tools' linked to '@gnu-mcu-eclipse/windows-build-tools/2.10.1'.
-
-'xpm install' completed in 6.086 sec.
-$
+ilg@wksi my-project % xpm install
+@my-scope/my-project...
++ @micro-os-plus/startup@5.2.0
++ @micro-os-plus/semihosting@8.0.0
++ @micro-os-plus/diag-trace@4.1.1
++ @micro-os-plus/architecture-cortexm@6.2.0
++ @xpack-3rd-party/arm-cmsis-core@5.4.0-6
++ @micro-os-plus/build-helper@2.11.0
++ @micro-os-plus/devices-qemu-cortexm@4.1.1
++ @xpack-dev-tools/ninja-build@1.11.0-1.1
++ @xpack-dev-tools/cmake@3.21.6-1.1
++ @xpack-dev-tools/arm-none-eabi-gcc@11.2.1-1.2.2
++ @xpack-dev-tools/qemu-arm@7.0.0-1.1
+'xpacks/micro-os-plus-semihosting' -> '/Users/ilg/Library/xPacks/@micro-os-plus/semihosting/8.0.0'
+'xpacks/micro-os-plus-diag-trace' -> '/Users/ilg/Library/xPacks/@micro-os-plus/diag-trace/4.1.1'
+'xpacks/xpack-3rd-party-arm-cmsis-core' -> '/Users/ilg/Library/xPacks/@xpack-3rd-party/arm-cmsis-core/5.4.0-6'
+'xpacks/micro-os-plus-startup' -> '/Users/ilg/Library/xPacks/@micro-os-plus/startup/5.2.0'
+'xpacks/micro-os-plus-architecture-cortexm' -> '/Users/ilg/Library/xPacks/@micro-os-plus/architecture-cortexm/6.2.0'
+'xpacks/micro-os-plus-devices-qemu-cortexm' -> '/Users/ilg/Library/xPacks/@micro-os-plus/devices-qemu-cortexm/4.1.1'
+'xpacks/xpack-dev-tools-ninja-build' -> '/Users/ilg/Library/xPacks/@xpack-dev-tools/ninja-build/1.11.0-1.1'
+'xpacks/xpack-dev-tools-arm-none-eabi-gcc' -> '/Users/ilg/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/11.2.1-1.2.2'
+'xpacks/micro-os-plus-build-helper' -> '/Users/ilg/Library/xPacks/@micro-os-plus/build-helper/2.11.0'
+'xpacks/xpack-dev-tools-cmake' -> '/Users/ilg/Library/xPacks/@xpack-dev-tools/cmake/3.21.6-1.1'
+'xpacks/xpack-dev-tools-qemu-arm' -> '/Users/ilg/Library/xPacks/@xpack-dev-tools/qemu-arm/7.0.0-1.1'
+'xpacks/.bin/ninja' -> '../xpack-dev-tools-ninja-build/.content/bin/ninja'
+'xpacks/.bin/arm-none-eabi-addr2line' -> '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-addr2line'
+'xpacks/.bin/ccmake' -> '../xpack-dev-tools-cmake/.content/bin/ccmake'
+'xpacks/.bin/qemu-system-arm' -> '../xpack-dev-tools-qemu-arm/.content/bin/qemu-system-arm'
+'xpacks/.bin/arm-none-eabi-ar' -> '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-ar'
+'xpacks/.bin/cmake' -> '../xpack-dev-tools-cmake/.content/bin/cmake'
+'xpacks/.bin/qemu-system-aarch64' -> '../xpack-dev-tools-qemu-arm/.content/bin/qemu-system-aarch64'
+'xpacks/.bin/arm-none-eabi-as' -> '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-as'
+'xpacks/.bin/cpack' -> '../xpack-dev-tools-cmake/.content/bin/cpack'
+'xpacks/.bin/qemu-system-gnuarmeclipse' -> '../xpack-dev-tools-qemu-arm/.content/bin/qemu-system-gnuarmeclipse'
+'xpacks/.bin/arm-none-eabi-as-py3' -> '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-as-py3'
+'xpacks/.bin/ctest' -> '../xpack-dev-tools-cmake/.content/bin/ctest'
+'xpacks/.bin/arm-none-eabi-c++' -> '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-c++'
+'xpacks/.bin/arm-none-eabi-c++filt' -> '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-c++filt'
+'xpacks/.bin/arm-none-eabi-cpp' -> '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-cpp'
+'xpacks/.bin/arm-none-eabi-elfedit' -> '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-elfedit'
+'xpacks/.bin/arm-none-eabi-g++' -> '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-g++'
+'xpacks/.bin/arm-none-eabi-gcc' -> '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcc'
+'xpacks/.bin/arm-none-eabi-gcc-ar' -> '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcc-ar'
+'xpacks/.bin/arm-none-eabi-gcc-nm' -> '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcc-nm'
+'xpacks/.bin/arm-none-eabi-gcc-ranlib' -> '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcc-ranlib'
+'xpacks/.bin/arm-none-eabi-gcov' -> '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcov'
+'xpacks/.bin/arm-none-eabi-gcov-dump' -> '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcov-dump'
+'xpacks/.bin/arm-none-eabi-gcov-tool' -> '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcov-tool'
+'xpacks/.bin/arm-none-eabi-gdb' -> '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gdb'
+'xpacks/.bin/arm-none-eabi-gdb-add-index' -> '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gdb-add-index'
+'xpacks/.bin/arm-none-eabi-gdb-add-index-py3' -> '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gdb-add-index-py3'
+'xpacks/.bin/arm-none-eabi-gdb-py3' -> '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gdb-py3'
+'xpacks/.bin/arm-none-eabi-gfortran' -> '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gfortran'
+'xpacks/.bin/arm-none-eabi-gprof' -> '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gprof'
+'xpacks/.bin/arm-none-eabi-gprof-py3' -> '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gprof-py3'
+'xpacks/.bin/arm-none-eabi-ld' -> '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-ld'
+'xpacks/.bin/arm-none-eabi-ld.bfd' -> '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-ld.bfd'
+'xpacks/.bin/arm-none-eabi-lto-dump' -> '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-lto-dump'
+'xpacks/.bin/arm-none-eabi-nm' -> '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-nm'
+'xpacks/.bin/arm-none-eabi-objcopy' -> '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-objcopy'
+'xpacks/.bin/arm-none-eabi-objdump' -> '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-objdump'
+'xpacks/.bin/arm-none-eabi-ranlib' -> '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-ranlib'
+'xpacks/.bin/arm-none-eabi-readelf' -> '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-readelf'
+'xpacks/.bin/arm-none-eabi-size' -> '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-size'
+'xpacks/.bin/arm-none-eabi-strings' -> '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-strings'
+'xpacks/.bin/arm-none-eabi-strip' -> '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-strip'
+ilg@wksi my-project %
 ```
 
-TODO: update for a more recent blinky project.
+Finally, build and run the test:
+
+```console
+ilg@wksi my-project % xpm run test-qemu-cortex-m7f-cmake-debug
+> xpm run prepare --config qemu-cortex-m7f-cmake-debug
+> cmake -S . -B build/qemu-cortex-m7f-cmake-debug -G Ninja -D CMAKE_BUILD_TYPE=Debug -D PLATFORM_NAME=qemu-cortex-m7f -D CMAKE_EXPORT_COMPILE_COMMANDS=ON --log-level=VERBOSE -D CMAKE_TOOLCHAIN_FILE=xpacks/micro-os-plus-build-helper/cmake/toolchains/arm-none-eabi-gcc.cmake
+-- The C compiler identification is GNU 11.2.1
+-- The CXX compiler identification is GNU 11.2.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /Users/ilg/tmp/my-project/xpacks/.bin/arm-none-eabi-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Users/ilg/tmp/my-project/xpacks/.bin/arm-none-eabi-g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- The ASM compiler identification is GNU
+-- Found assembler: /Users/ilg/tmp/my-project/xpacks/.bin/arm-none-eabi-gcc
+-- Including micro-os-plus-build-helper module...
+-- CMake version: 3.21.6
+-- Compiler: GNU 11.2.1
+-- package.name: @my-scope/my-project
+-- package.version: 0.1.0
+-- Platform name: qemu-cortex-m7f
+-- Build type: Debug
+-- Project path: /Users/ilg/tmp/my-project
+-- Build path: /Users/ilg/tmp/my-project/build/qemu-cortex-m7f-cmake-debug
+-- Module path: /Users/ilg/tmp/my-project/xpacks/micro-os-plus-build-helper/cmake
+-- CMAKE_C_COMPILER_ID: GNU
+-- CMAKE_SYSTEM_NAME: Generic
+-- CMAKE_SYSTEM_PROCESSOR: arm
+-- Including global definitions...
+-- Adding GCC warnings...
+-- Including platform-qemu-cortex-m7f globals...
+-- .G+ -I platform-qemu-cortex-m7f/include-config
+-- .G+ -D $<$<CONFIG:Debug>:MICRO_OS_PLUS_DEBUG>
+-- .G+ -D $<$<CONFIG:Debug>:MICRO_OS_PLUS_TRACE>
+-- .G+ -D MICRO_OS_PLUS_INCLUDE_CONFIG_H
+-- .G+ -D _POSIX_C_SOURCE=200809L
+-- .G+ -fmessage-length=0
+-- .G+ -fsigned-char
+-- .G+ -ffunction-sections
+-- .G+ -fdata-sections
+-- .G+ -fdiagnostics-color=always
+-- .G+ -Wall
+-- .G+ -Waggregate-return
+-- .G+ -Wcast-align
+-- .G+ -Wcast-qual
+-- .G+ -Wconversion
+-- .G+ -Wdouble-promotion
+-- .G+ -Wduplicated-branches
+-- .G+ -Wduplicated-cond
+-- .G+ -Wextra
+-- .G+ -Wfloat-conversion
+-- .G+ -Wfloat-equal
+-- .G+ -Wformat-nonliteral
+-- .G+ -Wformat-overflow=2
+-- .G+ -Wformat-security
+-- .G+ -Wformat-signedness
+-- .G+ -Wformat-truncation=2
+-- .G+ -Wformat-y2k
+-- .G+ -Wformat=2
+-- .G+ -Wlogical-op
+-- .G+ -Wmissing-declarations
+-- .G+ -Wmissing-include-dirs
+-- .G+ -Wnull-dereference
+-- .G+ -Wpacked
+-- .G+ -Wpadded
+-- .G+ -Wpointer-arith
+-- .G+ -Wredundant-decls
+-- .G+ -Wshadow
+-- .G+ -Wshift-overflow=2
+-- .G+ -Wsign-conversion
+-- .G+ -Wswitch-default
+-- .G+ -Wswitch-enum
+-- .G+ -Wundef
+-- .G+ -Wuninitialized
+-- .G+ -Wvla
+-- .G+ $<$<COMPILE_LANGUAGE:C>:-Wbad-function-cast>
+-- .G+ $<$<COMPILE_LANGUAGE:C>:-Wc++-compat>
+-- .G+ $<$<COMPILE_LANGUAGE:C>:-Wduplicate-decl-specifier>
+-- .G+ $<$<COMPILE_LANGUAGE:C>:-Wmissing-prototypes>
+-- .G+ $<$<COMPILE_LANGUAGE:C>:-Wnested-externs>
+-- .G+ $<$<COMPILE_LANGUAGE:C>:-Wold-style-definition>
+-- .G+ $<$<COMPILE_LANGUAGE:C>:-Wstrict-prototypes>
+-- .G+ $<$<COMPILE_LANGUAGE:CXX>:-Wctor-dtor-privacy>
+-- .G+ $<$<COMPILE_LANGUAGE:CXX>:-Wnoexcept>
+-- .G+ $<$<COMPILE_LANGUAGE:CXX>:-Wnon-virtual-dtor>
+-- .G+ $<$<COMPILE_LANGUAGE:CXX>:-Wold-style-cast>
+-- .G+ $<$<COMPILE_LANGUAGE:CXX>:-Woverloaded-virtual>
+-- .G+ $<$<COMPILE_LANGUAGE:CXX>:-Wplacement-new=2>
+-- .G+ $<$<COMPILE_LANGUAGE:CXX>:-Wregister>
+-- .G+ $<$<COMPILE_LANGUAGE:CXX>:-Wsign-promo>
+-- .G+ $<$<COMPILE_LANGUAGE:CXX>:-Wstrict-null-sentinel>
+-- .G+ $<$<COMPILE_LANGUAGE:CXX>:-Wsuggest-final-methods>
+-- .G+ $<$<COMPILE_LANGUAGE:CXX>:-Wsuggest-final-types>
+-- .G+ $<$<COMPILE_LANGUAGE:CXX>:-Wsuggest-override>
+-- .G+ $<$<COMPILE_LANGUAGE:CXX>:-Wuseless-cast>
+-- .G+ $<$<COMPILE_LANGUAGE:CXX>:-Wzero-as-null-pointer-constant>
+-- .G+ $<$<COMPILE_LANGUAGE:CXX>:-Wextra-semi>
+-- .G+ -Warith-conversion
+-- .G+ $<$<COMPILE_LANGUAGE:CXX>:-Wcomma-subscript>
+-- .G+ $<$<COMPILE_LANGUAGE:CXX>:-Wredundant-tags>
+-- .G+ $<$<COMPILE_LANGUAGE:CXX>:-Wvolatile>
+-- .G+ $<$<COMPILE_LANGUAGE:CXX>:-Wmismatched-tags>
+-- .G+ -mcpu=cortex-m7
+-- .G+ -mthumb
+-- .G+ -mfloat-abi=hard
+-- .G+ -Werror
+-- .G+ $<$<CONFIG:Debug>:-fno-omit-frame-pointer>
+-- .G+ $<$<COMPILE_LANGUAGE:CXX>:-fno-threadsafe-statics>
+-- Adding 'xpacks/micro-os-plus-architecture-cortexm'...
+-- Processing xPack @micro-os-plus/architecture-cortexm@6.2.0...
+-- > micro-os-plus-architecture-cortexm-interface
+-- + -I include
+-- > micro-os-plus::architecture-cortexm -> micro-os-plus-architecture-cortexm-interface
+-- > micro-os-plus::architecture -> micro-os-plus-architecture-cortexm-interface
+-- Adding 'xpacks/micro-os-plus-devices-qemu-cortexm'...
+-- Processing xPack @micro-os-plus/devices-qemu-cortexm@4.1.1...
+-- > micro-os-plus-devices-qemu-cortexm-interface
+-- + -I include
+-- + src/reset-handler.c
+-- + src/system-cortexm.c
+-- + src/vectors-cortexm.c
+-- + src/exception-handlers.cpp
+-- + -D DEVICE_QEMU_CORTEX_M7
+-- + xpack-3rd-party::arm-cmsis-core-m
+-- > micro-os-plus::devices-qemu-cortexm -> micro-os-plus-devices-qemu-cortexm-interface
+-- > micro-os-plus::device -> micro-os-plus-devices-qemu-cortexm-interface
+-- Adding 'xpacks/micro-os-plus-diag-trace'...
+-- Processing xPack @micro-os-plus/diag-trace@4.1.1...
+-- > micro-os-plus-diag-trace-interface
+-- + -I include
+-- + src/trace.cpp
+-- > micro-os-plus::diag-trace -> micro-os-plus-diag-trace-interface
+-- Adding 'xpacks/micro-os-plus-semihosting'...
+-- Processing xPack @micro-os-plus/semihosting@8.0.0...
+-- > micro-os-plus-semihosting-interface
+-- + -I include
+-- + src/semihosting-startup.cpp
+-- + src/semihosting-syscalls.cpp
+-- + src/semihosting-trace.cpp
+-- + micro-os-plus::diag-trace
+-- + micro-os-plus::architecture
+-- > micro-os-plus::semihosting -> micro-os-plus-semihosting-interface
+-- Adding 'xpacks/micro-os-plus-startup'...
+-- Processing xPack @micro-os-plus/startup@5.2.0...
+-- > micro-os-plus-startup-interface
+-- + -I include
+-- + src/startup.cpp
+-- + src/exit.c
+-- + src/_sbrk.c
+-- + micro-os-plus::diag-trace
+-- + micro-os-plus::architecture
+-- > micro-os-plus::startup -> micro-os-plus-startup-interface
+-- Adding 'xpacks/xpack-3rd-party-arm-cmsis-core'...
+-- Processing xPack @xpack-3rd-party/arm-cmsis-core@5.4.0-6...
+-- > xpack-3rd-party-arm-cmsis-core-m-interface
+-- + -I CMSIS/Core/Include
+-- + -D __PROGRAM_START
+-- > xpack-3rd-party::arm-cmsis-core-m -> xpack-3rd-party-arm-cmsis-core-m-interface
+-- > xpack-3rd-party-arm-cmsis-core-a-interface
+-- + -I CMSIS/Core_A/Include
+-- + -D __PROGRAM_START
+-- > xpack-3rd-party::arm-cmsis-core-a -> xpack-3rd-party-arm-cmsis-core-a-interface
+-- > hello-world-interface
+-- + -I include
+-- + src/main.cpp
+-- > app::hello-world -> hello-world-interface
+-- Processing 'platform-qemu-cortex-m7f'...
+-- > platform-qemu-cortex-m7f-interface
+-- + -I include-platform
+-- + -D PLATFORM_QEMU_CORTEX_M7F
+-- + micro-os-plus::devices-qemu-cortexm
+-- > micro-os-plus::platform -> platform-qemu-cortex-m7f-interface
+-- A> hello-world
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/ilg/tmp/my-project/build/qemu-cortex-m7f-cmake-debug
+> xpm run build --config qemu-cortex-m7f-cmake-debug
+> cmake -S . -B build/qemu-cortex-m7f-cmake-debug -G Ninja -D CMAKE_BUILD_TYPE=Debug -D PLATFORM_NAME=qemu-cortex-m7f -D CMAKE_EXPORT_COMPILE_COMMANDS=ON
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/ilg/tmp/my-project/build/qemu-cortex-m7f-cmake-debug
+> cmake --build build/qemu-cortex-m7f-cmake-debug
+[13/13] Linking CXX executable platform-bin/hello-world.elf
+   text	   data	    bss	    dec	    hex	filename
+ 355436	   4744	   8856	 369036	  5a18c	/Users/ilg/tmp/my-project/build/qemu-cortex-m7f-cmake-debug/platform-bin/hello-world.elf
+> xpm run test --config qemu-cortex-m7f-cmake-debug
+> cd build/qemu-cortex-m7f-cmake-debug && ctest -V
+UpdateCTestConfiguration  from :/Users/ilg/tmp/my-project/build/qemu-cortex-m7f-cmake-debug/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/Users/ilg/tmp/my-project/build/qemu-cortex-m7f-cmake-debug/DartConfiguration.tcl
+Test project /Users/ilg/tmp/my-project/build/qemu-cortex-m7f-cmake-debug
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start 1: hello-world
+
+1: Test command: /Users/ilg/tmp/my-project/xpacks/.bin/qemu-system-arm "--machine" "mps2-an500" "--cpu" "cortex-m7" "--kernel" "hello-world.elf" "--nographic" "-d" "unimp,guest_errors" "--semihosting-config" "enable=on,target=native,arg=hello-world,arg=M7"
+1: Test timeout computed to be: 10000000
+1:
+1: µOS++ IIIe version 7.x
+1: Copyright (c) 2007-2022 Liviu Ionescu
+1: Built with GCC 11.2.1 20220111, with FP, with exceptions, with MICRO_OS_PLUS_DEBUG
+1:
+1: Heap: @0x20002CB0 (8178 KiB)
+1: micro_os_plus_run_init_array()
+1: main(argc=2, argv=["hello-world", "M7"])
+1:
+1: Hello M7 World!
+1: (in debug mode)
+1:
+1: exit(0)
+1: micro_os_plus_run_fini_array()
+1: _Exit(0)
+1:
+1: Hasta la vista!
+1/1 Test #1: hello-world ......................   Passed    0.75 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   0.75 sec
+ilg@wksi my-project %
+```
