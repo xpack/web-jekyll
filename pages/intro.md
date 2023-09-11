@@ -657,15 +657,15 @@ The resulting project has the following `package.json`:
       "@xpack-dev-tools/qemu-arm": "7.0.0-1.1"
     },
     "properties": {
-    "buildFolderRelativePath": "{{ 'build' | path_join: configuration.name | to_filename | downcase }}",
-      "buildFolderRelativePathPosix": "{{ 'build' | path_posix_join: configuration.name | downcase }}",
-    "commandCMakePrepare": "{{ properties.commandCMakeReconfigure }} --log-level=VERBOSE",
-      "commandCMakePrepareWithToolchain": "{{ properties.commandCMakePrepare }} -D CMAKE_TOOLCHAIN_FILE=xpacks/micro-os-plus-build-helper/cmake/toolchains/{{ properties.toolchainFileName }}",
-      "commandCMakeReconfigure": "cmake -S . -B {{ properties.buildFolderRelativePathPosix }} -G Ninja -D CMAKE_BUILD_TYPE={{ properties.buildType }} -D PLATFORM_NAME={{ properties.platformName }} -D CMAKE_EXPORT_COMPILE_COMMANDS=ON",
-      "commandCMakeBuild": "cmake --build {{ properties.buildFolderRelativePathPosix }}",
-      "commandCMakeBuildVerbose": "cmake --build {{ properties.buildFolderRelativePathPosix }} --verbose",
-      "commandCMakeClean": "cmake --build {{ properties.buildFolderRelativePathPosix }} --target clean",
-      "commandCMakePerformTests": "cd {{ properties.buildFolderRelativePath }} && ctest -V"
+    "buildFolderRelativePath": "{% raw %}{{ 'build' | path_join: configuration.name | to_filename | downcase }}{% endraw %}",
+      "buildFolderRelativePathPosix": "{% raw %}{{ 'build' | path_posix_join: configuration.name | downcase }}{% endraw %}",
+    "commandCMakePrepare": "{% raw %}{{ properties.commandCMakeReconfigure }} --log-level=VERBOSE{% endraw %}",
+      "commandCMakePrepareWithToolchain": "{% raw %}{{ properties.commandCMakePrepare }} -D CMAKE_TOOLCHAIN_FILE=xpacks/micro-os-plus-build-helper/cmake/toolchains/{{ properties.toolchainFileName }}{% endraw %}",
+      "commandCMakeReconfigure": "{% raw %}cmake -S . -B {{ properties.buildFolderRelativePathPosix }} -G Ninja -D CMAKE_BUILD_TYPE={{ properties.buildType }} -D PLATFORM_NAME={{ properties.platformName }} -D CMAKE_EXPORT_COMPILE_COMMANDS=ON{% endraw %}",
+      "commandCMakeBuild": "{% raw %}cmake --build {{ properties.buildFolderRelativePathPosix }}{% endraw %}",
+      "commandCMakeBuildVerbose": "{% raw %}cmake --build {{ properties.buildFolderRelativePathPosix }} --verbose{% endraw %}",
+      "commandCMakeClean": "{% raw %}{% endraw %}cmake --build {{ properties.buildFolderRelativePathPosix }} --target clean",
+      "commandCMakePerformTests": "{% raw %}cd {{ properties.buildFolderRelativePath }} && ctest -V{% endraw %}"
     },
     "actions": {
       "test-qemu-cortex-m7f-cmake-debug": [
@@ -704,13 +704,13 @@ The resulting project has the following `package.json`:
           "toolchainFileName": "arm-none-eabi-gcc.cmake"
         },
         "actions": {
-        "prepare": "{{ properties.commandCMakePrepareWithToolchain }}",
+        "prepare": "{% raw %}{{ properties.commandCMakePrepareWithToolchain }}{% endraw %}",
           "build": [
-            "{{ properties.commandCMakeReconfigure }}",
-            "{{ properties.commandCMakeBuild }}"
+            "{% raw %}{{ properties.commandCMakeReconfigure }}{% endraw %}",
+            "{% raw %}{{ properties.commandCMakeBuild }}{% endraw %}"
           ],
-          "test": "{{ properties.commandCMakePerformTests }}",
-          "clean": "{{ properties.commandCMakeClean }}"
+          "test": "{% raw %}{{ properties.commandCMakePerformTests }}{% endraw %}",
+          "clean": "{% raw %}{{ properties.commandCMakeClean }}{% endraw %}"
         }
       },
       "qemu-cortex-m7f-cmake-release": {
