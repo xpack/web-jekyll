@@ -38,9 +38,9 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [16, 18, 20]
         # https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners
-        os: [ubuntu-22.04, macos-12, windows-2022]
+        os: [ ubuntu-22.04, macos-12 ]
+        node-version: [ 18 ]
 
     steps:
     - name: Checkout
@@ -49,21 +49,15 @@ jobs:
         fetch-depth: 3
 
     - name: Setup Node.js {% raw %}${{ matrix.node-version }} on ${{ matrix.os }}{% endraw %}
-      # https://github.com/actions/setup-node
       uses: actions/setup-node@v2
       with:
         node-version: {% raw %}${{ matrix.node-version }}{% endraw %}
 
-    - name: Install xpm on Linux/macOS
-      if: runner.os != 'Windows'
-      run: sudo npm install --global xpm@latest
-
-    - name: Install xpm on Windows
-      if: runner.os == 'Windows'
+    - name: Install xpm
       run: npm install --global xpm@latest
 
     - name: Satisfy project dependencies
-      run: xpm install --quiet
+      run: xpm install
 
     - name: Run test
       run: xpm run test
