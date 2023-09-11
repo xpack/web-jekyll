@@ -16,6 +16,9 @@ entries:
     - title: Intro (xPack 101)
       output: web
       url: /intro/
+    - title: CI/CD
+      output: web
+      url: /ci/
     - title: Install prerequisites
       output: web
       url: /install/

@@ -47,7 +47,7 @@ links to files, which are not available (or are not reliable) on Windows,
 thus Nix is currently available only on GNU/Linux and macOS.
 Plus that the Nix language requires quite some efforts to master.
 
-## Why could npm not be used as-is and why exactly was it necessary to invent xpm?
+## Why npm could not be used as-is and why exactly was it necessary to invent xpm?
 
 Because each package manager implements a strategy for managing dependencies.
 npm/yarn/pnpm all implement various strategies specific to ECMAScript
@@ -88,11 +88,13 @@ Based on the installed content, there are currently two
 types of xPacks: **source** and **binary**:
 
 - **source xPacks** are packages that install source files,
-generally libraries used by the project.
-- **binary xPacks** are packages that install standalone executables/binary
+generally libraries used by the project
+- **binary xPacks** are packages that install standalone relocatable
+executables/binary
 files, generally tools used during the build process, like toolchains,
 builders, etc; standalone means they are self-contained and do not
-depend on other shared libraries or tools.
+depend on other shared libraries or tools; relocatable means they
+can be installed in any location.
 
 ## Where does the name come from?
 
@@ -161,21 +163,21 @@ for details." %}
 A more automated method is to use `xpm init`:
 
 ```console
-% mkdir xyz && cd xyz
+% mkdir demo && cd demo
 % xpm init --verbose
 xPack manager - create an xPack, empty or from a template
-Creating project 'xyz'...
+Creating project 'demo'...
 File 'package.json' generated.
 File 'LICENSE' generated.
 
 'xpm init' completed in 167 ms.
 % ls -l
 total 16
--rw-r--r--  1 ilg  staff  1070 Feb  6 19:31 LICENSE
--rw-r--r--  1 ilg  staff   818 Feb  6 19:31 package.json
+-rw-r--r--  1 ilg  staff  1070 Sep 11 13:22 LICENSE
+-rw-r--r--  1 ilg  staff   822 Sep 11 13:22 package.json
 % cat package.json
 {
-  "name": "@<scope>/xyz",
+  "name": "@<scope>/demo",
   "version": "0.1.0",
   "description": "A source xPack with <your-description-here>",
   "main": "",
@@ -184,11 +186,11 @@ total 16
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/<user-id>/xyz.git"
+    "url": "https://github.com/<user-id>/demo.git"
   },
-  "homepage": "https://github.com/<user-id>/xyz/",
+  "homepage": "https://github.com/<user-id>/demo/",
   "bugs": {
-    "url": "https://github.com/<user-id>/xyz/issues/"
+    "url": "https://github.com/<user-id>/demo/issues/"
   },
   "keywords": [
     "xpack"
@@ -203,7 +205,7 @@ total 16
   "dependencies": {},
   "devDependencies": {},
   "xpack": {
-    "minimumXpmRequired": "0.14.8",
+    "minimumXpmRequired": "0.16.3",
     "dependencies": {},
     "devDependencies": {},
     "properties": {},
@@ -211,7 +213,6 @@ total 16
     "buildConfigurations": {}
   }
 }
-%
 ```
 
 ## Why would I convert my project to an xPack?
@@ -241,33 +242,58 @@ to them.
 xPack manager - install package(s)
 
 Processing @xpack-dev-tools/arm-none-eabi-gcc@12.2.1-1.2.1...
-Folder 'xpacks/xpack-dev-tools-arm-none-eabi-gcc' linked to global '@xpack-dev-tools/arm-none-eabi-gcc/12.2.1-1.2.1'.
-File 'xpacks/.bin/arm-none-eabi-addr2line' linked to '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-addr2line'.
-File 'xpacks/.bin/arm-none-eabi-ar' linked to '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-ar'.
-...
-File 'xpacks/.bin/arm-none-eabi-g++' linked to '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-g++'.
-File 'xpacks/.bin/arm-none-eabi-gcc' linked to '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcc'.
-...
-File 'xpacks/.bin/arm-none-eabi-strip' linked to '../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-strip'.
+Folder 'xpacks/@xpack-dev-tools/arm-none-eabi-gcc' linked to global '@xpack-dev-tools/arm-none-eabi-gcc/12.2.1-1.2.1'.
+File 'xpacks/.bin/arm-none-eabi-addr2line' linked to '../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-addr2line'.
+File 'xpacks/.bin/arm-none-eabi-ar' linked to '../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-ar'.
+File 'xpacks/.bin/arm-none-eabi-as' linked to '../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-as'.
+File 'xpacks/.bin/arm-none-eabi-c++' linked to '../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-c++'.
+File 'xpacks/.bin/arm-none-eabi-c++filt' linked to '../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-c++filt'.
+File 'xpacks/.bin/arm-none-eabi-cpp' linked to '../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-cpp'.
+File 'xpacks/.bin/arm-none-eabi-elfedit' linked to '../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-elfedit'.
+File 'xpacks/.bin/arm-none-eabi-g++' linked to '../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-g++'.
+File 'xpacks/.bin/arm-none-eabi-gcc' linked to '../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcc'.
+File 'xpacks/.bin/arm-none-eabi-gcc-ar' linked to '../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcc-ar'.
+File 'xpacks/.bin/arm-none-eabi-gcc-nm' linked to '../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcc-nm'.
+File 'xpacks/.bin/arm-none-eabi-gcc-ranlib' linked to '../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcc-ranlib'.
+File 'xpacks/.bin/arm-none-eabi-gcov' linked to '../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcov'.
+File 'xpacks/.bin/arm-none-eabi-gcov-dump' linked to '../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcov-dump'.
+File 'xpacks/.bin/arm-none-eabi-gcov-tool' linked to '../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcov-tool'.
+File 'xpacks/.bin/arm-none-eabi-gdb' linked to '../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-gdb'.
+File 'xpacks/.bin/arm-none-eabi-gdb-add-index' linked to '../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-gdb-add-index'.
+File 'xpacks/.bin/arm-none-eabi-gdb-add-index-py3' linked to '../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-gdb-add-index-py3'.
+File 'xpacks/.bin/arm-none-eabi-gdb-py3' linked to '../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-gdb-py3'.
+File 'xpacks/.bin/arm-none-eabi-gfortran' linked to '../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-gfortran'.
+File 'xpacks/.bin/arm-none-eabi-gprof' linked to '../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-gprof'.
+File 'xpacks/.bin/arm-none-eabi-ld' linked to '../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-ld'.
+File 'xpacks/.bin/arm-none-eabi-ld.bfd' linked to '../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-ld.bfd'.
+File 'xpacks/.bin/arm-none-eabi-lto-dump' linked to '../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-lto-dump'.
+File 'xpacks/.bin/arm-none-eabi-nm' linked to '../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-nm'.
+File 'xpacks/.bin/arm-none-eabi-objcopy' linked to '../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-objcopy'.
+File 'xpacks/.bin/arm-none-eabi-objdump' linked to '../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-objdump'.
+File 'xpacks/.bin/arm-none-eabi-ranlib' linked to '../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-ranlib'.
+File 'xpacks/.bin/arm-none-eabi-readelf' linked to '../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-readelf'.
+File 'xpacks/.bin/arm-none-eabi-size' linked to '../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-size'.
+File 'xpacks/.bin/arm-none-eabi-strings' linked to '../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-strings'.
+File 'xpacks/.bin/arm-none-eabi-strip' linked to '../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-strip'.
 Adding '@xpack-dev-tools/arm-none-eabi-gcc' to 'devDependencies'...
 
-Processing @xpack-dev-tools/cmake@3.23.5-1.1...
-Folder 'xpacks/xpack-dev-tools-cmake' linked to global '@xpack-dev-tools/cmake/3.23.5-1.1'.
-File 'xpacks/.bin/ccmake' linked to '../xpack-dev-tools-cmake/.content/bin/ccmake'.
-File 'xpacks/.bin/cmake' linked to '../xpack-dev-tools-cmake/.content/bin/cmake'.
-File 'xpacks/.bin/cpack' linked to '../xpack-dev-tools-cmake/.content/bin/cpack'.
-File 'xpacks/.bin/ctest' linked to '../xpack-dev-tools-cmake/.content/bin/ctest'.
+Processing @xpack-dev-tools/cmake@3.26.5-1.1...
+Folder 'xpacks/@xpack-dev-tools/cmake' linked to global '@xpack-dev-tools/cmake/3.26.5-1.1'.
+File 'xpacks/.bin/ccmake' linked to '../@xpack-dev-tools/cmake/.content/bin/ccmake'.
+File 'xpacks/.bin/cmake' linked to '../@xpack-dev-tools/cmake/.content/bin/cmake'.
+File 'xpacks/.bin/cpack' linked to '../@xpack-dev-tools/cmake/.content/bin/cpack'.
+File 'xpacks/.bin/ctest' linked to '../@xpack-dev-tools/cmake/.content/bin/ctest'.
 Adding '@xpack-dev-tools/cmake' to 'devDependencies'...
 
-Processing @xpack-dev-tools/ninja-build@1.11.1-2.1...
-Folder 'xpacks/xpack-dev-tools-ninja-build' linked to global '@xpack-dev-tools/ninja-build/1.11.1-2.1'.
-File 'xpacks/.bin/ninja' linked to '../xpack-dev-tools-ninja-build/.content/bin/ninja'.
+Processing @xpack-dev-tools/ninja-build@1.11.1-3.1...
+Folder 'xpacks/@xpack-dev-tools/ninja-build' linked to global '@xpack-dev-tools/ninja-build/1.11.1-3.1'.
+File 'xpacks/.bin/ninja' linked to '../@xpack-dev-tools/ninja-build/.content/bin/ninja'.
 Adding '@xpack-dev-tools/ninja-build' to 'devDependencies'...
 
-'xpm install' completed in 194 ms.
+'xpm install' completed in 5.760 sec.
 % npm install liquidjs --save-dev
 
-added 1 package, and audited 2 packages in 594ms
+added 2 packages, and audited 3 packages in 2s
 
 1 package is looking for funding
   run `npm fund` for details
@@ -280,24 +306,57 @@ This will also update the `package.json` with details about the dependencies:
 
 ```json
 {
-  "name": "@<scope>/xyz",
+  "name": "@<scope>/demo",
   "version": "0.1.0",
-  "...": "...",
-  "dependencies": {},
+  "description": "A source xPack with <your-description-here>",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/<user-id>/demo.git"
+  },
+  "homepage": "https://github.com/<user-id>/demo/",
+  "bugs": {
+    "url": "https://github.com/<user-id>/demo/issues/"
+  },
+  "keywords": [
+    "xpack"
+  ],
+  "author": {
+    "name": "<author-name>",
+    "email": "<author-email>",
+    "url": "<author-url>"
+  },
+  "license": "MIT",
+  "config": {},
+  "devDependencies": {
+    "liquidjs": "^10.9.2"
+  },
   "xpack": {
-    "minimumXpmRequired": "0.14.8",
+    "minimumXpmRequired": "0.16.3",
     "dependencies": {},
     "devDependencies": {
-      "@xpack-dev-tools/arm-none-eabi-gcc": "12.2.1-1.2.1",
-      "@xpack-dev-tools/cmake": "3.23.5-1.1",
-      "@xpack-dev-tools/ninja-build": "1.11.1-2.1"
+      "@xpack-dev-tools/arm-none-eabi-gcc": {
+        "specifier": "12.2.1-1.2.1",
+        "local": "link",
+        "platforms": "all"
+      },
+      "@xpack-dev-tools/cmake": {
+        "specifier": "3.26.5-1.1",
+        "local": "link",
+        "platforms": "all"
+      },
+      "@xpack-dev-tools/ninja-build": {
+        "specifier": "1.11.1-3.1",
+        "local": "link",
+        "platforms": "all"
+      }
     },
     "properties": {},
     "actions": {},
     "buildConfigurations": {}
-  },
-  "devDependencies": {
-    "liquidjs": "^10.4.0"
   }
 }
 ```
@@ -321,7 +380,7 @@ add a folder `node_modules/.bin` where links to the executables
 will be created (or `.cmd` stubs on Windows).
 
 ```console
-$ tree -a
+$ tree -a -L 3
 .
 ├── LICENSE
 ├── node_modules
@@ -329,61 +388,68 @@ $ tree -a
 │   │   ├── liquid -> ../liquidjs/bin/liquid.js
 │   │   └── liquidjs -> ../liquidjs/bin/liquid.js
 │   ├── .package-lock.json
+│   ├── commander
+│   │   ├── LICENSE
+│   │   ├── Readme.md
+│   │   ├── esm.mjs
+│   │   ├── index.js
+│   │   ├── lib
+│   │   ├── package-support.json
+│   │   ├── package.json
+│   │   └── typings
 │   └── liquidjs
-│       ├── CHANGELOG.md
 │       ├── LICENSE
 │       ├── README.md
 │       ├── bin
-│       │   └── liquid.js
 │       ├── dist
-│       │   └── ...
 │       └── package.json
 ├── package-lock.json
 ├── package.json
 └── xpacks
     ├── .bin
-    │   ├── arm-none-eabi-addr2line -> ../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-addr2line
-    │   ├── arm-none-eabi-ar -> ../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-ar
-    │   ├── arm-none-eabi-as -> ../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-as
-    │   ├── arm-none-eabi-c++ -> ../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-c++
-    │   ├── arm-none-eabi-c++filt -> ../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-c++filt
-    │   ├── arm-none-eabi-cpp -> ../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-cpp
-    │   ├── arm-none-eabi-elfedit -> ../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-elfedit
-    │   ├── arm-none-eabi-g++ -> ../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-g++
-    │   ├── arm-none-eabi-gcc -> ../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcc
-    │   ├── arm-none-eabi-gcc-ar -> ../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcc-ar
-    │   ├── arm-none-eabi-gcc-nm -> ../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcc-nm
-    │   ├── arm-none-eabi-gcc-ranlib -> ../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcc-ranlib
-    │   ├── arm-none-eabi-gcov -> ../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcov
-    │   ├── arm-none-eabi-gcov-dump -> ../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcov-dump
-    │   ├── arm-none-eabi-gcov-tool -> ../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcov-tool
-    │   ├── arm-none-eabi-gdb -> ../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gdb
-    │   ├── arm-none-eabi-gdb-add-index -> ../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gdb-add-index
-    │   ├── arm-none-eabi-gdb-add-index-py3 -> ../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gdb-add-index-py3
-    │   ├── arm-none-eabi-gdb-py3 -> ../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gdb-py3
-    │   ├── arm-none-eabi-gfortran -> ../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gfortran
-    │   ├── arm-none-eabi-gprof -> ../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-gprof
-    │   ├── arm-none-eabi-ld -> ../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-ld
-    │   ├── arm-none-eabi-ld.bfd -> ../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-ld.bfd
-    │   ├── arm-none-eabi-lto-dump -> ../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-lto-dump
-    │   ├── arm-none-eabi-nm -> ../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-nm
-    │   ├── arm-none-eabi-objcopy -> ../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-objcopy
-    │   ├── arm-none-eabi-objdump -> ../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-objdump
-    │   ├── arm-none-eabi-ranlib -> ../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-ranlib
-    │   ├── arm-none-eabi-readelf -> ../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-readelf
-    │   ├── arm-none-eabi-size -> ../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-size
-    │   ├── arm-none-eabi-strings -> ../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-strings
-    │   ├── arm-none-eabi-strip -> ../xpack-dev-tools-arm-none-eabi-gcc/.content/bin/arm-none-eabi-strip
-    │   ├── ccmake -> ../xpack-dev-tools-cmake/.content/bin/ccmake
-    │   ├── cmake -> ../xpack-dev-tools-cmake/.content/bin/cmake
-    │   ├── cpack -> ../xpack-dev-tools-cmake/.content/bin/cpack
-    │   ├── ctest -> ../xpack-dev-tools-cmake/.content/bin/ctest
-    │   └── ninja -> ../xpack-dev-tools-ninja-build/.content/bin/ninja
-    ├── xpack-dev-tools-arm-none-eabi-gcc -> /Users/ilg/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/12.2.1-1.2.1
-    ├── xpack-dev-tools-cmake -> /Users/ilg/Library/xPacks/@xpack-dev-tools/cmake/3.23.5-1.1
-    └── xpack-dev-tools-ninja-build -> /Users/ilg/Library/xPacks/@xpack-dev-tools/ninja-build/1.11.1-2.1
+    │   ├── arm-none-eabi-addr2line -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-addr2line
+    │   ├── arm-none-eabi-ar -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-ar
+    │   ├── arm-none-eabi-as -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-as
+    │   ├── arm-none-eabi-c++ -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-c++
+    │   ├── arm-none-eabi-c++filt -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-c++filt
+    │   ├── arm-none-eabi-cpp -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-cpp
+    │   ├── arm-none-eabi-elfedit -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-elfedit
+    │   ├── arm-none-eabi-g++ -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-g++
+    │   ├── arm-none-eabi-gcc -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcc
+    │   ├── arm-none-eabi-gcc-ar -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcc-ar
+    │   ├── arm-none-eabi-gcc-nm -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcc-nm
+    │   ├── arm-none-eabi-gcc-ranlib -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcc-ranlib
+    │   ├── arm-none-eabi-gcov -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcov
+    │   ├── arm-none-eabi-gcov-dump -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcov-dump
+    │   ├── arm-none-eabi-gcov-tool -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcov-tool
+    │   ├── arm-none-eabi-gdb -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-gdb
+    │   ├── arm-none-eabi-gdb-add-index -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-gdb-add-index
+    │   ├── arm-none-eabi-gdb-add-index-py3 -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-gdb-add-index-py3
+    │   ├── arm-none-eabi-gdb-py3 -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-gdb-py3
+    │   ├── arm-none-eabi-gfortran -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-gfortran
+    │   ├── arm-none-eabi-gprof -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-gprof
+    │   ├── arm-none-eabi-ld -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-ld
+    │   ├── arm-none-eabi-ld.bfd -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-ld.bfd
+    │   ├── arm-none-eabi-lto-dump -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-lto-dump
+    │   ├── arm-none-eabi-nm -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-nm
+    │   ├── arm-none-eabi-objcopy -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-objcopy
+    │   ├── arm-none-eabi-objdump -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-objdump
+    │   ├── arm-none-eabi-ranlib -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-ranlib
+    │   ├── arm-none-eabi-readelf -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-readelf
+    │   ├── arm-none-eabi-size -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-size
+    │   ├── arm-none-eabi-strings -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-strings
+    │   ├── arm-none-eabi-strip -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-strip
+    │   ├── ccmake -> ../@xpack-dev-tools/cmake/.content/bin/ccmake
+    │   ├── cmake -> ../@xpack-dev-tools/cmake/.content/bin/cmake
+    │   ├── cpack -> ../@xpack-dev-tools/cmake/.content/bin/cpack
+    │   ├── ctest -> ../@xpack-dev-tools/cmake/.content/bin/ctest
+    │   └── ninja -> ../@xpack-dev-tools/ninja-build/.content/bin/ninja
+    └── @xpack-dev-tools
+        ├── arm-none-eabi-gcc -> /Users/ilg/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/12.2.1-1.2.1
+        ├── cmake -> /Users/ilg/Library/xPacks/@xpack-dev-tools/cmake/3.26.5-1.1
+        └── ninja-build -> /Users/ilg/Library/xPacks/@xpack-dev-tools/ninja-build/1.11.1-3.1
 
-22 directories, 172 files
+15 directories, 52 files
 ```
 
 When later running actions like `xpm run build`, the `PATH` is automatically
@@ -409,29 +475,26 @@ Even simpler. Let's assume that the 'xyz project' also needs the
 xPack manager - install package(s)
 
 Processing @micro-os-plus/diag-trace@4.2.0...
-Adding to central store '/Users/ilg/Library/xPacks/@micro-os-plus/diag-trace/4.2.0'...
-Changing permissions to read-only...
-Folder 'xpacks/micro-os-plus-diag-trace' linked to global '@micro-os-plus/diag-trace/4.2.0'.
+Folder 'xpacks/@micro-os-plus/diag-trace' linked to global '@micro-os-plus/diag-trace/4.2.0'.
 Adding '@micro-os-plus/diag-trace' to 'dependencies'...
 
-'xpm install' completed in 3.693 sec.
-%
+'xpm install' completed in 2.129 sec.
 ```
 
-This results in another link in the `xpacks` folder
-(mind the linearised package name):
+This results in another link in the `xpacks` folder:
 
 ```console
-% tree xpacks
 xpacks
-├── micro-os-plus-diag-trace -> /Users/ilg/Library/xPacks/@micro-os-plus/diag-trace/4.2.0
-├── xpack-dev-tools-arm-none-eabi-gcc -> /Users/ilg/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/12.2.1-1.2.1
-├── xpack-dev-tools-cmake -> /Users/ilg/Library/xPacks/@xpack-dev-tools/cmake/3.23.5-1.1
-└── xpack-dev-tools-ninja-build -> /Users/ilg/Library/xPacks/@xpack-dev-tools/ninja-build/1.11.1-2.1
+├── @micro-os-plus
+│   └── diag-trace -> /Users/ilg/Library/xPacks/@micro-os-plus/diag-trace/4.2.0
+└── @xpack-dev-tools
+    ├── arm-none-eabi-gcc -> /Users/ilg/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/12.2.1-1.2.1
+    ├── cmake -> /Users/ilg/Library/xPacks/@xpack-dev-tools/cmake/3.26.5-1.1
+    └── ninja-build -> /Users/ilg/Library/xPacks/@xpack-dev-tools/ninja-build/1.11.1-3.1
 
-4 directories, 0 files
-% tree xpacks/micro-os-plus-diag-trace
-xpacks/micro-os-plus-diag-trace
+7 directories, 0 files
+% tree xpacks/@micro-os-plus/diag-trace
+xpacks/@micro-os-plus/diag-trace
 ├── CHANGELOG.md
 ├── CMakeLists.txt
 ├── LICENSE
@@ -446,33 +509,70 @@ xpacks/micro-os-plus-diag-trace
 │   └── trace.cpp
 └── xpack.json
 
-4 directories, 9 files
-%
+5 directories, 9 files
 ```
 
 and the addition of a new dependency in `package.json`:
 
 ```json
 {
-  "name": "@<scope>/xyz",
+  "name": "@<scope>/demo",
   "version": "0.1.0",
-  "...": "...",
+  "description": "A source xPack with <your-description-here>",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/<user-id>/demo.git"
+  },
+  "homepage": "https://github.com/<user-id>/demo/",
+  "bugs": {
+    "url": "https://github.com/<user-id>/demo/issues/"
+  },
+  "keywords": [
+    "xpack"
+  ],
+  "author": {
+    "name": "<author-name>",
+    "email": "<author-email>",
+    "url": "<author-url>"
+  },
+  "license": "MIT",
+  "config": {},
+  "devDependencies": {
+    "liquidjs": "^10.9.2"
+  },
   "xpack": {
-    "minimumXpmRequired": "0.14.8",
+    "minimumXpmRequired": "0.16.3",
     "dependencies": {
-      "@micro-os-plus/diag-trace": "^4.2.0"
+      "@micro-os-plus/diag-trace": {
+        "specifier": "^4.2.0",
+        "local": "link",
+        "platforms": "all"
+      }
     },
     "devDependencies": {
-      "@xpack-dev-tools/arm-none-eabi-gcc": "12.2.1-1.2.1",
-      "@xpack-dev-tools/cmake": "3.23.5-1.1",
-      "@xpack-dev-tools/ninja-build": "1.11.1-2.1"
+      "@xpack-dev-tools/arm-none-eabi-gcc": {
+        "specifier": "12.2.1-1.2.1",
+        "local": "link",
+        "platforms": "all"
+      },
+      "@xpack-dev-tools/cmake": {
+        "specifier": "3.26.5-1.1",
+        "local": "link",
+        "platforms": "all"
+      },
+      "@xpack-dev-tools/ninja-build": {
+        "specifier": "1.11.1-3.1",
+        "local": "link",
+        "platforms": "all"
+      }
     },
     "properties": {},
     "actions": {},
     "buildConfigurations": {}
-  },
-  "devDependencies": {
-    "liquidjs": "^10.4.0"
   }
 }
 ```
@@ -562,58 +662,3 @@ $
 ```
 
 TODO: update for a more recent blinky project.
-
-## Continuous Integration use cases
-
-The high degree of automation provided by xpm is of great help
-for automated test environments.
-
-### GitHub Actions
-
-For example, with the proper scripts configured, a multi-platform test
-configuration for an xPack project may look like this:
-
-```yml
-name: CI on Push
-
-on:
-  push:
-
-jobs:
-  ci-test:
-    name: 'CI tests'
-
-    runs-on: {% raw %}${{ matrix.os }}{% endraw %}
-
-    strategy:
-      matrix:
-        node-version: [16, 18, 20]
-        # https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners
-        os: [ubuntu-22.04, macos-12, windows-2022]
-
-    steps:
-    - name: Checkout
-      uses: actions/checkout@v2
-      with:
-        fetch-depth: 3
-
-    - name: Setup Node.js {% raw %}${{ matrix.node-version }} on ${{ matrix.os }}{% endraw %}
-      # https://github.com/actions/setup-node
-      uses: actions/setup-node@v2
-      with:
-        node-version: {% raw %}${{ matrix.node-version }}{% endraw %}
-
-    - name: Install xpm on Linux/macOS
-      if: runner.os != 'Windows'
-      run: sudo npm install --global xpm@latest
-
-    - name: Install xpm on Windows
-      if: runner.os == 'Windows'
-      run: npm install --global xpm@latest
-
-    - name: Satisfy project dependencies
-      run: xpm install --quiet
-
-    - name: Run test
-      run: xpm run test
-```
