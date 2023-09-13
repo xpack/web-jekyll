@@ -36,10 +36,15 @@ installed via alternate package managers (like HomeBrew or MacPorts).
 
 ## XBB v5.0.0
 
-The latest release, v5.0.0 from early 2023 represents a major milestone
+The v5.0.0 release from early 2023 represents a major milestone
 for the xPack project, since it is the first self-sustained release,
 which allows to build new binary xPacks using previous xPacks,
 without requiring any custom Docker images, or other compiled tools.
+
+## XBB v5.1.1
+
+The latest release, v5.1.1 from mid 2023 updates Python 3 and adds C++
+support.
 
 ## `xpm run`
 
