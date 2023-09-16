@@ -380,8 +380,8 @@ Compatibility was moved up to
 RedHat 8 / Debian 10, which both use GLIBC 2.28.
 
 The next upgrade step will be taken when the minimum Node.js becomes 18.x,
-which requires GLIBC 2.28, when the base system will most probably be
-**Debian 10**.
+which requires GLIBC 2.28, when the base system will be
+**Debian 10** (planned for mid-2024).
 
 ## Credits
 

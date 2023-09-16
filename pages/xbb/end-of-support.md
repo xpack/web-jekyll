@@ -26,7 +26,7 @@ docker run -it <image> ldd --version
 - `debian:7` - wheezy - 2013-2016, GLIBC 2.13, kernel 3.2
 - `debian:8` - jessie - 2015-2018, GLIBC 2.19, kernel 3.16
 - `debian:9` - stretch - 2017-2020, GLIBC 2.24, kernel 4.9.0-6 (first with arm64)
-- `debian:10` - buster - 2019-2022, GLIBC 2.28, kernel 4.19.0-6 <-- **XBB v3.4, v5.0**
+- `debian:10` - buster - 2019-2022, GLIBC **2.28**, kernel 4.19.0-6 <-- **next, since mid-2024**
 - `debian:11` - bullseye - 2021-2026, GLIBC 2.31, kernel 5.10
 - `debian:12` - bookworm - ?
 
@@ -36,7 +36,7 @@ docker run -it <image> ldd --version
 - `ubuntu:12.04` - precise - 2012-2019, GLIBC 2.15, kernel **3.2** <--- XBB v3.3 Intel Linux choice
 - `ubuntu:14.04` - trusty - 2014-2022, GLIBC 2.19, kernel 3.16
 - `ubuntu:16.04` - xenial - 2016-2024, GLIBC **2.23**, kernel 4.4 <--- XBB v3.3 Arm Linux choice
-- `ubuntu:18.04` - bionic - 2018-2028, GLIBC **2.27**, kernel 4.15 <-- **XBB v3.4, v5.0** Intel & Arm Linux choice
+- `ubuntu:18.04` - bionic - 2018-2028, GLIBC **2.27**, kernel 4.15 <-- **XBB v3.4 - v5.1.1** Intel & Arm Linux choice
 - `ubuntu:20.04` - focal - 2020-2230, GLIBC 2.31, kernel 5.4
 - `ubuntu:22.04` - jammy - 2022-2232, GLIBC 2.35, kernel 5.15
 
@@ -44,13 +44,13 @@ docker run -it <image> ldd --version
 
 - `registry.access.redhat.com/rhel6` - GLIBC 2.12 (no longer supported)
 - `registry.access.redhat.com/rhel7` - GLIBC 2.17, kernel 3.10 <-- XBB v3.3
-- `registry.access.redhat.com/ubi8` - GLIBC 2.28, kernel 5.10 <-- **XBB v3.4, v5.0**
+- `registry.access.redhat.com/ubi8` - GLIBC 2.28, kernel 5.10 <-- XBB v3.4 - v5.1.1
 
 ### [CentOS](https://en.wikipedia.org/wiki/CentOS)
 
 - `centos:6` - 2011-2020, GLIBC 2.12 (no longer supported)
-- `centos:7` - 2014-2024, GLIBC 2.17, kernel 3.10 <--- XBB v3.3
-- `centos:8` - 2019-2029, GLIBC 2.28, kernel 4.18 <-- **XBB v3.4, v5.0**
+- `centos:7` - 2014-2024, GLIBC 2.17, kernel 3.10 <-- XBB v3.3
+- `centos:8` - 2019-2029, GLIBC 2.28, kernel 4.18 <-- XBB v3.4 - v5.1.1
 
 Last version was 8.4; discontinued by the end of 2021; see Rocky Linux.
 
@@ -64,8 +64,8 @@ Last version was 8.4; discontinued by the end of 2021; see Rocky Linux.
 - `fedora:25` - 2016-11, GLIBC 2.24, kernel 4.8
 - `fedora:26` - 2017-07, GLIBC 2.25, kernel 4.11
 - `fedora:27` - 2017-11, GLIBC 2.26, kernel 4.13
-- `fedora:28` - 2018-05, GLIBC 2.27, kernel 4.16
-- `fedora:29` - 2018-10, GLIBC 2.28, kernel 4.18 <-- **XBB v3.4, v5.0**
+- `fedora:28` - 2018-05, GLIBC 2.27, kernel 4.16 <-- XBB v3.4 - v5.1.1
+- `fedora:29` - 2018-10, GLIBC 2.28, kernel 4.18
 - `fedora:30` - 2019-05, GLIBC 2.29, kernel 5.0
 - `fedora:31` - 2019-10, GLIBC 2.30, kernel 5.3
 - `fedora:32` - 2020-04, GLIBC 2.31, kernel 5.6
@@ -123,3 +123,17 @@ also run on RHEL 8 or newer, Debian 10, Fedora 29 or newer.
 
 For Arm binaries, the resulting binaries should run on all
 Raspberry Pi class machines, or larger/newer.
+
+## Pre-deprecation notice for Ubuntu 18.04
+
+Ubuntu 18.04 LTS ‘Bionic Beaver‘ reached the end of the standard five-year
+maintenance window for Long-Term Support (LTS) release on 31 May 2023.
+
+As a courtesy, the xPack GNU/Linux releases will continue to be based on
+Ubuntu 18.04 for another year.
+
+From mid-2024 onwards, the GNU/Linux binaries will be built on **Debian 10**,
+(**GLIBC 2.28**), and are also expected to run on RedHat 8.
+
+Users are urged to update their build and test infrastructure to
+ensure a smooth transition to the next xPack releases.
