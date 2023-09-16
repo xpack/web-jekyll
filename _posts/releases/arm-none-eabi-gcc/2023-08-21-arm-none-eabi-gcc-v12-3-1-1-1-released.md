@@ -334,7 +334,7 @@ with Ubuntu 18, Debian 10 and RedHat 8.
 
 ## Pre-deprecation notice for Ubuntu 18.04
 
-Ubuntu 18.04 LTS ‘Bionic Beaver‘ reached the end of the standard five-year
+Ubuntu 18.04 LTS _Bionic Beaver_ reached the end of the standard five-year
 maintenance window for Long-Term Support (LTS) release on 31 May 2023.
 
 As a courtesy, the xPack GNU/Linux releases will continue to be based on
