@@ -30,12 +30,14 @@ docker run -it <image> ldd --version
 - `debian:11` - bullseye - 2021-2026, GLIBC 2.31, kernel 5.10
 - `debian:12` - bookworm - ?
 
+Debian 10 [LTS](https://wiki.debian.org/LTS) ends in **June 30th, 2024**.
+
 ### [Ubuntu](https://en.wikipedia.org/wiki/Ubuntu_version_history)
 
 - `ubuntu:10.04` - lucy - 2010-2015, GLIBC 2.11.1
 - `ubuntu:12.04` - precise - 2012-2019, GLIBC 2.15, kernel **3.2** <--- XBB v3.3 Intel Linux choice
 - `ubuntu:14.04` - trusty - 2014-2022, GLIBC 2.19, kernel 3.16
-- `ubuntu:16.04` - xenial - 2016-2024, GLIBC **2.23**, kernel 4.4 <--- XBB v3.3 Arm Linux choice
+- `ubuntu:16.04` - xenial - 2016-2024, GLIBC 2.23, kernel 4.4 <--- XBB v3.3 Arm Linux choice
 - `ubuntu:18.04` - bionic - 2018-2028, GLIBC **2.27**, kernel 4.15 <-- **XBB v3.4 - v5.1.1** Intel & Arm Linux choice
 - `ubuntu:20.04` - focal - 2020-2230, GLIBC 2.31, kernel 5.4
 - `ubuntu:22.04` - jammy - 2022-2232, GLIBC 2.35, kernel 5.15
@@ -45,6 +47,10 @@ docker run -it <image> ldd --version
 - `registry.access.redhat.com/rhel6` - GLIBC 2.12 (no longer supported)
 - `registry.access.redhat.com/rhel7` - GLIBC 2.17, kernel 3.10 <-- XBB v3.3
 - `registry.access.redhat.com/ubi8` - GLIBC 2.28, kernel 5.10 <-- XBB v3.4 - v5.1.1
+
+Red Hat Enterprise
+[Extended Update Support](https://access.redhat.com/support/policy/updates/errata#RHEL8_Planning_Guide)
+for 8.8 ends in **May 31, 2025**.
 
 ### [CentOS](https://en.wikipedia.org/wiki/CentOS)
 
@@ -65,7 +71,7 @@ Last version was 8.4; discontinued by the end of 2021; see Rocky Linux.
 - `fedora:26` - 2017-07, GLIBC 2.25, kernel 4.11
 - `fedora:27` - 2017-11, GLIBC 2.26, kernel 4.13
 - `fedora:28` - 2018-05, GLIBC 2.27, kernel 4.16 <-- XBB v3.4 - v5.1.1
-- `fedora:29` - 2018-10, GLIBC 2.28, kernel 4.18
+- `fedora:29` - 2018-10, GLIBC **2.28**, kernel 4.18
 - `fedora:30` - 2019-05, GLIBC 2.29, kernel 5.0
 - `fedora:31` - 2019-10, GLIBC 2.30, kernel 5.3
 - `fedora:32` - 2020-04, GLIBC 2.31, kernel 5.6
