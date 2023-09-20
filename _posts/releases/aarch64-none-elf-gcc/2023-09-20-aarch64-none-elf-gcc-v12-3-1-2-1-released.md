@@ -1,29 +1,31 @@
 ---
-title:  xPack GNU AArch64 Embedded GCC v12.3.1-1.1 released
+title:  xPack GNU AArch64 Embedded GCC v12.3.1-2.1 released
 
-summary: "Version **12.3.1-1.1** is a new release; it follows the upstream Arm release."
+summary: "Version **12.3.1-2.1** is a maintenance release; it fixes the GNU/Linux GDB issues with loading ELF files."
 
 arm_version: "12.3.Rel1"
-arm_date: "July 28, 2023"
+arm_date: "28 Jul, 2023"
 gcc_version: "12.3.1"
 binutils_version: "2.40"
 gdb_version: "13.2"
 newlib_version: "4.3.0"
 python_version: "3.11.1"
 
-version: "12.3.1-1.1"
+version: "12.3.1-2.1"
 npm_subversion: "1"
 
-download_url: https://github.com/xpack-dev-tools/aarch64-none-elf-gcc-xpack/releases/tag/v12.3.1-1.1/
+download_url: https://github.com/xpack-dev-tools/aarch64-none-elf-gcc-xpack/releases/tag/v12.3.1-2.1/
 
 comments: true
 
-date:   2023-08-21 17:09:03 +0300
+date:   2023-09-21 00:28:48 +0300
 
+# For Jekyll releases selection.
 categories:
   - releases
   - aarch64-none-elf-gcc
 
+# For navigation; use scripts/createtag.sh in Jekyll.
 tags:
   - releases
   - arm
@@ -187,7 +189,9 @@ platforms, support for Guile scripting in GDB is currently not available.
 
 ## Bug fixes
 
-- none
+- [[#2](https://github.com/xpack-dev-tools/aarch64-none-elf-gcc-xpack/issues/2)]
+  due to a an issue in the build scripts, on GNU/Linux,
+  the `aarch64-none-elf-gdb` was built without ELF support; fixed
 
 ## Enhancements
 
@@ -195,10 +199,7 @@ platforms, support for Guile scripting in GDB is currently not available.
 
 ## Known problems
 
-- [[#2](https://github.com/xpack-dev-tools/aarch64-none-elf-gcc-xpack/issues/2)]
-  due to a an issue in the build scripts, on GNU/Linux,
-  the `aarch64-none-elf-gdb` was built without ELF support;
-  fixed in 12.3.1-2.1.
+- none
 
 ## Shared libraries
 
@@ -269,23 +270,23 @@ build, not the compiler functionality.
 The SHA-256 hashes for the files are:
 
 ```txt
-6cc55b6bd040e3eb1cd52528f8eb3f52a655647a3572f1be0bd67bf0f53063c9
-xpack-aarch64-none-elf-gcc-12.3.1-1.1-darwin-arm64.tar.gz
+3bdae469f1479cf5535900aaf05c25b71f55cb17a0bbbea0eed41fc5e0371b31
+xpack-aarch64-none-elf-gcc-12.3.1-2.1-darwin-arm64.tar.gz
 
-ba6947c1d8b55ec5ee80ad300aea18ac2025efb03df8002f780efed040cf3349
-xpack-aarch64-none-elf-gcc-12.3.1-1.1-darwin-x64.tar.gz
+4764aff79bdde32f44e91f3ecb3527ba1fb040669c513a0e6a29a990be7c3e41
+xpack-aarch64-none-elf-gcc-12.3.1-2.1-darwin-x64.tar.gz
 
-766fb21b38d9dfe1a06707eeb575020f459df2fd9a82a4bb6113ac1b01ac5d48
-xpack-aarch64-none-elf-gcc-12.3.1-1.1-linux-arm.tar.gz
+49c58c8c0ad0a44a0fc4c56136d56813922ce6f88eecaedb743b143a79082c5c
+xpack-aarch64-none-elf-gcc-12.3.1-2.1-linux-arm.tar.gz
 
-0eaba21e98d0de28beecac0cbdb76fc46a99fb676075be2d64bf6b77d664bbc0
-xpack-aarch64-none-elf-gcc-12.3.1-1.1-linux-arm64.tar.gz
+e3ae04e8489e38edacd7d3ff062747559016143fc476dc4e328e7db5c65f071e
+xpack-aarch64-none-elf-gcc-12.3.1-2.1-linux-arm64.tar.gz
 
-b8567f486e9f5475494d8cb4177481024085c635be989a055cc4fdc89ef79e4f
-xpack-aarch64-none-elf-gcc-12.3.1-1.1-linux-x64.tar.gz
+6063a0fd5b4bd1445bf0db1521839e2bb43daa2d3b974a2d9a8b8a76a8b9bcf3
+xpack-aarch64-none-elf-gcc-12.3.1-2.1-linux-x64.tar.gz
 
-934d4ac5372198f281286d73467725bfdcbc61bac2ce3f91117dfc03a673e629
-xpack-aarch64-none-elf-gcc-12.3.1-1.1-win32-x64.zip
+41f87244a8c14a88d4926f20fee7e1087ba3ac7e128870a873e8bfa9e820ce92
+xpack-aarch64-none-elf-gcc-12.3.1-2.1-win32-x64.zip
 
 ```
 
