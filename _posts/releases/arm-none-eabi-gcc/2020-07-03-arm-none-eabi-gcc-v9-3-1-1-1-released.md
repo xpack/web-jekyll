@@ -238,10 +238,6 @@ compatible with most recent systems.
 
 ## Build
 
-The scripts used to build this distribution are in:
-
-- `distro-info/scripts`
-
 For the prerequisites and more details on the build procedure, please see the
 [README-MAINTAINER](https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/blob/xpack/README-MAINTAINER.md) page.
 

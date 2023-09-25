@@ -243,11 +243,7 @@ The binaries for all supported platforms
 of build environments based on slightly older distributions, that should be
 compatible with most recent systems.
 
-The scripts used to build this distribution are in:
-
-- `distro-info/scripts`
-
-For the prerequisites and more details on the build procedure, please see the
+Ubuntu 18.04 LTS _Bionic Beaver_ reachedFor the prerequisites and more details on the build procedure, please see the
 [How to build](https://github.com/xpack-dev-tools/aarch64-none-elf-gcc-xpack/blob/xpack/README-BUILD.md) page.
 
 ## CI tests
