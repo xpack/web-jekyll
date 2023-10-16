@@ -7,9 +7,9 @@ keywords:
   - xpack
   - install
 
-node_version: 18.16.0
-npm_version: 9.6.0
-npm_latest_version: 9.6.6
+node_version: 18.18.2
+npm_version: 9.8.1
+npm_latest_version: 10.2.0
 
 comments: true
 toc: false
@@ -378,53 +378,52 @@ following:
 
 ```console
 % nvm install --lts node
-Downloading and installing node v16.18.0...
-Downloading https://nodejs.org/dist/v16.18.0/node-v16.18.0-darwin-x64.tar.xz...
-############################################################################################# 100.0%
+Downloading and installing node v18.18.2...
+Downloading https://nodejs.org/dist/v18.18.2/node-v18.18.2-darwin-x64.tar.xz...
+######################################################################### 100.0%
 Computing checksum with shasum -a 256
 Checksums matched!
-Now using node v16.18.0 (npm v8.19.2)
+Now using node v18.18.2 (npm v9.8.1)
+Creating default alias: default -> lts/* (-> v18.18.2)
 
 $ nvm ls
-      v12.22.12
-->     v16.18.0
-default -> node (-> v16.18.0)
+->     v18.18.2
+default -> lts/* (-> v18.18.2)
 iojs -> N/A (default)
 unstable -> N/A (default)
-node -> stable (-> v16.18.0) (default)
-stable -> 16.18 (-> v16.18.0) (default)
-lts/* -> lts/gallium (-> v16.18.0)
+node -> stable (-> v18.18.2) (default)
+stable -> 18.18 (-> v18.18.2) (default)
+lts/* -> lts/hydrogen (-> v18.18.2)
 lts/argon -> v4.9.1 (-> N/A)
 lts/boron -> v6.17.1 (-> N/A)
 lts/carbon -> v8.17.0 (-> N/A)
 lts/dubnium -> v10.24.1 (-> N/A)
-lts/erbium -> v12.22.12
-lts/fermium -> v14.20.1 (-> N/A)
-lts/gallium -> v16.18.0
+lts/erbium -> v12.22.12 (-> N/A)
+lts/fermium -> v14.21.3 (-> N/A)
+lts/gallium -> v16.20.2 (-> N/A)
+lts/hydrogen -> v18.18.2
 
 $ nvm use node
-Now using node v16.18.0 (npm v8.19.2)
+Now using node v18.18.2 (npm v9.8.1)
 
 $ nvm alias default node
-default -> node (-> v16.18.0)
+default -> node (-> v18.18.2)
 
 $ node --version
-v16.18.0
+v18.18.2
 
 $ nvm install-latest-npm
 Attempting to upgrade to the latest working version of npm...
 * Installing latest `npm`; if this does not work on your node version, please report a bug!
 
-changed 16 packages, and audited 212 packages in 1s
+removed 2 packages, and changed 62 packages in 2s
 
-11 packages are looking for funding
+29 packages are looking for funding
   run `npm fund` for details
-
-found 0 vulnerabilities
-* npm upgraded to: v8.19.2
+* npm upgraded to: v10.2.0
 
 $ which npm
-/Users/ilg/.nvm/versions/node/v16.18.0/bin/npm
+/Users/ilg/.nvm/versions/node/v18.18.2/bin/npm
 ```
 
 {% include note.html content="Please note that this will install the latest
@@ -434,52 +433,55 @@ the `--lts` option." %}
 To explicitly install a previous version and to switch to it:
 
 ```console
-% nvm install 12
-Downloading and installing node v12.22.12...
-Downloading https://nodejs.org/dist/v12.22.12/node-v12.22.12-darwin-x64.tar.xz...
-######################################################################################################## 100.0%
+% nvm install 16
+Downloading and installing node v16.20.2...
+Downloading https://nodejs.org/dist/v16.20.2/node-v16.20.2-darwin-x64.tar.xz...
+######################################################################### 100.0%
 Computing checksum with shasum -a 256
 Checksums matched!
+Now using node v16.20.2 (npm v8.19.4)
 
 % nvm ls
-       v10.24.1
-->    v12.22.12
-       v16.14.2
-       v16.16.0
-default -> 12 (-> v12.22.12)
+->     v16.20.2
+       v18.18.2
+default -> node (-> v18.18.2)
 iojs -> N/A (default)
 unstable -> N/A (default)
-node -> stable (-> v16.16.0) (default)
-stable -> 16.16 (-> v16.16.0) (default)
-lts/* -> lts/gallium (-> N/A)
+node -> stable (-> v18.18.2) (default)
+stable -> 18.18 (-> v18.18.2) (default)
+lts/* -> lts/hydrogen (-> v18.18.2)
 lts/argon -> v4.9.1 (-> N/A)
 lts/boron -> v6.17.1 (-> N/A)
 lts/carbon -> v8.17.0 (-> N/A)
-lts/dubnium -> v10.24.1
-lts/erbium -> v12.22.12
-lts/fermium -> v14.20.1 (-> N/A)
-lts/gallium -> v16.18.0 (-> N/A)
+lts/dubnium -> v10.24.1 (-> N/A)
+lts/erbium -> v12.22.12 (-> N/A)
+lts/fermium -> v14.21.3 (-> N/A)
+lts/gallium -> v16.20.2
+lts/hydrogen -> v18.18.2
 
-% nvm use 12
-Now using node v12.22.12 (npm v6.14.16)
+% nvm use 16
+Now using node v16.20.2 (npm v8.19.4)
 
-% nvm alias default 12
-default -> 12 (-> v12.22.12)
+% nvm alias default 16
+default -> 16 (-> v16.20.2)
 
 % node --version
-v12.22.12
+v16.20.2
 
 % nvm install-latest-npm
 Attempting to upgrade to the latest working version of npm...
-* Installing latest `npm`; if this does not work on your node version, please report a bug!
-/Users/ilg/.nvm/versions/node/v12.22.12/bin/npx -> /Users/ilg/.nvm/versions/node/v12.22.12/lib/node_modules/npm/bin/npx-cli.js
-/Users/ilg/.nvm/versions/node/v12.22.12/bin/npm -> /Users/ilg/.nvm/versions/node/v12.22.12/lib/node_modules/npm/bin/npm-cli.js
-+ npm@8.19.2
-added 73 packages from 21 contributors, removed 299 packages and updated 138 packages in 5.001s
-* npm upgraded to: v8.19.2
+* `npm` `v9.x` is the last version that works on `node` `< v18.17`, `v19`, or `v20.0` - `v20.4`
+
+removed 17 packages, changed 101 packages, and audited 252 packages in 2s
+
+28 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+* npm upgraded to: v9.9.0
 
 $ which npm
-/Users/ilg/.nvm/versions/node/v12.22.12/bin/npm
+/Users/ilg/.nvm/versions/node/v16.20.2/bin/npm
 ```
 
 At any time, to switch between any of the installed versions,
@@ -537,46 +539,53 @@ terminal (to make use of the new environment variables) and issue the
 following:
 
 ```console
-$ nvm install --lts node
-Downloading and installing node v12.13.0...
-Downloading https://nodejs.org/dist/v12.13.0/node-v12.13.0-linux-x64.tar.xz...
-####################################################################################################################### 100.0%
-Computing checksum with sha256sum
+% nvm install --lts node
+Downloading and installing node v18.18.2...
+Downloading https://nodejs.org/dist/v18.18.2/node-v18.18.2-darwin-x64.tar.xz...
+######################################################################### 100.0%
+Computing checksum with shasum -a 256
 Checksums matched!
-Creating default alias: default -> lts/* (-> v12.13.0)
+Now using node v18.18.2 (npm v9.8.1)
+Creating default alias: default -> lts/* (-> v18.18.2)
 
 $ nvm ls
-->     v12.13.0
-         system
-default -> lts/* (-> v12.13.0)
-node -> stable (-> v12.13.0) (default)
-stable -> 12.13 (-> v12.13.0) (default)
+->     v18.18.2
+default -> lts/* (-> v18.18.2)
 iojs -> N/A (default)
 unstable -> N/A (default)
-lts/* -> lts/erbium (-> v12.13.0)
+node -> stable (-> v18.18.2) (default)
+stable -> 18.18 (-> v18.18.2) (default)
+lts/* -> lts/hydrogen (-> v18.18.2)
 lts/argon -> v4.9.1 (-> N/A)
 lts/boron -> v6.17.1 (-> N/A)
-lts/carbon -> v8.16.2 (-> N/A)
-lts/dubnium -> v10.17.0 (-> N/A)
-lts/erbium -> v12.13.0
+lts/carbon -> v8.17.0 (-> N/A)
+lts/dubnium -> v10.24.1 (-> N/A)
+lts/erbium -> v12.22.12 (-> N/A)
+lts/fermium -> v14.21.3 (-> N/A)
+lts/gallium -> v16.20.2 (-> N/A)
+lts/hydrogen -> v18.18.2
 
 $ nvm use node
-Now using node v12.13.0 (npm v6.12.0)
+Now using node v18.18.2 (npm v9.8.1)
+
+$ nvm alias default node
+default -> node (-> v18.18.2)
 
 $ node --version
-v12.13.0
+v18.18.2
 
 $ nvm install-latest-npm
 Attempting to upgrade to the latest working version of npm...
 * Installing latest `npm`; if this does not work on your node version, please report a bug!
-/home/ilg/.nvm/versions/node/v12.13.0/bin/npm -> /home/ilg/.nvm/versions/node/v12.13.0/lib/node_modules/npm/bin/npm-cli.js
-/home/ilg/.nvm/versions/node/v12.13.0/bin/npx -> /home/ilg/.nvm/versions/node/v12.13.0/lib/node_modules/npm/bin/npx-cli.js
-+ npm@6.13.0
-added 2 packages from 2 contributors, removed 2 packages and updated 15 packages in 8.68s
-* npm upgraded to: v6.13.0
+
+removed 2 packages, and changed 62 packages in 2s
+
+29 packages are looking for funding
+  run `npm fund` for details
+* npm upgraded to: v10.2.0
 
 $ which npm
-/home/ilg/.nvm/versions/node/v12.13.0/bin/npm
+/home/ilg/.nvm/versions/node/v18.18.2/bin/npm
 ```
 
 {% include note.html content="Please note that this will install the latest
@@ -586,46 +595,55 @@ the `--lts` option." %}
 To explicitly install a previous version and to switch to it:
 
 ```console
-$ nvm install 10
-Downloading https://nodejs.org/dist/v10.17.0/node-v10.17.0-linux-x64.tar.xz...
-####################################################################################################################### 100.0%
-Computing checksum with sha256sum
+% nvm install 16
+Downloading and installing node v16.20.2...
+Downloading https://nodejs.org/dist/v16.20.2/node-v16.20.2-darwin-x64.tar.xz...
+######################################################################### 100.0%
+Computing checksum with shasum -a 256
 Checksums matched!
-Now using node v10.17.0 (npm v6.11.3)
+Now using node v16.20.2 (npm v8.19.4)
 
-$ nvm ls
-->     v10.17.0
-       v12.13.0
-         system
-default -> lts/* (-> v12.13.0)
-node -> stable (-> v12.13.0) (default)
-stable -> 12.13 (-> v12.13.0) (default)
+% nvm ls
+->     v16.20.2
+       v18.18.2
+default -> node (-> v18.18.2)
 iojs -> N/A (default)
 unstable -> N/A (default)
-lts/* -> lts/erbium (-> v12.13.0)
+node -> stable (-> v18.18.2) (default)
+stable -> 18.18 (-> v18.18.2) (default)
+lts/* -> lts/hydrogen (-> v18.18.2)
 lts/argon -> v4.9.1 (-> N/A)
 lts/boron -> v6.17.1 (-> N/A)
-lts/carbon -> v8.16.2 (-> N/A)
-lts/dubnium -> v10.17.0
-lts/erbium -> v12.13.0
+lts/carbon -> v8.17.0 (-> N/A)
+lts/dubnium -> v10.24.1 (-> N/A)
+lts/erbium -> v12.22.12 (-> N/A)
+lts/fermium -> v14.21.3 (-> N/A)
+lts/gallium -> v16.20.2
+lts/hydrogen -> v18.18.2
 
-$ nvm use 10
-Now using node v10.17.0 (npm v6.11.3)
+% nvm use 16
+Now using node v16.20.2 (npm v8.19.4)
 
-$ node --version
-v10.17.0
+% nvm alias default 16
+default -> 16 (-> v16.20.2)
 
-$ nvm install-latest-npm
+% node --version
+v16.20.2
+
+% nvm install-latest-npm
 Attempting to upgrade to the latest working version of npm...
-* Installing latest `npm`; if this does not work on your node version, please report a bug!
-/Users/ilg/.nvm/versions/node/v10.17.0/bin/npm -> /Users/ilg/.nvm/versions/node/v10.17.0/lib/node_modules/npm/bin/npm-cli.js
-/Users/ilg/.nvm/versions/node/v10.17.0/bin/npx -> /Users/ilg/.nvm/versions/node/v10.17.0/lib/node_modules/npm/bin/npx-cli.js
-+ npm@6.13.0
-added 3 packages from 2 contributors, removed 3 packages and updated 20 packages in 3.081s
-* npm upgraded to: v6.13.0
+* `npm` `v9.x` is the last version that works on `node` `< v18.17`, `v19`, or `v20.0` - `v20.4`
+
+removed 17 packages, changed 101 packages, and audited 252 packages in 2s
+
+28 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+* npm upgraded to: v9.9.0
 
 $ which npm
-/Users/ilg/.nvm/versions/node/v10.17.0/bin/npm
+/home/ilg/.nvm/versions/node/v16.20.2/bin/npm
 ```
 
 At any time, to switch between any of the installed versions,
