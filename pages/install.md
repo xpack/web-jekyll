@@ -338,7 +338,7 @@ are also part of Xcode, their location is not fixed, hence the Command
 Line Tools package must still be installed, for the xPack toolchains to
 find them in the expected location." %}
 
-{% include note.html content="If the `install-nvm-node-npm-xpm.sh`
+{% include tip.html content="If the `install-nvm-node-npm-xpm.sh`
 script was successful,
 the rest of this page is only informative and can be skipped." %}
 
@@ -502,7 +502,7 @@ use `nvm use <version>` & `nvm alias default <version>`.
 {% include callout.html content="Arm platforms, like the Raspberry Pi,
 are supported, currently in both 32/64-bit variants." %}
 
-{% include note.html content="If the `install-nvm-node-npm-xpm.sh`
+{% include tip.html content="If the `install-nvm-node-npm-xpm.sh`
 script was successful,
 the rest of this page is only informative and can be skipped." %}
 
