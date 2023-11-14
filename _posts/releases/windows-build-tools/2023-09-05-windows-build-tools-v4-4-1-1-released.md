@@ -1,7 +1,7 @@
 ---
 title:  xPack Windows Build Tools v4.4.1-1 released
 
-summary: "Version **4.4.1-1** is a new release of the **xPack Windows Build Tools** package, following the make release."
+summary: "DEPRECATED: Version **4.4.1-1** is a new release of the **xPack Windows Build Tools** package, following the make release."
 
 version: "4.4.1-1"
 npm_subversion: "1"
@@ -39,6 +39,10 @@ is a standalone Windows binary distribution of
 generic build environments.
 
 There are separate binaries for **Windows** (Intel 32/64-bit).
+
+## Deprecated
+
+Use v4.4.1-2.
 
 ## Download
 
@@ -135,7 +139,9 @@ There are no functional changes from original projects.
 
 ## Known problems
 
-- none
+- starting with mid 2023, BusyBox included a make applet, which is preferred
+  to GNU make; unfortunately it does not provides the full functionality
+  and most builds fail; this applet was disabled in v4.4.1-2.
 
 ## Shared libraries
 
