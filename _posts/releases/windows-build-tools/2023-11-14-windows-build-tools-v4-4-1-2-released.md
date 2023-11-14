@@ -3,7 +3,7 @@ title:  xPack Windows Build Tools v4.4.1-2 released
 
 TODO: select one summary
 
-summary: "Version **4.4.1-2** is a maintenance release of the **xPack Windows Build Tools** package; it disables the BusyBox make applet which interfered with the GNU make."
+summary: "Version **4.4.1-2** is a maintenance release of the **xPack Windows Build Tools** package; it disables the BusyBox **make** applet which interferes with the **GNU make**."
 
 version: "4.4.1-2"
 npm_subversion: "1"
@@ -140,7 +140,7 @@ There are no functional changes from original projects.
 ## Other changes
 
 - the BusyBox configuration disables the local **make** applet, since it
-  interferes with the GNU make.
+  interferes with the **GNU make**.
 
 ## Known problems
 
