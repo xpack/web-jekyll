@@ -304,6 +304,8 @@ In addition, xpm uses (`node-fetch`,
 `https-proxy-agent`, `proxy-from-env`) to download the binary
 archive. These packages require setting the `http_proxy` & `https_proxy`
 variables in the environment.
+See [proxy-from-env](https://www.npmjs.com/package/proxy-from-env) for
+details.
 
 ## `zsh: command not found: xpm`
 
