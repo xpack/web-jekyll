@@ -292,6 +292,19 @@ This keyboard shortcut works like a toggle, using it once makes files
 starting with dot visible,
 using it again reverts to hiding them.
 
+## Proxy
+
+If you are behind a firewall, you need to configure
+a proxy.
+
+xpm uses the same modules to fetch the package (`pacote`), so
+setting a proxy for npm should also work for xpm.
+
+In addition, xpm uses (`node-fetch`,
+`https-proxy-agent`, `proxy-from-env`) to download the binary
+archive. These packages require setting the `http_proxy` & `https_proxy`
+variables in the environment.
+
 ## `zsh: command not found: xpm`
 
 If you recently switched to `zsh`, or updated macOS to 11.x, which does
