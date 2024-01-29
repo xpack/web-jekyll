@@ -41,6 +41,8 @@ Developer & maintainer pages:
 The **xPack GNU RISC-V Embedded GCC**
 is a binary distribution of the GNU RISC-V Embedded GCC toolchain.
 
+{% include note.html content="_embedded_ means bare-metal only, not Linux." %}
+
 ## Benefits
 
 The main advantages of using the **xPack GNU RISC-V Embedded GCC** are:
