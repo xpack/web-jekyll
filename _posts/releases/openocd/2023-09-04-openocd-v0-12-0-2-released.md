@@ -125,7 +125,7 @@ The xPack OpenOCD generally follows the official
 The current version is based on:
 
 - OpenOCD version {{ page.upstream_version }}, the development commit
-[{{ page.upstream_commit }}](https://github.com/xpack-dev-tools/openocd/commit/{{ page.upstream_commit }}/)
+[{{ page.upstream_commit }}](https://github.com/openocd-org/openocd/commit/{{ page.upstream_commit }}/)
 from {{ page.upstream_release_date }}.
 
 ## Changes
