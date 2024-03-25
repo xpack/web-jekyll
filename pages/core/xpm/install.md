@@ -23,12 +23,14 @@ npm package [xpm](https://www.npmjs.com/package/xpm) from the
 
 ## Prerequisites
 
-- a recent [Node.js](https://nodejs.org) (>=**12.x**), since some dependencies
+- a recent [Node.js](https://nodejs.org) (>=**16.x**), since some dependencies
   require new features
 - a recent [npm](https://docs.npmjs.com/cli/npm).
 
 For details, please read (carefully!) the
 [prerequisites]({{ site.baseurl }}/install/) page.
+
+{% include important.html content="Please be sure you are installing xpm as the **xPack Project Manager**, since there are other projects that unfortunately use the same name (for example _uniX Package Manager_)." %}
 
 ## `xpm` install
 
