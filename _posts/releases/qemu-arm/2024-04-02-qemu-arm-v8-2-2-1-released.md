@@ -9,7 +9,7 @@ qemu_long_commit: "11aa0b1ff115b86160c4d37e7c37e6a6b13b77ea"
 qemu_date: "4 Mar 2024"
 
 version: "8.2.2-1"
-npm_subversion: "1"
+npm_subversion: "2"
 
 download_url: https://github.com/xpack-dev-tools/qemu-arm-xpack/releases/tag/v8.2.2-1/
 
