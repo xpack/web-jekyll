@@ -1,8 +1,6 @@
 ---
 title:  xPack OpenOCD v0.12.0-3 released
 
-TODO: select one summary
-
 summary: "Version **0.12.0-3** is a maintenance release; it updates to
 the latest upstream master."
 
