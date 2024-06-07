@@ -102,5 +102,5 @@ See the [releases]({{ site.baseurl }}/dev-tools/gcc/releases/) pages.
 
 ## Tests summaries
 
-- [13.3.0-1]({{ site.baseurl }}/dev-tools/gcc/tests-summaries/13.3.0-1/)
-- [14.1.0-1]({{ site.baseurl }}/dev-tools/gcc/tests-summaries/14.1.0-1/)
+- [13.3.0-1]({{ site.baseurl }}/dev-tools/gcc/tests/13.3.0-1/)
+- [14.1.0-1]({{ site.baseurl }}/dev-tools/gcc/tests/14.1.0-1/)

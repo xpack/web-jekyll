@@ -1,0 +1,11 @@
+# README
+
+## Trigger xpm tests
+
+```
+bash xpacks/@xpack-dev-tools/xbb-helper/github-actions/trigger-workflow-test-xpm.sh --package-version 14.1.0-1.1 --version 14.1.0-1
+```
+
+The results are in the artefacts associated to tests:
+
+- <https://github.com/xpack-dev-tools/gcc-xpack/actions>
