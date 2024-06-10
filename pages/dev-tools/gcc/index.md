@@ -100,7 +100,7 @@ folder.
 
 See the [releases]({{ site.baseurl }}/dev-tools/gcc/releases/) pages.
 
-## Tests summaries
+## Tests reports
 
 - [13.3.0-1]({{ site.baseurl }}/dev-tools/gcc/tests/13.3.0-1/)
 - [14.1.0-1]({{ site.baseurl }}/dev-tools/gcc/tests/14.1.0-1/)
