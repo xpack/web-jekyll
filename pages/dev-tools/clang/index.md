@@ -99,3 +99,8 @@ folder.
 ## Releases
 
 See the [releases]({{ site.baseurl }}/dev-tools/clang/releases/) pages.
+
+## Tests reports
+
+- [16.0.6-1]({{ site.baseurl }}/dev-tools/clang/tests/16.0.6-1/)
+- [17.0.6-2]({{ site.baseurl }}/dev-tools/clang/tests/17.0.6-2/)

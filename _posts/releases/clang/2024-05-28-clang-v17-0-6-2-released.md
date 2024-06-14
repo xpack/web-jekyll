@@ -194,7 +194,8 @@ function that computes
 
 ## Known problems
 
-- none
+Please see the separate
+[tests results page]({{ site.baseurl }}/dev-tools/clang/tests/17.0.6-2/).
 
 ## Shared libraries
 
