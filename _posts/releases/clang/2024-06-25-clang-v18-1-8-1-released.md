@@ -1,10 +1,6 @@
 ---
 title:  xPack LLVM clang v18.1.8-1 released
 
-TODO: select one summary
-
-summary: "Version **18.1.8-1** is a maintenance release; it fixes <...>."
-
 summary: "Version **18.1.8-1** is a new release; it follows the upstream release."
 
 clang_version: "18.1.8"
