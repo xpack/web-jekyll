@@ -105,7 +105,7 @@ xpm uninstall --global @xpack-dev-tools/xbb-bootstrap
 
 ## Compliance
 
-The xPack XBB Bootstrap tools generally use the official sources
+The xPack XBB Bootstrap tools generally uses the official sources
 of the tools, without changes.
 
 The included tools are:

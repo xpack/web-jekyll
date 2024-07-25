@@ -123,7 +123,7 @@ xpm uninstall --global @xpack-dev-tools/riscv-none-elf-gcc
 
 ## Compliance
 
-The xPack GNU RISC-V Embedded GCC use the official sources,
+The xPack GNU RISC-V Embedded GCC uses the official sources,
 with no functional changes:
 
 - GCC 11.3.0
