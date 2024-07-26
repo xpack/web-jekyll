@@ -2,11 +2,11 @@
 title:  xPack GNU RISC-V Embedded GCC v8.2.0-3.1 released
 sidebar: riscv-none-elf-gcc
 
-summary: "Version 8.2.0-3.1 is a new release of the **xPack GNU RISC-V
-Embedded GCC**, following SiFive release from May 2019."
+summary: "Version **8.2.0-3.1** is a new release of the **xPack GNU RISC-V Embedded GCC**, following SiFive release from May 2019."
 
 version: 8.2.0-3.1
 npm_subversion: 1
+
 download_url: https://github.com/xpack-dev-tools/riscv-none-embed-gcc-xpack/releases/tag/v8.2.0-3.1/
 
 date:   2019-07-31 03:19:00 +0300

@@ -2,10 +2,11 @@
 title:  xPack GNU RISC-V Embedded GCC v10.1.0-1.1 released
 sidebar: riscv-none-elf-gcc
 
-summary: "Version 10.1.0-1.1 is a new release of the **xPack GNU RISC-V Embedded GCC**; it follows the SiFive release 2020-08.0."
+summary: "Version **10.1.0-1.1** is a new release of the **xPack GNU RISC-V Embedded GCC**; it follows the SiFive release 2020-08.0."
 
 version: 10.1.0-1.1
 npm_subversion: 1
+
 download_url: https://github.com/xpack-dev-tools/riscv-none-embed-gcc-xpack/releases/tag/v10.1.0-1.1/
 
 date:   2021-01-05 11:42:00 +0200
@@ -33,9 +34,9 @@ is the **xPack** distribution of the
 There are separate binaries for **Windows** (Intel 32/64-bit),
 **macOS** (Intel 64-bit) and **GNU/Linux** (Intel 32/64-bit, Arm 64-bit; no Arm 32-bit).
 
-{% include note.html content="The main targets for the GNU/Linux
-ARMv7 and Aarch64 binaries are the **Raspberry Pi** class devices
-(RPi 2 and up; no RPi 1, being ARMv6)." %}
+{% include note.html content="The main targets for the GNU/Linux Arm
+binaries are the **Raspberry Pi** class devices (armv7l and aarch64;
+armv6 is not supported)." %}
 
 ## Download
 

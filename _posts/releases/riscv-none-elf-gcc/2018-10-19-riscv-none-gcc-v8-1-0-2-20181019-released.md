@@ -19,7 +19,7 @@ tags:
 
 ---
 
-Version v8.1.0-2-20181019 is a maintenance release of **GNU MCU Eclipse
+Version **8.1.0-2-20181019** is a maintenance release of **GNU MCU Eclipse
 RISC-V Embedded GCC**.
 
 [Binary files »]({{ page.download_url }})

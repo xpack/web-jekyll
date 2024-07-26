@@ -2,10 +2,11 @@
 title:  xPack GNU RISC-V Embedded GCC v8.3.0-2.2 released
 sidebar: riscv-none-elf-gcc
 
-summary: "Version 8.3.0-2.2 is a maintenance release of the **xPack GNU RISC-V Embedded GCC**, to fix a regression bug in binutils 2.32 affecting the parsing of LENGTH and ORIGIN in linker scripts."
+summary: "Version **8.3.0-2.2** is a maintenance release of the **xPack GNU RISC-V Embedded GCC**, to fix a regression bug in binutils 2.32 affecting the parsing of LENGTH and ORIGIN in linker scripts."
 
 version: 8.3.0-2.2
 npm_subversion: 1
+
 download_url: https://github.com/xpack-dev-tools/riscv-none-embed-gcc-xpack/releases/tag/v8.3.0-2.2/
 
 date:   2020-10-13 10:04:00 +0300
@@ -33,9 +34,9 @@ is the **xPack** distribution of the
 There are separate binaries for **Windows** (Intel 32/64-bit),
 **macOS** (Intel 64-bit) and **GNU/Linux** (Intel 32/64-bit, Arm 32/64-bit).
 
-{% include note.html content="The main targets for the GNU/Linux
-ARMv7 and Aarch64 binaries are the **Raspberry Pi** class devices
-(RPi 2 and up; no RPi 1, being ARMv6)." %}
+{% include note.html content="The main targets for the GNU/Linux Arm
+binaries are the **Raspberry Pi** class devices (armv7l and aarch64;
+armv6 is not supported)." %}
 
 ## Download
 

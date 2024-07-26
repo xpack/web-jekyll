@@ -2,12 +2,11 @@
 title:  xPack GNU RISC-V Embedded GCC v8.3.0-1.2 released
 sidebar: riscv-none-elf-gcc
 
-summary: "Version 8.3.0-1.2 is a maintenance release of the **xPack GNU RISC-V
-Embedded GCC**, that packs the SiFive release from August 2019,
-and **adds support for running on Arm platforms**, like **Raspberry Pi**."
+summary: "Version **8.3.0-1.2** is a maintenance release of the **xPack GNU RISC-V Embedded GCC**, that packs the SiFive release from August 2019, and **adds support for running on Arm platforms**, like **Raspberry Pi**."
 
 version: 8.3.0-1.2
 npm_subversion: 1
+
 download_url: https://github.com/xpack-dev-tools/riscv-none-embed-gcc-xpack/releases/tag/v8.3.0-1.2/
 
 date:   2020-07-04 13:07:00 +0300

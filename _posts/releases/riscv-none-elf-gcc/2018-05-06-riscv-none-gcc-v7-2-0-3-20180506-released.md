@@ -19,7 +19,7 @@ tags:
 
 ---
 
-Version v7.2.0-3-20180506 is a maintenance release of **GNU MCU Eclipse
+Version **7.2.0-3-20180506** is a maintenance release of **GNU MCU Eclipse
 RISC-V Embedded GCC**; it updates to the latest RISC-V sources and the
 build process was improved, to add `gdb-py` and to support even older
 GNU/Linux machines and processors.

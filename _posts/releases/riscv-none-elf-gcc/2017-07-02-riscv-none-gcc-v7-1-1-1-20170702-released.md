@@ -19,7 +19,7 @@ tags:
 
 ---
 
-Version v7.1.1-1-20170702-0625 is the first **GNU MCU Eclipse RISC-V Embedded GCC** release. It includes binaries for Windows, macOS and GNU/Linux.
+Version **7.1.1-1-20170702-0625** is the first **GNU MCU Eclipse RISC-V Embedded GCC** release. It includes binaries for Windows, macOS and GNU/Linux.
 
 [Binary files »]({{ page.download_url }})
 

@@ -42,8 +42,8 @@ There are separate binaries for **Windows** (Intel 64-bit),
 **macOS** (Intel 64-bit, Apple Silicon 64-bit)
 and **GNU/Linux** (Intel 64-bit, Arm 32/64-bit).
 
-{% include note.html content="The main targets for the Arm binaries
-are the **Raspberry Pi** class devices (armv7l and aarch64;
+{% include note.html content="The main targets for the GNU/Linux Arm
+binaries are the **Raspberry Pi** class devices (armv7l and aarch64;
 armv6 is not supported)." %}
 
 ## Download

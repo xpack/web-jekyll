@@ -8,6 +8,7 @@ sifive_version: v2020.12.0
 sifive_date: April 7, 2021
 version: 10.2.0-1.2
 npm_subversion: 1
+
 download_url: https://github.com/xpack-dev-tools/riscv-none-embed-gcc-xpack/releases/tag/v10.2.0-1.2/
 
 date:   2021-11-11 11:37:02 +0200
@@ -35,9 +36,9 @@ is a standalone cross-platform binary distribution of the
 There are separate binaries for **Windows** (Intel 32/64-bit),
 **macOS** (Intel 64-bit) and **GNU/Linux** (Intel 32/64-bit, Arm 64-bit).
 
-{% include note.html content="The main targets for the GNU/Linux
-ARMv7 and Aarch64 binaries are the **Raspberry Pi** class devices
-(RPi 2 and up; no RPi 1, being ARMv6)." %}
+{% include note.html content="The main targets for the GNU/Linux Arm
+binaries are the **Raspberry Pi** class devices (armv7l and aarch64;
+armv6 is not supported)." %}
 
 {% include note.html content="Due to memory limitations during the build, there is no Arm 32-bit image." %}
 

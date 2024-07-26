@@ -19,7 +19,7 @@ tags:
 
 ---
 
-Version v7.2.0-4-20180606 is a maintenance release of **GNU MCU Eclipse
+Version **7.2.0-4-20180606** is a maintenance release of **GNU MCU Eclipse
 RISC-V Embedded GCC**; it builds the libraries with `-mcmodel=medany`.
 
 [Binary files »]({{ page.download_url }})

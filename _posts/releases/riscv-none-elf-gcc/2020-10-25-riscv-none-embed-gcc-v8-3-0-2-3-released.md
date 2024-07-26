@@ -2,10 +2,11 @@
 title:  xPack GNU RISC-V Embedded GCC v8.3.0-2.3 released
 sidebar: riscv-none-elf-gcc
 
-summary: "Version 8.3.0-2.3 is a maintenance release of the **xPack GNU RISC-V Embedded GCC**; it adds an embedded Python 3 instance, to make `riscv-none-embed-gdb-py3` standalone and run on any system."
+summary: "Version **8.3.0-2.3** is a maintenance release of the **xPack GNU RISC-V Embedded GCC**; it adds an embedded Python 3 instance, to make `riscv-none-embed-gdb-py3` standalone and run on any system."
 
 version: 8.3.0-2.3
 npm_subversion: 1
+
 download_url: https://github.com/xpack-dev-tools/riscv-none-embed-gcc-xpack/releases/tag/v8.3.0-2.3/
 
 date:   2020-10-25 08:59:00 +0200
@@ -33,9 +34,9 @@ is the **xPack** distribution of the
 There are separate binaries for **Windows** (Intel 32/64-bit),
 **macOS** (Intel 64-bit) and **GNU/Linux** (Intel 32/64-bit, Arm 32/64-bit).
 
-{% include note.html content="The main targets for the GNU/Linux
-ARMv7 and Aarch64 binaries are the **Raspberry Pi** class devices
-(RPi 2 and up; no RPi 1, being ARMv6)." %}
+{% include note.html content="The main targets for the GNU/Linux Arm
+binaries are the **Raspberry Pi** class devices (armv7l and aarch64;
+armv6 is not supported)." %}
 
 ## Download
 
