@@ -104,3 +104,4 @@ See the [releases]({{ site.baseurl }}/dev-tools/mingw-w64-gcc/releases/) pages.
 - [14.1.0-1]({{ site.baseurl }}/dev-tools/mingw-w64-gcc/tests/14.1.0-1/)
 - [13.3.0-1]({{ site.baseurl }}/dev-tools/mingw-w64-gcc/tests/13.3.0-1/)
 - [12.4.0-1]({{ site.baseurl }}/dev-tools/mingw-w64-gcc/tests/12.4.0-1/)
+- [11.5.0-1]({{ site.baseurl }}/dev-tools/mingw-w64-gcc/tests/11.5.0-1/)
