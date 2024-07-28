@@ -291,6 +291,15 @@ Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser
 For more details please read the Microsoft
 [about_Execution_Policies](https://docs.microsoft.com/en-gb/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.1) page.
 
+## npm clean-ups
+
+To remove all global packages installed by npm, there are only two folders:
+
+- `%APPDATA%\Roaming\npm`
+- `%APPDATA%\Local\npm-cache`
+
+They can be removed at any time, and npm will recreate them on new installs.
+
 {{ xpm_install_windows }}
 
 {% endcapture %}
