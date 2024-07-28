@@ -18,7 +18,7 @@ download_url: https://github.com/xpack-dev-tools/aarch64-none-elf-gcc-xpack/rele
 
 comments: true
 
-date:   2023-08-21 17:09:03 +0300
+date: 2023-08-21 17:09:03 +0300
 
 categories:
   - releases

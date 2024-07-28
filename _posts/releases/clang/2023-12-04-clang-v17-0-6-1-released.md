@@ -13,7 +13,7 @@ download_url: https://github.com/xpack-dev-tools/clang-xpack/releases/tag/v17.0.
 
 comments: true
 
-date:   2023-12-04 10:35:42 +0200
+date: 2023-12-04 10:35:42 +0200
 
 # For Jekyll releases selection.
 categories:

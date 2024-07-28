@@ -1,11 +1,6 @@
 ---
 title:  xPack GNU Arm Embedded GCC v11.3.1-1.1 released
 
-TODO: select one summary
-
-summary: "Version **11.3.1-1.1** is a maintenance release; it updates to
-the latest upstream master."
-
 summary: "Version **11.3.1-1.1** is a new release; it follows the Arm release."
 
 arm_version: 11.3.Rel1
@@ -13,9 +8,10 @@ arm_date: August 8, 2022
 version: 11.3.1-1.1
 npm_subversion: 2
 python_version: 10
+
 download_url: https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases/tag/v11.3.1-1.1/
 
-date:   2022-08-28 07:11:14 +0300
+date: 2022-08-28 07:11:14 +0300
 
 comments: true
 

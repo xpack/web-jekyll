@@ -6,9 +6,10 @@ summary: "Version 1.10.0-1 is the first release of the **xPack Ninja Build** pac
 
 version: 1.10.0-1
 npm_subversion: 1
+
 download_url: https://github.com/xpack-dev-tools/ninja-build-xpack/releases/tag/v1.10.0-1/
 
-date:   2020-09-28 18:15:00 +0300
+date: 2020-09-28 18:15:00 +0300
 
 comments: true
 

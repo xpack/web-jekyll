@@ -13,7 +13,7 @@ download_url: https://github.com/xpack-dev-tools/cmake-xpack/releases/tag/v3.25.
 
 comments: true
 
-date:   2023-07-27 12:03:22 +0300
+date: 2023-07-27 12:03:22 +0300
 
 categories:
   - releases
@@ -121,8 +121,7 @@ The **xPack CMake** is based on the official
 The current version is based on:
 
 - CMake release
-[{{ page.upstream_version }}](https://github.com/Kitware/CMake/releases/tag/v{{ page.upstream_version }}/)
-from {{ page.upstream_release_date }}.
+[{{ page.upstream_version }}](https://github.com/Kitware/CMake/releases/tag/v{{ page.upstream_version }}/) from {{ page.upstream_release_date }}.
 
 ## Changes
 

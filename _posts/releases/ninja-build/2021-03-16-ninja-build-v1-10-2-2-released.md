@@ -6,9 +6,10 @@ summary: "Version 1.10.2-2 is a maintenance release of the **xPack Ninja Build**
 
 version: 1.10.2-2
 npm_subversion: 1
+
 download_url: https://github.com/xpack-dev-tools/ninja-build-xpack/releases/tag/v1.10.2-2/
 
-date:   2021-03-16 18:58:00 +0200
+date: 2021-03-16 18:58:00 +0200
 
 comments: true
 

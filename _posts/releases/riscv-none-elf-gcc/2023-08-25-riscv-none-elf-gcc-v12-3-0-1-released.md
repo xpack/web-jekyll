@@ -16,7 +16,7 @@ download_url: https://github.com/xpack-dev-tools/riscv-none-elf-gcc-xpack/releas
 
 comments: true
 
-date:   2023-08-25 09:53:20 +0300
+date: 2023-08-25 09:53:20 +0300
 
 categories:
   - releases
@@ -65,8 +65,7 @@ The binary files are available from GitHub [Releases]({{ page.download_url }}).
 ## Install
 
 The full details of installing the **xPack GNU RISC-V Embedded GCC**
-on various platforms are presented in the separate
-[Install]({{ site.baseurl }}/dev-tools/riscv-none-elf-gcc/install/) page.
+on various platforms are presented in the separate [Install]({{ site.baseurl }}/dev-tools/riscv-none-elf-gcc/install/) page.
 
 ### Easy install
 

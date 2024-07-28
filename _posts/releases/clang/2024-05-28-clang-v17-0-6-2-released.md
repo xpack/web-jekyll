@@ -13,7 +13,7 @@ download_url: https://github.com/xpack-dev-tools/clang-xpack/releases/tag/v17.0.
 
 comments: true
 
-date:   2024-05-28 20:40:28 +0300
+date: 2024-05-28 20:40:28 +0300
 
 # For Jekyll releases selection.
 categories:
@@ -286,7 +286,7 @@ xpack-clang-17.0.6-2-win32-x64.zip
 
 ### Linux minimum requirements
 
-The minimum requirement is GLIBC 2.27, available starting
+The minimum requirement is **GLIBC 2.27**, available starting
 with Ubuntu 18, Debian 10 and RedHat 8.
 Support for RedHat 7 was dropped in 2022.
 

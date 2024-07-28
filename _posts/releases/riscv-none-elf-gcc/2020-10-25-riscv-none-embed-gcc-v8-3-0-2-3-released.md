@@ -9,7 +9,7 @@ npm_subversion: 1
 
 download_url: https://github.com/xpack-dev-tools/riscv-none-embed-gcc-xpack/releases/tag/v8.3.0-2.3/
 
-date:   2020-10-25 08:59:00 +0200
+date: 2020-10-25 08:59:00 +0200
 
 comments: true
 
@@ -45,8 +45,7 @@ The binary files are available from GitHub [releases]({{ page.download_url }}).
 ## Install
 
 The full details of installing the **xPack GNU RISC-V Embedded GCC** on
-various platforms are presented in the separate
-[Install]({{ site.baseurl }}/riscv-none-embed-gcc/install/) page.
+various platforms are presented in the separate [Install]({{ site.baseurl }}/riscv-none-embed-gcc/install/) page.
 
 ### Easy install
 

@@ -6,9 +6,10 @@ summary: "Version 0.55.3-2 is a maintenance release of the **xPack Meson Build**
 
 version: 0.55.3-2
 npm_subversion: 1
+
 download_url: https://github.com/xpack-dev-tools/meson-build-xpack/releases/tag/v0.55.3-2/
 
-date:   2020-10-16 22:39:00 +0300
+date: 2020-10-16 22:39:00 +0300
 
 comments: true
 

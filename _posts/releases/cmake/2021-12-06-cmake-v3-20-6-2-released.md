@@ -6,9 +6,10 @@ summary: "Version **3.20.6-2** is a maintenance release; it **adds support for A
 
 version: 3.20.6-2
 npm_subversion: 1
+
 download_url: https://github.com/xpack-dev-tools/cmake-xpack/releases/tag/v3.20.6-2/
 
-date:   2021-12-06 18:19:14 +0200
+date: 2021-12-06 18:19:14 +0200
 
 comments: true
 

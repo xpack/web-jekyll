@@ -6,9 +6,10 @@ summary: "Version 8.3.1-1.3 is  a maintenance release of xPack GNU Arm Embedded 
 
 version: 8.3.1-1.3
 npm_subversion: 1
+
 download_url: https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases/v8.3.1-1.3/
 
-date:   2019-11-02 17:34:00 +0200
+date: 2019-11-02 17:34:00 +0200
 
 comments: true
 

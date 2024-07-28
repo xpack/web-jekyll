@@ -6,9 +6,10 @@ summary: "Version 0.57.2-1 is a new release of the **xPack Meson Build** package
 
 version: 0.57.2-1
 npm_subversion: 1
+
 download_url: https://github.com/xpack-dev-tools/meson-build-xpack/releases/tag/v0.57.2-1/
 
-date:   2021-05-26 18:35:00 +0300
+date: 2021-05-26 18:35:00 +0300
 
 comments: true
 

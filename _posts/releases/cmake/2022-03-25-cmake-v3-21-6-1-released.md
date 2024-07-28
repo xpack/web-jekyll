@@ -8,9 +8,10 @@ version: "3.21.6-1"
 upstream_version: "3.21.6"
 upstream_release_date: "Mar 4th, 2022"
 npm_subversion: "1"
+
 download_url: https://github.com/xpack-dev-tools/cmake-xpack/releases/tag/v3.21.6-1/
 
-date:   2022-03-25 18:30:08 +0200
+date: 2022-03-25 18:30:08 +0200
 
 comments: true
 
@@ -122,8 +123,7 @@ The current version is based on:
 TODO: update commit id and date.
 
 - CMake release
-[{{ page.upstream_version }}](https://github.com/Kitware/CMake/releases/tag/v{{ page.upstream_version }}/)
-from {{ page.upstream_release_date }}.
+[{{ page.upstream_version }}](https://github.com/Kitware/CMake/releases/tag/v{{ page.upstream_version }}/) from {{ page.upstream_release_date }}.
 
 ## Changes
 

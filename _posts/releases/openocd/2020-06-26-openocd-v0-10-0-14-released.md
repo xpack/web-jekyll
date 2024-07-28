@@ -2,15 +2,14 @@
 title:  xPack OpenOCD v0.10.0-14 released
 sidebar: openocd
 
-summary: "Version 0.10.0-14 is a maintenance release; it updates to
-the latest upstream master and adds support for running on Arm
-platforms, like Raspberry Pi."
+summary: "Version 0.10.0-14 is a maintenance release; it updates to the latest upstream master and adds support for running on Arm platforms, like Raspberry Pi."
 
 version: 0.10.0-14
 npm_subversion: 3
+
 download_url: https://github.com/xpack-dev-tools/openocd-xpack/releases/tag/v0.10.0-14/
 
-date:   2020-06-24 13:05:00 +0300
+date: 2020-06-24 13:05:00 +0300
 
 comments: true
 
@@ -66,7 +65,7 @@ xpm install --global @xpack-dev-tools/openocd@{{ page.version }}.{{ page.npm_sub
 
 ## Compliance
 
-The xPack OpenOCD generally follows the official
+The **xPack OpenOCD** generally follows the official
 [OpenOCD](https://openocd.org) releases.
 
 The current version is based on:
@@ -152,7 +151,7 @@ On Arm platforms, where Eclipse is not yet available, the binaries were
 tested on Raspberry Pi OS 10 (buster) 32/64-bit only to identify the STM32F4DISCOVERY board.
 
 ```sh
-.../xpack-openocd-0.10.0-14/bin/openocd -f board/stm32f4discovery.cfg
+~/Library/xPacks/@xpack-dev-tools/openocd/{{ page.version }}.{{ page.npm_subversion }}/.content/bin/openocd -f board/stm32f4discovery.cfg
 ```
 
 In all cases, install the archive in Downloads and configure the path

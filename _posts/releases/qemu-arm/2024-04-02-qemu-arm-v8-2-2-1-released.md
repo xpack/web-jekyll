@@ -15,7 +15,7 @@ download_url: https://github.com/xpack-dev-tools/qemu-arm-xpack/releases/tag/v8.
 
 comments: true
 
-date:   2024-04-02 15:27:46 +0300
+date: 2024-04-02 15:27:46 +0300
 
 # For Jekyll releases selection.
 categories:
@@ -583,7 +583,7 @@ xpack-qemu-arm-8.2.2-1-win32-x64.zip
 
 ### Linux minimum requirements
 
-The minimum requirement is GLIBC 2.27, available starting
+The minimum requirement is **GLIBC 2.27**, available starting
 with Ubuntu 18, Debian 10 and RedHat 8.
 Support for RedHat 7 was dropped in 2022.
 

@@ -1,10 +1,6 @@
 ---
 title:  xPack GNU Arm Embedded GCC v12.2.1-1.2 released
 
-TODO: select one summary
-
-summary: "Version **12.2.1-1.2** is a maintenance release; it fixes <...>."
-
 summary: "Version **12.2.1-1.2** is a new release; it follows the Arm release."
 
 arm_version: "12.2.Rel1"
@@ -20,7 +16,7 @@ npm_subversion: "1"
 
 download_url: https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases/tag/v12.2.1-1.2/
 
-date:   2023-02-05 05:17:34 +0200
+date: 2023-02-05 05:17:34 +0200
 
 redirect_from:
   - /blog/2023/02/04/arm-none-eabi-gcc-v12-2-1-1-1-released/

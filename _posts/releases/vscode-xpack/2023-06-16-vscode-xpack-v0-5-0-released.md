@@ -6,7 +6,7 @@ summary: "Version **0.5.0** is a new release of **ilg-vscode.xpack**; it adds su
 
 version: 0.5.0
 
-date:   2023-06-16 17:48:00 +0300
+date: 2023-06-16 17:48:00 +0300
 
 comments: true
 

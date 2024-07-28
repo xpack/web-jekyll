@@ -8,9 +8,10 @@ arm_version: 10.3-2021.10
 arm_date: October 21, 2021
 version: 10.3.1-2.2
 npm_subversion: 1
+
 download_url: https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases/tag/v10.3.1-2.2/
 
-date:   2021-11-12 20:05:36 +0200
+date: 2021-11-12 20:05:36 +0200
 
 comments: true
 

@@ -7,9 +7,10 @@ version: "3.22.6-1"
 upstream_version: "3.22.6"
 upstream_release_date: "28 Jul 2022"
 npm_subversion: "1"
+
 download_url: https://github.com/xpack-dev-tools/cmake-xpack/releases/tag/v3.22.6-1/
 
-date:   2022-09-01 11:44:13 +0300
+date: 2022-09-01 11:44:13 +0300
 
 comments: true
 
@@ -119,8 +120,7 @@ The **xPack CMake** is based on the official
 The current version is based on:
 
 - CMake release
-[{{ page.upstream_version }}](https://github.com/Kitware/CMake/releases/tag/v{{ page.upstream_version }}/)
-from {{ page.upstream_release_date }}.
+[{{ page.upstream_version }}](https://github.com/Kitware/CMake/releases/tag/v{{ page.upstream_version }}/) from {{ page.upstream_release_date }}.
 
 ## Changes
 

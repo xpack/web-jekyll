@@ -7,9 +7,10 @@ pkg_config_version: 0.29.2
 pkg_config_date: 2017-03-20
 version: "0.29.2-2"
 npm_subversion: 1
+
 download_url: https://github.com/xpack-dev-tools/pkg-config-xpack/releases/tag/v0.29.2-2/
 
-date:   2023-01-29 12:11:22 +0200
+date: 2023-01-29 12:11:22 +0200
 
 # For Jekyll releases selection.
 comments: true

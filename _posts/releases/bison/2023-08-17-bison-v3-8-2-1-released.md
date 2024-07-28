@@ -13,7 +13,7 @@ download_url: https://github.com/xpack-dev-tools/bison-xpack/releases/tag/v3.8.2
 
 comments: true
 
-date:   2023-08-17 21:50:50 +0300
+date: 2023-08-17 21:50:50 +0300
 
 # For Jekyll releases selection.
 categories:

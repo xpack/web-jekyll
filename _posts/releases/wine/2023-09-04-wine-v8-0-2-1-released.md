@@ -14,7 +14,7 @@ download_url: https://github.com/xpack-dev-tools/wine-xpack/releases/tag/v8.0.2-
 
 comments: true
 
-date:   2023-09-04 14:46:05 +0300
+date: 2023-09-04 14:46:05 +0300
 
 categories:
   - releases
@@ -108,8 +108,7 @@ The **xPack WineHQ** is based on the official
 The current version is based on:
 
 - WineHQ release
-[{{ page.upstream_version }}](https://dl.winehq.org/wine/source/{{ page.upstream_version_major }}.x/)
-from {{ page.upstream_release_date }}.
+[{{ page.upstream_version }}](https://dl.winehq.org/wine/source/{{ page.upstream_version_major }}.x/) from {{ page.upstream_release_date }}.
 
 ## Changes
 

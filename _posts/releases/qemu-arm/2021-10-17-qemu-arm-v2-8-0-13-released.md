@@ -6,9 +6,10 @@ summary: "Version **2.8.0-13** is a maintenance release; it fixes a bug and upda
 
 version: 2.8.0-13
 npm_subversion: 1
+
 download_url: https://github.com/xpack-dev-tools/qemu-arm-xpack/releases/tag/v2.8.0-13/
 
-date:   2021-10-17 18:19:18 +0300
+date: 2021-10-17 18:19:18 +0300
 
 comments: true
 
@@ -248,8 +249,8 @@ set of platforms. The results are available from:
 
 ## Tests
 
-The binaries were testes on Windows 10 Pro 32/64-bit, Intel Ubuntu 18
-LTS 64-bit, Intel Xubuntu 18 LTS 32-bit and macOS 10.15.
+The binaries were testes on Windows 11 Pro, Intel Ubuntu 22
+LTS and macOS 14.5.
 
 The tests consist in running a simple blinky application
 on the graphically emulated STM32F4DISCOVERY board. The binaries were

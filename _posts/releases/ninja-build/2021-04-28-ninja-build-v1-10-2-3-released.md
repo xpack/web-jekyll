@@ -6,9 +6,10 @@ summary: "Version 1.10.2-3 is a maintenance release of the **xPack Ninja Build**
 
 version: 1.10.2-3
 npm_subversion: 1
+
 download_url: https://github.com/xpack-dev-tools/ninja-build-xpack/releases/tag/v1.10.2-3/
 
-date:   2021-04-28 22:58:00 +0300
+date: 2021-04-28 22:58:00 +0300
 
 comments: true
 

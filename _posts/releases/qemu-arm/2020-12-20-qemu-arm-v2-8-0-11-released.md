@@ -6,9 +6,10 @@ summary: "Version 2.8.0-11 is a maintenance release; it add support for STM32F40
 
 version: 2.8.0-11
 npm_subversion: 1
+
 download_url: https://github.com/xpack-dev-tools/qemu-arm-xpack/releases/tag/v2.8.0-11/
 
-date:   2020-12-20 17:48:00 +0200
+date: 2020-12-20 17:48:00 +0200
 
 comments: true
 

@@ -7,9 +7,10 @@ coreutils_version: 9.1
 coreutils_date: 2022-04-15
 version: "9.1.0-1"
 npm_subversion: 1
+
 download_url: https://github.com/xpack-dev-tools/realpath-xpack/releases/tag/v9.1.0-1/
 
-date:   2022-10-21 19:58:24 +0300
+date: 2022-10-21 19:58:24 +0300
 
 # For Jekyll releases selection.
 comments: true

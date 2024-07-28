@@ -6,7 +6,7 @@ summary: "Version **0.4.17** is a maintenance release of **ilg-vscode.xpack**; i
 
 version: 0.4.17
 
-date:   2022-04-17 16:56:00 +0300
+date: 2022-04-17 16:56:00 +0300
 
 comments: true
 

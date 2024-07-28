@@ -9,9 +9,10 @@ arm_date: February 15, 2022
 version: 11.2.1-1.2
 npm_subversion: 2
 python_version: 10
+
 download_url: https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases/tag/v11.2.1-1.2/
 
-date:   2022-05-30 16:28:15 +0300
+date: 2022-05-30 16:28:15 +0300
 
 redirect_from:
   - /blog/2022/05/29/arm-none-eabi-gcc-v11-2-1-1-2-released/

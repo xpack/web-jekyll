@@ -6,9 +6,10 @@ summary: "Version 3.19.8-1 is a new release of the **xPack CMake** package, foll
 
 version: 3.19.8-1
 npm_subversion: 1
+
 download_url: https://github.com/xpack-dev-tools/cmake-xpack/releases/tag/v3.19.8-1/
 
-date:   2021-05-19 15:28:00 +0300
+date: 2021-05-19 15:28:00 +0300
 
 comments: true
 

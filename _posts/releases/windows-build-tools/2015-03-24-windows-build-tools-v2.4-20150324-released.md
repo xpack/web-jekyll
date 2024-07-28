@@ -4,7 +4,7 @@ sidebar: windows-build-tools
 
 download_url: https://github.com/gnu-mcu-eclipse/windows-build-tools/releases/tag/v2.4b
 
-date:   2015-03-24 12:00:00 +0200
+date: 2015-03-24 12:00:00 +0200
 
 comments: true
 

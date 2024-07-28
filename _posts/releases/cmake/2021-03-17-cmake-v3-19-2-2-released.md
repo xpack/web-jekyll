@@ -6,9 +6,10 @@ summary: "Version 3.19.2-2 is a maintenance release of the **xPack CMake** packa
 
 version: 3.19.2-2
 npm_subversion: 1
+
 download_url: https://github.com/xpack-dev-tools/cmake-xpack/releases/tag/v3.19.2-2/
 
-date:   2021-03-16 23:30:00 +0200
+date: 2021-03-16 23:30:00 +0200
 
 comments: true
 

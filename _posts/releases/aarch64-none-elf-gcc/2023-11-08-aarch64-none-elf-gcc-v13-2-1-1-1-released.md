@@ -18,7 +18,7 @@ download_url: https://github.com/xpack-dev-tools/aarch64-none-elf-gcc-xpack/rele
 
 comments: true
 
-date:   2023-11-08 18:37:06 +0200
+date: 2023-11-08 18:37:06 +0200
 
 # For Jekyll releases selection.
 categories:

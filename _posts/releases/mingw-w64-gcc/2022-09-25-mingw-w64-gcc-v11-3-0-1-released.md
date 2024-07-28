@@ -1,11 +1,6 @@
 ---
 title:  xPack MinGW-w64 GCC v11.3.0-1 released
 
-TODO: select one summary
-
-summary: "Version **11.3.0-1** is a maintenance release; it updates to
-the latest upstream master."
-
 summary: "Version **11.3.0-1** is the first release."
 
 version: "11.3.0-1"
@@ -20,7 +15,7 @@ mingw_release: "9.0.0"
 
 download_url: https://github.com/xpack-dev-tools/mingw-w64-gcc-xpack/releases/tag/v11.3.0-1/
 
-date:   2022-09-25 21:31:38 +0300
+date: 2022-09-25 21:31:38 +0300
 
 comments: true
 
@@ -133,8 +128,7 @@ The current version is based on:
 
 - GCC version [{{ page.gcc_version }}](https://gcc.gnu.org/gcc-{{ page.gcc_version_major }}/) from {{ page.gcc_release_date }};
 - binutils version
-[{{ page.binutils_version }}]({{ page.binutils_release_url }})
-from {{ page.binutils_date }}
+[{{ page.binutils_version }}]({{ page.binutils_release_url }}) from {{ page.binutils_date }}
 - MinGW-w64 version [{{ page.mingw_release }}](https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/)
 
 ## Supported languages

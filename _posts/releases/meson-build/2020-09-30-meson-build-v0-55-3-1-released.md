@@ -6,9 +6,10 @@ summary: "Version 0.55.3-1 is the first release of the **xPack Meson Build** pac
 
 version: 0.55.3-1
 npm_subversion: 1
+
 download_url: https://github.com/xpack-dev-tools/meson-build-xpack/releases/tag/v0.55.3-1/
 
-date:   2020-09-30 11:55:00 +0300
+date: 2020-09-30 11:55:00 +0300
 
 comments: true
 

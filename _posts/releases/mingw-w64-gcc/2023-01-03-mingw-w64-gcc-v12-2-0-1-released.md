@@ -15,7 +15,7 @@ mingw_release: "10.0.0"
 
 download_url: https://github.com/xpack-dev-tools/mingw-w64-gcc-xpack/releases/tag/v12.2.0-1/
 
-date:   2023-01-03 12:45:35 +0200
+date: 2023-01-03 12:45:35 +0200
 
 comments: true
 
@@ -128,8 +128,7 @@ The current version is based on:
 
 - GCC version [{{ page.gcc_version }}](https://gcc.gnu.org/gcc-{{ page.gcc_version_major }}/) from {{ page.gcc_release_date }};
 - binutils version
-[{{ page.binutils_version }}]({{ page.binutils_release_url }})
-from {{ page.binutils_date }}
+[{{ page.binutils_version }}]({{ page.binutils_release_url }}) from {{ page.binutils_date }}
 - MinGW-w64 version [{{ page.mingw_release }}](https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/)
 
 ## Supported languages

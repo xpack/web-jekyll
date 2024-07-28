@@ -6,9 +6,10 @@ summary: "Version **7.0.0-1** is a new release; it follows the upstream QEMU rel
 
 version: 7.0.0-1
 npm_subversion: 1
+
 download_url: https://github.com/xpack-dev-tools/qemu-arm-xpack/releases/tag/v7.0.0-1/
 
-date:   2022-05-05 01:26:07 +0300
+date: 2022-05-05 01:26:07 +0300
 
 redirect_from:
   - /blog/2022/05/05/qemu-arm-v7-0-0-1-released/

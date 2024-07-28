@@ -12,7 +12,7 @@ qemu_date: "Dec 13, 2022"
 
 download_url: https://github.com/xpack-dev-tools/qemu-arm-xpack/releases/tag/v7.2.0-1/
 
-date:   2023-01-31 17:26:12 +0200
+date: 2023-01-31 17:26:12 +0200
 
 comments: true
 

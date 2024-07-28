@@ -1,17 +1,16 @@
 ---
 title:  xPack Ninja Build v1.11.1-2 released
 
-TODO: select one summary
-
 summary: "Version **1.11.1-2** is a maintenance release, built with the latest build scripts."
 
 ninja_version: 1.11.1
 ninja_date: 30 Aug 2022
 version: "1.11.1-2"
 npm_subversion: 1
+
 download_url: https://github.com/xpack-dev-tools/ninja-build-xpack/releases/tag/v1.11.1-2/
 
-date:   2023-01-24 00:51:02 +0200
+date: 2023-01-24 00:51:02 +0200
 
 comments: true
 

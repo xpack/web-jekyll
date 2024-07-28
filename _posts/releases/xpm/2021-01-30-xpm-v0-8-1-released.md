@@ -9,7 +9,7 @@ version: 0.8.1
 redirect_from:
   - /blog/2021/01/27/xpm-v0-8-0-released/
 
-date:   2021-01-30 21:49:00 +0200
+date: 2021-01-30 21:49:00 +0200
 
 comments: true
 

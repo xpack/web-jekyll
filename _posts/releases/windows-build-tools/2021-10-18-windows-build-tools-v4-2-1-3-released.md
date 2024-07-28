@@ -6,9 +6,10 @@ summary: "DO NOT USE! Version **4.2.1-3** is a maintenance release; it updates t
 
 version: 4.2.1-3
 npm_subversion: 1
+
 download_url: https://github.com/xpack-dev-tools/windows-build-tools-xpack/releases/tag/v4.2.1-3/
 
-date:   2021-10-18 16:48:31 +0300
+date: 2021-10-18 16:48:31 +0300
 
 comments: true
 

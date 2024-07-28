@@ -6,7 +6,7 @@ summary: "Version **0.4.12** is a new development release of **ilg-vscode.xpack*
 
 version: 0.4.12
 
-date:   2021-05-05 19:47:00 +0300
+date: 2021-05-05 19:47:00 +0300
 
 redirect_from:
   - /blog/2021/05/05/vscode-xpack-v0-4-11-released/

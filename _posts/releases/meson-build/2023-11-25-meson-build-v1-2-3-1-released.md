@@ -15,7 +15,7 @@ download_url: https://github.com/xpack-dev-tools/meson-build-xpack/releases/tag/
 
 comments: true
 
-date:   2023-11-26 00:30:52 +0200
+date: 2023-11-26 00:30:52 +0200
 
 # For Jekyll releases selection.
 categories:
@@ -128,8 +128,7 @@ The xPack Meson Build generally follows the official
 The current version is based on:
 
 - Meson Build release
-[{{ page.upstream_version }}](https://github.com/mesonbuild/meson/releases/tag/{{ page.upstream_version }})
-from {{ page.upstream_release_date }}.
+[{{ page.upstream_version }}](https://github.com/mesonbuild/meson/releases/tag/{{ page.upstream_version }}) from {{ page.upstream_release_date }}.
 
 ## Changes
 

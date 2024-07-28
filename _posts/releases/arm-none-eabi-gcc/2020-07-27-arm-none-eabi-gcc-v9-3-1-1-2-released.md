@@ -2,18 +2,16 @@
 title:  xPack GNU Arm Embedded GCC v9.3.1-1.2 released
 sidebar: arm-none-eabi-gcc
 
-summary: "Version 9.3.1-1.2 is a maintenance release of **xPack GNU Arm
-Embedded GCC**, intended to **fix C++ exceptions** support for non-nano
-libraries, and to use **DT_RPATH** to make the binaries immune to custom
-LD_LIBRARY_PATH."
+summary: "Version 9.3.1-1.2 is a maintenance release of **xPack GNU Arm Embedded GCC**, intended to **fix C++ exceptions** support for non-nano libraries, and to use **DT_RPATH** to make the binaries immune to custom LD_LIBRARY_PATH."
 
 arm_version: 9-2020-q2-update
 arm_date: June 01, 2020
 version: 9.3.1-1.2
 npm_subversion: 1
+
 download_url: https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases/v9.3.1-1.2/
 
-date:   2020-07-27 11:23:00 +0300
+date: 2020-07-27 11:23:00 +0300
 
 comments: true
 

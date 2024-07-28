@@ -1,8 +1,6 @@
 ---
 title:  xPack Windows Build Tools v4.4.1-2 released
 
-TODO: select one summary
-
 summary: "Version **4.4.1-2** is a maintenance release of the **xPack Windows Build Tools** package; it disables the BusyBox **make** applet which interferes with the **GNU make**."
 
 version: "4.4.1-2"
@@ -17,7 +15,7 @@ download_url: https://github.com/xpack-dev-tools/windows-build-tools-xpack/relea
 
 comments: true
 
-date:   2023-11-14 10:54:01 +0200
+date: 2023-11-14 10:54:01 +0200
 
 # For Jekyll releases selection.
 categories:

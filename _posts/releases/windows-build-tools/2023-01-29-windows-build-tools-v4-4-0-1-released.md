@@ -5,9 +5,10 @@ summary: "DEPRECATED: Version **4.4.0-1** is a new release of the **xPack Window
 
 version: "4.4.0-1"
 npm_subversion: 1
+
 download_url: https://github.com/xpack-dev-tools/windows-build-tools-xpack/releases/tag/v4.4.0-1/
 
-date:   2023-01-29 18:39:37 +0200
+date: 2023-01-29 18:39:37 +0200
 
 comments: true
 

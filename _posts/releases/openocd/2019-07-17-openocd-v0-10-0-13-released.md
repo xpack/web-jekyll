@@ -2,14 +2,14 @@
 title:  xPack OpenOCD v0.10.0-13 released
 sidebar: openocd
 
-summary: "Version 0.10.0-13 is a maintenance release; it updates to
-the latest upstream master."
+summary: "Version 0.10.0-13 is a maintenance release; it updates to the latest upstream master."
 
 version: 0.10.0-13
 npm_subversion: 1
+
 download_url: https://github.com/xpack-dev-tools/openocd-xpack/releases/tag/v0.10.0-13/
 
-date:   2019-07-17 19:57:00 +0300
+date: 2019-07-17 19:57:00 +0300
 
 comments: true
 
@@ -55,7 +55,7 @@ xpm install --global @xpack-dev-tools/openocd@{{ page.version }}.{{ page.npm_sub
 
 ## Compliance
 
-The xPack OpenOCD generally follows the official
+The **xPack OpenOCD** generally follows the official
 [OpenOCD](https://openocd.org) releases.
 
 The current version is based on:

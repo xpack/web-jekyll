@@ -5,7 +5,7 @@ summary: "Version **4.0** is a new release; it is intended to replace the functi
 
 download_url: https://github.com/xpack-dev-tools/xbb-bootstrap-xpack/releases/tag/v4.0/
 
-date:   2022-10-03 21:05:43 +0300
+date: 2022-10-03 21:05:43 +0300
 
 comments: true
 

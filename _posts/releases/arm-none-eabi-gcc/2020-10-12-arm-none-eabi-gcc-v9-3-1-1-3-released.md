@@ -8,9 +8,10 @@ arm_version: 9-2020-q2-update
 arm_date: June 01, 2020
 version: 9.3.1-1.3
 npm_subversion: 1
+
 download_url: https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases/v9.3.1-1.3/
 
-date:   2020-10-12 09:52:00 +0300
+date: 2020-10-12 09:52:00 +0300
 
 comments: true
 

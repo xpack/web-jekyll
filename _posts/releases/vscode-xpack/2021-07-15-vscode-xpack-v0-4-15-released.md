@@ -6,7 +6,7 @@ summary: "Version **0.4.15** is a maintenance release of **ilg-vscode.xpack**; i
 
 version: 0.4.15
 
-date:   2021-07-15 10:57:00 +0300
+date: 2021-07-15 10:57:00 +0300
 
 comments: true
 

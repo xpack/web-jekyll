@@ -6,9 +6,10 @@ summary: "Version **7.0.0-1** is a new release."
 
 version: 7.0.0-1
 npm_subversion: 1
+
 download_url: https://github.com/xpack-dev-tools/qemu-riscv-xpack/releases/tag/v7.0.0-1/
 
-date:   2022-05-04 21:15:37 +0300
+date: 2022-05-04 21:15:37 +0300
 
 comments: true
 

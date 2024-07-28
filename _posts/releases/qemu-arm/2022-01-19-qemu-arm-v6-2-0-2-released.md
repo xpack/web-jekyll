@@ -6,9 +6,10 @@ summary: "Version **6.2.0-2** is a maintenance release; it fixes graphical issue
 
 version: 6.2.0-2
 npm_subversion: 1
+
 download_url: https://github.com/xpack-dev-tools/qemu-arm-xpack/releases/tag/v6.2.0-2/
 
-date:   2022-01-19 10:37:33 +0200
+date: 2022-01-19 10:37:33 +0200
 
 comments: true
 

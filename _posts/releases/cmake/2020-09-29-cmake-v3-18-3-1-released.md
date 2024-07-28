@@ -6,9 +6,10 @@ summary: "Version 3.18.3-1 is the first release of the **xPack CMake** package."
 
 version: 3.18.3-1
 npm_subversion: 1
+
 download_url: https://github.com/xpack-dev-tools/cmake-xpack/releases/tag/v3.18.3-1/
 
-date:   2020-09-29 14:20:00 +0300
+date: 2020-09-29 14:20:00 +0300
 
 comments: true
 

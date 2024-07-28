@@ -1,17 +1,16 @@
 ---
 title:  xPack GNU realpath v9.1.0-2 released
 
-TODO: select one summary
-
 summary: "Version **9.1.0-2** is a maintenance release, built with the latest build scripts."
 
 coreutils_version: 9.1
 coreutils_date: 2022-04-15
 version: "9.1.0-2"
 npm_subversion: 1
+
 download_url: https://github.com/xpack-dev-tools/realpath-xpack/releases/tag/v9.1.0-2/
 
-date:   2023-01-29 11:21:47 +0200
+date: 2023-01-29 11:21:47 +0200
 
 # For Jekyll releases selection.
 comments: true

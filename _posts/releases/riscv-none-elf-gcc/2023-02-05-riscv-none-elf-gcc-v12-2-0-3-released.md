@@ -14,7 +14,7 @@ npm_subversion: "1"
 
 download_url: https://github.com/xpack-dev-tools/riscv-none-elf-gcc-xpack/releases/tag/v12.2.0-3/
 
-date:   2023-02-05 23:47:30 +0200
+date: 2023-02-05 23:47:30 +0200
 
 redirect_from:
   - /blog/2023/02/02/riscv-none-elf-gcc-v12-2-0-2-released/
@@ -68,8 +68,7 @@ The binary files are available from GitHub [Releases]({{ page.download_url }}).
 ## Install
 
 The full details of installing the **xPack GNU RISC-V Embedded GCC**
-on various platforms are presented in the separate
-[Install]({{ site.baseurl }}/dev-tools/riscv-none-elf-gcc/install/) page.
+on various platforms are presented in the separate [Install]({{ site.baseurl }}/dev-tools/riscv-none-elf-gcc/install/) page.
 
 ### Easy install
 

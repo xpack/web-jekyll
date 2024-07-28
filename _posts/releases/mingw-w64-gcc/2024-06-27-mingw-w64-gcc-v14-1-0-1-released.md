@@ -5,7 +5,7 @@ summary: "Version **14.1.0-1** is a new release; it follows the official GNU GCC
 
 gcc_version: "14.1.0"
 gcc_version_major: "14"
-gcc_release_date: "20 Jun 2024"
+gcc_release_date: "6 May 2024"
 binutils_version: "2.42"
 binutils_release_url: "https://lists.gnu.org/archive/html/info-gnu/2024-01/msg00016.html"
 binutils_date: "29 Jan 2024"
@@ -18,7 +18,7 @@ download_url: https://github.com/xpack-dev-tools/mingw-w64-gcc-xpack/releases/ta
 
 comments: true
 
-date:   2024-06-27 19:04:08 +0300
+date: 2024-06-27 19:04:08 +0300
 
 # For Jekyll releases selection.
 categories:
@@ -131,8 +131,7 @@ The current version is based on:
 
 - GCC version [{{ page.gcc_version }}](https://gcc.gnu.org/gcc-{{ page.gcc_version_major }}/) from {{ page.gcc_release_date }};
 - binutils version
-[{{ page.binutils_version }}]({{ page.binutils_release_url }})
-from {{ page.binutils_date }}
+[{{ page.binutils_version }}]({{ page.binutils_release_url }}) from {{ page.binutils_date }}
 - MinGW-w64 version [{{ page.mingw_release }}](https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/)
 
 ## Supported languages
@@ -266,7 +265,7 @@ xpack-mingw-w64-gcc-14.1.0-1-win32-x64.zip
 
 ### Linux minimum requirements
 
-The minimum requirement is GLIBC 2.27, available starting
+The minimum requirement is **GLIBC 2.27**, available starting
 with Ubuntu 18, Debian 10 and RedHat 8.
 Support for RedHat 7 was dropped in 2022.
 

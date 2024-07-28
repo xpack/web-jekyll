@@ -6,9 +6,10 @@ summary: "Version **3.20.6-1** is a new release; it follows the upstream release
 
 version: 3.20.6-1
 npm_subversion: 1
+
 download_url: https://github.com/xpack-dev-tools/cmake-xpack/releases/tag/v3.20.6-1/
 
-date:   2021-10-19 00:45:04 +0300
+date: 2021-10-19 00:45:04 +0300
 
 redirect_from:
   - /blog/2021/10/19/cmake-v3-20-6-1-released/

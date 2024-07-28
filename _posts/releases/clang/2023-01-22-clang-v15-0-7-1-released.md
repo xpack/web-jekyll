@@ -7,9 +7,10 @@ version: "15.0.7-1"
 clang_version: "15.0.7"
 clang_date: "12 Jan 2023"
 npm_subversion: 1
+
 download_url: https://github.com/xpack-dev-tools/clang-xpack/releases/tag/v15.0.7-1/
 
-date:   2023-01-22 18:41:30 +0200
+date: 2023-01-22 18:41:30 +0200
 
 comments: true
 

@@ -15,7 +15,7 @@ download_url: https://github.com/xpack-dev-tools/meson-build-xpack/releases/tag/
 
 comments: true
 
-date:   2024-04-01 11:57:25 +0300
+date: 2024-04-01 11:57:25 +0300
 
 # For Jekyll releases selection.
 categories:
@@ -128,8 +128,7 @@ The xPack Meson Build generally follows the official
 The current version is based on:
 
 - Meson Build release
-[{{ page.upstream_version }}](https://github.com/mesonbuild/meson/releases/tag/{{ page.upstream_version }})
-from {{ page.upstream_release_date }}.
+[{{ page.upstream_version }}](https://github.com/mesonbuild/meson/releases/tag/{{ page.upstream_version }}) from {{ page.upstream_release_date }}.
 
 ## Changes
 
@@ -257,7 +256,7 @@ xpack-meson-build-1.3.2-1-win32-x64.zip
 
 ### Linux minimum requirements
 
-The minimum requirement is GLIBC 2.27, available starting
+The minimum requirement is **GLIBC 2.27**, available starting
 with Ubuntu 18, Debian 10 and RedHat 8.
 Support for RedHat 7 was dropped in 2022.
 

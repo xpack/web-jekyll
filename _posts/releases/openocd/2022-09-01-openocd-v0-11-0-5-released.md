@@ -1,19 +1,17 @@
 ---
 title:  xPack OpenOCD v0.11.0-5 released
 
-TODO: select one summary
-
-summary: "Version **0.11.0-5** is a maintenance release; it updates to
-the latest upstream master."
+summary: "Version **0.11.0-5** is a maintenance release; it updates to the latest upstream master."
 
 version: "0.11.0-5"
 npm_subversion: "1"
 upstream_version: "0.11.0"
 upstream_commit: "6db57051d070fc8d6bb54d21413e5e8610972651"
 upstream_release_date: "21 Aug 2022"
+
 download_url: https://github.com/xpack-dev-tools/openocd-xpack/releases/tag/v0.11.0-5/
 
-date:   2022-09-01 21:29:34 +0300
+date: 2022-09-01 21:29:34 +0300
 
 comments: true
 
@@ -119,14 +117,12 @@ xpm uninstall --global @xpack-dev-tools/openocd
 
 ## Compliance
 
-The xPack OpenOCD generally follows the official
+The **xPack OpenOCD** generally follows the official
 [OpenOCD](https://openocd.org) releases.
 
 The current version is based on:
 
-- OpenOCD version {{ page.upstream_version }}, the development commit
-[{{ page.upstream_commit }}](https://github.com/xpack-dev-tools/openocd/commit/{{ page.upstream_commit }}/)
-from {{ page.upstream_release_date }}.
+- OpenOCD version {{ page.upstream_version }}, the development commit [{{ page.upstream_commit }}](https://github.com/openocd-org/openocd/commit/{{ page.upstream_commit }}/) from {{ page.upstream_release_date }}.
 
 ## Changes
 
@@ -212,8 +208,8 @@ set of platforms. The results are available from:
 
 ## Tests
 
-The binaries were testes on Windows 10 Pro 32/64-bit, Intel Ubuntu 18
-LTS 64-bit, Intel Xubuntu 18 LTS 32-bit and macOS 10.15.
+The binaries were testes on Windows 11 Pro, Intel Ubuntu 22
+LTS and macOS 14.5.
 
 Install the package with xpm.
 
@@ -221,7 +217,7 @@ The simple test, consists in starting the binaries
 only to identify the STM32F4DISCOVERY board.
 
 ```sh
-.../xpack-openocd-0.11.0-5/bin/openocd -f board/stm32f4discovery.cfg
+~/Library/xPacks/@xpack-dev-tools/openocd/{{ page.version }}.{{ page.npm_subversion }}/.content/bin/openocd -f board/stm32f4discovery.cfg
 ```
 
 A more complex test consist in programming and debugging a simple blinky

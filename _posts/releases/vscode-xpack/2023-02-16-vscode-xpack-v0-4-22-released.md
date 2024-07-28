@@ -6,7 +6,7 @@ summary: "Version **0.4.22** is a new maintenance of **ilg-vscode.xpack**; it ad
 
 version: 0.4.22
 
-date:   2023-02-16 08:33:00 +0300
+date: 2023-02-16 08:33:00 +0300
 
 comments: true
 

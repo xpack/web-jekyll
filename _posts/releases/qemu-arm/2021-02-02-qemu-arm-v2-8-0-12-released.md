@@ -6,9 +6,10 @@ summary: "Version 2.8.0-12 is a maintenance release; it fixes the macOS startup 
 
 version: 2.8.0-12
 npm_subversion: 1
+
 download_url: https://github.com/xpack-dev-tools/qemu-arm-xpack/releases/tag/v2.8.0-12/
 
-date:   2021-02-02 11:30:00 +0200
+date: 2021-02-02 11:30:00 +0200
 
 comments: true
 

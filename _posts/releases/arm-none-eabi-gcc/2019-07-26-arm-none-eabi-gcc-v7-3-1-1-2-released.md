@@ -6,9 +6,10 @@ summary: "Version 7.3.1-1.2 is a repack of the GNU MCU Eclipse Arm Embedded GCC 
 
 version: 7.3.1-1.2
 npm_subversion: 2
+
 download_url: https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases/v7.3.1-1.2/
 
-date:   2019-07-26 12:09:00 +0300
+date: 2019-07-26 12:09:00 +0300
 
 comments: true
 

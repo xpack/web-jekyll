@@ -6,9 +6,10 @@ summary: "Version 1.10.2-1 is a new release of the **xPack Ninja Build** package
 
 version: 1.10.2-1
 npm_subversion: 1
+
 download_url: https://github.com/xpack-dev-tools/ninja-build-xpack/releases/tag/v1.10.2-1/
 
-date:   2020-12-19 12:14:00 +0200
+date: 2020-12-19 12:14:00 +0200
 
 comments: true
 

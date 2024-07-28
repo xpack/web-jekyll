@@ -6,9 +6,10 @@ summary: "Version **13.0.1-1** is a new release; it follows the upstream release
 
 version: 13.0.1-1
 npm_subversion: 1
+
 download_url: https://github.com/xpack-dev-tools/clang-xpack/releases/tag/v13.0.1-1/
 
-date:   2022-03-24 15:09:26 +0200
+date: 2022-03-24 15:09:26 +0200
 
 comments: true
 

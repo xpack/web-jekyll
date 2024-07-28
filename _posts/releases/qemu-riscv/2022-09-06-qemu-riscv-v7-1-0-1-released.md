@@ -1,8 +1,6 @@
 ---
 title:  xPack QEMU RISC-V v7.1.0-1 released
 
-TODO: select one summary
-summary: "Version **7.1.0-1** is a maintenance release; it fixes several bugs."
 summary: "Version **7.1.0-1** is a new release; it follows the upstream QEMU release."
 
 version: "7.1.0-1"
@@ -14,7 +12,7 @@ qemu_date: "30 August 2022"
 
 download_url: https://github.com/xpack-dev-tools/qemu-riscv-xpack/releases/tag/v7.1.0-1/
 
-date:   2022-09-06 19:01:32 +0300
+date: 2022-09-06 19:01:32 +0300
 
 comments: true
 

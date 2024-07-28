@@ -10,9 +10,10 @@ upstream_release_date: "Oct 28th, 2021"
 npm_subversion: 1
 python_version: 3.9
 python_subversion: 7
+
 download_url: https://github.com/xpack-dev-tools/meson-build-xpack/releases/tag/v0.59.4-1/
 
-date:   2021-12-06 21:45:29 +0200
+date: 2021-12-06 21:45:29 +0200
 
 comments: true
 
@@ -125,8 +126,7 @@ The xPack Meson Build generally follows the official
 The current version is based on:
 
 - Meson Build release
-[{{ page.upstream_version }}](https://github.com/mesonbuild/meson/releases/tag/{{ page.upstream_version }})
-from {{ page.upstream_release_date }}.
+[{{ page.upstream_version }}](https://github.com/mesonbuild/meson/releases/tag/{{ page.upstream_version }}) from {{ page.upstream_release_date }}.
 
 ## Changes
 

@@ -7,9 +7,10 @@ ninja_version: 1.11.1
 ninja_date: 30 Aug 2022
 version: "1.11.1-1"
 npm_subversion: 1
+
 download_url: https://github.com/xpack-dev-tools/ninja-build-xpack/releases/tag/v1.11.1-1/
 
-date:   2022-08-31 17:05:18 +0300
+date: 2022-08-31 17:05:18 +0300
 
 comments: true
 

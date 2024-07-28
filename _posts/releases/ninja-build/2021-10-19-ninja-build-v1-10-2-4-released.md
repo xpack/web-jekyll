@@ -6,9 +6,10 @@ summary: "Version **1.10.2-4** is a maintenance release; it is a rebuild with th
 
 version: 1.10.2-4
 npm_subversion: 1
+
 download_url: https://github.com/xpack-dev-tools/ninja-build-xpack/releases/tag/v1.10.2-4/
 
-date:   2021-10-19 14:44:57 +0300
+date: 2021-10-19 14:44:57 +0300
 
 comments: true
 

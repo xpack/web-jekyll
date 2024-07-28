@@ -9,9 +9,10 @@ arm_date: February 15, 2022
 version: 11.2.1-1.2
 npm_subversion: 1
 python_version: 10
+
 download_url: https://github.com/xpack-dev-tools/aarch64-none-elf-gcc-xpack/releases/tag/v11.2.1-1.2/
 
-date:   2022-05-31 07:22:58 +0300
+date: 2022-05-31 07:22:58 +0300
 
 comments: true
 

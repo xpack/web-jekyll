@@ -13,7 +13,7 @@ download_url: https://github.com/xpack-dev-tools/clang-xpack/releases/tag/v16.0.
 
 comments: true
 
-date:   2023-08-06 09:25:40 +0300
+date: 2023-08-06 09:25:40 +0300
 
 categories:
   - releases

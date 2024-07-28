@@ -6,9 +6,10 @@ summary: "Version 4.2.1-1 is maintenance release; it updates to the latest BusyB
 
 version: 4.2.1-1
 npm_subversion: 1
+
 download_url: https://github.com/xpack-dev-tools/windows-build-tools-xpack/releases/tag/v4.2.1-1/
 
-date:   2020-12-27 20:42:00 +0300
+date: 2020-12-27 20:42:00 +0300
 
 comments: true
 

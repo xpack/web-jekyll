@@ -4,7 +4,7 @@ sidebar: arm-none-eabi-gcc
 
 download_url: https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc/releases/tag/v8.2.1-1.1/
 
-date:   2019-01-03 20:39:00 +0300
+date: 2019-01-03 20:39:00 +0300
 
 comments: true
 

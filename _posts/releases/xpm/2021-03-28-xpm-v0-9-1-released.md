@@ -6,7 +6,7 @@ summary: "Version **0.9.1** is a new release of **xpm**; it adds support for con
 
 version: 0.9.1
 
-date:   2021-03-28 23:15:00 +0300
+date: 2021-03-28 23:15:00 +0300
 
 comments: true
 

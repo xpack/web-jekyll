@@ -7,9 +7,10 @@ version: "3.23.5-1"
 upstream_version: "3.23.5"
 upstream_release_date: "1 Nov 2022"
 npm_subversion: "1"
+
 download_url: https://github.com/xpack-dev-tools/cmake-xpack/releases/tag/v3.23.5-1/
 
-date:   2023-01-24 13:30:43 +0200
+date: 2023-01-24 13:30:43 +0200
 
 comments: true
 
@@ -119,8 +120,7 @@ The **xPack CMake** is based on the official
 The current version is based on:
 
 - CMake release
-[{{ page.upstream_version }}](https://github.com/Kitware/CMake/releases/tag/v{{ page.upstream_version }}/)
-from {{ page.upstream_release_date }}.
+[{{ page.upstream_version }}](https://github.com/Kitware/CMake/releases/tag/v{{ page.upstream_version }}/) from {{ page.upstream_release_date }}.
 
 ## Changes
 

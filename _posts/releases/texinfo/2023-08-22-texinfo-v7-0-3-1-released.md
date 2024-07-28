@@ -13,7 +13,7 @@ download_url: https://github.com/xpack-dev-tools/texinfo-xpack/releases/tag/v7.0
 
 comments: true
 
-date:   2023-08-22 15:50:27 +0300
+date: 2023-08-22 15:50:27 +0300
 
 # For Jekyll releases selection.
 categories:

@@ -13,7 +13,7 @@ download_url: https://github.com/xpack-dev-tools/pkg-config-xpack/releases/tag/v
 
 comments: true
 
-date:   2023-09-06 10:28:57 +0300
+date: 2023-09-06 10:28:57 +0300
 
 # For Jekyll releases selection.
 categories:

@@ -6,9 +6,10 @@ summary: "Version 2.8.0-9 is a maintenance release; it **adds support for runnin
 
 version: 2.8.0-9
 npm_subversion: 1
+
 download_url: https://github.com/xpack-dev-tools/qemu-arm-xpack/releases/tag/v2.8.0-9/
 
-date:   2020-07-01 15:34:00 +0300
+date: 2020-07-01 15:34:00 +0300
 
 comments: true
 

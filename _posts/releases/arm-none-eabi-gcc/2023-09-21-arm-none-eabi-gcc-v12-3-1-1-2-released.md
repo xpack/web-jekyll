@@ -18,7 +18,7 @@ download_url: https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/release
 
 comments: true
 
-date:   2023-09-21 23:46:44 +0300
+date: 2023-09-21 23:46:44 +0300
 
 # For Jekyll releases selection.
 categories:

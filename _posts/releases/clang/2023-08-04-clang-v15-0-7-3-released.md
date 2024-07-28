@@ -1,8 +1,6 @@
 ---
 title:  xPack LLVM clang v15.0.7-3 released
 
-TODO: select one summary
-
 summary: "Version **15.0.7-3** is a maintenance release; it fixes the include path on macOS and reverts to the GNU/Linux libraries."
 
 clang_version: "15.0.7"
@@ -15,7 +13,7 @@ download_url: https://github.com/xpack-dev-tools/clang-xpack/releases/tag/v15.0.
 
 comments: true
 
-date:   2023-08-04 11:45:51 +0300
+date: 2023-08-04 11:45:51 +0300
 
 categories:
   - releases

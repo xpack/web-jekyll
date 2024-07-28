@@ -1,8 +1,6 @@
 ---
 title:  xPack GNU AArch64 Embedded GCC v11.3.1-1.2 released
 
-TODO: select one summary
-
 summary: "Version **11.3.1-1.2** is a maintenance release; it fixes an issue with the build of `aarch64-none-elf-as`."
 
 arm_version: 11.3.Rel1
@@ -10,9 +8,10 @@ arm_date: August 8, 2022
 version: 11.3.1-1.2
 npm_subversion: 1
 python_version: 10
+
 download_url: https://github.com/xpack-dev-tools/aarch64-none-elf-gcc-xpack/releases/tag/v11.3.1-1.2/
 
-date:   2022-08-27 19:05:52 +0300
+date: 2022-08-27 19:05:52 +0300
 
 comments: true
 

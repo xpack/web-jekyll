@@ -7,9 +7,10 @@ patchelf_version: 0.16.1
 patchelf_date: 28 Oct 2022
 version: "0.16.1-1"
 npm_subversion: 1
+
 download_url: https://github.com/xpack-dev-tools/patchelf-xpack/releases/tag/v0.16.1-1/
 
-date:   2022-12-27 13:55:36 +0200
+date: 2022-12-27 13:55:36 +0200
 
 # For Jekyll releases selection.
 comments: true

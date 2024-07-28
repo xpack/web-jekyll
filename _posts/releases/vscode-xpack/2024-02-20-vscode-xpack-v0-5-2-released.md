@@ -6,7 +6,7 @@ summary: "Version **0.5.2** is a maintenance release of **ilg-vscode.xpack**; it
 
 version: 0.5.2
 
-date:   2024-02-20 14:47:00 +0300
+date: 2024-02-20 14:47:00 +0300
 
 comments: true
 

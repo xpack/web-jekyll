@@ -1,10 +1,6 @@
 ---
 title:  xPack Meson Build v0.63.3-1 released
 
-TODO: select one summary
-
-summary: "Version **0.63.3-1** is a maintenance release; it fixes <...>."
-
 summary: "Version **0.63.3-1** is a new release; it follows the upstream release."
 
 version: "0.63.3-1"
@@ -13,9 +9,10 @@ upstream_release_date: "6 Oct 2022"
 npm_subversion: "1"
 python_version: "3.10"
 python_subversion: "6"
+
 download_url: https://github.com/xpack-dev-tools/meson-build-xpack/releases/tag/v0.63.3-1/
 
-date:   2023-01-28 17:44:53 +0200
+date: 2023-01-28 17:44:53 +0200
 
 comments: true
 
@@ -128,8 +125,7 @@ The xPack Meson Build generally follows the official
 The current version is based on:
 
 - Meson Build release
-[{{ page.upstream_version }}](https://github.com/mesonbuild/meson/releases/tag/{{ page.upstream_version }})
-from {{ page.upstream_release_date }}.
+[{{ page.upstream_version }}](https://github.com/mesonbuild/meson/releases/tag/{{ page.upstream_version }}) from {{ page.upstream_release_date }}.
 
 ## Changes
 

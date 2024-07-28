@@ -6,9 +6,10 @@ summary: "Version 2.8.0-10 is a maintenance release; it fixes one bug and update
 
 version: 2.8.0-10
 npm_subversion: 1
+
 download_url: https://github.com/xpack-dev-tools/qemu-arm-xpack/releases/tag/v2.8.0-10/
 
-date:   2020-10-14 21:47:00 +0300
+date: 2020-10-14 21:47:00 +0300
 
 comments: true
 

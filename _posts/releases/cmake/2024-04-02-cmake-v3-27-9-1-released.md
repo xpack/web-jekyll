@@ -13,7 +13,7 @@ download_url: https://github.com/xpack-dev-tools/cmake-xpack/releases/tag/v3.27.
 
 comments: true
 
-date:   2024-04-02 09:21:38 +0300
+date: 2024-04-02 09:21:38 +0300
 
 # For Jekyll releases selection.
 categories:
@@ -123,8 +123,7 @@ The **xPack CMake** is based on the official
 The current version is based on:
 
 - CMake release
-[{{ page.upstream_version }}](https://github.com/Kitware/CMake/releases/tag/v{{ page.upstream_version }}/)
-from {{ page.upstream_release_date }}.
+[{{ page.upstream_version }}](https://github.com/Kitware/CMake/releases/tag/v{{ page.upstream_version }}/) from {{ page.upstream_release_date }}.
 
 ## Changes
 
@@ -232,7 +231,7 @@ xpack-cmake-3.27.9-1-win32-x64.zip
 
 ### Linux minimum requirements
 
-The minimum requirement is GLIBC 2.27, available starting
+The minimum requirement is **GLIBC 2.27**, available starting
 with Ubuntu 18, Debian 10 and RedHat 8.
 Support for RedHat 7 was dropped in 2022.
 

@@ -5,9 +5,10 @@ summary: "Version **14.0.6-1** is a new release; it follows the upstream release
 
 version: 14.0.6-1
 npm_subversion: 1
+
 download_url: https://github.com/xpack-dev-tools/clang-xpack/releases/tag/v14.0.6-1/
 
-date:   2022-08-21 13:34:59 +0300
+date: 2022-08-21 13:34:59 +0300
 
 comments: true
 

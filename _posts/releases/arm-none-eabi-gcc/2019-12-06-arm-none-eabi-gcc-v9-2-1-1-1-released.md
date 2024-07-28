@@ -6,9 +6,10 @@ summary: "Version 9.2.1-1.1 is a new release of **xPack GNU Arm Embedded GCC**, 
 
 version: 9.2.1-1.1
 npm_subversion: 1
+
 download_url: https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases/v9.2.1-1.1/
 
-date:   2019-12-06 16:07:00 +0200
+date: 2019-12-06 16:07:00 +0200
 
 comments: true
 

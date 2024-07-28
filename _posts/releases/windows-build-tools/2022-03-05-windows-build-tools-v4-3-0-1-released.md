@@ -6,9 +6,10 @@ summary: "Version **4.3.0-1** is a new release of the **xPack Windows Build Tool
 
 version: 4.3.0-1
 npm_subversion: 1
+
 download_url: https://github.com/xpack-dev-tools/windows-build-tools-xpack/releases/tag/v4.3.0-1/
 
-date:   2022-03-05 11:45:52 +0200
+date: 2022-03-05 11:45:52 +0200
 
 comments: true
 

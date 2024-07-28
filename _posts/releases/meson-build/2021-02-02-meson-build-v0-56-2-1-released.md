@@ -6,9 +6,10 @@ summary: "Version 0.56.2-1 is a new release of the **xPack Meson Build** package
 
 version: 0.56.2-1
 npm_subversion: 1
+
 download_url: https://github.com/xpack-dev-tools/meson-build-xpack/releases/tag/v0.56.2-1/
 
-date:   2021-02-02 23:50:00 +0200
+date: 2021-02-02 23:50:00 +0200
 
 comments: true
 

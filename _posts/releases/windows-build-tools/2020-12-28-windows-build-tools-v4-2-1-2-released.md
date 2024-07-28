@@ -6,9 +6,10 @@ summary: "Version 4.2.1-2 is maintenance release; it adds the `cp.exe` binary."
 
 version: 4.2.1-2
 npm_subversion: 1
+
 download_url: https://github.com/xpack-dev-tools/windows-build-tools-xpack/releases/tag/v4.2.1-2/
 
-date:   2020-12-28 15:38:00 +0300
+date: 2020-12-28 15:38:00 +0300
 
 comments: true
 

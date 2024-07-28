@@ -6,7 +6,7 @@ summary: "Version **0.4.19** is a new release of **ilg-vscode.xpack**; it adds t
 
 version: 0.4.19
 
-date:   2022-07-30 10:05:00 +0300
+date: 2022-07-30 10:05:00 +0300
 
 comments: true
 

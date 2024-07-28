@@ -2,14 +2,14 @@
 title:  xPack QEMU Arm v2.8.0-7 released
 sidebar: qemu-arm
 
-summary: "Version 2.8.0-7 is a maintenance release, to fix a bug
-affecting Windows."
+summary: "Version 2.8.0-7 is a maintenance release, to fix a bug affecting Windows."
 
 version: 2.8.0-7
 npm_subversion: 1
+
 download_url: https://github.com/xpack-dev-tools/qemu-arm-xpack/releases/tag/v2.8.0-7/
 
-date:   2019-07-22 20:38:00 +0300
+date: 2019-07-22 20:38:00 +0300
 
 comments: true
 

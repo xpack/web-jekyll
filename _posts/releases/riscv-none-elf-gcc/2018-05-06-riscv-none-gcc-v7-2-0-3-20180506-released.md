@@ -4,7 +4,7 @@ sidebar: riscv-none-elf-gcc
 
 download_url: https://github.com/gnu-mcu-eclipse/riscv-none-gcc/releases/tag/v7.2.0-3-20180506/
 
-date:   2018-05-06 14:19:00 +0300
+date: 2018-05-06 14:19:00 +0300
 
 comments: true
 
@@ -70,8 +70,7 @@ The Windows binaries were built with mingw-w64, and run on any reasonably
 recent **i686** and **x86_64** Windows machines.
 
 Instructions on how to install the binaries are available in the
-[How to install the RISC-V toolchain?]({{ site.baseurl }}/riscv-none-embed-gcc/install/)
-page.
+[How to install the RISC-V toolchain?]({{ site.baseurl }}/riscv-none-embed-gcc/install/) page.
 
 The toolchain is also available as an
 [xPack](https://www.npmjs.com/package/@gnu-mcu-eclipse/riscv-none-gcc)

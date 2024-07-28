@@ -2,14 +2,14 @@
 title:  xPack LLVM clang v12.0.1-2 released
 sidebar: clang
 
-summary: "Version **12.0.1-2** is a maintenance release; it updates to
-the latest build scripts and adds support for Apple Silicon."
+summary: "Version **12.0.1-2** is a maintenance release; it updates to the latest build scripts and adds support for Apple Silicon."
 
 version: 12.0.1-2
 npm_subversion: 2
+
 download_url: https://github.com/xpack-dev-tools/clang-xpack/releases/tag/v12.0.1-2/
 
-date:   2022-02-08 18:56:37 +0200
+date: 2022-02-08 18:56:37 +0200
 
 comments: true
 

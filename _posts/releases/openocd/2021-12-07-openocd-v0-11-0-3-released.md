@@ -6,9 +6,10 @@ summary: "Version **0.11.0-3** is a maintenance release; it updates to the lates
 
 version: 0.11.0-3
 npm_subversion: 1
+
 download_url: https://github.com/xpack-dev-tools/openocd-xpack/releases/tag/v0.11.0-3/
 
-date:   2021-12-07 20:11:14 +0200
+date: 2021-12-07 20:11:14 +0200
 
 comments: true
 
@@ -114,7 +115,7 @@ xpm uninstall --global @xpack-dev-tools/openocd
 
 ## Compliance
 
-The xPack OpenOCD generally follows the official
+The **xPack OpenOCD** generally follows the official
 [OpenOCD](https://openocd.org) releases.
 
 The current version is based on:
@@ -207,8 +208,8 @@ set of platforms. The results are available from:
 
 ## Tests
 
-The binaries were testes on Windows 10 Pro 32/64-bit, Intel Ubuntu 18
-LTS 64-bit, Intel Xubuntu 18 LTS 32-bit and macOS 10.15.
+The binaries were testes on Windows 11 Pro, Intel Ubuntu 22
+LTS and macOS 14.5.
 
 Install the package with xpm.
 
@@ -216,7 +217,7 @@ The simple test, consists in starting the binaries
 only to identify the STM32F4DISCOVERY board.
 
 ```sh
-.../xpack-openocd-0.11.0-3/bin/openocd -f board/stm32f4discovery.cfg
+~/Library/xPacks/@xpack-dev-tools/openocd/{{ page.version }}.{{ page.npm_subversion }}/.content/bin/openocd -f board/stm32f4discovery.cfg
 ```
 
 A more complex test consist in programming and debugging a simple blinky

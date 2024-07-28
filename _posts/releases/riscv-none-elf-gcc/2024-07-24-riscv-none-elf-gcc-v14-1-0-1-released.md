@@ -16,7 +16,7 @@ download_url: https://github.com/xpack-dev-tools/riscv-none-elf-gcc-xpack/releas
 
 comments: true
 
-date:   2024-07-24 23:26:25 +0300
+date: 2024-07-24 23:26:25 +0300
 
 # For Jekyll releases selection.
 categories:
@@ -67,8 +67,7 @@ The binary files are available from GitHub [Releases]({{ page.download_url }}).
 ## Install
 
 The full details of installing the **xPack GNU RISC-V Embedded GCC**
-on various platforms are presented in the separate
-[Install]({{ site.baseurl }}/dev-tools/riscv-none-elf-gcc/install/) page.
+on various platforms are presented in the separate [Install]({{ site.baseurl }}/dev-tools/riscv-none-elf-gcc/install/) page.
 
 ### Easy install
 
@@ -366,7 +365,7 @@ xpack-riscv-none-elf-gcc-14.1.0-1-win32-x64.zip
 
 ### Linux minimum requirements
 
-The minimum requirement is GLIBC 2.27, available starting
+The minimum requirement is **GLIBC 2.27**, available starting
 with Ubuntu 18, Debian 10 and RedHat 8.
 Support for RedHat 7 was dropped in 2022.
 

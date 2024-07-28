@@ -13,7 +13,7 @@ download_url: https://github.com/xpack-dev-tools/flex-xpack/releases/tag/v2.6.4-
 
 comments: true
 
-date:   2023-08-18 02:35:09 +0300
+date: 2023-08-18 02:35:09 +0300
 
 # For Jekyll releases selection.
 categories:
