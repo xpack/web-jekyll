@@ -127,6 +127,15 @@ at least for files in the
 
 If this is not possible, temporarily disable the antivirus program.
 
+### xpm clean-ups
+
+To remove all global packages installed by **xpm**, there are only two folders:
+
+- `%APPDATA%\Roaming\xPacks`
+- `%APPDATA%\Local\Caches\xPacks`
+
+They can be removed at any time, and **xpm** will recreate them on new installs.
+
 {% endcapture %}
 
 {% capture macos %}
