@@ -301,7 +301,7 @@ Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser
 For more details please read the Microsoft
 [about_Execution_Policies](https://docs.microsoft.com/en-gb/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.1) page.
 
-## npm clean-ups
+## node/npm clean-ups
 
 For a thorough clean-up, please note that **npm** uses only two folders
 to install global packages:
@@ -507,7 +507,7 @@ $ which npm
 At any time, to switch between any of the installed versions,
 use `nvm use <version>` & `nvm alias default <version>`.
 
-## npm clean-ups
+## nvm/node/npm clean-ups
 
 For a thorough clean-up, please note that **nvm/node/npm** use only two folders:
 
@@ -724,12 +724,12 @@ For some applications, the kernel headers are also necessary:
 sudo apt-get install --yes linux-headers-generic
 ```
 
-## npm clean-ups
+## nvm/node/npm clean-ups
 
 For a thorough clean-up, please note that **nvm/node/npm** use only two folders:
 
 - `$HOME/.nvm`
-- `$HOME/.cache/node`
+- `$HOME/.npm`
 
 They can be removed at any time, and **nvm** will recreate them on new installs.
 
