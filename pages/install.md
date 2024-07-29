@@ -28,7 +28,7 @@ via `npm` which runs on top of `node`, which is the **Node.js**
 
 ## Prerequisites
 
-A recent [Node.js](https://nodejs.org) (>=**16.14**), since
+A recent [Node.js](https://nodejs.org) (>=**18**), since
 some dependencies require new features. Detailed instructions
 for each supported platform are available in the next section.
 
@@ -93,7 +93,7 @@ If you know what you're doing and prefer a shortcut,
 issue the following command:
 
 ```sh
-npm install --global xpm@latest
+npm install -location=global xpm@latest
 ```
 
 {% endcapture %}
@@ -108,7 +108,7 @@ Follow the step in the
 If you already know what this is all about, issue the following command:
 
 ```sh
-npm install --global xpm@latest
+npm install -location=global xpm@latest
 ```
 
 {% endcapture %}
@@ -136,6 +136,16 @@ into a terminal (otherwise perform the steps one by one).
 
 {% include warning.html content="For security reasons, conscientious users
 should first check the content of the file before executing it." %}
+
+If you trust the script, you can use the following shortcut:
+
+```sh
+curl https://raw.githubusercontent.com/xpack/assets/master/scripts/install-nvm-node-npm-xpm.sh | bash
+
+exit
+```
+
+Otherwise download and check the script:
 
 ```sh
 mkdir -pv "${HOME}/Downloads/"
@@ -171,7 +181,7 @@ the `npm` functionality.
 
 {{ node_install }}
 
-Download the **Windows Installer (.msi)** from the Node.js
+Download the Windows **Prebuilt Installer** (a `.msi` file) from the Node.js
 [download](https://nodejs.org/en/download/) page and install it as usual,
 with administrative rights.
 
@@ -201,7 +211,7 @@ C:\>npm --version
 It is recommended to update it to the latest version:
 
 ```doscon
-C:\>npm install --global npm@latest
+C:\>npm install -location=global npm@latest
 removed 1 package, and changed 60 packages in 5s
 
 27 packages are looking for funding
@@ -227,13 +237,13 @@ and this path **is not** in the default environment.
 C:\>echo %Path%
 ```
 
-It must be added manually in front of the current path:
+It must be added manually **in front** of the current path:
 
 ```doscon
 C:\>set Path=%APPDATA%\npm;%Path%
 ```
 
-To make this setting persistent, also issue the following:
+To make this setting **persistent**, also issue the following:
 
 ```doscon
 C:\>setx Path "%APPDATA%\npm;%Path%"
@@ -293,7 +303,8 @@ For more details please read the Microsoft
 
 ## npm clean-ups
 
-To remove all global packages installed by **npm**, there are only two folders:
+For a thorough clean-up, please note that **npm** uses only two folders
+to install global packages:
 
 - `%APPDATA%\Roaming\npm`
 - `%APPDATA%\Local\npm-cache`
@@ -495,6 +506,15 @@ $ which npm
 
 At any time, to switch between any of the installed versions,
 use `nvm use <version>` & `nvm alias default <version>`.
+
+## npm clean-ups
+
+For a thorough clean-up, please note that **nvm/node/npm** use only two folders:
+
+- `$HOME/.nvm`
+- `$HOME/.cache/node`
+
+They can be removed at any time, and **nvm** will recreate them on new installs.
 
 {{ xpm_install }}
 
@@ -703,6 +723,15 @@ For some applications, the kernel headers are also necessary:
 ```sh
 sudo apt-get install --yes linux-headers-generic
 ```
+
+## npm clean-ups
+
+For a thorough clean-up, please note that **nvm/node/npm** use only two folders:
+
+- `$HOME/.nvm`
+- `$HOME/.cache/node`
+
+They can be removed at any time, and **nvm** will recreate them on new installs.
 
 {{ xpm_install }}
 
