@@ -34,9 +34,21 @@ For details, please read (carefully!) the
 
 {% include important.html content="Please be sure you are installing **xpm** as the **xPack Project Manager**, since there are other projects that unfortunately use the same name (for example _uniX Package Manager_)." %}
 
-## `xpm` install
+{% capture uninstall %}
+
+## Uninstall
+
+To remove xpm, the command is:
+
+```sh
+npm uninstall --location=global xpm
+```
+
+{% endcapture %}
 
 {% capture windows %}
+
+## `xpm` install
 
 On Windows, by default, global Node.js packages are installed in the
 user home folder, in `%APPDATA%\npm`
@@ -132,6 +144,8 @@ at least for files in the
 
 If this is not possible, temporarily disable the antivirus program.
 
+{{ uninstall | markdownify }}
+
 ### xpm clean-ups
 
 For a thorough clean-up, please note that **xpm** uses only two folders:
@@ -144,6 +158,8 @@ They can be removed at any time, and **xpm** will recreate them on new installs.
 {% endcapture %}
 
 {% capture macos %}
+
+## `xpm` install
 
 On macOS, by default, global Node.js packages are installed in
 `/usr/local`, and managing them requires administrative rights,
@@ -166,6 +182,8 @@ $ xpm --version
 {{ page.xpm_version }}
 ```
 
+{{ uninstall | markdownify }}
+
 ### xpm clean-ups
 
 For a thorough clean-up, please note that **xpm** uses only two folders:
@@ -175,9 +193,45 @@ For a thorough clean-up, please note that **xpm** uses only two folders:
 
 They can be removed at any time, and **xpm** will recreate them on new installs.
 
+### macOS specifics
+
+The default location used to install the global packages is
+in `~/Library`, a folder that, due to an unfortunate Apple decision,
+is hidden for regular browsing in Finder.
+
+To make it back visible, use:
+
+```sh
+/usr/bin/chflags nohidden ~/Library
+xattr -d com.apple.FinderInfo ~/Library
+```
+
+A more general solution is to make all hidden files visible:
+
+```sh
+defaults write com.apple.Finder AppleShowAllFiles true
+killall Finder
+```
+
+Another annoying behaviour of the file browser is to hide names starting
+with `.` (dot), which is a real pity since the binary packages are
+extracted in a folder named `.content`.
+
+Fortunately there is a workaround for this too:
+
+```console
+cmd+shift+'.'
+```
+
+This keyboard shortcut works like a toggle, using it once makes files
+starting with dot visible,
+using it again reverts to hiding them.
+
 {% endcapture %}
 
 {% capture linux %}
+
+## `xpm` install
 
 {% include note.html content="Support for Arm platforms was
 added in the 0.6.2 release of xpm." %}
@@ -234,6 +288,8 @@ Follow the instructions in the
 [prerequisites]({{ site.baseurl }}/install/) page and update your
 `node` & `npm` programs.
 
+{{ uninstall | markdownify }}
+
 ### xpm clean-ups
 
 For a thorough clean-up, please note that **xpm** uses only two folders:
@@ -246,14 +302,6 @@ They can be removed at any time, and **xpm** will recreate them on new installs.
 {% endcapture %}
 
 {% include platform-tabs.html %}
-
-## Uninstall
-
-To remove xpm, the command is:
-
-```sh
-npm uninstall --location=global xpm
-```
 
 ## Miscellaneous
 
@@ -291,40 +339,6 @@ There are two main folders:
 - a global xPacks store folder, where the xPacks are expanded
 
 For more details see [xpm folders]({{ site.baseurl }}/xpm/folders/).
-
-### macOS specifics
-
-The default location used to install the global packages is
-in `~/Library`, a folder that, due to an unfortunate Apple decision,
-is hidden for regular browsing in Finder.
-
-To make it back visible, use:
-
-```sh
-/usr/bin/chflags nohidden ~/Library
-xattr -d com.apple.FinderInfo ~/Library
-```
-
-A more general solution is to make all hidden files visible:
-
-```sh
-defaults write com.apple.Finder AppleShowAllFiles true
-killall Finder
-```
-
-Another annoying behaviour of the file browser is to hide names starting
-with `.` (dot), which is a real pity since the binary packages are
-extracted in a folder named `.content`.
-
-Fortunately there is a workaround for this too:
-
-```console
-cmd+shift+'.'
-```
-
-This keyboard shortcut works like a toggle, using it once makes files
-starting with dot visible,
-using it again reverts to hiding them.
 
 ## Proxy
 
