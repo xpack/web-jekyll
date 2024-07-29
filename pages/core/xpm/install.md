@@ -11,6 +11,8 @@ keywords:
 comments: true
 toc: false
 
+xpm_version: 0.19.1
+
 date: 2017-10-09 14:14:00 +0300
 
 ---
@@ -23,14 +25,14 @@ npm package [xpm](https://www.npmjs.com/package/xpm) from the
 
 ## Prerequisites
 
-- a recent [Node.js](https://nodejs.org) (>=**16.x**), since some dependencies
+- a recent [Node.js](https://nodejs.org) (>=**18.x**), since some dependencies
   require new features
 - a recent [npm](https://docs.npmjs.com/cli/npm).
 
 For details, please read (carefully!) the
 [prerequisites]({{ site.baseurl }}/install/) page.
 
-{% include important.html content="Please be sure you are installing xpm as the **xPack Project Manager**, since there are other projects that unfortunately use the same name (for example _uniX Package Manager_)." %}
+{% include important.html content="Please be sure you are installing **xpm** as the **xPack Project Manager**, since there are other projects that unfortunately use the same name (for example _uniX Package Manager_)." %}
 
 ## `xpm` install
 
@@ -42,25 +44,28 @@ user home folder, in `%APPDATA%\npm`
 does not require administrative rights.
 
 ```console
-C:\>npm install --global xpm@latest
-C:\Users\ilg\AppData\Roaming\npm\xpm -> C:\Users\ilg\AppData\Roaming\npm\node_modules\xpm\bin\xpm.js
-+ xpm@0.5.0
-added 260 packages from 147 contributors in 36.304s
+C:\>npm install --location=global xpm@latest
+
+added 1 package in 7s
+
+56 packages are looking for funding
+  run `npm fund` for details
 ```
 
-The result is a pair of files in the `%APPDATA%\npm` folder:
+The result is a set of three files in the `%APPDATA%\npm` folder:
 
 ```console
 C:\>dir "%APPDATA%"\npm\xpm*
  Volume in drive C has no label.
- Volume Serial Number is 28CE-1C06
+ Volume Serial Number is B02D-925C
 
  Directory of C:\Users\ilg\AppData\Roaming\npm
 
-18/04/2018  10:40               319 xpm
-18/04/2018  10:40               196 xpm.cmd
-               2 File(s)            515 bytes
-               0 Dir(s)  51,207,155,712 bytes free
+29/07/2024  07:24               397 xpm
+29/07/2024  07:24               329 xpm.cmd
+29/07/2024  07:24               821 xpm.ps1
+               3 File(s)          1,547 bytes
+               0 Dir(s)  39,088,439,296 bytes free
 ```
 
 If you followed the instructions in the
@@ -69,7 +74,7 @@ already have this path configured and the program should start normally:
 
 ```console
 C:\>xpm --version
-0.5.0
+{{ page.xpm_version }}
 ```
 
 ### Power Shell execution policy
@@ -100,14 +105,14 @@ you to the security risks described in the about_Execution_Policies help topic a
 https:/go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the execution policy?
 [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): A
 PS C:\Users\ilg> xpm --version
-0.8.1
+{{ page.xpm_version }}
 PS C:\Users\ilg>
 ```
 
 ### Aggressive antivirus programs & xpm
 
 On Windows, binary xPacks are `.zip` archives containing `.exe` files;
-some aggressive antivirus programs may quarantine those files, or
+some aggressive antivirus programs may quarantine these files, or
 even modify the content of the archives, affecting the checksum and
 thus preventing the packages to be installed.
 
@@ -129,7 +134,7 @@ If this is not possible, temporarily disable the antivirus program.
 
 ### xpm clean-ups
 
-To remove all global packages installed by **xpm**, there are only two folders:
+For a thorough clean-up, please note that **xpm** uses only two folders:
 
 - `%APPDATA%\Roaming\xPacks`
 - `%APPDATA%\Local\Caches\xPacks`
@@ -149,17 +154,26 @@ already have configured npm to use a location in the home folder.
 With the environment properly set, the command to install xpm is:
 
 ```sh
-npm install --global xpm@latest
+npm install --location=global xpm@latest
 ```
 
 To test if xpm starts:
 
 ```console
 $ which xpm
-/Users/ilg/Library/npm/bin/xpm
+/Users/ilg/.nvm/versions/node/v18.18.2/bin/xpm
 $ xpm --version
-0.10.2
+{{ page.xpm_version }}
 ```
+
+### xpm clean-ups
+
+For a thorough clean-up, please note that **xpm** uses only two folders:
+
+- `${HOME}/Library/xPacks`
+- `${HOME}/Library/Caches/xPacks`
+
+They can be removed at any time, and **xpm** will recreate them on new installs.
 
 {% endcapture %}
 
@@ -177,7 +191,7 @@ already have configured npm to use a location in the home folder.
 With the environment properly set, the command to install xpm is:
 
 ```sh
-npm install --global xpm@latest
+npm install --location=global xpm@latest
 ```
 
 To test if xpm starts:
@@ -186,7 +200,7 @@ To test if xpm starts:
 $ which xpm
 /home/ilg/opt/npm/bin/xpm
 $ xpm --version
-0.10.2
+{{ page.xpm_version }}
 ```
 
 ### Using an out of date Node.js
@@ -220,6 +234,15 @@ Follow the instructions in the
 [prerequisites]({{ site.baseurl }}/install/) page and update your
 `node` & `npm` programs.
 
+### xpm clean-ups
+
+For a thorough clean-up, please note that **xpm** uses only two folders:
+
+- `${HOME}/.local/xPacks`
+- `${HOME}/.cache/xPacks`
+
+They can be removed at any time, and **xpm** will recreate them on new installs.
+
 {% endcapture %}
 
 {% include platform-tabs.html %}
@@ -229,7 +252,7 @@ Follow the instructions in the
 To remove xpm, the command is:
 
 ```sh
-npm uninstall --global xpm
+npm uninstall --location=global xpm
 ```
 
 ## Miscellaneous
@@ -244,7 +267,7 @@ benefit from it by using the `npx` command, as a trampoline to start xpm:
 
 ```console
 $ npx xpm --version
-0.10.2
+{{ page.xpm_version }}
 ```
 
 However, for regular usage, this method is not efficient, since
@@ -282,7 +305,7 @@ To make it back visible, use:
 xattr -d com.apple.FinderInfo ~/Library
 ```
 
-A more general solution is to make all hidden files:
+A more general solution is to make all hidden files visible:
 
 ```sh
 defaults write com.apple.Finder AppleShowAllFiles true
@@ -338,8 +361,8 @@ internal/modules/cjs/loader.js:888
 
 Error: Cannot find module '@ilg/cli-start-options'
 Require stack:
-- /home/ilg/.nvm/versions/node/v14.17.0/lib/node_modules/xpm/lib/main.js
-- /home/ilg/.nvm/versions/node/v14.17.0/lib/node_modules/xpm/bin/xpm.js
+- /home/ilg/.nvm/versions/node/v18.18.2/lib/node_modules/xpm/lib/main.js
+- /home/ilg/.nvm/versions/node/v18.18.2/lib/node_modules/xpm/bin/xpm.js
     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:885:15)
 ```
 
@@ -375,7 +398,7 @@ xpm <command> -h|--help  Quick help on command
 xpm --version            Show version
 xpm -i|--interactive     Enter interactive mode
 
-npm xpm@0.10.2 '/Users/ilg/.nvm/versions/node/v14.16.0/lib/node_modules/xpm'
+npm xpm@{{ page.xpm_version }} '/Users/ilg/.nvm/versions/node/v18.18.2/lib/node_modules/xpm'
 Home page: <https://xpack.github.io/xpm/>
 Bug reports: <https://github.com/xpack/xpm-js/issues/>
 %
