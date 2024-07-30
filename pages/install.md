@@ -190,7 +190,7 @@ with administrative rights.
 The result is a folder like `C:\Program Files\nodejs`, added to the
 system path since it includes the `node.exe` binary.
 
-```doscon
+```txt
 C:\>where node.exe
 C:\Program Files\nodejs\node.exe
 C:\>node --version
@@ -201,7 +201,7 @@ v{{ page.node_version }}
 
 A version of **npm**, usually a bit older, comes packed with Node.js.
 
-```doscon
+```txt
 C:\>where npm.cmd
 C:\Program Files\nodejs\npm.cmd
 C:\>npm --version
@@ -210,7 +210,7 @@ C:\>npm --version
 
 It is recommended to update it to the latest version:
 
-```doscon
+```txt
 C:\>npm install -location=global npm@latest
 removed 1 package, and changed 60 packages in 5s
 
@@ -220,7 +220,7 @@ removed 1 package, and changed 60 packages in 5s
 
 Surprisingly, checking the version usually shows the old version:
 
-```doscon
+```txt
 C:\>where npm.cmd
 C:\Program Files\nodejs\npm.cmd
 C:\>npm --version
@@ -233,19 +233,19 @@ user home folder, in `%APPDATA%\npm`
 (like `C:\Users\ilg\AppData\Roaming\npm`);
 and this path **is not** in the default environment.
 
-```doscon
+```txt
 C:\>echo %Path%
 ```
 
 It must be added manually **in front** of the current path:
 
-```doscon
+```txt
 C:\>set Path=%APPDATA%\npm;%Path%
 ```
 
 To make this setting **persistent**, also issue the following:
 
-```doscon
+```txt
 C:\>setx Path "%APPDATA%\npm;%Path%"
 ```
 
@@ -258,7 +258,7 @@ the syntax to match their specifics." %}
 
 After this, the new version of the program should be visible:
 
-```doscon
+```txt
 C:\>npm --version
 {{ page.npm_latest_version }}
 ```
@@ -281,7 +281,7 @@ the execution of node.js applications.
 
 If you get a message in the console as the one below:
 
-```doscon
+```txt
 xpm : File C:\Users\...\AppData\Roaming\npm\xpm.ps1 cannot be loaded because running scripts is disabled on this system. For more information, see about_Execution_Policies at
 https:/go.microsoft.com/fwlink/?LinkID=135170.
 At line:1 char:1
@@ -294,7 +294,7 @@ The terminal process "C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe 
 
 then run the following command in a PowerShell terminal:
 
-```doscon
+```txt
 Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser
 ```
 
