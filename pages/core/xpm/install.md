@@ -66,7 +66,7 @@ added 1 package in 7s
 
 The result is a set of three files in the `%APPDATA%\npm` folder:
 
-```console
+```txt
 C:\>dir "%APPDATA%"\npm\xpm*
  Volume in drive C has no label.
  Volume Serial Number is B02D-925C
