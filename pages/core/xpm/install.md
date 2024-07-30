@@ -142,7 +142,8 @@ The solution is to configure the antivirus program to be less aggressive,
 at least for files in the
 `AppData\Roaming\xPacks` and `AppData\Local\Caches\xPacks` folders.
 
-If this is not possible, temporarily disable the antivirus program.
+If this is not possible, temporarily disable the antivirus program. Or switch
+to a better operating system.
 
 {{ uninstall | markdownify }}
 
@@ -193,7 +194,7 @@ For a thorough clean-up, please note that **xpm** uses only two folders:
 
 They can be removed at any time, and **xpm** will recreate them on new installs.
 
-### macOS specifics
+### Show macOS hidden files
 
 The default location used to install the global packages is
 in `~/Library`, a folder that, due to an unfortunate Apple decision,
@@ -226,6 +227,12 @@ cmd+shift+'.'
 This keyboard shortcut works like a toggle, using it once makes files
 starting with dot visible,
 using it again reverts to hiding them.
+
+### `zsh: command not found: xpm`
+
+If you recently switched to `zsh`, or updated macOS to 11.x, which does
+this automatically, you need to copy the `PATH` setting from your previous shell startup file to `.zprofile`, otherwise the location
+where npm installs global modules is not in the path.
 
 {% endcapture %}
 
@@ -354,12 +361,6 @@ archive. These packages require setting the `http_proxy` & `https_proxy`
 variables in the environment.
 See [proxy-from-env](https://www.npmjs.com/package/proxy-from-env) for
 details.
-
-## `zsh: command not found: xpm`
-
-If you recently switched to `zsh`, or updated macOS to 11.x, which does
-this automatically, you need to copy the `PATH` setting from your previous shell startup file to `.zprofile`, otherwise the location
-where npm installs global modules is not in the path.
 
 ## `Cannot find module '@ilg/cli-start-options'`
 

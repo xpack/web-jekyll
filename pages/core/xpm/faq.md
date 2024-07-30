@@ -99,7 +99,8 @@ The solution is to configure the antivirus program to be less aggressive,
 at least for files in the
 `AppData\Roaming\xPacks` and `AppData\Local\Caches\xPacks` folders.
 
-If this is not possible, temporarily disable the antivirus program.
+If this is not possible, temporarily disable the antivirus program. Or switch
+to a better operating system.
 {% endcapture %}
 
 {% capture question_20 %}
