@@ -24,6 +24,8 @@ tags:
   - binaries
   - c++
 
+redirect_to: https://xpack-dev-tools.github.io/riscv-none-elf-gcc-xpack/blog/2022/08/30/riscv-none-elf-gcc-v12-2-0-1-released
+
 ---
 
 [The xPack GNU RISC-V Embedded GCC](https://xpack.github.io/dev-tools/riscv-none-elf-gcc/)
@@ -40,7 +42,7 @@ armv6 is not supported)." %}
 
 ## Download
 
-The binary files are available from GitHub [Releases]({{ page.download_url }}).
+The binary files are available from [GitHub Releases]({{ page.download_url }}).
 
 ## Prerequisites
 

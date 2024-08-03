@@ -17,6 +17,8 @@ tags:
   - riscv
   - riscv-none-embed-gcc
 
+redirect_to: https://xpack-dev-tools.github.io/riscv-none-elf-gcc-xpack/blog/2018/05/06/riscv-none-gcc-v7-2-0-3-20180506-released
+
 ---
 
 Version **7.2.0-3-20180506** is a maintenance release of **GNU MCU Eclipse
@@ -69,8 +71,7 @@ and run on any distribution based on CentOS 6 or later.
 The Windows binaries were built with mingw-w64, and run on any reasonably
 recent **i686** and **x86_64** Windows machines.
 
-Instructions on how to install the binaries are available in the
-[How to install the RISC-V toolchain?]({{ site.baseurl }}/riscv-none-embed-gcc/install/) page.
+Instructions on how to install the binaries are available in the separate [How to install the RISC-V toolchain?]({{ site.baseurl }}/riscv-none-embed-gcc/install/) page.
 
 The toolchain is also available as an
 [xPack](https://www.npmjs.com/package/@gnu-mcu-eclipse/riscv-none-gcc)

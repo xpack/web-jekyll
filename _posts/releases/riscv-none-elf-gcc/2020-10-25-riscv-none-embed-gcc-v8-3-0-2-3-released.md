@@ -25,9 +25,11 @@ tags:
   - binaries
   - c++
 
+redirect_to: https://xpack-dev-tools.github.io/riscv-none-elf-gcc-xpack/blog/2020/10/25/riscv-none-embed-gcc-v8-3-0-2-3-released
+
 ---
 
-[The xPack GNU RISC-V Embedded GCC](https://xpack.github.io/dev-tools/riscv-none-embed-gcc/)
+[The xPack GNU RISC-V Embedded GCC](https://github.com/xpack-dev-tools/riscv-none-embed-gcc-xpack)
 is the **xPack** distribution of the
 [SiFive RISC-V GCC](https://github.com/sifive/freedom-tools/releases).
 
@@ -40,7 +42,7 @@ armv6 is not supported)." %}
 
 ## Download
 
-The binary files are available from GitHub [releases]({{ page.download_url }}).
+The binary files are available from [GitHub Releases]({{ page.download_url }}).
 
 ## Install
 

@@ -22,6 +22,8 @@ tags:
   - riscv
   - riscv-none-embed-gcc
 
+redirect_to: https://xpack-dev-tools.github.io/riscv-none-elf-gcc-xpack/blog/2020/07/04/riscv-none-embed-gcc-v8-3-0-1-2-released
+
 ---
 
 This is the **xPack** distribution of the
@@ -35,7 +37,7 @@ like **Raspberry Pi**, was added.
 
 ## Download
 
-The binary files are available from GitHub [releases]({{ page.download_url }}).
+The binary files are available from [GitHub Releases]({{ page.download_url }}).
 
 ## Install
 

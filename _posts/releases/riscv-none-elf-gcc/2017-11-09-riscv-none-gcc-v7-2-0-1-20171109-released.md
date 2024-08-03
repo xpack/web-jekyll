@@ -16,6 +16,8 @@ tags:
   - riscv
   - riscv-none-embed-gcc
 
+redirect_to: https://xpack-dev-tools.github.io/riscv-none-elf-gcc-xpack/blog/2017/11/09/riscv-none-gcc-v7-2-0-1-20171109-released
+
 ---
 
 Version **7.2.0-1-20171109** is a new release of **GNU MCU Eclipse RISC-V Embedded GCC**; the main improvement is in GDB, which no longer returns the 4096 CSRs together with the general registers. In contrast to the `riscv64-unknown-elf` toolchain, this toolchain is clearly intended for bare-metal embedded applications; for this it was necessary to  update to the latest newlib 2.5 release which uses 'underscore' syscall functions and to **remove the mandatory use of libgloss**.
@@ -111,7 +113,7 @@ Another addition compared to the official distribution is the presence of the do
 
 Binaries for **Windows**, **macOS** and **GNU/Linux** are provided. For Windows and macOS, separate installable and plain archives are provided. For Windows and GNU/Linux, both 32/64-bit binaries are provided.
 
-Instructions on how to install them are available in the [How to install the RISC-V toolchain?]({{ site.baseurl }}/riscv-none-embed-gcc/install/) page.
+Instructions on how to install them are available in the separate [How to install the RISC-V toolchain?]({{ site.baseurl }}/riscv-none-embed-gcc/install/) page.
 
 The toolchain is also available as an [xPack](https://www.npmjs.com/package/@gnu-mcu-eclipse/riscv-none-gcc) and can be conveniently installed with [`xpm`](https://www.npmjs.com/package/xpm):
 
