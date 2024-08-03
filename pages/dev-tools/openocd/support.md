@@ -9,6 +9,8 @@ date: 2019-06-21 11:08:00 +0300
 redirect_from:
   - /openocd/support/
 
+redirect_to: https://xpack-dev-tools.github.io/openocd-xpack/docs/support/
+
 ---
 
 ## Quicklinks

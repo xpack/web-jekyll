@@ -10,6 +10,8 @@ date: 2019-06-24 14:08:00 +0300
 redirect_from:
   - /openocd/faq/
 
+redirect_to: https://xpack-dev-tools.github.io/openocd-xpack/docs/faq/
+
 ---
 
 <br/>
