@@ -1,5 +1,5 @@
 ---
-title:  GNU MCU Eclipse ARM Embedded GCC v8.2.1-1.3 20190202 released
+title:  GNU MCU Eclipse ARM Embedded GCC v8.2.1-1.3 released
 sidebar: arm-none-eabi-gcc
 
 download_url: https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc/releases/tag/v8.2.1-1.3/
@@ -22,7 +22,7 @@ tags:
 
 ---
 
-Version v8.2.1-1.3 20190202 is a maintenance release of
+Version **8.2.1-1.3** is a maintenance release of
 **GNU MCU Eclipse ARM Embedded GCC** that fixes the GDB and liblto_plugin
 bugs present in the previous release.
 
@@ -69,9 +69,7 @@ macOS system.
 The Windows binaries were built with mingw-w64, and run on any reasonably
 recent **i686** and **x86_64** Windows machines.
 
-Instructions on how to install the binaries are available in the
-[How to install the ARM toolchain?]({{ site.baseurl }}/dev-tools/arm-none-eabi-gcc/install/)
-page.
+Instructions on how to install the binaries are available in the separate [How to install the ARM toolchain?]({{ site.baseurl }}/dev-tools/arm-none-eabi-gcc/install/) page.
 
 The toolchain is also available as an
 [xPack](https://www.npmjs.com/package/@gnu-mcu-eclipse/arm-none-eabi-gcc)

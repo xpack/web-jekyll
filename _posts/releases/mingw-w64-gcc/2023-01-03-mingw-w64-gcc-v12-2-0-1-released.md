@@ -46,7 +46,7 @@ armv6 is not supported)." %}
 
 ## Download
 
-The binary files are available from GitHub [Releases]({{ page.download_url }}).
+The binary files are available from [GitHub Releases]({{ page.download_url }}).
 
 ## Prerequisites
 
@@ -65,8 +65,7 @@ The binary files are available from GitHub [Releases]({{ page.download_url }}).
 ## Install
 
 The full details of installing the **xPack MinGW-w64 GCC** on various platforms
-are presented in the separate
-[Install]({{ site.baseurl }}/dev-tools/mingw-w64-gcc/install/) page.
+are presented in the separate [Install]({{ site.baseurl }}/dev-tools/mingw-w64-gcc/install/) page.
 
 ### Easy install
 

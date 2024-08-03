@@ -35,13 +35,12 @@ There are separate binaries for **Windows**, 32/64-bit.
 
 ## Download
 
-The binary files are available from GitHub [releases]({{ page.download_url }}).
+The binary files are available from [GitHub Releases]({{ page.download_url }}).
 
 ## Install
 
 The full details of installing the **xPack Windows Build Tools** on various platforms
-are presented in the separate
-[Install]({{ site.baseurl }}/dev-tools/windows-build-tools/install/) page.
+are presented in the separate [Install]({{ site.baseurl }}/dev-tools/windows-build-tools/install/) page.
 
 ### Easy install
 

@@ -37,17 +37,14 @@ armv6 is not supported)." %}
 
 ## Download
 
-The binary files are available from GitHub [releases]({{ page.download_url }}).
+The binary files are available from [GitHub Releases]({{ page.download_url }}).
 
-{% include note.html content="For consistency with the Node.js naming
-conventions, the names of the Intel 32-bit images are now suffixed with
-`-ia32`." %}
+{% include note.html content="For consistency with the Node.js naming conventions, the names of the Intel 32-bit images are now suffixed with `-ia32`." %}
 
 ## Install
 
 The full details of installing the **xPack CMake** on various platforms
-are presented in the separate
-[Install]({{ site.baseurl }}/dev-tools/cmake/install/) page.
+are presented in the separate [Install]({{ site.baseurl }}/dev-tools/cmake/install/) page.
 
 ### Easy install
 

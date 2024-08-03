@@ -1,5 +1,5 @@
 ---
-title:  GNU MCU Eclipse ARM Embedded GCC v7.3.1-1.1 20180724 released
+title:  GNU MCU Eclipse ARM Embedded GCC v7.3.1-1.1 released
 sidebar: arm-none-eabi-gcc
 
 download_url: https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc/releases/v7.3.1-1.1/
@@ -21,7 +21,7 @@ tags:
 
 ---
 
-Version v7.3.1-1.1 20180724 is a new release of **GNU MCU Eclipse ARM Embedded GCC**.
+Version **7.3.1-1.1** is a new release of **GNU MCU Eclipse ARM Embedded GCC**.
 
 [Binary files »]({{ page.download_url }})
 
@@ -45,9 +45,7 @@ macOS system.
 The Windows binaries were built with mingw-w64, and run on any reasonably
 recent **i686** and **x86_64** Windows machines.
 
-Instructions on how to install the binaries are available in the
-[How to install the ARM toolchain?]({{ site.baseurl }}/dev-tools/arm-none-eabi-gcc/install/)
-page.
+Instructions on how to install the binaries are available in the separate [How to install the ARM toolchain?]({{ site.baseurl }}/dev-tools/arm-none-eabi-gcc/install/) page.
 
 The toolchain is also available as an
 [xPack](https://www.npmjs.com/package/@gnu-mcu-eclipse/arm-none-eabi-gcc)

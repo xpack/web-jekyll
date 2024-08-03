@@ -45,7 +45,7 @@ armv6 is not supported)." %}
 
 ## Download
 
-The binary files are available from GitHub [Releases]({{ page.download_url }}).
+The binary files are available from [GitHub Releases]({{ page.download_url }}).
 
 ## Prerequisites
 
@@ -68,8 +68,7 @@ distributions they must be installed explicitly.
 ## Install
 
 The full details of installing the **xPack QEMU RISC-V** on various platforms
-are presented in the separate
-[Install]({{ site.baseurl }}/dev-tools/qemu-riscv/install/) page.
+are presented in the separate [Install]({{ site.baseurl }}/dev-tools/qemu-riscv/install/) page.
 
 ### Easy install
 

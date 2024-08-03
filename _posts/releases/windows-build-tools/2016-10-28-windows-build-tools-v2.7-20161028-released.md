@@ -45,7 +45,7 @@ The new Windows Build Tools can be downloaded from the [GitHub Release]({{ page.
 
 The MD5 sums of the files are:
 
-```console
+```txt
 c88f834f14f20b99bda1747ab6a8857b
 gnuarmeclipse-build-tools-win32-2.7-201610281058-setup.exe
 
