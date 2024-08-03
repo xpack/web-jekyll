@@ -10,6 +10,8 @@ redirect_from:
   - /riscv-none-embed-gcc/support/
   - /riscv-none-elf-gcc/support/
 
+redirect_to: https://xpack-dev-tools.github.io/riscv-none-elf-gcc-xpack/support/
+
 ---
 
 ## Quicklinks

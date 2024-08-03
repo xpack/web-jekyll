@@ -11,6 +11,8 @@ redirect_from:
   - /riscv-none-embed-gcc/faq/
   - /riscv-none-elf-gcc/faq/
 
+redirect_to: https://xpack-dev-tools.github.io/riscv-none-elf-gcc-xpack/faq/
+
 ---
 
 <br/>

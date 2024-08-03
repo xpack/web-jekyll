@@ -18,6 +18,8 @@ redirect_from:
   - /riscv-none-embed-gcc/
   - /riscv-none-elf-gcc/
 
+redirect_to: https://xpack-dev-tools.github.io/riscv-none-elf-gcc-xpack/
+
 ---
 
 ## Quicklinks
