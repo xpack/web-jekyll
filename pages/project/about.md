@@ -23,7 +23,7 @@ then thank you Porsche for it (and for the beautiful designs).
 
 ## The project
 
-The **xPack** project received its name in 2017, but it actually originated
+The **xPack** project received its name in 2017, but it actually originated
 in 2012, when it was named **xcdl**, and a Python experimental implementation
 of the **eCos CDL** was written.
 
@@ -41,6 +41,6 @@ This project is currently maintained by **Liviu Ionescu**, a senior computer
 engineer, with expertise in operating systems, compilers, embedded
 systems, RTOSes, build tools and Internet technologies.
 
-He can be reached at [`<ilg@livius.net>`](mailto:ilg@livius.net) (this email
+He can be reached at [`<ilg@livius.net>`](mailto:ilg@livius.net) (this email
 address is given for courtesy, for all correspondence related to this
-project please use the project [support]({{ site.baseurl }}/support/) page).
+project please use the project [support]({{ site.baseurl }}/support/) page).

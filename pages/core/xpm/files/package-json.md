@@ -12,7 +12,7 @@ The [`package.json`](https://docs.npmjs.com/files/package.json) file is
 basically the same as for npm, with some
 extensions.
 
-## The mandatory `xpack` property
+## The mandatory `xpack` property
 
 To identify a npm package as an xPack, it must have an `xpack`
 property, even empty:
@@ -25,7 +25,7 @@ property, even empty:
 }
 ```
 
-Although not mandatory, it is also recommended to add an `xpack` keyword,
+Although not mandatory, it is also recommended to add an `xpack` keyword,
 to help find the xPacks in the public repository.
 
 ```json

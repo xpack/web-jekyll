@@ -181,7 +181,7 @@ gcc (xPack GCC x86_64) {{ page.version }}
 
 ### Download
 
-The macOS versions of **xPack GNU Compiler Collection** are packed as a
+The macOS versions of **xPack GNU Compiler Collection** are packed as a
 `.tar.gz` archive.
 Download the latest version named like:
 
@@ -214,93 +214,93 @@ $ tree -L 2 /Users/ilg/.local/xPacks/gcc/xpack-gcc-{{ page.version }}-{{ page.xp
 /Users/ilg/.local/xPacks/gcc/xpack-gcc-{{ page.version }}-{{ page.xpack-subversion }}
 ├── README.md
 ├── bin
-│   ├── c++
-│   ├── cpp
-│   ├── g++
-│   ├── gcc
-│   ├── gcov
-│   ├── gcov-dump
-│   ├── gcov-tool
-│   ├── gdb
-│   ├── gdb-add-index
-│   ├── lto-dump
-│   ├── x86_64-apple-darwin21.4.0-c++
-│   ├── x86_64-apple-darwin21.4.0-g++
-│   ├── x86_64-apple-darwin21.4.0-gcc
-│   ├── x86_64-apple-darwin21.4.0-gcc-{{ page.version }}
-│   ├── x86_64-apple-darwin21.4.0-gcc-ar
-│   ├── x86_64-apple-darwin21.4.0-gcc-nm
-│   └── x86_64-apple-darwin21.4.0-gcc-ranlib
+│   ├── c++
+│   ├── cpp
+│   ├── g++
+│   ├── gcc
+│   ├── gcov
+│   ├── gcov-dump
+│   ├── gcov-tool
+│   ├── gdb
+│   ├── gdb-add-index
+│   ├── lto-dump
+│   ├── x86_64-apple-darwin21.4.0-c++
+│   ├── x86_64-apple-darwin21.4.0-g++
+│   ├── x86_64-apple-darwin21.4.0-gcc
+│   ├── x86_64-apple-darwin21.4.0-gcc-{{ page.version }}
+│   ├── x86_64-apple-darwin21.4.0-gcc-ar
+│   ├── x86_64-apple-darwin21.4.0-gcc-nm
+│   └── x86_64-apple-darwin21.4.0-gcc-ranlib
 ├── distro-info
-│   ├── CHANGELOG.md
-│   ├── licenses
-│   ├── patches
-│   └── scripts
+│   ├── CHANGELOG.md
+│   ├── licenses
+│   ├── patches
+│   └── scripts
 ├── include
-│   ├── c++
-│   └── gdb
+│   ├── c++
+│   └── gdb
 ├── lib
-│   ├── gcc
-│   ├── libasan.8.dylib
-│   ├── libasan.dylib -> libasan.8.dylib
-│   ├── libasan.la
-│   ├── libasan_preinit.o
-│   ├── libatomic.1.dylib
-│   ├── libatomic.a
-│   ├── libatomic.dylib -> libatomic.1.dylib
-│   ├── libatomic.la
-│   ├── libcc1.0.so
-│   ├── libcc1.a
-│   ├── libcc1.la
-│   ├── libcc1.so -> libcc1.0.so
-│   ├── libgcc_s.1.1.dylib
-│   ├── libgcc_s.1.dylib
-│   ├── libgomp.1.dylib
-│   ├── libgomp.a
-│   ├── libgomp.dylib -> libgomp.1.dylib
-│   ├── libgomp.la
-│   ├── libgomp.spec
-│   ├── libitm.1.dylib
-│   ├── libitm.a
-│   ├── libitm.dylib -> libitm.1.dylib
-│   ├── libitm.la
-│   ├── libitm.spec
-│   ├── libquadmath.0.dylib
-│   ├── libquadmath.a
-│   ├── libquadmath.dylib -> libquadmath.0.dylib
-│   ├── libquadmath.la
-│   ├── libsanitizer.spec
-│   ├── libssp.0.dylib
-│   ├── libssp.a
-│   ├── libssp.dylib -> libssp.0.dylib
-│   ├── libssp.la
-│   ├── libssp_nonshared.a
-│   ├── libssp_nonshared.la
-│   ├── libstdc++.6.dylib
-│   ├── libstdc++.6.dylib-gdb.py
-│   ├── libstdc++.a
-│   ├── libstdc++.dylib -> libstdc++.6.dylib
-│   ├── libstdc++.la
-│   ├── libstdc++fs.a
-│   ├── libstdc++fs.la
-│   ├── libsupc++.a
-│   ├── libsupc++.la
-│   ├── libubsan.1.dylib
-│   ├── libubsan.dylib -> libubsan.1.dylib
-│   └── libubsan.la
+│   ├── gcc
+│   ├── libasan.8.dylib
+│   ├── libasan.dylib -> libasan.8.dylib
+│   ├── libasan.la
+│   ├── libasan_preinit.o
+│   ├── libatomic.1.dylib
+│   ├── libatomic.a
+│   ├── libatomic.dylib -> libatomic.1.dylib
+│   ├── libatomic.la
+│   ├── libcc1.0.so
+│   ├── libcc1.a
+│   ├── libcc1.la
+│   ├── libcc1.so -> libcc1.0.so
+│   ├── libgcc_s.1.1.dylib
+│   ├── libgcc_s.1.dylib
+│   ├── libgomp.1.dylib
+│   ├── libgomp.a
+│   ├── libgomp.dylib -> libgomp.1.dylib
+│   ├── libgomp.la
+│   ├── libgomp.spec
+│   ├── libitm.1.dylib
+│   ├── libitm.a
+│   ├── libitm.dylib -> libitm.1.dylib
+│   ├── libitm.la
+│   ├── libitm.spec
+│   ├── libquadmath.0.dylib
+│   ├── libquadmath.a
+│   ├── libquadmath.dylib -> libquadmath.0.dylib
+│   ├── libquadmath.la
+│   ├── libsanitizer.spec
+│   ├── libssp.0.dylib
+│   ├── libssp.a
+│   ├── libssp.dylib -> libssp.0.dylib
+│   ├── libssp.la
+│   ├── libssp_nonshared.a
+│   ├── libssp_nonshared.la
+│   ├── libstdc++.6.dylib
+│   ├── libstdc++.6.dylib-gdb.py
+│   ├── libstdc++.a
+│   ├── libstdc++.dylib -> libstdc++.6.dylib
+│   ├── libstdc++.la
+│   ├── libstdc++fs.a
+│   ├── libstdc++fs.la
+│   ├── libsupc++.a
+│   ├── libsupc++.la
+│   ├── libubsan.1.dylib
+│   ├── libubsan.dylib -> libubsan.1.dylib
+│   └── libubsan.la
 ├── libexec
-│   ├── gcc
-│   ├── libexpat.1.8.8.dylib
-│   ├── libexpat.1.dylib -> libexpat.1.8.8.dylib
-│   ├── libgcc_s.1.1.dylib
-│   ├── libgcc_s.1.dylib
-│   ├── libgmp.10.dylib
-│   ├── libiconv.2.dylib
-│   ├── libisl.23.dylib
-│   ├── libmpc.3.dylib
-│   ├── libmpfr.6.dylib
-│   ├── libncursesw.6.dylib
-│   └── libstdc++.6.dylib
+│   ├── gcc
+│   ├── libexpat.1.8.8.dylib
+│   ├── libexpat.1.dylib -> libexpat.1.8.8.dylib
+│   ├── libgcc_s.1.1.dylib
+│   ├── libgcc_s.1.dylib
+│   ├── libgmp.10.dylib
+│   ├── libiconv.2.dylib
+│   ├── libisl.23.dylib
+│   ├── libmpc.3.dylib
+│   ├── libmpfr.6.dylib
+│   ├── libncursesw.6.dylib
+│   └── libstdc++.6.dylib
 └── share
     ├── doc
     ├── gcc-{{ page.version }}
@@ -337,7 +337,7 @@ gcc version {{ page.version }} (xPack GCC x86_64)
 
 ### Download
 
-The GNU/Linux versions of **xPack GNU Compiler Collection** 
+The GNU/Linux versions of **xPack GNU Compiler Collection**
 are packed as `.tar.gz` archives.
 Download the latest version named like:
 
@@ -345,8 +345,8 @@ Download the latest version named like:
 - `xpack-gcc-{{ page.version }}-{{ page.xpack-subversion }}-linux-arm.tar.gz`
 - `xpack-gcc-{{ page.version }}-{{ page.xpack-subversion }}-linux-arm64.tar.gz`
 
-As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
-Ubuntu, but can be executed on most recent GNU/Linux distributions.
+As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
+Ubuntu, but can be executed on most recent GNU/Linux distributions.
 
 ### Unpack
 
@@ -375,170 +375,170 @@ The result is a structure like:
 $ tree -L 2 /home/ilg/.local/xPacks/gcc/xpack-gcc-{{ page.version }}-{{ page.xpack-subversion }}
 /home/ilg/.local/xPacks/gcc/xpack-gcc-{{ page.version }}-{{ page.xpack-subversion }}
 ── bin
-│   ├── addr2line
-│   ├── ar
-│   ├── as
-│   ├── c++
-│   ├── c++filt
-│   ├── cpp
-│   ├── dwp
-│   ├── elfedit
-│   ├── g++
-│   ├── gcc
-│   ├── gcc-ar
-│   ├── gcc-nm
-│   ├── gcc-ranlib
-│   ├── gcore
-│   ├── gcov
-│   ├── gcov-dump
-│   ├── gcov-tool
-│   ├── gdb
-│   ├── gdb-add-index
-│   ├── gprof
-│   ├── ld
-│   ├── ld.bfd
-│   ├── ld.gold
-│   ├── lto-dump
-│   ├── nm
-│   ├── objcopy
-│   ├── objdump
-│   ├── ranlib
-│   ├── readelf
-│   ├── size
-│   ├── strings
-│   ├── strip
-│   ├── x86_64-pc-linux-gnu-c++
-│   ├── x86_64-pc-linux-gnu-g++
-│   ├── x86_64-pc-linux-gnu-gcc
-│   ├── x86_64-pc-linux-gnu-gcc-{{ page.version }}
-│   ├── x86_64-pc-linux-gnu-gcc-ar
-│   ├── x86_64-pc-linux-gnu-gcc-nm
-│   └── x86_64-pc-linux-gnu-gcc-ranlib
+│   ├── addr2line
+│   ├── ar
+│   ├── as
+│   ├── c++
+│   ├── c++filt
+│   ├── cpp
+│   ├── dwp
+│   ├── elfedit
+│   ├── g++
+│   ├── gcc
+│   ├── gcc-ar
+│   ├── gcc-nm
+│   ├── gcc-ranlib
+│   ├── gcore
+│   ├── gcov
+│   ├── gcov-dump
+│   ├── gcov-tool
+│   ├── gdb
+│   ├── gdb-add-index
+│   ├── gprof
+│   ├── ld
+│   ├── ld.bfd
+│   ├── ld.gold
+│   ├── lto-dump
+│   ├── nm
+│   ├── objcopy
+│   ├── objdump
+│   ├── ranlib
+│   ├── readelf
+│   ├── size
+│   ├── strings
+│   ├── strip
+│   ├── x86_64-pc-linux-gnu-c++
+│   ├── x86_64-pc-linux-gnu-g++
+│   ├── x86_64-pc-linux-gnu-gcc
+│   ├── x86_64-pc-linux-gnu-gcc-{{ page.version }}
+│   ├── x86_64-pc-linux-gnu-gcc-ar
+│   ├── x86_64-pc-linux-gnu-gcc-nm
+│   └── x86_64-pc-linux-gnu-gcc-ranlib
 ├── distro-info
-│   ├── CHANGELOG.md
-│   ├── licenses
-│   ├── patches
-│   └── scripts
+│   ├── CHANGELOG.md
+│   ├── licenses
+│   ├── patches
+│   └── scripts
 ├── include
-│   ├── ansidecl.h
-│   ├── bfd.h
-│   ├── bfdlink.h
-│   ├── c++
-│   ├── ctf-api.h
-│   ├── ctf.h
-│   ├── diagnostics.h
-│   ├── dis-asm.h
-│   ├── gdb
-│   ├── plugin-api.h
-│   └── symcat.h
+│   ├── ansidecl.h
+│   ├── bfd.h
+│   ├── bfdlink.h
+│   ├── c++
+│   ├── ctf-api.h
+│   ├── ctf.h
+│   ├── diagnostics.h
+│   ├── dis-asm.h
+│   ├── gdb
+│   ├── plugin-api.h
+│   └── symcat.h
 ├── lib
-│   ├── bfd-plugins
-│   ├── gcc
-│   ├── libbfd.a
-│   ├── libbfd.la
-│   ├── libctf.a
-│   ├── libctf.la
-│   ├── libctf-nobfd.a
-│   ├── libctf-nobfd.la
-│   ├── libopcodes.a
-│   └── libopcodes.la
+│   ├── bfd-plugins
+│   ├── gcc
+│   ├── libbfd.a
+│   ├── libbfd.la
+│   ├── libctf.a
+│   ├── libctf.la
+│   ├── libctf-nobfd.a
+│   ├── libctf-nobfd.la
+│   ├── libopcodes.a
+│   └── libopcodes.la
 ├── lib64
-│   ├── libasan.a
-│   ├── libasan.la
-│   ├── libasan_preinit.o
-│   ├── libasan.so -> libasan.so.8.0.0
-│   ├── libasan.so.8 -> libasan.so.8.0.0
-│   ├── libasan.so.8.0.0
-│   ├── libatomic.a
-│   ├── libatomic.la
-│   ├── libatomic.so -> libatomic.so.1.2.0
-│   ├── libatomic.so.1 -> libatomic.so.1.2.0
-│   ├── libatomic.so.1.2.0
-│   ├── libcc1.a
-│   ├── libcc1.la
-│   ├── libcc1.so -> libcc1.so.0.0.0
-│   ├── libcc1.so.0 -> libcc1.so.0.0.0
-│   ├── libcc1.so.0.0.0
-│   ├── libgcc_s.so
-│   ├── libgcc_s.so.1
-│   ├── libgomp.a
-│   ├── libgomp.la
-│   ├── libgomp.so -> libgomp.so.1.0.0
-│   ├── libgomp.so.1 -> libgomp.so.1.0.0
-│   ├── libgomp.so.1.0.0
-│   ├── libgomp.spec
-│   ├── libitm.a
-│   ├── libitm.la
-│   ├── libitm.so -> libitm.so.1.0.0
-│   ├── libitm.so.1 -> libitm.so.1.0.0
-│   ├── libitm.so.1.0.0
-│   ├── libitm.spec
-│   ├── liblsan.a
-│   ├── liblsan.la
-│   ├── liblsan_preinit.o
-│   ├── liblsan.so -> liblsan.so.0.0.0
-│   ├── liblsan.so.0 -> liblsan.so.0.0.0
-│   ├── liblsan.so.0.0.0
-│   ├── libquadmath.a
-│   ├── libquadmath.la
-│   ├── libquadmath.so -> libquadmath.so.0.0.0
-│   ├── libquadmath.so.0 -> libquadmath.so.0.0.0
-│   ├── libquadmath.so.0.0.0
-│   ├── libsanitizer.spec
-│   ├── libssp.a
-│   ├── libssp.la
-│   ├── libssp_nonshared.a
-│   ├── libssp_nonshared.la
-│   ├── libssp.so -> libssp.so.0.0.0
-│   ├── libssp.so.0 -> libssp.so.0.0.0
-│   ├── libssp.so.0.0.0
-│   ├── libstdc++.a
-│   ├── libstdc++fs.a
-│   ├── libstdc++fs.la
-│   ├── libstdc++.la
-│   ├── libstdc++.so -> libstdc++.so.6.0.30
-│   ├── libstdc++.so.6 -> libstdc++.so.6.0.30
-│   ├── libstdc++.so.6.0.30
-│   ├── libstdc++.so.6.0.30-gdb.py
-│   ├── libsupc++.a
-│   ├── libsupc++.la
-│   ├── libtsan.a
-│   ├── libtsan.la
-│   ├── libtsan_preinit.o
-│   ├── libtsan.so -> libtsan.so.2.0.0
-│   ├── libtsan.so.2 -> libtsan.so.2.0.0
-│   ├── libtsan.so.2.0.0
-│   ├── libubsan.a
-│   ├── libubsan.la
-│   ├── libubsan.so -> libubsan.so.1.0.0
-│   ├── libubsan.so.1 -> libubsan.so.1.0.0
-│   └── libubsan.so.1.0.0
+│   ├── libasan.a
+│   ├── libasan.la
+│   ├── libasan_preinit.o
+│   ├── libasan.so -> libasan.so.8.0.0
+│   ├── libasan.so.8 -> libasan.so.8.0.0
+│   ├── libasan.so.8.0.0
+│   ├── libatomic.a
+│   ├── libatomic.la
+│   ├── libatomic.so -> libatomic.so.1.2.0
+│   ├── libatomic.so.1 -> libatomic.so.1.2.0
+│   ├── libatomic.so.1.2.0
+│   ├── libcc1.a
+│   ├── libcc1.la
+│   ├── libcc1.so -> libcc1.so.0.0.0
+│   ├── libcc1.so.0 -> libcc1.so.0.0.0
+│   ├── libcc1.so.0.0.0
+│   ├── libgcc_s.so
+│   ├── libgcc_s.so.1
+│   ├── libgomp.a
+│   ├── libgomp.la
+│   ├── libgomp.so -> libgomp.so.1.0.0
+│   ├── libgomp.so.1 -> libgomp.so.1.0.0
+│   ├── libgomp.so.1.0.0
+│   ├── libgomp.spec
+│   ├── libitm.a
+│   ├── libitm.la
+│   ├── libitm.so -> libitm.so.1.0.0
+│   ├── libitm.so.1 -> libitm.so.1.0.0
+│   ├── libitm.so.1.0.0
+│   ├── libitm.spec
+│   ├── liblsan.a
+│   ├── liblsan.la
+│   ├── liblsan_preinit.o
+│   ├── liblsan.so -> liblsan.so.0.0.0
+│   ├── liblsan.so.0 -> liblsan.so.0.0.0
+│   ├── liblsan.so.0.0.0
+│   ├── libquadmath.a
+│   ├── libquadmath.la
+│   ├── libquadmath.so -> libquadmath.so.0.0.0
+│   ├── libquadmath.so.0 -> libquadmath.so.0.0.0
+│   ├── libquadmath.so.0.0.0
+│   ├── libsanitizer.spec
+│   ├── libssp.a
+│   ├── libssp.la
+│   ├── libssp_nonshared.a
+│   ├── libssp_nonshared.la
+│   ├── libssp.so -> libssp.so.0.0.0
+│   ├── libssp.so.0 -> libssp.so.0.0.0
+│   ├── libssp.so.0.0.0
+│   ├── libstdc++.a
+│   ├── libstdc++fs.a
+│   ├── libstdc++fs.la
+│   ├── libstdc++.la
+│   ├── libstdc++.so -> libstdc++.so.6.0.30
+│   ├── libstdc++.so.6 -> libstdc++.so.6.0.30
+│   ├── libstdc++.so.6.0.30
+│   ├── libstdc++.so.6.0.30-gdb.py
+│   ├── libsupc++.a
+│   ├── libsupc++.la
+│   ├── libtsan.a
+│   ├── libtsan.la
+│   ├── libtsan_preinit.o
+│   ├── libtsan.so -> libtsan.so.2.0.0
+│   ├── libtsan.so.2 -> libtsan.so.2.0.0
+│   ├── libtsan.so.2.0.0
+│   ├── libubsan.a
+│   ├── libubsan.la
+│   ├── libubsan.so -> libubsan.so.1.0.0
+│   ├── libubsan.so.1 -> libubsan.so.1.0.0
+│   └── libubsan.so.1.0.0
 ├── libexec
-│   ├── gcc
-│   ├── libexpat.so.1 -> libexpat.so.1.8.8
-│   ├── libexpat.so.1.8.8
-│   ├── libfl.so.2 -> libfl.so.2.0.0
-│   ├── libfl.so.2.0.0
-│   ├── libgcc_s.so.1
-│   ├── libgmp.so.10 -> libgmp.so.10.4.1
-│   ├── libgmp.so.10.4.1
-│   ├── libisl.so.23 -> libisl.so.23.1.0
-│   ├── libisl.so.23.1.0
-│   ├── liblzma.so.5 -> liblzma.so.5.2.5
-│   ├── liblzma.so.5.2.5
-│   ├── libmpc.so.3 -> libmpc.so.3.2.1
-│   ├── libmpc.so.3.2.1
-│   ├── libmpfr.so.6 -> libmpfr.so.6.1.0
-│   ├── libmpfr.so.6.1.0
-│   ├── libncursesw.so.6 -> libncursesw.so.6.3
-│   ├── libncursesw.so.6.3
-│   ├── libstdc++.so.6 -> libstdc++.so.6.0.30
-│   └── libstdc++.so.6.0.30
+│   ├── gcc
+│   ├── libexpat.so.1 -> libexpat.so.1.8.8
+│   ├── libexpat.so.1.8.8
+│   ├── libfl.so.2 -> libfl.so.2.0.0
+│   ├── libfl.so.2.0.0
+│   ├── libgcc_s.so.1
+│   ├── libgmp.so.10 -> libgmp.so.10.4.1
+│   ├── libgmp.so.10.4.1
+│   ├── libisl.so.23 -> libisl.so.23.1.0
+│   ├── libisl.so.23.1.0
+│   ├── liblzma.so.5 -> liblzma.so.5.2.5
+│   ├── liblzma.so.5.2.5
+│   ├── libmpc.so.3 -> libmpc.so.3.2.1
+│   ├── libmpc.so.3.2.1
+│   ├── libmpfr.so.6 -> libmpfr.so.6.1.0
+│   ├── libmpfr.so.6.1.0
+│   ├── libncursesw.so.6 -> libncursesw.so.6.3
+│   ├── libncursesw.so.6.3
+│   ├── libstdc++.so.6 -> libstdc++.so.6.0.30
+│   └── libstdc++.so.6.0.30
 ├── README.md
 ├── share
-│   ├── doc
-│   ├── gcc-{{ page.version }}
-│   └── gdb
+│   ├── doc
+│   ├── gcc-{{ page.version }}
+│   └── gdb
 └── x86_64-pc-linux-gnu
     ├── bin
     └── lib

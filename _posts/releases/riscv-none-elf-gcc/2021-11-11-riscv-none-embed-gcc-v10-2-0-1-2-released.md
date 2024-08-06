@@ -63,7 +63,7 @@ The binary files are available from [GitHub Releases]({{ page.download_url }}).
 
 ## Install
 
-The full details of installing the **xPack GNU RISC-V Embedded GCC** on various platforms
+The full details of installing the **xPack GNU RISC-V Embedded GCC** on various platforms
 are presented in the separate [Install]({{ site.baseurl }}/riscv-none-embed-gcc/install/) page.
 
 ### Easy install
@@ -343,7 +343,7 @@ the distribution.
   (~70K), the compiler sources became too large and it was not possible to build the Arm 32-bit image
   ([#229](https://github.com/riscv/riscv-gcc/issues/229))
 - the archive size got too big for the Windows 32-bit node to handle, and
-  `xpm install` may fail with _RangeError: Array buffer allocation failed_;
+  `xpm install` may fail with _RangeError: Array buffer allocation failed_;
   the 64-bit systems are not affected.
 
 ## Shared libraries

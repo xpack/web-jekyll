@@ -174,8 +174,8 @@ xPack OpenOCD x86_64 Open On-Chip Debugger {{ page.version }}+dev ({{ page.versi
 
 ### Drivers
 
-As usual on Windows, mastering drivers is a challenge and OpenOCD is no
-exceptions, so don't be surprised to encounter many incompatible drivers
+As usual on Windows, mastering drivers is a challenge and OpenOCD is no
+exceptions, so don't be surprised to encounter many incompatible drivers
 for various JTAG probes.
 
 ### Zadig
@@ -210,8 +210,8 @@ administrative privileges.
 As for most Windows drivers, to complete the installation, a restart
 usually helps.
 
-Connect the ST-LINK/v2 or the DISCOVERY board and check in **Control Panel** 
-→ **System** → **Device Manager** if the JTAG is operational.
+Connect the ST-LINK/v2 or the DISCOVERY board and check in **Control Panel**
+→ **System** → **Device Manager** if the JTAG is operational.
 
 ![ST-LINK Windows device]({{ site.baseurl }}/assets/images/2019/windows-devices-stlink.png)
 
@@ -242,7 +242,7 @@ xPack OpenOCD x86_64 Open On-Chip Debugger {{ page.version }}+dev ({{ page.versi
 
 ### Download
 
-The macOS versions of **xPack OpenOCD**
+The macOS versions of **xPack OpenOCD**
 are packed as `.tar.gz` archives.
 Download the latest version named like:
 
@@ -277,38 +277,38 @@ The result is a structure like:
 $ tree -L 2 /Users/ilg/.local/xPacks/openocd/xpack-openocd-{{ page.version }}-{{ page.xpack-subversion }}
 /Users/ilg/.local/xPacks/openocd/xpack-openocd-{{ page.version }}-{{ page.xpack-subversion }}
 ├── OpenULINK
-│   └── ulink_firmware.hex
+│   └── ulink_firmware.hex
 ├── README.md
 ├── bin
-│   └── openocd
+│   └── openocd
 ├── contrib
-│   ├── 60-openocd.rules
-│   └── libdcc
+│   ├── 60-openocd.rules
+│   └── libdcc
 ├── distro-info
-│   ├── CHANGELOG.md
-│   ├── licenses
-│   ├── patches
-│   └── scripts
+│   ├── CHANGELOG.md
+│   ├── licenses
+│   ├── patches
+│   └── scripts
 ├── libexec
-│   ├── libftdi1.2.5.0.dylib
-│   ├── libftdi1.2.dylib -> libftdi1.2.5.0.dylib
-│   ├── libgcc_s.1.dylib
-│   ├── libhidapi.0.dylib
-│   └── libusb-1.0.0.dylib
+│   ├── libftdi1.2.5.0.dylib
+│   ├── libftdi1.2.dylib -> libftdi1.2.5.0.dylib
+│   ├── libgcc_s.1.dylib
+│   ├── libhidapi.0.dylib
+│   └── libusb-1.0.0.dylib
 ├── scripts
-│   ├── bitsbytes.tcl
-│   ├── board
-│   ├── chip
-│   ├── cpld
-│   ├── cpu
-│   ├── fpga
-│   ├── interface
-│   ├── mem_helper.tcl
-│   ├── memory.tcl
-│   ├── mmr_helpers.tcl
-│   ├── target
-│   ├── test
-│   └── tools
+│   ├── bitsbytes.tcl
+│   ├── board
+│   ├── chip
+│   ├── cpld
+│   ├── cpu
+│   ├── fpga
+│   ├── interface
+│   ├── mem_helper.tcl
+│   ├── memory.tcl
+│   ├── mmr_helpers.tcl
+│   ├── target
+│   ├── test
+│   └── tools
 └── share
     └── doc
 
@@ -342,7 +342,7 @@ xPack OpenOCD x86_64 Open On-Chip Debugger {{ page.version }}+dev ({{ page.versi
 
 ### Download
 
-The GNU/Linux versions of **xPack OpenOCD**
+The GNU/Linux versions of **xPack OpenOCD**
 are packed as `.tar.gz` archives.
 Download the latest version named like:
 
@@ -350,8 +350,8 @@ Download the latest version named like:
 - `xpack-openocd-{{ page.version }}-{{ page.xpack-subversion }}-linux-arm.tar.gz`
 - `xpack-openocd-{{ page.version }}-{{ page.xpack-subversion }}-linux-arm64.tar.gz`
 
-As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
-Ubuntu, but can be executed on most recent GNU/Linux distributions.
+As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
+Ubuntu, but can be executed on most recent GNU/Linux distributions.
 
 ### Unpack
 
@@ -381,43 +381,43 @@ for the executable in this location." %}
 $ tree -L 2 '/home/ilg/.local/xPacks/openocd/xpack-openocd-{{ page.version }}-{{ page.xpack-subversion }}'
 /home/ilg/.local/xPacks/openocd/xpack-openocd-{{ page.version }}-{{ page.xpack-subversion }}/
 ├── bin
-│   └── openocd
+│   └── openocd
 ├── contrib
-│   ├── 60-openocd.rules
-│   └── libdcc
+│   ├── 60-openocd.rules
+│   └── libdcc
 ├── distro-info
-│   ├── CHANGELOG.md
-│   ├── licenses
-│   ├── patches
-│   └── scripts
+│   ├── CHANGELOG.md
+│   ├── licenses
+│   ├── patches
+│   └── scripts
 ├── libexec
-│   ├── libftdi1.so.2 -> libftdi1.so.2.5.0
-│   ├── libftdi1.so.2.5.0
-│   ├── libhidapi-hidraw.so.0 -> libhidapi-hidraw.so.0.0.0
-│   ├── libhidapi-hidraw.so.0.0.0
-│   ├── libiconv.so.2 -> libiconv.so.2.6.1
-│   ├── libiconv.so.2.6.1
-│   ├── libudev.so.1 -> libudev.so.1.6.9
-│   ├── libudev.so.1.6.9
-│   ├── libusb-1.0.so.0 -> libusb-1.0.so.0.3.0
-│   └── libusb-1.0.so.0.3.0
+│   ├── libftdi1.so.2 -> libftdi1.so.2.5.0
+│   ├── libftdi1.so.2.5.0
+│   ├── libhidapi-hidraw.so.0 -> libhidapi-hidraw.so.0.0.0
+│   ├── libhidapi-hidraw.so.0.0.0
+│   ├── libiconv.so.2 -> libiconv.so.2.6.1
+│   ├── libiconv.so.2.6.1
+│   ├── libudev.so.1 -> libudev.so.1.6.9
+│   ├── libudev.so.1.6.9
+│   ├── libusb-1.0.so.0 -> libusb-1.0.so.0.3.0
+│   └── libusb-1.0.so.0.3.0
 ├── OpenULINK
-│   └── ulink_firmware.hex
+│   └── ulink_firmware.hex
 ├── README.md
 ├── scripts
-│   ├── bitsbytes.tcl
-│   ├── board
-│   ├── chip
-│   ├── cpld
-│   ├── cpu
-│   ├── fpga
-│   ├── interface
-│   ├── mem_helper.tcl
-│   ├── memory.tcl
-│   ├── mmr_helpers.tcl
-│   ├── target
-│   ├── test
-│   └── tools
+│   ├── bitsbytes.tcl
+│   ├── board
+│   ├── chip
+│   ├── cpld
+│   ├── cpu
+│   ├── fpga
+│   ├── interface
+│   ├── mem_helper.tcl
+│   ├── memory.tcl
+│   ├── mmr_helpers.tcl
+│   ├── target
+│   ├── test
+│   └── tools
 └── share
     └── doc
 
@@ -496,7 +496,7 @@ it is generally
 necessary to select the interface and the processor. As a shortcut, for
 some well known boards, there are ready made configuration files
 to set both the interface and the processor. For example, on
-macOS, to test a connection via ST/LINK v2 to the STM32F4DISCOVERY board,
+macOS, to test a connection via ST/LINK v2 to the STM32F4DISCOVERY board,
 you can use the sample below:
 
 ```console

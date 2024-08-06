@@ -36,7 +36,7 @@ packages will be available with all required tools.
 
 ## Benefits
 
-The main advantages of using the **xPack XBB Bootstrap** are:
+The main advantages of using the **xPack XBB Bootstrap** are:
 
 - a convenient, uniform and portable install/uninstall/upgrade procedure
 - a better integration with development environments
@@ -48,11 +48,11 @@ and can be installed in any location.
 ## Compatibility
 
 The **xPack XBB Bootstrap** tools are generally fully compatible with the
-original included projects.
+original included projects.
 
 ## Install
 
-The details of installing the **xPack XBB Bootstrap** on various platforms are
+The details of installing the **xPack XBB Bootstrap** on various platforms are
 presented in the separate
 [install]({{ site.baseurl }}/dev-tools/xbb-bootstrap/install/) page.
 

@@ -188,7 +188,7 @@ Thread model: posix
 
 ### Download
 
-The macOS versions of **xPack LLVM clang** are packed as a
+The macOS versions of **xPack LLVM clang** are packed as a
 `.tar.gz` archive.
 Download the latest version named like:
 
@@ -221,116 +221,116 @@ $ tree -L 2 /Users/ilg/.local/xPacks/clang/xpack-clang-{{ page.version }}-{{ pag
 /Users/ilg/.local/xPacks/clang/xpack-clang-{{ page.version }}-{{ page.xpack-subversion }}
 ├── README.md
 ├── bin
-│   ├── analyze-build
-│   ├── clang -> clang-{{ page.version-major }}
-│   ├── clang++ -> clang
-│   ├── clang-{{ page.version-major }}
-│   ├── clang-check
-│   ├── clang-cl -> clang
-│   ├── clang-cpp -> clang
-│   ├── clang-doc
-│   ├── clang-format
-│   ├── clang-offload-bundler
-│   ├── clang-offload-wrapper
-│   ├── clang-refactor
-│   ├── clang-rename
-│   ├── clang-repl
-│   ├── clang-scan-deps
-│   ├── clang-tidy
-│   ├── clangd
-│   ├── clangd-xpc-test-client
-│   ├── darwin-debug
-│   ├── diagtool
-│   ├── git-clang-format
-│   ├── hmaptool
-│   ├── intercept-build
-│   ├── ld.lld -> lld
-│   ├── ld64.lld -> lld
-│   ├── ld64.lld.darwinnew -> lld
-│   ├── ld64.lld.darwinold -> lld
-│   ├── lld
-│   ├── lld-link -> lld
-│   ├── lldb
-│   ├── lldb-argdumper
-│   ├── lldb-instr
-│   ├── lldb-server
-│   ├── lldb-vscode
-│   ├── llvm-addr2line -> llvm-symbolizer
-│   ├── llvm-ar
-│   ├── llvm-as
-│   ├── llvm-bitcode-strip -> llvm-objcopy
-│   ├── llvm-config
-│   ├── llvm-cov
-│   ├── llvm-cxxdump
-│   ├── llvm-cxxfilt
-│   ├── llvm-cxxmap
-│   ├── llvm-diff
-│   ├── llvm-dis
-│   ├── llvm-dlltool -> llvm-ar
-│   ├── llvm-lib -> llvm-ar
-│   ├── llvm-libtool-darwin
-│   ├── llvm-nm
-│   ├── llvm-objcopy
-│   ├── llvm-objdump
-│   ├── llvm-otool -> llvm-objdump
-│   ├── llvm-profdata
-│   ├── llvm-ranlib -> llvm-ar
-│   ├── llvm-rc
-│   ├── llvm-readelf -> llvm-readobj
-│   ├── llvm-readobj
-│   ├── llvm-sim
-│   ├── llvm-size
-│   ├── llvm-strings
-│   ├── llvm-strip -> llvm-objcopy
-│   ├── llvm-symbolizer
-│   ├── llvm-tapi-diff
-│   ├── llvm-tblgen
-│   ├── llvm-windres -> llvm-rc
-│   ├── run-clang-tidy
-│   ├── scan-build-py
-│   ├── set-xcode-analyzer
-│   ├── split-file
-│   └── wasm-ld -> lld
+│   ├── analyze-build
+│   ├── clang -> clang-{{ page.version-major }}
+│   ├── clang++ -> clang
+│   ├── clang-{{ page.version-major }}
+│   ├── clang-check
+│   ├── clang-cl -> clang
+│   ├── clang-cpp -> clang
+│   ├── clang-doc
+│   ├── clang-format
+│   ├── clang-offload-bundler
+│   ├── clang-offload-wrapper
+│   ├── clang-refactor
+│   ├── clang-rename
+│   ├── clang-repl
+│   ├── clang-scan-deps
+│   ├── clang-tidy
+│   ├── clangd
+│   ├── clangd-xpc-test-client
+│   ├── darwin-debug
+│   ├── diagtool
+│   ├── git-clang-format
+│   ├── hmaptool
+│   ├── intercept-build
+│   ├── ld.lld -> lld
+│   ├── ld64.lld -> lld
+│   ├── ld64.lld.darwinnew -> lld
+│   ├── ld64.lld.darwinold -> lld
+│   ├── lld
+│   ├── lld-link -> lld
+│   ├── lldb
+│   ├── lldb-argdumper
+│   ├── lldb-instr
+│   ├── lldb-server
+│   ├── lldb-vscode
+│   ├── llvm-addr2line -> llvm-symbolizer
+│   ├── llvm-ar
+│   ├── llvm-as
+│   ├── llvm-bitcode-strip -> llvm-objcopy
+│   ├── llvm-config
+│   ├── llvm-cov
+│   ├── llvm-cxxdump
+│   ├── llvm-cxxfilt
+│   ├── llvm-cxxmap
+│   ├── llvm-diff
+│   ├── llvm-dis
+│   ├── llvm-dlltool -> llvm-ar
+│   ├── llvm-lib -> llvm-ar
+│   ├── llvm-libtool-darwin
+│   ├── llvm-nm
+│   ├── llvm-objcopy
+│   ├── llvm-objdump
+│   ├── llvm-otool -> llvm-objdump
+│   ├── llvm-profdata
+│   ├── llvm-ranlib -> llvm-ar
+│   ├── llvm-rc
+│   ├── llvm-readelf -> llvm-readobj
+│   ├── llvm-readobj
+│   ├── llvm-sim
+│   ├── llvm-size
+│   ├── llvm-strings
+│   ├── llvm-strip -> llvm-objcopy
+│   ├── llvm-symbolizer
+│   ├── llvm-tapi-diff
+│   ├── llvm-tblgen
+│   ├── llvm-windres -> llvm-rc
+│   ├── run-clang-tidy
+│   ├── scan-build-py
+│   ├── set-xcode-analyzer
+│   ├── split-file
+│   └── wasm-ld -> lld
 ├── distro-info
-│   ├── CHANGELOG.md
-│   ├── licenses
-│   ├── patches
-│   └── scripts
+│   ├── CHANGELOG.md
+│   ├── licenses
+│   ├── patches
+│   └── scripts
 ├── include
 ├── lib
-│   ├── LLVMPolly.so
-│   ├── clang
-│   ├── cmake
-│   ├── libLLVM.dylib
-│   ├── libLTO.dylib
-│   ├── libRemarks.dylib
-│   ├── libclang-cpp.dylib
-│   ├── libclang.dylib
-│   ├── libear
-│   ├── liblldb.{{ page.version }}.dylib
-│   ├── liblldb.dylib -> liblldb.{{ page.version }}.dylib
-│   └── libscanbuild
+│   ├── LLVMPolly.so
+│   ├── clang
+│   ├── cmake
+│   ├── libLLVM.dylib
+│   ├── libLTO.dylib
+│   ├── libRemarks.dylib
+│   ├── libclang-cpp.dylib
+│   ├── libclang.dylib
+│   ├── libear
+│   ├── liblldb.{{ page.version }}.dylib
+│   ├── liblldb.dylib -> liblldb.{{ page.version }}.dylib
+│   └── libscanbuild
 ├── libexec
-│   ├── analyze-c++
-│   ├── analyze-cc
-│   ├── c++-analyzer
-│   ├── ccc-analyzer
-│   ├── intercept-c++
-│   ├── intercept-cc
-│   ├── libLLVM.dylib
-│   ├── libclang-cpp.dylib
-│   ├── libedit.0.dylib
-│   ├── libffi.8.dylib
-│   ├── libform.6.dylib
-│   ├── libgcc_s.1.dylib
-│   ├── libiconv.2.dylib
-│   ├── liblldb.{{ page.version }}.dylib
-│   ├── liblzma.5.dylib
-│   ├── libncurses.6.dylib
-│   ├── libpanel.6.dylib
-│   ├── libxml2.2.dylib
-│   ├── libz.1.2.11.dylib
-│   └── libz.1.dylib -> libz.1.2.11.dylib
+│   ├── analyze-c++
+│   ├── analyze-cc
+│   ├── c++-analyzer
+│   ├── ccc-analyzer
+│   ├── intercept-c++
+│   ├── intercept-cc
+│   ├── libLLVM.dylib
+│   ├── libclang-cpp.dylib
+│   ├── libedit.0.dylib
+│   ├── libffi.8.dylib
+│   ├── libform.6.dylib
+│   ├── libgcc_s.1.dylib
+│   ├── libiconv.2.dylib
+│   ├── liblldb.{{ page.version }}.dylib
+│   ├── liblzma.5.dylib
+│   ├── libncurses.6.dylib
+│   ├── libpanel.6.dylib
+│   ├── libxml2.2.dylib
+│   ├── libz.1.2.11.dylib
+│   └── libz.1.dylib -> libz.1.2.11.dylib
 └── share
     ├── clang
     ├── opt-viewer
@@ -372,7 +372,7 @@ Thread model: posix
 
 ### Download
 
-The GNU/Linux versions of **xPack LLVM clang** 
+The GNU/Linux versions of **xPack LLVM clang**
 are packed as `.tar.gz` archives.
 Download the latest version named like:
 
@@ -380,8 +380,8 @@ Download the latest version named like:
 - `xpack-clang-{{ page.version }}-{{ page.xpack-subversion }}-linux-arm.tar.gz`
 - `xpack-clang-{{ page.version }}-{{ page.xpack-subversion }}-linux-arm64.tar.gz`
 
-As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
-Ubuntu, but can be executed on most recent GNU/Linux distributions.
+As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
+Ubuntu, but can be executed on most recent GNU/Linux distributions.
 
 ### Unpack
 
@@ -410,149 +410,149 @@ The result is a structure like:
 $ tree -L 2 /home/ilg/.local/xPacks/clang/xpack-clang-{{ page.version }}-{{ page.xpack-subversion }}
 /home/ilg/.local/xPacks/clang/xpack-clang-{{ page.version }}-{{ page.xpack-subversion }}
 ├── bin
-│   ├── analyze-build
-│   ├── clang -> clang-{{ page.version-major }}
-│   ├── clang++ -> clang
-│   ├── clang-{{ page.version-major }}
-│   ├── clang-check
-│   ├── clang-cl -> clang
-│   ├── clang-cpp -> clang
-│   ├── clangd
-│   ├── clang-doc
-│   ├── clang-format
-│   ├── clang-offload-bundler
-│   ├── clang-offload-wrapper
-│   ├── clang-refactor
-│   ├── clang-rename
-│   ├── clang-repl
-│   ├── clang-scan-deps
-│   ├── clang-tidy
-│   ├── diagtool
-│   ├── dwp
-│   ├── git-clang-format
-│   ├── hmaptool
-│   ├── intercept-build
-│   ├── ld64.lld -> lld
-│   ├── ld64.lld.darwinnew -> lld
-│   ├── ld64.lld.darwinold -> lld
-│   ├── ld.gold
-│   ├── ld.lld -> lld
-│   ├── lld
-│   ├── lldb
-│   ├── lldb-argdumper
-│   ├── lldb-instr
-│   ├── lldb-server
-│   ├── lldb-vscode
-│   ├── lld-link -> lld
-│   ├── llvm-addr2line -> llvm-symbolizer
-│   ├── llvm-ar
-│   ├── llvm-as
-│   ├── llvm-bitcode-strip -> llvm-objcopy
-│   ├── llvm-config
-│   ├── llvm-cov
-│   ├── llvm-cxxdump
-│   ├── llvm-cxxfilt
-│   ├── llvm-cxxmap
-│   ├── llvm-diff
-│   ├── llvm-dis
-│   ├── llvm-dlltool -> llvm-ar
-│   ├── llvm-lib -> llvm-ar
-│   ├── llvm-libtool-darwin
-│   ├── llvm-nm
-│   ├── llvm-objcopy
-│   ├── llvm-objdump
-│   ├── llvm-otool -> llvm-objdump
-│   ├── llvm-profdata
-│   ├── llvm-ranlib -> llvm-ar
-│   ├── llvm-rc
-│   ├── llvm-readelf -> llvm-readobj
-│   ├── llvm-readobj
-│   ├── llvm-sim
-│   ├── llvm-size
-│   ├── llvm-strings
-│   ├── llvm-strip -> llvm-objcopy
-│   ├── llvm-symbolizer
-│   ├── llvm-tapi-diff
-│   ├── llvm-tblgen
-│   ├── llvm-windres -> llvm-rc
-│   ├── run-clang-tidy
-│   ├── scan-build-py
-│   ├── split-file
-│   └── wasm-ld -> lld
+│   ├── analyze-build
+│   ├── clang -> clang-{{ page.version-major }}
+│   ├── clang++ -> clang
+│   ├── clang-{{ page.version-major }}
+│   ├── clang-check
+│   ├── clang-cl -> clang
+│   ├── clang-cpp -> clang
+│   ├── clangd
+│   ├── clang-doc
+│   ├── clang-format
+│   ├── clang-offload-bundler
+│   ├── clang-offload-wrapper
+│   ├── clang-refactor
+│   ├── clang-rename
+│   ├── clang-repl
+│   ├── clang-scan-deps
+│   ├── clang-tidy
+│   ├── diagtool
+│   ├── dwp
+│   ├── git-clang-format
+│   ├── hmaptool
+│   ├── intercept-build
+│   ├── ld64.lld -> lld
+│   ├── ld64.lld.darwinnew -> lld
+│   ├── ld64.lld.darwinold -> lld
+│   ├── ld.gold
+│   ├── ld.lld -> lld
+│   ├── lld
+│   ├── lldb
+│   ├── lldb-argdumper
+│   ├── lldb-instr
+│   ├── lldb-server
+│   ├── lldb-vscode
+│   ├── lld-link -> lld
+│   ├── llvm-addr2line -> llvm-symbolizer
+│   ├── llvm-ar
+│   ├── llvm-as
+│   ├── llvm-bitcode-strip -> llvm-objcopy
+│   ├── llvm-config
+│   ├── llvm-cov
+│   ├── llvm-cxxdump
+│   ├── llvm-cxxfilt
+│   ├── llvm-cxxmap
+│   ├── llvm-diff
+│   ├── llvm-dis
+│   ├── llvm-dlltool -> llvm-ar
+│   ├── llvm-lib -> llvm-ar
+│   ├── llvm-libtool-darwin
+│   ├── llvm-nm
+│   ├── llvm-objcopy
+│   ├── llvm-objdump
+│   ├── llvm-otool -> llvm-objdump
+│   ├── llvm-profdata
+│   ├── llvm-ranlib -> llvm-ar
+│   ├── llvm-rc
+│   ├── llvm-readelf -> llvm-readobj
+│   ├── llvm-readobj
+│   ├── llvm-sim
+│   ├── llvm-size
+│   ├── llvm-strings
+│   ├── llvm-strip -> llvm-objcopy
+│   ├── llvm-symbolizer
+│   ├── llvm-tapi-diff
+│   ├── llvm-tblgen
+│   ├── llvm-windres -> llvm-rc
+│   ├── run-clang-tidy
+│   ├── scan-build-py
+│   ├── split-file
+│   └── wasm-ld -> lld
 ├── distro-info
-│   ├── CHANGELOG.md
-│   ├── licenses
-│   ├── patches
-│   └── scripts
+│   ├── CHANGELOG.md
+│   ├── licenses
+│   ├── patches
+│   └── scripts
 ├── include
-│   └── c++
+│   └── c++
 ├── lib
-│   ├── clang
-│   ├── cmake
-│   ├── libc++.a
-│   ├── libc++abi.a
-│   ├── libc++abi.so -> libc++abi.so.1
-│   ├── libc++abi.so.1 -> libc++abi.so.1.0
-│   ├── libc++abi.so.1.0
-│   ├── libc++experimental.a
-│   ├── libclang-cpp.so -> libclang-cpp.so.{{ page.version-major }}
-│   ├── libclang-cpp.so.{{ page.version-major }}
-│   ├── libclang.so -> libclang.so.{{ page.version-major }}
-│   ├── libclang.so.{{ page.version-major }} -> libclang.so.{{ page.version }}
-│   ├── libclang.so.{{ page.version }}
-│   ├── libc++.so
-│   ├── libc++.so.1 -> libc++.so.1.0
-│   ├── libc++.so.1.0
-│   ├── libear
-│   ├── liblldbIntelFeatures.so -> liblldbIntelFeatures.so.{{ page.version-major }}
-│   ├── liblldbIntelFeatures.so.{{ page.version-major }}
-│   ├── liblldb.so -> liblldb.so.{{ page.version-major }}
-│   ├── liblldb.so.{{ page.version-major }} -> liblldb.so.{{ page.version }}
-│   ├── liblldb.so.{{ page.version }}
-│   ├── libLLVM-{{ page.version }}.so -> libLLVM-{{ page.version-major }}.so
-│   ├── libLLVM-{{ page.version-major }}.so
-│   ├── libLLVM.so -> libLLVM-{{ page.version-major }}.so
-│   ├── libLTO.so -> libLTO.so.{{ page.version-major }}
-│   ├── libLTO.so.{{ page.version-major }}
-│   ├── libRemarks.so -> libRemarks.so.{{ page.version-major }}
-│   ├── libRemarks.so.{{ page.version-major }}
-│   ├── libscanbuild
-│   ├── libunwind.a
-│   ├── libunwind.so -> libunwind.so.1
-│   ├── libunwind.so.1 -> libunwind.so.1.0
-│   ├── libunwind.so.1.0
-│   ├── LLVMgold.so
-│   └── LLVMPolly.so
+│   ├── clang
+│   ├── cmake
+│   ├── libc++.a
+│   ├── libc++abi.a
+│   ├── libc++abi.so -> libc++abi.so.1
+│   ├── libc++abi.so.1 -> libc++abi.so.1.0
+│   ├── libc++abi.so.1.0
+│   ├── libc++experimental.a
+│   ├── libclang-cpp.so -> libclang-cpp.so.{{ page.version-major }}
+│   ├── libclang-cpp.so.{{ page.version-major }}
+│   ├── libclang.so -> libclang.so.{{ page.version-major }}
+│   ├── libclang.so.{{ page.version-major }} -> libclang.so.{{ page.version }}
+│   ├── libclang.so.{{ page.version }}
+│   ├── libc++.so
+│   ├── libc++.so.1 -> libc++.so.1.0
+│   ├── libc++.so.1.0
+│   ├── libear
+│   ├── liblldbIntelFeatures.so -> liblldbIntelFeatures.so.{{ page.version-major }}
+│   ├── liblldbIntelFeatures.so.{{ page.version-major }}
+│   ├── liblldb.so -> liblldb.so.{{ page.version-major }}
+│   ├── liblldb.so.{{ page.version-major }} -> liblldb.so.{{ page.version }}
+│   ├── liblldb.so.{{ page.version }}
+│   ├── libLLVM-{{ page.version }}.so -> libLLVM-{{ page.version-major }}.so
+│   ├── libLLVM-{{ page.version-major }}.so
+│   ├── libLLVM.so -> libLLVM-{{ page.version-major }}.so
+│   ├── libLTO.so -> libLTO.so.{{ page.version-major }}
+│   ├── libLTO.so.{{ page.version-major }}
+│   ├── libRemarks.so -> libRemarks.so.{{ page.version-major }}
+│   ├── libRemarks.so.{{ page.version-major }}
+│   ├── libscanbuild
+│   ├── libunwind.a
+│   ├── libunwind.so -> libunwind.so.1
+│   ├── libunwind.so.1 -> libunwind.so.1.0
+│   ├── libunwind.so.1.0
+│   ├── LLVMgold.so
+│   └── LLVMPolly.so
 ├── libexec
-│   ├── analyze-c++
-│   ├── analyze-cc
-│   ├── c++-analyzer
-│   ├── ccc-analyzer
-│   ├── intercept-c++
-│   ├── intercept-cc
-│   ├── libatomic.so.1 -> libatomic.so.1.2.0
-│   ├── libatomic.so.1.2.0
-│   ├── libedit.so.0 -> libedit.so.0.0.68
-│   ├── libedit.so.0.0.68
-│   ├── libffi.so.8 -> libffi.so.8.1.0
-│   ├── libffi.so.8.1.0
-│   ├── libform.so.6 -> libform.so.6.3
-│   ├── libform.so.6.3
-│   ├── libgcc_s.so.1
-│   ├── libiconv.so.2 -> libiconv.so.2.6.1
-│   ├── libiconv.so.2.6.1
-│   ├── liblzma.so.5 -> liblzma.so.5.2.5
-│   ├── liblzma.so.5.2.5
-│   ├── libncurses.so.6 -> libncurses.so.6.3
-│   ├── libncurses.so.6.3
-│   ├── libpanel.so.6 -> libpanel.so.6.3
-│   ├── libpanel.so.6.3
-│   ├── libstdc++.so.6 -> libstdc++.so.6.0.29
-│   ├── libstdc++.so.6.0.29
-│   ├── libxml2.so.2 -> libxml2.so.2.9.11
-│   ├── libxml2.so.2.9.11
-│   ├── libz.so.1 -> libz.so.1.2.11
-│   └── libz.so.1.2.11
+│   ├── analyze-c++
+│   ├── analyze-cc
+│   ├── c++-analyzer
+│   ├── ccc-analyzer
+│   ├── intercept-c++
+│   ├── intercept-cc
+│   ├── libatomic.so.1 -> libatomic.so.1.2.0
+│   ├── libatomic.so.1.2.0
+│   ├── libedit.so.0 -> libedit.so.0.0.68
+│   ├── libedit.so.0.0.68
+│   ├── libffi.so.8 -> libffi.so.8.1.0
+│   ├── libffi.so.8.1.0
+│   ├── libform.so.6 -> libform.so.6.3
+│   ├── libform.so.6.3
+│   ├── libgcc_s.so.1
+│   ├── libiconv.so.2 -> libiconv.so.2.6.1
+│   ├── libiconv.so.2.6.1
+│   ├── liblzma.so.5 -> liblzma.so.5.2.5
+│   ├── liblzma.so.5.2.5
+│   ├── libncurses.so.6 -> libncurses.so.6.3
+│   ├── libncurses.so.6.3
+│   ├── libpanel.so.6 -> libpanel.so.6.3
+│   ├── libpanel.so.6.3
+│   ├── libstdc++.so.6 -> libstdc++.so.6.0.29
+│   ├── libstdc++.so.6.0.29
+│   ├── libxml2.so.2 -> libxml2.so.2.9.11
+│   ├── libxml2.so.2.9.11
+│   ├── libz.so.1 -> libz.so.1.2.11
+│   └── libz.so.1.2.11
 ├── README.md
 └── share
     ├── clang

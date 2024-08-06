@@ -121,7 +121,7 @@ patchelf {{ page.version }}
 
 ### Download
 
-The macOS versions of **xPack NixOS PatchELF**
+The macOS versions of **xPack NixOS PatchELF**
 are packed as `.tar.gz` archives.
 Download the latest version named like:
 
@@ -152,12 +152,12 @@ $ tree -L 2 /Users/ilg/.local/xPacks/patchelf/xpack-patchelf-{{ page.version }}-
 /Users/ilg/.local/xPacks/patchelf/xpack-patchelf-{{ page.version }}-{{ page.xpack-subversion }}/
 ├── README.md
 ├── bin
-│   └── patchelf
+│   └── patchelf
 ├── distro-info
-│   ├── CHANGELOG.md
-│   ├── licenses
-│   ├── patches
-│   └── scripts
+│   ├── CHANGELOG.md
+│   ├── licenses
+│   ├── patches
+│   └── scripts
 └── share
     └── doc
 
@@ -192,14 +192,14 @@ patchelf {{ page.version }}
 
 ### Download
 
-The GNU/Linux versions of **xPack NixOS PatchELF**
+The GNU/Linux versions of **xPack NixOS PatchELF**
 are packed as `.tar.gz` archives.
 Download the latest version named like:
 
 - `xpack-patchelf-{{ page.version }}-{{ page.xpack-subversion }}-linux-x64.tar.gz`
 
-As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
-Ubuntu, but can be executed on most recent GNU/Linux distributions.
+As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
+Ubuntu, but can be executed on most recent GNU/Linux distributions.
 
 ### Unpack
 
@@ -225,16 +225,16 @@ $ tree -L 2 '/home/ilg/.local/xPacks/patchelf/xpack-patchelf-{{ page.version }}-
 /home/ilg/.local/xPacks/patchelf/xpack-patchelf-{{ page.version }}-{{ page.xpack-subversion }}/
 ├── README.md
 ├── bin
-│   └── patchelf
+│   └── patchelf
 ├── distro-info
-│   ├── CHANGELOG.md
-│   ├── licenses
-│   ├── patches
-│   └── scripts
+│   ├── CHANGELOG.md
+│   ├── licenses
+│   ├── patches
+│   └── scripts
 ├── libexec
-│   ├── libgcc_s.so.1
-│   ├── libstdc++.so.6 -> libstdc++.so.6.0.30
-│   └── libstdc++.so.6.0.30
+│   ├── libgcc_s.so.1
+│   ├── libstdc++.so.6 -> libstdc++.so.6.0.30
+│   └── libstdc++.so.6.0.30
 └── share
     └── doc
 

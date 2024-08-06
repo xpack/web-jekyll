@@ -46,7 +46,7 @@ The binary files are available from [GitHub Releases]({{ page.download_url }}).
 
 ## Install
 
-The full details of installing the **xPack GNU RISC-V Embedded GCC** on
+The full details of installing the **xPack GNU RISC-V Embedded GCC** on
 various platforms are presented in the separate [Install]({{ site.baseurl }}/riscv-none-embed-gcc/install/) page.
 
 ### Easy install
@@ -206,7 +206,7 @@ the distribution.
   it is a known problem, caused when trying to create the cache
   folder (`$HOME/.cache/gdb` or `$HOME/Library/Caches/gdb`);
 - the archive size got too big for the Windows 32-bit node to handle, and
-  `xpm install` fails with _RangeError: Array buffer allocation failed_.
+  `xpm install` fails with _RangeError: Array buffer allocation failed_.
 
 ## Shared libraries
 

@@ -59,7 +59,7 @@ The binary files are available from [GitHub Releases]({{ page.download_url }}).
 
 ## Install
 
-The full details of installing the **xPack LLVM clang** on various platforms
+The full details of installing the **xPack LLVM clang** on various platforms
 are presented in the separate [Install]({{ site.baseurl }}/dev-tools/clang/install/) page.
 
 ### Easy install

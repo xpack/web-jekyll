@@ -170,7 +170,7 @@ $ ~/.local/xPacks/@xpack-dev-tools/ninja-build/{{ page.version }}-{{ page.xpack-
 
 ### Download
 
-The macOS versions of **xPack Ninja Build**
+The macOS versions of **xPack Ninja Build**
 are packed as `.tar.gz` archives.
 Download the latest version named like:
 
@@ -201,7 +201,7 @@ $ tree -L 2 /Users/ilg/.local/xPacks/ninja-build/xpack-ninja-build-{{ page.versi
 /Users/ilg/.local/xPacks/ninja-build/xpack-ninja-build-{{ page.version }}-{{ page.xpack-subversion }}/
 ├── README.md
 ├── bin
-│   └── ninja
+│   └── ninja
 └── distro-info
     ├── CHANGELOG.md
     ├── licenses
@@ -239,7 +239,7 @@ $ ~/.local/xPacks/@xpack-dev-tools/ninja-build/{{ page.version }}-{{ page.xpack-
 
 ### Download
 
-The GNU/Linux versions of **xPack Ninja Build**
+The GNU/Linux versions of **xPack Ninja Build**
 are packed as `.tar.gz` archives.
 Download the latest version named like:
 
@@ -247,8 +247,8 @@ Download the latest version named like:
 - `xpack-ninja-build-{{ page.version }}-{{ page.xpack-subversion }}-linux-arm.tar.gz`
 - `xpack-ninja-build-{{ page.version }}-{{ page.xpack-subversion }}-linux-arm64.tar.gz`
 
-As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
-Ubuntu, but can be executed on most recent GNU/Linux distributions.
+As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
+Ubuntu, but can be executed on most recent GNU/Linux distributions.
 
 ### Unpack
 
@@ -273,12 +273,12 @@ and `.content` to store the unpacked archive." %}
 $ tree -L 2 '/home/ilg/.local/xPacks/ninja-build/xpack-ninja-build-{{ page.version }}-{{ page.xpack-subversion }}'
 /home/ilg/.local/xPacks/ninja-build/xpack-ninja-build-{{ page.version }}-{{ page.xpack-subversion }}/
 ├── bin
-│   └── ninja
+│   └── ninja
 ├── distro-info
-│   ├── CHANGELOG.md
-│   ├── licenses
-│   ├── patches
-│   └── scripts
+│   ├── CHANGELOG.md
+│   ├── licenses
+│   ├── patches
+│   └── scripts
 └── README.md
 
 5 directories, 3 files

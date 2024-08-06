@@ -74,7 +74,7 @@ On macOS, by default, global Node packages are installed in
 `/usr/local`, and managing them requires administrative rights,
 but if you followed the instructions in the
 [Prerequisites]({{ site.baseurl }}/install/) page, you should
-already have configured npm to use a location in the home folder.
+already have configured npm to use a location in the home folder.
 
 With the environment properly set, the command to install `xpbuild` is:
 
@@ -99,7 +99,7 @@ On GNU/Linux, by default, global Node packages are installed in
 `/usr/local`, and managing them requires administrative rights,
 but if you followed the instructions in the
 [Prerequisites]({{ site.baseurl }}/install/) page, you should
-already have configured npm to use a location in the home folder.
+already have configured npm to use a location in the home folder.
 
 With the environment properly set, the command to install `xpbuild` is:
 

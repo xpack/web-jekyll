@@ -32,7 +32,7 @@ The binary files are available from [GitHub Releases]({{ page.download_url }}).
 
 ## Install
 
-The full details of installing the **xPack QEMU Arm** on various platforms
+The full details of installing the **xPack QEMU Arm** on various platforms
 are presented in the separate [Install]({{ site.baseurl }}/dev-tools/qemu-arm/install/) page.
 
 ### Easy install

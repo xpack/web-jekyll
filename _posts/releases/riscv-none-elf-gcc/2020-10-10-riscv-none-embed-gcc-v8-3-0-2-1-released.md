@@ -47,7 +47,7 @@ The binary files are available from [GitHub Releases]({{ page.download_url }}).
 
 ## Install
 
-The full details of installing the **xPack GNU RISC-V Embedded GCC** on
+The full details of installing the **xPack GNU RISC-V Embedded GCC** on
 various platforms are presented in the separate [Install]({{ site.baseurl }}/riscv-none-embed-gcc/install/) page.
 
 ### Easy install
@@ -240,7 +240,7 @@ the distribution.
   the bug was fixed in binutils 2.33.1, and the fix was included in the
   next **8.3.0-2.2** release;
 - the archive size got too big for the Windows 32-bit node to handle, and
-  `xpm install` fails with _RangeError: Array buffer allocation failed_.
+  `xpm install` fails with _RangeError: Array buffer allocation failed_.
 
 ## Shared libraries
 

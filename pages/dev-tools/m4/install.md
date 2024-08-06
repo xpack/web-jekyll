@@ -121,7 +121,7 @@ m4 (GNU M4) {{ page.version }}
 
 ### Download
 
-The macOS versions of **xPack GNU M4**
+The macOS versions of **xPack GNU M4**
 are packed as `.tar.gz` archives.
 Download the latest version named like:
 
@@ -152,14 +152,14 @@ $ tree -L 2 /Users/ilg/.local/xPacks/m4/xpack-m4-{{ page.version }}-{{ page.xpac
 /Users/ilg/.local/xPacks/m4/xpack-m4-{{ page.version }}-{{ page.xpack-subversion }}/
 ├── README.md
 ├── bin
-│   ├── gm4 -> m4
-│   └── m4
+│   ├── gm4 -> m4
+│   └── m4
 ├── distro-info
-│   ├── CHANGELOG.md
-│   ├── licenses
-│   └── scripts
+│   ├── CHANGELOG.md
+│   ├── licenses
+│   └── scripts
 ├── libexec
-│   └── libiconv.2.dylib
+│   └── libiconv.2.dylib
 └── share
     └── info
 
@@ -194,14 +194,14 @@ m4 (GNU M4) {{ page.version }}
 
 ### Download
 
-The GNU/Linux versions of **xPack GNU M4**
+The GNU/Linux versions of **xPack GNU M4**
 are packed as `.tar.gz` archives.
 Download the latest version named like:
 
 - `xpack-m4-{{ page.version }}-{{ page.xpack-subversion }}-linux-x64.tar.gz`
 
-As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
-Ubuntu, but can be executed on most recent GNU/Linux distributions.
+As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
+Ubuntu, but can be executed on most recent GNU/Linux distributions.
 
 ### Unpack
 
@@ -227,15 +227,15 @@ $ tree -L 2 '/home/ilg/.local/xPacks/m4/xpack-m4-{{ page.version }}-{{ page.xpac
 /home/ilg/.local/xPacks/m4/xpack-m4-{{ page.version }}-{{ page.xpack-subversion }}/
 ├── README.md
 ├── bin
-│   ├── gm4 -> m4
-│   └── m4
+│   ├── gm4 -> m4
+│   └── m4
 ├── distro-info
-│   ├── CHANGELOG.md
-│   ├── licenses
-│   └── scripts
+│   ├── CHANGELOG.md
+│   ├── licenses
+│   └── scripts
 ├── libexec
-│   ├── libiconv.so.2 -> libiconv.so.2.6.1
-│   └── libiconv.so.2.6.1
+│   ├── libiconv.so.2 -> libiconv.so.2.6.1
+│   └── libiconv.so.2.6.1
 └── share
     └── info
 

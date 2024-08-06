@@ -177,7 +177,7 @@ CMake suite maintained and supported by Kitware (kitware.com/cmake).
 
 ### Download
 
-The macOS versions of **xPack CMake**
+The macOS versions of **xPack CMake**
 are packed as `.tar.gz` archives.
 Download the latest version named like:
 
@@ -208,19 +208,19 @@ $ tree -L 2 /Users/ilg/.local/xPacks/cmake/xpack-cmake-{{ page.version }}-{{ pag
 /Users/ilg/Library/.local/cmake/xpack-cmake-{{ page.version }}-{{ page.xpack-subversion }}/
 ├── README.md
 ├── bin
-│   ├── ccmake
-│   ├── cmake
-│   ├── cpack
-│   └── ctest
+│   ├── ccmake
+│   ├── cmake
+│   ├── cpack
+│   └── ctest
 ├── distro-info
-│   ├── CHANGELOG.md
-│   ├── licenses
-│   ├── patches
-│   └── scripts
+│   ├── CHANGELOG.md
+│   ├── licenses
+│   ├── patches
+│   └── scripts
 ├── doc
-│   └── cmake-{{ page.version-major-minor }}
+│   └── cmake-{{ page.version-major-minor }}
 ├── libexec
-│   └── libncurses.6.dylib
+│   └── libncurses.6.dylib
 └── share
     ├── aclocal
     ├── bash-completion
@@ -261,7 +261,7 @@ CMake suite maintained and supported by Kitware (kitware.com/cmake).
 
 ### Download
 
-The GNU/Linux versions of **xPack CMake**
+The GNU/Linux versions of **xPack CMake**
 are packed as `.tar.gz` archives.
 Download the latest version named like:
 
@@ -269,8 +269,8 @@ Download the latest version named like:
 - `xpack-cmake-{{ page.version }}-{{ page.xpack-subversion }}-linux-arm.tar.gz`
 - `xpack-cmake-{{ page.version }}-{{ page.xpack-subversion }}-linux-arm64.tar.gz`
 
-As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
-Ubuntu, but can be executed on most recent GNU/Linux distributions.
+As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
+Ubuntu, but can be executed on most recent GNU/Linux distributions.
 
 ### Unpack
 
@@ -295,22 +295,22 @@ and `.content` to store the unpacked archive." %}
 $ tree -L 2 '/home/ilg/.local/xPacks/cmake/xpack-cmake-{{ page.version }}-{{ page.xpack-subversion }}'
 /home/ilg/.local/xPacks/cmake/xpack-cmake-{{ page.version }}-{{ page.xpack-subversion }}/
 ├── bin
-│   ├── ccmake
-│   ├── cmake
-│   ├── cpack
-│   └── ctest
+│   ├── ccmake
+│   ├── cmake
+│   ├── cpack
+│   └── ctest
 ├── distro-info
-│   ├── CHANGELOG.md
-│   ├── licenses
-│   ├── patches
-│   └── scripts
+│   ├── CHANGELOG.md
+│   ├── licenses
+│   ├── patches
+│   └── scripts
 ├── doc
-│   └── cmake-{{ page.version-major-minor }}
+│   └── cmake-{{ page.version-major-minor }}
 ├── libexec
-│   ├── libcrypto.so.1.1
-│   ├── libncurses.so.6 -> libncurses.so.6.2
-│   ├── libncurses.so.6.2
-│   └── libssl.so.1.1
+│   ├── libcrypto.so.1.1
+│   ├── libncurses.so.6 -> libncurses.so.6.2
+│   ├── libncurses.so.6.2
+│   └── libssl.so.1.1
 ├── README.md
 └── share
     ├── aclocal

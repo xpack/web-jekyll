@@ -32,7 +32,7 @@ The binary files are available from [GitHub Releases]({{ page.download_url }}).
 
 ## Install
 
-The full details of installing the **xPack GNU Arm Embedded GCC** on
+The full details of installing the **xPack GNU Arm Embedded GCC** on
 various platforms are presented in the separate [Install]({{ site.baseurl }}/dev-tools/arm-none-eabi-gcc/install/) page.
 
 ### Easy install
@@ -105,7 +105,7 @@ Due to a bug in the build scripts, the macOS `gdb-py` had a wrong
 dependency and failed to start; fixed;
 - [[#2]](https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/issues/2)
 Due to a bug in the build scripts, the Windows binaries included two
-copies of the `docs` folder, one in root and one in the `share` folder;
+copies of the `docs` folder, one in root and one in the `share` folder;
 the script was fixed and now there is only one copy in `share/docs`.
 - [[#1]](https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/issues/1)
 Due to an omission in the build scripts, the content of the `libgcov`

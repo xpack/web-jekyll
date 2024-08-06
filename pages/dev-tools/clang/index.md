@@ -41,7 +41,7 @@ is an cross-platform standalone binary distribution of the
 
 ## Benefits
 
-The main advantages of using the **xPack LLVM clang** are:
+The main advantages of using the **xPack LLVM clang** are:
 
 - a convenient, uniform and portable install/uninstall/upgrade procedure,
   the same procedure is used for all major
@@ -62,7 +62,7 @@ original LLVM releases.
 
 ## Install
 
-The details of installing the **xPack LLVM clang** on various
+The details of installing the **xPack LLVM clang** on various
 platforms are presented in the separate
 [install]({{ site.baseurl }}/dev-tools/clang/install/) page.
 

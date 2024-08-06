@@ -191,12 +191,12 @@ riscv-none-elf-gcc (xPack GNU RISC-V Embedded GCC x86_64) {{ page.version }}
 
 ### Download
 
-The macOS versions of **xPack GNU RISC-V Embedded GCC**
+The macOS versions of **xPack GNU RISC-V Embedded GCC**
 are packed as `.tar.gz` archives.
 Download the latest version named like:
 
-- `xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.xpack-subversion }}-darwin-x64.tar.gz`
-- `xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.xpack-subversion }}-darwin-arm64.tar.gz`
+- `xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.xpack-subversion }}-darwin-x64.tar.gz`
+- `xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.xpack-subversion }}-darwin-arm64.tar.gz`
 
 ### Unpack
 
@@ -227,79 +227,79 @@ $ tree -L 2 /Users/ilg/.local/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc
 /Users/ilg/.local/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.xpack-subversion }}/
 ├── README.md
 ├── bin
-│   ├── riscv-none-elf-addr2line
-│   ├── riscv-none-elf-ar
-│   ├── riscv-none-elf-as
-│   ├── riscv-none-elf-c++
-│   ├── riscv-none-elf-c++filt
-│   ├── riscv-none-elf-cpp
-│   ├── riscv-none-elf-elfedit
-│   ├── riscv-none-elf-g++
-│   ├── riscv-none-elf-gcc
-│   ├── riscv-none-elf-gcc-12.1.0
-│   ├── riscv-none-elf-gcc-ar
-│   ├── riscv-none-elf-gcc-nm
-│   ├── riscv-none-elf-gcc-ranlib
-│   ├── riscv-none-elf-gcov
-│   ├── riscv-none-elf-gcov-dump
-│   ├── riscv-none-elf-gcov-tool
-│   ├── riscv-none-elf-gdb
-│   ├── riscv-none-elf-gdb-add-index
-│   ├── riscv-none-elf-gdb-add-index-py3
-│   ├── riscv-none-elf-gdb-py3
-│   ├── riscv-none-elf-gfortran
-│   ├── riscv-none-elf-gprof
-│   ├── riscv-none-elf-ld
-│   ├── riscv-none-elf-ld.bfd
-│   ├── riscv-none-elf-lto-dump
-│   ├── riscv-none-elf-nm
-│   ├── riscv-none-elf-objcopy
-│   ├── riscv-none-elf-objdump
-│   ├── riscv-none-elf-ranlib
-│   ├── riscv-none-elf-readelf
-│   ├── riscv-none-elf-size
-│   ├── riscv-none-elf-strings
-│   └── riscv-none-elf-strip
+│   ├── riscv-none-elf-addr2line
+│   ├── riscv-none-elf-ar
+│   ├── riscv-none-elf-as
+│   ├── riscv-none-elf-c++
+│   ├── riscv-none-elf-c++filt
+│   ├── riscv-none-elf-cpp
+│   ├── riscv-none-elf-elfedit
+│   ├── riscv-none-elf-g++
+│   ├── riscv-none-elf-gcc
+│   ├── riscv-none-elf-gcc-12.1.0
+│   ├── riscv-none-elf-gcc-ar
+│   ├── riscv-none-elf-gcc-nm
+│   ├── riscv-none-elf-gcc-ranlib
+│   ├── riscv-none-elf-gcov
+│   ├── riscv-none-elf-gcov-dump
+│   ├── riscv-none-elf-gcov-tool
+│   ├── riscv-none-elf-gdb
+│   ├── riscv-none-elf-gdb-add-index
+│   ├── riscv-none-elf-gdb-add-index-py3
+│   ├── riscv-none-elf-gdb-py3
+│   ├── riscv-none-elf-gfortran
+│   ├── riscv-none-elf-gprof
+│   ├── riscv-none-elf-ld
+│   ├── riscv-none-elf-ld.bfd
+│   ├── riscv-none-elf-lto-dump
+│   ├── riscv-none-elf-nm
+│   ├── riscv-none-elf-objcopy
+│   ├── riscv-none-elf-objdump
+│   ├── riscv-none-elf-ranlib
+│   ├── riscv-none-elf-readelf
+│   ├── riscv-none-elf-size
+│   ├── riscv-none-elf-strings
+│   └── riscv-none-elf-strip
 ├── distro-info
-│   ├── CHANGELOG.md
-│   ├── licenses
-│   ├── patches
-│   └── scripts
+│   ├── CHANGELOG.md
+│   ├── licenses
+│   ├── patches
+│   └── scripts
 ├── include
-│   └── gdb
+│   └── gdb
 ├── lib
-│   ├── bfd-plugins
-│   ├── gcc
-│   ├── libcc1.0.so
-│   ├── libcc1.so -> libcc1.0.so
-│   └── python3.10
+│   ├── bfd-plugins
+│   ├── gcc
+│   ├── libcc1.0.so
+│   ├── libcc1.so -> libcc1.0.so
+│   └── python3.10
 ├── libexec
-│   ├── gcc
-│   ├── libcrypt.2.dylib
-│   ├── libcrypto.1.1.dylib
-│   ├── libffi.8.dylib
-│   ├── libgcc_s.1.dylib
-│   ├── libgmp.10.dylib
-│   ├── libiconv.2.dylib
-│   ├── libisl.23.dylib
-│   ├── liblzma.5.dylib
-│   ├── libmpc.3.dylib
-│   ├── libmpfr.6.dylib
-│   ├── libncurses.6.dylib
-│   ├── libpanel.6.dylib
-│   ├── libpython3.10.dylib
-│   ├── libreadline.8.1.dylib
-│   ├── libreadline.8.dylib -> libreadline.8.1.dylib
-│   ├── libsqlite3.0.dylib
-│   ├── libssl.1.1.dylib
-│   ├── libstdc++.6.dylib
-│   ├── libz.1.2.12.dylib
-│   └── libz.1.dylib -> libz.1.2.12.dylib
+│   ├── gcc
+│   ├── libcrypt.2.dylib
+│   ├── libcrypto.1.1.dylib
+│   ├── libffi.8.dylib
+│   ├── libgcc_s.1.dylib
+│   ├── libgmp.10.dylib
+│   ├── libiconv.2.dylib
+│   ├── libisl.23.dylib
+│   ├── liblzma.5.dylib
+│   ├── libmpc.3.dylib
+│   ├── libmpfr.6.dylib
+│   ├── libncurses.6.dylib
+│   ├── libpanel.6.dylib
+│   ├── libpython3.10.dylib
+│   ├── libreadline.8.1.dylib
+│   ├── libreadline.8.dylib -> libreadline.8.1.dylib
+│   ├── libsqlite3.0.dylib
+│   ├── libssl.1.1.dylib
+│   ├── libstdc++.6.dylib
+│   ├── libz.1.2.12.dylib
+│   └── libz.1.dylib -> libz.1.2.12.dylib
 ├── riscv-none-elf
-│   ├── bin
-│   ├── include
-│   ├── lib
-│   └── share
+│   ├── bin
+│   ├── include
+│   ├── lib
+│   └── share
 └── share
     ├── doc
     └── gcc-12.1.0
@@ -335,7 +335,7 @@ riscv-none-elf-gcc (xPack GNU RISC-V Embedded GCC x86_64) {{ page.version }}
 
 ### Download
 
-The GNU/Linux versions of **xPack GNU RISC-V Embedded GCC** 
+The GNU/Linux versions of **xPack GNU RISC-V Embedded GCC**
 are packed as `.tar.gz` archives.
 Download the latest version named like:
 
@@ -343,8 +343,8 @@ Download the latest version named like:
 - `xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.xpack-subversion }}-linux-arm.tar.gz`
 - `xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.xpack-subversion }}-linux-arm64.tar.gz`
 
-As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
-Ubuntu, but can be executed on most recent GNU/Linux distributions.
+As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
+Ubuntu, but can be executed on most recent GNU/Linux distributions.
 
 ### Unpack
 
@@ -376,98 +376,98 @@ The result is a structure like:
 $ tree -L 2 /home/ilg/.local/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.xpack-subversion }}/
 /home/ilg/.local/xPacks/riscv-none-elf-gcc/xpack-riscv-none-elf-gcc-{{ page.version }}-{{ page.xpack-subversion }}/
 ├── bin
-│   ├── libgpm.so.2 -> libgpm.so.2.1.0
-│   ├── libgpm.so.2.1.0
-│   ├── riscv-none-elf-addr2line
-│   ├── riscv-none-elf-ar
-│   ├── riscv-none-elf-as
-│   ├── riscv-none-elf-c++
-│   ├── riscv-none-elf-c++filt
-│   ├── riscv-none-elf-cpp
-│   ├── riscv-none-elf-elfedit
-│   ├── riscv-none-elf-g++
-│   ├── riscv-none-elf-gcc
-│   ├── riscv-none-elf-gcc-12.1.0
-│   ├── riscv-none-elf-gcc-ar
-│   ├── riscv-none-elf-gcc-nm
-│   ├── riscv-none-elf-gcc-ranlib
-│   ├── riscv-none-elf-gcov
-│   ├── riscv-none-elf-gcov-dump
-│   ├── riscv-none-elf-gcov-tool
-│   ├── riscv-none-elf-gdb
-│   ├── riscv-none-elf-gdb-add-index
-│   ├── riscv-none-elf-gdb-add-index-py3
-│   ├── riscv-none-elf-gdb-py3
-│   ├── riscv-none-elf-gfortran
-│   ├── riscv-none-elf-gprof
-│   ├── riscv-none-elf-ld
-│   ├── riscv-none-elf-ld.bfd
-│   ├── riscv-none-elf-lto-dump
-│   ├── riscv-none-elf-nm
-│   ├── riscv-none-elf-objcopy
-│   ├── riscv-none-elf-objdump
-│   ├── riscv-none-elf-ranlib
-│   ├── riscv-none-elf-readelf
-│   ├── riscv-none-elf-size
-│   ├── riscv-none-elf-strings
-│   └── riscv-none-elf-strip
+│   ├── libgpm.so.2 -> libgpm.so.2.1.0
+│   ├── libgpm.so.2.1.0
+│   ├── riscv-none-elf-addr2line
+│   ├── riscv-none-elf-ar
+│   ├── riscv-none-elf-as
+│   ├── riscv-none-elf-c++
+│   ├── riscv-none-elf-c++filt
+│   ├── riscv-none-elf-cpp
+│   ├── riscv-none-elf-elfedit
+│   ├── riscv-none-elf-g++
+│   ├── riscv-none-elf-gcc
+│   ├── riscv-none-elf-gcc-12.1.0
+│   ├── riscv-none-elf-gcc-ar
+│   ├── riscv-none-elf-gcc-nm
+│   ├── riscv-none-elf-gcc-ranlib
+│   ├── riscv-none-elf-gcov
+│   ├── riscv-none-elf-gcov-dump
+│   ├── riscv-none-elf-gcov-tool
+│   ├── riscv-none-elf-gdb
+│   ├── riscv-none-elf-gdb-add-index
+│   ├── riscv-none-elf-gdb-add-index-py3
+│   ├── riscv-none-elf-gdb-py3
+│   ├── riscv-none-elf-gfortran
+│   ├── riscv-none-elf-gprof
+│   ├── riscv-none-elf-ld
+│   ├── riscv-none-elf-ld.bfd
+│   ├── riscv-none-elf-lto-dump
+│   ├── riscv-none-elf-nm
+│   ├── riscv-none-elf-objcopy
+│   ├── riscv-none-elf-objdump
+│   ├── riscv-none-elf-ranlib
+│   ├── riscv-none-elf-readelf
+│   ├── riscv-none-elf-size
+│   ├── riscv-none-elf-strings
+│   └── riscv-none-elf-strip
 ├── distro-info
-│   ├── CHANGELOG.md
-│   ├── licenses
-│   ├── patches
-│   └── scripts
+│   ├── CHANGELOG.md
+│   ├── licenses
+│   ├── patches
+│   └── scripts
 ├── include
-│   └── gdb
+│   └── gdb
 ├── lib
-│   ├── bfd-plugins
-│   ├── gcc
-│   └── python3.10
+│   ├── bfd-plugins
+│   ├── gcc
+│   └── python3.10
 ├── lib64
-│   ├── libcc1.so -> libcc1.so.0.0.0
-│   ├── libcc1.so.0 -> libcc1.so.0.0.0
-│   └── libcc1.so.0.0.0
+│   ├── libcc1.so -> libcc1.so.0.0.0
+│   ├── libcc1.so.0 -> libcc1.so.0.0.0
+│   └── libcc1.so.0.0.0
 ├── libexec
-│   ├── gcc
-│   ├── libcrypto.so.1.1
-│   ├── libcrypt.so.1 -> libcrypt.so.1.1.0
-│   ├── libcrypt.so.1.1.0
-│   ├── libffi.so.8 -> libffi.so.8.1.0
-│   ├── libffi.so.8.1.0
-│   ├── libfl.so.2 -> libfl.so.2.0.0
-│   ├── libfl.so.2.0.0
-│   ├── libgcc_s.so.1
-│   ├── libgmp.so.10 -> libgmp.so.10.4.1
-│   ├── libgmp.so.10.4.1
-│   ├── libiconv.so.2 -> libiconv.so.2.6.1
-│   ├── libiconv.so.2.6.1
-│   ├── libisl.so.23 -> libisl.so.23.1.0
-│   ├── libisl.so.23.1.0
-│   ├── liblzma.so.5 -> liblzma.so.5.2.5
-│   ├── liblzma.so.5.2.5
-│   ├── libmpc.so.3 -> libmpc.so.3.2.1
-│   ├── libmpc.so.3.2.1
-│   ├── libmpfr.so.6 -> libmpfr.so.6.1.0
-│   ├── libmpfr.so.6.1.0
-│   ├── libncurses.so.6 -> libncurses.so.6.3
-│   ├── libncurses.so.6.3
-│   ├── libpanel.so.6 -> libpanel.so.6.3
-│   ├── libpanel.so.6.3
-│   ├── libpython3.10.so.1.0
-│   ├── libreadline.so.8 -> libreadline.so.8.1
-│   ├── libreadline.so.8.1
-│   ├── libsqlite3.so.0 -> libsqlite3.so.0.8.6
-│   ├── libsqlite3.so.0.8.6
-│   ├── libssl.so.1.1
-│   ├── libstdc++.so.6 -> libstdc++.so.6.0.29
-│   ├── libstdc++.so.6.0.29
-│   ├── libz.so.1 -> libz.so.1.2.12
-│   └── libz.so.1.2.12
+│   ├── gcc
+│   ├── libcrypto.so.1.1
+│   ├── libcrypt.so.1 -> libcrypt.so.1.1.0
+│   ├── libcrypt.so.1.1.0
+│   ├── libffi.so.8 -> libffi.so.8.1.0
+│   ├── libffi.so.8.1.0
+│   ├── libfl.so.2 -> libfl.so.2.0.0
+│   ├── libfl.so.2.0.0
+│   ├── libgcc_s.so.1
+│   ├── libgmp.so.10 -> libgmp.so.10.4.1
+│   ├── libgmp.so.10.4.1
+│   ├── libiconv.so.2 -> libiconv.so.2.6.1
+│   ├── libiconv.so.2.6.1
+│   ├── libisl.so.23 -> libisl.so.23.1.0
+│   ├── libisl.so.23.1.0
+│   ├── liblzma.so.5 -> liblzma.so.5.2.5
+│   ├── liblzma.so.5.2.5
+│   ├── libmpc.so.3 -> libmpc.so.3.2.1
+│   ├── libmpc.so.3.2.1
+│   ├── libmpfr.so.6 -> libmpfr.so.6.1.0
+│   ├── libmpfr.so.6.1.0
+│   ├── libncurses.so.6 -> libncurses.so.6.3
+│   ├── libncurses.so.6.3
+│   ├── libpanel.so.6 -> libpanel.so.6.3
+│   ├── libpanel.so.6.3
+│   ├── libpython3.10.so.1.0
+│   ├── libreadline.so.8 -> libreadline.so.8.1
+│   ├── libreadline.so.8.1
+│   ├── libsqlite3.so.0 -> libsqlite3.so.0.8.6
+│   ├── libsqlite3.so.0.8.6
+│   ├── libssl.so.1.1
+│   ├── libstdc++.so.6 -> libstdc++.so.6.0.29
+│   ├── libstdc++.so.6.0.29
+│   ├── libz.so.1 -> libz.so.1.2.12
+│   └── libz.so.1.2.12
 ├── README.md
 ├── riscv-none-elf
-│   ├── bin
-│   ├── include
-│   ├── lib
-│   └── share
+│   ├── bin
+│   ├── include
+│   ├── lib
+│   └── share
 └── share
     ├── doc
     └── gcc-12.1.0

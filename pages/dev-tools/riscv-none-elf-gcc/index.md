@@ -47,7 +47,7 @@ is a binary distribution of the GNU RISC-V Embedded GCC toolchain.
 
 ## Benefits
 
-The main advantages of using the **xPack GNU RISC-V Embedded GCC** are:
+The main advantages of using the **xPack GNU RISC-V Embedded GCC** are:
 
 - a convenient, uniform and portable install/uninstall/upgrade procedure,
   the same procedure is used for all major
@@ -68,7 +68,7 @@ GNU toolchain.
 
 ## Install
 
-The details of installing the **xPack GNU RISC-V Embedded GCC** on various
+The details of installing the **xPack GNU RISC-V Embedded GCC** on various
 platforms are presented in the separate
 [install]({{ site.baseurl }}/dev-tools/riscv-none-elf-gcc/install/) page.
 
@@ -185,7 +185,7 @@ For those interested in building the binaries, please read the
 [README-MAINTAINER](https://github.com/xpack-dev-tools/riscv-none-elf-gcc-xpack/blob/xpack/README-MAINTAINER.md)
 page.
 However, the ultimate source for details are the build scripts themselves,
-all available from the 
+all available from the
 [`riscv-none-elf-gcc-xpack.git/scripts`](https://github.com/xpack-dev-tools/riscv-none-elf-gcc-xpack/tree/xpack/scripts/)
 folder.
 

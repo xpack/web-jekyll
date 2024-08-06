@@ -202,7 +202,7 @@ arm-none-eabi-gcc (xPack GNU Arm Embedded GCC x86_64) {{ page.version }} {{ page
 
 ### Download
 
-The macOS versions of **xPack GNU Arm Embedded GCC**
+The macOS versions of **xPack GNU Arm Embedded GCC**
 are packed as `.tar.gz` archives.
 Download the latest version named like:
 
@@ -240,68 +240,68 @@ $ tree -L 2 /Users/ilg/Library/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-
 /Users/ilg/Library/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-{{ page.version }}-{{ page.xpack-subversion }}
 ├── README.md
 ├── arm-none-eabi
-│   ├── bin
-│   ├── include
-│   ├── lib
-│   └── share
+│   ├── bin
+│   ├── include
+│   ├── lib
+│   └── share
 ├── bin
-│   ├── arm-none-eabi-addr2line
-│   ├── arm-none-eabi-ar
-│   ├── arm-none-eabi-as
-│   ├── arm-none-eabi-c++
-│   ├── arm-none-eabi-c++filt
-│   ├── arm-none-eabi-cpp
-│   ├── arm-none-eabi-elfedit
-│   ├── arm-none-eabi-g++
-│   ├── arm-none-eabi-gcc
-│   ├── arm-none-eabi-gcc-{{ page.version }}
-│   ├── arm-none-eabi-gcc-ar
-│   ├── arm-none-eabi-gcc-nm
-│   ├── arm-none-eabi-gcc-ranlib
-│   ├── arm-none-eabi-gcov
-│   ├── arm-none-eabi-gcov-dump
-│   ├── arm-none-eabi-gcov-tool
-│   ├── arm-none-eabi-gdb
-│   ├── arm-none-eabi-gdb-add-index
-│   ├── arm-none-eabi-gdb-add-index-py
-│   ├── arm-none-eabi-gdb-add-index-py3
-│   ├── arm-none-eabi-gdb-py
-│   ├── arm-none-eabi-gdb-py3
-│   ├── arm-none-eabi-gprof
-│   ├── arm-none-eabi-ld
-│   ├── arm-none-eabi-ld.bfd
-│   ├── arm-none-eabi-nm
-│   ├── arm-none-eabi-objcopy
-│   ├── arm-none-eabi-objdump
-│   ├── arm-none-eabi-ranlib
-│   ├── arm-none-eabi-readelf
-│   ├── arm-none-eabi-size
-│   ├── arm-none-eabi-strings
-│   ├── arm-none-eabi-strip
-│   ├── libexpat.1.dylib
-│   ├── libgcc_s.1.dylib
-│   ├── libgmp.10.dylib
-│   ├── libiconv.2.dylib
-│   ├── liblzma.5.dylib
-│   ├── libmpfr.4.dylib
-│   ├── libz.1.2.8.dylib
-│   └── libz.1.dylib -> libz.1.2.8.dylib
+│   ├── arm-none-eabi-addr2line
+│   ├── arm-none-eabi-ar
+│   ├── arm-none-eabi-as
+│   ├── arm-none-eabi-c++
+│   ├── arm-none-eabi-c++filt
+│   ├── arm-none-eabi-cpp
+│   ├── arm-none-eabi-elfedit
+│   ├── arm-none-eabi-g++
+│   ├── arm-none-eabi-gcc
+│   ├── arm-none-eabi-gcc-{{ page.version }}
+│   ├── arm-none-eabi-gcc-ar
+│   ├── arm-none-eabi-gcc-nm
+│   ├── arm-none-eabi-gcc-ranlib
+│   ├── arm-none-eabi-gcov
+│   ├── arm-none-eabi-gcov-dump
+│   ├── arm-none-eabi-gcov-tool
+│   ├── arm-none-eabi-gdb
+│   ├── arm-none-eabi-gdb-add-index
+│   ├── arm-none-eabi-gdb-add-index-py
+│   ├── arm-none-eabi-gdb-add-index-py3
+│   ├── arm-none-eabi-gdb-py
+│   ├── arm-none-eabi-gdb-py3
+│   ├── arm-none-eabi-gprof
+│   ├── arm-none-eabi-ld
+│   ├── arm-none-eabi-ld.bfd
+│   ├── arm-none-eabi-nm
+│   ├── arm-none-eabi-objcopy
+│   ├── arm-none-eabi-objdump
+│   ├── arm-none-eabi-ranlib
+│   ├── arm-none-eabi-readelf
+│   ├── arm-none-eabi-size
+│   ├── arm-none-eabi-strings
+│   ├── arm-none-eabi-strip
+│   ├── libexpat.1.dylib
+│   ├── libgcc_s.1.dylib
+│   ├── libgmp.10.dylib
+│   ├── libiconv.2.dylib
+│   ├── liblzma.5.dylib
+│   ├── libmpfr.4.dylib
+│   ├── libz.1.2.8.dylib
+│   └── libz.1.dylib -> libz.1.2.8.dylib
 ├── distro-info
-│   ├── CHANGELOG.md
-│   ├── arm-readme.txt
-│   ├── arm-release.txt
-│   ├── licenses
-│   ├── patches
-│   └── scripts
+│   ├── CHANGELOG.md
+│   ├── arm-readme.txt
+│   ├── arm-release.txt
+│   ├── licenses
+│   ├── patches
+│   └── scripts
 ├── include
-│   └── gdb
+│   └── gdb
 ├── lib
-│   ├── bfd-plugins
-│   ├── gcc
-│   ├── libcc1.0.so
-│   └── libcc1.so -> libcc1.0.so
+│   ├── bfd-plugins
+│   ├── gcc
+│   ├── libcc1.0.so
+│   └── libcc1.so -> libcc1.0.so
 ├── libexec
-│   └── gcc
+│   └── gcc
 └── share
     ├── doc
     └── gcc-arm-none-eabi
@@ -337,7 +337,7 @@ arm-none-eabi-gcc (xPack GNU Arm Embedded GCC x86_64) {{ page.version }} {{ page
 
 ### Download
 
-The GNU/Linux versions of **xPack GNU Arm Embedded GCC** 
+The GNU/Linux versions of **xPack GNU Arm Embedded GCC**
 are packed as `.tar.gz` archives.
 Download the latest version named like:
 
@@ -345,8 +345,8 @@ Download the latest version named like:
 - `xpack-arm-none-eabi-gcc-{{ page.version }}-{{ page.xpack-subversion }}-linux-arm.tar.gz`
 - `xpack-arm-none-eabi-gcc-{{ page.version }}-{{ page.xpack-subversion }}-linux-arm64.tar.gz`
 
-As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
-Ubuntu, but can be executed on most recent GNU/Linux distributions.
+As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
+Ubuntu, but can be executed on most recent GNU/Linux distributions.
 
 ### Unpack
 
@@ -380,84 +380,84 @@ The result is a structure like:
 $ tree -L 2 /home/ilg/.local/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-{{ page.version }}-{{ page.xpack-subversion }}
 /home/ilg/.local/xPacks/arm-none-eabi-gcc/xpack-arm-none-eabi-gcc-{{ page.version }}-{{ page.xpack-subversion }}
 ├── arm-none-eabi
-│   ├── bin
-│   ├── include
-│   ├── lib
-│   └── share
+│   ├── bin
+│   ├── include
+│   ├── lib
+│   └── share
 ├── bin
-│   ├── arm-none-eabi-addr2line
-│   ├── arm-none-eabi-ar
-│   ├── arm-none-eabi-as
-│   ├── arm-none-eabi-c++
-│   ├── arm-none-eabi-c++filt
-│   ├── arm-none-eabi-cpp
-│   ├── arm-none-eabi-elfedit
-│   ├── arm-none-eabi-g++
-│   ├── arm-none-eabi-gcc
-│   ├── arm-none-eabi-gcc-{{ page.version }}
-│   ├── arm-none-eabi-gcc-ar
-│   ├── arm-none-eabi-gcc-nm
-│   ├── arm-none-eabi-gcc-ranlib
-│   ├── arm-none-eabi-gcov
-│   ├── arm-none-eabi-gcov-dump
-│   ├── arm-none-eabi-gcov-tool
-│   ├── arm-none-eabi-gdb
-│   ├── arm-none-eabi-gdb-add-index
-│   ├── arm-none-eabi-gdb-add-index-py
-│   ├── arm-none-eabi-gdb-add-index-py3
-│   ├── arm-none-eabi-gdb-py
-│   ├── arm-none-eabi-gdb-py3
-│   ├── arm-none-eabi-gprof
-│   ├── arm-none-eabi-ld
-│   ├── arm-none-eabi-ld.bfd
-│   ├── arm-none-eabi-nm
-│   ├── arm-none-eabi-objcopy
-│   ├── arm-none-eabi-objdump
-│   ├── arm-none-eabi-ranlib
-│   ├── arm-none-eabi-readelf
-│   ├── arm-none-eabi-size
-│   ├── arm-none-eabi-strings
-│   ├── arm-none-eabi-strip
-│   ├── libcrypt-2.12.so
-│   ├── libcrypt.so.1 -> libcrypt-2.12.so
-│   ├── libexpat.so.1 -> libexpat.so.1.6.0
-│   ├── libexpat.so.1.6.0
-│   ├── libfl.so.2 -> libfl.so.2.0.0
-│   ├── libfl.so.2.0.0
-│   ├── libfreebl3.so
-│   ├── libgmp.so.10 -> libgmp.so.10.3.0
-│   ├── libgmp.so.10.3.0
-│   ├── libiconv.so.2 -> libiconv.so.2.5.1
-│   ├── libiconv.so.2.5.1
-│   ├── liblzma.so.5 -> liblzma.so.5.2.3
-│   ├── liblzma.so.5.2.3
-│   ├── libmpfr.so.4 -> libmpfr.so.4.1.4
-│   ├── libmpfr.so.4.1.4
-│   ├── libpython2.7.so.1.0
-│   ├── libpython3.7m.so.1.0
-│   ├── libz.so.1 -> libz.so.1.2.8
-│   └── libz.so.1.2.8
+│   ├── arm-none-eabi-addr2line
+│   ├── arm-none-eabi-ar
+│   ├── arm-none-eabi-as
+│   ├── arm-none-eabi-c++
+│   ├── arm-none-eabi-c++filt
+│   ├── arm-none-eabi-cpp
+│   ├── arm-none-eabi-elfedit
+│   ├── arm-none-eabi-g++
+│   ├── arm-none-eabi-gcc
+│   ├── arm-none-eabi-gcc-{{ page.version }}
+│   ├── arm-none-eabi-gcc-ar
+│   ├── arm-none-eabi-gcc-nm
+│   ├── arm-none-eabi-gcc-ranlib
+│   ├── arm-none-eabi-gcov
+│   ├── arm-none-eabi-gcov-dump
+│   ├── arm-none-eabi-gcov-tool
+│   ├── arm-none-eabi-gdb
+│   ├── arm-none-eabi-gdb-add-index
+│   ├── arm-none-eabi-gdb-add-index-py
+│   ├── arm-none-eabi-gdb-add-index-py3
+│   ├── arm-none-eabi-gdb-py
+│   ├── arm-none-eabi-gdb-py3
+│   ├── arm-none-eabi-gprof
+│   ├── arm-none-eabi-ld
+│   ├── arm-none-eabi-ld.bfd
+│   ├── arm-none-eabi-nm
+│   ├── arm-none-eabi-objcopy
+│   ├── arm-none-eabi-objdump
+│   ├── arm-none-eabi-ranlib
+│   ├── arm-none-eabi-readelf
+│   ├── arm-none-eabi-size
+│   ├── arm-none-eabi-strings
+│   ├── arm-none-eabi-strip
+│   ├── libcrypt-2.12.so
+│   ├── libcrypt.so.1 -> libcrypt-2.12.so
+│   ├── libexpat.so.1 -> libexpat.so.1.6.0
+│   ├── libexpat.so.1.6.0
+│   ├── libfl.so.2 -> libfl.so.2.0.0
+│   ├── libfl.so.2.0.0
+│   ├── libfreebl3.so
+│   ├── libgmp.so.10 -> libgmp.so.10.3.0
+│   ├── libgmp.so.10.3.0
+│   ├── libiconv.so.2 -> libiconv.so.2.5.1
+│   ├── libiconv.so.2.5.1
+│   ├── liblzma.so.5 -> liblzma.so.5.2.3
+│   ├── liblzma.so.5.2.3
+│   ├── libmpfr.so.4 -> libmpfr.so.4.1.4
+│   ├── libmpfr.so.4.1.4
+│   ├── libpython2.7.so.1.0
+│   ├── libpython3.7m.so.1.0
+│   ├── libz.so.1 -> libz.so.1.2.8
+│   └── libz.so.1.2.8
 ├── distro-info
-│   ├── arm-readme.txt
-│   ├── arm-release.txt
-│   ├── CHANGELOG.md
-│   ├── licenses
-│   ├── patches
-│   └── scripts
+│   ├── arm-readme.txt
+│   ├── arm-release.txt
+│   ├── CHANGELOG.md
+│   ├── licenses
+│   ├── patches
+│   └── scripts
 ├── include
-│   └── gdb
+│   └── gdb
 ├── lib
-│   ├── bfd-plugins
-│   └── gcc
+│   ├── bfd-plugins
+│   └── gcc
 ├── lib64
-│   ├── libcc1.so -> libcc1.so.0.0.0
-│   ├── libcc1.so.0 -> libcc1.so.0.0.0
-│   ├── libcc1.so.0.0.0
-│   ├── libgcc_s.so.1
-│   ├── libstdc++.so.6 -> libstdc++.so.6.0.24
-│   └── libstdc++.so.6.0.24
+│   ├── libcc1.so -> libcc1.so.0.0.0
+│   ├── libcc1.so.0 -> libcc1.so.0.0.0
+│   ├── libcc1.so.0.0.0
+│   ├── libgcc_s.so.1
+│   ├── libstdc++.so.6 -> libstdc++.so.6.0.24
+│   └── libstdc++.so.6.0.24
 ├── libexec
-│   └── gcc
+│   └── gcc
 ├── README.md
 └── share
     ├── doc

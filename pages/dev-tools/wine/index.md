@@ -37,7 +37,7 @@ an open source project hosted on
 
 ## Benefits
 
-The main advantages of using the **xPack WineHQ** are:
+The main advantages of using the **xPack WineHQ** are:
 
 - a convenient, uniform and portable install/uninstall/upgrade procedure
 - a better integration with development environments
@@ -48,12 +48,12 @@ and can be installed in any location.
 
 ## Compatibility
 
-The **xPack WineHQ** is fully compatible with the original **WineHQ**
+The **xPack WineHQ** is fully compatible with the original **WineHQ**
 distribution.
 
 ## Install
 
-The details of installing the **xPack WineHQ** on various platforms are
+The details of installing the **xPack WineHQ** on various platforms are
 presented in the separate
 [install]({{ site.baseurl }}/dev-tools/wine/install/) page.
 

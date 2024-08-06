@@ -37,7 +37,7 @@ an open source project hosted on
 
 ## Benefits
 
-The main advantages of using the **xPack NixOS PatchELF** are:
+The main advantages of using the **xPack NixOS PatchELF** are:
 
 - a convenient, uniform and portable install/uninstall/upgrade procedure
 - a better integration with development environments
@@ -48,12 +48,12 @@ and can be installed in any location.
 
 ## Compatibility
 
-The **xPack NixOS PatchELF** is fully compatible with the original **NixOS PatchELF**
+The **xPack NixOS PatchELF** is fully compatible with the original **NixOS PatchELF**
 distribution.
 
 ## Install
 
-The details of installing the **xPack NixOS PatchELF** on various platforms are
+The details of installing the **xPack NixOS PatchELF** on various platforms are
 presented in the separate
 [install]({{ site.baseurl }}/dev-tools/patchelf/install/) page.
 

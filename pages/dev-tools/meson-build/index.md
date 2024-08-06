@@ -43,7 +43,7 @@ the xPack Meson Build embeds a Python3 instance.
 
 ## Benefits
 
-The main advantages of using the **xPack Meson Build** are:
+The main advantages of using the **xPack Meson Build** are:
 
 - a convenient, uniform and portable install/uninstall/upgrade procedure,
   the same procedure is used for all major
@@ -57,12 +57,12 @@ and can be installed in any location.
 
 ## Compatibility
 
-The **xPack Meson Build** is fully compatible with the original **Meson**
+The **xPack Meson Build** is fully compatible with the original **Meson**
 distribution.
 
 ## Install
 
-The details of installing the **xPack Meson Build** on various platforms are
+The details of installing the **xPack Meson Build** on various platforms are
 presented in the separate
 [install]({{ site.baseurl }}/dev-tools/meson-build/install/) page.
 

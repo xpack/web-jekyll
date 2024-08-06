@@ -38,7 +38,7 @@ an open source project hosted on
 
 ## Benefits
 
-The main advantages of using the **xPack GNU realpath** are:
+The main advantages of using the **xPack GNU realpath** are:
 
 - a convenient, uniform and portable install/uninstall/upgrade procedure
 - a better integration with development environments
@@ -49,12 +49,12 @@ and can be installed in any location.
 
 ## Compatibility
 
-The **xPack GNU realpath** is fully compatible with the original **GNU realpath**
+The **xPack GNU realpath** is fully compatible with the original **GNU realpath**
 distribution.
 
 ## Install
 
-The details of installing the **xPack GNU realpath** on various platforms are
+The details of installing the **xPack GNU realpath** on various platforms are
 presented in the separate
 [install]({{ site.baseurl }}/dev-tools/realpath/install/) page.
 

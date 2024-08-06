@@ -36,7 +36,7 @@ an open source project hosted on
 
 ## Benefits
 
-The main advantages of using the **xPack GNU M4** are:
+The main advantages of using the **xPack GNU M4** are:
 
 - a convenient, uniform and portable install/uninstall/upgrade procedure
 - a better integration with development environments
@@ -47,12 +47,12 @@ and can be installed in any location.
 
 ## Compatibility
 
-The **xPack GNU M4** is fully compatible with the original **GNU M4**
+The **xPack GNU M4** is fully compatible with the original **GNU M4**
 distribution.
 
 ## Install
 
-The details of installing the **xPack GNU M4** on various platforms are
+The details of installing the **xPack GNU M4** on various platforms are
 presented in the separate
 [install]({{ site.baseurl }}/dev-tools/m4/install/) page.
 

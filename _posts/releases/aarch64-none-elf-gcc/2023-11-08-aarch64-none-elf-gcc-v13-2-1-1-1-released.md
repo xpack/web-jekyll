@@ -69,7 +69,7 @@ The binary files are available from [GitHub Releases]({{ page.download_url }}).
 
 ## Install
 
-The full details of installing the **xPack GNU AArch64 Embedded GCC** on various platforms
+The full details of installing the **xPack GNU AArch64 Embedded GCC** on various platforms
 are presented in the separate [Install]({{ site.baseurl }}/dev-tools/aarch64-none-elf-gcc/install/) page.
 
 ### Easy install

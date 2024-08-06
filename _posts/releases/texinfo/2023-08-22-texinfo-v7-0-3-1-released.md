@@ -56,7 +56,7 @@ The binary files are available from [GitHub Releases]({{ page.download_url }}).
 
 ## Install
 
-The full details of installing the **xPack GNU texinfo** on various platforms
+The full details of installing the **xPack GNU texinfo** on various platforms
 are presented in the separate [Install]({{ site.baseurl }}/dev-tools/texinfo/install/) page.
 
 ### Easy install

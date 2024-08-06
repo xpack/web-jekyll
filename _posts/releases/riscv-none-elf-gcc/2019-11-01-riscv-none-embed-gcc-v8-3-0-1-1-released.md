@@ -32,7 +32,7 @@ The binary files are available from [GitHub Releases]({{ page.download_url }}).
 
 ## Install
 
-The full details of installing the **xPack GNU RISC-V Embedded GCC** on
+The full details of installing the **xPack GNU RISC-V Embedded GCC** on
 various platforms are presented in the separate [Install]({{ site.baseurl }}/riscv-none-embed-gcc/install/) page.
 
 ### Easy install
@@ -134,7 +134,7 @@ library was mostly empty; the script was fixed and now the library has the
 expected content.
 - [[#4]](https://github.com/xpack-dev-tools/riscv-none-embed-gcc-xpack/issues/4)
 Due to a bug in the build scripts, the Windows binaries included two
-copies of the `docs` folder, one in root and one in the `share` folder;
+copies of the `docs` folder, one in root and one in the `share` folder;
 the script was fixed and now there is only one copy in `share/docs`.
 
 ## Improvements

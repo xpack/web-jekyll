@@ -40,11 +40,11 @@ Developer & maintainer pages:
 
 The **xPack OpenOCD** is a cross-platform binary distribution of
 [OpenOCD](https://openocd.org), the **Open On-Chip Debugger**,
-an open source project hosted on 
+an open source project hosted on
 [SourceForge](https://sourceforge.net/projects/openocd/).
 
 The OpenOCD project maintainers recommend that end-users
-compile it using the latest version of the source code available from
+compile it using the latest version of the source code available from
 the repository. OpenOCD is a rolling distribution, and currently
 there are no special stable branches or tags
 and there are no clear release dates for future versions.
@@ -54,20 +54,20 @@ have an easy way of building OpenCOD from sources, and elaborate build
 environments must be installed, making the whole process impractical.
 
 If you are not interested in building from sources, and appreciate a
-better integration with the environments like Eclipse, please feel free to use
+better integration with the environments like Eclipse, please feel free to use
 the xPack OpenOCD binaries, and preferably install them in the default
 locations.
 
 {% include note.html content="OpenOCD is a very complex project, able
 to work with many JTAG probes, but support for them must be enabled
 at build time, so be sure that support for your JTAG probe was
-enabled in the binaries you plan to use. The xPack OpenOCD includes
+enabled in the binaries you plan to use. The xPack OpenOCD includes
 support for most existing probes, but does not guarantee that all are
 included." %}
 
 ## Benefits
 
-The main advantages of using the **xPack OpenOCD** are:
+The main advantages of using the **xPack OpenOCD** are:
 
 - a convenient, uniform and portable install/uninstall/upgrade procedure,
   the same procedure is used for all major
@@ -81,12 +81,12 @@ and can be installed in any location.
 
 ## Compatibility
 
-The **xPack OpenOCD** is fully compatible with the original **OpenOCD**
+The **xPack OpenOCD** is fully compatible with the original **OpenOCD**
 distribution.
 
 ## Install
 
-The details of installing the **xPack OpenOCD** on various platforms are
+The details of installing the **xPack OpenOCD** on various platforms are
 presented in the separate
 [install]({{ site.baseurl }}/dev-tools/openocd/install/) page.
 
@@ -112,7 +112,7 @@ For those interested in building the binaries, please read the
 [README-DEVELOPER](https://github.com/xpack-dev-tools/openocd-xpack/blob/xpack/README-DEVELOPER.md)
 page.
 However, the ultimate source for details are the build scripts themselves,
-all available from the 
+all available from the
 [`openocd-xpack.git/scripts`](https://github.com/xpack-dev-tools/openocd-xpack/tree/xpack/scripts/)
 folder.
 

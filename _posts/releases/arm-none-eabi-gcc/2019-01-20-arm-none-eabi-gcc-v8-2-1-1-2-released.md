@@ -38,7 +38,7 @@ This release follows the official
 **8-2018-q4-major** release from December 20, 2018 and it is based on the
 `gcc-arm-none-eabi-8-2018-q4-major-src.tar.bz2` source invariant.
 
-The patch to fix `objcopy` is from [git](https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git;a=commitdiff;h=a9859e01726d085db79cff88550fdb38e2434e42;hp=171b8e19575654ab32321eb99f3fd112663ae7fa).
+The patch to fix `objcopy` is from [git](https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git;a=commitdiff;h=a9859e01726d085db79cff88550fdb38e2434e42;hp=171b8e19575654ab32321eb99f3fd112663ae7fa).
 
 ## Binaries
 

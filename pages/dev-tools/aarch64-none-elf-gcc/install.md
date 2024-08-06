@@ -203,7 +203,7 @@ aarch64-none-elf-gcc (xPack GNU AArch64 Embedded GCC x86_64) {{ page.version }} 
 
 ### Download
 
-The macOS versions of **xPack GNU AArch64 Embedded GCC**
+The macOS versions of **xPack GNU AArch64 Embedded GCC**
 are packed as `.tar.gz` archives.
 Download the latest version named like:
 
@@ -241,81 +241,81 @@ $ tree -L 2 /Users/ilg/.local/xPacks/aarch64-none-elf-gcc/xpack-aarch64-none-elf
 /Users/ilg/.local/xPacks/aarch64-none-elf-gcc/xpack-aarch64-none-elf-gcc-{{ page.version }}-{{ page.xpack-subversion }}
 ├── README.md
 ├── aarch64-none-elf
-│   ├── bin
-│   ├── include
-│   ├── lib
-│   └── share
+│   ├── bin
+│   ├── include
+│   ├── lib
+│   └── share
 ├── bin
-│   ├── aarch64-none-elf-addr2line
-│   ├── aarch64-none-elf-ar
-│   ├── aarch64-none-elf-as
-│   ├── aarch64-none-elf-as-py3
-│   ├── aarch64-none-elf-c++
-│   ├── aarch64-none-elf-c++filt
-│   ├── aarch64-none-elf-cpp
-│   ├── aarch64-none-elf-elfedit
-│   ├── aarch64-none-elf-g++
-│   ├── aarch64-none-elf-gcc
-│   ├── aarch64-none-elf-gcc-{{ page.version }}
-│   ├── aarch64-none-elf-gcc-ar
-│   ├── aarch64-none-elf-gcc-nm
-│   ├── aarch64-none-elf-gcc-ranlib
-│   ├── aarch64-none-elf-gcov
-│   ├── aarch64-none-elf-gcov-dump
-│   ├── aarch64-none-elf-gcov-tool
-│   ├── aarch64-none-elf-gdb
-│   ├── aarch64-none-elf-gdb-add-index
-│   ├── aarch64-none-elf-gdb-add-index-py3
-│   ├── aarch64-none-elf-gdb-py3
-│   ├── aarch64-none-elf-gfortran
-│   ├── aarch64-none-elf-gprof
-│   ├── aarch64-none-elf-gprof-py3
-│   ├── aarch64-none-elf-ld
-│   ├── aarch64-none-elf-ld.bfd
-│   ├── aarch64-none-elf-lto-dump
-│   ├── aarch64-none-elf-nm
-│   ├── aarch64-none-elf-objcopy
-│   ├── aarch64-none-elf-objdump
-│   ├── aarch64-none-elf-ranlib
-│   ├── aarch64-none-elf-readelf
-│   ├── aarch64-none-elf-size
-│   ├── aarch64-none-elf-strings
-│   └── aarch64-none-elf-strip
+│   ├── aarch64-none-elf-addr2line
+│   ├── aarch64-none-elf-ar
+│   ├── aarch64-none-elf-as
+│   ├── aarch64-none-elf-as-py3
+│   ├── aarch64-none-elf-c++
+│   ├── aarch64-none-elf-c++filt
+│   ├── aarch64-none-elf-cpp
+│   ├── aarch64-none-elf-elfedit
+│   ├── aarch64-none-elf-g++
+│   ├── aarch64-none-elf-gcc
+│   ├── aarch64-none-elf-gcc-{{ page.version }}
+│   ├── aarch64-none-elf-gcc-ar
+│   ├── aarch64-none-elf-gcc-nm
+│   ├── aarch64-none-elf-gcc-ranlib
+│   ├── aarch64-none-elf-gcov
+│   ├── aarch64-none-elf-gcov-dump
+│   ├── aarch64-none-elf-gcov-tool
+│   ├── aarch64-none-elf-gdb
+│   ├── aarch64-none-elf-gdb-add-index
+│   ├── aarch64-none-elf-gdb-add-index-py3
+│   ├── aarch64-none-elf-gdb-py3
+│   ├── aarch64-none-elf-gfortran
+│   ├── aarch64-none-elf-gprof
+│   ├── aarch64-none-elf-gprof-py3
+│   ├── aarch64-none-elf-ld
+│   ├── aarch64-none-elf-ld.bfd
+│   ├── aarch64-none-elf-lto-dump
+│   ├── aarch64-none-elf-nm
+│   ├── aarch64-none-elf-objcopy
+│   ├── aarch64-none-elf-objdump
+│   ├── aarch64-none-elf-ranlib
+│   ├── aarch64-none-elf-readelf
+│   ├── aarch64-none-elf-size
+│   ├── aarch64-none-elf-strings
+│   └── aarch64-none-elf-strip
 ├── distro-info
-│   ├── CHANGELOG.md
-│   ├── licenses
-│   ├── patches
-│   └── scripts
+│   ├── CHANGELOG.md
+│   ├── licenses
+│   ├── patches
+│   └── scripts
 ├── include
-│   └── gdb
+│   └── gdb
 ├── lib
-│   ├── bfd-plugins
-│   ├── gcc
-│   ├── libcc1.0.so
-│   ├── libcc1.so -> libcc1.0.so
-│   └── python3.10
+│   ├── bfd-plugins
+│   ├── gcc
+│   ├── libcc1.0.so
+│   ├── libcc1.so -> libcc1.0.so
+│   └── python3.10
 ├── libexec
-│   ├── gcc
-│   ├── libcrypt.2.dylib
-│   ├── libcrypto.1.1.dylib
-│   ├── libffi.8.dylib
-│   ├── libgcc_s.1.dylib
-│   ├── libgmp.10.dylib
-│   ├── libiconv.2.dylib
-│   ├── libisl.15.dylib
-│   ├── liblzma.5.dylib
-│   ├── libmpc.3.dylib
-│   ├── libmpfr.4.dylib
-│   ├── libncurses.6.dylib
-│   ├── libpanel.6.dylib
-│   ├── libpython3.10.dylib
-│   ├── libreadline.8.1.dylib
-│   ├── libreadline.8.dylib -> libreadline.8.1.dylib
-│   ├── libsqlite3.0.dylib
-│   ├── libssl.1.1.dylib
-│   ├── libstdc++.6.dylib
-│   ├── libz.1.2.12.dylib
-│   └── libz.1.dylib -> libz.1.2.12.dylib
+│   ├── gcc
+│   ├── libcrypt.2.dylib
+│   ├── libcrypto.1.1.dylib
+│   ├── libffi.8.dylib
+│   ├── libgcc_s.1.dylib
+│   ├── libgmp.10.dylib
+│   ├── libiconv.2.dylib
+│   ├── libisl.15.dylib
+│   ├── liblzma.5.dylib
+│   ├── libmpc.3.dylib
+│   ├── libmpfr.4.dylib
+│   ├── libncurses.6.dylib
+│   ├── libpanel.6.dylib
+│   ├── libpython3.10.dylib
+│   ├── libreadline.8.1.dylib
+│   ├── libreadline.8.dylib -> libreadline.8.1.dylib
+│   ├── libsqlite3.0.dylib
+│   ├── libssl.1.1.dylib
+│   ├── libstdc++.6.dylib
+│   ├── libz.1.2.12.dylib
+│   └── libz.1.dylib -> libz.1.2.12.dylib
 └── share
     ├── doc
     └── gcc-{{ page.version }}
@@ -351,7 +351,7 @@ aarch64-none-elf-gcc (xPack GNU AArch64 Embedded GCC, 64-bit) {{ page.version }}
 
 ### Download
 
-The GNU/Linux versions of **xPack GNU AArch64 Embedded GCC** 
+The GNU/Linux versions of **xPack GNU AArch64 Embedded GCC**
 are packed as `.tar.gz` archives.
 Download the latest version named like:
 
@@ -359,8 +359,8 @@ Download the latest version named like:
 - `xpack-aarch64-none-elf-gcc-{{ page.version }}-{{ page.xpack-subversion }}-linux-arm.tar.gz`
 - `xpack-aarch64-none-elf-gcc-{{ page.version }}-{{ page.xpack-subversion }}-linux-arm64.tar.gz`
 
-As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
-Ubuntu, but can be executed on most recent GNU/Linux distributions.
+As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
+Ubuntu, but can be executed on most recent GNU/Linux distributions.
 
 ### Unpack
 
@@ -394,101 +394,101 @@ The result is a structure like:
 $ tree -L 2 /home/ilg/.local/xPacks/aarch64-none-elf-gcc/xpack-aarch64-none-elf-gcc-{{ page.version }}-{{ page.xpack-subversion }}
 /home/ilg/.local/xPacks/aarch64-none-elf-gcc/xpack-aarch64-none-elf-gcc-{{ page.version }}-{{ page.xpack-subversion }}
 ├── aarch64-none-elf
-│   ├── bin
-│   ├── include
-│   ├── lib
-│   └── share
+│   ├── bin
+│   ├── include
+│   ├── lib
+│   └── share
 ├── bin
-│   ├── aarch64-none-elf-addr2line
-│   ├── aarch64-none-elf-ar
-│   ├── aarch64-none-elf-as
-│   ├── aarch64-none-elf-as-py3
-│   ├── aarch64-none-elf-c++
-│   ├── aarch64-none-elf-c++filt
-│   ├── aarch64-none-elf-cpp
-│   ├── aarch64-none-elf-elfedit
-│   ├── aarch64-none-elf-g++
-│   ├── aarch64-none-elf-gcc
-│   ├── aarch64-none-elf-gcc-{{ page.version }}
-│   ├── aarch64-none-elf-gcc-ar
-│   ├── aarch64-none-elf-gcc-nm
-│   ├── aarch64-none-elf-gcc-ranlib
-│   ├── aarch64-none-elf-gcov
-│   ├── aarch64-none-elf-gcov-dump
-│   ├── aarch64-none-elf-gcov-tool
-│   ├── aarch64-none-elf-gdb
-│   ├── aarch64-none-elf-gdb-add-index
-│   ├── aarch64-none-elf-gdb-add-index-py3
-│   ├── aarch64-none-elf-gdb-py3
-│   ├── aarch64-none-elf-gfortran
-│   ├── aarch64-none-elf-gprof
-│   ├── aarch64-none-elf-gprof-py3
-│   ├── aarch64-none-elf-ld
-│   ├── aarch64-none-elf-ld.bfd
-│   ├── aarch64-none-elf-lto-dump
-│   ├── aarch64-none-elf-nm
-│   ├── aarch64-none-elf-objcopy
-│   ├── aarch64-none-elf-objdump
-│   ├── aarch64-none-elf-ranlib
-│   ├── aarch64-none-elf-readelf
-│   ├── aarch64-none-elf-size
-│   ├── aarch64-none-elf-strings
-│   ├── aarch64-none-elf-strip
-│   ├── libgpm.so.2 -> libgpm.so.2.1.0
-│   └── libgpm.so.2.1.0
+│   ├── aarch64-none-elf-addr2line
+│   ├── aarch64-none-elf-ar
+│   ├── aarch64-none-elf-as
+│   ├── aarch64-none-elf-as-py3
+│   ├── aarch64-none-elf-c++
+│   ├── aarch64-none-elf-c++filt
+│   ├── aarch64-none-elf-cpp
+│   ├── aarch64-none-elf-elfedit
+│   ├── aarch64-none-elf-g++
+│   ├── aarch64-none-elf-gcc
+│   ├── aarch64-none-elf-gcc-{{ page.version }}
+│   ├── aarch64-none-elf-gcc-ar
+│   ├── aarch64-none-elf-gcc-nm
+│   ├── aarch64-none-elf-gcc-ranlib
+│   ├── aarch64-none-elf-gcov
+│   ├── aarch64-none-elf-gcov-dump
+│   ├── aarch64-none-elf-gcov-tool
+│   ├── aarch64-none-elf-gdb
+│   ├── aarch64-none-elf-gdb-add-index
+│   ├── aarch64-none-elf-gdb-add-index-py3
+│   ├── aarch64-none-elf-gdb-py3
+│   ├── aarch64-none-elf-gfortran
+│   ├── aarch64-none-elf-gprof
+│   ├── aarch64-none-elf-gprof-py3
+│   ├── aarch64-none-elf-ld
+│   ├── aarch64-none-elf-ld.bfd
+│   ├── aarch64-none-elf-lto-dump
+│   ├── aarch64-none-elf-nm
+│   ├── aarch64-none-elf-objcopy
+│   ├── aarch64-none-elf-objdump
+│   ├── aarch64-none-elf-ranlib
+│   ├── aarch64-none-elf-readelf
+│   ├── aarch64-none-elf-size
+│   ├── aarch64-none-elf-strings
+│   ├── aarch64-none-elf-strip
+│   ├── libgpm.so.2 -> libgpm.so.2.1.0
+│   └── libgpm.so.2.1.0
 ├── distro-info
-│   ├── CHANGELOG.md
-│   ├── licenses
-│   ├── patches
-│   └── scripts
+│   ├── CHANGELOG.md
+│   ├── licenses
+│   ├── patches
+│   └── scripts
 ├── include
-│   └── gdb
+│   └── gdb
 ├── lib
-│   ├── bfd-plugins
-│   ├── gcc
-│   └── python3.10
+│   ├── bfd-plugins
+│   ├── gcc
+│   └── python3.10
 ├── lib64
-│   ├── libcc1.so -> libcc1.so.0.0.0
-│   ├── libcc1.so.0 -> libcc1.so.0.0.0
-│   └── libcc1.so.0.0.0
+│   ├── libcc1.so -> libcc1.so.0.0.0
+│   ├── libcc1.so.0 -> libcc1.so.0.0.0
+│   └── libcc1.so.0.0.0
 ├── libexec
-│   ├── gcc
-│   ├── libcrypto.so.1.1
-│   ├── libcrypt.so.1 -> libcrypt.so.1.1.0
-│   ├── libcrypt.so.1.1.0
-│   ├── libexpat.so.1 -> libexpat.so.1.6.7
-│   ├── libexpat.so.1.6.7
-│   ├── libffi.so.8 -> libffi.so.8.1.0
-│   ├── libffi.so.8.1.0
-│   ├── libfl.so.2 -> libfl.so.2.0.0
-│   ├── libfl.so.2.0.0
-│   ├── libgcc_s.so.1
-│   ├── libgmp.so.10 -> libgmp.so.10.4.1
-│   ├── libgmp.so.10.4.1
-│   ├── libiconv.so.2 -> libiconv.so.2.6.0
-│   ├── libiconv.so.2.6.0
-│   ├── libisl.so.15 -> libisl.so.15.0.0
-│   ├── libisl.so.15.0.0
-│   ├── liblzma.so.5 -> liblzma.so.5.2.5
-│   ├── liblzma.so.5.2.5
-│   ├── libmpc.so.3 -> libmpc.so.3.0.0
-│   ├── libmpc.so.3.0.0
-│   ├── libmpfr.so.4 -> libmpfr.so.4.1.6
-│   ├── libmpfr.so.4.1.6
-│   ├── libncurses.so.6 -> libncurses.so.6.3
-│   ├── libncurses.so.6.3
-│   ├── libpanel.so.6 -> libpanel.so.6.3
-│   ├── libpanel.so.6.3
-│   ├── libpython3.10.so.1.0
-│   ├── libreadline.so.8 -> libreadline.so.8.1
-│   ├── libreadline.so.8.1
-│   ├── libsqlite3.so.0 -> libsqlite3.so.0.8.6
-│   ├── libsqlite3.so.0.8.6
-│   ├── libssl.so.1.1
-│   ├── libstdc++.so.6 -> libstdc++.so.6.0.29
-│   ├── libstdc++.so.6.0.29
-│   ├── libz.so.1 -> libz.so.1.2.12
-│   └── libz.so.1.2.12
+│   ├── gcc
+│   ├── libcrypto.so.1.1
+│   ├── libcrypt.so.1 -> libcrypt.so.1.1.0
+│   ├── libcrypt.so.1.1.0
+│   ├── libexpat.so.1 -> libexpat.so.1.6.7
+│   ├── libexpat.so.1.6.7
+│   ├── libffi.so.8 -> libffi.so.8.1.0
+│   ├── libffi.so.8.1.0
+│   ├── libfl.so.2 -> libfl.so.2.0.0
+│   ├── libfl.so.2.0.0
+│   ├── libgcc_s.so.1
+│   ├── libgmp.so.10 -> libgmp.so.10.4.1
+│   ├── libgmp.so.10.4.1
+│   ├── libiconv.so.2 -> libiconv.so.2.6.0
+│   ├── libiconv.so.2.6.0
+│   ├── libisl.so.15 -> libisl.so.15.0.0
+│   ├── libisl.so.15.0.0
+│   ├── liblzma.so.5 -> liblzma.so.5.2.5
+│   ├── liblzma.so.5.2.5
+│   ├── libmpc.so.3 -> libmpc.so.3.0.0
+│   ├── libmpc.so.3.0.0
+│   ├── libmpfr.so.4 -> libmpfr.so.4.1.6
+│   ├── libmpfr.so.4.1.6
+│   ├── libncurses.so.6 -> libncurses.so.6.3
+│   ├── libncurses.so.6.3
+│   ├── libpanel.so.6 -> libpanel.so.6.3
+│   ├── libpanel.so.6.3
+│   ├── libpython3.10.so.1.0
+│   ├── libreadline.so.8 -> libreadline.so.8.1
+│   ├── libreadline.so.8.1
+│   ├── libsqlite3.so.0 -> libsqlite3.so.0.8.6
+│   ├── libsqlite3.so.0.8.6
+│   ├── libssl.so.1.1
+│   ├── libstdc++.so.6 -> libstdc++.so.6.0.29
+│   ├── libstdc++.so.6.0.29
+│   ├── libz.so.1 -> libz.so.1.2.12
+│   └── libz.so.1.2.12
 ├── README.md
 └── share
     ├── doc

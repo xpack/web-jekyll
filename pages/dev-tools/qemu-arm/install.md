@@ -153,7 +153,7 @@ For usual Cortex-M emulation, there are no special drivers required.
 {% capture macos %}
 ### Download
 
-The macOS versions of **xPack QEMU Arm**
+The macOS versions of **xPack QEMU Arm**
 are packed as `.tar.gz` archives.
 Download the latest version named like:
 
@@ -189,44 +189,44 @@ $ tree -L 2 /Users/ilg/.local/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-
 /Users/ilg/.local/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-{{ page.xpack-subversion }}/
 ├── README.md
 ├── bin
-│   ├── qemu-system-aarch64
-│   ├── qemu-system-arm
-│   └── qemu-system-gnuarmeclipse
+│   ├── qemu-system-aarch64
+│   ├── qemu-system-arm
+│   └── qemu-system-gnuarmeclipse
 ├── distro-info
-│   ├── CHANGELOG.md
-│   ├── licenses
-│   ├── patches
-│   └── scripts
+│   ├── CHANGELOG.md
+│   ├── licenses
+│   ├── patches
+│   └── scripts
 ├── include
-│   └── qemu-plugin.h
+│   └── qemu-plugin.h
 ├── libexec
-│   ├── libSDL2-2.0.0.dylib
-│   ├── libSDL2_image-2.0.0.dylib
-│   ├── libcrypto.1.1.dylib
-│   ├── libffi.8.dylib
-│   ├── libgio-2.0.0.dylib
-│   ├── libglib-2.0.0.dylib
-│   ├── libgmodule-2.0.0.dylib
-│   ├── libgobject-2.0.0.dylib
-│   ├── libgthread-2.0.0.dylib
-│   ├── libiconv.2.dylib
-│   ├── libintl.8.dylib
-│   ├── libjpeg.9.dylib
-│   ├── liblzo2.2.dylib
-│   ├── libncursesw.6.dylib
-│   ├── libnettle.8.4.dylib
-│   ├── libnettle.8.dylib -> libnettle.8.4.dylib
-│   ├── libpixman-1.0.40.0.dylib
-│   ├── libpixman-1.0.dylib -> libpixman-1.0.40.0.dylib
-│   ├── libpng16.16.dylib
-│   ├── libssh.4.8.7.dylib
-│   ├── libssh.4.dylib -> libssh.4.8.7.dylib
-│   ├── libusb-1.0.0.dylib
-│   ├── libvdeplug.3.dylib
-│   ├── libz.1.2.12.dylib
-│   ├── libz.1.dylib -> libz.1.2.12.dylib
-│   ├── libzstd.1.5.2.dylib
-│   └── libzstd.1.dylib -> libzstd.1.5.2.dylib
+│   ├── libSDL2-2.0.0.dylib
+│   ├── libSDL2_image-2.0.0.dylib
+│   ├── libcrypto.1.1.dylib
+│   ├── libffi.8.dylib
+│   ├── libgio-2.0.0.dylib
+│   ├── libglib-2.0.0.dylib
+│   ├── libgmodule-2.0.0.dylib
+│   ├── libgobject-2.0.0.dylib
+│   ├── libgthread-2.0.0.dylib
+│   ├── libiconv.2.dylib
+│   ├── libintl.8.dylib
+│   ├── libjpeg.9.dylib
+│   ├── liblzo2.2.dylib
+│   ├── libncursesw.6.dylib
+│   ├── libnettle.8.4.dylib
+│   ├── libnettle.8.dylib -> libnettle.8.4.dylib
+│   ├── libpixman-1.0.40.0.dylib
+│   ├── libpixman-1.0.dylib -> libpixman-1.0.40.0.dylib
+│   ├── libpng16.16.dylib
+│   ├── libssh.4.8.7.dylib
+│   ├── libssh.4.dylib -> libssh.4.8.7.dylib
+│   ├── libusb-1.0.0.dylib
+│   ├── libvdeplug.3.dylib
+│   ├── libz.1.2.12.dylib
+│   ├── libz.1.dylib -> libz.1.2.12.dylib
+│   ├── libzstd.1.5.2.dylib
+│   └── libzstd.1.dylib -> libzstd.1.5.2.dylib
 └── share
     ├── applications
     ├── icons
@@ -251,7 +251,7 @@ Copyright (c) 2003-2022 Fabrice Bellard and the QEMU Project developers
 {% capture linux %}
 ### Download
 
-The GNU/Linux versions of **xPack QEMU Arm**
+The GNU/Linux versions of **xPack QEMU Arm**
 are packed as `.tar.gz` archives.
 Download the latest version named like:
 
@@ -259,8 +259,8 @@ Download the latest version named like:
 - `xpack-qemu-arm-{{ page.version }}-{{ page.xpack-subversion }}-linux-arm.tar.gz`
 - `xpack-qemu-arm-{{ page.version }}-{{ page.xpack-subversion }}-linux-arm64.tar.gz`
 
-As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
-Ubuntu, but can be executed on most recent GNU/Linux distributions.
+As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
+Ubuntu, but can be executed on most recent GNU/Linux distributions.
 
 ### Unpack
 
@@ -292,68 +292,68 @@ The result is a structure like:
 $ tree -L 2 '/home/ilg/.local/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-{{ page.xpack-subversion }}'
 /home/ilg/.local/xPacks/qemu-arm/xpack-qemu-arm-{{ page.version }}-{{ page.xpack-subversion }}/
 ├── bin
-│   ├── qemu-system-aarch64
-│   ├── qemu-system-arm
-│   └── qemu-system-gnuarmeclipse
+│   ├── qemu-system-aarch64
+│   ├── qemu-system-arm
+│   └── qemu-system-gnuarmeclipse
 ├── distro-info
-│   ├── CHANGELOG.md
-│   ├── licenses
-│   ├── patches
-│   └── scripts
+│   ├── CHANGELOG.md
+│   ├── licenses
+│   ├── patches
+│   └── scripts
 ├── include
-│   └── qemu-plugin.h
+│   └── qemu-plugin.h
 ├── libexec
-│   ├── libatomic.so.1 -> libatomic.so.1.2.0
-│   ├── libatomic.so.1.2.0
-│   ├── libcrypto.so.1.1
-│   ├── libffi.so.8 -> libffi.so.8.1.0
-│   ├── libffi.so.8.1.0
-│   ├── libgcc_s.so.1
-│   ├── libgio-2.0.so.0 -> libgio-2.0.so.0.5600.4
-│   ├── libgio-2.0.so.0.5600.4
-│   ├── libglib-2.0.so.0 -> libglib-2.0.so.0.5600.4
-│   ├── libglib-2.0.so.0.5600.4
-│   ├── libgmodule-2.0.so.0 -> libgmodule-2.0.so.0.5600.4
-│   ├── libgmodule-2.0.so.0.5600.4
-│   ├── libgobject-2.0.so.0 -> libgobject-2.0.so.0.5600.4
-│   ├── libgobject-2.0.so.0.5600.4
-│   ├── libgthread-2.0.so.0 -> libgthread-2.0.so.0.5600.4
-│   ├── libgthread-2.0.so.0.5600.4
-│   ├── libiconv.so.2 -> libiconv.so.2.6.1
-│   ├── libiconv.so.2.6.1
-│   ├── libjpeg.so.9 -> libjpeg.so.9.5.0
-│   ├── libjpeg.so.9.5.0
-│   ├── liblzo2.so.2 -> liblzo2.so.2.0.0
-│   ├── liblzo2.so.2.0.0
-│   ├── libncursesw.so.6 -> libncursesw.so.6.3
-│   ├── libncursesw.so.6.3
-│   ├── libnettle.so.8 -> libnettle.so.8.4
-│   ├── libnettle.so.8.4
-│   ├── libpixman-1.so.0 -> libpixman-1.so.0.40.0
-│   ├── libpixman-1.so.0.40.0
-│   ├── libpng16.so.16 -> libpng16.so.16.37.0
-│   ├── libpng16.so.16.37.0
-│   ├── libresolv-2.27.so
-│   ├── libresolv.so.2 -> libresolv-2.27.so
-│   ├── libSDL2-2.0.so.0 -> libSDL2-2.0.so.0.22.0
-│   ├── libSDL2-2.0.so.0.22.0
-│   ├── libSDL2_image-2.0.so.0 -> libSDL2_image-2.0.so.0.2.3
-│   ├── libSDL2_image-2.0.so.0.2.3
-│   ├── libssh.so.4 -> libssh.so.4.8.7
-│   ├── libssh.so.4.8.7
-│   ├── libssp.so.0 -> libssp.so.0.0.0
-│   ├── libssp.so.0.0.0
-│   ├── libstdc++.so.6 -> libstdc++.so.6.0.29
-│   ├── libstdc++.so.6.0.29
-│   ├── libusb-1.0.so.0 -> libusb-1.0.so.0.3.0
-│   ├── libusb-1.0.so.0.3.0
-│   ├── libvdeplug.so.3 -> libvdeplug.so.3.0.1
-│   ├── libvdeplug.so.3.0.1
-│   ├── libz.so.1 -> libz.so.1.2.12
-│   ├── libz.so.1.2.12
-│   ├── libzstd.so.1 -> libzstd.so.1.5.2
-│   ├── libzstd.so.1.5.2
-│   └── qemu-bridge-helper
+│   ├── libatomic.so.1 -> libatomic.so.1.2.0
+│   ├── libatomic.so.1.2.0
+│   ├── libcrypto.so.1.1
+│   ├── libffi.so.8 -> libffi.so.8.1.0
+│   ├── libffi.so.8.1.0
+│   ├── libgcc_s.so.1
+│   ├── libgio-2.0.so.0 -> libgio-2.0.so.0.5600.4
+│   ├── libgio-2.0.so.0.5600.4
+│   ├── libglib-2.0.so.0 -> libglib-2.0.so.0.5600.4
+│   ├── libglib-2.0.so.0.5600.4
+│   ├── libgmodule-2.0.so.0 -> libgmodule-2.0.so.0.5600.4
+│   ├── libgmodule-2.0.so.0.5600.4
+│   ├── libgobject-2.0.so.0 -> libgobject-2.0.so.0.5600.4
+│   ├── libgobject-2.0.so.0.5600.4
+│   ├── libgthread-2.0.so.0 -> libgthread-2.0.so.0.5600.4
+│   ├── libgthread-2.0.so.0.5600.4
+│   ├── libiconv.so.2 -> libiconv.so.2.6.1
+│   ├── libiconv.so.2.6.1
+│   ├── libjpeg.so.9 -> libjpeg.so.9.5.0
+│   ├── libjpeg.so.9.5.0
+│   ├── liblzo2.so.2 -> liblzo2.so.2.0.0
+│   ├── liblzo2.so.2.0.0
+│   ├── libncursesw.so.6 -> libncursesw.so.6.3
+│   ├── libncursesw.so.6.3
+│   ├── libnettle.so.8 -> libnettle.so.8.4
+│   ├── libnettle.so.8.4
+│   ├── libpixman-1.so.0 -> libpixman-1.so.0.40.0
+│   ├── libpixman-1.so.0.40.0
+│   ├── libpng16.so.16 -> libpng16.so.16.37.0
+│   ├── libpng16.so.16.37.0
+│   ├── libresolv-2.27.so
+│   ├── libresolv.so.2 -> libresolv-2.27.so
+│   ├── libSDL2-2.0.so.0 -> libSDL2-2.0.so.0.22.0
+│   ├── libSDL2-2.0.so.0.22.0
+│   ├── libSDL2_image-2.0.so.0 -> libSDL2_image-2.0.so.0.2.3
+│   ├── libSDL2_image-2.0.so.0.2.3
+│   ├── libssh.so.4 -> libssh.so.4.8.7
+│   ├── libssh.so.4.8.7
+│   ├── libssp.so.0 -> libssp.so.0.0.0
+│   ├── libssp.so.0.0.0
+│   ├── libstdc++.so.6 -> libstdc++.so.6.0.29
+│   ├── libstdc++.so.6.0.29
+│   ├── libusb-1.0.so.0 -> libusb-1.0.so.0.3.0
+│   ├── libusb-1.0.so.0.3.0
+│   ├── libvdeplug.so.3 -> libvdeplug.so.3.0.1
+│   ├── libvdeplug.so.3.0.1
+│   ├── libz.so.1 -> libz.so.1.2.12
+│   ├── libz.so.1.2.12
+│   ├── libzstd.so.1 -> libzstd.so.1.5.2
+│   ├── libzstd.so.1.5.2
+│   └── qemu-bridge-helper
 ├── README.md
 └── share
     ├── applications

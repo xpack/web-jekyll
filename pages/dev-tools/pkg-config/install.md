@@ -121,7 +121,7 @@ $ ~/Library/xPacks/@xpack-dev-tools/pkg-config/{{ page.version }}-{{ page.xpack-
 
 ### Download
 
-The macOS versions of **xPack pkg-config**
+The macOS versions of **xPack pkg-config**
 are packed as `.tar.gz` archives.
 Download the latest version named like:
 
@@ -152,14 +152,14 @@ $ tree -L 2 /Users/ilg/.local/xPacks/pkg-config/xpack-pkg-config-{{ page.version
 /Users/ilg/.local/xPacks/pkg-config/xpack-pkg-config-{{ page.version }}-{{ page.xpack-subversion }}/
 ├── README.md
 ├── bin
-│   └── pkg-config
+│   └── pkg-config
 ├── distro-info
-│   ├── CHANGELOG.md
-│   ├── licenses
-│   ├── patches
-│   └── scripts
+│   ├── CHANGELOG.md
+│   ├── licenses
+│   ├── patches
+│   └── scripts
 ├── libexec
-│   └── libiconv.2.dylib
+│   └── libiconv.2.dylib
 └── share
     ├── aclocal
     └── doc
@@ -195,14 +195,14 @@ $ ~/.local/xPacks/@xpack-dev-tools/pkg-config/{{ page.version }}-{{ page.xpack-s
 
 ### Download
 
-The GNU/Linux versions of **xPack pkg-config**
+The GNU/Linux versions of **xPack pkg-config**
 are packed as `.tar.gz` archives.
 Download the latest version named like:
 
 - `xpack-pkg-config-{{ page.version }}-{{ page.xpack-subversion }}-linux-x64.tar.gz`
 
-As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
-Ubuntu, but can be executed on most recent GNU/Linux distributions.
+As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
+Ubuntu, but can be executed on most recent GNU/Linux distributions.
 
 ### Unpack
 
@@ -228,15 +228,15 @@ $ tree -L 2 '/home/ilg/.local/xPacks/pkg-config/xpack-pkg-config-{{ page.version
 /home/ilg/.local/xPacks/pkg-config/xpack-pkg-config-{{ page.version }}-{{ page.xpack-subversion }}/
 ├── README.md
 ├── bin
-│   └── pkg-config
+│   └── pkg-config
 ├── distro-info
-│   ├── CHANGELOG.md
-│   ├── licenses
-│   ├── patches
-│   └── scripts
+│   ├── CHANGELOG.md
+│   ├── licenses
+│   ├── patches
+│   └── scripts
 ├── libexec
-│   ├── libiconv.so.2 -> libiconv.so.2.6.1
-│   └── libiconv.so.2.6.1
+│   ├── libiconv.so.2 -> libiconv.so.2.6.1
+│   └── libiconv.so.2.6.1
 └── share
     ├── aclocal
     └── doc

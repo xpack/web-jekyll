@@ -92,7 +92,7 @@ The official QEMU documentation is available
 
 ## Install
 
-The details of installing the **xPack QEMU RISC-V** on various platforms are
+The details of installing the **xPack QEMU RISC-V** on various platforms are
 presented in a dedicated
 [install]({{ site.baseurl }}/dev-tools/qemu-riscv/install) page.
 
@@ -113,12 +113,12 @@ The release and change log is available in the repository
 
 ## Build details
 
-For those interested on the procedure used to build these packages,
+For those interested on the procedure used to build these packages,
 please read the
 [README-MAINTAINER](https://github.com/xpack-dev-tools/qemu-riscv-xpack/blob/xpack/README-MAINTAINER.md)
 page.
 However, the ultimate source for details are the build scripts
-themselves, all available from the 
+themselves, all available from the
 [`qemu-riscv-xpack.git/scripts`](https://github.com/xpack-dev-tools/qemu-riscv-xpack/tree/xpack/scripts/)
 folder.
 

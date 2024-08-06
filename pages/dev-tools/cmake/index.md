@@ -40,7 +40,7 @@ an open source project hosted on
 
 ## Benefits
 
-The main advantages of using the **xPack CMake** are:
+The main advantages of using the **xPack CMake** are:
 
 - a convenient, uniform and portable install/uninstall/upgrade procedure,
   the same procedure is used for all major
@@ -54,12 +54,12 @@ and can be installed in any location.
 
 ## Compatibility
 
-The **xPack CMake** is fully compatible with the original **CMake**
+The **xPack CMake** is fully compatible with the original **CMake**
 distribution.
 
 ## Install
 
-The details of installing the **xPack CMake** on various platforms are
+The details of installing the **xPack CMake** on various platforms are
 presented in the separate
 [install]({{ site.baseurl }}/dev-tools/cmake/install/) page.
 

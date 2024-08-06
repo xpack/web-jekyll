@@ -40,7 +40,7 @@ an open source project hosted on
 
 ## Benefits
 
-The main advantages of using the **xPack Ninja Build** are:
+The main advantages of using the **xPack Ninja Build** are:
 
 - a convenient, uniform and portable install/uninstall/upgrade procedure,
   the same procedure is used for all major
@@ -54,12 +54,12 @@ and can be installed in any location.
 
 ## Compatibility
 
-The **xPack Ninja Build** is fully compatible with the original **Ninja**
+The **xPack Ninja Build** is fully compatible with the original **Ninja**
 distribution.
 
 ## Install
 
-The details of installing the **xPack Ninja Build** on various platforms are
+The details of installing the **xPack Ninja Build** on various platforms are
 presented in the separate
 [install]({{ site.baseurl }}/dev-tools/ninja-build/install/) page.
 

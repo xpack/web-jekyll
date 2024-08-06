@@ -43,7 +43,7 @@ is an cross-platform standalone binary distribution of the
 
 ## Benefits
 
-The main advantages of using the **xPack MinGW-w64 GCC** are:
+The main advantages of using the **xPack MinGW-w64 GCC** are:
 
 - a convenient, uniform and portable install/uninstall/upgrade procedure,
   the same procedure is used for all major
@@ -64,7 +64,7 @@ original GNU Compiler Collection (GCC) and generates Windows binaries.
 
 ## Install
 
-The details of installing the **xPack MinGW-w64 GCC** on various
+The details of installing the **xPack MinGW-w64 GCC** on various
 platforms are presented in the separate
 [install]({{ site.baseurl }}/dev-tools/mingw-w64-gcc/install/) page.
 
@@ -91,7 +91,7 @@ For those interested in building the binaries, please read the
 [README-MAINTAINER](https://github.com/xpack-dev-tools/mingw-w64-gcc-xpack/blob/xpack/README-MAINTAINER.md)
 page.
 However, the ultimate source for details are the build scripts themselves,
-all available from the 
+all available from the
 [`mingw-w64-gcc-xpack.git/scripts`](https://github.com/xpack-dev-tools/mingw-w64-gcc-xpack/tree/xpack/scripts/)
 folder.
 

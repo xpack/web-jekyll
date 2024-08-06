@@ -44,7 +44,7 @@ maintained by Arm.
 
 ## Benefits
 
-The main advantages of using the **xPack GNU AArch64 Embedded GCC** are:
+The main advantages of using the **xPack GNU AArch64 Embedded GCC** are:
 
 - a convenient, uniform and portable install/uninstall/upgrade procedure,
   the same procedure is used for all major
@@ -69,7 +69,7 @@ moves ahead of Arm and uses more recent tools versions that fix the bugs.
 
 ## Install
 
-The details of installing the **xPack GNU AArch64 Embedded GCC** on various
+The details of installing the **xPack GNU AArch64 Embedded GCC** on various
 platforms are presented in the separate
 [install]({{ site.baseurl }}/dev-tools/aarch64-none-elf-gcc/install/) page.
 
@@ -94,7 +94,7 @@ For those interested in building the binaries, please read the
 [README-MAINTAINER](https://github.com/xpack-dev-tools/aarch64-none-elf-gcc-xpack/blob/xpack/README-MAINTAINER.md)
 page.
 However, the ultimate source for details are the build scripts themselves,
-all available from the 
+all available from the
 [`aarch64-none-elf-gcc-xpack.git/scripts`](https://github.com/xpack-dev-tools/aarch64-none-elf-gcc-xpack/tree/xpack/scripts/)
 folder.
 

@@ -123,7 +123,7 @@ realpath (GNU coreutils) {{ page.short-version }}
 
 ### Download
 
-The macOS versions of **xPack GNU realpath**
+The macOS versions of **xPack GNU realpath**
 are packed as `.tar.gz` archives.
 Download the latest version named like:
 
@@ -154,8 +154,8 @@ $ tree -L 2 /Users/ilg/.local/xPacks/realpath/xpack-realpath-{{ page.version }}-
 /Users/ilg/.local/xPacks/realpath/xpack-realpath-{{ page.version }}-{{ page.xpack-subversion }}/
 ├── README.md
 ├── bin
-│   ├── greadlink
-│   └── grealpath
+│   ├── greadlink
+│   └── grealpath
 └── distro-info
     ├── CHANGELOG.md
     ├── licenses
@@ -193,14 +193,14 @@ realpath (GNU coreutils) {{ page.short-version }}
 
 ### Download
 
-The GNU/Linux versions of **xPack GNU realpath**
+The GNU/Linux versions of **xPack GNU realpath**
 are packed as `.tar.gz` archives.
 Download the latest version named like:
 
 - `xpack-realpath-{{ page.version }}-{{ page.xpack-subversion }}-linux-x64.tar.gz`
 
-As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
-Ubuntu, but can be executed on most recent GNU/Linux distributions.
+As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
+Ubuntu, but can be executed on most recent GNU/Linux distributions.
 
 ### Unpack
 
@@ -226,8 +226,8 @@ $ tree -L 2 '/home/ilg/.local/xPacks/realpath/xpack-realpath-{{ page.version }}-
 /home/ilg/.local/xPacks/realpath/xpack-realpath-{{ page.version }}-{{ page.xpack-subversion }}/
 ├── README.md
 ├── bin
-│   ├── greadlink
-│   └── grealpath
+│   ├── greadlink
+│   └── grealpath
 └── distro-info
     ├── CHANGELOG.md
     ├── licenses

@@ -44,7 +44,7 @@ maintained by Arm.
 
 ## Benefits
 
-The main advantages of using the **xPack GNU Arm Embedded GCC** are:
+The main advantages of using the **xPack GNU Arm Embedded GCC** are:
 
 - a convenient, uniform and portable install/uninstall/upgrade procedure,
   the same procedure is used for all major
@@ -69,7 +69,7 @@ moves ahead of Arm and uses more recent tools versions that fix the bugs.
 
 ## Install
 
-The details of installing the **xPack GNU Arm Embedded GCC** on various
+The details of installing the **xPack GNU Arm Embedded GCC** on various
 platforms are presented in the separate
 [install]({{ site.baseurl }}/dev-tools/arm-none-eabi-gcc/install/) page.
 

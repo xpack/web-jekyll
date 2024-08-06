@@ -415,7 +415,7 @@ The field names `mask`, `position` and `offset` are reserved.
 
 | Parent |
 |:-------|
-| The `fields` property of a  **cluster** or **peripheral** object. |
+| The `fields` property of a  **cluster** or **peripheral** object. |
 
 | Properties | Type | Description |
 |:-----------|:-----|:------------|

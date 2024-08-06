@@ -183,7 +183,7 @@ x86_64-w64-mingw32-gcc (xPack MinGW-w64 GCC x86_64) {{ page.version }}
 
 ### Download
 
-The macOS versions of **xPack MinGW-w64 GCC**
+The macOS versions of **xPack MinGW-w64 GCC**
 are packed as `.tar.gz` archives.
 Download the latest version named like:
 
@@ -352,7 +352,7 @@ x86_64-w64-mingw32-gcc (xPack MinGW-w64 GCC, 64-bit) {{ page.version }}
 
 ### Download
 
-The GNU/Linux versions of **xPack MinGW-w64 GCC** 
+The GNU/Linux versions of **xPack MinGW-w64 GCC**
 are packed as `.tar.gz` archives.
 Download the latest version named like:
 
@@ -360,8 +360,8 @@ Download the latest version named like:
 - `xpack-mingw-w64-gcc-{{ page.version }}-{{ page.xpack-subversion }}-linux-arm.tar.gz`
 - `xpack-mingw-w64-gcc-{{ page.version }}-{{ page.xpack-subversion }}-linux-arm64.tar.gz`
 
-As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
-Ubuntu, but can be executed on most recent GNU/Linux distributions.
+As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
+Ubuntu, but can be executed on most recent GNU/Linux distributions.
 
 ### Unpack
 
@@ -390,131 +390,131 @@ The result is a structure like:
 $ tree -L 2 /home/ilg/.local/xPacks/mingw-w64-gcc/xpack-mingw-w64-gcc-{{ page.version }}-{{ page.xpack-subversion }}
 /home/ilg/.local/xPacks/mingw-w64-gcc/xpack-mingw-w64-gcc-{{ page.version }}-{{ page.xpack-subversion }}
 ├── bin
-│   ├── i686-w64-mingw32-addr2line
-│   ├── i686-w64-mingw32-ar
-│   ├── i686-w64-mingw32-as
-│   ├── i686-w64-mingw32-c++
-│   ├── i686-w64-mingw32-c++filt
-│   ├── i686-w64-mingw32-cpp
-│   ├── i686-w64-mingw32-dlltool
-│   ├── i686-w64-mingw32-dllwrap
-│   ├── i686-w64-mingw32-elfedit
-│   ├── i686-w64-mingw32-g++
-│   ├── i686-w64-mingw32-gcc
-│   ├── i686-w64-mingw32-gcc-11.3.0
-│   ├── i686-w64-mingw32-gcc-ar
-│   ├── i686-w64-mingw32-gcc-nm
-│   ├── i686-w64-mingw32-gcc-ranlib
-│   ├── i686-w64-mingw32-gcov
-│   ├── i686-w64-mingw32-gcov-dump
-│   ├── i686-w64-mingw32-gcov-tool
-│   ├── i686-w64-mingw32-gendef
-│   ├── i686-w64-mingw32-gfortran
-│   ├── i686-w64-mingw32-gprof
-│   ├── i686-w64-mingw32-ld
-│   ├── i686-w64-mingw32-ld.bfd
-│   ├── i686-w64-mingw32-lto-dump
-│   ├── i686-w64-mingw32-nm
-│   ├── i686-w64-mingw32-objcopy
-│   ├── i686-w64-mingw32-objdump
-│   ├── i686-w64-mingw32-ranlib
-│   ├── i686-w64-mingw32-readelf
-│   ├── i686-w64-mingw32-size
-│   ├── i686-w64-mingw32-strings
-│   ├── i686-w64-mingw32-strip
-│   ├── i686-w64-mingw32-widl
-│   ├── i686-w64-mingw32-windmc
-│   ├── i686-w64-mingw32-windres
-│   ├── x86_64-w64-mingw32-addr2line
-│   ├── x86_64-w64-mingw32-ar
-│   ├── x86_64-w64-mingw32-as
-│   ├── x86_64-w64-mingw32-c++
-│   ├── x86_64-w64-mingw32-c++filt
-│   ├── x86_64-w64-mingw32-cpp
-│   ├── x86_64-w64-mingw32-dlltool
-│   ├── x86_64-w64-mingw32-dllwrap
-│   ├── x86_64-w64-mingw32-elfedit
-│   ├── x86_64-w64-mingw32-g++
-│   ├── x86_64-w64-mingw32-gcc
-│   ├── x86_64-w64-mingw32-gcc-11.3.0
-│   ├── x86_64-w64-mingw32-gcc-ar
-│   ├── x86_64-w64-mingw32-gcc-nm
-│   ├── x86_64-w64-mingw32-gcc-ranlib
-│   ├── x86_64-w64-mingw32-gcov
-│   ├── x86_64-w64-mingw32-gcov-dump
-│   ├── x86_64-w64-mingw32-gcov-tool
-│   ├── x86_64-w64-mingw32-gendef
-│   ├── x86_64-w64-mingw32-gfortran
-│   ├── x86_64-w64-mingw32-gprof
-│   ├── x86_64-w64-mingw32-ld
-│   ├── x86_64-w64-mingw32-ld.bfd
-│   ├── x86_64-w64-mingw32-lto-dump
-│   ├── x86_64-w64-mingw32-nm
-│   ├── x86_64-w64-mingw32-objcopy
-│   ├── x86_64-w64-mingw32-objdump
-│   ├── x86_64-w64-mingw32-ranlib
-│   ├── x86_64-w64-mingw32-readelf
-│   ├── x86_64-w64-mingw32-size
-│   ├── x86_64-w64-mingw32-strings
-│   ├── x86_64-w64-mingw32-strip
-│   ├── x86_64-w64-mingw32-widl
-│   ├── x86_64-w64-mingw32-windmc
-│   └── x86_64-w64-mingw32-windres
+│   ├── i686-w64-mingw32-addr2line
+│   ├── i686-w64-mingw32-ar
+│   ├── i686-w64-mingw32-as
+│   ├── i686-w64-mingw32-c++
+│   ├── i686-w64-mingw32-c++filt
+│   ├── i686-w64-mingw32-cpp
+│   ├── i686-w64-mingw32-dlltool
+│   ├── i686-w64-mingw32-dllwrap
+│   ├── i686-w64-mingw32-elfedit
+│   ├── i686-w64-mingw32-g++
+│   ├── i686-w64-mingw32-gcc
+│   ├── i686-w64-mingw32-gcc-11.3.0
+│   ├── i686-w64-mingw32-gcc-ar
+│   ├── i686-w64-mingw32-gcc-nm
+│   ├── i686-w64-mingw32-gcc-ranlib
+│   ├── i686-w64-mingw32-gcov
+│   ├── i686-w64-mingw32-gcov-dump
+│   ├── i686-w64-mingw32-gcov-tool
+│   ├── i686-w64-mingw32-gendef
+│   ├── i686-w64-mingw32-gfortran
+│   ├── i686-w64-mingw32-gprof
+│   ├── i686-w64-mingw32-ld
+│   ├── i686-w64-mingw32-ld.bfd
+│   ├── i686-w64-mingw32-lto-dump
+│   ├── i686-w64-mingw32-nm
+│   ├── i686-w64-mingw32-objcopy
+│   ├── i686-w64-mingw32-objdump
+│   ├── i686-w64-mingw32-ranlib
+│   ├── i686-w64-mingw32-readelf
+│   ├── i686-w64-mingw32-size
+│   ├── i686-w64-mingw32-strings
+│   ├── i686-w64-mingw32-strip
+│   ├── i686-w64-mingw32-widl
+│   ├── i686-w64-mingw32-windmc
+│   ├── i686-w64-mingw32-windres
+│   ├── x86_64-w64-mingw32-addr2line
+│   ├── x86_64-w64-mingw32-ar
+│   ├── x86_64-w64-mingw32-as
+│   ├── x86_64-w64-mingw32-c++
+│   ├── x86_64-w64-mingw32-c++filt
+│   ├── x86_64-w64-mingw32-cpp
+│   ├── x86_64-w64-mingw32-dlltool
+│   ├── x86_64-w64-mingw32-dllwrap
+│   ├── x86_64-w64-mingw32-elfedit
+│   ├── x86_64-w64-mingw32-g++
+│   ├── x86_64-w64-mingw32-gcc
+│   ├── x86_64-w64-mingw32-gcc-11.3.0
+│   ├── x86_64-w64-mingw32-gcc-ar
+│   ├── x86_64-w64-mingw32-gcc-nm
+│   ├── x86_64-w64-mingw32-gcc-ranlib
+│   ├── x86_64-w64-mingw32-gcov
+│   ├── x86_64-w64-mingw32-gcov-dump
+│   ├── x86_64-w64-mingw32-gcov-tool
+│   ├── x86_64-w64-mingw32-gendef
+│   ├── x86_64-w64-mingw32-gfortran
+│   ├── x86_64-w64-mingw32-gprof
+│   ├── x86_64-w64-mingw32-ld
+│   ├── x86_64-w64-mingw32-ld.bfd
+│   ├── x86_64-w64-mingw32-lto-dump
+│   ├── x86_64-w64-mingw32-nm
+│   ├── x86_64-w64-mingw32-objcopy
+│   ├── x86_64-w64-mingw32-objdump
+│   ├── x86_64-w64-mingw32-ranlib
+│   ├── x86_64-w64-mingw32-readelf
+│   ├── x86_64-w64-mingw32-size
+│   ├── x86_64-w64-mingw32-strings
+│   ├── x86_64-w64-mingw32-strip
+│   ├── x86_64-w64-mingw32-widl
+│   ├── x86_64-w64-mingw32-windmc
+│   └── x86_64-w64-mingw32-windres
 ├── distro-info
-│   ├── CHANGELOG.md
-│   ├── licenses
-│   ├── patches
-│   └── scripts
+│   ├── CHANGELOG.md
+│   ├── licenses
+│   ├── patches
+│   └── scripts
 ├── i686-w64-mingw32
-│   ├── bin
-│   ├── include
-│   └── lib
+│   ├── bin
+│   ├── include
+│   └── lib
 ├── include
-│   ├── ctf-api.h
-│   └── ctf.h
+│   ├── ctf-api.h
+│   └── ctf.h
 ├── lib
-│   ├── bfd-plugins
-│   ├── gcc
-│   ├── libctf.a
-│   ├── libctf.la
-│   ├── libctf-nobfd.a
-│   ├── libctf-nobfd.la
-│   ├── libctf-nobfd.so -> libctf-nobfd.so.0.0.0
-│   ├── libctf-nobfd.so.0 -> libctf-nobfd.so.0.0.0
-│   ├── libctf-nobfd.so.0.0.0
-│   ├── libctf.so -> libctf.so.0.0.0
-│   ├── libctf.so.0 -> libctf.so.0.0.0
-│   └── libctf.so.0.0.0
+│   ├── bfd-plugins
+│   ├── gcc
+│   ├── libctf.a
+│   ├── libctf.la
+│   ├── libctf-nobfd.a
+│   ├── libctf-nobfd.la
+│   ├── libctf-nobfd.so -> libctf-nobfd.so.0.0.0
+│   ├── libctf-nobfd.so.0 -> libctf-nobfd.so.0.0.0
+│   ├── libctf-nobfd.so.0.0.0
+│   ├── libctf.so -> libctf.so.0.0.0
+│   ├── libctf.so.0 -> libctf.so.0.0.0
+│   └── libctf.so.0.0.0
 ├── lib64
-│   ├── libcc1.a
-│   ├── libcc1.la
-│   ├── libcc1.so -> libcc1.so.0.0.0
-│   ├── libcc1.so.0 -> libcc1.so.0.0.0
-│   └── libcc1.so.0.0.0
+│   ├── libcc1.a
+│   ├── libcc1.la
+│   ├── libcc1.so -> libcc1.so.0.0.0
+│   ├── libcc1.so.0 -> libcc1.so.0.0.0
+│   └── libcc1.so.0.0.0
 ├── libexec
-│   ├── libfl.so.2 -> libfl.so.2.0.0
-│   ├── libfl.so.2.0.0
-│   ├── libgcc_s.so.1
-│   ├── libgmp.so.10 -> libgmp.so.10.4.1
-│   ├── libgmp.so.10.4.1
-│   ├── libiconv.so.2 -> libiconv.so.2.6.1
-│   ├── libiconv.so.2.6.1
-│   ├── libisl.so.23 -> libisl.so.23.1.0
-│   ├── libisl.so.23.1.0
-│   ├── libmpc.so.3 -> libmpc.so.3.2.1
-│   ├── libmpc.so.3.2.1
-│   ├── libmpfr.so.6 -> libmpfr.so.6.1.0
-│   ├── libmpfr.so.6.1.0
-│   ├── libstdc++.so.6 -> libstdc++.so.6.0.29
-│   ├── libstdc++.so.6.0.29
-│   ├── libz.so.1 -> libz.so.1.2.11
-│   └── libz.so.1.2.11
+│   ├── libfl.so.2 -> libfl.so.2.0.0
+│   ├── libfl.so.2.0.0
+│   ├── libgcc_s.so.1
+│   ├── libgmp.so.10 -> libgmp.so.10.4.1
+│   ├── libgmp.so.10.4.1
+│   ├── libiconv.so.2 -> libiconv.so.2.6.1
+│   ├── libiconv.so.2.6.1
+│   ├── libisl.so.23 -> libisl.so.23.1.0
+│   ├── libisl.so.23.1.0
+│   ├── libmpc.so.3 -> libmpc.so.3.2.1
+│   ├── libmpc.so.3.2.1
+│   ├── libmpfr.so.6 -> libmpfr.so.6.1.0
+│   ├── libmpfr.so.6.1.0
+│   ├── libstdc++.so.6 -> libstdc++.so.6.0.29
+│   ├── libstdc++.so.6.0.29
+│   ├── libz.so.1 -> libz.so.1.2.11
+│   └── libz.so.1.2.11
 ├── README.md
 ├── share
-│   └── gcc-11.3.0
+│   └── gcc-11.3.0
 ├── x86_64-pc-linux-gnu
-│   ├── i686-w64-mingw32
-│   └── x86_64-w64-mingw32
+│   ├── i686-w64-mingw32
+│   └── x86_64-w64-mingw32
 └── x86_64-w64-mingw32
     ├── bin
     ├── include

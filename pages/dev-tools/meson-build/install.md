@@ -170,7 +170,7 @@ $ ~/.local/xPacks/@xpack-dev-tools/meson-build/{{ page.version }}-{{ page.xpack-
 
 ### Download
 
-The macOS versions of **xPack Meson Build**
+The macOS versions of **xPack Meson Build**
 are packed as `.tar.gz` archives.
 Download the latest version named like:
 
@@ -201,14 +201,14 @@ $ tree -L 2 /Users/ilg/.local/xPacks/meson-build/xpack-meson-build-{{ page.versi
 /Users/ilg/.local/xPacks/meson-build/xpack-meson-build-{{ page.version }}-{{ page.xpack-subversion }}/
 ├── README.md
 ├── bin
-│   └── meson
+│   └── meson
 ├── distro-info
-│   ├── CHANGELOG.md
-│   ├── licenses
-│   ├── patches
-│   └── scripts
+│   ├── CHANGELOG.md
+│   ├── licenses
+│   ├── patches
+│   └── scripts
 ├── lib
-│   └── python3.10
+│   └── python3.10
 └── libexec
     ├── libcrypt.2.dylib
     ├── libcrypto.1.1.dylib
@@ -256,7 +256,7 @@ $ ~/.local/xPacks/@xpack-dev-tools/meson-build/{{ page.version }}-{{ page.xpack-
 
 ### Download
 
-The GNU/Linux versions of **xPack Meson Build**
+The GNU/Linux versions of **xPack Meson Build**
 are packed as `.tar.gz` archives.
 Download the latest version named like:
 
@@ -264,8 +264,8 @@ Download the latest version named like:
 - `xpack-meson-build-{{ page.version }}-{{ page.xpack-subversion }}-linux-arm.tar.gz`
 - `xpack-meson-build-{{ page.version }}-{{ page.xpack-subversion }}-linux-arm64.tar.gz`
 
-As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
-Ubuntu, but can be executed on most recent GNU/Linux distributions.
+As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
+Ubuntu, but can be executed on most recent GNU/Linux distributions.
 
 ### Unpack
 
@@ -290,34 +290,34 @@ and `.content` to store the unpacked archive." %}
 $ tree -L 2 '/home/ilg/.local/xPacks/meson-build/xpack-meson-build-{{ page.version }}-{{ page.xpack-subversion }}'
 /home/ilg/.local/xPacks/meson-build/xpack-meson-build-{{ page.version }}-{{ page.xpack-subversion }}/
 ├── bin
-│   └── meson
+│   └── meson
 ├── distro-info
-│   ├── CHANGELOG.md
-│   ├── licenses
-│   ├── patches
-│   └── scripts
+│   ├── CHANGELOG.md
+│   ├── licenses
+│   ├── patches
+│   └── scripts
 ├── lib
-│   └── python3.10
+│   └── python3.10
 ├── libexec
-│   ├── libcrypto.so.1.1
-│   ├── libcrypt.so.1 -> libcrypt.so.1.1.0
-│   ├── libcrypt.so.1.1.0
-│   ├── libffi.so.8 -> libffi.so.8.1.0
-│   ├── libffi.so.8.1.0
-│   ├── liblzma.so.5 -> liblzma.so.5.2.5
-│   ├── liblzma.so.5.2.5
-│   ├── libncurses.so.6 -> libncurses.so.6.3
-│   ├── libncurses.so.6.3
-│   ├── libpanel.so.6 -> libpanel.so.6.3
-│   ├── libpanel.so.6.3
-│   ├── libpython3.10.so.1.0
-│   ├── libreadline.so.8 -> libreadline.so.8.1
-│   ├── libreadline.so.8.1
-│   ├── libsqlite3.so.0 -> libsqlite3.so.0.8.6
-│   ├── libsqlite3.so.0.8.6
-│   ├── libssl.so.1.1
-│   ├── libz.so.1 -> libz.so.1.2.11
-│   └── libz.so.1.2.11
+│   ├── libcrypto.so.1.1
+│   ├── libcrypt.so.1 -> libcrypt.so.1.1.0
+│   ├── libcrypt.so.1.1.0
+│   ├── libffi.so.8 -> libffi.so.8.1.0
+│   ├── libffi.so.8.1.0
+│   ├── liblzma.so.5 -> liblzma.so.5.2.5
+│   ├── liblzma.so.5.2.5
+│   ├── libncurses.so.6 -> libncurses.so.6.3
+│   ├── libncurses.so.6.3
+│   ├── libpanel.so.6 -> libpanel.so.6.3
+│   ├── libpanel.so.6.3
+│   ├── libpython3.10.so.1.0
+│   ├── libreadline.so.8 -> libreadline.so.8.1
+│   ├── libreadline.so.8.1
+│   ├── libsqlite3.so.0 -> libsqlite3.so.0.8.6
+│   ├── libsqlite3.so.0.8.6
+│   ├── libssl.so.1.1
+│   ├── libz.so.1 -> libz.so.1.2.11
+│   └── libz.so.1.2.11
 └── README.md
 
 8 directories, 22 files

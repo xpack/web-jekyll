@@ -122,7 +122,7 @@ sed (GNU sed) {{ page.short-version }}
 
 ### Download
 
-The macOS versions of **xPack GNU sed**
+The macOS versions of **xPack GNU sed**
 are packed as `.tar.gz` archives.
 Download the latest version named like:
 
@@ -153,8 +153,8 @@ $ tree -L 2 /Users/ilg/.local/xPacks/sed/xpack-sed-{{ page.version }}-{{ page.xp
 /Users/ilg/.local/xPacks/sed/xpack-sed-{{ page.version }}-{{ page.xpack-subversion }}/
 ├── README.md
 ├── bin
-│   ├── gsed -> sed
-│   └── sed
+│   ├── gsed -> sed
+│   └── sed
 └── distro-info
     ├── CHANGELOG.md
     ├── licenses
@@ -191,14 +191,14 @@ sed (GNU sed) {{ page.short-version }}
 
 ### Download
 
-The GNU/Linux versions of **xPack GNU sed**
+The GNU/Linux versions of **xPack GNU sed**
 are packed as `.tar.gz` archives.
 Download the latest version named like:
 
 - `xpack-sed-{{ page.version }}-{{ page.xpack-subversion }}-linux-x64.tar.gz`
 
-As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
-Ubuntu, but can be executed on most recent GNU/Linux distributions.
+As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
+Ubuntu, but can be executed on most recent GNU/Linux distributions.
 
 ### Unpack
 
@@ -224,8 +224,8 @@ $ tree -L 2 '/home/ilg/.local/xPacks/sed/xpack-sed-{{ page.version }}-{{ page.xp
 /home/ilg/.local/xPacks/sed/xpack-sed-{{ page.version }}-{{ page.xpack-subversion }}/
 ├── README.md
 ├── bin
-│   ├── gsed -> sed
-│   └── sed
+│   ├── gsed -> sed
+│   └── sed
 └── distro-info
     ├── CHANGELOG.md
     ├── licenses

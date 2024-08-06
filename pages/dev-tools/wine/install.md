@@ -128,14 +128,14 @@ wine-{{ page.short-version }}
 
 ### Download
 
-The GNU/Linux versions of **xPack WineHQ**
+The GNU/Linux versions of **xPack WineHQ**
 are packed as `.tar.gz` archives.
 Download the latest version named like:
 
 - `xpack-wine-{{ page.version }}-{{ page.xpack-subversion }}-linux-x64.tar.gz`
 
-As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
-Ubuntu, but can be executed on most recent GNU/Linux distributions.
+As the name implies, these are GNU/Linux `tar.gz` archives; they were build on
+Ubuntu, but can be executed on most recent GNU/Linux distributions.
 
 ### Unpack
 
@@ -161,48 +161,48 @@ $ tree -L 2 '/home/ilg/.local/xPacks/wine/xpack-wine-{{ page.version }}-{{ page.
 /home/ilg/.local/xPacks/wine/xpack-wine-{{ page.version }}-{{ page.xpack-subversion }}/
 ├── README.md
 ├── bin
-│   ├── function_grep.pl
-│   ├── msidb
-│   ├── msiexec
-│   ├── notepad
-│   ├── regedit
-│   ├── regsvr32
-│   ├── widl
-│   ├── wine
-│   ├── wine-preloader
-│   ├── wine64
-│   ├── wine64-preloader
-│   ├── wineboot
-│   ├── winebuild
-│   ├── winecfg
-│   ├── wineconsole
-│   ├── winecpp -> winegcc
-│   ├── winedbg
-│   ├── winedump
-│   ├── winefile
-│   ├── wineg++ -> winegcc
-│   ├── winegcc
-│   ├── winemaker
-│   ├── winemine
-│   ├── winepath
-│   ├── wineserver
-│   ├── wmc
-│   └── wrc
+│   ├── function_grep.pl
+│   ├── msidb
+│   ├── msiexec
+│   ├── notepad
+│   ├── regedit
+│   ├── regsvr32
+│   ├── widl
+│   ├── wine
+│   ├── wine-preloader
+│   ├── wine64
+│   ├── wine64-preloader
+│   ├── wineboot
+│   ├── winebuild
+│   ├── winecfg
+│   ├── wineconsole
+│   ├── winecpp -> winegcc
+│   ├── winedbg
+│   ├── winedump
+│   ├── winefile
+│   ├── wineg++ -> winegcc
+│   ├── winegcc
+│   ├── winemaker
+│   ├── winemine
+│   ├── winepath
+│   ├── wineserver
+│   ├── wmc
+│   └── wrc
 ├── distro-info
-│   ├── CHANGELOG.md
-│   ├── licenses
-│   ├── patches
-│   └── scripts
+│   ├── CHANGELOG.md
+│   ├── licenses
+│   ├── patches
+│   └── scripts
 ├── include
-│   └── wine
+│   └── wine
 ├── lib
-│   └── wine
+│   └── wine
 ├── lib32
-│   └── wine
+│   └── wine
 ├── libexec
-│   ├── libgcc_s.so.1
-│   ├── libresolv-2.27.so
-│   └── libresolv.so.2 -> libresolv-2.27.so
+│   ├── libgcc_s.so.1
+│   ├── libresolv-2.27.so
+│   └── libresolv.so.2 -> libresolv-2.27.so
 └── share
     ├── applications
     └── wine

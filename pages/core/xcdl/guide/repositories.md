@@ -28,22 +28,22 @@ Below each vendor there are hierarchies of packages. Unrelated packages are all 
 
     Packages
     ├── ARM
-    │   └── CMSIS
+    │   └── CMSIS
     ├── Keil
-    │   ├── ARMCortex_DFP
-    │   ├── MDK-Middleware
-    │   ├── STM32F0xx_DFP
-    │   ├── STM32F1xx_DFP
-    │   ├── STM32F2xx_DFP
-    │   ├── STM32F3xx_DFP
-    │   ├── STM32F4xx_DFP
-    │   ├── STM32L0xx_DFP
-    │   ├── STM32L1xx_DFP
-    │   ├── STM32NUCLEO_BSP
-    │   ├── STM32W1xx_DFP
-    │   └── V2M-MPS2_CMx_BSP
+    │   ├── ARMCortex_DFP
+    │   ├── MDK-Middleware
+    │   ├── STM32F0xx_DFP
+    │   ├── STM32F1xx_DFP
+    │   ├── STM32F2xx_DFP
+    │   ├── STM32F3xx_DFP
+    │   ├── STM32F4xx_DFP
+    │   ├── STM32L0xx_DFP
+    │   ├── STM32L1xx_DFP
+    │   ├── STM32NUCLEO_BSP
+    │   ├── STM32W1xx_DFP
+    │   └── V2M-MPS2_CMx_BSP
     ├── lwIP
-    │   └── lwIP
+    │   └── lwIP
     └── wolfSSL
         └── CyaSSL
 

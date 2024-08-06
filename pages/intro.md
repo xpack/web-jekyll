@@ -375,7 +375,7 @@ to that folders created in the local `xpacks` folder, with links to
 individual programs added in `xpacks/.bin` (or `.cmd` stubs on Windows).
 
 Similarly for liquidjs, which is a Node.js CLI npm module, after
-installing the module, npm will
+installing the module, npm will
 add a folder `node_modules/.bin` where links to the executables
 will be created (or `.cmd` stubs on Windows).
 
@@ -384,66 +384,66 @@ $ tree -a -L 3
 .
 ├── LICENSE
 ├── node_modules
-│   ├── .bin
-│   │   ├── liquid -> ../liquidjs/bin/liquid.js
-│   │   └── liquidjs -> ../liquidjs/bin/liquid.js
-│   ├── .package-lock.json
-│   ├── commander
-│   │   ├── LICENSE
-│   │   ├── Readme.md
-│   │   ├── esm.mjs
-│   │   ├── index.js
-│   │   ├── lib
-│   │   ├── package-support.json
-│   │   ├── package.json
-│   │   └── typings
-│   └── liquidjs
-│       ├── LICENSE
-│       ├── README.md
-│       ├── bin
-│       ├── dist
-│       └── package.json
+│   ├── .bin
+│   │   ├── liquid -> ../liquidjs/bin/liquid.js
+│   │   └── liquidjs -> ../liquidjs/bin/liquid.js
+│   ├── .package-lock.json
+│   ├── commander
+│   │   ├── LICENSE
+│   │   ├── Readme.md
+│   │   ├── esm.mjs
+│   │   ├── index.js
+│   │   ├── lib
+│   │   ├── package-support.json
+│   │   ├── package.json
+│   │   └── typings
+│   └── liquidjs
+│       ├── LICENSE
+│       ├── README.md
+│       ├── bin
+│       ├── dist
+│       └── package.json
 ├── package-lock.json
 ├── package.json
 └── xpacks
     ├── .bin
-    │   ├── arm-none-eabi-addr2line -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-addr2line
-    │   ├── arm-none-eabi-ar -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-ar
-    │   ├── arm-none-eabi-as -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-as
-    │   ├── arm-none-eabi-c++ -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-c++
-    │   ├── arm-none-eabi-c++filt -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-c++filt
-    │   ├── arm-none-eabi-cpp -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-cpp
-    │   ├── arm-none-eabi-elfedit -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-elfedit
-    │   ├── arm-none-eabi-g++ -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-g++
-    │   ├── arm-none-eabi-gcc -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcc
-    │   ├── arm-none-eabi-gcc-ar -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcc-ar
-    │   ├── arm-none-eabi-gcc-nm -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcc-nm
-    │   ├── arm-none-eabi-gcc-ranlib -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcc-ranlib
-    │   ├── arm-none-eabi-gcov -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcov
-    │   ├── arm-none-eabi-gcov-dump -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcov-dump
-    │   ├── arm-none-eabi-gcov-tool -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcov-tool
-    │   ├── arm-none-eabi-gdb -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-gdb
-    │   ├── arm-none-eabi-gdb-add-index -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-gdb-add-index
-    │   ├── arm-none-eabi-gdb-add-index-py3 -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-gdb-add-index-py3
-    │   ├── arm-none-eabi-gdb-py3 -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-gdb-py3
-    │   ├── arm-none-eabi-gfortran -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-gfortran
-    │   ├── arm-none-eabi-gprof -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-gprof
-    │   ├── arm-none-eabi-ld -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-ld
-    │   ├── arm-none-eabi-ld.bfd -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-ld.bfd
-    │   ├── arm-none-eabi-lto-dump -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-lto-dump
-    │   ├── arm-none-eabi-nm -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-nm
-    │   ├── arm-none-eabi-objcopy -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-objcopy
-    │   ├── arm-none-eabi-objdump -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-objdump
-    │   ├── arm-none-eabi-ranlib -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-ranlib
-    │   ├── arm-none-eabi-readelf -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-readelf
-    │   ├── arm-none-eabi-size -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-size
-    │   ├── arm-none-eabi-strings -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-strings
-    │   ├── arm-none-eabi-strip -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-strip
-    │   ├── ccmake -> ../@xpack-dev-tools/cmake/.content/bin/ccmake
-    │   ├── cmake -> ../@xpack-dev-tools/cmake/.content/bin/cmake
-    │   ├── cpack -> ../@xpack-dev-tools/cmake/.content/bin/cpack
-    │   ├── ctest -> ../@xpack-dev-tools/cmake/.content/bin/ctest
-    │   └── ninja -> ../@xpack-dev-tools/ninja-build/.content/bin/ninja
+    │   ├── arm-none-eabi-addr2line -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-addr2line
+    │   ├── arm-none-eabi-ar -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-ar
+    │   ├── arm-none-eabi-as -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-as
+    │   ├── arm-none-eabi-c++ -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-c++
+    │   ├── arm-none-eabi-c++filt -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-c++filt
+    │   ├── arm-none-eabi-cpp -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-cpp
+    │   ├── arm-none-eabi-elfedit -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-elfedit
+    │   ├── arm-none-eabi-g++ -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-g++
+    │   ├── arm-none-eabi-gcc -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcc
+    │   ├── arm-none-eabi-gcc-ar -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcc-ar
+    │   ├── arm-none-eabi-gcc-nm -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcc-nm
+    │   ├── arm-none-eabi-gcc-ranlib -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcc-ranlib
+    │   ├── arm-none-eabi-gcov -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcov
+    │   ├── arm-none-eabi-gcov-dump -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcov-dump
+    │   ├── arm-none-eabi-gcov-tool -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-gcov-tool
+    │   ├── arm-none-eabi-gdb -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-gdb
+    │   ├── arm-none-eabi-gdb-add-index -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-gdb-add-index
+    │   ├── arm-none-eabi-gdb-add-index-py3 -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-gdb-add-index-py3
+    │   ├── arm-none-eabi-gdb-py3 -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-gdb-py3
+    │   ├── arm-none-eabi-gfortran -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-gfortran
+    │   ├── arm-none-eabi-gprof -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-gprof
+    │   ├── arm-none-eabi-ld -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-ld
+    │   ├── arm-none-eabi-ld.bfd -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-ld.bfd
+    │   ├── arm-none-eabi-lto-dump -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-lto-dump
+    │   ├── arm-none-eabi-nm -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-nm
+    │   ├── arm-none-eabi-objcopy -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-objcopy
+    │   ├── arm-none-eabi-objdump -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-objdump
+    │   ├── arm-none-eabi-ranlib -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-ranlib
+    │   ├── arm-none-eabi-readelf -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-readelf
+    │   ├── arm-none-eabi-size -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-size
+    │   ├── arm-none-eabi-strings -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-strings
+    │   ├── arm-none-eabi-strip -> ../@xpack-dev-tools/arm-none-eabi-gcc/.content/bin/arm-none-eabi-strip
+    │   ├── ccmake -> ../@xpack-dev-tools/cmake/.content/bin/ccmake
+    │   ├── cmake -> ../@xpack-dev-tools/cmake/.content/bin/cmake
+    │   ├── cpack -> ../@xpack-dev-tools/cmake/.content/bin/cpack
+    │   ├── ctest -> ../@xpack-dev-tools/cmake/.content/bin/ctest
+    │   └── ninja -> ../@xpack-dev-tools/ninja-build/.content/bin/ninja
     └── @xpack-dev-tools
         ├── arm-none-eabi-gcc -> /Users/ilg/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/12.2.1-1.2.1
         ├── cmake -> /Users/ilg/Library/xPacks/@xpack-dev-tools/cmake/3.26.5-1.1
@@ -486,7 +486,7 @@ This results in another link in the `xpacks` folder:
 ```console
 xpacks
 ├── @micro-os-plus
-│   └── diag-trace -> /Users/ilg/Library/xPacks/@micro-os-plus/diag-trace/4.2.0
+│   └── diag-trace -> /Users/ilg/Library/xPacks/@micro-os-plus/diag-trace/4.2.0
 └── @xpack-dev-tools
     ├── arm-none-eabi-gcc -> /Users/ilg/Library/xPacks/@xpack-dev-tools/arm-none-eabi-gcc/12.2.1-1.2.1
     ├── cmake -> /Users/ilg/Library/xPacks/@xpack-dev-tools/cmake/3.26.5-1.1
@@ -500,13 +500,13 @@ xpacks/@micro-os-plus/diag-trace
 ├── LICENSE
 ├── README.md
 ├── include
-│   └── micro-os-plus
-│       └── diag
-│           └── trace.h
+│   └── micro-os-plus
+│       └── diag
+│           └── trace.h
 ├── meson.build
 ├── package.json
 ├── src
-│   └── trace.cpp
+│   └── trace.cpp
 └── xpack.json
 
 5 directories, 9 files
