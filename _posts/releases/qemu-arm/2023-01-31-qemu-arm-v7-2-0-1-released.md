@@ -343,9 +343,7 @@ Supported MCUs:
   STM32F429ZITx
 ```
 
-{% include warning.html content="In this old release,
-support for hardware floating point on
-Cortex-M4 devices is not available." %}
+{% include warning.html content="In this old release, support for hardware floating point on Cortex-M4 devices is not available." %}
 
 ## Bug fixes
 

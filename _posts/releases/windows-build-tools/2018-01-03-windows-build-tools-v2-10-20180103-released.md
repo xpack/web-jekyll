@@ -46,8 +46,7 @@ The new Windows Build Tools can be downloaded from the [GitHub Release]({{ page.
 
 Separate archive files are provided for Windows 32/64-bit systems.
 
-{% include note.html content="In preparation for the xPack distribution,
-only portable archives are provided; Windows setups are no longer supported." %}
+{% include note.html content="In preparation for the xPack distribution, only portable archives are provided; Windows setups are no longer supported." %}
 
 ## Checksums
 

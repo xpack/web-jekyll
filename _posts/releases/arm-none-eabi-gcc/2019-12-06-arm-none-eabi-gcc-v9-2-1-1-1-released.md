@@ -67,9 +67,7 @@ For more details see the original Arm release text files:
 - `distro-info/arm-readme.txt`
 - `distro-info/arm-release.txt`
 
-{% include note.html content="Compared to the Arm distribution, the
-Aarch64 binaries are not yet
-available." %}
+{% include note.html content="Compared to the Arm distribution, the Aarch64 binaries are not yet available." %}
 
 ## Supported libraries
 
