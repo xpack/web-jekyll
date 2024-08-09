@@ -34,7 +34,7 @@ tags:
 
 ---
 
-[The xPack MinGW-w64 GCC](https://xpack.github.io/mingw-w64-gcc/)
+The [xPack MinGW-w64 GCC](https://xpack.github.io/mingw-w64-gcc/)
 is a standalone cross-platform binary distribution of
 [Mingw-w64](https://www.mingw-w64.org)
 [GCC](https://gcc.gnu.org).

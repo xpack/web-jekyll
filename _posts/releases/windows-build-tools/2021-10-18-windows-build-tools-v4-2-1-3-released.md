@@ -30,7 +30,7 @@ tags:
 
 {% include warning.html content="This version is affected by the Windows UCRT bug, `make` throws _Error -1073741819_; please use v4.3.x or later. Thank you for your understanding." %}
 
-[The xPack Windows Build Tools](https://xpack.github.io/dev-tools/windows-build-tools/)
+The [xPack Windows Build Tools](https://xpack.github.io/dev-tools/windows-build-tools/)
 is a standalone Windows binary distribution of
 **GNU make** and a few of other tools required by the Eclipse Embedded CDT
 (formerly GNU MCU/ARM Eclipse) project, but the binaries can also be used in

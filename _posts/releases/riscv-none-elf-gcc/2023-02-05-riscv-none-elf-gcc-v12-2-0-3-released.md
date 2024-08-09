@@ -37,7 +37,7 @@ redirect_to: https://xpack-dev-tools.github.io/riscv-none-elf-gcc-xpack/blog/202
 
 ---
 
-[The xPack GNU RISC-V Embedded GCC](https://xpack.github.io/dev-tools/riscv-none-elf-gcc/)
+The [xPack GNU RISC-V Embedded GCC](https://xpack.github.io/dev-tools/riscv-none-elf-gcc/)
 is a standalone cross-platform binary distribution of the
 [GNU GCC](https://gcc.gnu.org/releases.html).
 

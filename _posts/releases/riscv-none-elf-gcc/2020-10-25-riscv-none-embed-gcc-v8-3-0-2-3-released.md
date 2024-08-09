@@ -29,7 +29,7 @@ redirect_to: https://xpack-dev-tools.github.io/riscv-none-elf-gcc-xpack/blog/202
 
 ---
 
-[The xPack GNU RISC-V Embedded GCC](https://github.com/xpack-dev-tools/riscv-none-embed-gcc-xpack)
+The [xPack GNU RISC-V Embedded GCC](https://github.com/xpack-dev-tools/riscv-none-embed-gcc-xpack)
 is the **xPack** distribution of the
 [SiFive RISC-V GCC](https://github.com/sifive/freedom-tools/releases).
 

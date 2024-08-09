@@ -35,7 +35,7 @@ tags:
 
 ---
 
-[The xPack GNU Arm Embedded GCC](https://xpack.github.io/arm-none-eabi-gcc/)
+The [xPack GNU Arm Embedded GCC](https://xpack.github.io/arm-none-eabi-gcc/)
 is a standalone cross-platform binary distribution of
 [Arm GNU Toolchain](https://developer.arm.com/Tools%20and%20Software/GNU%20Toolchain).
 

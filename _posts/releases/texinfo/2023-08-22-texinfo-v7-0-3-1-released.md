@@ -27,7 +27,7 @@ tags:
 
 ---
 
-[The xPack GNU texinfo](https://xpack.github.io/texinfo/)
+The [xPack GNU texinfo](https://xpack.github.io/texinfo/)
 is a standalone cross-platform binary distribution of
 [GNU texinfo](https://www.gnu.org/software/texinfo/).
 

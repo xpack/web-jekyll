@@ -27,7 +27,7 @@ tags:
 
 ---
 
-[The xPack NixOS PatchELF](https://xpack.github.io/patchelf/)
+The [xPack NixOS PatchELF](https://xpack.github.io/patchelf/)
 is a standalone cross-platform binary distribution of
 [NixOS PatchELF](https://github.com/NixOS/patchelf/).
 

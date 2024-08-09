@@ -68,7 +68,7 @@ For a hands-on experience, see the
 xPacks are general purpose multi-version software packages, built on top
 of the highly successful npm packages in the Node.js JavaScript ecosystem.
 
-Please read the [xPacks Overview]({{ site.baseurl }}/) and
+Please read the [xPacks Overview]({{ site.baseurl }}/) the
 [xPack 101]({{ site.baseurl }}/intro/) pages.
 
 ## Purpose

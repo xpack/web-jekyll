@@ -18,7 +18,7 @@ projects, with an emphasis on **modern C/C++** and **embedded** applications.
 
 This open source project is available on
 [GitHub](https://github.com/xpack/vscode-xpack-extension-ts/)
-and is part of [The xPack Project](https://github.com/xpack/).
+and is part of he [xPack Project](https://github.com/xpack/).
 
 In VS Code it can be directly installed from the
 [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=ilg-vscode.xpack)

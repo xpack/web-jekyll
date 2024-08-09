@@ -29,7 +29,7 @@ tags:
 
 ---
 
-[The xPack Ninja Build](https://xpack.github.io/ninja-build/)
+The [xPack Ninja Build](https://xpack.github.io/ninja-build/)
 is a standalone cross-platform binary distribution of
 [Ninja Build](https://ninja-build.org).
 

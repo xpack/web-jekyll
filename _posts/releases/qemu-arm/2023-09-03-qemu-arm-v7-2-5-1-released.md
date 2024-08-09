@@ -31,7 +31,7 @@ tags:
 
 ---
 
-[The xPack QEMU Arm](https://xpack.github.io/qemu-arm/)
+The [xPack QEMU Arm](https://xpack.github.io/qemu-arm/)
 is a standalone cross-platform binary distribution of
 [QEMU](https://www.qemu.org), with several extensions for Arm Cortex-M
 devices.

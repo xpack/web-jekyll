@@ -24,7 +24,7 @@ tags:
 
 ---
 
-[The xPack LLVM clang](https://xpack.github.io/dev-tools/clang/)
+The [xPack LLVM clang](https://xpack.github.io/dev-tools/clang/)
 is a standalone cross-platform binary distribution of
 [LLVM clang](https://clang.llvm.org).
 

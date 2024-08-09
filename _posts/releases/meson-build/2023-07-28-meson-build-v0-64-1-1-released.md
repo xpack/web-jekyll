@@ -31,7 +31,7 @@ tags:
 
 ---
 
-[The xPack Meson Build](https://xpack.github.io/meson-build/)
+The [xPack Meson Build](https://xpack.github.io/meson-build/)
 is a standalone cross-platform binary distribution of
 [Meson Build](https://mesonbuild.org).
 

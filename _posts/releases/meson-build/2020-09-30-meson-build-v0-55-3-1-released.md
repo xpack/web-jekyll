@@ -27,7 +27,7 @@ tags:
 
 ---
 
-[The xPack Meson Build](https://xpack.github.io/dev-tools/meson-build/)
+The [xPack Meson Build](https://xpack.github.io/dev-tools/meson-build/)
 is the **xPack** distribution of the
 [Meson](https://mesonbuild.com) build system.
 

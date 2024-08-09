@@ -28,7 +28,7 @@ redirect_to: https://xpack-dev-tools.github.io/openocd-xpack/blog/2023/09/04/ope
 
 ---
 
-[The xPack OpenOCD](https://xpack.github.io/openocd/)
+The [xPack OpenOCD](https://xpack.github.io/openocd/)
 is a standalone cross-platform binary distribution of
 [OpenOCD](https://openocd.org).
 

@@ -27,7 +27,7 @@ tags:
 
 ---
 
-[The xPack GNU bison](https://xpack.github.io/bison/)
+The [xPack GNU bison](https://xpack.github.io/bison/)
 is a standalone cross-platform binary distribution of
 [GNU bison](https://www.gnu.org/software/bison/).
 

@@ -27,7 +27,7 @@ tags:
 
 ---
 
-[The xPack pkg-config](https://xpack.github.io/pkg-config/)
+The [xPack pkg-config](https://xpack.github.io/pkg-config/)
 is a standalone cross-platform binary distribution of
 [pkg-config](https://www.freedesktop.org/wiki/Software/pkg-config/).
 

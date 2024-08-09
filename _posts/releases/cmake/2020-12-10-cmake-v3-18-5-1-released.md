@@ -24,7 +24,7 @@ tags:
 
 ---
 
-[The xPack CMake](https://xpack.github.io/dev-tools/cmake/)
+The [xPack CMake](https://xpack.github.io/dev-tools/cmake/)
 is the **xPack** distribution of the
 [CMake](https://cmake.org) build system.
 

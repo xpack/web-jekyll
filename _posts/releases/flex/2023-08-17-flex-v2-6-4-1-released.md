@@ -27,7 +27,7 @@ tags:
 
 ---
 
-[The xPack GNU flex](https://xpack.github.io/flex/)
+The [xPack GNU flex](https://xpack.github.io/flex/)
 is a standalone cross-platform binary distribution of
 [GNU flex](https://www.gnu.org/software/flex/).
 
