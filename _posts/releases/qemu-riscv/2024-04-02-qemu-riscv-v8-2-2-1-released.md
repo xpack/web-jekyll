@@ -127,7 +127,7 @@ xpm uninstall --global @xpack-dev-tools/qemu-riscv
 ## Compliance
 
 The xPack QEMU RISC-V currently is based on the official [QEMU](https://www.qemu.org),
-with major changes.
+with no major changes.
 
 The current version is based on:
 
