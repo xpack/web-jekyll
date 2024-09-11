@@ -100,7 +100,7 @@ The binaries were built using the
 of build environments based on slightly older distributions, that should be
 compatible with most recent systems.
 
-- Windows: all binaries were built with mingw-w64 GCC 9.3, running in an
+- x86/x64 Windows: all binaries were built with mingw-w64 GCC 9.3, running in an
   Ubuntu 12 Docker container
 
 ## Build
