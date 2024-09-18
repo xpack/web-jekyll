@@ -3,8 +3,8 @@ title:  xPack pkg-config v0.29.2-1 released
 
 summary: "Version **0.29.2-1** is the first release of xPack pkg-config."
 
-pkg_config_version: 0.29.2
-pkg_config_date: 2017-03-20
+pkg_config_version: "0.29.2"
+pkg_config_date: "2017-03-20"
 version: "0.29.2-1"
 npm_subversion: 1
 
@@ -31,8 +31,8 @@ is a standalone cross-platform binary distribution of
 [pkg-config](https://www.freedesktop.org/wiki/Software/pkg-config/).
 
 There are separate binaries for
-**macOS** (Intel 64-bit, Apple Silicon 64-bit)
-and **GNU/Linux** (Intel 64-bit, Arm 32/64-bit).
+**macOS** (x64 and arm64)
+and **GNU/Linux** (x64, arm64 and arm).
 
 {% include note.html content="The main targets for the GNU/Linux Arm
 binaries are the **Raspberry Pi** class devices (armv7l and aarch64;

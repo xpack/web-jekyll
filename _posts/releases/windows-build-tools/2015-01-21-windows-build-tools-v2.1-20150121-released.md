@@ -32,9 +32,8 @@ Version 2.1-201501221704 is a new repack of the previous version.
 
 ## Download
 
-The new Windows Build Tools can be downloaded from the [GitHub Release]({{ page.download_url }}) page.
+The binary files are available from [GitHub Releases]({{ page.download_url }}).
 
 The available files are:
 
-
-	gnuarmeclipse-build-tools-win32-2.1-201501221704-setup.exe
+* `gnuarmeclipse-build-tools-win32-2.1-201501221704-setup.exe`

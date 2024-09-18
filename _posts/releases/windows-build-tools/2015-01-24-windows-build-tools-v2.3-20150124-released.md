@@ -52,17 +52,16 @@ If needed, you can completely remove the package from your system by running the
 
 ## More details
 
-For more details please read the [Build Tools for Windows]({{ site.baseurl }}/dev-tools/windows-build-tools/) page.
-
+For more information, please read the [dedicated page]({{ site.baseurl }}/dev-tools/windows-build-tools/).
 
 ## Known problems
 
-* ?
+* none
 
 ## Download
 
-The new Windows Build Tools can be downloaded from the [GitHub Release]({{ page.download_url }}) page.
+The binary files are available from [GitHub Releases]({{ page.download_url }}).
 
 The available files are:
 
-	gnuarmeclipse-build-tools-win32-2.3-201501242223-setup.exe
+* `gnuarmeclipse-build-tools-win32-2.3-201501242223-setup.exe`

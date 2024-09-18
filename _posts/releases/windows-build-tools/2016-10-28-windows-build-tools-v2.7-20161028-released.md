@@ -41,7 +41,7 @@ The main functional improvement in v2.7 is a patch that allows Windows silent se
 
 ## Download
 
-The new Windows Build Tools can be downloaded from the [GitHub Release]({{ page.download_url }}) page.
+The binary files are available from [GitHub Releases]({{ page.download_url }}).
 
 The MD5 sums of the files are:
 

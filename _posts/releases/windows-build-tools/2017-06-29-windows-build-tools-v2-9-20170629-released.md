@@ -42,7 +42,7 @@ The BusyBox sources were upgraded to the latest available release.
 
 ## Download
 
-The new Windows Build Tools can be downloaded from the [GitHub Release]({{ page.download_url }}) page.
+The binary files are available from [GitHub Releases]({{ page.download_url }}).
 
 Separate setup and archive files are provided for Windows 32/64-bit systems.
 

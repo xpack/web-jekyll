@@ -42,7 +42,7 @@ The main functional change in v2.8 is the addition of `mkdir.exe` (actually a co
 
 ## Download
 
-The new Windows Build Tools can be downloaded from the [GitHub Release]({{ page.download_url }}) page.
+The binary files are available from [GitHub Releases]({{ page.download_url }}).
 
 The MD5 sums of the files are:
 

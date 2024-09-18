@@ -36,12 +36,11 @@ For more information, please read the [dedicated page]({{ site.baseurl }}/dev-to
 
 ## Download
 
-The new Windows Build Tools can be downloaded from the [GitHub Release]({{ page.download_url }}) page.
+The binary files are available from [GitHub Releases]({{ page.download_url }}).
 
 The available files are:
 
-	Build-Tools-w32-20141202154847-setup.exe
-	Cross.Build.Tools.zip
-
+- `Build-Tools-w32-20141202154847-setup.exe`
+- `Cross.Build.Tools.zip`
 
 **Cross Build Tools.zip** is included for archiving purposes and is now considered DEPRECATE.

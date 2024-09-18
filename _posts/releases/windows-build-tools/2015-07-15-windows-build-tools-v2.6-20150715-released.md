@@ -39,12 +39,14 @@ The main change from v2.4 is a patch that allows BusyBox to run correctly on 64-
 
 ## Download
 
-The new Windows Build Tools can be downloaded from the [GitHub Release]({{ page.download_url }}) page.
+The binary files are available from [GitHub Releases]({{ page.download_url }}).
 
 The MD5 sums of the files are:
 
-	d52c5c3bedc8b34acdcb8384d8b2cfc3
-	gnuarmeclipse-build-tools-win32-2.6-201507152002-setup.exe
+```txt
+d52c5c3bedc8b34acdcb8384d8b2cfc3
+gnuarmeclipse-build-tools-win32-2.6-201507152002-setup.exe
 
-	a47b0a38355ee9449cb3930beb303762
-	gnuarmeclipse-build-tools-win64-2.6-201507152002-setup.exe
+a47b0a38355ee9449cb3930beb303762
+gnuarmeclipse-build-tools-win64-2.6-201507152002-setup.exe
+```

@@ -45,8 +45,8 @@ Please note that it is no longer required to manually update the environment PAT
 
 ## Download
 
-The new Windows Build Tools can be downloaded from the [GitHub Release]({{ page.download_url }}) page.
+The binary files are available from [GitHub Releases]({{ page.download_url }}).
 
 The available files are:
 
-	gnuarmeclipse-build-tools-win32-2.4-201503212005-setup.exe
+* `gnuarmeclipse-build-tools-win32-2.4-201503212005-setup.exe`

@@ -25,8 +25,8 @@ provided by the XBB v3.4 Docker images until separate packages will
 be available with all required tools.
 
 There are separate binaries for
-**macOS** (Intel 64-bit, Apple Silicon 64-bit)
-and **GNU/Linux** (Intel 64-bit, Arm 32/64-bit).
+**macOS** (x64 and arm64)
+and **GNU/Linux** (x64, arm64 and arm).
 
 {% include note.html content="The main targets for the GNU/Linux Arm
 binaries are the **Raspberry Pi** class devices (armv7l and aarch64;
