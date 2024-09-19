@@ -8,6 +8,8 @@ comments: true
 
 date: 2023-02-07 11:29:00 +0200
 
+redirect_to: https://xpack-dev-tools.github.io
+
 ---
 
 ## Overview
