@@ -20,6 +20,8 @@ comments: true
 
 date: 2023-09-21 23:46:44 +0300
 
+redirect_to: https://xpack-dev-tools.github.io/arm-none-eabi-gcc-xpack/blog/2023/09/21/arm-none-eabi-gcc-v12-3-1-1-2-released/
+
 # For Jekyll releases selection.
 categories:
   - releases

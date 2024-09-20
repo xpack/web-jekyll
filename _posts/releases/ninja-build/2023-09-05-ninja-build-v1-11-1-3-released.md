@@ -15,6 +15,8 @@ comments: true
 
 date: 2023-09-05 23:47:56 +0300
 
+redirect_to: https://xpack-dev-tools.github.io/ninja-build-xpack/blog/2023/09/05/ninja-build-v1-11-1-3-released/
+
 categories:
   - releases
   - ninja-build

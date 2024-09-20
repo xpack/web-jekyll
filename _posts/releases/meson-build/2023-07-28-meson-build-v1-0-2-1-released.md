@@ -17,6 +17,8 @@ comments: true
 
 date: 2023-07-28 20:18:28 +0300
 
+redirect_to: https://xpack-dev-tools.github.io/meson-build-xpack/blog/2023/07/28/meson-build-v1-0-2-1-released/
+
 categories:
   - releases
   - meson-build

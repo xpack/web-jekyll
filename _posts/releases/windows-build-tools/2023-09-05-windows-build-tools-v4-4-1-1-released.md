@@ -17,6 +17,8 @@ comments: true
 
 date: 2023-09-05 13:50:52 +0300
 
+redirect_to: https://xpack-dev-tools.github.io/windows-build-tools-xpack/blog/2023/09/05/windows-build-tools-v4-4-1-1-released/
+
 categories:
   - releases
   - windows-build-tools

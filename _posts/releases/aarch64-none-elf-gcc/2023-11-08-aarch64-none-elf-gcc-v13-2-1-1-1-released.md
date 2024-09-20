@@ -20,6 +20,8 @@ comments: true
 
 date: 2023-11-08 18:37:06 +0200
 
+redirect_to: https://xpack-dev-tools.github.io/aarch64-none-elf-gcc-xpack/blog/2023/11/08/aarch64-none-elf-gcc-v13-2-1-1-1-released/
+
 # For Jekyll releases selection.
 categories:
   - releases

@@ -17,6 +17,8 @@ date: 2022-05-30 16:28:15 +0300
 redirect_from:
   - /blog/2022/05/29/arm-none-eabi-gcc-v11-2-1-1-2-released/
 
+redirect_to: https://xpack-dev-tools.github.io/arm-none-eabi-gcc-xpack/blog/2022/05/30/arm-none-eabi-gcc-v11-2-1-1-2-released/
+
 comments: true
 
 categories:

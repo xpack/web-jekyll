@@ -6,6 +6,8 @@ download_url: https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc/releases/v7.3
 
 date: 2018-07-24 12:09:00 +0300
 
+redirect_to: https://xpack-dev-tools.github.io/arm-none-eabi-gcc-xpack/blog/2018/07/24/arm-none-eabi-gcc-v7-3-1-1-1-released/
+
 comments: true
 
 categories:

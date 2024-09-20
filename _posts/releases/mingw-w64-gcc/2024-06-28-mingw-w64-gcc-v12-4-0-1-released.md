@@ -20,6 +20,8 @@ comments: true
 
 date: 2024-06-29 00:51:23 +0300
 
+redirect_to: https://xpack-dev-tools.github.io/mingw-w64-gcc-xpack/blog/2024/06/28/mingw-w64-gcc-v12-4-0-1-released/
+
 # For Jekyll releases selection.
 categories:
   - releases

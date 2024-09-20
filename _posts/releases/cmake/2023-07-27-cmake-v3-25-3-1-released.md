@@ -15,6 +15,8 @@ comments: true
 
 date: 2023-07-27 12:03:22 +0300
 
+redirect_to: https://xpack-dev-tools.github.io/cmake-xpack/blog/2023/07/27/cmake-v3-25-3-1-released/
+
 categories:
   - releases
   - cmake

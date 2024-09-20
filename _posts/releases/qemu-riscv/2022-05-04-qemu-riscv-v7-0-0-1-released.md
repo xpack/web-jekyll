@@ -11,6 +11,8 @@ download_url: https://github.com/xpack-dev-tools/qemu-riscv-xpack/releases/tag/v
 
 date: 2022-05-04 21:15:37 +0300
 
+redirect_to: https://xpack-dev-tools.github.io/qemu-riscv-xpack/blog/2022/05/04/qemu-riscv-v7-0-0-1-released/
+
 comments: true
 
 categories:

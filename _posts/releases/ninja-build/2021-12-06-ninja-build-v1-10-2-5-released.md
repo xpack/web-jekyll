@@ -11,6 +11,8 @@ download_url: https://github.com/xpack-dev-tools/ninja-build-xpack/releases/tag/
 
 date: 2021-12-06 13:53:54 +0200
 
+redirect_to: https://xpack-dev-tools.github.io/ninja-build-xpack/blog/2021/12/06/ninja-build-v1-10-2-5-released/
+
 comments: true
 
 categories:

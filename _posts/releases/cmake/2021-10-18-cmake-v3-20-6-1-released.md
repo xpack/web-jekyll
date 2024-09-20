@@ -14,6 +14,8 @@ date: 2021-10-19 00:45:04 +0300
 redirect_from:
   - /blog/2021/10/19/cmake-v3-20-6-1-released/
 
+redirect_to: https://xpack-dev-tools.github.io/cmake-xpack/blog/2021/10/18/cmake-v3-20-6-1-released/
+
 comments: true
 
 categories:

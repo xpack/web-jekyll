@@ -13,6 +13,8 @@ download_url: https://github.com/xpack-dev-tools/cmake-xpack/releases/tag/v3.21.
 
 date: 2022-03-25 18:30:08 +0200
 
+redirect_to: https://xpack-dev-tools.github.io/cmake-xpack/blog/2022/03/25/cmake-v3-21-6-1-released/
+
 comments: true
 
 categories:

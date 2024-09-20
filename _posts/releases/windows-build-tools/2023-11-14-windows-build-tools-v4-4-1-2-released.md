@@ -17,6 +17,8 @@ comments: true
 
 date: 2023-11-14 10:54:01 +0200
 
+redirect_to: https://xpack-dev-tools.github.io/windows-build-tools-xpack/blog/2023/11/14/windows-build-tools-v4-4-1-2-released/
+
 # For Jekyll releases selection.
 categories:
   - releases

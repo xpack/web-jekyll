@@ -11,6 +11,8 @@ download_url: https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/release
 
 date: 2019-07-26 12:09:00 +0300
 
+redirect_to: https://xpack-dev-tools.github.io/arm-none-eabi-gcc-xpack/blog/2019/07/26/arm-none-eabi-gcc-v7-3-1-1-2-released/
+
 comments: true
 
 categories:

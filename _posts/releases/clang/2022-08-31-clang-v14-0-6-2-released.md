@@ -12,6 +12,8 @@ download_url: https://github.com/xpack-dev-tools/clang-xpack/releases/tag/v14.0.
 
 date: 2022-08-31 07:57:13 +0300
 
+redirect_to: https://xpack-dev-tools.github.io/clang-xpack/blog/2022/08/31/clang-v14-0-6-2-released/
+
 comments: true
 
 categories:

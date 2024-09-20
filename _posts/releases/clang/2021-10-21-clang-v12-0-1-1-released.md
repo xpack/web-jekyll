@@ -14,6 +14,8 @@ date: 2021-10-22 00:51:58 +0300
 redirect_from:
   - /blog/2021/10/22/clang-v12-0-1-1-released/
 
+redirect_to: https://xpack-dev-tools.github.io/clang-xpack/blog/2021/10/21/clang-v12-0-1-1-released/
+
 comments: true
 
 categories:

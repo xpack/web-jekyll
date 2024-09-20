@@ -15,6 +15,8 @@ comments: true
 
 date: 2023-08-06 09:25:40 +0300
 
+redirect_to: https://xpack-dev-tools.github.io/clang-xpack/blog/2023/08/06/clang-v16-0-6-1-released/
+
 categories:
   - releases
   - clang

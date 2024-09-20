@@ -17,6 +17,8 @@ comments: true
 
 date: 2024-04-02 15:27:46 +0300
 
+redirect_to: https://xpack-dev-tools.github.io/qemu-arm-xpack/blog/2024/04/02/qemu-arm-v8-2-2-1-released/
+
 # For Jekyll releases selection.
 categories:
   - releases

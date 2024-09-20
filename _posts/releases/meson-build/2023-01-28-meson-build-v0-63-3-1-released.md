@@ -14,6 +14,8 @@ download_url: https://github.com/xpack-dev-tools/meson-build-xpack/releases/tag/
 
 date: 2023-01-28 17:44:53 +0200
 
+redirect_to: https://xpack-dev-tools.github.io/meson-build-xpack/blog/2023/01/28/meson-build-v0-63-3-1-released/
+
 comments: true
 
 categories:

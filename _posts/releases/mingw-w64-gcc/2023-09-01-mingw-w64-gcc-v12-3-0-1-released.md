@@ -20,6 +20,8 @@ comments: true
 
 date: 2023-09-01 08:04:48 +0300
 
+redirect_to: https://xpack-dev-tools.github.io/mingw-w64-gcc-xpack/blog/2023/09/01/mingw-w64-gcc-v12-3-0-1-released/
+
 categories:
   - releases
   - mingw-w64-gcc

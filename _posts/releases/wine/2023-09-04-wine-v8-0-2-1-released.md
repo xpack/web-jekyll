@@ -16,6 +16,8 @@ comments: true
 
 date: 2023-09-04 14:46:05 +0300
 
+redirect_to: https://xpack-dev-tools.github.io/wine-xpack/blog/2023/09/04/wine-v8-0-2-1-released/
+
 categories:
   - releases
   - wine

@@ -17,6 +17,8 @@ comments: true
 
 date: 2023-11-25 21:50:43 +0200
 
+redirect_to: https://xpack-dev-tools.github.io/meson-build-xpack/blog/2023/11/25/meson-build-v1-1-1-1-released/
+
 # For Jekyll releases selection.
 categories:
   - releases

@@ -5,6 +5,8 @@ sidebar: windows-build-tools
 download_url: https://github.com/gnu-mcu-eclipse/windows-build-tools/releases/tag/v2.0/
 date: 2014-12-02 12:00:00 +0200
 
+redirect_to: https://xpack-dev-tools.github.io/windows-build-tools-xpack/blog/2014/12/02/windows-build-tools-v2.0-20141202-released/
+
 comments: true
 
 categories:

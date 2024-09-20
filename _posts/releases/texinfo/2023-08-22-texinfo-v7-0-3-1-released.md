@@ -15,6 +15,8 @@ comments: true
 
 date: 2023-08-22 15:50:27 +0300
 
+redirect_to: https://xpack-dev-tools.github.io/texinfo-xpack/blog/2023/08/22/texinfo-v7-0-3-1-released/
+
 # For Jekyll releases selection.
 categories:
   - releases

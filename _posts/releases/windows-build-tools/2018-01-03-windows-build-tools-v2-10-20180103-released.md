@@ -6,6 +6,8 @@ download_url: https://github.com/gnu-mcu-eclipse/windows-build-tools/releases/ta
 
 date: 2018-01-03 22:18:00 +0300
 
+redirect_to: https://xpack-dev-tools.github.io/windows-build-tools-xpack/blog/2018/01/03/windows-build-tools-v2-10-20180103-released/
+
 comments: true
 
 categories:

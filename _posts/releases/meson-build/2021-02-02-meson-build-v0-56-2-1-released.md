@@ -11,6 +11,8 @@ download_url: https://github.com/xpack-dev-tools/meson-build-xpack/releases/tag/
 
 date: 2021-02-02 23:50:00 +0200
 
+redirect_to: https://xpack-dev-tools.github.io/meson-build-xpack/blog/2021/02/02/meson-build-v0-56-2-1-released/
+
 comments: true
 
 categories:

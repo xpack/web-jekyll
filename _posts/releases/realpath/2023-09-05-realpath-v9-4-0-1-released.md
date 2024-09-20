@@ -15,6 +15,8 @@ comments: true
 
 date: 2023-09-05 22:39:07 +0300
 
+redirect_to: https://xpack-dev-tools.github.io/realpath-xpack/blog/2023/09/05/realpath-v9-4-0-1-released/
+
 # For Jekyll releases selection.
 categories:
   - releases

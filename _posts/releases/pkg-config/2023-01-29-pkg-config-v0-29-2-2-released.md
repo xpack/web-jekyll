@@ -12,6 +12,8 @@ download_url: https://github.com/xpack-dev-tools/pkg-config-xpack/releases/tag/v
 
 date: 2023-01-29 12:11:22 +0200
 
+redirect_to: https://xpack-dev-tools.github.io/pkg-config-xpack/blog/2023/01/29/pkg-config-v0-29-2-2-released/
+
 # For Jekyll releases selection.
 comments: true
 

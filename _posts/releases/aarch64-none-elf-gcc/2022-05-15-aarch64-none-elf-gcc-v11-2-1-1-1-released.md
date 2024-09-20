@@ -14,6 +14,8 @@ download_url: https://github.com/xpack-dev-tools/aarch64-none-elf-gcc-xpack/rele
 
 date: 2022-05-15 12:14:17 +0300
 
+redirect_to: https://xpack-dev-tools.github.io/aarch64-none-elf-gcc-xpack/blog/2022/05/15/aarch64-none-elf-gcc-v11-2-1-1-1-released/
+
 comments: true
 
 categories:

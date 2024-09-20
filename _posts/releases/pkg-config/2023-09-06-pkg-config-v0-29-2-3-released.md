@@ -15,6 +15,8 @@ comments: true
 
 date: 2023-09-06 10:28:57 +0300
 
+redirect_to: https://xpack-dev-tools.github.io/pkg-config-xpack/blog/2023/09/06/pkg-config-v0-29-2-3-released/
+
 # For Jekyll releases selection.
 categories:
   - releases

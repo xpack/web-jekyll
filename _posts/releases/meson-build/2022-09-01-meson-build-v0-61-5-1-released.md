@@ -14,6 +14,8 @@ download_url: https://github.com/xpack-dev-tools/meson-build-xpack/releases/tag/
 
 date: 2022-09-01 18:03:21 +0300
 
+redirect_to: https://xpack-dev-tools.github.io/meson-build-xpack/blog/2022/09/01/meson-build-v0-61-5-1-released/
+
 comments: true
 
 categories:

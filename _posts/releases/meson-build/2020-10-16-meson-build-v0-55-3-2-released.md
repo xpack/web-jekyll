@@ -11,6 +11,8 @@ download_url: https://github.com/xpack-dev-tools/meson-build-xpack/releases/tag/
 
 date: 2020-10-16 22:39:00 +0300
 
+redirect_to: https://xpack-dev-tools.github.io/meson-build-xpack/blog/2020/10/16/meson-build-v0-55-3-2-released/
+
 comments: true
 
 categories:

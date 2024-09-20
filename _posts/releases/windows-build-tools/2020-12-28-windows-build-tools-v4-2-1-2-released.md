@@ -11,6 +11,8 @@ download_url: https://github.com/xpack-dev-tools/windows-build-tools-xpack/relea
 
 date: 2020-12-28 15:38:00 +0300
 
+redirect_to: https://xpack-dev-tools.github.io/windows-build-tools-xpack/blog/2020/12/28/windows-build-tools-v4-2-1-2-released/
+
 comments: true
 
 categories:

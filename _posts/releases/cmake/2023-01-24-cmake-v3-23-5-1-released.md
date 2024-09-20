@@ -12,6 +12,8 @@ download_url: https://github.com/xpack-dev-tools/cmake-xpack/releases/tag/v3.23.
 
 date: 2023-01-24 13:30:43 +0200
 
+redirect_to: https://xpack-dev-tools.github.io/cmake-xpack/blog/2023/01/24/cmake-v3-23-5-1-released/
+
 comments: true
 
 categories:

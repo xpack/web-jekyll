@@ -20,6 +20,8 @@ comments: true
 
 date: 2023-08-21 06:22:36 +0300
 
+redirect_to: https://xpack-dev-tools.github.io/arm-none-eabi-gcc-xpack/blog/2023/08/21/arm-none-eabi-gcc-v12-3-1-1-1-released/
+
 categories:
   - releases
   - arm-none-eabi-gcc

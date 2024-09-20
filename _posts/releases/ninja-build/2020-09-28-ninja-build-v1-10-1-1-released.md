@@ -11,6 +11,8 @@ download_url: https://github.com/xpack-dev-tools/ninja-build-xpack/releases/tag/
 
 date: 2020-09-28 23:19:00 +0300
 
+redirect_to: https://xpack-dev-tools.github.io/ninja-build-xpack/blog/2020/09/28/ninja-build-v1-10-1-1-released/
+
 comments: true
 
 categories:

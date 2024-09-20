@@ -15,6 +15,8 @@ comments: true
 
 date: 2024-06-25 07:13:25 +0300
 
+redirect_to: https://xpack-dev-tools.github.io/clang-xpack/blog/2024/06/25/clang-v18-1-8-1-released/
+
 # For Jekyll releases selection.
 categories:
   - releases

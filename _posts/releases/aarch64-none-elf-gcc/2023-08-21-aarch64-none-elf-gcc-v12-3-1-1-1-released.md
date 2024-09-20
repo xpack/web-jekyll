@@ -20,6 +20,8 @@ comments: true
 
 date: 2023-08-21 17:09:03 +0300
 
+redirect_to: https://xpack-dev-tools.github.io/aarch64-none-elf-gcc-xpack/blog/2023/08/21/aarch64-none-elf-gcc-v12-3-1-1-1-released/
+
 categories:
   - releases
   - aarch64-none-elf-gcc

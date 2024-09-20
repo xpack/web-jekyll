@@ -14,6 +14,8 @@ download_url: https://github.com/xpack-dev-tools/qemu-arm-xpack/releases/tag/v7.
 
 date: 2022-09-06 15:50:46 +0300
 
+redirect_to: https://xpack-dev-tools.github.io/qemu-arm-xpack/blog/2022/09/06/qemu-arm-v7-1-0-1-released/
+
 comments: true
 
 categories:
