@@ -37,8 +37,8 @@ The [xPack Meson Build](https://xpack.github.io/dev-tools/meson-build/)
 is a standalone cross-platform binary distribution of
 [Meson Build](https://mesonbuild.org).
 
-There are separate binaries for **Windows** (Intel 32/64-bit),
-**macOS** (Intel 64-bit) and **GNU/Linux** (Intel 32/64-bit, Arm 32/64-bit).
+There are separate binaries for **Windows** (x64 and x86),
+**macOS** (x64) and **GNU/Linux** (x64 and x86, arm64 and arm).
 
 {% include note.html content="The main targets for the GNU/Linux Arm
 binaries are the **Raspberry Pi** class devices (armv7l and aarch64;
@@ -208,7 +208,7 @@ The original documentation is available from:
 ## Build
 
 The binaries for all supported platforms
-(Windows, macOS and Intel & Arm GNU/Linux) were built using the
+(Windows, macOS and GNU/Linux) were built using the
 [xPack Build Box (XBB)](https://xpack.github.io/xbb/), a set
 of build environments based on slightly older distributions, that should be
 compatible with most recent systems.
@@ -260,11 +260,11 @@ xpack-meson-build-0.58.2-1-win32-x64.zip
 
 ### 32-bit support
 
-Support for 32-bit Intel Linux and Intel Windows will most probably
-be dropped in 2022. Support for 32-bit Arm Linux will be preserved
+Support for 32-bit x86 GNU/Linux and x86 Windows will most probably
+be dropped in 2022. Support for 32-bit Arm GNU/Linux will be preserved
 for a while, due to the large user base of 32-bit Raspberry Pi systems.
 
-### Linux minimum requirements
+### GNU/Linux minimum requirements
 
 Support for RedHat 7 will most probably be dropped in 2022, and the
 minimum requirement will be raised to GLIBC 2.27, available starting

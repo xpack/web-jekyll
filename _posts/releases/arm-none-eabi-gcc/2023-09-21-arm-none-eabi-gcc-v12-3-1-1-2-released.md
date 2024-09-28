@@ -43,9 +43,9 @@ The [xPack GNU Arm Embedded GCC](https://xpack.github.io/arm-none-eabi-gcc/)
 is a standalone cross-platform binary distribution of
 [Arm GNU Toolchain](https://developer.arm.com/Tools%20and%20Software/GNU%20Toolchain).
 
-There are separate binaries for **Windows** (Intel 64-bit),
-**macOS** (Intel 64-bit, Apple Silicon 64-bit)
-and **GNU/Linux** (Intel 64-bit, Arm 32/64-bit).
+There are separate binaries for **Windows** (x64),
+**macOS** (x64, arm64)
+and **GNU/Linux** (x64, arm64 and arm).
 
 {% include note.html content="The main targets for the GNU/Linux Arm
 binaries are the **Raspberry Pi** class devices (armv7l and aarch64;
@@ -186,7 +186,7 @@ thumb/v8.1-m.main+mve/hard;@mthumb@march=armv8.1-m.main+mve@mfloat-abi=hard
 
 ## Changes
 
-Compared to the Arm version, there should be no functional changes.
+Compared to the official Arm version, there should be no functional changes.
 
 ### XML parsing in GDB
 
@@ -323,11 +323,11 @@ xpack-arm-none-eabi-gcc-12.3.1-1.2-win32-x64.zip
 
 ### 32-bit support
 
-Support for 32-bit Intel Linux and Intel Windows was
-dropped in 2022. Support for 32-bit Arm Linux (armv7l) will be preserved
+Support for 32-bit x86 GNU/Linux and x86 Windows was
+dropped in 2022. Support for 32-bit Arm GNU/Linux (armv7l) will be preserved
 for a while, due to the large user base of 32-bit Raspberry Pi systems.
 
-### Linux minimum requirements
+### GNU/Linux minimum requirements
 
 Support for RedHat 7 was dropped in 2022 and the
 minimum requirement was raised to GLIBC 2.27, available starting

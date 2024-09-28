@@ -36,9 +36,9 @@ The [xPack GNU AArch64 Embedded GCC](https://xpack.github.io/dev-tools/aarch64-n
 is a standalone cross-platform binary distribution of
 [GNU AArch64 Embedded Toolchain](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain).
 
-There are separate binaries for **Windows** (Intel 64-bit),
-**macOS** (Intel 64-bit, Apple Silicon 64-bit)
-and **GNU/Linux** (Intel 64-bit, Arm 32/64-bit).
+There are separate binaries for **Windows** (x64),
+**macOS** (x64, arm64)
+and **GNU/Linux** (x64, arm64 and arm).
 
 {% include note.html content="The main targets for the GNU/Linux Arm
 binaries are the **Raspberry Pi** class devices (armv7l and aarch64;
@@ -149,7 +149,7 @@ ilp32;@mabi=ilp32
 
 ## Changes
 
-Compared to the Arm version, there should be no functional changes.
+Compared to the official Arm version, there should be no functional changes.
 
 ### XML parsing in GDB
 
@@ -287,11 +287,11 @@ xpack-aarch64-none-elf-gcc-11.3.1-1.1-win32-x64.zip
 
 ### 32-bit support
 
-Support for 32-bit Intel Linux and Intel Windows was
-dropped in 2022. Support for 32-bit Arm Linux (armv7l) will be preserved
+Support for 32-bit x86 GNU/Linux and x86 Windows was
+dropped in 2022. Support for 32-bit Arm GNU/Linux (armv7l) will be preserved
 for a while, due to the large user base of 32-bit Raspberry Pi systems.
 
-### Linux minimum requirements
+### GNU/Linux minimum requirements
 
 Support for RedHat 7 was dropped in 2022 and the
 minimum requirement was raised to GLIBC 2.27, available starting

@@ -33,7 +33,7 @@ tags:
 This is the **xPack** distribution of **Windows Build Tools** (formerly part
 of the GNU MCU/ARM Eclipse project).
 
-There are separate binaries for **Windows**, 32/64-bit.
+There are separate binaries for **Windows** (x64 and x86).
 
 ## Download
 

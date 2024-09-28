@@ -46,7 +46,7 @@ Instructions on how to install the binaries are available in the separate [How t
 The toolchain is also available as an [xPack](https://www.npmjs.com/package/@gnu-mcu-eclipse/arm-none-eabi-gcc) and can be conveniently installed with [`xpm`](https://www.npmjs.com/package/xpm):
 
 ```sh
-xpm install --global @gnu-mcu-eclipse/arm-none-eabi-gcc
+xpm install --global @gnu-mcu-eclipse/arm-none-eabi-gcc@latest
 ```
 
 This installs the latest available version.

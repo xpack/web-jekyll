@@ -36,8 +36,8 @@ The [xPack GNU Arm Embedded GCC](https://xpack.github.io/dev-tools/arm-none-eabi
 is a standalone cross-platform binary distribution of
 [GNU Arm Embedded Toolchain](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm).
 
-There are separate binaries for **Windows** (Intel 32/64-bit),
-**macOS** (Intel 64-bit) and **GNU/Linux** (Intel 32/64-bit, Arm 32/64-bit).
+There are separate binaries for **Windows** (x64 and x86),
+**macOS** (x64) and **GNU/Linux** (x64 and x86, arm64 and arm).
 
 {% include note.html content="The main targets for the GNU/Linux Arm
 binaries are the **Raspberry Pi** class devices (armv7l and aarch64;
@@ -173,7 +173,7 @@ thumb/v8.1-m.main+mve/hard;@mthumb@march=armv8.1-m.main+mve@mfloat-abi=hard
 
 ## Changes
 
-Compared to the Arm version, there should be no functional changes.
+Compared to the official Arm version, there should be no functional changes.
 
 Compared to 10.3.1-2.2, this release uses a new version of the
 build scripts, which provide a better control over the content of the
@@ -248,7 +248,7 @@ The original documentation is available in the `share/doc` folder.
 ## Build
 
 The binaries for all supported platforms
-(Windows, macOS and Intel & Arm GNU/Linux) were built using the
+(Windows, macOS and GNU/Linux) were built using the
 [xPack Build Box (XBB)](https://xpack.github.io/xbb/), a set
 of build environments based on slightly older distributions, that should be
 compatible with most recent systems.
@@ -306,11 +306,11 @@ xpack-arm-none-eabi-gcc-10.3.1-2.2-win32-x64.zip
 
 ### 32-bit support
 
-Support for 32-bit Intel Linux and Intel Windows will most probably
-be dropped in 2022. Support for 32-bit Arm Linux will be preserved
+Support for 32-bit x86 GNU/Linux and x86 Windows will most probably
+be dropped in 2022. Support for 32-bit Arm GNU/Linux will be preserved
 for a while, due to the large user base of 32-bit Raspberry Pi systems.
 
-### Linux minimum requirements
+### GNU/Linux minimum requirements
 
 Support for RedHat 7 will most probably be dropped in 2022, and the
 minimum requirement will be raised to GLIBC 2.27, available starting

@@ -46,7 +46,7 @@ The BusyBox sources were upgraded to the latest available release.
 
 The binary files are available from [GitHub Releases]({{ page.download_url }}).
 
-Separate setup and archive files are provided for Windows 32/64-bit systems.
+Separate setup and archive files are provided for **Windows** (x64 and x86) systems.
 
 ## Checksums
 

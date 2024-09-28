@@ -35,8 +35,8 @@ is a standalone cross-platform binary distribution of
 devices.
 
 There are separate binaries for **Windows** (64-bit),
-**macOS** (Intel 64-bit, Apple Silicon 64-bit)
-and **GNU/Linux** (Intel 64-bit, Arm 32/64-bit).
+**macOS** (x64, arm64)
+and **GNU/Linux** (x64, arm64 and arm).
 
 {% include note.html content="The main targets for the GNU/Linux Arm
 binaries are the **Raspberry Pi** class devices (armv7l and aarch64;
@@ -413,8 +413,8 @@ set of platforms. The results are available from:
 
 ## Tests
 
-The binaries were testes on Windows 10 Pro 64-bit, Intel Ubuntu 18
-LTS 64-bit, macOS 10.15 (Intel) and 11.6 (Apple Silicon).
+The binaries were testes on Windows 10 Pro (x64), Ubuntu 18
+LTS (x64), macOS 10.15 (x64) and 11.6 (arm64).
 
 For `qemu-system-arm` and `qemu-system-aarch64`, the tests consist in
 simple, non-graphical, semihosting apps. The binaries are borrowed
@@ -512,11 +512,11 @@ xpack-qemu-arm-6.2.0-2-win32-x64.zip
 
 ### 32-bit support
 
-Support for 32-bit Intel Linux and Intel Windows was
-dropped in 2022. Support for 32-bit Arm Linux will be preserved
+Support for 32-bit x86 GNU/Linux and x86 Windows was
+dropped in 2022. Support for 32-bit Arm GNU/Linux will be preserved
 for a while, due to the large user base of 32-bit Raspberry Pi systems.
 
-### Linux minimum requirements
+### GNU/Linux minimum requirements
 
 Support for RedHat 7 was dropped in 2022 and the
 minimum requirement was raised to GLIBC 2.27, available starting

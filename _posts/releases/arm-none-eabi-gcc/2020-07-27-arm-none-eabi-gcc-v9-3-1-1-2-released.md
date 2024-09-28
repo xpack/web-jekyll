@@ -35,9 +35,12 @@ tags:
 This is the **xPack** distribution of the
 [GNU Arm Embedded Toolchain](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm).
 
-There are separate binaries for **Windows** 32/64-bit, **macOS**,
-**Intel GNU/Linux** 32/64-bit and **Arm GNU/Linux** 32/64-bit platforms,
-like **Raspberry Pi**.
+There are separate binaries for **Windows** 32/64-bit (x64 and x86), **macOS** (x64),
+**GNU/Linux** (x64 and x86, arm64 and arm).
+
+{% include note.html content="The main targets for the GNU/Linux Arm
+binaries are the **Raspberry Pi** class devices (armv7l and aarch64;
+armv6 is not supported)." %}
 
 ## Download
 

@@ -52,7 +52,7 @@ Both the make and BusyBox sources were upgraded to the latest available.
 
 The binary files are available from [GitHub Releases]({{ page.download_url }}).
 
-Separate archive files are provided for Windows 32/64-bit systems.
+Separate archive files are provided for **Windows** (x64 and x86) systems.
 
 {% include note.html content="By design, installing the xPack binaries does not require administrative rights, thus only portable archives are provided; Windows setups are no longer supported." %}
 

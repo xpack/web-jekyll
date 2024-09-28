@@ -36,8 +36,8 @@ The [xPack GNU Arm Embedded GCC](https://xpack.github.io/dev-tools/arm-none-eabi
 is the **xPack** distribution of the
 [GNU Arm Embedded Toolchain](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm).
 
-There are separate binaries for **Windows** (Intel 32/64-bit),
-**macOS** (Intel 64-bit) and **GNU/Linux** (Intel 32/64-bit, Arm 32/64-bit).
+There are separate binaries for **Windows** (x64 and x86),
+**macOS** (x64) and **GNU/Linux** (x64 and x86, arm64 and arm).
 
 {% include note.html content="The main targets for the GNU/Linux Arm
 binaries are the **Raspberry Pi** class devices (armv7l and aarch64;
@@ -47,7 +47,7 @@ armv6 is not supported)." %}
 
 The binary files are available from [GitHub Releases]({{ page.download_url }}).
 
-{% include note.html content="For consistency with the Node.js naming conventions, the names of the Intel 32-bit images are now suffixed with `-ia32`." %}
+{% include note.html content="For consistency with the Node.js naming conventions, the names of the 32-bit x86 images are now suffixed with `-ia32`." %}
 
 ## Install
 
@@ -123,7 +123,7 @@ thumb/v8.1-m.main+mve/hard;@mthumb@march=armv8.1-m.main+mve@mfloat-abi=hard
 
 ## Changes
 
-Compared to the Arm version, there should be no functional changes.
+Compared to the official Arm version, there should be no functional changes.
 
 Starting with 9.x, the new archives are created with
 a single folder named `xpack-arm-none-eabi-gcc-10.2.1-1.1` instead of

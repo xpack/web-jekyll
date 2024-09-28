@@ -30,8 +30,8 @@ The [xPack CMake](https://xpack.github.io/dev-tools/cmake/)
 is the **xPack** distribution of the
 [CMake](https://cmake.org) build system.
 
-There are separate binaries for **Windows** (Intel 32/64-bit),
-**macOS** (Intel 64-bit) and **GNU/Linux** (Intel 32/64-bit, Arm 32/64-bit).
+There are separate binaries for **Windows** (x64 and x86),
+**macOS** (x64) and **GNU/Linux** (x64 and x86, arm64 and arm).
 
 {% include note.html content="The main targets for the GNU/Linux Arm
 binaries are the **Raspberry Pi** class devices (armv7l and aarch64;
@@ -41,7 +41,7 @@ armv6 is not supported)." %}
 
 The binary files are available from [GitHub Releases]({{ page.download_url }}).
 
-{% include note.html content="For consistency with the Node.js naming conventions, the names of the Intel 32-bit images are now suffixed with `-ia32`." %}
+{% include note.html content="For consistency with the Node.js naming conventions, the names of the 32-bit x86 images are now suffixed with `-ia32`." %}
 
 ## Install
 

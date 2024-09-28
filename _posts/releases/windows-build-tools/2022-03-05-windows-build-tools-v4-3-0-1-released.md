@@ -36,7 +36,7 @@ is a standalone Windows binary distribution of
 (formerly GNU MCU/ARM Eclipse) project, but the binaries can also be used in
 generic build environments.
 
-There are binaries for **Windows** (Intel 64-bit).
+There are binaries for **Windows** (x64).
 
 ## Download
 
@@ -193,7 +193,7 @@ xpack-windows-build-tools-4.3.0-1-win32-x64.zip
 
 ### 32-bit support
 
-Support for 32-bit Intel Windows was dropped in 2022.
+Support for 32-bit x86 Windows was dropped in 2022.
 
 ## Download analytics
 

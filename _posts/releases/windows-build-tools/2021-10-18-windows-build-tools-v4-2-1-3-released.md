@@ -38,7 +38,7 @@ is a standalone Windows binary distribution of
 (formerly GNU MCU/ARM Eclipse) project, but the binaries can also be used in
 generic build environments.
 
-There are separate binaries for **Windows** (Intel 32/64-bit).
+There are separate binaries for **Windows** (x64 and x86).
 
 ## Download
 
@@ -200,11 +200,11 @@ xpack-windows-build-tools-4.2.1-3-win32-x64.zip
 
 ### 32-bit support
 
-Support for 32-bit Intel Linux and Intel Windows will most probably
-be dropped in 2022. Support for 32-bit Arm Linux will be preserved
+Support for 32-bit x86 GNU/Linux and x86 Windows will most probably
+be dropped in 2022. Support for 32-bit Arm GNU/Linux will be preserved
 for a while, due to the large user base of 32-bit Raspberry Pi systems.
 
-### Linux minimum requirements
+### GNU/Linux minimum requirements
 
 Support for RedHat 7 will most probably be dropped in 2022, and the
 minimum requirement will be raised to GLIBC 2.27, available starting

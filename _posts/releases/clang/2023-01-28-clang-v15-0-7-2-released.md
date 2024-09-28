@@ -30,9 +30,9 @@ The [xPack LLVM clang](https://xpack.github.io/dev-tools/clang/)
 is a standalone cross-platform binary distribution of
 [LLVM clang](https://clang.llvm.org).
 
-There are separate binaries for **Windows** (Intel 64-bit),
-**macOS** (Intel 64-bit, Apple Silicon 64-bit)
-and **GNU/Linux** (Intel 64-bit, Arm 32/64-bit).
+There are separate binaries for **Windows** (x64),
+**macOS** (x64, arm64)
+and **GNU/Linux** (x64, arm64 and arm).
 
 {% include note.html content="The main targets for the GNU/Linux Arm
 binaries are the **Raspberry Pi** class devices (armv7l and aarch64;
@@ -123,7 +123,7 @@ The current version is based on:
 
 The defaults are set to `libc++` and `compiler-rt`.
 
-For Intel Linux and Windows, multilib (32/64-bit) libraries are provided.
+For x64 GNU/Linux and Windows, multilib (32/64-bit) libraries are provided.
 
 ## LLVM libraries
 
@@ -132,7 +132,7 @@ The compiler defaults are set to  use the LLVM libraries
 
 ## `-m32` / `-m64`
 
-For Intel Linux and Windows, multilib libraries are provided
+For x64 GNU/Linux and Windows, multilib libraries are provided
 and can be selected using the `-m32` / `-m64` options.
 
 ## `-print-search-dirs`
@@ -274,11 +274,11 @@ xpack-clang-15.0.7-2-win32-x64.zip
 
 ### 32-bit support
 
-Support for 32-bit Intel Linux and Intel Windows was
-dropped in 2022. Support for 32-bit Arm Linux (armv7l) will be preserved
+Support for 32-bit x86 GNU/Linux and x86 Windows was
+dropped in 2022. Support for 32-bit Arm GNU/Linux (armv7l) will be preserved
 for a while, due to the large user base of 32-bit Raspberry Pi systems.
 
-### Linux minimum requirements
+### GNU/Linux minimum requirements
 
 Support for RedHat 7 was dropped in 2022 and the
 minimum requirement was raised to GLIBC 2.27, available starting

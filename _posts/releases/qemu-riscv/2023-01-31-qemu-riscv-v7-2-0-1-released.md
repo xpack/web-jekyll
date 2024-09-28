@@ -34,9 +34,9 @@ The [xPack QEMU RISC-V](https://xpack.github.io/dev-tools/qemu-riscv/)
 is a standalone cross-platform binary distribution of
 [QEMU](https://www.qemu.org).
 
-There are separate binaries for **Windows** (Intel 64-bit),
-**macOS** (Intel 64-bit, Apple Silicon 64-bit)
-and **GNU/Linux** (Intel 64-bit, Arm 32/64-bit).
+There are separate binaries for **Windows** (x64),
+**macOS** (x64, arm64)
+and **GNU/Linux** (x64, arm64 and arm).
 
 {% include note.html content="The main targets for the GNU/Linux Arm
 binaries are the **Raspberry Pi** class devices (armv7l and aarch64;
@@ -185,7 +185,7 @@ x-rv128
 
 ## Known problems
 
-- in order to build on macOS 10.13, the Intel macOS version has
+- in order to build on macOS 10.13, the x64 macOS version has
   some functionality related to bridged virtual interfaces disabled.
 
 ## Shared libraries
@@ -280,11 +280,11 @@ xpack-qemu-riscv-7.2.0-1-win32-x64.zip
 
 ### 32-bit support
 
-Support for 32-bit Intel Linux and Intel Windows was
-dropped in 2022. Support for 32-bit Arm Linux (armv7l) will be preserved
+Support for 32-bit x86 GNU/Linux and x86 Windows was
+dropped in 2022. Support for 32-bit Arm GNU/Linux (armv7l) will be preserved
 for a while, due to the large user base of 32-bit Raspberry Pi systems.
 
-### Linux minimum requirements
+### GNU/Linux minimum requirements
 
 Support for RedHat 7 was dropped in 2022, and the
 minimum requirement was raised to GLIBC 2.27, available starting

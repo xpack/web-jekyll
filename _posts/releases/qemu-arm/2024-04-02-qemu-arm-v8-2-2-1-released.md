@@ -41,8 +41,8 @@ is a standalone cross-platform binary distribution of
 devices.
 
 There are separate binaries for **Windows** (64-bit),
-**macOS** (Intel 64-bit, Apple Silicon 64-bit)
-and **GNU/Linux** (Intel 64-bit, Arm 32/64-bit).
+**macOS** (x64, arm64)
+and **GNU/Linux** (x64, arm64 and arm).
 
 {% include note.html content="The main targets for the GNU/Linux Arm
 binaries are the **Raspberry Pi** class devices (armv7l and aarch64;
@@ -423,7 +423,7 @@ Supported MCUs:
 
 - for `qemu-system-gnuarmeclipse`, Ctrl-C does not interrupt
 the execution if the `--nographic` option is used
-- in order to build on macOS 10.13, the Intel macOS version has
+- in order to build on macOS 10.13, the x64 macOS version has
   some functionality related to bridged virtual interfaces disabled.
 
 ## Shared libraries
@@ -483,8 +483,8 @@ set of platforms. The results are available from:
 
 ## Tests
 
-The binaries were testes on Windows 10 Pro 64-bit, Intel Ubuntu 18
-LTS 64-bit, macOS 10.15 (Intel) and 11.6 (Apple Silicon).
+The binaries were testes on Windows 10 Pro (x64), Ubuntu 18
+LTS (x64), macOS 10.15 (x64) and 11.6 (arm64).
 
 For `qemu-system-arm` and `qemu-system-aarch64`, the tests consist in
 simple, non-graphical, semihosting apps. The binaries are borrowed
@@ -580,7 +580,7 @@ xpack-qemu-arm-8.2.2-1-win32-x64.zip
 
 ## Deprecation notices
 
-### Linux minimum requirements
+### GNU/Linux minimum requirements
 
 The minimum requirement is **GLIBC 2.27**, available starting
 with Ubuntu 18, Debian 10 and RedHat 8.
@@ -588,13 +588,13 @@ Support for RedHat 7 was dropped in 2022.
 
 ### 32-bit support
 
-Support for 32-bit Intel Linux and Intel Windows was
+Support for 32-bit x86 GNU/Linux and x86 Windows was
 dropped in 2022.
 
-### Pre-deprecation notice for 32-bit Arm Linux
+### Pre-deprecation notice for 32-bit Arm GNU/Linux
 
 Due to the large user base of 32-bit Raspberry Pi systems,
-support for 32-bit Arm Linux (armv7l) will be preserved
+Support for 32-bit Arm GNU/Linux (armv7l) will be preserved
 for a little while, but expect it to be dropped by 2025,
 so it is recommended to consider an upgrade to a RPi 4 or 5 with
 at least 4 GB (preferably 8 GB) of RAM.

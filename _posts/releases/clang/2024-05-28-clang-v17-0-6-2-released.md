@@ -33,9 +33,9 @@ The [xPack LLVM clang](https://xpack.github.io/clang/)
 is a standalone cross-platform binary distribution of
 [LLVM clang](https://clang.llvm.org).
 
-There are separate binaries for **Windows** (Intel 64-bit),
-**macOS** (Intel 64-bit, Apple Silicon 64-bit)
-and **GNU/Linux** (Intel 64-bit, Arm 32/64-bit).
+There are separate binaries for **Windows** (x64),
+**macOS** (x64, arm64)
+and **GNU/Linux** (x64, arm64 and arm).
 
 {% include note.html content="The main targets for the GNU/Linux Arm
 binaries are the **Raspberry Pi** class devices (armv7l and aarch64;
@@ -124,7 +124,7 @@ The current version is based on:
 
 - LLVM clang version [{{ page.clang_version }}](https://releases.llvm.org/download.html#{{ page.clang_version }}), from {{ page.clang_date }}.
 
-For Intel Linux and Windows, multilib (32/64-bit) libraries are provided.
+For x64 GNU/Linux and Windows, multilib (32/64-bit) libraries are provided.
 
 ## LLVM libraries
 
@@ -148,7 +148,7 @@ For LTO builds, also use LLD:
 
 ## `-m32` / `-m64`
 
-For Intel Linux and Windows, multilib libraries are provided
+For x64 GNU/Linux and Windows, multilib libraries are provided
 and can be selected using the `-m32` / `-m64` options.
 
 ## `-print-search-dirs`
@@ -285,7 +285,7 @@ xpack-clang-17.0.6-2-win32-x64.zip
 
 ## Deprecation notices
 
-### Linux minimum requirements
+### GNU/Linux minimum requirements
 
 The minimum requirement is **GLIBC 2.27**, available starting
 with Ubuntu 18, Debian 10 and RedHat 8.
@@ -293,13 +293,13 @@ Support for RedHat 7 was dropped in 2022.
 
 ### 32-bit support
 
-Support for 32-bit Intel Linux and Intel Windows was
+Support for 32-bit x86 GNU/Linux and x86 Windows was
 dropped in 2022.
 
-### Pre-deprecation notice for 32-bit Arm Linux
+### Pre-deprecation notice for 32-bit Arm GNU/Linux
 
 Due to the large user base of 32-bit Raspberry Pi systems,
-support for 32-bit Arm Linux (armv7l) will be preserved
+Support for 32-bit Arm GNU/Linux (armv7l) will be preserved
 for a little while, but expect it to be dropped by 2025,
 so it is recommended to consider an upgrade to a RPi 4 or 5 with
 at least 4 GB (preferably 8 GB) of RAM.

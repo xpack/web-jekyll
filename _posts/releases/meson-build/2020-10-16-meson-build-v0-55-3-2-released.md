@@ -33,8 +33,8 @@ The [xPack Meson Build](https://xpack.github.io/dev-tools/meson-build/)
 is the **xPack** distribution of the
 [Meson](https://mesonbuild.com) build system.
 
-There are separate binaries for **Windows** (Intel 32/64-bit),
-**macOS** (Intel 64-bit) and **GNU/Linux** (Intel 32/64-bit, Arm 32/64-bit).
+There are separate binaries for **Windows** (x64 and x86),
+**macOS** (x64) and **GNU/Linux** (x64 and x86, arm64 and arm).
 
 {% include note.html content="The main targets for the GNU/Linux Arm
 binaries are the **Raspberry Pi** class devices (armv7l and aarch64;
@@ -87,7 +87,7 @@ from Sep 11th, 2020.
   installing meson as a project dependency, starting it fails on macOS, due
   to a bug preventing it to follow links; fixed;
 - [[#2](https://github.com/xpack-dev-tools/meson-build-xpack/issues/2)] - when
-  generating commands in ninja.build that refer to itself, on Linux & macOS
+  generating commands in ninja.build that refer to itself, on GNU/Linux & macOS
   the path is not correct, it contains only a folder; fixed.
 
 ## Enhancements
