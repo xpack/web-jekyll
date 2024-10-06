@@ -21,6 +21,8 @@ topnav_dropdowns:
 
     - title: Projects
       folderitems:
+      - title: xPack Binary Development Tools
+        external_url: https://xpack-dev-tools.github.io
       - title: Eclipse Embedded CDT
         external_url: https://eclipse-embed-cdt.github.io
       - title: µOS++ IIIe
