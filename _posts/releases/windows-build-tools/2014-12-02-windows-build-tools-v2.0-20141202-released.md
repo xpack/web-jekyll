@@ -32,7 +32,7 @@ For your convenience, the [Windows Build Tools]({{ site.baseurl }}/dev-tools/win
 
 Please note that the setup does not install any components outside the selected destination folder, and also includes an uninstall program, to completely remove the tools from the system.
 
-The repacking also corrected a problem with the previous archive (the missing DLLs were added), so the previous archive (Cross Build Tools.zip) is now considered DEPRECATE.
+The repacking also corrected a problem with the previous archive (the missing DLLs were added), so the previous archive (Cross Build Tools.zip) is now considered DEPRECATED.
 
 For more information, please read the [dedicated page]({{ site.baseurl }}/dev-tools/windows-build-tools/).
 
@@ -45,4 +45,4 @@ The available files are:
 - `Build-Tools-w32-20141202154847-setup.exe`
 - `Cross.Build.Tools.zip`
 
-**Cross Build Tools.zip** is included for archiving purposes and is now considered DEPRECATE.
+**Cross Build Tools.zip** is included for archiving purposes and is now considered DEPRECATED.
