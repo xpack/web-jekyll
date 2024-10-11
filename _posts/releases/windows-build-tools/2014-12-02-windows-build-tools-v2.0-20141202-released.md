@@ -2,6 +2,9 @@
 title:  Build Tools repacked as Setup
 sidebar: windows-build-tools
 
+summary: "Version 2.0 is a new release."
+app_name: "Build Tools"
+
 download_url: https://github.com/gnu-mcu-eclipse/windows-build-tools/releases/tag/v2.0/
 date: 2014-12-02 12:00:00 +0200
 

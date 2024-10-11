@@ -1,7 +1,7 @@
 ---
 title:  xPack NixOS PatchELF v0.15.0-1 released
 
-summary: "Version **0.15.0-1** is the first release NixOS PatchELF."
+summary: "Version **0.15.0-1** is the first release of NixOS PatchELF."
 
 patchelf_version: 0.15.0
 patchelf_date: 16 Jul 2022

@@ -2,6 +2,9 @@
 title:  GNU MCU Eclipse Windows Build Tools v2.11-20180428 released
 sidebar: windows-build-tools
 
+summary: "Version 2.11-20180428 is a maintenance release."
+app_name: "GNU MCU Eclipse Windows Build Tools"
+
 download_url: https://github.com/gnu-mcu-eclipse/windows-build-tools/releases/tag/v2.11-20180428/
 
 date: 2018-04-28 20:59:00 +0300

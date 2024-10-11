@@ -2,6 +2,9 @@
 title:  GNU MCU Eclipse RISC-V Embedded GCC v7.2.0-3-20180506 released
 sidebar: riscv-none-elf-gcc
 
+summary: "Version **7.2.0-3-20180506** is a maintenance release."
+app_name: "GNU MCU Eclipse RISC-V Embedded GCC"
+
 download_url: https://github.com/gnu-mcu-eclipse/riscv-none-gcc/releases/tag/v7.2.0-3-20180506/
 
 date: 2018-05-06 14:19:00 +0300

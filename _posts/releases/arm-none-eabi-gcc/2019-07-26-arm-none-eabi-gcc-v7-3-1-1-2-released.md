@@ -2,7 +2,7 @@
 title:  xPack GNU Arm Embedded GCC v7.3.1-1.2 released
 sidebar: arm-none-eabi-gcc
 
-summary: "Version 7.3.1-1.2 is a repack of the GNU MCU Eclipse Arm Embedded GCC v7.3.1-1.1 using the new build scripts."
+summary: "Version 7.3.1-1.2 is a maintenance release; it repacks the GNU MCU Eclipse Arm Embedded GCC v7.3.1-1.1 using the new build scripts."
 
 version: 7.3.1-1.2
 npm_subversion: 2
