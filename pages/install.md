@@ -182,7 +182,7 @@ the `npm` functionality.
 {{ node_install }}
 
 Download the Windows **Prebuilt Installer** (a `.msi` file) from the Node.js
-[download](https://nodejs.org/en/download/) page and install it as usual,
+[download](https://nodejs.org/en/download/prebuilt-installer) page and install it as usual,
 with administrative rights.
 
 {% include tip.html content="If you are using a 64-bit machine, download the `node-v*-x64.msi` file." %}
