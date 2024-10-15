@@ -2,7 +2,7 @@
 title:  xPack CMake v3.18.5-1 released
 sidebar: cmake
 
-summary: "Version 3.18.5-1 is a new release of the **xPack CMake** package, following the CMake release."
+summary: "Version **3.18.5-1** is a new release of the **xPack CMake** package, following the CMake release."
 
 version: 3.18.5-1
 npm_subversion: 1

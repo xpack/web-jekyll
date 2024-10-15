@@ -2,7 +2,7 @@
 title:  xPack Ninja Build v1.10.2-1 released
 sidebar: ninja-build
 
-summary: "Version 1.10.2-1 is a new release of the **xPack Ninja Build** package."
+summary: "Version **1.10.2-1** is a new release of the **xPack Ninja Build** package."
 
 version: 1.10.2-1
 npm_subversion: 1

@@ -2,7 +2,7 @@
 title:  xPack GNU Arm Embedded GCC v8.3.1-1.3 released
 sidebar: arm-none-eabi-gcc
 
-summary: "Version 8.3.1-1.3 is  a maintenance release of xPack GNU Arm Embedded GCC to partly fix the build for GDB with Python support."
+summary: "Version **8.3.1-1.3** is  a maintenance release of xPack GNU Arm Embedded GCC to partly fix the build for GDB with Python support."
 
 version: 8.3.1-1.3
 npm_subversion: 1

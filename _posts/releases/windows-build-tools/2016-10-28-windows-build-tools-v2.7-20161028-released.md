@@ -2,7 +2,7 @@
 title:  GNU ARM Eclipse Windows Build Tools v2.7-20161028* released
 sidebar: windows-build-tools
 
-summary: "Version 2.7-201610281058 is a maintenance release."
+summary: "Version **2.7-201610281058** is a maintenance release of the GNU ARM Eclipse Windows Build Tools."
 app_name: "GNU ARM Eclipse Windows Build Tools"
 
 download_url: https://github.com/gnu-mcu-eclipse/windows-build-tools/releases/tag/v2.7/
@@ -28,9 +28,9 @@ tags:
 
 ---
 
-Version 2.7-201610281058 is a maintenance release of the GNU ARM Eclipse Windows Build Tools.
+## Download
 
-[Binary files »]({{ page.download_url }})
+The binary files are available from [GitHub Releases]({{ page.download_url }}).
 
 ## Content
 
@@ -44,9 +44,7 @@ The main functional improvement in v2.7 is a patch that allows Windows silent se
 
 * none so far
 
-## Download
-
-The binary files are available from [GitHub Releases]({{ page.download_url }}).
+## Checksums
 
 The MD5 sums of the files are:
 

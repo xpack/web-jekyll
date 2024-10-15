@@ -2,7 +2,7 @@
 title:  GNU ARM Eclipse Windows Build Tools v2.8-20161122* released
 sidebar: windows-build-tools
 
-summary: "Version 2.8-201611221915 is a maintenance release."
+summary: "Version **2.8-201611221915** is a maintenance release of the GNU ARM Eclipse Windows Build Tools."
 app_name: "GNU ARM Eclipse Windows Build Tools"
 
 download_url: https://github.com/gnu-mcu-eclipse/windows-build-tools/releases/tag/v2.8/
@@ -29,9 +29,9 @@ tags:
 
 ---
 
-Version 2.8-201611221915 is a maintenance release of the GNU ARM Eclipse Windows Build Tools.
+## Download
 
-[Binary files »]({{ page.download_url }})
+The binary files are available from [GitHub Releases]({{ page.download_url }}).
 
 ## Content
 
@@ -45,9 +45,7 @@ The main functional change in v2.8 is the addition of `mkdir.exe` (actually a co
 
 * none so far
 
-## Download
-
-The binary files are available from [GitHub Releases]({{ page.download_url }}).
+## Checksums
 
 The MD5 sums of the files are:
 

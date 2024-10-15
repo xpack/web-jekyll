@@ -2,7 +2,7 @@
 title:  xPack Meson Build v0.56.2-1 released
 sidebar: meson-build
 
-summary: "Version 0.56.2-1 is a new release of the **xPack Meson Build** package, following the Meson release."
+summary: "Version **0.56.2-1** is a new release of the **xPack Meson Build** package, following the Meson release."
 
 version: 0.56.2-1
 npm_subversion: 1

@@ -2,7 +2,7 @@
 title:  xPack GNU Arm Embedded GCC v8.3.1-1.2 released
 sidebar: arm-none-eabi-gcc
 
-summary: "Version 8.3.1-1.2 is  a maintenance release of xPack GNU Arm Embedded GCC to fix the **libgcov** build bug."
+summary: "Version **8.3.1-1.2** is  a maintenance release of xPack GNU Arm Embedded GCC to fix the **libgcov** build bug."
 
 version: 8.3.1-1.2
 npm_subversion: 1

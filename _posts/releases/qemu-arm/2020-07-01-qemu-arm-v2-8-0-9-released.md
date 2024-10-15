@@ -2,7 +2,7 @@
 title:  xPack QEMU Arm v2.8.0-9 released
 sidebar: qemu-arm
 
-summary: "Version 2.8.0-9 is a maintenance release; it **adds support for running on Arm platforms**, like **Raspberry Pi**."
+summary: "Version **2.8.0-9** is a maintenance release; it **adds support for running on Arm platforms**, like **Raspberry Pi**."
 
 version: 2.8.0-9
 npm_subversion: 1

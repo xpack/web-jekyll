@@ -2,7 +2,7 @@
 title:  xPack Meson Build v0.55.3-2 released
 sidebar: meson-build
 
-summary: "Version 0.55.3-2 is a maintenance release of the **xPack Meson Build** package; it fixes two bugs and updates to the new, more robust, build scripts."
+summary: "Version **0.55.3-2** is a maintenance release of the **xPack Meson Build** package; it fixes two bugs and updates to the new, more robust, build scripts."
 
 version: 0.55.3-2
 npm_subversion: 1

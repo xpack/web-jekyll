@@ -2,7 +2,7 @@
 title:  GNU MCU Eclipse ARM Embedded GCC v8.2.1-1.4 released
 sidebar: arm-none-eabi-gcc
 
-summary: "Version **8.2.1-1.4** is a maintenance release."
+summary: "Version **8.2.1-1.4** is a maintenance release of **GNU MCU Eclipse ARM Embedded GCC** that fixes the bugs affecting Windows LTO builds, present in the previous release."
 app_name: "GNU MCU Eclipse ARM Embedded GCC"
 
 download_url: https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc/releases/tag/v8.2.1-1.4/
@@ -27,11 +27,9 @@ tags:
 
 ---
 
-Version **8.2.1-1.4** is a maintenance release of
-**GNU MCU Eclipse ARM Embedded GCC** that fixes the bugs affecting Windows
-LTO builds, present in the previous release.
+## Download
 
-[Binary files »]({{ page.download_url }})
+The binary files are available from [GitHub Releases]({{ page.download_url }}).
 
 ## Deprecated
 

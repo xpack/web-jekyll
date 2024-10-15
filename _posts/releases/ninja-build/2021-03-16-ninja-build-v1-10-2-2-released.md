@@ -2,7 +2,7 @@
 title:  xPack Ninja Build v1.10.2-2 released
 sidebar: ninja-build
 
-summary: "Version 1.10.2-2 is a maintenance release of the **xPack Ninja Build** package, fixing the spawning of cmd.exe scripts on Windows."
+summary: "Version **1.10.2-2** is a maintenance release of the **xPack Ninja Build** package, fixing the spawning of cmd.exe scripts on Windows."
 
 version: 1.10.2-2
 npm_subversion: 1

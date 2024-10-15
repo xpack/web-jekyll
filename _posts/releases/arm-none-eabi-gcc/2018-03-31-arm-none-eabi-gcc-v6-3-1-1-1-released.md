@@ -2,7 +2,7 @@
 title:  GNU MCU Eclipse ARM Embedded GCC v6.3.1-1.1 released
 sidebar: arm-none-eabi-gcc
 
-summary: "Version **6.3.1-1.1** is the first release."
+summary: "Version **6.3.1-1.1** is the first release of **GNU MCU Eclipse ARM Embedded GCC**."
 app_name: "GNU MCU Eclipse ARM Embedded GCC"
 
 download_url: https://github.com/gnu-mcu-eclipse/arm-none-eabi-gcc/releases/tag/v6.3.1-1.1/
@@ -26,9 +26,9 @@ tags:
 
 ---
 
-Version **6.3.1-1.1** is the first release of **GNU MCU Eclipse ARM Embedded GCC**.
+## Download
 
-[Binary files »]({{ page.download_url }})
+The binary files are available from [GitHub Releases]({{ page.download_url }}).
 
 ## Compliance
 

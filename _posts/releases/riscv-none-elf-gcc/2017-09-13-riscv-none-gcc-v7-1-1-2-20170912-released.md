@@ -2,7 +2,7 @@
 title:  GNU MCU Eclipse RISC-V Embedded GCC v7.1.1-2-20170912-* released
 sidebar: riscv-none-elf-gcc
 
-summary: "Version **7.1.1-2-20170912-2255** is a new release."
+summary: "Version **7.1.1-2-20170912-2255** is a new release of **GNU MCU Eclipse RISC-V Embedded GCC**."
 app_name: "GNU MCU Eclipse RISC-V Embedded GCC"
 
 download_url: https://github.com/gnu-mcu-eclipse/riscv-none-gcc/releases/tag/v7.1.1-2-20170912/
@@ -23,11 +23,14 @@ redirect_to: https://xpack-dev-tools.github.io/riscv-none-elf-gcc-xpack/blog/201
 
 ---
 
-Version **7.1.1-2-20170912-2255** is a new release of **GNU MCU Eclipse RISC-V Embedded GCC**; after the initial version of the `riscv64-unknown-elf` toolchain was released, it was discovered that it was intended more to applications that include a kernel-like environment, and less to bare-metal environments. This second release is intended to provide a temporary fix to this problem and make the toolchain more suitable for embedded bare-metal applications; for this it was necessary to to update to the latest newlib 2.5 release which uses 'underscore' syscall functions and to **remove the mandatory use of libgloss**. Hopefully the official toolchain distribution will follow shortly and use the same approach.
+After the initial version of the `riscv64-unknown-elf` toolchain was released, it was discovered that it was intended more to applications that include a kernel-like environment, and less to bare-metal environments. This second release is intended to provide a temporary fix to this problem and make the toolchain more suitable for embedded bare-metal applications; for this it was necessary to to update to the latest newlib 2.5 release which uses 'underscore' syscall functions and to **remove the mandatory use of libgloss**. Hopefully the official toolchain distribution will follow shortly and use the same approach.
 
 In addition, based on users request, support for a new `march=rv32imaf/mabi=ilp32f` library was added.
 
-[Binary files »]({{ page.download_url }})
+## Download
+
+The binary files are available from [GitHub Releases]({{ page.download_url }}).
+
 
 ## Compliance
 

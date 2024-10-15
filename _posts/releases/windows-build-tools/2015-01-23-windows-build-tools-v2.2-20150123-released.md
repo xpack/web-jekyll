@@ -2,7 +2,7 @@
 title:  GNU ARM Eclipse Windows Build Tools v2.2-20150123* released
 sidebar: windows-build-tools
 
-summary: "Version 2.2-201501232303 is a maintenance release."
+summary: "Version **2.2-201501232303** is a maintenance release."
 app_name: "GNU ARM Eclipse Windows Build Tools"
 
 download_url: https://github.com/gnu-mcu-eclipse/windows-build-tools/releases/tag/v2.2/
@@ -27,14 +27,6 @@ tags:
 
 ---
 
-Version 2.2-201501232303 is a maintenance release.
-
-[Binary files »]({{ page.download_url }})
-
-## Known problems
-
-* this version uses MSYS 32-bit DLLs, which might interfere with other DLLs.
-
 ## Download
 
 The binary files are available from [GitHub Releases]({{ page.download_url }}).
@@ -42,3 +34,8 @@ The binary files are available from [GitHub Releases]({{ page.download_url }}).
 The available files are:
 
 - `gnuarmeclipse-build-tools-win32-2.2-201501232303-setup.exe`
+
+## Known problems
+
+* this version uses MSYS 32-bit DLLs, which might interfere with other DLLs.
+

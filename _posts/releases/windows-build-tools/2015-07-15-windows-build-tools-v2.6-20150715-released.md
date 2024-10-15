@@ -2,7 +2,7 @@
 title:  GNU ARM Eclipse Windows Build Tools v2.6-20150715* released
 sidebar: windows-build-tools
 
-summary: "Version 2.6-201507152002 is a new release."
+summary: "Version **v2.6-201507152002** is a new release of the GNU ARM Eclipse Windows Build Tools, adding support for Windows 64-bit."
 app_name: "GNU ARM Eclipse Windows Build Tools"
 
 download_url: https://github.com/gnu-mcu-eclipse/windows-build-tools/releases/tag/v2.6/
@@ -28,9 +28,9 @@ tags:
 
 ---
 
-Version v2.6-201507152002 is a new release of the GNU ARM Eclipse Windows Build Tools, adding support for Windows 64-bit.
+## Download
 
-[Binary files »]({{ page.download_url }})
+The binary files are available from [GitHub Releases]({{ page.download_url }}).
 
 ## Improvements
 
@@ -42,9 +42,7 @@ The main change from v2.4 is a patch that allows BusyBox to run correctly on 64-
 
 * none so far
 
-## Download
-
-The binary files are available from [GitHub Releases]({{ page.download_url }}).
+## Checksums
 
 The MD5 sums of the files are:
 

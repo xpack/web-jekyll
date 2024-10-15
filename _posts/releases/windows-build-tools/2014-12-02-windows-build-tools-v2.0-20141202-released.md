@@ -2,7 +2,7 @@
 title:  Build Tools repacked as Setup
 sidebar: windows-build-tools
 
-summary: "Version 2.0 is a new release."
+summary: "Version **2.0** is a new release. For your convenience, the [Windows Build Tools]({{ site.baseurl }}/dev-tools/windows-build-tools/) were repacked as a Windows setup."
 app_name: "Build Tools"
 
 download_url: https://github.com/gnu-mcu-eclipse/windows-build-tools/releases/tag/v2.0/
@@ -27,18 +27,6 @@ tags:
 
 ---
 
-For your convenience, the [Windows Build Tools]({{ site.baseurl }}/dev-tools/windows-build-tools/) were repacked as a Windows setup.
-
-[Binary files »]({{ page.download_url }})
-
-![Build Tools setup]({{ site.baseurl }}/assets/images/2015/win-build-tools-setup.png)
-
-Please note that the setup does not install any components outside the selected destination folder, and also includes an uninstall program, to completely remove the tools from the system.
-
-The repacking also corrected a problem with the previous archive (the missing DLLs were added), so the previous archive (Cross Build Tools.zip) is now considered DEPRECATED.
-
-For more information, please read the [dedicated page]({{ site.baseurl }}/dev-tools/windows-build-tools/).
-
 ## Download
 
 The binary files are available from [GitHub Releases]({{ page.download_url }}).
@@ -49,3 +37,13 @@ The available files are:
 - `Cross.Build.Tools.zip`
 
 **Cross Build Tools.zip** is included for archiving purposes and is now considered DEPRECATED.
+
+## Setup
+
+![Build Tools setup]({{ site.baseurl }}/assets/images/2015/win-build-tools-setup.png)
+
+Please note that the setup does not install any components outside the selected destination folder, and also includes an uninstall program, to completely remove the tools from the system.
+
+The repacking also corrected a problem with the previous archive (the missing DLLs were added), so the previous archive (Cross Build Tools.zip) is now considered DEPRECATED.
+
+For more information, please read the [dedicated page]({{ site.baseurl }}/dev-tools/windows-build-tools/).

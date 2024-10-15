@@ -2,7 +2,7 @@
 title:  xPack Meson Build v0.56.2-2 released
 sidebar: meson-build
 
-summary: "Version 0.56.2-2 is a maintenance release of the **xPack Meson Build** package, intended to fix the macOS starting bug."
+summary: "Version **0.56.2-2** is a maintenance release of the **xPack Meson Build** package, intended to fix the macOS starting bug."
 
 version: 0.56.2-2
 npm_subversion: 1

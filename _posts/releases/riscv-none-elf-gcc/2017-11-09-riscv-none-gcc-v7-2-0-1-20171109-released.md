@@ -2,7 +2,7 @@
 title:  GNU MCU Eclipse RISC-V Embedded GCC v7.2.0-1-20171109 released
 sidebar: riscv-none-elf-gcc
 
-summary: "Version **7.2.0-1-20171109** is a new release."
+summary: "Version **7.2.0-1-20171109** is a new release of **GNU MCU Eclipse RISC-V Embedded GCC**."
 app_name: "GNU MCU Eclipse RISC-V Embedded GCC"
 
 download_url: https://github.com/gnu-mcu-eclipse/riscv-none-gcc/releases/tag/v7.2.0-1-20171109/
@@ -23,11 +23,13 @@ redirect_to: https://xpack-dev-tools.github.io/riscv-none-elf-gcc-xpack/blog/201
 
 ---
 
-Version **7.2.0-1-20171109** is a new release of **GNU MCU Eclipse RISC-V Embedded GCC**; the main improvement is in GDB, which no longer returns the 4096 CSRs together with the general registers. In contrast to the `riscv64-unknown-elf` toolchain, this toolchain is clearly intended for bare-metal embedded applications; for this it was necessary to  update to the latest newlib 2.5 release which uses 'underscore' syscall functions and to **remove the mandatory use of libgloss**.
+The main improvement is in GDB, which no longer returns the 4096 CSRs together with the general registers. In contrast to the `riscv64-unknown-elf` toolchain, this toolchain is clearly intended for bare-metal embedded applications; for this it was necessary to  update to the latest newlib 2.5 release which uses 'underscore' syscall functions and to **remove the mandatory use of libgloss**.
 
 To avoid any confusions with the `riscv64-unknown-elf` toolchain, this toolchain was renamed to the more appropriate `riscv-none-embedded-`.
 
-[Binary files »]({{ page.download_url }})
+## Download
+
+The binary files are available from [GitHub Releases]({{ page.download_url }}).
 
 ## Compliance
 

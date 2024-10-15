@@ -2,7 +2,7 @@
 title:  GNU MCU Eclipse RISC-V Embedded GCC v8.1.0-2-20181019 released
 sidebar: riscv-none-elf-gcc
 
-summary: "Version **8.1.0-2-20181019** is a maintenance release."
+summary: "Version **8.1.0-2-20181019** is a maintenance release of **GNU MCU Eclipse RISC-V Embedded GCC**."
 app_name: "GNU MCU Eclipse RISC-V Embedded GCC"
 
 download_url: https://github.com/gnu-mcu-eclipse/riscv-none-gcc/releases/tag/v8.1.0-2-20181019/
@@ -24,10 +24,9 @@ redirect_to: https://xpack-dev-tools.github.io/riscv-none-elf-gcc-xpack/blog/201
 
 ---
 
-Version **8.1.0-2-20181019** is a maintenance release of **GNU MCU Eclipse
-RISC-V Embedded GCC**.
+## Download
 
-[Binary files »]({{ page.download_url }})
+The binary files are available from [GitHub Releases]({{ page.download_url }}).
 
 ## Compliance
 

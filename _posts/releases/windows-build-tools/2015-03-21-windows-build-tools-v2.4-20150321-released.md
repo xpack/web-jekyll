@@ -2,7 +2,7 @@
 title:  GNU ARM Eclipse Windows Build Tools v2.4-20150321* released
 sidebar: windows-build-tools
 
-summary: "Version 2.4-201503212005 is a new release."
+summary: "Version **2.4-201503212005** is a new release of the GNU ARM Eclipse Windows Build Tools."
 app_name: "GNU ARM Eclipse Windows Build Tools"
 
 download_url: https://github.com/gnu-mcu-eclipse/windows-build-tools/releases/tag/v2.4/
@@ -28,9 +28,13 @@ tags:
 
 ---
 
-Version 2.4-201503212005 is a new release of the GNU ARM Eclipse Windows Build Tools.
+## Download
 
-[Binary files »]({{ page.download_url }})
+The binary files are available from [GitHub Releases]({{ page.download_url }}).
+
+The available files are:
+
+* `gnuarmeclipse-build-tools-win32-2.4-201503212005-setup.exe`
 
 ## Improvements
 
@@ -48,10 +52,3 @@ Please note that it is no longer required to manually update the environment PAT
 
 * the uninstall script has a problem and erroneously removes some registry keys and folders. **DO NOT run the uninstall.exe** since you might damage your system; instead, install the new version on top of it.
 
-## Download
-
-The binary files are available from [GitHub Releases]({{ page.download_url }}).
-
-The available files are:
-
-* `gnuarmeclipse-build-tools-win32-2.4-201503212005-setup.exe`

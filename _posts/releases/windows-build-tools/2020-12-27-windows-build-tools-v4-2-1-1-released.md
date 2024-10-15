@@ -2,7 +2,7 @@
 title:  xPack Windows Build Tools v4.2.1-1 released
 sidebar: windows-build-tools
 
-summary: "Version 4.2.1-1 is maintenance release; it updates to the latest BusyBox."
+summary: "Version **4.2.1-1** is maintenance release; it updates to the latest BusyBox."
 
 version: 4.2.1-1
 npm_subversion: 1
