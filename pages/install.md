@@ -187,10 +187,10 @@ with administrative rights.
 
 {% include tip.html content="If you are using a 64-bit machine, download the `node-v*-x64.msi` file." %}
 
-{% include tip.html content="Unless you do native module development, when asked to install
-the **Tools for Native Modules**, be sure you do **not** select it,
-otherwise you might end up with Visual Studio and other very large
-packages installed." %}
+{% include tip.html content="If you are not developing native modules,
+**avoid** selecting the **Tools for Native Modules** during installation.
+Otherwise, you may end up with Visual Studio and other large packages
+unnecessarily installed." %}
 
 ![The Node.js Tools for Native Modules]({{ site.baseurl }}/assets/images/2024/nodejs-setup-tools-for-native-modules.png)
 
