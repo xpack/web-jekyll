@@ -43,7 +43,7 @@ straightforward and does not pollute the system locations;
 there are two Node versions, **LTS** (**Long Term Service**) and
 **Current**; generally it is safer to use **LTS**, especially on Windows.
 
-![The Node Download page]({{ site.baseurl }}/assets/images/2023/nodejs-org.png)
+![The Node Download page]({{ site.baseurl }}/assets/images/2024/nodejs-org.png)
 
 {% capture version_manager %}
 
