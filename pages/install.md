@@ -187,8 +187,15 @@ with administrative rights.
 
 {% include tip.html content="If you are using a 64-bit machine, download the `node-v*-x64.msi` file." %}
 
-The result is a folder like `C:\Program Files\nodejs`, added to the
-system path since it includes the `node.exe` binary.
+{% include tip.html content="Unless you do native module development, when asked to install
+the **Tools for Native Modules**, be sure you do **not** select it,
+otherwise you might end up with Visual Studio and other very large
+packages installed." %}
+
+![The Node.js Tools for Native Modules]({{ site.baseurl }}/assets/images/2024/nodejs-setup-tools-for-native-modules.png)
+
+The result of the setup is a folder like `C:\Program Files\nodejs`, already
+added to the system path since it includes the `node.exe` binary.
 
 ```txt
 C:\>where node.exe
@@ -303,7 +310,10 @@ For more details please read the Microsoft
 
 ## node/npm clean-ups
 
-For a thorough clean-up, please note that **npm** uses only two folders
+If installed as recommended via setup, **node** can be uninstalled via the
+Microsoft specific mechanisms.
+
+For a thorough clean-up, please note that **npm** uses the following two folders
 to install global packages:
 
 - `%APPDATA%\Roaming\npm`
