@@ -1,11 +1,11 @@
 ---
 
-title:  VS Code xPack extension v1.2.3 released
+title:  VS Code xPack extension v1.2.4 released
 sidebar: vscode
 
-summary: "Version **1.2.3** is a maintenance release of **ilg-vscode.xpack**; it fixes the activation bug when project package.json is not correct."
+summary: "Version **1.2.4** is a maintenance release of **ilg-vscode.xpack**; it fixes the activation bug when project package.json is not correct."
 
-version: 1.2.3
+version: 1.2.4
 
 date: 2026-08-05 14:05:00 +0300
 
